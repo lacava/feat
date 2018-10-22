@@ -1,0 +1,26 @@
+var classFT_1_1Dat_1_1DataRef =
+[
+    [ "DataRef", "d4/d10/classFT_1_1Dat_1_1DataRef.html#a6bf60e1f5691115fe5e65d03772b8ad6", null ],
+    [ "~DataRef", "d4/d10/classFT_1_1Dat_1_1DataRef.html#aa6e4b03cfad153350684d80cd04d53fd", null ],
+    [ "DataRef", "d4/d10/classFT_1_1Dat_1_1DataRef.html#a6d279c93bb561332cda906c1ef1dc6cd", null ],
+    [ "setOriginalData", "d4/d10/classFT_1_1Dat_1_1DataRef.html#af84242d82030946f60cbbe0bbe9bd1ad", null ],
+    [ "setOriginalData", "d4/d10/classFT_1_1Dat_1_1DataRef.html#aaf740500a93981dde3e3ba61729d764e", null ],
+    [ "setTrainingData", "d4/d10/classFT_1_1Dat_1_1DataRef.html#a45f43f57375d3b7ffc1924e9758d4540", null ],
+    [ "setTrainingData", "d4/d10/classFT_1_1Dat_1_1DataRef.html#a39ba33fbbec63198006987f85e203730", null ],
+    [ "setValidationData", "d4/d10/classFT_1_1Dat_1_1DataRef.html#aff3e9400bb7a556a2469f44038e00829", null ],
+    [ "setValidationData", "d4/d10/classFT_1_1Dat_1_1DataRef.html#a5a42d1214afcb90cd9f17e0ff9188aa9", null ],
+    [ "split_longitudinal", "d4/d10/classFT_1_1Dat_1_1DataRef.html#a6055e2e53eeb7e8ebc2cea9810795a5c", null ],
+    [ "train_test_split", "d4/d10/classFT_1_1Dat_1_1DataRef.html#ae91219e6d41b7e00925d1021028c68fe", null ],
+    [ "o", "d4/d10/classFT_1_1Dat_1_1DataRef.html#ad194b6b2eb890e2ccaf578ad760a3627", null ],
+    [ "oCreated", "d4/d10/classFT_1_1Dat_1_1DataRef.html#ab6a5dc33a272134ccafce0fa5a0a2474", null ],
+    [ "t", "d4/d10/classFT_1_1Dat_1_1DataRef.html#a890d4dde0afafcc12b29a10e9a9d79e7", null ],
+    [ "tCreated", "d4/d10/classFT_1_1Dat_1_1DataRef.html#abc372748bbb2e37f60fc15788078bf16", null ],
+    [ "v", "d4/d10/classFT_1_1Dat_1_1DataRef.html#ab7673ddbc373009b607b1cca5de96900", null ],
+    [ "vCreated", "d4/d10/classFT_1_1Dat_1_1DataRef.html#abe8e384f1562d6f59855e6ad9c8d8a86", null ],
+    [ "X_t", "d4/d10/classFT_1_1Dat_1_1DataRef.html#a9bf73e384c56be7fd31de5b91e24d512", null ],
+    [ "X_v", "d4/d10/classFT_1_1Dat_1_1DataRef.html#a46c27323d2c0b72d6029f5c4dac9e549", null ],
+    [ "y_t", "d4/d10/classFT_1_1Dat_1_1DataRef.html#a3f8de7f8da44bad9aba155fca6e757bb", null ],
+    [ "y_v", "d4/d10/classFT_1_1Dat_1_1DataRef.html#a49ee3ed688492d7ddbd31257523886e1", null ],
+    [ "Z_t", "d4/d10/classFT_1_1Dat_1_1DataRef.html#ad881ab98c9fee7c00b0b53405e60f21c", null ],
+    [ "Z_v", "d4/d10/classFT_1_1Dat_1_1DataRef.html#a0c6cfa7a8c6f6677df7f121326cd4591", null ]
+];
