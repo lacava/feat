@@ -599,7 +599,15 @@ satisfied.
 </div><div class="memdoc">
 
 <p>calculate program output matrix Phi </p>
-<p>d: Data structure  params: <a class="el" href="../../db/dff/classFT_1_1Feat.html" title="main class for the Feat learner. ">Feat</a> parameters  predict: if true, this guarantees nodes like split do not get trained </p><dl class="section return"><dt>Returns</dt><dd>Phi: n_features x n_samples transformation</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d</td><td>Data structure </td></tr>
+    <tr><td class="paramname">params</td><td><a class="el" href="../../db/dff/classFT_1_1Feat.html" title="main class for the Feat learner. ">Feat</a> parameters </td></tr>
+    <tr><td class="paramname">predict</td><td>if true, this guarantees nodes like split do not get trained </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Phi: n_features x n_samples transformation</dd></dl>
 
 <p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00209">209</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
@@ -636,7 +644,15 @@ satisfied.
 </div><div class="memdoc">
 
 <p>calculate program output while maintaining stack trace </p>
-<p>X: n_features x n_samples data  Z: longitudinal nodes for samples  y: target data : <a class="el" href="../../db/dff/classFT_1_1Feat.html" title="main class for the Feat learner. ">Feat</a> parameters </p><dl class="section return"><dt>Returns</dt><dd>Phi: n_features x n_samples transformation</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">X</td><td>n_features x n_samples data </td></tr>
+    <tr><td class="paramname">Z</td><td>longitudinal nodes for samples </td></tr>
+    <tr><td class="paramname">y</td><td>target data </td></tr>
+    <tr><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00289">289</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
@@ -665,7 +681,12 @@ satisfied.
         </tr>
       </table>
 </div><div class="memdoc">
-<p>generates prediction on data using transformation and ML predict.  drop_idx if specified, the phi output at drop_idx is set to zero, effectively removing its output from the transformation. used in semantic crossover. </p>
+<p>generates prediction on data using transformation and ML predict. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drop_idx</td><td>if specified, the phi output at drop_idx is set to zero, effectively removing its output from the transformation. used in semantic crossover. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00158">158</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
