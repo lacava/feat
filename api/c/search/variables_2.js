@@ -1,12 +1,14 @@
 var searchData=
 [
-  ['c',['c',['../df/d42/structFT_1_1Dat_1_1Stacks.html#a8f7ae8a71d6f2a6c2f0c516a4f8255d5',1,'FT::Dat::Stacks::c()'],['../da/def/classFT_1_1Pop_1_1Individual.html#a6b4d171ae06d7e8b5f1269925ea7bba2',1,'FT::Pop::Individual::c()']]],
-  ['class_5fweights',['class_weights',['../de/d2c/structFT_1_1Parameters.html#a4bfe7e5d3bc6ba873466f9fab3f63e65',1,'FT::Parameters']]],
-  ['classes',['classes',['../de/d2c/structFT_1_1Parameters.html#a49fe9f7e71e11f5532b57267843b11fc',1,'FT::Parameters']]],
-  ['classification',['classification',['../de/d2c/structFT_1_1Parameters.html#a206ae40d847bc59f26332a8de5b86114',1,'FT::Parameters']]],
-  ['complexity',['complexity',['../d2/dfb/classFT_1_1Pop_1_1Op_1_1Node.html#ab58463d2be2261881c2912c517a0be8c',1,'FT::Pop::Op::Node']]],
-  ['cross_5frate',['cross_rate',['../de/d2c/structFT_1_1Parameters.html#a409721e42ee8b49d3a94c42278651e77',1,'FT::Parameters::cross_rate()'],['../d0/d80/classFT_1_1Vary_1_1Variation.html#a9bac5f3ece4514c4927a3657d95b433b',1,'FT::Vary::Variation::cross_rate()']]],
-  ['crowd_5fdist',['crowd_dist',['../da/def/classFT_1_1Pop_1_1Individual.html#acef9a79479a149b9dc7dbce5695cdc7f',1,'FT::Pop::Individual']]],
-  ['cs',['cs',['../df/d42/structFT_1_1Dat_1_1Stacks.html#a20c08e898402c62c999fa4797de4847a',1,'FT::Dat::Stacks']]],
-  ['current_5fgen',['current_gen',['../de/d2c/structFT_1_1Parameters.html#a9443d73894519bb40e283083e38681c4',1,'FT::Parameters']]]
+  ['b',['b',['../df/d42/structFT_1_1Dat_1_1Stacks.html#a658a60ce01437ceadba42524bc9dcb21',1,'FT::Dat::Stacks::b()'],['../d2/dfc/structFT_1_1Dat_1_1Trace.html#a31b3d7a992ea0e7b9bda33f5537fbc0f',1,'FT::Dat::Trace::b()']]],
+  ['b_5fvalue',['b_value',['../df/d51/classFT_1_1Pop_1_1Op_1_1NodeConstant.html#adcd13a0f98be15fc2a8744ab5ccd895e',1,'FT::Pop::Op::NodeConstant']]],
+  ['backprop',['backprop',['../de/d2c/structFT_1_1Parameters.html#a07ff7f25414885df9580b81c44dfafa2',1,'FT::Parameters']]],
+  ['batch_5fsize',['batch_size',['../d4/d04/structFT_1_1Parameters_1_1BP.html#aa22e510dec75682804aa812223f1e2f4',1,'FT::Parameters::BP']]],
+  ['best_5find',['best_ind',['../db/dff/classFT_1_1Feat.html#a7cf6d268c2b010ebcc10ad95cac81831',1,'FT::Feat']]],
+  ['best_5fmed_5fscore',['best_med_score',['../db/dff/classFT_1_1Feat.html#a5ed774dfbe6f7068289fadc99a4f80a4',1,'FT::Feat']]],
+  ['best_5fscore',['best_score',['../db/dff/classFT_1_1Feat.html#a8129bf55716af9981f0ea263889c8c1b',1,'FT::Feat']]],
+  ['best_5fscore_5fv',['best_score_v',['../db/dff/classFT_1_1Feat.html#a263cb01cf8cc8ce43162b68cbf4bc547',1,'FT::Feat']]],
+  ['bestscoreindex',['bestScoreIndex',['../df/de2/classFT_1_1FeatCV.html#afc3db71cfec2aa535fc6e7e1e0e16bfe',1,'FT::FeatCV']]],
+  ['bp',['bp',['../de/d2c/structFT_1_1Parameters.html#a95b0d025fc5e6c54bfff3b8e7106e526',1,'FT::Parameters']]],
+  ['bs',['bs',['../df/d42/structFT_1_1Dat_1_1Stacks.html#a91c4b805d0e53190ba4eff7a9b90311e',1,'FT::Dat::Stacks']]]
 ];

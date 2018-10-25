@@ -3,6 +3,7 @@ var searchData=
   ['dat',['Dat',['../d4/dca/namespaceFT_1_1Dat.html',1,'FT']]],
   ['eval',['Eval',['../de/dcf/namespaceFT_1_1Eval.html',1,'FT']]],
   ['ft',['FT',['../d2/d35/namespaceFT.html',1,'']]],
+  ['metrics',['metrics',['../d2/dbc/namespaceFT_1_1metrics.html',1,'FT']]],
   ['model',['Model',['../d3/d65/namespaceFT_1_1Model.html',1,'FT']]],
   ['op',['Op',['../dc/dd9/namespaceFT_1_1Pop_1_1Op.html',1,'FT::Pop']]],
   ['opt',['Opt',['../d2/d7b/namespaceFT_1_1Opt.html',1,'FT']]],

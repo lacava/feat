@@ -1,13 +1,10 @@
 var searchData=
 [
-  ['f',['F',['../db/dff/classFT_1_1Feat.html#a79c174854ebad874115b6d2625fad7c9',1,'FT::Feat::F()'],['../df/d42/structFT_1_1Dat_1_1Stacks.html#a7306341d3b94908e1f230b01dba15011',1,'FT::Dat::Stacks::f()']]],
-  ['f_5fv',['F_v',['../db/dff/classFT_1_1Feat.html#a28308f4d3eea71af9e1bc78dab3f3689',1,'FT::Feat']]],
-  ['featobjs',['featObjs',['../df/de2/classFT_1_1FeatCV.html#a0f3b6d83bb4025571fcf13bfa26c5ea5',1,'FT::FeatCV']]],
-  ['feature_5fnames',['feature_names',['../de/d2c/structFT_1_1Parameters.html#ab036088636ec2dcfe8bb0215700f631b',1,'FT::Parameters']]],
-  ['feedback',['feedback',['../de/d2c/structFT_1_1Parameters.html#adace64c4fd209f05a0baf58b98f5b3ad',1,'FT::Parameters']]],
-  ['fitness',['fitness',['../da/def/classFT_1_1Pop_1_1Individual.html#ad2b323056353aa80e9dff8fdb284baee',1,'FT::Pop::Individual']]],
-  ['fitness_5fv',['fitness_v',['../da/def/classFT_1_1Pop_1_1Individual.html#aa8784974aff761a391540947792ea94c',1,'FT::Pop::Individual']]],
-  ['foldsize',['foldSize',['../df/de2/classFT_1_1FeatCV.html#acd588d2c45280f192beaa1783ea4e546',1,'FT::FeatCV']]],
-  ['fs',['fs',['../df/d42/structFT_1_1Dat_1_1Stacks.html#a42a63b322f889b1f5d795b1913ab2218',1,'FT::Dat::Stacks']]],
-  ['functions',['functions',['../de/d2c/structFT_1_1Parameters.html#a73627d83a91b1eb185457c0f87c9d473',1,'FT::Parameters']]]
+  ['elitism',['elitism',['../d8/d7b/structFT_1_1Sel_1_1Offspring.html#a8c433119f81ae46c2f5a351326b6fd9d',1,'FT::Sel::Offspring::elitism()'],['../d4/de1/structFT_1_1Sel_1_1Random.html#a254e39b1a0e2ebd6eff0861e72be83ed',1,'FT::Sel::Random::elitism()']]],
+  ['epk',['epk',['../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a9c1045c7d0dfc98aeca4751769301515',1,'FT::Opt::AutoBackProp']]],
+  ['ept',['epT',['../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a31c6683531a0534531fb8226aaff7bae',1,'FT::Opt::AutoBackProp']]],
+  ['eq_5fdelta',['EQ_DELTA',['../db/dff/classshogun_1_1CMyCARTree.html#a8bd5947ef4faf587a7358cfd1ee18758',1,'shogun::CMyCARTree']]],
+  ['eqn',['eqn',['../da/def/classFT_1_1Pop_1_1Individual.html#ad585ee2fde9c32bd6acb966561023fff',1,'FT::Pop::Individual']]],
+  ['erc',['erc',['../de/d2c/structFT_1_1Parameters.html#a6e7a360a64a2968a13f7ae8bdb51b9fd',1,'FT::Parameters']]],
+  ['ercvec',['ercVec',['../df/de2/classFT_1_1FeatCV.html#ada20637fd93921a20e65ee6195ea7d0c',1,'FT::FeatCV']]]
 ];

@@ -122,6 +122,8 @@ $(document).ready(function(){initNavTree('d8/d06/classFT_1_1Opt_1_1HillClimb.htm
 <div class="title">FT::Opt::HillClimb Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d3/d59/hillclimb_8h_source.html">hillclimb.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for FT::Opt::HillClimb:</div>
 <div class="dyncontent">
@@ -134,42 +136,209 @@ Collaboration diagram for FT::Opt::HillClimb:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a5ca3877a04770192b985645e2c69c6fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ca3877a04770192b985645e2c69c6fa"></a>
-typedef VectorXd(*&#160;</td><td class="memItemRight" valign="bottom"><b>callback</b>) (const VectorXd &amp;, shared_ptr&lt; CLabels &gt; &amp;, const vector&lt; float &gt; &amp;)</td></tr>
+<tr class="memitem:a5ca3877a04770192b985645e2c69c6fa"><td class="memItemLeft" align="right" valign="top">typedef VectorXd(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d06/classFT_1_1Opt_1_1HillClimb.html#a5ca3877a04770192b985645e2c69c6fa">callback</a>) (const VectorXd &amp;, shared_ptr&lt; CLabels &gt; &amp;, const vector&lt; float &gt; &amp;)</td></tr>
 <tr class="separator:a5ca3877a04770192b985645e2c69c6fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a14e808ba6dba843c81072d161fdc29db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14e808ba6dba843c81072d161fdc29db"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>HillClimb</b> (string scorer, int iters=1, double step=0.1)</td></tr>
+<tr class="memitem:a14e808ba6dba843c81072d161fdc29db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d06/classFT_1_1Opt_1_1HillClimb.html#a14e808ba6dba843c81072d161fdc29db">HillClimb</a> (string scorer, int <a class="el" href="../../d8/d06/classFT_1_1Opt_1_1HillClimb.html#a2c783b85651ccd149125fbb436106e8e">iters</a>=1, double <a class="el" href="../../d8/d06/classFT_1_1Opt_1_1HillClimb.html#a0deb040cb19f0d56742fcc37a93ec324">step</a>=0.1)</td></tr>
 <tr class="separator:a14e808ba6dba843c81072d161fdc29db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41cc6f7c810ad4e8f34b8590d9c28006"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41cc6f7c810ad4e8f34b8590d9c28006"></a>
-shared_ptr&lt; CLabels &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d06/classFT_1_1Opt_1_1HillClimb.html#a41cc6f7c810ad4e8f34b8590d9c28006">run</a> (<a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> &amp;ind, <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> d, const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;params, bool &amp;updated)</td></tr>
-<tr class="memdesc:a41cc6f7c810ad4e8f34b8590d9c28006"><td class="mdescLeft">&#160;</td><td class="mdescRight">adapt weights <br /></td></tr>
+<tr class="memitem:a41cc6f7c810ad4e8f34b8590d9c28006"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; CLabels &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d06/classFT_1_1Opt_1_1HillClimb.html#a41cc6f7c810ad4e8f34b8590d9c28006">run</a> (<a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> &amp;ind, <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> d, const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;params, bool &amp;updated)</td></tr>
+<tr class="memdesc:a41cc6f7c810ad4e8f34b8590d9c28006"><td class="mdescLeft">&#160;</td><td class="mdescRight">adapt weights  <a href="#a41cc6f7c810ad4e8f34b8590d9c28006">More...</a><br /></td></tr>
 <tr class="separator:a41cc6f7c810ad4e8f34b8590d9c28006"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a10804d3c4b7904f264d9a543fc40bbba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a10804d3c4b7904f264d9a543fc40bbba"></a>
-std::map&lt; string, callback &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>score_hash</b></td></tr>
+<tr class="memitem:a10804d3c4b7904f264d9a543fc40bbba"><td class="memItemLeft" align="right" valign="top">std::map&lt; string, <a class="el" href="../../d8/d06/classFT_1_1Opt_1_1HillClimb.html#a5ca3877a04770192b985645e2c69c6fa">callback</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d06/classFT_1_1Opt_1_1HillClimb.html#a10804d3c4b7904f264d9a543fc40bbba">score_hash</a></td></tr>
 <tr class="separator:a10804d3c4b7904f264d9a543fc40bbba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a1dff09a35f1af7785d203d39ca4ad97c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1dff09a35f1af7785d203d39ca4ad97c"></a>
-callback&#160;</td><td class="memItemRight" valign="bottom"><b>cost_func</b></td></tr>
+<tr class="memitem:a1dff09a35f1af7785d203d39ca4ad97c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d06/classFT_1_1Opt_1_1HillClimb.html#a5ca3877a04770192b985645e2c69c6fa">callback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d06/classFT_1_1Opt_1_1HillClimb.html#a1dff09a35f1af7785d203d39ca4ad97c">cost_func</a></td></tr>
 <tr class="separator:a1dff09a35f1af7785d203d39ca4ad97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c783b85651ccd149125fbb436106e8e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c783b85651ccd149125fbb436106e8e"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>iters</b></td></tr>
+<tr class="memitem:a2c783b85651ccd149125fbb436106e8e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d06/classFT_1_1Opt_1_1HillClimb.html#a2c783b85651ccd149125fbb436106e8e">iters</a></td></tr>
 <tr class="separator:a2c783b85651ccd149125fbb436106e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0deb040cb19f0d56742fcc37a93ec324"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0deb040cb19f0d56742fcc37a93ec324"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>step</b></td></tr>
+<tr class="memitem:a0deb040cb19f0d56742fcc37a93ec324"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d06/classFT_1_1Opt_1_1HillClimb.html#a0deb040cb19f0d56742fcc37a93ec324">step</a></td></tr>
 <tr class="separator:a0deb040cb19f0d56742fcc37a93ec324"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p>Definition at line <a class="el" href="../../d3/d59/hillclimb_8h_source.html#l00028">28</a> of file <a class="el" href="../../d3/d59/hillclimb_8h_source.html">hillclimb.h</a>.</p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a5ca3877a04770192b985645e2c69c6fa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef VectorXd(* FT::Opt::HillClimb::callback) (const VectorXd &amp;, shared_ptr&lt; CLabels &gt; &amp;, const vector&lt; float &gt; &amp;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d3/d59/hillclimb_8h_source.html#l00034">34</a> of file <a class="el" href="../../d3/d59/hillclimb_8h_source.html">hillclimb.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a14e808ba6dba843c81072d161fdc29db"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FT::Opt::HillClimb::HillClimb </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>scorer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iters</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>step</em> = <code>0.1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d4/dfe/hillclimb_8cc_source.html#l00014">14</a> of file <a class="el" href="../../d4/dfe/hillclimb_8cc_source.html">hillclimb.cc</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a41cc6f7c810ad4e8f34b8590d9c28006"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared_ptr&lt; CLabels &gt; FT::Opt::HillClimb::run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> &amp;&#160;</td>
+          <td class="paramname"><em>ind</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a>&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>updated</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>adapt weights </p>
+
+<p>Definition at line <a class="el" href="../../d4/dfe/hillclimb_8cc_source.html#l00027">27</a> of file <a class="el" href="../../d4/dfe/hillclimb_8cc_source.html">hillclimb.cc</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a1dff09a35f1af7785d203d39ca4ad97c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d06/classFT_1_1Opt_1_1HillClimb.html#a5ca3877a04770192b985645e2c69c6fa">callback</a> FT::Opt::HillClimb::cost_func</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d3/d59/hillclimb_8h_source.html#l00045">45</a> of file <a class="el" href="../../d3/d59/hillclimb_8h_source.html">hillclimb.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2c783b85651ccd149125fbb436106e8e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FT::Opt::HillClimb::iters</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d3/d59/hillclimb_8h_source.html#l00046">46</a> of file <a class="el" href="../../d3/d59/hillclimb_8h_source.html">hillclimb.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a10804d3c4b7904f264d9a543fc40bbba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;string, <a class="el" href="../../d8/d06/classFT_1_1Opt_1_1HillClimb.html#a5ca3877a04770192b985645e2c69c6fa">callback</a>&gt; FT::Opt::HillClimb::score_hash</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d3/d59/hillclimb_8h_source.html#l00036">36</a> of file <a class="el" href="../../d3/d59/hillclimb_8h_source.html">hillclimb.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0deb040cb19f0d56742fcc37a93ec324"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FT::Opt::HillClimb::step</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d3/d59/hillclimb_8h_source.html#l00047">47</a> of file <a class="el" href="../../d3/d59/hillclimb_8h_source.html">hillclimb.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="../../d3/d59/hillclimb_8h_source.html">hillclimb.h</a></li>
 <li><a class="el" href="../../d4/dfe/hillclimb_8cc_source.html">hillclimb.cc</a></li>
 </ul>

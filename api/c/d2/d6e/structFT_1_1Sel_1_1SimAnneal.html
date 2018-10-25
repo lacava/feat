@@ -120,6 +120,8 @@ $(document).ready(function(){initNavTree('d2/d6e/structFT_1_1Sel_1_1SimAnneal.ht
 <div class="title">FT::Sel::SimAnneal Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d9/dab/simulated__annealing_8h_source.html">simulated_annealing.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FT::Sel::SimAnneal:</div>
 <div class="dyncontent">
@@ -143,32 +145,31 @@ Collaboration diagram for FT::Sel::SimAnneal:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a89454b4f9601a9f286c7651e35e40bc4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6e/structFT_1_1Sel_1_1SimAnneal.html#a89454b4f9601a9f286c7651e35e40bc4">SimAnneal</a> (bool surv)</td></tr>
 <tr class="separator:a89454b4f9601a9f286c7651e35e40bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9a82ac0929bb056c0f76a171be521d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9a82ac0929bb056c0f76a171be521d4"></a>
-vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>select</b> (<a class="el" href="../../d6/d5f/structFT_1_1Pop_1_1Population.html">Population</a> &amp;pop, const MatrixXd &amp;F, const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;params)</td></tr>
+<tr class="memitem:a73d34a046548b334d3f74af6a8dca660"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6e/structFT_1_1Sel_1_1SimAnneal.html#a73d34a046548b334d3f74af6a8dca660">~SimAnneal</a> ()</td></tr>
+<tr class="separator:a73d34a046548b334d3f74af6a8dca660"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9a82ac0929bb056c0f76a171be521d4"><td class="memItemLeft" align="right" valign="top">vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6e/structFT_1_1Sel_1_1SimAnneal.html#ad9a82ac0929bb056c0f76a171be521d4">select</a> (<a class="el" href="../../d6/d5f/structFT_1_1Pop_1_1Population.html">Population</a> &amp;pop, const MatrixXd &amp;F, const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;params)</td></tr>
 <tr class="separator:ad9a82ac0929bb056c0f76a171be521d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65f34008e5f02996b2fa79327ceb15e7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65f34008e5f02996b2fa79327ceb15e7"></a>
-vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>survive</b> (<a class="el" href="../../d6/d5f/structFT_1_1Pop_1_1Population.html">Population</a> &amp;pop, const MatrixXd &amp;F, const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;params)</td></tr>
+<tr class="memitem:a65f34008e5f02996b2fa79327ceb15e7"><td class="memItemLeft" align="right" valign="top">vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6e/structFT_1_1Sel_1_1SimAnneal.html#a65f34008e5f02996b2fa79327ceb15e7">survive</a> (<a class="el" href="../../d6/d5f/structFT_1_1Pop_1_1Population.html">Population</a> &amp;pop, const MatrixXd &amp;F, const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;params)</td></tr>
 <tr class="separator:a65f34008e5f02996b2fa79327ceb15e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_structFT_1_1Sel_1_1SelectionOperator"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structFT_1_1Sel_1_1SelectionOperator')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d8/d53/structFT_1_1Sel_1_1SelectionOperator.html">FT::Sel::SelectionOperator</a></td></tr>
+<tr class="memitem:ad3a0ddb725194b193ab31e4a438b06f2 inherit pub_methods_structFT_1_1Sel_1_1SelectionOperator"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d53/structFT_1_1Sel_1_1SelectionOperator.html#ad3a0ddb725194b193ab31e4a438b06f2">~SelectionOperator</a> ()</td></tr>
+<tr class="separator:ad3a0ddb725194b193ab31e4a438b06f2 inherit pub_methods_structFT_1_1Sel_1_1SelectionOperator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:af7c9644257b724ac177870d72546e7ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7c9644257b724ac177870d72546e7ef"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6e/structFT_1_1Sel_1_1SimAnneal.html#af7c9644257b724ac177870d72546e7ef">t</a></td></tr>
-<tr class="memdesc:af7c9644257b724ac177870d72546e7ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">annealing temperature <br /></td></tr>
+<tr class="memitem:af7c9644257b724ac177870d72546e7ef"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6e/structFT_1_1Sel_1_1SimAnneal.html#af7c9644257b724ac177870d72546e7ef">t</a></td></tr>
+<tr class="memdesc:af7c9644257b724ac177870d72546e7ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">annealing temperature  <a href="#af7c9644257b724ac177870d72546e7ef">More...</a><br /></td></tr>
 <tr class="separator:af7c9644257b724ac177870d72546e7ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f870be30af7c31116f70c544f1062aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f870be30af7c31116f70c544f1062aa"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6e/structFT_1_1Sel_1_1SimAnneal.html#a5f870be30af7c31116f70c544f1062aa">t0</a></td></tr>
-<tr class="memdesc:a5f870be30af7c31116f70c544f1062aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">initial temperature <br /></td></tr>
+<tr class="memitem:a5f870be30af7c31116f70c544f1062aa"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6e/structFT_1_1Sel_1_1SimAnneal.html#a5f870be30af7c31116f70c544f1062aa">t0</a></td></tr>
+<tr class="memdesc:a5f870be30af7c31116f70c544f1062aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">initial temperature  <a href="#a5f870be30af7c31116f70c544f1062aa">More...</a><br /></td></tr>
 <tr class="separator:a5f870be30af7c31116f70c544f1062aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_structFT_1_1Sel_1_1SelectionOperator"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_structFT_1_1Sel_1_1SelectionOperator')"><img src="../../closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="../../d8/d53/structFT_1_1Sel_1_1SelectionOperator.html">FT::Sel::SelectionOperator</a></td></tr>
-<tr class="memitem:ae8bf8f6a727f78e3fa309d3f84d9d45d inherit pub_attribs_structFT_1_1Sel_1_1SelectionOperator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8bf8f6a727f78e3fa309d3f84d9d45d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>survival</b></td></tr>
+<tr class="memitem:ae8bf8f6a727f78e3fa309d3f84d9d45d inherit pub_attribs_structFT_1_1Sel_1_1SelectionOperator"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d53/structFT_1_1Sel_1_1SelectionOperator.html#ae8bf8f6a727f78e3fa309d3f84d9d45d">survival</a></td></tr>
 <tr class="separator:ae8bf8f6a727f78e3fa309d3f84d9d45d inherit pub_attribs_structFT_1_1Sel_1_1SelectionOperator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21743ba34e4358d0b5c232f945ee1760 inherit pub_attribs_structFT_1_1Sel_1_1SelectionOperator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21743ba34e4358d0b5c232f945ee1760"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
+<tr class="memitem:a21743ba34e4358d0b5c232f945ee1760 inherit pub_attribs_structFT_1_1Sel_1_1SelectionOperator"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d53/structFT_1_1Sel_1_1SelectionOperator.html#a21743ba34e4358d0b5c232f945ee1760">name</a></td></tr>
 <tr class="separator:a21743ba34e4358d0b5c232f945ee1760 inherit pub_attribs_structFT_1_1Sel_1_1SelectionOperator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -191,6 +192,161 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
 <p><a class="el" href="../../d2/d6e/structFT_1_1Sel_1_1SimAnneal.html">SimAnneal</a> based selection and survival methods. </p>
 
 <p>Definition at line <a class="el" href="../../d1/dcf/simulated__annealing_8cc_source.html#l00012">12</a> of file <a class="el" href="../../d1/dcf/simulated__annealing_8cc_source.html">simulated_annealing.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a73d34a046548b334d3f74af6a8dca660"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FT::Sel::SimAnneal::~SimAnneal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d1/dcf/simulated__annealing_8cc_source.html#l00014">14</a> of file <a class="el" href="../../d1/dcf/simulated__annealing_8cc_source.html">simulated_annealing.cc</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ad9a82ac0929bb056c0f76a171be521d4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; size_t &gt; FT::Sel::SimAnneal::select </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/d5f/structFT_1_1Pop_1_1Population.html">Population</a> &amp;&#160;</td>
+          <td class="paramname"><em>pop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const MatrixXd &amp;&#160;</td>
+          <td class="paramname"><em>F</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../d8/d53/structFT_1_1Sel_1_1SelectionOperator.html#ae9b028e4f6e636fb71f263eb1b092127">FT::Sel::SelectionOperator</a>.</p>
+
+<p>Definition at line <a class="el" href="../../d1/dcf/simulated__annealing_8cc_source.html#l00016">16</a> of file <a class="el" href="../../d1/dcf/simulated__annealing_8cc_source.html">simulated_annealing.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a65f34008e5f02996b2fa79327ceb15e7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; size_t &gt; FT::Sel::SimAnneal::survive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/d5f/structFT_1_1Pop_1_1Population.html">Population</a> &amp;&#160;</td>
+          <td class="paramname"><em>pop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const MatrixXd &amp;&#160;</td>
+          <td class="paramname"><em>F</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../d8/d53/structFT_1_1Sel_1_1SelectionOperator.html#a17b8cbddbed39c86912a3d98fd0bbc71">FT::Sel::SelectionOperator</a>.</p>
+
+<p>Definition at line <a class="el" href="../../d1/dcf/simulated__annealing_8cc_source.html#l00035">35</a> of file <a class="el" href="../../d1/dcf/simulated__annealing_8cc_source.html">simulated_annealing.cc</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="af7c9644257b724ac177870d72546e7ef"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FT::Sel::SimAnneal::t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>annealing temperature </p>
+
+<p>Definition at line <a class="el" href="../../d9/dab/simulated__annealing_8h_source.html#l00028">28</a> of file <a class="el" href="../../d9/dab/simulated__annealing_8h_source.html">simulated_annealing.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5f870be30af7c31116f70c544f1062aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FT::Sel::SimAnneal::t0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>initial temperature </p>
+
+<p>Definition at line <a class="el" href="../../d9/dab/simulated__annealing_8h_source.html#l00029">29</a> of file <a class="el" href="../../d9/dab/simulated__annealing_8h_source.html">simulated_annealing.h</a>.</p>
 
 </div>
 </div>

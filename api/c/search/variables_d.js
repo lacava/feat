@@ -1,19 +1,11 @@
 var searchData=
 [
-  ['p',['p',['../da/def/classFT_1_1Pop_1_1Individual.html#a145c899468b4c4f55ca34f744e5b9a70',1,'FT::Pop::Individual']]],
-  ['p_5fest',['p_est',['../dd/d6f/classFT_1_1Model_1_1ML.html#a7264512948a3b6a3078ce546c11fd66a',1,'FT::Model::ML']]],
-  ['p_5feval',['p_eval',['../db/dff/classFT_1_1Feat.html#adc7312c00563ce4cd8b68b02fb87a99b',1,'FT::Feat']]],
-  ['p_5fml',['p_ml',['../db/dff/classFT_1_1Feat.html#a431fb5909d6e7c8ddd3f5d28ced11d6c',1,'FT::Feat']]],
-  ['p_5fpop',['p_pop',['../db/dff/classFT_1_1Feat.html#ab6978a1d4421f56a70cf148b0a5624fd',1,'FT::Feat']]],
-  ['p_5fsel',['p_sel',['../db/dff/classFT_1_1Feat.html#aad81cf1008b7f98d360579d23a4f5e4f',1,'FT::Feat']]],
-  ['p_5fsurv',['p_surv',['../db/dff/classFT_1_1Feat.html#ab13338a75e9ea96a9db3336741a3b971',1,'FT::Feat']]],
-  ['p_5fvariation',['p_variation',['../db/dff/classFT_1_1Feat.html#abcdbdd9eb915979a3cbca8990e56b49f',1,'FT::Feat']]],
-  ['params',['params',['../db/dff/classFT_1_1Feat.html#abb9d09572b0bb378a16b810a6dcc3491',1,'FT::Feat']]],
-  ['parent_5fid',['parent_id',['../da/def/classFT_1_1Pop_1_1Individual.html#ac60cbc4d297906f97e676999b3da84ff',1,'FT::Pop::Individual']]],
-  ['phi',['Phi',['../da/def/classFT_1_1Pop_1_1Individual.html#a4e59d227157cffe7f158821c69fe008f',1,'FT::Pop::Individual']]],
-  ['pop',['pop',['../d5/d9e/structFT_1_1Sel_1_1NSGA2_1_1sort__n.html#acf58a2ad42f02749af80a1ab3cc0431a',1,'FT::Sel::NSGA2::sort_n::pop()'],['../d4/d2a/structFT_1_1Sel_1_1NSGA2_1_1comparator__obj.html#aed564524d2ee19e81c105cb7b00c9109',1,'FT::Sel::NSGA2::comparator_obj::pop()']]],
-  ['pop_5fsize',['pop_size',['../de/d2c/structFT_1_1Parameters.html#a8253360dc4ad47b3f94f813daa13867a',1,'FT::Parameters']]],
-  ['print_5fpop',['print_pop',['../db/dff/classFT_1_1Feat.html#ae3dbfaf2093cfca7a19294317fdb64bf',1,'FT::Feat']]],
-  ['prob_5ftype',['prob_type',['../dd/d6f/classFT_1_1Model_1_1ML.html#a9f9dfdd299149dd7f42c5db36757f29a',1,'FT::Model::ML']]],
-  ['program',['program',['../da/def/classFT_1_1Pop_1_1Individual.html#a88d308c675946399dc9b42e51061f66a',1,'FT::Pop::Individual']]]
+  ['o',['o',['../d4/d10/classFT_1_1Dat_1_1DataRef.html#ad194b6b2eb890e2ccaf578ad760a3627',1,'FT::Dat::DataRef']]],
+  ['obj',['obj',['../df/d04/structFT_1_1FeatObjects.html#a04dcf4c9697f693f8e2ef84a39f7776a',1,'FT::FeatObjects::obj()'],['../df/de2/classFT_1_1FeatCV.html#a094a7bfdd2b44f598a0922c02acd3dd9',1,'FT::FeatCV::obj()'],['../da/def/classFT_1_1Pop_1_1Individual.html#a43687b68c7994faed2ae5bbe7bc9d6a2',1,'FT::Pop::Individual::obj()']]],
+  ['objectives',['objectives',['../de/d2c/structFT_1_1Parameters.html#aace18d360f786428143860deb1531a86',1,'FT::Parameters']]],
+  ['ocreated',['oCreated',['../d4/d10/classFT_1_1Dat_1_1DataRef.html#ab6a5dc33a272134ccafce0fa5a0a2474',1,'FT::Dat::DataRef']]],
+  ['offset',['offset',['../dd/d51/structFT_1_1Util_1_1Normalizer.html#afe95594dbd44b500c69a8b574931ebe8',1,'FT::Util::Normalizer']]],
+  ['open_5floc',['open_loc',['../d6/d5f/structFT_1_1Pop_1_1Population.html#aa687a78454acefc026a9ab35299bb0bd',1,'FT::Pop::Population']]],
+  ['otype',['otype',['../de/d2c/structFT_1_1Parameters.html#acdaaa6057aa153b78b20b1acd81c1721',1,'FT::Parameters::otype()'],['../d2/dfb/classFT_1_1Pop_1_1Op_1_1Node.html#a986f13e2324eb96693870784700a5237',1,'FT::Pop::Op::Node::otype()']]],
+  ['otypes',['otypes',['../de/d2c/structFT_1_1Parameters.html#ac8e4d5d39bff92013ca641aac8fea03f',1,'FT::Parameters']]]
 ];

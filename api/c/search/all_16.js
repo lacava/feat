@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['z',['z',['../df/d42/structFT_1_1Dat_1_1Stacks.html#a3ee29f2d82cb4c04c433aed85de5f617',1,'FT::Dat::Stacks']]],
-  ['zero_5fone_5floss_5flabel',['zero_one_loss_label',['../de/dcf/namespaceFT_1_1Eval.html#aacc4ab1499bbf04e7a19fac37efea119',1,'FT::Eval']]],
-  ['zs',['zs',['../df/d42/structFT_1_1Dat_1_1Stacks.html#ac4eefb4d74d89b8b3f54097bc6b0f51b',1,'FT::Dat::Stacks']]]
+  ['w',['W',['../d5/ddc/classFT_1_1Pop_1_1Op_1_1NodeDx.html#afde600162da869b1adcb41b8294ff1f9',1,'FT::Pop::Op::NodeDx::W()'],['../da/def/classFT_1_1Pop_1_1Individual.html#a9d2bd53966d8679622a4f6f2405d9717',1,'FT::Pop::Individual::w()']]],
+  ['weight_5fminus_5fbranch',['weight_minus_branch',['../df/d48/structshogun_1_1MyCARTreeNodeData.html#aadcf5cdeb59e80bb6babeebb436a2deb',1,'shogun::MyCARTreeNodeData']]],
+  ['weight_5fminus_5fnode',['weight_minus_node',['../df/d48/structshogun_1_1MyCARTreeNodeData.html#a22f9baf6fffbbe6fa08dc18b8e4edc97',1,'shogun::MyCARTreeNodeData']]]
 ];

@@ -123,6 +123,8 @@ $(document).ready(function(){initNavTree('d2/d73/classFT_1_1Opt_1_1AutoBackProp.
 <div class="title">FT::Opt::AutoBackProp Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d6/d8a/auto__backprop_8h_source.html">auto_backprop.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for FT::Opt::AutoBackProp:</div>
 <div class="dyncontent">
@@ -135,88 +137,668 @@ Collaboration diagram for FT::Opt::AutoBackProp:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aa36cef011e271473d6495a00d61067a4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa36cef011e271473d6495a00d61067a4"></a>
-typedef VectorXd(*&#160;</td><td class="memItemRight" valign="bottom"><b>callback</b>) (const VectorXd &amp;, shared_ptr&lt; CLabels &gt; &amp;, const vector&lt; float &gt; &amp;)</td></tr>
+<tr class="memitem:aa36cef011e271473d6495a00d61067a4"><td class="memItemLeft" align="right" valign="top">typedef VectorXd(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#aa36cef011e271473d6495a00d61067a4">callback</a>) (const VectorXd &amp;, shared_ptr&lt; CLabels &gt; &amp;, const vector&lt; float &gt; &amp;)</td></tr>
 <tr class="separator:aa36cef011e271473d6495a00d61067a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4a9783ba390b2637add44d5bbd3a127"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4a9783ba390b2637add44d5bbd3a127"></a>
-typedef VectorXd(*&#160;</td><td class="memItemRight" valign="bottom"><b>callback2</b>) (const VectorXd &amp;, const VectorXd &amp;)</td></tr>
+<tr class="memitem:ae4a9783ba390b2637add44d5bbd3a127"><td class="memItemLeft" align="right" valign="top">typedef VectorXd(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#ae4a9783ba390b2637add44d5bbd3a127">callback2</a>) (const VectorXd &amp;, const VectorXd &amp;)</td></tr>
 <tr class="separator:ae4a9783ba390b2637add44d5bbd3a127"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae9a6acd4978d7671e6e7b018a83583e8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae9a6acd4978d7671e6e7b018a83583e8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AutoBackProp</b> (string scorer, int iters=1000, double n=0.1, double a=0.9)</td></tr>
+<tr class="memitem:ae9a6acd4978d7671e6e7b018a83583e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#ae9a6acd4978d7671e6e7b018a83583e8">AutoBackProp</a> (string scorer, int <a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#ad7e85f1ce60578b9538ad2afac27e3f6">iters</a>=1000, double <a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#ad61b2d190afe1759e2bd331e4413b3d1">n</a>=0.1, double <a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a34096b35343f747b73bd855bf9981a57">a</a>=0.9)</td></tr>
 <tr class="separator:ae9a6acd4978d7671e6e7b018a83583e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a054a27008fa34e7baaac6adf1bf8a62d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a054a27008fa34e7baaac6adf1bf8a62d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a054a27008fa34e7baaac6adf1bf8a62d">run</a> (<a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> &amp;ind, const <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> &amp;d, const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;params)</td></tr>
-<tr class="memdesc:a054a27008fa34e7baaac6adf1bf8a62d"><td class="mdescLeft">&#160;</td><td class="mdescRight">adapt weights <br /></td></tr>
+<tr class="memitem:a054a27008fa34e7baaac6adf1bf8a62d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a054a27008fa34e7baaac6adf1bf8a62d">run</a> (<a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> &amp;ind, const <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> &amp;d, const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;params)</td></tr>
+<tr class="memdesc:a054a27008fa34e7baaac6adf1bf8a62d"><td class="mdescLeft">&#160;</td><td class="mdescRight">adapt weights  <a href="#a054a27008fa34e7baaac6adf1bf8a62d">More...</a><br /></td></tr>
 <tr class="separator:a054a27008fa34e7baaac6adf1bf8a62d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a86bb3c269b45acb65d23876cb7fe0971"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86bb3c269b45acb65d23876cb7fe0971"></a>
-std::map&lt; string, callback &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>d_score_hash</b></td></tr>
+<tr class="memitem:a86bb3c269b45acb65d23876cb7fe0971"><td class="memItemLeft" align="right" valign="top">std::map&lt; string, <a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#aa36cef011e271473d6495a00d61067a4">callback</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a86bb3c269b45acb65d23876cb7fe0971">d_score_hash</a></td></tr>
 <tr class="separator:a86bb3c269b45acb65d23876cb7fe0971"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2544c0c8103dd368d60764a5895c7128"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2544c0c8103dd368d60764a5895c7128"></a>
-std::map&lt; string, callback &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>score_hash</b></td></tr>
+<tr class="memitem:a2544c0c8103dd368d60764a5895c7128"><td class="memItemLeft" align="right" valign="top">std::map&lt; string, <a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#aa36cef011e271473d6495a00d61067a4">callback</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a2544c0c8103dd368d60764a5895c7128">score_hash</a></td></tr>
 <tr class="separator:a2544c0c8103dd368d60764a5895c7128"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:ade64420c4781f84b0c02a8d0aef04878"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade64420c4781f84b0c02a8d0aef04878"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>print_weights</b> (<a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a> &amp;program)</td></tr>
+<tr class="memitem:ade64420c4781f84b0c02a8d0aef04878"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#ade64420c4781f84b0c02a8d0aef04878">print_weights</a> (<a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a> &amp;program)</td></tr>
 <tr class="separator:ade64420c4781f84b0c02a8d0aef04878"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b23f3d6ccef8051eb2a937c20d70d46"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b23f3d6ccef8051eb2a937c20d70d46"></a>
-vector&lt; <a class="el" href="../../d2/dfc/structFT_1_1Dat_1_1Trace.html">Trace</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a4b23f3d6ccef8051eb2a937c20d70d46">forward_prop</a> (<a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> &amp;ind, const <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> &amp;d, MatrixXd &amp;Phi, const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;params)</td></tr>
-<tr class="memdesc:a4b23f3d6ccef8051eb2a937c20d70d46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the f_stack. <br /></td></tr>
+<tr class="memitem:a4b23f3d6ccef8051eb2a937c20d70d46"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="../../d2/dfc/structFT_1_1Dat_1_1Trace.html">Trace</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a4b23f3d6ccef8051eb2a937c20d70d46">forward_prop</a> (<a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> &amp;ind, const <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> &amp;d, MatrixXd &amp;Phi, const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;params)</td></tr>
+<tr class="memdesc:a4b23f3d6ccef8051eb2a937c20d70d46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the f_stack.  <a href="#a4b23f3d6ccef8051eb2a937c20d70d46">More...</a><br /></td></tr>
 <tr class="separator:a4b23f3d6ccef8051eb2a937c20d70d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3670ae7c220d56078ea21e3c7fc5f563"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3670ae7c220d56078ea21e3c7fc5f563"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a3670ae7c220d56078ea21e3c7fc5f563">next_branch</a> (vector&lt; <a class="el" href="../../dc/da7/structFT_1_1Opt_1_1BP__NODE.html">BP_NODE</a> &gt; &amp;executing, vector&lt; <a class="el" href="../../d2/dfb/classFT_1_1Pop_1_1Op_1_1Node.html">Node</a> * &gt; &amp;bp_program, vector&lt; ArrayXd &gt; &amp;derivatives)</td></tr>
-<tr class="memdesc:a3670ae7c220d56078ea21e3c7fc5f563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates stacks to have proper value on top. <br /></td></tr>
+<tr class="memitem:a3670ae7c220d56078ea21e3c7fc5f563"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a3670ae7c220d56078ea21e3c7fc5f563">next_branch</a> (vector&lt; <a class="el" href="../../dc/da7/structFT_1_1Opt_1_1BP__NODE.html">BP_NODE</a> &gt; &amp;executing, vector&lt; <a class="el" href="../../d2/dfb/classFT_1_1Pop_1_1Op_1_1Node.html">Node</a> * &gt; &amp;bp_program, vector&lt; ArrayXd &gt; &amp;derivatives)</td></tr>
+<tr class="memdesc:a3670ae7c220d56078ea21e3c7fc5f563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates stacks to have proper value on top.  <a href="#a3670ae7c220d56078ea21e3c7fc5f563">More...</a><br /></td></tr>
 <tr class="separator:a3670ae7c220d56078ea21e3c7fc5f563"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59ed6197552e46d725f418124c31ecc1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59ed6197552e46d725f418124c31ecc1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a59ed6197552e46d725f418124c31ecc1">backprop</a> (<a class="el" href="../../d2/dfc/structFT_1_1Dat_1_1Trace.html">Trace</a> &amp;f_stack, <a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a> &amp;program, int start, int end, double Beta, shared_ptr&lt; CLabels &gt; &amp;yhat, const <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> &amp;d, vector&lt; float &gt; sw)</td></tr>
-<tr class="memdesc:a59ed6197552e46d725f418124c31ecc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute gradients and update weights. <br /></td></tr>
+<tr class="memitem:a59ed6197552e46d725f418124c31ecc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a59ed6197552e46d725f418124c31ecc1">backprop</a> (<a class="el" href="../../d2/dfc/structFT_1_1Dat_1_1Trace.html">Trace</a> &amp;f_stack, <a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a> &amp;program, int start, int end, double Beta, shared_ptr&lt; CLabels &gt; &amp;yhat, const <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> &amp;d, vector&lt; float &gt; sw)</td></tr>
+<tr class="memdesc:a59ed6197552e46d725f418124c31ecc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute gradients and update weights.  <a href="#a59ed6197552e46d725f418124c31ecc1">More...</a><br /></td></tr>
 <tr class="separator:a59ed6197552e46d725f418124c31ecc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e7e17e656a20ca20570449f904a5bf4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e7e17e656a20ca20570449f904a5bf4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a2e7e17e656a20ca20570449f904a5bf4">backprop2</a> (<a class="el" href="../../d2/dfc/structFT_1_1Dat_1_1Trace.html">Trace</a> &amp;f_stack, <a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a> &amp;program, int start, int end, double Beta, const VectorXd &amp;yhat, const <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> &amp;d, vector&lt; float &gt; sw)</td></tr>
-<tr class="memdesc:a2e7e17e656a20ca20570449f904a5bf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute gradients and update weights. <br /></td></tr>
+<tr class="memitem:a2e7e17e656a20ca20570449f904a5bf4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a2e7e17e656a20ca20570449f904a5bf4">backprop2</a> (<a class="el" href="../../d2/dfc/structFT_1_1Dat_1_1Trace.html">Trace</a> &amp;f_stack, <a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a> &amp;program, int start, int end, double Beta, const VectorXd &amp;yhat, const <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> &amp;d, vector&lt; float &gt; sw)</td></tr>
+<tr class="memdesc:a2e7e17e656a20ca20570449f904a5bf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute gradients and update weights.  <a href="#a2e7e17e656a20ca20570449f904a5bf4">More...</a><br /></td></tr>
 <tr class="separator:a2e7e17e656a20ca20570449f904a5bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ad61b2d190afe1759e2bd331e4413b3d1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad61b2d190afe1759e2bd331e4413b3d1"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>n</b></td></tr>
+<tr class="memitem:ad61b2d190afe1759e2bd331e4413b3d1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#ad61b2d190afe1759e2bd331e4413b3d1">n</a></td></tr>
 <tr class="separator:ad61b2d190afe1759e2bd331e4413b3d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34096b35343f747b73bd855bf9981a57"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34096b35343f747b73bd855bf9981a57"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>a</b></td></tr>
+<tr class="memitem:a34096b35343f747b73bd855bf9981a57"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a34096b35343f747b73bd855bf9981a57">a</a></td></tr>
 <tr class="separator:a34096b35343f747b73bd855bf9981a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e885a8f5abe113dd85828275d27f8ac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e885a8f5abe113dd85828275d27f8ac"></a>
-callback&#160;</td><td class="memItemRight" valign="bottom"><b>d_cost_func</b></td></tr>
+<tr class="memitem:a0e885a8f5abe113dd85828275d27f8ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#aa36cef011e271473d6495a00d61067a4">callback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a0e885a8f5abe113dd85828275d27f8ac">d_cost_func</a></td></tr>
 <tr class="separator:a0e885a8f5abe113dd85828275d27f8ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37c4d5f25510ce0fdc8c41e234f76cd2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a37c4d5f25510ce0fdc8c41e234f76cd2"></a>
-callback&#160;</td><td class="memItemRight" valign="bottom"><b>cost_func</b></td></tr>
+<tr class="memitem:a37c4d5f25510ce0fdc8c41e234f76cd2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#aa36cef011e271473d6495a00d61067a4">callback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a37c4d5f25510ce0fdc8c41e234f76cd2">cost_func</a></td></tr>
 <tr class="separator:a37c4d5f25510ce0fdc8c41e234f76cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a3b874b3ead597a7fd5fc68b8042586"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a3b874b3ead597a7fd5fc68b8042586"></a>
-callback2&#160;</td><td class="memItemRight" valign="bottom"><b>d_cost_func2</b></td></tr>
+<tr class="memitem:a4a3b874b3ead597a7fd5fc68b8042586"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#ae4a9783ba390b2637add44d5bbd3a127">callback2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a4a3b874b3ead597a7fd5fc68b8042586">d_cost_func2</a></td></tr>
 <tr class="separator:a4a3b874b3ead597a7fd5fc68b8042586"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d7a142281c2e04c0709cc564d4710a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d7a142281c2e04c0709cc564d4710a6"></a>
-callback2&#160;</td><td class="memItemRight" valign="bottom"><b>cost_func2</b></td></tr>
+<tr class="memitem:a6d7a142281c2e04c0709cc564d4710a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#ae4a9783ba390b2637add44d5bbd3a127">callback2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a6d7a142281c2e04c0709cc564d4710a6">cost_func2</a></td></tr>
 <tr class="separator:a6d7a142281c2e04c0709cc564d4710a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7e85f1ce60578b9538ad2afac27e3f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7e85f1ce60578b9538ad2afac27e3f6"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>iters</b></td></tr>
+<tr class="memitem:ad7e85f1ce60578b9538ad2afac27e3f6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#ad7e85f1ce60578b9538ad2afac27e3f6">iters</a></td></tr>
 <tr class="separator:ad7e85f1ce60578b9538ad2afac27e3f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c1045c7d0dfc98aeca4751769301515"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c1045c7d0dfc98aeca4751769301515"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>epk</b></td></tr>
+<tr class="memitem:a9c1045c7d0dfc98aeca4751769301515"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a9c1045c7d0dfc98aeca4751769301515">epk</a></td></tr>
 <tr class="separator:a9c1045c7d0dfc98aeca4751769301515"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31c6683531a0534531fb8226aaff7bae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31c6683531a0534531fb8226aaff7bae"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>epT</b></td></tr>
+<tr class="memitem:a31c6683531a0534531fb8226aaff7bae"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a31c6683531a0534531fb8226aaff7bae">epT</a></td></tr>
 <tr class="separator:a31c6683531a0534531fb8226aaff7bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p>Definition at line <a class="el" href="../../d6/d8a/auto__backprop_8h_source.html#l00062">62</a> of file <a class="el" href="../../d6/d8a/auto__backprop_8h_source.html">auto_backprop.h</a>.</p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="aa36cef011e271473d6495a00d61067a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef VectorXd(* FT::Opt::AutoBackProp::callback) (const VectorXd &amp;, shared_ptr&lt; CLabels &gt; &amp;, const vector&lt; float &gt; &amp;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d6/d8a/auto__backprop_8h_source.html#l00069">69</a> of file <a class="el" href="../../d6/d8a/auto__backprop_8h_source.html">auto_backprop.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae4a9783ba390b2637add44d5bbd3a127"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef VectorXd(* FT::Opt::AutoBackProp::callback2) (const VectorXd &amp;, const VectorXd &amp;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d6/d8a/auto__backprop_8h_source.html#l00071">71</a> of file <a class="el" href="../../d6/d8a/auto__backprop_8h_source.html">auto_backprop.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ae9a6acd4978d7671e6e7b018a83583e8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FT::Opt::AutoBackProp::AutoBackProp </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>scorer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iters</em> = <code>1000</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>n</em> = <code>0.1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a</em> = <code>0.9</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d5/d02/auto__backprop_8cc_source.html#l00016">16</a> of file <a class="el" href="../../d5/d02/auto__backprop_8cc_source.html">auto_backprop.cc</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a59ed6197552e46d725f418124c31ecc1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FT::Opt::AutoBackProp::backprop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/dfc/structFT_1_1Dat_1_1Trace.html">Trace</a> &amp;&#160;</td>
+          <td class="paramname"><em>f_stack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>program</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>end</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>Beta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">shared_ptr&lt; CLabels &gt; &amp;&#160;</td>
+          <td class="paramname"><em>yhat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> &amp;&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; float &gt;&#160;</td>
+          <td class="paramname"><em>sw</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compute gradients and update weights. </p>
+
+<p>Definition at line <a class="el" href="../../d5/d02/auto__backprop_8cc_source.html#l00202">202</a> of file <a class="el" href="../../d5/d02/auto__backprop_8cc_source.html">auto_backprop.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2e7e17e656a20ca20570449f904a5bf4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FT::Opt::AutoBackProp::backprop2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/dfc/structFT_1_1Dat_1_1Trace.html">Trace</a> &amp;&#160;</td>
+          <td class="paramname"><em>f_stack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>program</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>end</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>Beta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const VectorXd &amp;&#160;</td>
+          <td class="paramname"><em>yhat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> &amp;&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; float &gt;&#160;</td>
+          <td class="paramname"><em>sw</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compute gradients and update weights. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4b23f3d6ccef8051eb2a937c20d70d46"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; <a class="el" href="../../d2/dfc/structFT_1_1Dat_1_1Trace.html">Trace</a> &gt; FT::Opt::AutoBackProp::forward_prop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> &amp;&#160;</td>
+          <td class="paramname"><em>ind</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> &amp;&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MatrixXd &amp;&#160;</td>
+          <td class="paramname"><em>Phi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the f_stack. </p>
+
+<p>Definition at line <a class="el" href="../../d5/d02/auto__backprop_8cc_source.html#l00158">158</a> of file <a class="el" href="../../d5/d02/auto__backprop_8cc_source.html">auto_backprop.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3670ae7c220d56078ea21e3c7fc5f563"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FT::Opt::AutoBackProp::next_branch </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; <a class="el" href="../../dc/da7/structFT_1_1Opt_1_1BP__NODE.html">BP_NODE</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>executing</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; <a class="el" href="../../d2/dfb/classFT_1_1Pop_1_1Op_1_1Node.html">Node</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>bp_program</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; ArrayXd &gt; &amp;&#160;</td>
+          <td class="paramname"><em>derivatives</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Updates stacks to have proper value on top. </p>
+
+<p>Definition at line <a class="el" href="../../d5/d02/auto__backprop_8cc_source.html#l00171">171</a> of file <a class="el" href="../../d5/d02/auto__backprop_8cc_source.html">auto_backprop.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ade64420c4781f84b0c02a8d0aef04878"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FT::Opt::AutoBackProp::print_weights </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>program</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d5/d02/auto__backprop_8cc_source.html#l00037">37</a> of file <a class="el" href="../../d5/d02/auto__backprop_8cc_source.html">auto_backprop.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a054a27008fa34e7baaac6adf1bf8a62d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FT::Opt::AutoBackProp::run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> &amp;&#160;</td>
+          <td class="paramname"><em>ind</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> &amp;&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>adapt weights </p>
+
+<p>Definition at line <a class="el" href="../../d5/d02/auto__backprop_8cc_source.html#l00055">55</a> of file <a class="el" href="../../d5/d02/auto__backprop_8cc_source.html">auto_backprop.cc</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a34096b35343f747b73bd855bf9981a57"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FT::Opt::AutoBackProp::a</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d6/d8a/auto__backprop_8h_source.html#l00091">91</a> of file <a class="el" href="../../d6/d8a/auto__backprop_8h_source.html">auto_backprop.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a37c4d5f25510ce0fdc8c41e234f76cd2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#aa36cef011e271473d6495a00d61067a4">callback</a> FT::Opt::AutoBackProp::cost_func</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d6/d8a/auto__backprop_8h_source.html#l00093">93</a> of file <a class="el" href="../../d6/d8a/auto__backprop_8h_source.html">auto_backprop.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6d7a142281c2e04c0709cc564d4710a6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#ae4a9783ba390b2637add44d5bbd3a127">callback2</a> FT::Opt::AutoBackProp::cost_func2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d6/d8a/auto__backprop_8h_source.html#l00096">96</a> of file <a class="el" href="../../d6/d8a/auto__backprop_8h_source.html">auto_backprop.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0e885a8f5abe113dd85828275d27f8ac"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#aa36cef011e271473d6495a00d61067a4">callback</a> FT::Opt::AutoBackProp::d_cost_func</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d6/d8a/auto__backprop_8h_source.html#l00092">92</a> of file <a class="el" href="../../d6/d8a/auto__backprop_8h_source.html">auto_backprop.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4a3b874b3ead597a7fd5fc68b8042586"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#ae4a9783ba390b2637add44d5bbd3a127">callback2</a> FT::Opt::AutoBackProp::d_cost_func2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d6/d8a/auto__backprop_8h_source.html#l00095">95</a> of file <a class="el" href="../../d6/d8a/auto__backprop_8h_source.html">auto_backprop.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a86bb3c269b45acb65d23876cb7fe0971"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;string, <a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#aa36cef011e271473d6495a00d61067a4">callback</a>&gt; FT::Opt::AutoBackProp::d_score_hash</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d6/d8a/auto__backprop_8h_source.html#l00073">73</a> of file <a class="el" href="../../d6/d8a/auto__backprop_8h_source.html">auto_backprop.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9c1045c7d0dfc98aeca4751769301515"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FT::Opt::AutoBackProp::epk</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d6/d8a/auto__backprop_8h_source.html#l00099">99</a> of file <a class="el" href="../../d6/d8a/auto__backprop_8h_source.html">auto_backprop.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a31c6683531a0534531fb8226aaff7bae"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FT::Opt::AutoBackProp::epT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d6/d8a/auto__backprop_8h_source.html#l00100">100</a> of file <a class="el" href="../../d6/d8a/auto__backprop_8h_source.html">auto_backprop.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad7e85f1ce60578b9538ad2afac27e3f6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FT::Opt::AutoBackProp::iters</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d6/d8a/auto__backprop_8h_source.html#l00098">98</a> of file <a class="el" href="../../d6/d8a/auto__backprop_8h_source.html">auto_backprop.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad61b2d190afe1759e2bd331e4413b3d1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FT::Opt::AutoBackProp::n</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d6/d8a/auto__backprop_8h_source.html#l00090">90</a> of file <a class="el" href="../../d6/d8a/auto__backprop_8h_source.html">auto_backprop.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2544c0c8103dd368d60764a5895c7128"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;string, <a class="el" href="../../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#aa36cef011e271473d6495a00d61067a4">callback</a>&gt; FT::Opt::AutoBackProp::score_hash</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d6/d8a/auto__backprop_8h_source.html#l00074">74</a> of file <a class="el" href="../../d6/d8a/auto__backprop_8h_source.html">auto_backprop.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="../../d6/d8a/auto__backprop_8h_source.html">auto_backprop.h</a></li>
 <li><a class="el" href="../../d5/d02/auto__backprop_8cc_source.html">auto_backprop.cc</a></li>
 </ul>

@@ -132,6 +132,8 @@ Namespaces</h2></td></tr>
 <tr class="memitem:de/dcf/namespaceFT_1_1Eval"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/namespaceFT_1_1Eval.html">Eval</a></td></tr>
 <tr class="memdesc:de/dcf/namespaceFT_1_1Eval"><td class="mdescLeft">&#160;</td><td class="mdescRight">namespace containing various <a class="el" href="../../d6/d6f/classFT_1_1Eval_1_1Evaluation.html" title="evaluation mixin class for Feat ">Evaluation</a> classes used in <a class="el" href="../../db/dff/classFT_1_1Feat.html" title="main class for the Feat learner. ">Feat</a> <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d2/dbc/namespaceFT_1_1metrics"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dbc/namespaceFT_1_1metrics.html">metrics</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d3/d65/namespaceFT_1_1Model"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d65/namespaceFT_1_1Model.html">Model</a></td></tr>
 <tr class="memdesc:d3/d65/namespaceFT_1_1Model"><td class="mdescLeft">&#160;</td><td class="mdescRight">namespace containing <a class="el" href="../../dd/d6f/classFT_1_1Model_1_1ML.html" title="class that specifies the machine learning algorithm to pair with Feat. ">ML</a> methods used in <a class="el" href="../../db/dff/classFT_1_1Feat.html" title="main class for the Feat learner. ">Feat</a> <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,65 +172,237 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ad2fc36e4b6e3fb00796f049bd69a8dd1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad2fc36e4b6e3fb00796f049bd69a8dd1"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>tokenType</b> { <br />
-&#160;&#160;<b>population</b>, 
-<b>generation</b>, 
-<b>ml</b>, 
-<b>maxStall</b>, 
+<tr class="memitem:ad2fc36e4b6e3fb00796f049bd69a8dd1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d35/namespaceFT.html#ad2fc36e4b6e3fb00796f049bd69a8dd1">tokenType</a> { <br />
+&#160;&#160;<a class="el" href="../../d2/d35/namespaceFT.html#ad2fc36e4b6e3fb00796f049bd69a8dd1a2c5103e768629b170c26f72513d678ee">population</a>, 
+<a class="el" href="../../d2/d35/namespaceFT.html#ad2fc36e4b6e3fb00796f049bd69a8dd1a6c3efd26b4f29fbecb90f5c552677127">generation</a>, 
+<a class="el" href="../../d2/d35/namespaceFT.html#ad2fc36e4b6e3fb00796f049bd69a8dd1aa8382662608ce6422d9bb33d8363c59d">ml</a>, 
+<a class="el" href="../../d2/d35/namespaceFT.html#ad2fc36e4b6e3fb00796f049bd69a8dd1a8be347b2e6034ddd0cf4bc31627cffbb">maxStall</a>, 
 <br />
-&#160;&#160;<b>selection</b>, 
-<b>survival</b>, 
-<b>crossRate</b>, 
-<b>functions</b>, 
+&#160;&#160;<a class="el" href="../../d2/d35/namespaceFT.html#ad2fc36e4b6e3fb00796f049bd69a8dd1a1d63b5369acc8734888637fd311e6b11">selection</a>, 
+<a class="el" href="../../d2/d35/namespaceFT.html#ad2fc36e4b6e3fb00796f049bd69a8dd1a9d57e16482fa23f4309b4b576780d7ab">survival</a>, 
+<a class="el" href="../../d2/d35/namespaceFT.html#ad2fc36e4b6e3fb00796f049bd69a8dd1aad6f0603ffe475d7a364a8f9dabaf637">crossRate</a>, 
+<a class="el" href="../../d2/d35/namespaceFT.html#ad2fc36e4b6e3fb00796f049bd69a8dd1af003af67829c3b319ee44b5c289e6e02">functions</a>, 
 <br />
-&#160;&#160;<b>maxDepth</b>, 
-<b>maxDim</b>, 
-<b>erc</b>, 
-<b>objectives</b>, 
+&#160;&#160;<a class="el" href="../../d2/d35/namespaceFT.html#ad2fc36e4b6e3fb00796f049bd69a8dd1a894836b26030e0c2e8f30664bae803ce">maxDepth</a>, 
+<a class="el" href="../../d2/d35/namespaceFT.html#ad2fc36e4b6e3fb00796f049bd69a8dd1a242732965721e46f33794d8c59d93394">maxDim</a>, 
+<a class="el" href="../../d2/d35/namespaceFT.html#ad2fc36e4b6e3fb00796f049bd69a8dd1a98c7413cf89088146dfde486bc3e768f">erc</a>, 
+<a class="el" href="../../d2/d35/namespaceFT.html#ad2fc36e4b6e3fb00796f049bd69a8dd1a1ca99b3333835bc884d66195e3f80bb9">objectives</a>, 
 <br />
-&#160;&#160;<b>feedBack</b>, 
-<b>unknown</b>
+&#160;&#160;<a class="el" href="../../d2/d35/namespaceFT.html#ad2fc36e4b6e3fb00796f049bd69a8dd1ac1cfee813b3e7d8e323f5a4867c4f7ca">feedBack</a>, 
+<a class="el" href="../../d2/d35/namespaceFT.html#ad2fc36e4b6e3fb00796f049bd69a8dd1a49714b77dc61a663d6ee8d078ce43481">unknown</a>
 <br />
  }</td></tr>
 <tr class="separator:ad2fc36e4b6e3fb00796f049bd69a8dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e3c99088b60b1b4cdaee123ec99ae3c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e3c99088b60b1b4cdaee123ec99ae3c"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>vecType</b> { <br />
-&#160;&#160;<b>Integer</b>, 
-<b>UInteger</b>, 
-<b>Float</b>, 
-<b>Double</b>, 
+<tr class="memitem:a7e3c99088b60b1b4cdaee123ec99ae3c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d35/namespaceFT.html#a7e3c99088b60b1b4cdaee123ec99ae3c">vecType</a> { <br />
+&#160;&#160;<a class="el" href="../../d2/d35/namespaceFT.html#a7e3c99088b60b1b4cdaee123ec99ae3ca3e3b391cbc0b2f3fe05cd33fdf27ae29">Integer</a>, 
+<a class="el" href="../../d2/d35/namespaceFT.html#a7e3c99088b60b1b4cdaee123ec99ae3ca38badbed9578b08ba277bab37220dbcb">UInteger</a>, 
+<a class="el" href="../../d2/d35/namespaceFT.html#a7e3c99088b60b1b4cdaee123ec99ae3cab0d68fb04ac1833c7e5ae4bba8152e76">Float</a>, 
+<a class="el" href="../../d2/d35/namespaceFT.html#a7e3c99088b60b1b4cdaee123ec99ae3ca5d802eb732ca415f79ac2e81ed3c2c4d">Double</a>, 
 <br />
-&#160;&#160;<b>String</b>, 
-<b>Bool</b>
+&#160;&#160;<a class="el" href="../../d2/d35/namespaceFT.html#a7e3c99088b60b1b4cdaee123ec99ae3ca9cb98605d05fa6e801365883b6b2a8f5">String</a>, 
+<a class="el" href="../../d2/d35/namespaceFT.html#a7e3c99088b60b1b4cdaee123ec99ae3ca68f95be0d2092e9eae574412a7ce63b9">Bool</a>
 <br />
  }</td></tr>
 <tr class="separator:a7e3c99088b60b1b4cdaee123ec99ae3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab14499debd4fd568ae869b0d127250f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab14499debd4fd568ae869b0d127250f2"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>string2bool</b> (const std::string &amp;v)</td></tr>
+<tr class="memitem:ab14499debd4fd568ae869b0d127250f2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d35/namespaceFT.html#ab14499debd4fd568ae869b0d127250f2">string2bool</a> (const std::string &amp;v)</td></tr>
 <tr class="separator:ab14499debd4fd568ae869b0d127250f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4a237e5ca60b91dcd5c2ae6b61a6b22"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4a237e5ca60b91dcd5c2ae6b61a6b22"></a>
-tokenType&#160;</td><td class="memItemRight" valign="bottom"><b>getTokenType</b> (string &amp;token)</td></tr>
+<tr class="memitem:ad4a237e5ca60b91dcd5c2ae6b61a6b22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d35/namespaceFT.html#ad2fc36e4b6e3fb00796f049bd69a8dd1">tokenType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d35/namespaceFT.html#ad4a237e5ca60b91dcd5c2ae6b61a6b22">getTokenType</a> (string &amp;token)</td></tr>
 <tr class="separator:ad4a237e5ca60b91dcd5c2ae6b61a6b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a7ebb2c11cf06c655fc138dbfe63365f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ebb2c11cf06c655fc138dbfe63365f7"></a>
-static double&#160;</td><td class="memItemRight" valign="bottom"><b>NEAR_ZERO</b> = 0.0000001</td></tr>
+<tr class="memitem:a7ebb2c11cf06c655fc138dbfe63365f7"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d35/namespaceFT.html#a7ebb2c11cf06c655fc138dbfe63365f7">NEAR_ZERO</a> = 0.0000001</td></tr>
 <tr class="separator:a7ebb2c11cf06c655fc138dbfe63365f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae77877ad2b5e76ebfaacf9415673b323"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae77877ad2b5e76ebfaacf9415673b323"></a>
-static double&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_DBL</b> = std::numeric_limits&lt;double&gt;::max()</td></tr>
+<tr class="memitem:ae77877ad2b5e76ebfaacf9415673b323"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d35/namespaceFT.html#ae77877ad2b5e76ebfaacf9415673b323">MAX_DBL</a> = std::numeric_limits&lt;double&gt;::max()</td></tr>
 <tr class="separator:ae77877ad2b5e76ebfaacf9415673b323"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a248f7301a92cd80d7c492cc3d51ea7dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a248f7301a92cd80d7c492cc3d51ea7dc"></a>
-static double&#160;</td><td class="memItemRight" valign="bottom"><b>MIN_DBL</b> = std::numeric_limits&lt;double&gt;::lowest()</td></tr>
+<tr class="memitem:a248f7301a92cd80d7c492cc3d51ea7dc"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d35/namespaceFT.html#a248f7301a92cd80d7c492cc3d51ea7dc">MIN_DBL</a> = std::numeric_limits&lt;double&gt;::lowest()</td></tr>
 <tr class="separator:a248f7301a92cd80d7c492cc3d51ea7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>main <a class="el" href="../../db/dff/classFT_1_1Feat.html" title="main class for the Feat learner. ">Feat</a> namespace </p>
 <h2>TODO </h2>
 <p>Integrate vectorList Integrate pointers? TODO Make it so stops traversing once it hits a non-differentiable node and then goes upstream and finds another branch to traverse </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="ad2fc36e4b6e3fb00796f049bd69a8dd1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d2/d35/namespaceFT.html#ad2fc36e4b6e3fb00796f049bd69a8dd1">FT::tokenType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ad2fc36e4b6e3fb00796f049bd69a8dd1a2c5103e768629b170c26f72513d678ee"></a>population&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad2fc36e4b6e3fb00796f049bd69a8dd1a6c3efd26b4f29fbecb90f5c552677127"></a>generation&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad2fc36e4b6e3fb00796f049bd69a8dd1aa8382662608ce6422d9bb33d8363c59d"></a>ml&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad2fc36e4b6e3fb00796f049bd69a8dd1a8be347b2e6034ddd0cf4bc31627cffbb"></a>maxStall&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad2fc36e4b6e3fb00796f049bd69a8dd1a1d63b5369acc8734888637fd311e6b11"></a>selection&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad2fc36e4b6e3fb00796f049bd69a8dd1a9d57e16482fa23f4309b4b576780d7ab"></a>survival&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad2fc36e4b6e3fb00796f049bd69a8dd1aad6f0603ffe475d7a364a8f9dabaf637"></a>crossRate&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad2fc36e4b6e3fb00796f049bd69a8dd1af003af67829c3b319ee44b5c289e6e02"></a>functions&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad2fc36e4b6e3fb00796f049bd69a8dd1a894836b26030e0c2e8f30664bae803ce"></a>maxDepth&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad2fc36e4b6e3fb00796f049bd69a8dd1a242732965721e46f33794d8c59d93394"></a>maxDim&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad2fc36e4b6e3fb00796f049bd69a8dd1a98c7413cf89088146dfde486bc3e768f"></a>erc&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad2fc36e4b6e3fb00796f049bd69a8dd1a1ca99b3333835bc884d66195e3f80bb9"></a>objectives&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad2fc36e4b6e3fb00796f049bd69a8dd1ac1cfee813b3e7d8e323f5a4867c4f7ca"></a>feedBack&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad2fc36e4b6e3fb00796f049bd69a8dd1a49714b77dc61a663d6ee8d078ce43481"></a>unknown&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="../../db/de9/featcv_8h_source.html#l00033">33</a> of file <a class="el" href="../../db/de9/featcv_8h_source.html">featcv.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7e3c99088b60b1b4cdaee123ec99ae3c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d2/d35/namespaceFT.html#a7e3c99088b60b1b4cdaee123ec99ae3c">FT::vecType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a7e3c99088b60b1b4cdaee123ec99ae3ca3e3b391cbc0b2f3fe05cd33fdf27ae29"></a>Integer&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7e3c99088b60b1b4cdaee123ec99ae3ca38badbed9578b08ba277bab37220dbcb"></a>UInteger&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7e3c99088b60b1b4cdaee123ec99ae3cab0d68fb04ac1833c7e5ae4bba8152e76"></a>Float&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7e3c99088b60b1b4cdaee123ec99ae3ca5d802eb732ca415f79ac2e81ed3c2c4d"></a>Double&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7e3c99088b60b1b4cdaee123ec99ae3ca9cb98605d05fa6e801365883b6b2a8f5"></a>String&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7e3c99088b60b1b4cdaee123ec99ae3ca68f95be0d2092e9eae574412a7ce63b9"></a>Bool&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="../../db/de9/featcv_8h_source.html#l00050">50</a> of file <a class="el" href="../../db/de9/featcv_8h_source.html">featcv.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ad4a237e5ca60b91dcd5c2ae6b61a6b22"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d35/namespaceFT.html#ad2fc36e4b6e3fb00796f049bd69a8dd1">tokenType</a> FT::getTokenType </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>token</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d4/d34/featcv_8cc_source.html#l00017">17</a> of file <a class="el" href="../../d4/d34/featcv_8cc_source.html">featcv.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab14499debd4fd568ae869b0d127250f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FT::string2bool </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d4/d34/featcv_8cc_source.html#l00010">10</a> of file <a class="el" href="../../d4/d34/featcv_8cc_source.html">featcv.cc</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="ae77877ad2b5e76ebfaacf9415673b323"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FT::MAX_DBL = std::numeric_limits&lt;double&gt;::max()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d8/dc0/init_8h_source.html#l00038">38</a> of file <a class="el" href="../../d8/dc0/init_8h_source.html">init.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a248f7301a92cd80d7c492cc3d51ea7dc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FT::MIN_DBL = std::numeric_limits&lt;double&gt;::lowest()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d8/dc0/init_8h_source.html#l00039">39</a> of file <a class="el" href="../../d8/dc0/init_8h_source.html">init.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7ebb2c11cf06c655fc138dbfe63365f7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FT::NEAR_ZERO = 0.0000001</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d8/dc0/init_8h_source.html#l00037">37</a> of file <a class="el" href="../../d8/dc0/init_8h_source.html">init.h</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

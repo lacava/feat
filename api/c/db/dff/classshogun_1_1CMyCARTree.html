@@ -199,11 +199,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5267b5943eff38b25e88115b01a4b507"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af044b26506214f476b0c182e88626f0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classshogun_1_1CMyCARTree.html#af044b26506214f476b0c182e88626f0b">set_label_epsilon</a> (float64_t epsilon)</td></tr>
 <tr class="separator:af044b26506214f476b0c182e88626f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae700ef4d03a1f45da4b2db81fed10132"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae700ef4d03a1f45da4b2db81fed10132"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>pre_sort_features</b> (CFeatures *data, SGMatrix&lt; float64_t &gt; &amp;sorted_feats, SGMatrix&lt; index_t &gt; &amp;sorted_indices)</td></tr>
+<tr class="memitem:ae700ef4d03a1f45da4b2db81fed10132"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classshogun_1_1CMyCARTree.html#ae700ef4d03a1f45da4b2db81fed10132">pre_sort_features</a> (CFeatures *data, SGMatrix&lt; float64_t &gt; &amp;sorted_feats, SGMatrix&lt; index_t &gt; &amp;sorted_indices)</td></tr>
 <tr class="separator:ae700ef4d03a1f45da4b2db81fed10132"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb53d300185b39adc5f437273ac07ee0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb53d300185b39adc5f437273ac07ee0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_sorted_features</b> (SGMatrix&lt; float64_t &gt; &amp;sorted_feats, SGMatrix&lt; index_t &gt; &amp;sorted_indices)</td></tr>
+<tr class="memitem:aeb53d300185b39adc5f437273ac07ee0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classshogun_1_1CMyCARTree.html#aeb53d300185b39adc5f437273ac07ee0">set_sorted_features</a> (SGMatrix&lt; float64_t &gt; &amp;sorted_feats, SGMatrix&lt; index_t &gt; &amp;sorted_indices)</td></tr>
 <tr class="separator:aeb53d300185b39adc5f437273ac07ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a188eb408001bb7d7d38bda4819a49ce8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classshogun_1_1CMyCARTree.html#a188eb408001bb7d7d38bda4819a49ce8">feature_importances</a> ()</td></tr>
 <tr class="separator:a188eb408001bb7d7d38bda4819a49ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1630,6 +1628,40 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 
 </div>
 </div>
+<a class="anchor" id="ae700ef4d03a1f45da4b2db81fed10132"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMyCARTree::pre_sort_features </td>
+          <td>(</td>
+          <td class="paramtype">CFeatures *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SGMatrix&lt; float64_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sorted_feats</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SGMatrix&lt; index_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sorted_indices</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00310">310</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a7794ca48372f992ca77c877e95c3bdbd"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1953,6 +1985,34 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </dl>
 
 <p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00226">226</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aeb53d300185b39adc5f437273ac07ee0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMyCARTree::set_sorted_features </td>
+          <td>(</td>
+          <td class="paramtype">SGMatrix&lt; float64_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sorted_feats</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SGMatrix&lt; index_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sorted_indices</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00303">303</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -2473,7 +2533,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>shogun</b></li><li class="navelem"><a class="el" href="../../db/dff/classshogun_1_1CMyCARTree.html">CMyCARTree</a></li>
+    <li class="navelem"><a class="el" href="../../df/da7/namespaceshogun.html">shogun</a></li><li class="navelem"><a class="el" href="../../db/dff/classshogun_1_1CMyCARTree.html">CMyCARTree</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
