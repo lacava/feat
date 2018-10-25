@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['feat',['Feat',['../db/dff/classFT_1_1Feat.html#a3308ba35e02bbc07fb41a3286077c372',1,'FT::Feat']]],
+  ['feat',['Feat',['../db/dff/classFT_1_1Feat.html#ae06f06b1a719c586a94a660b363348a2',1,'FT::Feat']]],
   ['feature_5fimportances',['feature_importances',['../db/dff/classshogun_1_1CMyCARTree.html#a188eb408001bb7d7d38bda4819a49ce8',1,'shogun::CMyCARTree']]],
   ['fillvector',['fillVector',['../df/de2/classFT_1_1FeatCV.html#a086d37d05efd7508ff3111112afc734b',1,'FT::FeatCV::fillVector(vector&lt; string &gt; &amp;vec, string &amp;str)'],['../df/de2/classFT_1_1FeatCV.html#ac9ea3afe67ca72b49054e040f2e23d10',1,'FT::FeatCV::fillVector(vector&lt; T &gt; &amp;vec, string &amp;str, vecType type)']]],
   ['final_5fmodel',['final_model',['../db/dff/classFT_1_1Feat.html#a8b756059dbd7d8d0de509515cb90c3eb',1,'FT::Feat']]],

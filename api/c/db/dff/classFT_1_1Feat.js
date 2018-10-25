@@ -1,6 +1,6 @@
 var classFT_1_1Feat =
 [
-    [ "Feat", "db/dff/classFT_1_1Feat.html#a3308ba35e02bbc07fb41a3286077c372", null ],
+    [ "Feat", "db/dff/classFT_1_1Feat.html#ae06f06b1a719c586a94a660b363348a2", null ],
     [ "~Feat", "db/dff/classFT_1_1Feat.html#a7797e289bc355fd92d2d65ae0b3fae1d", null ],
     [ "final_model", "db/dff/classFT_1_1Feat.html#a8b756059dbd7d8d0de509515cb90c3eb", null ],
     [ "fit", "db/dff/classFT_1_1Feat.html#a61a241e42f7509019d929767e5cf176f", null ],

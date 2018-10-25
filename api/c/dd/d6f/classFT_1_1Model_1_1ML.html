@@ -22,8 +22,13 @@
 <script type="text/javascript">
   $(document).ready(function() { init_search(); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
-<link href="../../theme.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -34,6 +39,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Feat C++ API
    </div>
+   <div id="projectbrief">A feature engineering automation tool</div>
   </td>
  </tr>
  </tbody>
@@ -190,6 +196,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>class that specifies the machine learning algorithm to pair with <a class="el" href="../../db/dff/classFT_1_1Feat.html" title="main class for the Feat learner. ">Feat</a>. </p>
+
+<p>Definition at line <a class="el" href="../../d7/d60/ml_8h_source.html#l00060">60</a> of file <a class="el" href="../../d7/d60/ml_8h_source.html">ml.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a0a28a3dd57e3df2acbac55df092815fd"></a>
 <div class="memitem">
@@ -215,6 +223,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
       </table>
 </div><div class="memdoc">
 <p>use string to specify a desired <a class="el" href="../../dd/d6f/classFT_1_1Model_1_1ML.html" title="class that specifies the machine learning algorithm to pair with Feat. ">ML</a> algorithm from shogun.</p>
+
+<p>Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00014">14</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
 
 </div>
 </div>
@@ -267,6 +277,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
  ml: the ML model to be trained on X
 </pre><p>Output: </p><pre class="fragment"> yhat: n_samples vector of outputs
 </pre>
+<p>Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00199">199</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a538f5a07c3c2d866e915c12b2d65fc9c"></a>
@@ -283,11 +295,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 </div><div class="memdoc">
 <p>return weight vector from model.</p>
 
+<p>Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00126">126</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="../../d7/d60/ml_8h_source.html">ml.h</a></li>
-<li>ml.cc</li>
+<li><a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -22,8 +22,13 @@
 <script type="text/javascript">
   $(document).ready(function() { init_search(); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
-<link href="../../theme.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -34,6 +39,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Feat C++ API
    </div>
+   <div id="projectbrief">A feature engineering automation tool</div>
   </td>
  </tr>
  </tbody>
@@ -372,6 +378,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>holds the hyperparameters for <a class="el" href="../../db/dff/classFT_1_1Feat.html" title="main class for the Feat learner. ">Feat</a>. </p>
+
+<p>Definition at line <a class="el" href="../../da/d33/params_8h_source.html#l00023">23</a> of file <a class="el" href="../../da/d33/params_8h_source.html">params.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a210d5c0a83658a79572a9ef4c289e250"></a>
 <div class="memitem">
@@ -386,6 +394,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
       </table>
 </div><div class="memdoc">
 <p>checks initial parameter settings before training. make sure ml choice is valid for problem type. make sure scorer is set. for classification, check clases and find number. </p>
+
+<p>Definition at line <a class="el" href="../../d4/dc0/params_8cc_source.html#l00059">59</a> of file <a class="el" href="../../d4/dc0/params_8cc_source.html">params.cc</a>.</p>
 
 </div>
 </div>
@@ -407,6 +417,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <p>Input: </p><pre class="fragment">fs: string of comma-separated Node names
 </pre><p>Output: </p><pre class="fragment">modifies functions 
 </pre>
+<p>Definition at line <a class="el" href="../../d4/dc0/params_8cc_source.html#l00464">464</a> of file <a class="el" href="../../d4/dc0/params_8cc_source.html">params.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a8dd349f093773eaa0a13d3bf8dc3a7eb"></a>
@@ -425,6 +437,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 
 <p>set the objectives </p>
 <p>Input: obj, a comma-separated list of objectives</p>
+
+<p>Definition at line <a class="el" href="../../d4/dc0/params_8cc_source.html#l00532">532</a> of file <a class="el" href="../../d4/dc0/params_8cc_source.html">params.cc</a>.</p>
 
 </div>
 </div>
@@ -455,11 +469,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <p>set the terminals </p>
 <p>based on number of features.</p>
 
+<p>Definition at line <a class="el" href="../../d4/dc0/params_8cc_source.html#l00498">498</a> of file <a class="el" href="../../d4/dc0/params_8cc_source.html">params.cc</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="../../da/d33/params_8h_source.html">params.h</a></li>
-<li>params.cc</li>
+<li><a class="el" href="../../d4/dc0/params_8cc_source.html">params.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

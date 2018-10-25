@@ -22,8 +22,13 @@
 <script type="text/javascript">
   $(document).ready(function() { init_search(); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
-<link href="../../theme.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -34,6 +39,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Feat C++ API
    </div>
+   <div id="projectbrief">A feature engineering automation tool</div>
   </td>
  </tr>
  </tbody>
@@ -155,6 +161,8 @@ std::map&lt; string, funcPointer &gt;&#160;</td><td class="memItemRight" valign=
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>evaluation mixin class for <a class="el" href="../../db/dff/classFT_1_1Feat.html" title="main class for the Feat learner. ">Feat</a> </p>
+
+<p>Definition at line <a class="el" href="../../d3/df9/evaluation_8h_source.html#l00032">32</a> of file <a class="el" href="../../d3/df9/evaluation_8h_source.html">evaluation.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="aa09fa7676a80d875551f59773ad8772c"></a>
 <div class="memitem">
@@ -213,6 +221,8 @@ std::map&lt; string, funcPointer &gt;&#160;</td><td class="memItemRight" valign=
  params: feat parameters
 </pre><p>Output: </p><pre class="fragment"> modifies F and ind.fitness
 </pre>
+<p>Definition at line <a class="el" href="../../d5/d3a/evaluation_8cc_source.html#l00107">107</a> of file <a class="el" href="../../d5/d3a/evaluation_8cc_source.html">evaluation.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="adf1131f317555cdb528a7335052a5217"></a>
@@ -273,11 +283,13 @@ std::map&lt; string, funcPointer &gt;&#160;</td><td class="memItemRight" valign=
 </pre><p>Output: </p><pre class="fragment"> F is modified
  pop[:].fitness is modified
 </pre>
+<p>Definition at line <a class="el" href="../../d5/d3a/evaluation_8cc_source.html#l00029">29</a> of file <a class="el" href="../../d5/d3a/evaluation_8cc_source.html">evaluation.cc</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="../../d3/df9/evaluation_8h_source.html">evaluation.h</a></li>
-<li>evaluation.cc</li>
+<li><a class="el" href="../../d5/d3a/evaluation_8cc_source.html">evaluation.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

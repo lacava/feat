@@ -22,8 +22,13 @@
 <script type="text/javascript">
   $(document).ready(function() { init_search(); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
-<link href="../../theme.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -34,6 +39,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Feat C++ API
    </div>
+   <div id="projectbrief">A feature engineering automation tool</div>
   </td>
  </tr>
  </tbody>
@@ -310,6 +316,8 @@ vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class=
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>individual programs in the population </p>
+
+<p>Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00026">26</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="aeb3670b4fde6d7e6cf02ccb01860d7bc"></a>
 <div class="memitem">
@@ -330,6 +338,8 @@ vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class=
 the dimensionality is equal to the number of times the program arities are fully
 satisfied. 
 </pre>
+<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00467">467</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a3c4196f73a0117b5fd9154804fde081f"></a>
@@ -354,6 +364,8 @@ satisfied.
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>weight associated with node </dd></dl>
+
+<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00103">103</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
 </div>
 </div>
@@ -390,6 +402,8 @@ satisfied.
 <p>calculate program output matrix Phi </p>
 <p>d: Data structure  params: <a class="el" href="../../db/dff/classFT_1_1Feat.html" title="main class for the Feat learner. ">Feat</a> parameters  predict: if true, this guarantees nodes like split do not get trained </p><dl class="section return"><dt>Returns</dt><dd>Phi: n_features x n_samples transformation</dd></dl>
 
+<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00209">209</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a73142db2216802b17bb6871cf94cd328"></a>
@@ -425,6 +439,8 @@ satisfied.
 <p>calculate program output while maintaining stack trace </p>
 <p>X: n_features x n_samples data  Z: longitudinal nodes for samples  y: target data : <a class="el" href="../../db/dff/classFT_1_1Feat.html" title="main class for the Feat learner. ">Feat</a> parameters </p><dl class="section return"><dt>Returns</dt><dd>Phi: n_features x n_samples transformation</dd></dl>
 
+<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00289">289</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a680ca921b541ed7e59f600769761f330"></a>
@@ -452,6 +468,8 @@ satisfied.
 </div><div class="memdoc">
 <p>generates prediction on data using transformation and ML predict.  drop_idx if specified, the phi output at drop_idx is set to zero, effectively removing its output from the transformation. used in semantic crossover. </p>
 
+<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00158">158</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a8a029c303a5cbe1e7bca26f78a80adb5"></a>
@@ -470,6 +488,8 @@ satisfied.
 
 <p>set obj vector given a string of objective names </p>
 <p>Input: objectives: vector of strings naming objectives.</p>
+
+<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00525">525</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
 </div>
 </div>
@@ -490,11 +510,13 @@ satisfied.
 <p>setting and getting from individuals vector </p>
 <p>set rank </p>
 
+<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00015">15</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a></li>
-<li>individual.cc</li>
+<li><a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

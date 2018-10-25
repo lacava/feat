@@ -22,8 +22,13 @@
 <script type="text/javascript">
   $(document).ready(function() { init_search(); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
-<link href="../../theme.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -34,6 +39,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Feat C++ API
    </div>
+   <div id="projectbrief">A feature engineering automation tool</div>
   </td>
  </tr>
  </tbody>
@@ -202,6 +208,8 @@ vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>loc
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Defines a population of programs and functions for constructing them. </p>
+
+<p>Definition at line <a class="el" href="../../d2/d76/population_8h_source.html#l00027">27</a> of file <a class="el" href="../../d2/d76/population_8h_source.html">population.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a2632838ce6765104f4ceb1a183836d3d"></a>
 <div class="memitem">
@@ -220,6 +228,8 @@ vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>loc
 <p>adds a program to the population. </p>
 <p>adds ind to individuals, giving it an open location and bookeeping.</p>
 
+<p>Definition at line <a class="el" href="../../de/d3d/population_8cc_source.html#l00320">320</a> of file <a class="el" href="../../de/d3d/population_8cc_source.html">population.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a767c51caa1bfef89e35f848a6b561170"></a>
@@ -237,6 +247,8 @@ vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>loc
 
 <p>returns an open location </p>
 <p>grabs an open location and removes it from the vector.</p>
+
+<p>Definition at line <a class="el" href="../../de/d3d/population_8cc_source.html#l00292">292</a> of file <a class="el" href="../../de/d3d/population_8cc_source.html">population.cc</a>.</p>
 
 </div>
 </div>
@@ -273,6 +285,8 @@ vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>loc
 <p>initialize population of programs. </p>
 <p>create random programs in the population, seeded by initial model weights</p>
 
+<p>Definition at line <a class="el" href="../../de/d3d/population_8cc_source.html#l00234">234</a> of file <a class="el" href="../../de/d3d/population_8cc_source.html">population.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a3f5e2d3bb8e41c58e1d40ba7c0eecd0a"></a>
@@ -292,6 +306,8 @@ vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>loc
 <p>reduce programs to the indices in survivors. </p>
 <p>cull population down to survivor indices.</p>
 
+<p>Definition at line <a class="el" href="../../de/d3d/population_8cc_source.html#l00270">270</a> of file <a class="el" href="../../de/d3d/population_8cc_source.html">population.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a7826b6db18e972e67ac6355b123ac0b7"></a>
@@ -310,11 +326,13 @@ vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>loc
 <p>updates open locations to reflect population. </p>
 <p>updates open_loc to any locations in [0, 2*popsize-1] not in individuals.loc</p>
 
+<p>Definition at line <a class="el" href="../../de/d3d/population_8cc_source.html#l00301">301</a> of file <a class="el" href="../../de/d3d/population_8cc_source.html">population.cc</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="../../d2/d76/population_8h_source.html">population.h</a></li>
-<li>population.cc</li>
+<li><a class="el" href="../../de/d3d/population_8cc_source.html">population.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -22,8 +22,13 @@
 <script type="text/javascript">
   $(document).ready(function() { init_search(); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
-<link href="../../theme.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -34,6 +39,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Feat C++ API
    </div>
+   <div id="projectbrief">A feature engineering automation tool</div>
   </td>
  </tr>
  </tbody>
@@ -257,6 +263,8 @@ virtual <a class="el" href="../../d2/dfb/classFT_1_1Pop_1_1Op_1_1Node.html">Node
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents nodes in a program. </p>
+
+<p>Definition at line <a class="el" href="../../d1/d77/node_8h_source.html#l00043">43</a> of file <a class="el" href="../../d1/d77/node_8h_source.html">node.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a4cd7ae805f33eda3f87986648c3084ab"></a>
 <div class="memitem">
@@ -273,9 +281,11 @@ virtual <a class="el" href="../../d2/dfb/classFT_1_1Pop_1_1Op_1_1Node.html">Node
 </div><div class="memdoc">
 
 <p>evaluates complexity of this node in the context of its child nodes. </p>
-<p>Complexity of a node <img class="formulaInl" alt="$ n $" src="../../form_10.png"/> with <img class="formulaInl" alt="$ k $" src="../../form_11.png"/> arguments is defined as</p>
-<p><img class="formulaInl" alt="$ C(n) = c_n * (\sum_{a=1}^k C(a)) $" src="../../form_12.png"/></p>
+<p>Complexity of a node \( n \) with \( k \) arguments is defined as</p>
+<p>\( C(n) = c_n * (\sum_{a=1}^k C(a)) \)</p>
 <p>The complexity of a program is the complexity of its root/head node.</p>
+
+<p>Definition at line <a class="el" href="../../dc/dfd/node_8cc_source.html#l00046">46</a> of file <a class="el" href="../../dc/dfd/node_8cc_source.html">node.cc</a>.</p>
 
 </div>
 </div>
@@ -294,15 +304,17 @@ virtual <a class="el" href="../../d2/dfb/classFT_1_1Pop_1_1Op_1_1Node.html">Node
 </div><div class="memdoc">
 
 <p>evaluates complexity of this node in the context of its child nodes. </p>
-<p>Complexity of a node <img class="formulaInl" alt="$ n $" src="../../form_10.png"/> with <img class="formulaInl" alt="$ k $" src="../../form_11.png"/> arguments is defined as</p>
-<p><img class="formulaInl" alt="$ C(n) = c_n * (\sum_{a=1}^k C(a)) $" src="../../form_12.png"/></p>
+<p>Complexity of a node \( n \) with \( k \) arguments is defined as</p>
+<p>\( C(n) = c_n * (\sum_{a=1}^k C(a)) \)</p>
 <p>The complexity of a program is the complexity of its root/head node.</p>
+
+<p>Definition at line <a class="el" href="../../dc/dfd/node_8cc_source.html#l00069">69</a> of file <a class="el" href="../../dc/dfd/node_8cc_source.html">node.cc</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="../../d1/d77/node_8h_source.html">node.h</a></li>
-<li>node.cc</li>
+<li><a class="el" href="../../dc/dfd/node_8cc_source.html">node.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -4,7 +4,7 @@ var searchData=
   ['eval',['Eval',['../de/dcf/namespaceFT_1_1Eval.html',1,'FT']]],
   ['f',['F',['../db/dff/classFT_1_1Feat.html#a79c174854ebad874115b6d2625fad7c9',1,'FT::Feat::F()'],['../df/d42/structFT_1_1Dat_1_1Stacks.html#a7306341d3b94908e1f230b01dba15011',1,'FT::Dat::Stacks::f()']]],
   ['f_5fv',['F_v',['../db/dff/classFT_1_1Feat.html#a28308f4d3eea71af9e1bc78dab3f3689',1,'FT::Feat']]],
-  ['feat',['Feat',['../db/dff/classFT_1_1Feat.html#a3308ba35e02bbc07fb41a3286077c372',1,'FT::Feat']]],
+  ['feat',['Feat',['../db/dff/classFT_1_1Feat.html#ae06f06b1a719c586a94a660b363348a2',1,'FT::Feat']]],
   ['feat',['Feat',['../db/dff/classFT_1_1Feat.html',1,'FT']]],
   ['featcv',['FeatCV',['../df/de2/classFT_1_1FeatCV.html',1,'FT']]],
   ['featobjects',['FeatObjects',['../df/d04/structFT_1_1FeatObjects.html',1,'FT']]],

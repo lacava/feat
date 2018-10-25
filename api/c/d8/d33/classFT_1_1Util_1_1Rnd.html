@@ -22,8 +22,13 @@
 <script type="text/javascript">
   $(document).ready(function() { init_search(); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
-<link href="../../theme.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -34,6 +39,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Feat C++ API
    </div>
+   <div id="projectbrief">A feature engineering automation tool</div>
   </td>
  </tr>
  </tbody>
@@ -193,6 +199,8 @@ static <a class="el" href="../../d8/d33/classFT_1_1Util_1_1Rnd.html">Rnd</a> *&#
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Defines a multi-core random number generator and its operators. </p>
+
+<p>Definition at line <a class="el" href="../../d2/da9/rnd_8h_source.html#l00029">29</a> of file <a class="el" href="../../d2/da9/rnd_8h_source.html">rnd.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a3259fe980516157571c565c402d97f46"></a>
 <div class="memitem">
@@ -215,6 +223,8 @@ static <a class="el" href="../../d8/d33/classFT_1_1Util_1_1Rnd.html">Rnd</a> *&#
 </table>
 </div><div class="memdoc">
 <p>need a random generator for each core to do multiprocessing</p>
+
+<p>Definition at line <a class="el" href="../../dd/d3a/rnd_8cc_source.html#l00014">14</a> of file <a class="el" href="../../dd/d3a/rnd_8cc_source.html">rnd.cc</a>.</p>
 
 </div>
 </div>
@@ -243,6 +253,8 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>return a random element of a vector.</p>
+
+<p>Definition at line <a class="el" href="../../d2/da9/rnd_8h_source.html#l00068">68</a> of file <a class="el" href="../../d2/da9/rnd_8h_source.html">rnd.h</a>.</p>
 
 </div>
 </div>
@@ -281,6 +293,8 @@ template&lt;typename T , typename D &gt; </div>
 </div><div class="memdoc">
 <p>return a weighted random element of a vector</p>
 
+<p>Definition at line <a class="el" href="../../d2/da9/rnd_8h_source.html#l00079">79</a> of file <a class="el" href="../../d2/da9/rnd_8h_source.html">rnd.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a396a6b206ad1e8a20e7f4332f3b9b36e"></a>
@@ -298,11 +312,13 @@ template&lt;typename T , typename D &gt; </div>
 </div><div class="memdoc">
 <p>set seeds for each core's random number generator</p>
 
+<p>Definition at line <a class="el" href="../../dd/d3a/rnd_8cc_source.html#l00041">41</a> of file <a class="el" href="../../dd/d3a/rnd_8cc_source.html">rnd.cc</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="../../d2/da9/rnd_8h_source.html">rnd.h</a></li>
-<li>rnd.cc</li>
+<li><a class="el" href="../../dd/d3a/rnd_8cc_source.html">rnd.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

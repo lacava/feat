@@ -22,8 +22,13 @@
 <script type="text/javascript">
   $(document).ready(function() { init_search(); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
-<link href="../../theme.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -34,6 +39,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Feat C++ API
    </div>
+   <div id="projectbrief">A feature engineering automation tool</div>
   </td>
  </tr>
  </tbody>
@@ -293,17 +299,19 @@ During the tree growing process, we recursively split a node into left child and
  <br />
 . </p>
 <p>COST-COMPLEXITY PRUNING : <br />
-The maximal tree, <img class="formulaInl" alt="$T_max$" src="../../form_0.png"/> grown during tree growing process is bound to overfit. Hence pruning becomes necessary. Cost-Complexity pruning yields a list of subtrees of varying depths using the complexity normalized resubstitution error, <img class="formulaInl" alt="$R_\alpha(T)$" src="../../form_1.png"/>. The resubstitution error R(T) is a measure of how well a decision tree fits the training data. This measure favours larger trees over smaller ones. However, complexity normalized resubstitution error, adds penalty for increased complexity and hence counters overfitting.<br />
- <img class="formulaInl" alt="$R_\alpha(T)=R(T)+\alpha \times (numleaves)$" src="../../form_2.png"/> <br />
+The maximal tree, \(T_max\) grown during tree growing process is bound to overfit. Hence pruning becomes necessary. Cost-Complexity pruning yields a list of subtrees of varying depths using the complexity normalized resubstitution error, \(R_\alpha(T)\). The resubstitution error R(T) is a measure of how well a decision tree fits the training data. This measure favours larger trees over smaller ones. However, complexity normalized resubstitution error, adds penalty for increased complexity and hence counters overfitting.<br />
+ \(R_\alpha(T)=R(T)+\alpha \times (numleaves)\) <br />
 The best subtree among the list of subtrees can be chosen using cross validation or using best-fit in the test dataset. <br />
 cf. <a href="https://onlinecourses.science.psu.edu/stat557/node/93">https://onlinecourses.science.psu.edu/stat557/node/93</a> <br />
  <br />
  HANDLING MISSING VALUES : <br />
-While choosing the best split at a node, missing attribute values are left out. But data vectors with missing values of the best attribute chosen are sent to left child or right child using a surrogate split. A surrogate split is one that imitates the best split as closely as possible. While choosing a surrogate split, all splits alternative to the best split are scaned and the degree of closeness between the two is measured using a metric called predictive measure of association, <img class="formulaInl" alt="$\lambda_{i,j}$" src="../../form_3.png"/>. <br />
- <img class="formulaInl" alt="$\lambda_{i,j} = \frac{min(P_L,P_R)-(1-P_{L_iL_j}-P_{R_iR_j})}{min(P_L,P_R)}$" src="../../form_4.png"/> <br />
-where <img class="formulaInl" alt="$P_L$" src="../../form_5.png"/> and <img class="formulaInl" alt="$P_R$" src="../../form_6.png"/> are the node probabilities for the optimal split of node i into left and right nodes respectively, <img class="formulaInl" alt="$P_{L_iL_j}$" src="../../form_7.png"/> ( <img class="formulaInl" alt="$P_{R_iR_j}$" src="../../form_8.png"/> resp.) is the probability that both (optimal) node i and (surrogate) node j send an observation to the Left (Right resp.). <br />
+While choosing the best split at a node, missing attribute values are left out. But data vectors with missing values of the best attribute chosen are sent to left child or right child using a surrogate split. A surrogate split is one that imitates the best split as closely as possible. While choosing a surrogate split, all splits alternative to the best split are scaned and the degree of closeness between the two is measured using a metric called predictive measure of association, \(\lambda_{i,j}\). <br />
+ \(\lambda_{i,j} = \frac{min(P_L,P_R)-(1-P_{L_iL_j}-P_{R_iR_j})}{min(P_L,P_R)}\) <br />
+where \(P_L\) and \(P_R\) are the node probabilities for the optimal split of node i into left and right nodes respectively, \(P_{L_iL_j}\) ( \(P_{R_iR_j}\) resp.) is the probability that both (optimal) node i and (surrogate) node j send an observation to the Left (Right resp.). <br />
 We use best surrogate split, 2nd best surrogate split and so on until all data points with missing attributes in a node have been sent to left/right child. If all possible surrogate splits are used up but some data points are still to be assigned left/right child, majority rule is used, ie. the data points are assigned the child where majority of data points have gone from the node. <br />
 cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=%2Fcom.ibm.spss.statistics.help%2Falg_tree-cart.htm">http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=%2Fcom.ibm.spss.statistics.help%2Falg_tree-cart.htm</a> </p>
+
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00076">76</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a2e5bed54ada24d9ea1facbc25571286d"></a>
 <div class="memitem">
@@ -318,6 +326,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
       </table>
 </div><div class="memdoc">
 <p>default constructor </p>
+
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00056">56</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -351,6 +361,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00062">62</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -399,6 +411,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00070">70</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aead1f0cb2584dc0c26a6763ca101c5a5"></a>
@@ -422,6 +436,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </table>
 </div><div class="memdoc">
 <p>destructor </p>
+
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00081">81</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -467,6 +483,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>classification/regression labels of input data </dd></dl>
 
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01122">1122</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a2b765354b43119e5c98b08bb3ab73d21"></a>
@@ -498,6 +516,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>MulticlassLabels corresponding to labels of various test vectors </dd></dl>
 
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00115">115</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a600d66b60e54b46820a70172e67ac3bb"></a>
@@ -528,6 +548,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Regression output for various test vectors </dd></dl>
+
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00129">129</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -586,6 +608,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pointer to the root of the CART subtree </dd></dl>
 
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00330">330</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ae51cf1473b5fd493cec2a51982ce65ba"></a>
@@ -602,6 +626,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>clear feature types of various features </p>
 
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00215">215</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="abb9867ea5933443c992424128ac51641"></a>
@@ -617,6 +643,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
       </table>
 </div><div class="memdoc">
 <p>clear weights of data points </p>
+
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00198">198</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -729,6 +757,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>index to the best attribute </dd></dl>
 
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00547">547</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ab939611f760287f5aa1c1ae1ca7cc604"></a>
@@ -779,6 +809,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>error evaluated </dd></dl>
 
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01346">1346</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a55d6c9400c772eb50260f688bec58f4f"></a>
@@ -821,6 +853,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01455">1455</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a188eb408001bb7d7d38bda4819a49ce8"></a>
@@ -837,6 +871,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>WGL: return Gini importance scores for features </p>
 <p>Importance is defined as the sum across all splits in the tree of the information criterion brought about by each feature.</p>
+
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01544">1544</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -870,6 +906,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>alpha value corresponding to the weakest link in subtree </dd></dl>
 
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01434">1434</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a4fa218866aa1bbbd73347819f201c17c"></a>
@@ -900,6 +938,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01485">1485</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -958,6 +998,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>least squared deviation gain achieved after spliting the node </dd></dl>
 
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01070">1070</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a301aa09c8de426452e84d4873d3f8207"></a>
@@ -1008,6 +1050,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Gini gain achieved after spliting the node </dd></dl>
 
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01084">1084</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a205f214df47ab042b68eee9b9ca52e98"></a>
@@ -1023,6 +1067,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
       </table>
 </div><div class="memdoc">
 <p>set feature types of various features </p><dl class="section return"><dt>Returns</dt><dd>bool vector - true for nominal feature false for continuous feature type </dd></dl>
+
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00210">210</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1059,6 +1105,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>WGL: recursive function for getting node importance </p>
 
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01559">1559</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a5267b5943eff38b25e88115b01a4b507"></a>
@@ -1075,6 +1123,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>get label epsilon</p>
 <dl class="section return"><dt>Returns</dt><dd>equality range for regression labels </dd></dl>
+
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00050">50</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1100,6 +1150,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>get problem type - multiclass classification or regression </p><dl class="section return"><dt>Returns</dt><dd>PT_MULTICLASS or PT_REGRESSION </dd></dl>
 
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00042">42</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a5116f8fecf3b0aa893aca2ee15bd402e"></a>
@@ -1117,6 +1169,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 <p>get max allowed tree depth</p>
 <dl class="section return"><dt>Returns</dt><dd>max allowed tree depth </dd></dl>
 
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00232">232</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ad16c8800a81adb00b7a483e4c42e9b7d"></a>
@@ -1133,6 +1187,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>get min allowed node size</p>
 <dl class="section return"><dt>Returns</dt><dd>min allowed node size </dd></dl>
+
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00243">243</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1158,6 +1214,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>get name </p><dl class="section return"><dt>Returns</dt><dd>class name CARTree </dd></dl>
 
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00040">40</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ac386a652ca94926163d3d458d176a314"></a>
@@ -1174,6 +1232,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>get number of subsets used for cross validation</p>
 <dl class="section return"><dt>Returns</dt><dd>number of folds used in cross validation </dd></dl>
+
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00221">221</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1218,6 +1278,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>unique labels </dd></dl>
 
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00523">523</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a13249afc6623fd680c9128956d235f59"></a>
@@ -1233,6 +1295,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
       </table>
 </div><div class="memdoc">
 <p>get weights of data points </p><dl class="section return"><dt>Returns</dt><dd>vector of weights </dd></dl>
+
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00193">193</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1276,6 +1340,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Gini index of the node </dd></dl>
+
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01096">1096</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1362,6 +1428,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>vector denoting whether a data point goes to left child for all data points including ones with missing attributes </dd></dl>
 
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00933">933</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aa79603954bd95aba4c8e2c4e4dad4ca3"></a>
@@ -1447,6 +1515,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>vector denoting whether a data point goes to left child for all data points including ones with missing attributes </dd></dl>
 
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00990">990</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a638888affdd879c8fbb415c47bb11376"></a>
@@ -1470,6 +1540,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </table>
 </div><div class="memdoc">
 <p>initializes members of class </p>
+
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01511">1511</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1501,6 +1573,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true for valid labels, false for invalid labels </dd></dl>
+
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00105">105</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1552,6 +1626,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>least squares deviation of the data </dd></dl>
 
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01106">1106</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a7794ca48372f992ca77c877e95c3bdbd"></a>
@@ -1594,6 +1670,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01207">1207</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a998d65ab132d7335e58d0a47fdc73cd3"></a>
@@ -1625,6 +1703,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>CDynamicObjectArray of pruned trees </dd></dl>
+
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01384">1384</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1667,6 +1747,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00141">141</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aa916d908c1003eb01b9982f7f8d25009"></a>
@@ -1690,6 +1772,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00045">45</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ad872a50d77b5e1ed86e5b8dd7a7fe16c"></a>
@@ -1711,6 +1795,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00204">204</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1734,6 +1820,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00254">254</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1765,6 +1853,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00086">86</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a43775693c35c83e84848bb0da5433bfc"></a>
@@ -1786,6 +1876,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00100">100</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1810,6 +1902,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00237">237</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a5e735abb91299e3722718fa90b65a913"></a>
@@ -1832,6 +1926,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00248">248</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1856,6 +1952,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00226">226</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a17c18261734c33928e6e7c0907ed7ce2"></a>
@@ -1877,6 +1975,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00187">187</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1935,6 +2035,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>vector denoting whether a data point goes to left child for all data points including ones with missing attributes </dd></dl>
 
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00858">858</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aaad94f028b4c707ec6ca86226a7a4286"></a>
@@ -1966,6 +2068,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true </dd></dl>
 
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00260">260</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -1988,6 +2092,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>equality epsilon </p>
 
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00424">424</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a0177205fad542ccac5a2f199981e3fe3"></a>
@@ -2007,7 +2113,9 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
   </tr>
 </table>
 </div><div class="memdoc">
-<p>stores <img class="formulaInl" alt="$\alpha_k$" src="../../form_9.png"/> values evaluated in cost-complexity pruning </p>
+<p>stores \(\alpha_k\) values evaluated in cost-complexity pruning </p>
+
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00461">461</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
 
 </div>
 </div>
@@ -2030,6 +2138,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>flag indicating whether cross validation pruning has to be applied or not - false by default </p>
 
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00452">452</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="adb5488448adf329fe004865880cca2dd"></a>
@@ -2050,6 +2160,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </table>
 </div><div class="memdoc">
 <p>V in V-fold cross validation - 5 by default </p>
+
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00455">455</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
 
 </div>
 </div>
@@ -2072,6 +2184,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>equality range for regression labels </p>
 
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00428">428</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a557b7e78d423a5059c1790f3d125db8c"></a>
@@ -2092,6 +2206,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </table>
 </div><div class="memdoc">
 <p>max allowed depth of tree </p>
+
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00464">464</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
 
 </div>
 </div>
@@ -2114,6 +2230,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>minimum number of feature vectors required in a node </p>
 
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00467">467</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a465976f2b757a9f5f5c055955995ecc4"></a>
@@ -2134,6 +2252,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </table>
 </div><div class="memdoc">
 <p>Problem type : PT_MULTICLASS or PT_REGRESSION </p>
+
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00458">458</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
 
 </div>
 </div>
@@ -2156,6 +2276,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>vector depicting whether various feature dimensions are nominal or not </p>
 
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00431">431</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a35ff64f75c87966a5afffd21efd90c53"></a>
@@ -2176,6 +2298,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </table>
 </div><div class="memdoc">
 <p>If pre sorted features are used in train </p>
+
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00443">443</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
 
 </div>
 </div>
@@ -2198,6 +2322,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>sorted transposed features </p>
 
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00437">437</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ab4ed691ee0e00bc54855c71ad63d6188"></a>
@@ -2218,6 +2344,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </table>
 </div><div class="memdoc">
 <p>sorted indices </p>
+
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00440">440</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
 
 </div>
 </div>
@@ -2240,6 +2368,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>flag storing whether the type of various feature dimensions are specified using is_nominal_feature </p>
 
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00446">446</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a5b69f493ebe5d49b16b2506fa3ee4614"></a>
@@ -2260,6 +2390,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </table>
 </div><div class="memdoc">
 <p>weights of samples in training set </p>
+
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00434">434</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
 
 </div>
 </div>
@@ -2282,6 +2414,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>flag storing whether weights of samples are specified using weights vector </p>
 
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00449">449</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a470c47e13d68d22929c515489ecc3e7f"></a>
@@ -2302,6 +2436,8 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </table>
 </div><div class="memdoc">
 <p>min gain for splitting to be allowed </p>
+
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00421">421</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
 
 </div>
 </div>
@@ -2324,11 +2460,13 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>denotes that a feature in a vector is missing MISSING = NOT_A_NUMBER </p>
 
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00418">418</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a></li>
-<li>MyCARTree.cc</li>
+<li><a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -22,8 +22,13 @@
 <script type="text/javascript">
   $(document).ready(function() { init_search(); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
-<link href="../../theme.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -34,6 +39,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Feat C++ API
    </div>
+   <div id="projectbrief">A feature engineering automation tool</div>
   </td>
  </tr>
  </tbody>
@@ -120,7 +126,7 @@ $(document).ready(function(){initNavTree('db/dff/classFT_1_1Feat.html','../../')
   <tr class="even"><td class="entry"><a class="el" href="../../db/dff/classFT_1_1Feat.html#a263cb01cf8cc8ce43162b68cbf4bc547">best_score_v</a></td><td class="entry"><a class="el" href="../../db/dff/classFT_1_1Feat.html">FT::Feat</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="../../db/dff/classFT_1_1Feat.html#a79c174854ebad874115b6d2625fad7c9">F</a></td><td class="entry"><a class="el" href="../../db/dff/classFT_1_1Feat.html">FT::Feat</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../db/dff/classFT_1_1Feat.html#a28308f4d3eea71af9e1bc78dab3f3689">F_v</a></td><td class="entry"><a class="el" href="../../db/dff/classFT_1_1Feat.html">FT::Feat</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="../../db/dff/classFT_1_1Feat.html#a3308ba35e02bbc07fb41a3286077c372">Feat</a>(int pop_size=100, int gens=100, string ml=&quot;LinearRidgeRegression&quot;, bool classification=false, int verbosity=2, int max_stall=0, string sel=&quot;lexicase&quot;, string surv=&quot;nsga2&quot;, float cross_rate=0.5, char otype='a', string functions=&quot;&quot;, unsigned int max_depth=3, unsigned int max_dim=10, int random_state=0, bool erc=false, string obj=&quot;fitness,complexity&quot;, bool shuffle=false, double split=0.75, double fb=0.5, string scorer=&quot;&quot;, string feature_names=&quot;&quot;, bool backprop=false, int iters=10, double lr=0.1, int bs=100, int n_threads=0, bool hillclimb=false, string logfile=&quot;&quot;, int max_time=-1, bool use_batch=false, bool semantic_xo=false, int print_pop=0)</td><td class="entry"><a class="el" href="../../db/dff/classFT_1_1Feat.html">FT::Feat</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="../../db/dff/classFT_1_1Feat.html#ae06f06b1a719c586a94a660b363348a2">Feat</a>(int pop_size=100, int gens=100, string ml=&quot;LinearRidgeRegression&quot;, bool classification=false, int verbosity=2, int max_stall=0, string sel=&quot;lexicase&quot;, string surv=&quot;nsga2&quot;, float cross_rate=0.5, char otype='a', string functions=&quot;&quot;, unsigned int max_depth=3, unsigned int max_dim=10, int random_state=0, bool erc=false, string obj=&quot;fitness,complexity&quot;, bool shuffle=true, double split=0.75, double fb=0.5, string scorer=&quot;&quot;, string feature_names=&quot;&quot;, bool backprop=false, int iters=10, double lr=0.1, int bs=100, int n_threads=0, bool hillclimb=false, string logfile=&quot;&quot;, int max_time=-1, bool use_batch=false, bool semantic_xo=false, int print_pop=0)</td><td class="entry"><a class="el" href="../../db/dff/classFT_1_1Feat.html">FT::Feat</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../db/dff/classFT_1_1Feat.html#a8b756059dbd7d8d0de509515cb90c3eb">final_model</a>(DataRef &amp;d)</td><td class="entry"><a class="el" href="../../db/dff/classFT_1_1Feat.html">FT::Feat</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="../../db/dff/classFT_1_1Feat.html#a61a241e42f7509019d929767e5cf176f">fit</a>(MatrixXd &amp;X, VectorXd &amp;y, std::map&lt; string, std::pair&lt; vector&lt; ArrayXd &gt;, vector&lt; ArrayXd &gt; &gt; &gt; Z=std::map&lt; string, std::pair&lt; vector&lt; ArrayXd &gt;, vector&lt; ArrayXd &gt; &gt; &gt;())</td><td class="entry"><a class="el" href="../../db/dff/classFT_1_1Feat.html">FT::Feat</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../db/dff/classFT_1_1Feat.html#a6962f020ea1d291b30043e5b46daacea">fit</a>(double *X, int rowsX, int colsX, double *Y, int lenY)</td><td class="entry"><a class="el" href="../../db/dff/classFT_1_1Feat.html">FT::Feat</a></td><td class="entry"></td></tr>

@@ -22,8 +22,13 @@
 <script type="text/javascript">
   $(document).ready(function() { init_search(); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
-<link href="../../theme.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -34,6 +39,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Feat C++ API
    </div>
+   <div id="projectbrief">A feature engineering automation tool</div>
   </td>
  </tr>
  </tbody>
@@ -143,10 +149,10 @@ Collaboration diagram for FT::Feat:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3308ba35e02bbc07fb41a3286077c372"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3308ba35e02bbc07fb41a3286077c372"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#a3308ba35e02bbc07fb41a3286077c372">Feat</a> (int pop_size=100, int gens=100, string ml=&quot;LinearRidgeRegression&quot;, bool classification=false, int verbosity=2, int max_stall=0, string sel=&quot;lexicase&quot;, string surv=&quot;nsga2&quot;, float cross_rate=0.5, char otype='a', string functions=&quot;&quot;, unsigned int max_depth=3, unsigned int max_dim=10, int random_state=0, bool erc=false, string obj=&quot;fitness,complexity&quot;, bool shuffle=false, double split=0.75, double fb=0.5, string <a class="el" href="../../db/dff/classFT_1_1Feat.html#aa1d94c8c67ddc6e56a24e80970e8b6ce">scorer</a>=&quot;&quot;, string feature_names=&quot;&quot;, bool backprop=false, int iters=10, double lr=0.1, int bs=100, int n_threads=0, bool hillclimb=false, string <a class="el" href="../../db/dff/classFT_1_1Feat.html#aba080b7328bd2531c64c3e1fb742e448">logfile</a>=&quot;&quot;, int max_time=-1, bool use_batch=false, bool semantic_xo=false, int <a class="el" href="../../db/dff/classFT_1_1Feat.html#ae3dbfaf2093cfca7a19294317fdb64bf">print_pop</a>=0)</td></tr>
-<tr class="memdesc:a3308ba35e02bbc07fb41a3286077c372"><td class="mdescLeft">&#160;</td><td class="mdescRight">member initializer list constructor <br /></td></tr>
-<tr class="separator:a3308ba35e02bbc07fb41a3286077c372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae06f06b1a719c586a94a660b363348a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae06f06b1a719c586a94a660b363348a2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#ae06f06b1a719c586a94a660b363348a2">Feat</a> (int pop_size=100, int gens=100, string ml=&quot;LinearRidgeRegression&quot;, bool classification=false, int verbosity=2, int max_stall=0, string sel=&quot;lexicase&quot;, string surv=&quot;nsga2&quot;, float cross_rate=0.5, char otype='a', string functions=&quot;&quot;, unsigned int max_depth=3, unsigned int max_dim=10, int random_state=0, bool erc=false, string obj=&quot;fitness,complexity&quot;, bool shuffle=true, double split=0.75, double fb=0.5, string <a class="el" href="../../db/dff/classFT_1_1Feat.html#aa1d94c8c67ddc6e56a24e80970e8b6ce">scorer</a>=&quot;&quot;, string feature_names=&quot;&quot;, bool backprop=false, int iters=10, double lr=0.1, int bs=100, int n_threads=0, bool hillclimb=false, string <a class="el" href="../../db/dff/classFT_1_1Feat.html#aba080b7328bd2531c64c3e1fb742e448">logfile</a>=&quot;&quot;, int max_time=-1, bool use_batch=false, bool semantic_xo=false, int <a class="el" href="../../db/dff/classFT_1_1Feat.html#ae3dbfaf2093cfca7a19294317fdb64bf">print_pop</a>=0)</td></tr>
+<tr class="memdesc:ae06f06b1a719c586a94a660b363348a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">member initializer list constructor <br /></td></tr>
+<tr class="separator:ae06f06b1a719c586a94a660b363348a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ec3b484537655f2066ac982d2d24042"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ec3b484537655f2066ac982d2d24042"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#a9ec3b484537655f2066ac982d2d24042">set_pop_size</a> (int pop_size)</td></tr>
 <tr class="memdesc:a9ec3b484537655f2066ac982d2d24042"><td class="mdescLeft">&#160;</td><td class="mdescRight">set size of population <br /></td></tr>
@@ -579,6 +585,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../..
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>main class for the <a class="el" href="../../db/dff/classFT_1_1Feat.html" title="main class for the Feat learner. ">Feat</a> learner. </p>
 <p><a class="el" href="../../db/dff/classFT_1_1Feat.html" title="main class for the Feat learner. ">Feat</a> optimizes feature represenations for a given machine learning algorithm. It does so by using evolutionary computation to optimize a population of programs. Each program represents a set of feature transformations. </p>
+
+<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00058">58</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a61a241e42f7509019d929767e5cf176f"></a>
 <div class="memitem">
@@ -625,6 +633,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../..
 </ol>
 <p>&lt; log file stream </p>
 
+<p>Definition at line <a class="el" href="../../dc/d37/feat_8cc_source.html#l00354">354</a> of file <a class="el" href="../../dc/d37/feat_8cc_source.html">feat.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="af19e70b5bb10fb16c48e381093417c18"></a>
@@ -642,6 +652,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../..
 
 <p>add custom node into feat </p>
 <p>return data types for input parameters </p>
+
+<p>Definition at line <a class="el" href="../../dc/d37/feat_8cc_source.html#l00205">205</a> of file <a class="el" href="../../dc/d37/feat_8cc_source.html">feat.cc</a>.</p>
 
 </div>
 </div>
@@ -668,6 +680,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../..
 </div><div class="memdoc">
 <p>fits an ML model to the raw data as a starting point.</p>
 
+<p>Definition at line <a class="el" href="../../dc/d37/feat_8cc_source.html#l00655">655</a> of file <a class="el" href="../../dc/d37/feat_8cc_source.html">feat.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a6b71d9fd0bc2ac87563151d3392abe39"></a>
@@ -685,6 +699,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../..
 
 <p>prints population obj scores each generation </p>
 <p>&lt; log file stream </p>
+
+<p>Definition at line <a class="el" href="../../dc/d37/feat_8cc_source.html#l00979">979</a> of file <a class="el" href="../../dc/d37/feat_8cc_source.html">feat.cc</a>.</p>
 
 </div>
 </div>
@@ -721,11 +737,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../..
 <p>transform an input matrix using a program. </p>
 <p>Transforms input data according to ind or best ind, if ind is undefined.</p>
 
+<p>Definition at line <a class="el" href="../../dc/d37/feat_8cc_source.html#l00717">717</a> of file <a class="el" href="../../dc/d37/feat_8cc_source.html">feat.cc</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a></li>
-<li>feat.cc</li>
+<li><a class="el" href="../../dc/d37/feat_8cc_source.html">feat.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -22,8 +22,13 @@
 <script type="text/javascript">
   $(document).ready(function() { init_search(); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
-<link href="../../theme.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -34,6 +39,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Feat C++ API
    </div>
+   <div id="projectbrief">A feature engineering automation tool</div>
   </td>
  </tr>
  </tbody>
@@ -207,6 +213,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>register_parameters</
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>multiclass LibLinear wrapper. Uses Crammer-Singer formulation and gradient descent optimization algorithm implemented in the LibLinear library. Regularized bias support is added using stacking bias 'feature' to hyperplanes normal vectors. </p>
 <p>In case of small changes of C or particularly epsilon this class provides ability to save whole liblinear training state (i.e. W vector, gradients, etc) and re-use on next train() calls. This capability could be enabled using <a class="el" href="../../df/d62/classshogun_1_1CMyMulticlassLibLinear.html#afde39780a36c21c77564c0646f0eb58d">set_save_train_state()</a> method. Train state can be forced to clear using <a class="el" href="../../df/d62/classshogun_1_1CMyMulticlassLibLinear.html#ad55392a06667d448248e62aaed8c9343">reset_train_state()</a> method. </p>
+
+<p>Definition at line <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html#l00044">44</a> of file <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html">MyMulticlassLibLinear.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a2466910481f4b9c9a8f6ae2568f02a69"></a>
 <div class="memitem">
@@ -221,6 +229,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>register_parameters</
       </table>
 </div><div class="memdoc">
 <p>default constructor </p>
+
+<p>Definition at line <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html#l00015">15</a> of file <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html">MyMulticlassLibLinear.cc</a>.</p>
 
 </div>
 </div>
@@ -262,6 +272,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>register_parameters</
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html#l00026">26</a> of file <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html">MyMulticlassLibLinear.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a61338a4a829b9c2719216d7040b74d04"></a>
@@ -277,6 +289,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>register_parameters</
       </table>
 </div><div class="memdoc">
 <p>destructor </p>
+
+<p>Definition at line <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html#l00036">36</a> of file <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html">MyMulticlassLibLinear.cc</a>.</p>
 
 </div>
 </div>
@@ -303,6 +317,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>register_parameters</
 </div><div class="memdoc">
 <p>get C </p><dl class="section return"><dt>Returns</dt><dd>C value </dd></dl>
 
+<p>Definition at line <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html#l00061">61</a> of file <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html">MyMulticlassLibLinear.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a42edfd715e1ca92c4874326a0ae01761"></a>
@@ -326,6 +342,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>register_parameters</
 </table>
 </div><div class="memdoc">
 <p>get epsilon </p><dl class="section return"><dt>Returns</dt><dd>epsilon value </dd></dl>
+
+<p>Definition at line <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html#l00075">75</a> of file <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html">MyMulticlassLibLinear.cc</a>.</p>
 
 </div>
 </div>
@@ -351,6 +369,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>register_parameters</
 </div><div class="memdoc">
 <p>get max iter </p><dl class="section return"><dt>Returns</dt><dd>max iter value </dd></dl>
 
+<p>Definition at line <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html#l00121">121</a> of file <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html">MyMulticlassLibLinear.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a2da64768f0212634961711a5f1f457af"></a>
@@ -374,6 +394,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>register_parameters</
 </table>
 </div><div class="memdoc">
 <p>get name </p>
+
+<p>Definition at line <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html#l00044">44</a> of file <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html">MyMulticlassLibLinear.cc</a>.</p>
 
 </div>
 </div>
@@ -399,6 +421,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>register_parameters</
 </div><div class="memdoc">
 <p>get save train state </p><dl class="section return"><dt>Returns</dt><dd>save_train_state value </dd></dl>
 
+<p>Definition at line <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html#l00104">104</a> of file <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html">MyMulticlassLibLinear.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ae236b1e97c7e02a1412b28b34395614f"></a>
@@ -414,6 +438,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>register_parameters</
       </table>
 </div><div class="memdoc">
 <p>get support vector indices </p><dl class="section return"><dt>Returns</dt><dd>support vector indices </dd></dl>
+
+<p>Definition at line <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html#l00136">136</a> of file <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html">MyMulticlassLibLinear.cc</a>.</p>
 
 </div>
 </div>
@@ -439,6 +465,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>register_parameters</
 </div><div class="memdoc">
 <p>get use bias </p><dl class="section return"><dt>Returns</dt><dd>use_bias value </dd></dl>
 
+<p>Definition at line <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html#l00088">88</a> of file <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html">MyMulticlassLibLinear.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ad61c704bf1d009f2e1e5e9d8fa6f6e10"></a>
@@ -463,6 +491,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>register_parameters</
 </div><div class="memdoc">
 <p>obtain regularizer (w0) matrix </p>
 
+<p>Definition at line <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html#l00248">248</a> of file <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html">MyMulticlassLibLinear.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ad55392a06667d448248e62aaed8c9343"></a>
@@ -478,6 +508,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>register_parameters</
       </table>
 </div><div class="memdoc">
 <p>reset train state </p>
+
+<p>Definition at line <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html#l00124">124</a> of file <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html">MyMulticlassLibLinear.cc</a>.</p>
 
 </div>
 </div>
@@ -509,6 +541,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>register_parameters</
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html#l00052">52</a> of file <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html">MyMulticlassLibLinear.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a2d4381556521d787e7ab2f8af58c367a"></a>
@@ -538,6 +572,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>register_parameters</
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html#l00066">66</a> of file <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html">MyMulticlassLibLinear.cc</a>.</p>
 
 </div>
 </div>
@@ -569,6 +605,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>register_parameters</
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html#l00112">112</a> of file <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html">MyMulticlassLibLinear.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="afde39780a36c21c77564c0646f0eb58d"></a>
@@ -598,6 +636,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>register_parameters</
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html#l00096">96</a> of file <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html">MyMulticlassLibLinear.cc</a>.</p>
 
 </div>
 </div>
@@ -629,6 +669,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>register_parameters</
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html#l00080">80</a> of file <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html">MyMulticlassLibLinear.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="abd0a2b4b2110f1da1d34b535088397a5"></a>
@@ -654,6 +696,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>register_parameters</
 </div><div class="memdoc">
 <p>train machine </p>
 
+<p>Definition at line <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html#l00183">183</a> of file <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html">MyMulticlassLibLinear.cc</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -676,6 +720,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>register_parameters</
 </div><div class="memdoc">
 <p>regularization constant for each machine </p>
 
+<p>Definition at line <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html#l00146">146</a> of file <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html">MyMulticlassLibLinear.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a07d68d1ef9c905eb7b225e9a4c71bcce"></a>
@@ -696,6 +742,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>register_parameters</
 </table>
 </div><div class="memdoc">
 <p>tolerance </p>
+
+<p>Definition at line <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html#l00149">149</a> of file <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html">MyMulticlassLibLinear.h</a>.</p>
 
 </div>
 </div>
@@ -718,6 +766,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>register_parameters</
 </div><div class="memdoc">
 <p>max number of iterations </p>
 
+<p>Definition at line <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html#l00152">152</a> of file <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html">MyMulticlassLibLinear.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a694d882da74786559c3e421dca9f0e59"></a>
@@ -738,6 +788,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>register_parameters</
 </table>
 </div><div class="memdoc">
 <p>save train state </p>
+
+<p>Definition at line <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html#l00158">158</a> of file <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html">MyMulticlassLibLinear.h</a>.</p>
 
 </div>
 </div>
@@ -760,6 +812,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>register_parameters</
 </div><div class="memdoc">
 <p>solver state </p>
 
+<p>Definition at line <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html#l00161">161</a> of file <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html">MyMulticlassLibLinear.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ad995efd678f81f35d347f3b2f970ce86"></a>
@@ -781,11 +835,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>register_parameters</
 </div><div class="memdoc">
 <p>use bias </p>
 
+<p>Definition at line <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html#l00155">155</a> of file <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html">MyMulticlassLibLinear.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html">MyMulticlassLibLinear.h</a></li>
-<li>MyMulticlassLibLinear.cc</li>
+<li><a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html">MyMulticlassLibLinear.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

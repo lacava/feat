@@ -115,7 +115,7 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../api/c/">C++ API</a>
+    <a class="" href="../../api/c/launchpad/">C++ API</a>
                 </li>
                 <li class="">
                     
@@ -176,7 +176,7 @@
                 <h1 id="using-the-archive">Using the Archive<a class="headerlink" href="#using-the-archive" title="Permanent link">&para;</a></h1>
 <p>In this example, we apply Feat to a regression problem and visualize the archive of representations. </p>
 <p><em>Note: this code uses the <a href="https://github.com/EpistasisLab/penn-ml-benchmarks/">Penn ML Benchmark Suite</a> to fetch data. You can install it using <code>pip install pmlb</code>.</em></p>
-<p>Also available as a <a href="../archive.ipynb">notebook</a></p>
+<p>Also available as a <a href="http://github.com/lacava/feat/blob/master/docs/examples/archive.ipynb">notebook</a></p>
 <h2 id="training-feat">Training Feat<a class="headerlink" href="#training-feat" title="Permanent link">&para;</a></h2>
 <p>First, we import the data and create a train-test split.</p>
 <pre><code class="python">from pmlb import fetch_data
@@ -322,8 +322,13 @@ plt.show()
 </code></pre>
 
 <p>This produces the figure below. Note that ElasticNet produces a similar test score to the linear representation
-in Feat&rsquo;s archive, and that Random Forest&rsquo;s test score is near the representation [tanh(x_0)][tanh(x_1)]. The
-validation curve shows how models begin to overfit as complexity grows.</p>
+in Feat&rsquo;s archive, and that Random Forest&rsquo;s test score is near the representation 
+$[(x_2 + x_0)][(x1-x_3)][\sin(x)]$.</p>
+<p>The best model, marked with a square, is selected from the validation curve (blue line). The validation curve 
+shows how models begin to overfit as complexity grows. By visualizing the archive, we can see that a lower 
+complexity model (the representation beginning with $relu(x_3)$) achieves nearly as good of a validation score. 
+In this case it may be preferable to choose that representation instead. We can also see that the validation scores
+in general oscillate around the test score of the final model. </p>
 <p><img alt="Feat archive" src="../archive_example.svg" /></p>
               
             </div>
@@ -332,7 +337,7 @@ validation curve shows how models begin to overfit as complexity grows.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../api/python/api_py/" class="btn btn-neutral float-right" title="Python API">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../api/c/launchpad/" class="btn btn-neutral float-right" title="C++ API">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../ex_command_line/" class="btn btn-neutral" title="Command line"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -366,12 +371,14 @@ validation curve shows how models begin to overfit as complexity grows.</p>
         <span><a href="../ex_command_line/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../../api/python/api_py/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../api/c/launchpad/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
     <script>var base_url = '../..';</script>
     <script src="../../js/theme.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
+      <script src="../../mathjaxhelper.js" defer></script>
       <script src="../../search/main.js" defer></script>
 
 </body>

@@ -22,8 +22,13 @@
 <script type="text/javascript">
   $(document).ready(function() { init_search(); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
-<link href="../../theme.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -34,6 +39,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Feat C++ API
    </div>
+   <div id="projectbrief">A feature engineering automation tool</div>
   </td>
  </tr>
  </tbody>
@@ -159,6 +165,8 @@ float64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>structure to store data of a node of CART. This can be used as a template type in TreeMachineNode class. CART algorithm uses nodes of type CTreeMachineNode&lt;CARTreeNodeData&gt; </p>
+
+<p>Definition at line <a class="el" href="../../de/d81/MyCARTreeNodeData_8h_source.html#l00050">50</a> of file <a class="el" href="../../de/d81/MyCARTreeNodeData_8h_source.html">MyCARTreeNodeData.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a4109bab773c5d688922143ec12b20ad7"></a>
 <div class="memitem">
@@ -173,6 +181,8 @@ float64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
       </table>
 </div><div class="memdoc">
 <p>constructor </p>
+
+<p>Definition at line <a class="el" href="../../de/dbc/MyCARTreeNodeData_8cc_source.html#l00038">38</a> of file <a class="el" href="../../de/dbc/MyCARTreeNodeData_8cc_source.html">MyCARTreeNodeData.cc</a>.</p>
 
 </div>
 </div>
@@ -205,6 +215,8 @@ float64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="../../de/dbc/MyCARTreeNodeData_8cc_source.html#l00051">51</a> of file <a class="el" href="../../de/dbc/MyCARTreeNodeData_8cc_source.html">MyCARTreeNodeData.cc</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -219,6 +231,8 @@ float64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 </div><div class="memdoc">
 <p>classifying attribute </p>
 
+<p>Definition at line <a class="el" href="../../de/d81/MyCARTreeNodeData_8h_source.html#l00053">53</a> of file <a class="el" href="../../de/d81/MyCARTreeNodeData_8h_source.html">MyCARTreeNodeData.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a6ceffaa2e9c35da3ba6cf8168e776f07"></a>
@@ -231,6 +245,8 @@ float64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
       </table>
 </div><div class="memdoc">
 <p>classification/regression label of data </p>
+
+<p>Definition at line <a class="el" href="../../de/d81/MyCARTreeNodeData_8h_source.html#l00059">59</a> of file <a class="el" href="../../de/d81/MyCARTreeNodeData_8h_source.html">MyCARTreeNodeData.h</a>.</p>
 
 </div>
 </div>
@@ -245,6 +261,8 @@ float64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 </div><div class="memdoc">
 <p>number of leaves in the subtree beginning at this node </p>
 
+<p>Definition at line <a class="el" href="../../de/d81/MyCARTreeNodeData_8h_source.html#l00071">71</a> of file <a class="el" href="../../de/d81/MyCARTreeNodeData_8h_source.html">MyCARTreeNodeData.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="afe68e3fe805ff0e926663ab96eef6419"></a>
@@ -257,6 +275,8 @@ float64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
       </table>
 </div><div class="memdoc">
 <p>total weight of training samples passing through this node </p>
+
+<p>Definition at line <a class="el" href="../../de/d81/MyCARTreeNodeData_8h_source.html#l00062">62</a> of file <a class="el" href="../../de/d81/MyCARTreeNodeData_8h_source.html">MyCARTreeNodeData.h</a>.</p>
 
 </div>
 </div>
@@ -271,6 +291,8 @@ float64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 </div><div class="memdoc">
 <p>feature value(s) required to move into this node </p>
 
+<p>Definition at line <a class="el" href="../../de/d81/MyCARTreeNodeData_8h_source.html#l00056">56</a> of file <a class="el" href="../../de/d81/MyCARTreeNodeData_8h_source.html">MyCARTreeNodeData.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aadcf5cdeb59e80bb6babeebb436a2deb"></a>
@@ -283,6 +305,8 @@ float64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
       </table>
 </div><div class="memdoc">
 <p>total weight of misclassified samples in subtree/ weighted sum of squared deviation in case of regression </p>
+
+<p>Definition at line <a class="el" href="../../de/d81/MyCARTreeNodeData_8h_source.html#l00068">68</a> of file <a class="el" href="../../de/d81/MyCARTreeNodeData_8h_source.html">MyCARTreeNodeData.h</a>.</p>
 
 </div>
 </div>
@@ -297,11 +321,13 @@ float64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 </div><div class="memdoc">
 <p>total weight of misclassified samples in node/ weighted sum of squared deviation in case of regression </p>
 
+<p>Definition at line <a class="el" href="../../de/d81/MyCARTreeNodeData_8h_source.html#l00065">65</a> of file <a class="el" href="../../de/d81/MyCARTreeNodeData_8h_source.html">MyCARTreeNodeData.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="../../de/d81/MyCARTreeNodeData_8h_source.html">MyCARTreeNodeData.h</a></li>
-<li>MyCARTreeNodeData.cc</li>
+<li><a class="el" href="../../de/dbc/MyCARTreeNodeData_8cc_source.html">MyCARTreeNodeData.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
