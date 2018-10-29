@@ -14,12 +14,13 @@
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../css/extra.css" rel="stylesheet">
   
   <script>
     // Current page data
     var mkdocs_page_name = "Command line";
-    var mkdocs_page_input_path = "examples/ex_command_line.md";
-    var mkdocs_page_url = null;
+    var mkdocs_page_input_path = "examples/command_line.md";
+    var mkdocs_page_url = "/feat/examples/command_line/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js" defer></script>
@@ -75,7 +76,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../../guide/configuration/">Configuring Feat</a>
+    <a class="" href="../../guide/configuration/">Configuration</a>
                 </li>
     </ul>
 	    </li>
@@ -95,10 +96,6 @@
         
             <li><a class="toctree-l4" href="#enc-problem">ENC problem</a></li>
         
-            <li><a class="toctree-l4" href="#tab-delimited-csv-files">tab-delimited csv files</a></li>
-        
-            <li><a class="toctree-l4" href="#feat-cross-validator">Feat Cross Validator</a></li>
-        
         </ul>
     
 
@@ -106,7 +103,11 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../archive/">Using the archive</a>
+    <a class="" href="../archive/">Using the Archive</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../longitudinal/">Longitudinal data</a>
                 </li>
     </ul>
 	    </li>
@@ -165,7 +166,7 @@
     <li>Command line</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/lacava/feat/edit/master/docs/examples/ex_command_line.md"
+        <a href="https://github.com/lacava/feat/edit/master/docs/examples/command_line.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -247,29 +248,6 @@ predicting with best_ind
 test score: 4.24600e+00
 done!
 </code></pre>
-<h3 id="tab-delimited-csv-files">tab-delimited csv files<a class="headerlink" href="#tab-delimited-csv-files" title="Permanent link">&para;</a></h3>
-<p>When using tab-delimited csv files as input, specify <code>-sep \\t</code> or <code>-sep "\t"</code> at the command line. </p>
-<h3 id="feat-cross-validator">Feat Cross Validator<a class="headerlink" href="#feat-cross-validator" title="Permanent link">&para;</a></h3>
-<p>The cross-validation version of Feat named <code>feat_cv</code> is also built and present in the build/ directory. For cross validation, there are several hyperparameters of Feat that can be tuned: </p>
-<ul>
-<li>pop_size</li>
-<li>generations</li>
-<li>ml</li>
-<li>max_stall</li>
-<li>selection</li>
-<li>survival</li>
-<li>cross_rate</li>
-<li>functions</li>
-<li>max_depth</li>
-<li>max_dim</li>
-<li>erc</li>
-<li>objectives</li>
-<li>feedback</li>
-</ul>
-<p>There are 2 ways to set the hyper parameters for feat_cv. The first method is to define a string in <code>cv_main.cc</code> file and pass that to the feat_cv constructor. See <code>cv_main.cc</code> for details. </p>
-<p>The second method is to create a input file containing group of parameters and pass the filepath using <code>-infile</code> flag. Check featcvinput.txt for a sample input file. The input file contains a string similar to the one in <code>cv_main.cc</code>.</p>
-<p>The general structure of input file is
-<code>[{'token1': (val1, val2, val3), 'token2': (val1, val2)}, {'token1': (val1, val2, val3), 'token2': (val1, val2)}]</code></p>
               
             </div>
           </div>
@@ -277,10 +255,10 @@ done!
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../archive/" class="btn btn-neutral float-right" title="Using the archive">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../archive/" class="btn btn-neutral float-right" title="Using the Archive">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../guide/configuration/" class="btn btn-neutral" title="Configuring Feat"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../guide/configuration/" class="btn btn-neutral" title="Configuration"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   

@@ -14,12 +14,13 @@
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../css/extra.css" rel="stylesheet">
   
   <script>
     // Current page data
     var mkdocs_page_name = "Data";
     var mkdocs_page_input_path = "guide/data.md";
-    var mkdocs_page_url = null;
+    var mkdocs_page_url = "/feat/guide/data/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js" defer></script>
@@ -74,11 +75,20 @@
     <a class="current" href="./">Data</a>
     <ul class="subnav">
             
+    <li class="toctree-l3"><a href="#typical-use-case">Typical use case</a></li>
+    
+
+    <li class="toctree-l3"><a href="#command-line">Command line</a></li>
+    
+
+    <li class="toctree-l3"><a href="#longitudinal-data">Longitudinal data</a></li>
+    
+
     </ul>
                 </li>
                 <li class="">
                     
-    <a class="" href="../configuration/">Configuring Feat</a>
+    <a class="" href="../configuration/">Configuration</a>
                 </li>
     </ul>
 	    </li>
@@ -89,11 +99,15 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../examples/ex_command_line/">Command line</a>
+    <a class="" href="../../examples/command_line/">Command line</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../examples/archive/">Using the archive</a>
+    <a class="" href="../../examples/archive/">Using the Archive</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../examples/longitudinal/">Longitudinal data</a>
                 </li>
     </ul>
 	    </li>
@@ -162,7 +176,63 @@
           <div role="main">
             <div class="section">
               
-                <p>Coming soon</p>
+                <p>Feat handles continuous, categorical and boolean data types, as well as sequential (i.e. longitudinal) data. 
+By default, FEAT will attempt to infer these data types automatically from the input data. However,
+the user may also specify types in the C++ API. </p>
+<h2 id="typical-use-case">Typical use case<a class="headerlink" href="#typical-use-case" title="Permanent link">&para;</a></h2>
+<p>For traditional ML tasks, the user specifies data and trains an estimator like so:</p>
+<pre><code>Feat est;
+est.fit(X,y)
+</code></pre>
+
+<p>What types are <code>X</code> and <code>y</code>? </p>
+<ul>
+<li><em>Python</em>: Like sklearn, FEAT expects <code>X</code> to be a 2d numpy array, and <code>y</code> to be a 1d numpy array. </li>
+<li><em>C++</em>: FEAT expects <code>X</code> to be a 2d Eigen <code>ArrayXd</code>, and <code>y</code> to be a 1d Eigen <code>VectorXd</code>.</li>
+</ul>
+<h2 id="command-line">Command line<a class="headerlink" href="#command-line" title="Permanent link">&para;</a></h2>
+<p>FEAT can learn from a <code>.csv</code> or <code>.tsv</code> file. In those cases, the target column <strong>must</strong> be labelled one 
+of the following:</p>
+<ul>
+<li>class</li>
+<li>target</li>
+<li>label</li>
+</ul>
+<p>To use tab-separated data, specify <code>-sep \\t</code> at the command line.</p>
+<h2 id="longitudinal-data">Longitudinal data<a class="headerlink" href="#longitudinal-data" title="Permanent link">&para;</a></h2>
+<p>Longitudinal data is handled by passing a file of longitudinal data with an identifier that associates
+each entry with a row of <code>X</code>. The longitudinal data should have the following format: </p>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>date</th>
+<th>name</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>365</td>
+<td>BloodPressure</td>
+<td>128</td>
+</tr>
+</tbody>
+</table>
+<p>Each measurement has a unique identifier (<code>id</code>), an integer <code>date</code>, a string <code>name</code>,
+and a <code>value</code>. </p>
+<p>The ids are used to associate rows of data with rows/samples in <code>X</code>. To do so, the
+user inputs a numpy array of the same length as <code>X</code>, where each value corresponds
+to the <code>id</code> value in the longitudinal data associated with that row of <code>X</code>. </p>
+<p>For example, </p>
+<pre><code class="python">zfile = 'longitudinal.csv'
+ids = np.array([1, ...]) 
+est.fit(X,y,zfile,ids)
+</code></pre>
+
+<p>This means that <code>id=1</code> associates all data in <code>Z</code> with id 1 with the first row of <code>X</code> and <code>y</code>.</p>
+<p>See <a href="../../examples/longitudinal/">here</a> for an example.</p>
               
             </div>
           </div>
@@ -170,7 +240,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../configuration/" class="btn btn-neutral float-right" title="Configuring Feat">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../configuration/" class="btn btn-neutral float-right" title="Configuration">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../basics/" class="btn btn-neutral" title="Basics"><span class="icon icon-circle-arrow-left"></span> Previous</a>

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Longitudinal data - Feat</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../css/extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Longitudinal data";
+    var mkdocs_page_input_path = "examples/longitudinal.md";
+    var mkdocs_page_url = "/feat/examples/longitudinal/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/c++.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Feat</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Introduction</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../install/">Installation</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">User Guide</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../guide/basics/">Basics</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../guide/data/">Data</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../guide/configuration/">Configuration</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Examples</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../command_line/">Command line</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../archive/">Using the Archive</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Longitudinal data</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#visualizing-the-transformation-with-t-sne">Visualizing the transformation with t-SNE</a></li>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">API</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../api/python/api_py/">Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../api/c/">C++</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../contributing/">Contribute</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://github.com/lacava/feat/blob/master/LICENSE">License</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Feat</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Examples &raquo;</li>
+        
+      
+    
+    <li>Longitudinal data</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/lacava/feat/edit/master/docs/examples/longitudinal.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>This example demonstrates how to do cross validation with longitudinal data. </p>
+<p><a href="http://github.com/lacava/feat/blob/master/examples/longitudinal/">View source</a></p>
+<p>First, we generate some example data and store it. Let&rsquo;s imagine we have patient data from a 
+hospital. This means we have measurements from different visits, with different numbers of 
+measurements from different patients collected in non-uniform intervals. </p>
+<p>In this example, we make up a classification rule that says that each patient with an 
+increasing body mass index (BMI) and a high maximum glucose level in their blood panel will be
+assigned as a case (class = 1). </p>
+<pre><code class="python">import numpy as np
+import pandas as pd
+from scipy.stats import rv_continuous, rv_discrete
+
+def make_classification(pdict, data_long):
+    &quot;&quot;&quot;return a classification&quot;&quot;&quot;
+    # if patient has a max glucose higher than 0.6 and a bmi slope &gt; 0, classify true
+    ld = [d for d in data_long if d['id'] == pdict['id']]
+    bmis = []
+    dates = []
+    glucmax = 0
+    for d in ld:
+        if d['name'] == 'bmi':
+            bmis.append(d['value'])
+            dates.append(d['date'])
+        elif d['name'] == 'glucose':
+            glucmax = max(glucmax, d['value'])
+    bmis = np.array(bmis)
+
+    dates = np.array(dates)
+    bmislope = np.cov(bmis,dates,ddof=0)[0,1]/np.var(dates) 
+    return 1 if bmislope &gt; 0.0 and glucmax &gt; 0.8 else 0
+
+if __name__ == '__main__':
+    np.random.seed(42)
+    # generate data
+    ptid = np.arange(1000)
+    measurements=['bmi','age','glucose']
+    data=[]
+    data_long=[]
+
+    for p in ptid:
+        # tabular data
+        pdict = {}
+        pdict['id']=p
+        pdict['sex']=np.random.randint(0,2)
+        pdict['race']=np.random.randint(0,6)
+        data.append(pdict)
+        # long data 
+        age = np.random.randint(18,85)
+        date = np.random.randint(1000,5000)
+
+        for visit in np.arange(np.random.randint(1,20)):
+
+            age = age + np.random.randint(1,4) 
+            date = date + np.random.randint(365,3*365) 
+
+            for m in measurements:
+                plongdict={}
+                plongdict['id'] = p
+                plongdict['name']=m
+                plongdict['date']=date 
+
+                if m == 'bmi':
+                    plongdict['value'] = int(visit*np.random.randn()) + 40
+                elif m == 'age':
+                    plongdict['value'] = age
+                elif m == 'glucose': 
+                    plongdict['value'] = np.random.rand() 
+
+                data_long.append(plongdict)
+
+        pdict['class']= make_classification(pdict, data_long) # np.random.randint(0,2)
+    df = pd.DataFrame.from_records(data, index='id', columns=['id','sex','race','class'])
+    df_long = pd.DataFrame.from_records(data_long, index='id', columns=['id','name','date','value'])
+    df.sort_index(axis=0,inplace=True)   
+    df.to_csv('d_example_patients.csv')
+    print(np.sum(df['class']==0),'controls,',np.sum(df['class']==1),'cases')
+    #shuffle rows
+    df_long.to_csv('d_example_patients_long.csv')
+</code></pre>
+
+<p>Next we set up the learner. We need to declare the longitudinal operators we want to search over. 
+They are defined as a comma-delimited list of strings using the <code>functions</code> argument. In this case, 
+the operators on the second row of the declaration below all operate on longitudinal data.</p>
+<pre><code class="python">import pandas as pd
+
+import numpy as np
+
+from feat import Feat
+from sklearn.model_selection import StratifiedKFold
+
+df = pd.read_csv('d_example_patients.csv')
+df.drop('id',axis=1,inplace=True)
+X = df.drop('class',axis=1).values
+y = df['class'].values
+zfile = 'd_example_patients_long.csv'
+kf = StratifiedKFold(n_splits=3)
+kf.get_n_splits(X)
+
+clf = Feat(max_depth=5,
+           max_dim=min(50,2*X.shape[1]),
+           gens = 20,
+           pop_size = 100,
+           verbosity=1,
+           shuffle=True,
+           ml='LR',
+           classification=True,
+           feature_names = ','.join(df.drop('class',axis=1).columns),
+           functions=&quot;+,-,*,/,exp,log,and,or,not,=,&lt;,&lt;=,&gt;,&gt;=,ite,split,split_c,&quot;
+                     &quot;mean,median,max,min,variance,skew,kurtosis,slope,count&quot;,
+           backprop=True,
+           iters=10,
+           random_state=42)
+</code></pre>
+
+<p>Now we train a model using Kfold cross validation. </p>
+<pre><code class="python">scores=[]
+
+for train_idx, test_idx in kf.split(X,y):
+    # print('train_idx:',train_idx)
+    clf.fit(X[train_idx],y[train_idx],zfile,train_idx)
+    scores.append(clf.score(X[test_idx],y[test_idx],zfile,test_idx))
+
+print('scores:',scores)
+</code></pre>
+
+<p>The output looks like this:</p>
+<pre><code>reading d_example_patients_long.csv...
+read 30717 lines of d_example_patients_long.csv
+stored 20532 lines, skipped 10185
+Completed 100% [================================================================================]
+reading d_example_patients_long.csv...
+read 30717 lines of d_example_patients_long.csv
+stored 10185 lines, skipped 20532
+reading d_example_patients_long.csv...
+read 30717 lines of d_example_patients_long.csv
+stored 20100 lines, skipped 10617
+Completed 100% [================================================================================]
+reading d_example_patients_long.csv...
+read 30717 lines of d_example_patients_long.csv
+stored 10617 lines, skipped 20100
+reading d_example_patients_long.csv...
+read 30717 lines of d_example_patients_long.csv
+stored 20802 lines, skipped 9915
+Completed 100% [================================================================================]
+reading d_example_patients_long.csv...
+read 30717 lines of d_example_patients_long.csv
+stored 9915 lines, skipped 20802
+scores: [18.820954588679307, 18.151251136485943, 16.59542398484813]
+</code></pre>
+<p>Now let&rsquo;s fit a model to all the data and try to interpret it. </p>
+<pre><code class="python">print('fitting longer to all data...')
+clf.gens = 20
+clf.verbosity = 2
+clf.fit(X,y,zfile,np.arange(len(X)))
+print('model:',clf.get_model())
+
+</code></pre>
+
+<p>The final output shows</p>
+<pre><code>Generation 19/20 [//////////////////////////////////////////////////]
+Min Loss    Median Loss Median (Max) Size   Time (s)
+6.88749e-01 6.91510e-01 4 (8)       2.93839
+Representation Pareto Front--------------------------------------
+Rank    Complexity  Loss    Representation
+1   1   7.08447e-01     [sex]
+1   2   6.92324e-01     [max(z_glucose)]
+1   4   6.91872e-01     [max(z_glucose)][max(z_glucose)]
+1   6   6.91510e-01     [max(z_glucose)][max(z_glucose)][min(z_bmi)]
+1   8   6.91262e-01     [slope(z_bmi)]
+1   10  6.90427e-01     [max(z_glucose)][slope(z_bmi)]
+1   12  6.89915e-01     [max(z_glucose)][slope(z_bmi)][min(z_bmi)]
+1   14  6.89534e-01     [max(z_glucose)][max(z_glucose)][min(z_bmi)][slope(z_bmi)]
+1   18  6.89386e-01     [slope(z_bmi)][max(z_glucose)][slope(z_bmi)]
+1   20  6.88826e-01     [slope(z_bmi)][max(z_glucose)][min(z_bmi)][slope(z_bmi)]
+1   26  6.88749e-01     [slope(z_bmi)][max(z_glucose)][slope(z_bmi)][slope(z_bmi)]
+
+
+finished
+best training representation: [slope(z_bmi)][max(z_glucose)][slope(z_bmi)][slope(z_bmi)]
+train score: 0.688749
+updating best..
+best validation representation: [slope(z_bmi)][max(z_glucose)][slope(z_bmi)][slope(z_bmi)]
+validation score: 0.687426
+final_model score: 0.688002
+model: Feature  Weight
+slope(z_bmi)    -1.018687
+slope(z_bmi)    -1.018687
+slope(z_bmi)    -1.018687
+max(z_glucose)  -0.715629
+</code></pre>
+<p>Here our final representation is composed of <code>slope(z_bmi)</code> and <code>max(z_glucose)</code>, both of which 
+we know to be correct features for this simulated dataset. Note that we get two redundant features
+in our model which are artifacts of training with logistic regression. In this case they do not
+affect the quality of the model and can be removed. </p>
+<h2 id="visualizing-the-transformation-with-t-sne">Visualizing the transformation with t-SNE<a class="headerlink" href="#visualizing-the-transformation-with-t-sne" title="Permanent link">&para;</a></h2>
+<p>We can also visualize the resultant representation using something like t-SNE. First, we grab the 
+transform of the data from the fitted model. </p>
+<pre><code class="python">Phi = clf.transform(X,zfile,np.arange(len(X)))
+</code></pre>
+
+<p>Then we use t-SNE to visualize the transformations. </p>
+<pre><code class="python"># use t-SNE to visualize transformation
+import sklearn
+from sklearn.manifold import TSNE
+import matplotlib.pyplot as plt
+import seaborn as sns
+import matplotlib.patheffects as PathEffects
+
+proj = TSNE(random_state=42).fit_transform(Phi)
+
+def scatter(x, colors):
+    # We choose a color palette with seaborn.
+    palette = np.array(sns.color_palette(&quot;cividis&quot;, 2))
+
+    # We create a scatter plot.
+    f = plt.figure(figsize=(8, 8))
+    ax = plt.subplot(aspect='equal')
+    sc = ax.scatter(x[:,0], x[:,1], lw=0, s=40,
+                    c=palette[colors.astype(np.int)])
+    ax.axis('square')
+    ax.axis('off')
+    ax.axis('tight')
+
+    # We add the labels for each digit.
+    txts = []
+    for i in range(2):
+        # Position of each label.
+        xtext, ytext = np.median(x[colors == i, :], axis=0)
+        txt = ax.text(xtext, ytext, str(i), fontsize=24)
+        txt.set_path_effects([
+            PathEffects.Stroke(linewidth=5, foreground=&quot;w&quot;),
+            PathEffects.Normal()])
+        txts.append(txt)
+
+    return f, ax, sc, txts
+
+scatter(proj,y)
+plt.savefig('tsne_transformation.svg', dpi=120)
+</code></pre>
+
+<p>This gives us the graph below. </p>
+<p><img alt="t-SNE visualization" src="tsne_transformation.svg" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../api/python/api_py/" class="btn btn-neutral float-right" title="Python">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../archive/" class="btn btn-neutral" title="Using the Archive"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/lacava/feat/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../archive/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../api/python/api_py/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
+      <script src="../../mathjaxhelper.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

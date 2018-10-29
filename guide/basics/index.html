@@ -14,12 +14,13 @@
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../css/extra.css" rel="stylesheet">
   
   <script>
     // Current page data
     var mkdocs_page_name = "Basics";
     var mkdocs_page_input_path = "guide/basics.md";
-    var mkdocs_page_url = null;
+    var mkdocs_page_url = "/feat/guide/basics/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js" defer></script>
@@ -70,6 +71,18 @@
     <a class="current" href="./">Basics</a>
     <ul class="subnav">
             
+    <li class="toctree-l3"><a href="#representation-learning">Representation Learning</a></li>
+    
+
+    <li class="toctree-l3"><a href="#approach">Approach</a></li>
+    
+
+    <li class="toctree-l3"><a href="#feature-representation">Feature representation</a></li>
+    
+
+    <li class="toctree-l3"><a href="#selection-and-archiving">Selection and Archiving</a></li>
+    
+
     </ul>
                 </li>
                 <li class="">
@@ -78,7 +91,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../configuration/">Configuring Feat</a>
+    <a class="" href="../configuration/">Configuration</a>
                 </li>
     </ul>
 	    </li>
@@ -89,11 +102,15 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../examples/ex_command_line/">Command line</a>
+    <a class="" href="../../examples/command_line/">Command line</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../examples/archive/">Using the archive</a>
+    <a class="" href="../../examples/archive/">Using the Archive</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../examples/longitudinal/">Longitudinal data</a>
                 </li>
     </ul>
 	    </li>
@@ -162,7 +179,44 @@
           <div role="main">
             <div class="section">
               
-                <p>Coming soon</p>
+                <p>This section describes the basic approach used by FEAT. A more detailed description, along with experiments, 
+is available in <a href="https://arxiv.org/abs/1807.00981">this preprint.</a></p>
+<h2 id="representation-learning">Representation Learning<a class="headerlink" href="#representation-learning" title="Permanent link">&para;</a></h2>
+<p>The goal of representation learning in regression or classification is to learn a new representation of your data that makes it easier to model. As an eample, consider the figure below<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>, where each point is a sample belonging to one of 4 colored classes. Here, we want to learn the equations on the axes of the right plot (labelled on the axes), which will make it easier classify the data belonging to each class.   </p>
+<p><img alt="Representation Learning Example" src="../rep_learning_demo_2d.svg" />
+<em>(Left) raw data. (Right) Data after transformation according to a 2d representation shown on the axes<sup id="fnref2:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>.</em></p>
+<p>It&rsquo;s worth noting that the representation in the right panel will be easier for certain machine learning methods to classify, and harder for others. For this reason we&rsquo;ve written FEAT to wrap around the Shogun ML toolbox, which means it can learn representations for different ML approaches. The default approach is linear and logistic regression, but currently decision trees (CART), support vector machines (SVM) and random forests are also supported. </p>
+<h2 id="approach">Approach<a class="headerlink" href="#approach" title="Permanent link">&para;</a></h2>
+<p>FEAT is a wrapper-based learning method that trains ML methods on a population of representations, and optimizes the representations to produce the lowest error. FEAT uses a typical $\mu$ + $\lambda$ evolutionary updating scheme, where $\mu=\lambda=P$. The method optimizes a population of potential representations, $N = {n_1\;\dots\;n_P}$, where $n$ is an ``individual&rdquo; in the population, iterating through these steps: </p>
+<ul>
+<li>Fit a linear model $\hat{y} = \mathbf{x}^T\hat{\beta}$. Create an initial population $N$ consisting of this initial representation, $\mathbf{\phi} = \mathbf{x}$, along with $P-1$ randomly generated representations that sample $\mathbf{x}$ proportionally to $\hat{\beta}$. </li>
+<li>While the stop criterion is not met: <ul>
+<li>Select parents  $P \subseteq N$ using a selection algorithm. </li>
+<li>Apply variation operators to parents to generate $P$ offspring $O$; $N = N \cup O$ </li>
+<li>Reduce $N$ to $P$ individuals using a survival algorithm.  </li>
+</ul>
+</li>
+<li>Select and return $n \in N$ with the lowest error on a hold-out validation set. </li>
+</ul>
+<p>Individuals are evaluated using an initial forward pass, after which each representation is used to fit a linear model using ridge regression<sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup>. The weights of the differentiable features in the representation are then updated using stochastic gradient descent.  </p>
+<h2 id="feature-representation">Feature representation<a class="headerlink" href="#feature-representation" title="Permanent link">&para;</a></h2>
+<p>FEAT is designed with interpretability in mind. To this end, the representations it learns are sets of equations. The equations are composed of basic operations, including arithmetic, logical functions, control flow and heuristic spits. FEAT also supports many statistical operators for handling sequential data. </p>
+<h2 id="selection-and-archiving">Selection and Archiving<a class="headerlink" href="#selection-and-archiving" title="Permanent link">&para;</a></h2>
+<p>By default, FEAT uses lexicase selection<sup id="fnref2:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup> as the selection operation and NSGA-II for survival. This allows FEAT to maintain an archive of accuracy-complexity tradeoffs to aid in interpretability. FEAT also supports simulated annealing, tournament selection and random search.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>La Cava, W., Silva, S., Danai, K., Spector, L., Vanneschi, L., &amp; Moore, J. H. (2018). Multidimensional genetic programming for multiclass classification. Swarm and Evolutionary Computation.&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Hoerl, A. E., &amp; Kennard, R. W. (1970). Ridge regression: Biased estimation for nonorthogonal problems. Technometrics, 12(1), 55–67.&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>La Cava, W., Helmuth, T., Spector, L., &amp; Moore, J. H. (2018). A probabilistic and multi-objective analysis of lexicase selection and ε-lexicase selection. Evolutionary computation, 1-28.&#160;<a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
               
             </div>
           </div>
