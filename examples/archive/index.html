@@ -1,330 +1,700 @@
+
+
+
+
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-  <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Using the Archive - Feat</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
-
-  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-  <link href="../../css/extra.css" rel="stylesheet">
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "Using the Archive";
-    var mkdocs_page_input_path = "examples/archive.md";
-    var mkdocs_page_url = "/feat/examples/archive/";
-  </script>
-  
-  <script src="../../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/c++.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
-  
-</head>
-
-<body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-
+<html lang="en" class="no-js">
+  <head>
     
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-      <div class="wy-side-nav-search">
-        <a href="../.." class="icon icon-home"> Feat</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
-</div>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Feature Engineering Automation Tool">
+      
+      
+        <link rel="canonical" href="https://lacava.github.io/feat/examples/archive/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.6">
+    
+    
+      
+        <title>Using the Archive - Feat</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="white" data-md-color-accent="deep-purple">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#using-the-archive" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://lacava.github.io/feat/" title="Feat" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
       </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-	  
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            <li class="toctree-l1">
-		
-    <a class="" href="../..">Introduction</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../../install/">Installation</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">User Guide</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../../guide/basics/">Basics</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../guide/data/">Data</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../guide/configuration/">Configuration</a>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Examples</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../command_line/">Command line</a>
-                </li>
-                <li class=" current">
-                    
-    <a class="current" href="./">Using the Archive</a>
-    <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#using-the-archive">Using the Archive</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#training-feat">Training Feat</a></li>
-        
-            <li><a class="toctree-l4" href="#visualizing-the-archive">Visualizing the Archive</a></li>
-        
-        </ul>
-    
-
-    </ul>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../longitudinal/">Longitudinal data</a>
-                </li>
-    </ul>
-	    </li>
+              <span class="md-header-nav__topic">
+                Feat
+              </span>
+              <span class="md-header-nav__topic">
+                Using the Archive
+              </span>
+            
           
-            <li class="toctree-l1">
-		
-    <span class="caption-text">API</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../../api/python/api_py/">Python</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../api/c/">C++</a>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../../contributing/">Contribute</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="https://github.com/lacava/feat/blob/master/LICENSE">License</a>
-	    </li>
-          
-        </ul>
+        </div>
       </div>
-      &nbsp;
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../..">Feat</a>
-      </nav>
-
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="../..">Docs</a> &raquo;</li>
-    
-      
+      <div class="md-flex__cell md-flex__cell--shrink">
         
-          <li>Examples &raquo;</li>
-        
-      
-    
-    <li>Using the Archive</li>
-    <li class="wy-breadcrumbs-aside">
-      
-        <a href="https://github.com/lacava/feat/edit/master/docs/examples/archive.md"
-          class="icon icon-github"> Edit on GitHub</a>
-      
-    </li>
-  </ul>
-  <hr/>
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-          <div role="main">
-            <div class="section">
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/lacava/feat/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://lacava.github.io/feat/" title="Feat" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Feat
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/lacava/feat/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../install/" title="Installation" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      User Guide
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guide/basics/" title="Basics" class="md-nav__link">
+      Basics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guide/data/" title="Data" class="md-nav__link">
+      Data
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Examples
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Examples
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../command_line/" title="Command line" class="md-nav__link">
+      Command line
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Using the Archive
+      </label>
+    
+    <a href="./" title="Using the Archive" class="md-nav__link md-nav__link--active">
+      Using the Archive
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#training-feat" title="Training Feat" class="md-nav__link">
+    Training Feat
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualizing-the-archive" title="Visualizing the Archive" class="md-nav__link">
+    Visualizing the Archive
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../longitudinal/" title="Longitudinal data" class="md-nav__link">
+      Longitudinal data
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      API
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        API
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../api/python/api_py/" title="Python" class="md-nav__link">
+      Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../api/c/" title="C++" class="md-nav__link">
+      C++
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../contributing/" title="Contribute" class="md-nav__link">
+      Contribute
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="https://github.com/lacava/feat/blob/master/LICENSE" title="License" class="md-nav__link">
+      License
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#training-feat" title="Training Feat" class="md-nav__link">
+    Training Feat
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualizing-the-archive" title="Visualizing the Archive" class="md-nav__link">
+    Visualizing the Archive
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
               
+                
+                  <a href="https://github.com/lacava/feat/edit/master/docs/examples/archive.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
                 <h1 id="using-the-archive">Using the Archive<a class="headerlink" href="#using-the-archive" title="Permanent link">&para;</a></h1>
 <p>In this example, we apply Feat to a regression problem and visualize the archive of representations. </p>
 <p><em>Note: this code uses the <a href="https://github.com/EpistasisLab/penn-ml-benchmarks/">Penn ML Benchmark Suite</a> to fetch data. You can install it using <code>pip install pmlb</code>.</em></p>
 <p>Also available as a <a href="http://github.com/lacava/feat/blob/master/docs/examples/archive.ipynb">notebook</a></p>
 <h2 id="training-feat">Training Feat<a class="headerlink" href="#training-feat" title="Permanent link">&para;</a></h2>
 <p>First, we import the data and create a train-test split.</p>
-<pre><code class="python">from pmlb import fetch_data
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import mean_squared_error as mse
-import numpy as np
+<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">pmlb</span> <span class="kn">import</span> <span class="n">fetch_data</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span> <span class="k">as</span> <span class="n">mse</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 
-dataset='690_visualizing_galaxy'
-X, y = fetch_data(dataset,return_X_y=True)
-X_t,X_v, y_t, y_v = train_test_split(X,y,train_size=0.75,test_size=0.25,random_state=42)
-</code></pre>
+<span class="n">dataset</span><span class="o">=</span><span class="s1">&#39;690_visualizing_galaxy&#39;</span>
+<span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">fetch_data</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span><span class="n">return_X_y</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">X_t</span><span class="p">,</span><span class="n">X_v</span><span class="p">,</span> <span class="n">y_t</span><span class="p">,</span> <span class="n">y_v</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">train_size</span><span class="o">=</span><span class="mf">0.75</span><span class="p">,</span><span class="n">test_size</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+</pre></div>
+
 
 <p>Then we set up a Feat instance and train the model, storing the final archive. </p>
-<pre><code class="python">from feat import Feat
-# fix the random state
-random_state=11314
+<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">feat</span> <span class="kn">import</span> <span class="n">Feat</span>
+<span class="c1"># fix the random state</span>
+<span class="n">random_state</span><span class="o">=</span><span class="mi">11314</span>
 
-fest = Feat(pop_size=500,   # train 500 representations
-            gens=100,                  # maximum of 200 generations
-            max_time=60,              # max time of 1 minute
-            ml = &quot;LinearRidgeRegression&quot;,   # use ridge regression (the default)
-            sel='lexicase',                 # use epsilon lexicase selection (the default)
-            surv='nsga2',                   # use nsga-2 survival (the defaut)
-            max_depth=6,                    # constrain features to depth of 6
-            max_dim=min([X.shape[1]*2,50]), # limit representation dimensionality
-            random_state=random_state,
-            backprop=True,                 # use gradient descent to optimize weights
-            iters=10,
-            n_threads=4,                   # max 1 threads
-            verbosity=2,                   # verbose output
-            logfile='feat_'+dataset+'.log', # save a log file of the training loss
-            print_pop=1                    # print the final population
-           ) 
+<span class="n">fest</span> <span class="o">=</span> <span class="n">Feat</span><span class="p">(</span><span class="n">pop_size</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span>   <span class="c1"># train 500 representations</span>
+            <span class="n">gens</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>                  <span class="c1"># maximum of 200 generations</span>
+            <span class="n">max_time</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span>              <span class="c1"># max time of 1 minute</span>
+            <span class="n">ml</span> <span class="o">=</span> <span class="s2">&quot;LinearRidgeRegression&quot;</span><span class="p">,</span>   <span class="c1"># use ridge regression (the default)</span>
+            <span class="n">sel</span><span class="o">=</span><span class="s1">&#39;lexicase&#39;</span><span class="p">,</span>                 <span class="c1"># use epsilon lexicase selection (the default)</span>
+            <span class="n">surv</span><span class="o">=</span><span class="s1">&#39;nsga2&#39;</span><span class="p">,</span>                   <span class="c1"># use nsga-2 survival (the defaut)</span>
+            <span class="n">max_depth</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span>                    <span class="c1"># constrain features to depth of 6</span>
+            <span class="n">max_dim</span><span class="o">=</span><span class="nb">min</span><span class="p">([</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span><span class="mi">50</span><span class="p">]),</span> <span class="c1"># limit representation dimensionality</span>
+            <span class="n">random_state</span><span class="o">=</span><span class="n">random_state</span><span class="p">,</span>
+            <span class="n">backprop</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>                 <span class="c1"># use gradient descent to optimize weights</span>
+            <span class="n">iters</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+            <span class="n">n_threads</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>                   <span class="c1"># max 1 threads</span>
+            <span class="n">verbosity</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>                   <span class="c1"># verbose output</span>
+            <span class="n">logfile</span><span class="o">=</span><span class="s1">&#39;feat_&#39;</span><span class="o">+</span><span class="n">dataset</span><span class="o">+</span><span class="s1">&#39;.log&#39;</span><span class="p">,</span> <span class="c1"># save a log file of the training loss</span>
+            <span class="n">print_pop</span><span class="o">=</span><span class="mi">1</span>                    <span class="c1"># print the final population</span>
+           <span class="p">)</span> 
 
-# train the model
-fest.fit(X_t,y_t)
+<span class="c1"># train the model</span>
+<span class="n">fest</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_t</span><span class="p">,</span><span class="n">y_t</span><span class="p">)</span>
 
-# get the test score
-test_score = {}
-test_score['feat'] = mse(y_v,fest.predict(X_v))
+<span class="c1"># get the test score</span>
+<span class="n">test_score</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">test_score</span><span class="p">[</span><span class="s1">&#39;feat&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">mse</span><span class="p">(</span><span class="n">y_v</span><span class="p">,</span><span class="n">fest</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_v</span><span class="p">))</span>
 
-# store the archive
-str_arc = fest.get_archive()
-</code></pre>
+<span class="c1"># store the archive</span>
+<span class="n">str_arc</span> <span class="o">=</span> <span class="n">fest</span><span class="o">.</span><span class="n">get_archive</span><span class="p">()</span>
+</pre></div>
+
 
 <p>For comparison, we can fit an Elastic Net and Random Forest regression model to the same data:</p>
-<pre><code class="python"># random forest
-rf = RandomForestRegressor(random_state=987039487)
+<div class="codehilite"><pre><span></span><span class="c1"># random forest</span>
+<span class="n">rf</span> <span class="o">=</span> <span class="n">RandomForestRegressor</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">987039487</span><span class="p">)</span>
 
-rf.fit(X_t,y_t)
+<span class="n">rf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_t</span><span class="p">,</span><span class="n">y_t</span><span class="p">)</span>
 
-test_score['rf'] = mse(y_v,rf.predict(X_v))
+<span class="n">test_score</span><span class="p">[</span><span class="s1">&#39;rf&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">mse</span><span class="p">(</span><span class="n">y_v</span><span class="p">,</span><span class="n">rf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_v</span><span class="p">))</span>
 
-# elastic net
-linest = ElasticNet()
+<span class="c1"># elastic net</span>
+<span class="n">linest</span> <span class="o">=</span> <span class="n">ElasticNet</span><span class="p">()</span>
 
-linest.fit(X_t,y_t)
+<span class="n">linest</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_t</span><span class="p">,</span><span class="n">y_t</span><span class="p">)</span>
 
-# test_score={}
+<span class="c1"># test_score={}</span>
 
-test_score['elasticnet'] = mse(y_v,linest.predict(X_v))
+<span class="n">test_score</span><span class="p">[</span><span class="s1">&#39;elasticnet&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">mse</span><span class="p">(</span><span class="n">y_v</span><span class="p">,</span><span class="n">linest</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_v</span><span class="p">))</span>
+</pre></div>
 
-</code></pre>
 
 <h2 id="visualizing-the-archive">Visualizing the Archive<a class="headerlink" href="#visualizing-the-archive" title="Permanent link">&para;</a></h2>
 <p>Let&rsquo;s visualize this archive with the test scores. This gives us a sense of how increasing the representation 
 complexity affects the quality of the model and its generalization. </p>
-<pre><code class="python">import numpy as np
-import matplotlib
-import matplotlib.pyplot as plt
-import seaborn as sns
-matplotlib.rcParams['figure.figsize'] = (10, 6)
-%matplotlib inline 
-sns.set_style('white')
-complexity = []
-fit_train = []
-fit_val = []
-fit_test = []
-eqn = []
-h = plt.figure(figsize=(10,6))
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
+<span class="n">matplotlib</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;figure.figsize&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span> 
+<span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
+<span class="n">complexity</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">fit_train</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">fit_val</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">fit_test</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">eqn</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">h</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
 
-# store archive data from string
-for s in str_arc.split('\n')[1:-1]:
-    line = s.split('\t')
-    complexity.append(int(line[0]))
-    fit_train.append(float(line[1]))
-    fit_test.append(float(line[2]))
-    eqn.append(','.join(line[3:]))
-    eqn[-1].replace('sqrt','\sqrt')
+<span class="c1"># store archive data from string</span>
+<span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">str_arc</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+    <span class="n">line</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">complexity</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">line</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+    <span class="n">fit_train</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">line</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+    <span class="n">fit_test</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">line</span><span class="p">[</span><span class="mi">2</span><span class="p">]))</span>
+    <span class="n">eqn</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">line</span><span class="p">[</span><span class="mi">3</span><span class="p">:]))</span>
+    <span class="n">eqn</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;sqrt&#39;</span><span class="p">,</span><span class="s1">&#39;\sqrt&#39;</span><span class="p">)</span>
 
-# plot archive points 
-plt.plot(fit_train,complexity,'--ro',label='Train',markersize=6)
-plt.plot(fit_test,complexity,'--bx',label='Validation')
-best = np.argmin(np.array(fit_test))
-print('best:',complexity[best])
-plt.plot(fit_test[best],complexity[best],'sk',markersize=16,
-         markerfacecolor='none',label='Model Selection')
+<span class="c1"># plot archive points </span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">fit_train</span><span class="p">,</span><span class="n">complexity</span><span class="p">,</span><span class="s1">&#39;--ro&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Train&#39;</span><span class="p">,</span><span class="n">markersize</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">fit_test</span><span class="p">,</span><span class="n">complexity</span><span class="p">,</span><span class="s1">&#39;--bx&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Validation&#39;</span><span class="p">)</span>
+<span class="n">best</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">fit_test</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;best:&#39;</span><span class="p">,</span><span class="n">complexity</span><span class="p">[</span><span class="n">best</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">fit_test</span><span class="p">[</span><span class="n">best</span><span class="p">],</span><span class="n">complexity</span><span class="p">[</span><span class="n">best</span><span class="p">],</span><span class="s1">&#39;sk&#39;</span><span class="p">,</span><span class="n">markersize</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span>
+         <span class="n">markerfacecolor</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Model Selection&#39;</span><span class="p">)</span>
 
-# test score lines
-y1 = -1
-y2 = 58
-plt.plot((test_score['feat'],test_score['feat']),(y1,y2),
-         '--k',label='FEAT Test',alpha=0.5)
-plt.plot((test_score['rf'],test_score['rf']),(y1,y2),
-         '-.xg',label='RF Test',alpha=0.5)
-plt.plot((test_score['elasticnet'],test_score['elasticnet']),(y1,y2),
-         '-sm',label='ElasticNet Test',alpha=0.5)
+<span class="c1"># test score lines</span>
+<span class="n">y1</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+<span class="n">y2</span> <span class="o">=</span> <span class="mi">58</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">((</span><span class="n">test_score</span><span class="p">[</span><span class="s1">&#39;feat&#39;</span><span class="p">],</span><span class="n">test_score</span><span class="p">[</span><span class="s1">&#39;feat&#39;</span><span class="p">]),(</span><span class="n">y1</span><span class="p">,</span><span class="n">y2</span><span class="p">),</span>
+         <span class="s1">&#39;--k&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;FEAT Test&#39;</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">((</span><span class="n">test_score</span><span class="p">[</span><span class="s1">&#39;rf&#39;</span><span class="p">],</span><span class="n">test_score</span><span class="p">[</span><span class="s1">&#39;rf&#39;</span><span class="p">]),(</span><span class="n">y1</span><span class="p">,</span><span class="n">y2</span><span class="p">),</span>
+         <span class="s1">&#39;-.xg&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;RF Test&#39;</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">((</span><span class="n">test_score</span><span class="p">[</span><span class="s1">&#39;elasticnet&#39;</span><span class="p">],</span><span class="n">test_score</span><span class="p">[</span><span class="s1">&#39;elasticnet&#39;</span><span class="p">]),(</span><span class="n">y1</span><span class="p">,</span><span class="n">y2</span><span class="p">),</span>
+         <span class="s1">&#39;-sm&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;ElasticNet Test&#39;</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
 
-print('complexity',complexity)
-eqn[best] = '0)]$\n$'.join(eqn[best].split('0)]'))
-# complexity[-1] = complexity[-1]-10 # adjust placement of last equation
-xoff = 70
-for e,t,c in zip(eqn,fit_test,complexity):
-    if c in [1,5,12,31,43,53]:
-        if c == 5 or c == 1: 
-            t = t+200
-        if c==complexity[best]: 
-            tax = plt.text(t+18000,c-5,'$\leftarrow'+e+'$',
-                           size=18,horizontalalignment='right')
-            tax.set_bbox(dict(facecolor='white', alpha=0.75, edgecolor='none'))
-        elif c == 43:
-            plt.text(t+xoff,c-1,'$\leftarrow$ overfitting',size=18)
-        else:
-            tax = plt.text(t+xoff,c-1,'$\leftarrow'+e+'$',size=18)
-            tax.set_bbox(dict(facecolor='white', alpha=0.75, edgecolor='none'))
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;complexity&#39;</span><span class="p">,</span><span class="n">complexity</span><span class="p">)</span>
+<span class="n">eqn</span><span class="p">[</span><span class="n">best</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;0)]$</span><span class="se">\n</span><span class="s1">$&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">eqn</span><span class="p">[</span><span class="n">best</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;0)]&#39;</span><span class="p">))</span>
+<span class="c1"># complexity[-1] = complexity[-1]-10 # adjust placement of last equation</span>
+<span class="n">xoff</span> <span class="o">=</span> <span class="mi">70</span>
+<span class="k">for</span> <span class="n">e</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">c</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">eqn</span><span class="p">,</span><span class="n">fit_test</span><span class="p">,</span><span class="n">complexity</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">c</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">31</span><span class="p">,</span><span class="mi">43</span><span class="p">,</span><span class="mi">53</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="n">c</span> <span class="o">==</span> <span class="mi">5</span> <span class="ow">or</span> <span class="n">c</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span> 
+            <span class="n">t</span> <span class="o">=</span> <span class="n">t</span><span class="o">+</span><span class="mi">200</span>
+        <span class="k">if</span> <span class="n">c</span><span class="o">==</span><span class="n">complexity</span><span class="p">[</span><span class="n">best</span><span class="p">]:</span> 
+            <span class="n">tax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">t</span><span class="o">+</span><span class="mi">18000</span><span class="p">,</span><span class="n">c</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span><span class="s1">&#39;$\leftarrow&#39;</span><span class="o">+</span><span class="n">e</span><span class="o">+</span><span class="s1">&#39;$&#39;</span><span class="p">,</span>
+                           <span class="n">size</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span><span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">)</span>
+            <span class="n">tax</span><span class="o">.</span><span class="n">set_bbox</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.75</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">))</span>
+        <span class="k">elif</span> <span class="n">c</span> <span class="o">==</span> <span class="mi">43</span><span class="p">:</span>
+            <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">t</span><span class="o">+</span><span class="n">xoff</span><span class="p">,</span><span class="n">c</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;$\leftarrow$ overfitting&#39;</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">tax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">t</span><span class="o">+</span><span class="n">xoff</span><span class="p">,</span><span class="n">c</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;$\leftarrow&#39;</span><span class="o">+</span><span class="n">e</span><span class="o">+</span><span class="s1">&#39;$&#39;</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
+            <span class="n">tax</span><span class="o">.</span><span class="n">set_bbox</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.75</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">))</span>
 
-l = plt.legend(prop={'size': 16},loc=[0.72,0.05])
-plt.xlabel('MSE',size=16)
-# plt.gca().set_ylim(10,200)
-plt.gca().set_xlim(150,right=20000)
-# plt.gca().set_yscale('log')
-plt.gca().set_xscale('log')
+<span class="n">l</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">prop</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;size&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">},</span><span class="n">loc</span><span class="o">=</span><span class="p">[</span><span class="mf">0.72</span><span class="p">,</span><span class="mf">0.05</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;MSE&#39;</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<span class="c1"># plt.gca().set_ylim(10,200)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">150</span><span class="p">,</span><span class="n">right</span><span class="o">=</span><span class="mi">20000</span><span class="p">)</span>
+<span class="c1"># plt.gca().set_yscale(&#39;log&#39;)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">set_xscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
 
-# plt.ylim(y1,y2)
-plt.gca().set_yticklabels('')
-plt.gca().set_xticklabels('')
+<span class="c1"># plt.ylim(y1,y2)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">set_yticklabels</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
 
-plt.ylabel('Complexity',size=18)
-h.tight_layout()
-h.savefig('archive_example.svg')
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Complexity&#39;</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
+<span class="n">h</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">h</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;archive_example.svg&#39;</span><span class="p">)</span>
 
-plt.show()
-</code></pre>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
 
 <p>This produces the figure below. Note that ElasticNet produces a similar test score to the linear representation
 in Feat&rsquo;s archive, and that Random Forest&rsquo;s test score is near the representation 
@@ -335,56 +705,88 @@ complexity model (the representation beginning with $relu(x_3)$) achieves nearly
 In this case it may be preferable to choose that representation instead. We can also see that the validation scores
 in general oscillate around the test score of the final model. </p>
 <p><img alt="Feat archive" src="../archive_example.svg" /></p>
+                
+                  
+                
               
-            </div>
+              
+                
+
+
+              
+            </article>
           </div>
-          <footer>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
   
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../longitudinal/" class="btn btn-neutral float-right" title="Longitudinal data">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../command_line/" class="btn btn-neutral" title="Command line"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../command_line/" title="Command line" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Command line
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../longitudinal/" title="Longitudinal data" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Longitudinal data
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
     </div>
   
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
   </div>
-
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
       
-        </div>
-      </div>
-
-    </section>
-
-  </div>
-
-  <div class="rst-versions" role="note" style="cursor: pointer">
-    <span class="rst-current-version" data-toggle="rst-current-version">
+    </div>
+    
+      <script src="../../assets/javascripts/application.5e60981f.js"></script>
       
-          <a href="https://github.com/lacava/feat/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
       
-        <span><a href="../command_line/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <script src="../../mathjaxhelper.js"></script>
       
+    
+    
       
-        <span style="margin-left: 15px"><a href="../longitudinal/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
-    </span>
-</div>
-    <script>var base_url = '../..';</script>
-    <script src="../../js/theme.js" defer></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
-      <script src="../../mathjaxhelper.js" defer></script>
-      <script src="../../search/main.js" defer></script>
-
-</body>
+    
+  </body>
 </html>
