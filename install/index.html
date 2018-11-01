@@ -104,7 +104,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#installing" tabindex="1" class="md-skip">
+      <a href="#installation" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -288,6 +288,73 @@
         <li class="md-nav__item">
   <a href="#python-wrapper" title="Python wrapper" class="md-nav__link">
     Python wrapper
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dependencies" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eigen" title="Eigen" class="md-nav__link">
+    Eigen
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#debianubuntu" title="Debian/Ubuntu" class="md-nav__link">
+    Debian/Ubuntu
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shogun" title="Shogun" class="md-nav__link">
+    Shogun
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anaconda" title="Anaconda" class="md-nav__link">
+    Anaconda
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debianubuntu_1" title="Debian/Ubuntu" class="md-nav__link">
+    Debian/Ubuntu
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-the-tests" title="Running the tests" class="md-nav__link">
+    Running the tests
   </a>
   
 </li>
@@ -510,6 +577,73 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#dependencies" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eigen" title="Eigen" class="md-nav__link">
+    Eigen
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#debianubuntu" title="Debian/Ubuntu" class="md-nav__link">
+    Debian/Ubuntu
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shogun" title="Shogun" class="md-nav__link">
+    Shogun
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anaconda" title="Anaconda" class="md-nav__link">
+    Anaconda
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debianubuntu_1" title="Debian/Ubuntu" class="md-nav__link">
+    Debian/Ubuntu
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-the-tests" title="Running the tests" class="md-nav__link">
+    Running the tests
+  </a>
+  
+</li>
+      
       
       
       
@@ -529,7 +663,7 @@
                   <a href="https://github.com/lacava/feat/edit/master/docs/install.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="installing">Installing<a class="headerlink" href="#installing" title="Permanent link">&para;</a></h1>
+                <h1 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h1>
 <p>To see our installation process from scratch, check out the <a href="http://github.com/lacava/feat/blob/master/ci/.travis_install.sh">Travis install file</a>.</p>
 <p>Feat depends on the <a href="http://eigen.tuxfamily.org">Eigen</a> matrix library for C++ as well as the <a href="http://shogun.ml">Shogun</a> ML library. Both come in easy packages that work across platforms. If you need Eigen and Shogun, follow the instructions in <a href="#dependencies">Dependencies</a>. </p>
 <p>Feat uses <a href="https://cmake.org/">cmake</a> to build. It uses the typical set of instructions:</p>
@@ -547,10 +681,10 @@ python setup.py install
 </pre></div>
 
 
-<h1 id="dependencies">Dependencies<a class="headerlink" href="#dependencies" title="Permanent link">&para;</a></h1>
-<h2 id="eigen">Eigen<a class="headerlink" href="#eigen" title="Permanent link">&para;</a></h2>
+<h2 id="dependencies">Dependencies<a class="headerlink" href="#dependencies" title="Permanent link">&para;</a></h2>
+<h3 id="eigen">Eigen<a class="headerlink" href="#eigen" title="Permanent link">&para;</a></h3>
 <p>Eigen is a header only package. We need Eigen 3 or greater. </p>
-<h3 id="debianubuntu">Debian/Ubuntu<a class="headerlink" href="#debianubuntu" title="Permanent link">&para;</a></h3>
+<h4 id="debianubuntu">Debian/Ubuntu<a class="headerlink" href="#debianubuntu" title="Permanent link">&para;</a></h4>
 <p>On Debian systems, you can grab the package: </p>
 <div class="codehilite"><pre><span></span>sudo apt-get install libeigen3-dev
 </pre></div>
@@ -567,21 +701,22 @@ mv eigen-eigen*/* eigen-3.3.4
 </pre></div>
 
 
-<h2 id="shogun">Shogun<a class="headerlink" href="#shogun" title="Permanent link">&para;</a></h2>
-<p>You don&rsquo;t have to compile Shogun, just download the binaries. <a href="https://github.com/shogun-toolbox/shogun/blob/develop/doc/readme/INSTALL.md#binaries">Their install guide is good.</a>. We&rsquo;ve listed two of the options here.</p>
-<h3 id="anaconda">Anaconda<a class="headerlink" href="#anaconda" title="Permanent link">&para;</a></h3>
+<h3 id="shogun">Shogun<a class="headerlink" href="#shogun" title="Permanent link">&para;</a></h3>
+<p>You don&rsquo;t have to compile Shogun, just download the binaries. <a href="https://github.com/shogun-toolbox/shogun/blob/develop/doc/readme/INSTALL.md#binaries">Their install guide is good.</a> We&rsquo;ve listed two of the options here.</p>
+<h4 id="anaconda">Anaconda<a class="headerlink" href="#anaconda" title="Permanent link">&para;</a></h4>
 <p>A good option for Anaconda users is the Shogun Anaconda package. If you use conda, you can get what you need by </p>
 <div class="codehilite"><pre><span></span>conda install -c conda-forge shogun-cpp
 </pre></div>
 
 
-<p>If you do this, you need cmake to find Anaconda&rsquo;s library and include directories. Set these two variables:</p>
+<p>If you do this, you need tell cmake where to find Anaconda&rsquo;s library and include directories. 
+Set these two variables appropriately:</p>
 <div class="codehilite"><pre><span></span>export SHOGUN_LIB=/home/travis/miniconda/lib/
 export SHOGUN_DIR=/home/travis/miniconda/include/
 </pre></div>
 
 
-<h3 id="debianubuntu_1">Debian/Ubuntu<a class="headerlink" href="#debianubuntu_1" title="Permanent link">&para;</a></h3>
+<h4 id="debianubuntu_1">Debian/Ubuntu<a class="headerlink" href="#debianubuntu_1" title="Permanent link">&para;</a></h4>
 <p>You can also get the Shogun packages:</p>
 <div class="codehilite"><pre><span></span>sudo add-apt-repository ppa:shogun-toolbox/nightly -y
 sudo apt-get update -y
@@ -590,8 +725,8 @@ sudo apt-get install -qq --force-yes --no-install-recommends libshogun-dev
 </pre></div>
 
 
-<h1 id="running-the-tests">Running the tests<a class="headerlink" href="#running-the-tests" title="Permanent link">&para;</a></h1>
-<p><em>This is totally optional!</em> If you want to run the tests, you need to install <a href="https://github.com/google/googletest">Google
+<h2 id="running-the-tests">Running the tests<a class="headerlink" href="#running-the-tests" title="Permanent link">&para;</a></h2>
+<p><em>(optional)</em> If you want to run the tests, you need to install <a href="https://github.com/google/googletest">Google
 Test</a>. A useful guide to doing so is available
 <a href="https://www.eriksmistad.no/getting-started-with-google-test-on-ubuntu/">here</a>. Then you can use
 cmake to build the tests. From the repo root,</p>
