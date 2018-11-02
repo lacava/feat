@@ -23,16 +23,15 @@ var searchData=
   ['m_5fweights_5fset',['m_weights_set',['../db/dff/classshogun_1_1CMyCARTree.html#a2ad2d2429748c8bb7737afeedc3af95c',1,'shogun::CMyCARTree']]],
   ['m_5fz',['m_z',['../db/d4e/classshogun_1_1CMulticlassLogisticRegression.html#a355e3f94e1743e61c2bfd48140397ebf',1,'shogun::CMulticlassLogisticRegression']]],
   ['max_5fdbl',['MAX_DBL',['../d2/d35/namespaceFT.html#ae77877ad2b5e76ebfaacf9415673b323',1,'FT']]],
-  ['max_5fdepth',['max_depth',['../df/de2/classFT_1_1FeatCV.html#aea5135aea18a200303f35c6d7c6b0c8c',1,'FT::FeatCV::max_depth()'],['../de/d2c/structFT_1_1Parameters.html#a7a9f2ad48ee7d68da04915e65c04dca4',1,'FT::Parameters::max_depth()']]],
-  ['max_5fdim',['max_dim',['../df/de2/classFT_1_1FeatCV.html#a0fc7bea1083e806504e2c6dc4f014ada',1,'FT::FeatCV::max_dim()'],['../de/d2c/structFT_1_1Parameters.html#a1f87c96a8192d9e12a551beede8f9f5d',1,'FT::Parameters::max_dim()']]],
+  ['max_5fdepth',['max_depth',['../de/d2c/structFT_1_1Parameters.html#a7a9f2ad48ee7d68da04915e65c04dca4',1,'FT::Parameters']]],
+  ['max_5fdim',['max_dim',['../de/d2c/structFT_1_1Parameters.html#a1f87c96a8192d9e12a551beede8f9f5d',1,'FT::Parameters']]],
   ['max_5fsize',['max_size',['../de/d2c/structFT_1_1Parameters.html#a147504c4440fdb76d5609035d504bd82',1,'FT::Parameters']]],
-  ['max_5fstall',['max_stall',['../df/de2/classFT_1_1FeatCV.html#ad325b753fb0d5e0bf55068ca4c4ba2b2',1,'FT::FeatCV::max_stall()'],['../de/d2c/structFT_1_1Parameters.html#a30f7f95ef22a0228e87e297ab1305ca2',1,'FT::Parameters::max_stall()']]],
+  ['max_5fstall',['max_stall',['../de/d2c/structFT_1_1Parameters.html#a30f7f95ef22a0228e87e297ab1305ca2',1,'FT::Parameters']]],
   ['max_5ftime',['max_time',['../de/d2c/structFT_1_1Parameters.html#a2fc9772d05e72f1e79bd9fb4fa4a1b95',1,'FT::Parameters']]],
   ['max_5ftrain_5ftime',['max_train_time',['../dd/d6f/classFT_1_1Model_1_1ML.html#a3cce878e1dac7299c597fd11b2dddc33',1,'FT::Model::ML']]],
   ['min_5fdbl',['MIN_DBL',['../d2/d35/namespaceFT.html#a248f7301a92cd80d7c492cc3d51ea7dc',1,'FT']]],
   ['min_5fsplit_5fgain',['MIN_SPLIT_GAIN',['../db/dff/classshogun_1_1CMyCARTree.html#a470c47e13d68d22929c515489ecc3e7f',1,'shogun::CMyCARTree']]],
   ['missing',['MISSING',['../db/dff/classshogun_1_1CMyCARTree.html#a24f3fd6ba041039c69b7c24a2555a3fa',1,'shogun::CMyCARTree']]],
   ['ml',['ml',['../de/d2c/structFT_1_1Parameters.html#a7e11bd6f94c1474b695cc9c823e8ea46',1,'FT::Parameters::ml()'],['../da/def/classFT_1_1Pop_1_1Individual.html#a89a0dd8092be106f4017e1bbee038479',1,'FT::Pop::Individual::ml()']]],
-  ['ml_5ftype',['ml_type',['../dd/d6f/classFT_1_1Model_1_1ML.html#a52659d246ca0b29f06eaf7080bc10a2e',1,'FT::Model::ML']]],
-  ['mlstr',['mlStr',['../df/de2/classFT_1_1FeatCV.html#a770feced91195261cce1aa8885648c72',1,'FT::FeatCV']]]
+  ['ml_5ftype',['ml_type',['../dd/d6f/classFT_1_1Model_1_1ML.html#a52659d246ca0b29f06eaf7080bc10a2e',1,'FT::Model::ML']]]
 ];

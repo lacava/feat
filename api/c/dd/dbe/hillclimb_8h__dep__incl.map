@@ -1,11 +1,8 @@
 <map id="hillclimb.h" name="hillclimb.h">
-<area shape="rect" id="node2" href="$d3/df9/evaluation_8h.html" title="evaluation.h" alt="" coords="172,80,264,107"/>
-<area shape="rect" id="node10" href="$d4/dfe/hillclimb_8cc.html" title="hillclimb.cc" alt="" coords="288,80,375,107"/>
-<area shape="rect" id="node3" href="$d3/dff/feat_8h.html" title="feat.h" alt="" coords="140,155,195,181"/>
-<area shape="rect" id="node9" href="$d5/d3a/evaluation_8cc.html" title="evaluation.cc" alt="" coords="219,155,318,181"/>
-<area shape="rect" id="node4" href="$d1/d4a/cv__main_8cc.html" title="cv_main.cc" alt="" coords="5,304,95,331"/>
-<area shape="rect" id="node5" href="$db/de9/featcv_8h.html" title="featcv.h" alt="" coords="87,229,157,256"/>
-<area shape="rect" id="node7" href="$dc/d37/feat_8cc.html" title="feat.cc" alt="" coords="181,229,244,256"/>
-<area shape="rect" id="node8" href="$d9/d0f/main_8cc.html" title="main.cc" alt="" coords="268,229,336,256"/>
-<area shape="rect" id="node6" href="$d4/d34/featcv_8cc.html" title="featcv.cc" alt="" coords="119,304,195,331"/>
+<area shape="rect" id="node2" href="$d3/df9/evaluation_8h.html" title="evaluation.h" alt="" coords="59,80,151,107"/>
+<area shape="rect" id="node7" href="$d4/dfe/hillclimb_8cc.html" title="hillclimb.cc" alt="" coords="175,80,261,107"/>
+<area shape="rect" id="node3" href="$d5/d3a/evaluation_8cc.html" title="evaluation.cc" alt="" coords="5,155,104,181"/>
+<area shape="rect" id="node4" href="$d3/dff/feat_8h.html" title="feat.h" alt="" coords="129,155,183,181"/>
+<area shape="rect" id="node5" href="$dc/d37/feat_8cc.html" title="feat.cc" alt="" coords="79,229,141,256"/>
+<area shape="rect" id="node6" href="$d9/d0f/main_8cc.html" title="main.cc" alt="" coords="166,229,233,256"/>
 </map>

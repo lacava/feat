@@ -6,7 +6,7 @@ var searchData=
   ['init_5fdefaults',['init_defaults',['../db/d4e/classshogun_1_1CMulticlassLogisticRegression.html#a853fbf9f9a2c294a2397f34fb9479cb5',1,'shogun::CMulticlassLogisticRegression::init_defaults()'],['../df/d62/classshogun_1_1CMyMulticlassLibLinear.html#abd14e6e73899ba12bf8529ac909e4c03',1,'shogun::CMyMulticlassLibLinear::init_defaults()']]],
   ['initial_5fmodel',['initial_model',['../db/dff/classFT_1_1Feat.html#a670655a6238f84f7da2bfe570a0fb920',1,'FT::Feat']]],
   ['initrand',['initRand',['../d8/d33/classFT_1_1Util_1_1Rnd.html#a9c8a0d09bda7fb65b3d0c97145658389',1,'FT::Util::Rnd']]],
-  ['inputparser',['InputParser',['../de/d16/classInputParser.html#af9fa5ead1f28b5294a713410df5b9531',1,'InputParser::InputParser(int &amp;argc, char **argv)'],['../de/d16/classInputParser.html#af9fa5ead1f28b5294a713410df5b9531',1,'InputParser::InputParser(int &amp;argc, char **argv)']]],
+  ['inputparser',['InputParser',['../de/d16/classInputParser.html#af9fa5ead1f28b5294a713410df5b9531',1,'InputParser']]],
   ['insert_5fmutate',['insert_mutate',['../d0/d80/classFT_1_1Vary_1_1Variation.html#aa17907669297d2ea9fb94464c767e50e',1,'FT::Vary::Variation']]],
   ['is_5flabel_5fvalid',['is_label_valid',['../db/dff/classshogun_1_1CMyCARTree.html#a2f750d8d327e05c7295bbbcad10b4cdf',1,'shogun::CMyCARTree']]],
   ['is_5fvalid_5fprogram',['is_valid_program',['../d0/dd8/namespaceFT_1_1Pop.html#af3cf342f9e040b060fd20e1c239dfa24',1,'FT::Pop']]],

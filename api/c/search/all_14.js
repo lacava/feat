@@ -1,15 +1,16 @@
 var searchData=
 [
-  ['uinteger',['UInteger',['../d2/d35/namespaceFT.html#a7e3c99088b60b1b4cdaee123ec99ae3ca38badbed9578b08ba277bab37220dbcb',1,'FT']]],
-  ['unique',['unique',['../d1/d5d/namespaceFT_1_1Util.html#adceed0a578007465db70834c5fead0b9',1,'FT::Util::unique(vector&lt; T &gt; w)'],['../d1/d5d/namespaceFT_1_1Util.html#a0ec954e3fbe313c6b4ba2246697970f9',1,'FT::Util::unique(Matrix&lt; T, Dynamic, 1 &gt; w)']]],
-  ['unknown',['unknown',['../d2/d35/namespaceFT.html#ad2fc36e4b6e3fb00796f049bd69a8dd1a49714b77dc61a663d6ee8d078ce43481',1,'FT']]],
-  ['update',['update',['../d7/d9f/structFT_1_1Pop_1_1Archive.html#abdbf2b7e42014345a9aedb648466a3a2',1,'FT::Pop::Archive::update()'],['../d5/ddc/classFT_1_1Pop_1_1Op_1_1NodeDx.html#a2bad0ac40e5736620e60e7f0a7119e2e',1,'FT::Pop::Op::NodeDx::update()'],['../d6/d5f/structFT_1_1Pop_1_1Population.html#a3f5e2d3bb8e41c58e1d40ba7c0eecd0a',1,'FT::Pop::Population::update()']]],
-  ['update_5fbest',['update_best',['../db/dff/classFT_1_1Feat.html#a9267257d74384f43df34c0f4e164db48',1,'FT::Feat']]],
-  ['update_5fopen_5floc',['update_open_loc',['../d6/d5f/structFT_1_1Pop_1_1Population.html#a7826b6db18e972e67ac6355b123ac0b7',1,'FT::Pop::Population']]],
-  ['update_5fstall_5fcount',['update_stall_count',['../db/dff/classFT_1_1Feat.html#a547e3a5ef2163ccfb1585e66b7e86f67',1,'FT::Feat']]],
-  ['updatesize',['updateSize',['../de/d2c/structFT_1_1Parameters.html#ab7aff38ee6d0be5f3c75a8284a7b29e8',1,'FT::Parameters']]],
-  ['use_5farch',['use_arch',['../db/dff/classFT_1_1Feat.html#a4f8ecac48492e069570784ce200b3c90',1,'FT::Feat']]],
-  ['use_5fbatch',['use_batch',['../de/d2c/structFT_1_1Parameters.html#a06a17d58447856ba081c99a2c03e0f9b',1,'FT::Parameters']]],
-  ['utils_2ecc',['utils.cc',['../d7/da9/utils_8cc.html',1,'']]],
-  ['utils_2eh',['utils.h',['../d5/d60/utils_8h.html',1,'']]]
+  ['v',['V',['../d5/ddc/classFT_1_1Pop_1_1Op_1_1NodeDx.html#a64fa0d7bf6b79de787868b7f77845244',1,'FT::Pop::Op::NodeDx::V()'],['../d4/d10/classFT_1_1Dat_1_1DataRef.html#ab7673ddbc373009b607b1cca5de96900',1,'FT::Dat::DataRef::v()']]],
+  ['validation',['validation',['../de/d36/classFT_1_1Dat_1_1Data.html#abbf7b7de9c6f8604484f8868a457db40',1,'FT::Dat::Data']]],
+  ['variance',['variance',['../d1/d5d/namespaceFT_1_1Util.html#a9dd487ab5a0ee0d11ab972d80dc3101a',1,'FT::Util']]],
+  ['variation',['Variation',['../d0/d80/classFT_1_1Vary_1_1Variation.html',1,'FT::Vary']]],
+  ['variation',['Variation',['../d0/d80/classFT_1_1Vary_1_1Variation.html#a083fe18122f043e07ea030540ffdd219',1,'FT::Vary::Variation']]],
+  ['variation_2ecc',['variation.cc',['../de/d10/variation_8cc.html',1,'']]],
+  ['variation_2eh',['variation.h',['../d4/d1f/variation_8h.html',1,'']]],
+  ['vary',['vary',['../d0/d80/classFT_1_1Vary_1_1Variation.html#a6bb9fb82ea205837639c982bde9ec765',1,'FT::Vary::Variation']]],
+  ['vcreated',['vCreated',['../d4/d10/classFT_1_1Dat_1_1DataRef.html#abe8e384f1562d6f59855e6ad9c8d8a86',1,'FT::Dat::DataRef']]],
+  ['vectortostring',['vectorToString',['../dc/dc9/parser_8cc.html#ae3d7f420ce5598b34ee637c188e41182',1,'parser.cc']]],
+  ['vectorxl',['VectorXl',['../d8/dc0/init_8h.html#a21d1558c9c77cb1f9f2d2afb82cf20e3',1,'init.h']]],
+  ['verbosity',['verbosity',['../de/d2c/structFT_1_1Parameters.html#a91f77c1dfe0d6254bc0dd083c05fd951',1,'FT::Parameters']]],
+  ['visits',['visits',['../d2/dfb/classFT_1_1Pop_1_1Op_1_1Node.html#a564a9a1db3f4ad64e706e3c97ac61dfb',1,'FT::Pop::Op::Node']]]
 ];

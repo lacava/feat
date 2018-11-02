@@ -1,19 +1,15 @@
 var searchData=
 [
-  ['sample_5fweights',['sample_weights',['../de/d2c/structFT_1_1Parameters.html#a55546feac96125ac36f567eb5191d6d0',1,'FT::Parameters']]],
-  ['scale',['scale',['../dd/d51/structFT_1_1Util_1_1Normalizer.html#a40ce5164da20de09b5027a36b7be4f61',1,'FT::Util::Normalizer']]],
-  ['score',['score',['../d6/d6f/classFT_1_1Eval_1_1Evaluation.html#a65b255814a0e30ae23990e69a992ec2e',1,'FT::Eval::Evaluation::score()'],['../df/d04/structFT_1_1FeatObjects.html#a984ad11ddb3c368f0be23f99785d2a12',1,'FT::FeatObjects::score()']]],
-  ['score_5fhash',['score_hash',['../d6/d6f/classFT_1_1Eval_1_1Evaluation.html#aa3465ed24ba092d4fb56eb228b2fc246',1,'FT::Eval::Evaluation::score_hash()'],['../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a2544c0c8103dd368d60764a5895c7128',1,'FT::Opt::AutoBackProp::score_hash()'],['../d8/d06/classFT_1_1Opt_1_1HillClimb.html#a10804d3c4b7904f264d9a543fc40bbba',1,'FT::Opt::HillClimb::score_hash()']]],
-  ['scorer',['scorer',['../db/dff/classFT_1_1Feat.html#aa1d94c8c67ddc6e56a24e80970e8b6ce',1,'FT::Feat::scorer()'],['../de/d2c/structFT_1_1Parameters.html#a671b0c827027e417243edc7fd3ea77a6',1,'FT::Parameters::scorer()']]],
-  ['sel',['sel',['../df/de2/classFT_1_1FeatCV.html#ae15b31cb60f0e657e3eea3b7ee916486',1,'FT::FeatCV']]],
-  ['selector',['selector',['../d7/d9f/structFT_1_1Pop_1_1Archive.html#af70e20576fe15ad2b21a0c06e1a5640f',1,'FT::Pop::Archive']]],
-  ['semantic_5fxo',['semantic_xo',['../de/d2c/structFT_1_1Parameters.html#a87ded1d9958ae9e62e642690a02c1455',1,'FT::Parameters']]],
-  ['shuffle',['shuffle',['../de/d2c/structFT_1_1Parameters.html#aca9f6951f7bb932f7d36abaabbc8bb23',1,'FT::Parameters']]],
-  ['split',['split',['../de/d2c/structFT_1_1Parameters.html#aba5d0cd6fdeecbe77f560e202bbd1253',1,'FT::Parameters']]],
-  ['st',['st',['../d8/d30/classFT_1_1Dat_1_1Stack.html#a71e074110b85a6a19d1f6ed2955bb447',1,'FT::Dat::Stack']]],
-  ['startindex',['startIndex',['../dc/d9a/structFT_1_1DataFolds.html#a3c99de0bce08ce070f6264d11eb9f9e9',1,'FT::DataFolds']]],
-  ['step',['step',['../d8/d06/classFT_1_1Opt_1_1HillClimb.html#a0deb040cb19f0d56742fcc37a93ec324',1,'FT::Opt::HillClimb::step()'],['../d0/d29/structFT_1_1Parameters_1_1HC.html#ae64512b7e9f3308e2088d53b9c752c99',1,'FT::Parameters::HC::step()']]],
-  ['str_5fdim',['str_dim',['../db/dff/classFT_1_1Feat.html#aa3ecfa399e827a3e633a40780c66c600',1,'FT::Feat']]],
-  ['surv',['surv',['../df/de2/classFT_1_1FeatCV.html#a1efc52595fb2f1cb380627b5d6239e6a',1,'FT::FeatCV']]],
-  ['survival',['survival',['../db/dff/classFT_1_1Feat.html#aa46144d8615e6d422246e6a7f705bea6',1,'FT::Feat::survival()'],['../d8/d53/structFT_1_1Sel_1_1SelectionOperator.html#ae8bf8f6a727f78e3fa309d3f84d9d45d',1,'FT::Sel::SelectionOperator::survival()']]]
+  ['t',['t',['../d4/d10/classFT_1_1Dat_1_1DataRef.html#a890d4dde0afafcc12b29a10e9a9d79e7',1,'FT::Dat::DataRef::t()'],['../d2/d6e/structFT_1_1Sel_1_1SimAnneal.html#af7c9644257b724ac177870d72546e7ef',1,'FT::Sel::SimAnneal::t()']]],
+  ['t0',['t0',['../d2/d6e/structFT_1_1Sel_1_1SimAnneal.html#a5f870be30af7c31116f70c544f1062aa',1,'FT::Sel::SimAnneal']]],
+  ['tcreated',['tCreated',['../d4/d10/classFT_1_1Dat_1_1DataRef.html#abc372748bbb2e37f60fc15788078bf16',1,'FT::Dat::DataRef']]],
+  ['term_5fweights',['term_weights',['../de/d2c/structFT_1_1Parameters.html#a9ce3967947412217110573e04828b040',1,'FT::Parameters']]],
+  ['terminals',['terminals',['../de/d2c/structFT_1_1Parameters.html#aaddb140c8f882260363f0ae34e1ab1f4',1,'FT::Parameters']]],
+  ['threshold',['threshold',['../db/dc8/classFT_1_1Pop_1_1Op_1_1NodeSplit.html#a7297b414cedeaa827ec2cfadc44d6c16',1,'FT::Pop::Op::NodeSplit']]],
+  ['timer',['timer',['../db/dff/classFT_1_1Feat.html#af5be17d09edb530c180bc20ed0a98326',1,'FT::Feat']]],
+  ['tokens',['tokens',['../de/d16/classInputParser.html#a23ce0e47972606dd65099570ec4385b8',1,'InputParser']]],
+  ['total_5fweight',['total_weight',['../df/d48/structshogun_1_1MyCARTreeNodeData.html#afe68e3fe805ff0e926663ab96eef6419',1,'shogun::MyCARTreeNodeData']]],
+  ['train',['train',['../de/d2e/classFT_1_1Pop_1_1Op_1_1NodeTrain.html#ae9cca4f3371452be2517a9b84d734433',1,'FT::Pop::Op::NodeTrain']]],
+  ['transit_5finto_5fvalues',['transit_into_values',['../df/d48/structshogun_1_1MyCARTreeNodeData.html#a08e9e8337e14d676a88bb9fff0b1a571',1,'shogun::MyCARTreeNodeData']]],
+  ['ttypes',['ttypes',['../de/d2c/structFT_1_1Parameters.html#abdc07ad1c8f89ecfa5edd52c97892f42',1,'FT::Parameters']]]
 ];

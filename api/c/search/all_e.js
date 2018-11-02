@@ -1,8 +1,8 @@
 var searchData=
 [
   ['o',['o',['../d4/d10/classFT_1_1Dat_1_1DataRef.html#ad194b6b2eb890e2ccaf578ad760a3627',1,'FT::Dat::DataRef']]],
-  ['obj',['obj',['../df/d04/structFT_1_1FeatObjects.html#a04dcf4c9697f693f8e2ef84a39f7776a',1,'FT::FeatObjects::obj()'],['../df/de2/classFT_1_1FeatCV.html#a094a7bfdd2b44f598a0922c02acd3dd9',1,'FT::FeatCV::obj()'],['../da/def/classFT_1_1Pop_1_1Individual.html#a43687b68c7994faed2ae5bbe7bc9d6a2',1,'FT::Pop::Individual::obj()']]],
-  ['objectives',['objectives',['../de/d2c/structFT_1_1Parameters.html#aace18d360f786428143860deb1531a86',1,'FT::Parameters::objectives()'],['../d2/d35/namespaceFT.html#ad2fc36e4b6e3fb00796f049bd69a8dd1a1ca99b3333835bc884d66195e3f80bb9',1,'FT::objectives()']]],
+  ['obj',['obj',['../da/def/classFT_1_1Pop_1_1Individual.html#a43687b68c7994faed2ae5bbe7bc9d6a2',1,'FT::Pop::Individual']]],
+  ['objectives',['objectives',['../de/d2c/structFT_1_1Parameters.html#aace18d360f786428143860deb1531a86',1,'FT::Parameters']]],
   ['obtain_5fregularizer_5fmatrix',['obtain_regularizer_matrix',['../df/d62/classshogun_1_1CMyMulticlassLibLinear.html#ad61c704bf1d009f2e1e5e9d8fa6f6e10',1,'shogun::CMyMulticlassLibLinear']]],
   ['ocreated',['oCreated',['../d4/d10/classFT_1_1Dat_1_1DataRef.html#ab6a5dc33a272134ccafce0fa5a0a2474',1,'FT::Dat::DataRef']]],
   ['offset',['offset',['../dd/d51/structFT_1_1Util_1_1Normalizer.html#afe95594dbd44b500c69a8b574931ebe8',1,'FT::Util::Normalizer']]],

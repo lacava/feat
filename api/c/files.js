@@ -6,7 +6,6 @@ var files =
     ] ],
     [ "auto_backprop.cc", "d5/d02/auto__backprop_8cc.html", null ],
     [ "auto_backprop.h", "d6/d8a/auto__backprop_8h.html", "d6/d8a/auto__backprop_8h" ],
-    [ "cv_main.cc", "d1/d4a/cv__main_8cc.html", "d1/d4a/cv__main_8cc" ],
     [ "data.cc", "d4/d05/data_8cc.html", null ],
     [ "data.h", "d2/dbd/data_8h.html", "d2/dbd/data_8h" ],
     [ "error.cc", "df/dea/error_8cc.html", "df/dea/error_8cc" ],
@@ -15,8 +14,6 @@ var files =
     [ "evaluation.h", "d3/df9/evaluation_8h.html", "d3/df9/evaluation_8h" ],
     [ "feat.cc", "dc/d37/feat_8cc.html", "dc/d37/feat_8cc" ],
     [ "feat.h", "d3/dff/feat_8h.html", "d3/dff/feat_8h" ],
-    [ "featcv.cc", "d4/d34/featcv_8cc.html", "d4/d34/featcv_8cc" ],
-    [ "featcv.h", "db/de9/featcv_8h.html", "db/de9/featcv_8h" ],
     [ "hillclimb.cc", "d4/dfe/hillclimb_8cc.html", null ],
     [ "hillclimb.h", "d3/d59/hillclimb_8h.html", [
       [ "HillClimb", "d8/d06/classFT_1_1Opt_1_1HillClimb.html", "d8/d06/classFT_1_1Opt_1_1HillClimb" ]

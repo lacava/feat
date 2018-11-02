@@ -13,7 +13,7 @@ var utils_8cc =
     [ "mean_square_corrcoef", "d7/da9/utils_8cc.html#a2eb3808a79f08817400a5d269bc1ee32", null ],
     [ "median", "d7/da9/utils_8cc.html#a7c4e9ad02ec9953034b10ac31696b30b", null ],
     [ "pearson_correlation", "d7/da9/utils_8cc.html#ac91b6260423684b65d6a46512609121f", null ],
-    [ "reorder_longitudinal", "d7/da9/utils_8cc.html#ac29e7daa9dcfa358d37fbd3bfc8264a1", null ],
+    [ "reorder_longitudinal", "d7/da9/utils_8cc.html#ab1ff0c6ee7dcb70dfcfec49a9e5f6689", null ],
     [ "rtrim", "d7/da9/utils_8cc.html#ad832f4e284437af673895cedbadda37d", null ],
     [ "skew", "d7/da9/utils_8cc.html#abd295046ff6d2599d5f2e5f691c9f044", null ],
     [ "slope", "d7/da9/utils_8cc.html#af997913c26ce4098442d311fe5bb6b64", null ],

@@ -2,7 +2,7 @@ var searchData=
 [
   ['machine_5fproblem_5ftype',['MACHINE_PROBLEM_TYPE',['../df/d62/classshogun_1_1CMyMulticlassLibLinear.html#a26d5b8f7b47456f80b944f06c996c36b',1,'shogun::CMyMulticlassLibLinear']]],
   ['mad',['mad',['../d1/d5d/namespaceFT_1_1Util.html#afacbbcbcac0a99c75773540fe0e83e9e',1,'FT::Util']]],
-  ['main',['main',['../d1/d4a/cv__main_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;cv_main.cc'],['../d9/d0f/main_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;main.cc'],['../dc/dc9/parser_8cc.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;parser.cc']]],
+  ['main',['main',['../d9/d0f/main_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;main.cc'],['../dc/dc9/parser_8cc.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;parser.cc']]],
   ['make_5fprogram',['make_program',['../d0/dd8/namespaceFT_1_1Pop.html#ac3acca9a1b9d1bbfb8445be15fc2ea3c',1,'FT::Pop']]],
   ['make_5ftree',['make_tree',['../d0/dd8/namespaceFT_1_1Pop.html#a1327a8ef66b36d87f0c7c8637e6d73d1',1,'FT::Pop']]],
   ['mean_5flog_5floss',['mean_log_loss',['../de/dcf/namespaceFT_1_1Eval.html#a4ce27bf11b3375902ee76160b4840c37',1,'FT::Eval']]],

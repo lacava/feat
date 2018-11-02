@@ -14,7 +14,7 @@ var searchData=
   ['pbwidth',['PBWIDTH',['../d1/d5d/namespaceFT_1_1Util.html#a8f9ebaaf13fa911e968a3bd28bdadea9',1,'FT::Util']]],
   ['phi',['Phi',['../da/def/classFT_1_1Pop_1_1Individual.html#a4e59d227157cffe7f158821c69fe008f',1,'FT::Pop::Individual']]],
   ['pop',['pop',['../de/dad/structFT_1_1Pop_1_1Population_1_1SortComplexity.html#a436e537cfa5875f21eed35de41e14bce',1,'FT::Pop::Population::SortComplexity::pop()'],['../d7/dee/structFT_1_1Pop_1_1Population_1_1SameFitComplexity.html#a03069cf45a640fb486c68e125cd8a9c4',1,'FT::Pop::Population::SameFitComplexity::pop()'],['../d5/d9e/structFT_1_1Sel_1_1NSGA2_1_1sort__n.html#acf58a2ad42f02749af80a1ab3cc0431a',1,'FT::Sel::NSGA2::sort_n::pop()'],['../d4/d2a/structFT_1_1Sel_1_1NSGA2_1_1comparator__obj.html#aed564524d2ee19e81c105cb7b00c9109',1,'FT::Sel::NSGA2::comparator_obj::pop()']]],
-  ['pop_5fsize',['pop_size',['../df/de2/classFT_1_1FeatCV.html#ad07d7d0964837950d3ade54b75aab15f',1,'FT::FeatCV::pop_size()'],['../de/d2c/structFT_1_1Parameters.html#a8253360dc4ad47b3f94f813daa13867a',1,'FT::Parameters::pop_size()']]],
+  ['pop_5fsize',['pop_size',['../de/d2c/structFT_1_1Parameters.html#a8253360dc4ad47b3f94f813daa13867a',1,'FT::Parameters']]],
   ['print_5fpop',['print_pop',['../db/dff/classFT_1_1Feat.html#ae3dbfaf2093cfca7a19294317fdb64bf',1,'FT::Feat']]],
   ['prob_5ftype',['prob_type',['../dd/d6f/classFT_1_1Model_1_1ML.html#a9f9dfdd299149dd7f42c5db36757f29a',1,'FT::Model::ML']]],
   ['program',['program',['../da/def/classFT_1_1Pop_1_1Individual.html#a88d308c675946399dc9b42e51061f66a',1,'FT::Pop::Individual']]],

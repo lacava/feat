@@ -1,19 +1,19 @@
 <map id="evaluation.h" name="evaluation.h">
-<area shape="rect" id="node2" href="$d7/d60/ml_8h.html" title="../model/ml.h" alt="" coords="2233,229,2332,256"/>
-<area shape="rect" id="node42" href="$df/d34/metrics_8h.html" title="metrics.h" alt="" coords="3159,155,3235,181"/>
+<area shape="rect" id="node2" href="$d7/d60/ml_8h.html" title="../model/ml.h" alt="" coords="2234,229,2332,256"/>
+<area shape="rect" id="node42" href="$df/d34/metrics_8h.html" title="metrics.h" alt="" coords="3160,155,3235,181"/>
 <area shape="rect" id="node45" href="$d6/d8a/auto__backprop_8h.html" title="../opt/auto_backprop.h" alt="" coords="3552,80,3704,107"/>
-<area shape="rect" id="node50" href="$d3/d59/hillclimb_8h.html" title="../opt/hillclimb.h" alt="" coords="4279,80,4393,107"/>
-<area shape="rect" id="node19" href="$d0/d7f/MyCARTree_8h.html" title="shogun/MyCARTree.h" alt="" coords="531,311,683,338"/>
-<area shape="rect" id="node23" href="$d4/dcc/MulticlassLogisticRegression_8h.html" title="shogun/MulticlassLogistic\lRegression.h" alt="" coords="707,304,879,345"/>
-<area shape="rect" id="node29" href="$d0/d5c/MyMulticlassLibLinear_8h.html" title="shogun/MyMulticlassLibLinear.h" alt="" coords="2656,311,2864,338"/>
-<area shape="rect" id="node32" href="$de/db3/MyLibLinear_8h.html" title="shogun/MyLibLinear.h" alt="" coords="2888,311,3037,338"/>
-<area shape="rect" id="node33" href="$da/d33/params_8h.html" title="../params.h" alt="" coords="3733,311,3821,338"/>
-<area shape="rect" id="node20" href="$de/d81/MyCARTreeNodeData_8h.html" title="MyCARTreeNodeData.h" alt="" coords="351,401,516,427"/>
-<area shape="rect" id="node34" href="$da/dbc/nodevector_8h.html" title="pop/nodevector.h" alt="" coords="3564,401,3687,427"/>
-<area shape="rect" id="node37" href="$d5/d60/utils_8h.html" title="../util/utils.h" alt="" coords="3929,401,4020,427"/>
-<area shape="rect" id="node36" href="$d4/d6c/n__Dx_8h.html" title="../n_Dx.h" alt="" coords="3549,490,3625,517"/>
-<area shape="rect" id="node40" href="$d8/dc0/init_8h.html" title="../../init.h" alt="" coords="3853,490,3928,517"/>
-<area shape="rect" id="node46" href="$d7/de0/stack_8h.html" title="../../dat/stack.h" alt="" coords="4255,311,4366,338"/>
+<area shape="rect" id="node50" href="$d3/d59/hillclimb_8h.html" title="../opt/hillclimb.h" alt="" coords="4279,80,4394,107"/>
+<area shape="rect" id="node19" href="$d0/d7f/MyCARTree_8h.html" title="shogun/MyCARTree.h" alt="" coords="531,312,683,339"/>
+<area shape="rect" id="node23" href="$d4/dcc/MulticlassLogisticRegression_8h.html" title="shogun/MulticlassLogistic\lRegression.h" alt="" coords="708,305,879,346"/>
+<area shape="rect" id="node29" href="$d0/d5c/MyMulticlassLibLinear_8h.html" title="shogun/MyMulticlassLibLinear.h" alt="" coords="2656,312,2864,339"/>
+<area shape="rect" id="node32" href="$de/db3/MyLibLinear_8h.html" title="shogun/MyLibLinear.h" alt="" coords="2888,312,3036,339"/>
+<area shape="rect" id="node33" href="$da/d33/params_8h.html" title="../params.h" alt="" coords="3734,312,3822,339"/>
+<area shape="rect" id="node20" href="$de/d81/MyCARTreeNodeData_8h.html" title="MyCARTreeNodeData.h" alt="" coords="351,403,515,429"/>
+<area shape="rect" id="node34" href="$da/dbc/nodevector_8h.html" title="pop/nodevector.h" alt="" coords="3564,403,3687,429"/>
+<area shape="rect" id="node37" href="$d5/d60/utils_8h.html" title="../util/utils.h" alt="" coords="3930,403,4020,429"/>
+<area shape="rect" id="node36" href="$d4/d6c/n__Dx_8h.html" title="../n_Dx.h" alt="" coords="3549,493,3624,520"/>
+<area shape="rect" id="node40" href="$d8/dc0/init_8h.html" title="../../init.h" alt="" coords="3854,493,3927,520"/>
+<area shape="rect" id="node46" href="$d7/de0/stack_8h.html" title="../../dat/stack.h" alt="" coords="4256,312,4366,339"/>
 <area shape="rect" id="node48" href="$d5/d1f/individual_8h.html" title="../pop/individual.h" alt="" coords="4098,155,4222,181"/>
-<area shape="rect" id="node49" href="$d2/dbd/data_8h.html" title="../../dat/data.h" alt="" coords="4452,311,4556,338"/>
+<area shape="rect" id="node49" href="$d2/dbd/data_8h.html" title="../../dat/data.h" alt="" coords="4452,312,4556,339"/>
 </map>

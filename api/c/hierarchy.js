@@ -17,13 +17,9 @@ var hierarchy =
       [ "shogun::CMyCARTree", "db/dff/classshogun_1_1CMyCARTree.html", null ]
     ] ],
     [ "FT::Dat::Data", "de/d36/classFT_1_1Dat_1_1Data.html", null ],
-    [ "FT::DataFolds", "dc/d9a/structFT_1_1DataFolds.html", null ],
     [ "FT::Dat::DataRef", "d4/d10/classFT_1_1Dat_1_1DataRef.html", null ],
     [ "FT::Eval::Evaluation", "d6/d6f/classFT_1_1Eval_1_1Evaluation.html", null ],
     [ "FT::Feat", "db/dff/classFT_1_1Feat.html", null ],
-    [ "FT::FeatCV", "df/de2/classFT_1_1FeatCV.html", null ],
-    [ "FT::FeatObjects", "df/d04/structFT_1_1FeatObjects.html", null ],
-    [ "FewObjects", "d7/dfa/classFewObjects.html", null ],
     [ "FT::Parameters::HC", "d0/d29/structFT_1_1Parameters_1_1HC.html", null ],
     [ "FT::Opt::HillClimb", "d8/d06/classFT_1_1Opt_1_1HillClimb.html", null ],
     [ "FT::Pop::Individual", "da/def/classFT_1_1Pop_1_1Individual.html", null ],
