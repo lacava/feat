@@ -7,7 +7,7 @@ var searchData=
   ['terminals',['terminals',['../de/d2c/structFT_1_1Parameters.html#aaddb140c8f882260363f0ae34e1ab1f4',1,'FT::Parameters']]],
   ['testmetrics_2eh',['testMetrics.h',['../d3/ddb/testMetrics_8h.html',1,'']]],
   ['threshold',['threshold',['../db/dc8/classFT_1_1Pop_1_1Op_1_1NodeSplit.html#a7297b414cedeaa827ec2cfadc44d6c16',1,'FT::Pop::Op::NodeSplit']]],
-  ['timer',['timer',['../db/dff/classFT_1_1Feat.html#af5be17d09edb530c180bc20ed0a98326',1,'FT::Feat::timer()'],['../db/db7/classFT_1_1Util_1_1Timer.html#ade956722930d5169849105b3829a9b63',1,'FT::Util::Timer::Timer()']]],
+  ['timer',['Timer',['../db/db7/classFT_1_1Util_1_1Timer.html#ade956722930d5169849105b3829a9b63',1,'FT::Util::Timer::Timer()'],['../db/dff/classFT_1_1Feat.html#af5be17d09edb530c180bc20ed0a98326',1,'FT::Feat::timer()']]],
   ['timer',['Timer',['../db/db7/classFT_1_1Util_1_1Timer.html',1,'FT::Util']]],
   ['to_5fstring',['to_string',['../dc/dc9/parser_8cc.html#a7650e12c899a04cd7fd772184d7cbac4',1,'to_string():&#160;parser.cc'],['../d1/d5d/namespaceFT_1_1Util.html#afe062564286e6b13100de60f8fe9b947',1,'FT::Util::to_string()']]],
   ['tokens',['tokens',['../de/d16/classInputParser.html#a23ce0e47972606dd65099570ec4385b8',1,'InputParser']]],

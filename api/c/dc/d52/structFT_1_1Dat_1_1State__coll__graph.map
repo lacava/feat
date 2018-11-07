@@ -1,4 +1,4 @@
-<map id="FT::Dat::Stacks" name="FT::Dat::Stacks">
+<map id="FT::Dat::State" name="FT::Dat::State">
 <area shape="rect" id="node2" href="$d8/d30/classFT_1_1Dat_1_1Stack.html" title="FT::Dat::Stack\&lt; std\l::pair\&lt; vector\&lt; ArrayXd\l \&gt;, vector\&lt; ArrayXd \&gt; \&gt; \&gt;" alt="" coords="625,5,799,61"/>
 <area shape="rect" id="node4" href="$d8/d30/classFT_1_1Dat_1_1Stack.html" title="FT::Dat::Stack\&lt; ArrayXd \&gt;" alt="" coords="622,85,802,112"/>
 <area shape="rect" id="node7" href="$d8/d30/classFT_1_1Dat_1_1Stack.html" title="FT::Dat::Stack\&lt; ArrayXb \&gt;" alt="" coords="622,136,802,163"/>

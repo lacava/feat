@@ -158,11 +158,23 @@ $(document).ready(function(){initNavTree('da/dbc/nodevector_8h_source.html','../
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            vector&lt;vector&lt;double&gt;&gt; get_weights();</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }; <span class="comment">//NodeVector</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;} <span class="comment">// FT</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordtype">bool</span> is_valid_program(<span class="keywordtype">unsigned</span> num_features, </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                  vector&lt;string&gt; longitudinalMap);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;       </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordtype">void</span> make_tree(<span class="keyword">const</span> <a class="code" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a>&amp; functions, </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                           <span class="keyword">const</span> <a class="code" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a>&amp; terminals, <span class="keywordtype">int</span> max_d,  </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                           <span class="keyword">const</span> vector&lt;double&gt;&amp; term_weights, <span class="keywordtype">char</span> otype, <span class="keyword">const</span> vector&lt;char&gt;&amp; term_types);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordtype">void</span> make_program(<span class="keyword">const</span> <a class="code" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a>&amp; functions, </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                              <span class="keyword">const</span> <a class="code" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a>&amp; terminals, <span class="keywordtype">int</span> max_d, </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                              <span class="keyword">const</span> vector&lt;double&gt;&amp; term_weights, <span class="keywordtype">int</span> dim, <span class="keywordtype">char</span> otype, </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                              vector&lt;string&gt; longitudinalMap, <span class="keyword">const</span> vector&lt;char&gt;&amp; term_types);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }; <span class="comment">//NodeVector</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;} <span class="comment">// FT</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="node_8h_html"><div class="ttname"><a href="../../d1/d77/node_8h.html">node.h</a></div></div>
 <div class="ttc" id="error_8h_html"><div class="ttname"><a href="../../da/d41/error_8h.html">error.h</a></div></div>
 <div class="ttc" id="n__Dx_8h_html"><div class="ttname"><a href="../../d4/d6c/n__Dx_8h.html">n_Dx.h</a></div></div>

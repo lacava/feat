@@ -12,5 +12,5 @@ var searchData=
   ['stack_3c_20arrayxi_20_3e',['Stack&lt; ArrayXi &gt;',['../d8/d30/classFT_1_1Dat_1_1Stack.html',1,'FT::Dat']]],
   ['stack_3c_20std_3a_3apair_3c_20vector_3c_20arrayxd_20_3e_2c_20vector_3c_20arrayxd_20_3e_20_3e_20_3e',['Stack&lt; std::pair&lt; vector&lt; ArrayXd &gt;, vector&lt; ArrayXd &gt; &gt; &gt;',['../d8/d30/classFT_1_1Dat_1_1Stack.html',1,'FT::Dat']]],
   ['stack_3c_20string_20_3e',['Stack&lt; string &gt;',['../d8/d30/classFT_1_1Dat_1_1Stack.html',1,'FT::Dat']]],
-  ['stacks',['Stacks',['../df/d42/structFT_1_1Dat_1_1Stacks.html',1,'FT::Dat']]]
+  ['state',['State',['../dd/d3f/structFT_1_1Dat_1_1State.html',1,'FT::Dat']]]
 ];

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['b',['b',['../df/d42/structFT_1_1Dat_1_1Stacks.html#a658a60ce01437ceadba42524bc9dcb21',1,'FT::Dat::Stacks::b()'],['../d2/dfc/structFT_1_1Dat_1_1Trace.html#a31b3d7a992ea0e7b9bda33f5537fbc0f',1,'FT::Dat::Trace::b()']]],
+  ['b',['b',['../dd/d3f/structFT_1_1Dat_1_1State.html#a16bee45fe6387528feac5c83b167283f',1,'FT::Dat::State::b()'],['../d2/dfc/structFT_1_1Dat_1_1Trace.html#a31b3d7a992ea0e7b9bda33f5537fbc0f',1,'FT::Dat::Trace::b()']]],
   ['b_5fvalue',['b_value',['../df/d51/classFT_1_1Pop_1_1Op_1_1NodeConstant.html#adcd13a0f98be15fc2a8744ab5ccd895e',1,'FT::Pop::Op::NodeConstant']]],
   ['backprop',['backprop',['../de/d2c/structFT_1_1Parameters.html#a07ff7f25414885df9580b81c44dfafa2',1,'FT::Parameters::backprop()'],['../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a59ed6197552e46d725f418124c31ecc1',1,'FT::Opt::AutoBackProp::backprop()']]],
   ['backprop2',['backprop2',['../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a2e7e17e656a20ca20570449f904a5bf4',1,'FT::Opt::AutoBackProp']]],
@@ -15,5 +15,5 @@ var searchData=
   ['bp',['BP',['../d4/d04/structFT_1_1Parameters_1_1BP.html',1,'FT::Parameters']]],
   ['bp',['bp',['../de/d2c/structFT_1_1Parameters.html#a95b0d025fc5e6c54bfff3b8e7106e526',1,'FT::Parameters::bp()'],['../d4/d04/structFT_1_1Parameters_1_1BP.html#a79d37209f6b6cd17704836859273b82c',1,'FT::Parameters::BP::BP()']]],
   ['bp_5fnode',['BP_NODE',['../dc/da7/structFT_1_1Opt_1_1BP__NODE.html',1,'FT::Opt']]],
-  ['bs',['bs',['../df/d42/structFT_1_1Dat_1_1Stacks.html#a91c4b805d0e53190ba4eff7a9b90311e',1,'FT::Dat::Stacks']]]
+  ['bs',['bs',['../dd/d3f/structFT_1_1Dat_1_1State.html#a3def2a5b7b5ea2a32ccad95209d2541d',1,'FT::Dat::State']]]
 ];

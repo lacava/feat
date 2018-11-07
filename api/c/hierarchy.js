@@ -100,7 +100,7 @@ var hierarchy =
     [ "FT::Dat::Stack< ArrayXi >", "d8/d30/classFT_1_1Dat_1_1Stack.html", null ],
     [ "FT::Dat::Stack< std::pair< vector< ArrayXd >, vector< ArrayXd > > >", "d8/d30/classFT_1_1Dat_1_1Stack.html", null ],
     [ "FT::Dat::Stack< string >", "d8/d30/classFT_1_1Dat_1_1Stack.html", null ],
-    [ "FT::Dat::Stacks", "df/d42/structFT_1_1Dat_1_1Stacks.html", null ],
+    [ "FT::Dat::State", "dd/d3f/structFT_1_1Dat_1_1State.html", null ],
     [ "FT::Util::Timer", "db/db7/classFT_1_1Util_1_1Timer.html", null ],
     [ "FT::Dat::Trace", "d2/dfc/structFT_1_1Dat_1_1Trace.html", null ],
     [ "FT::Vary::Variation", "d0/d80/classFT_1_1Vary_1_1Variation.html", null ],

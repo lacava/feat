@@ -1,7 +1,7 @@
 <map id="population.cc" name="population.cc">
 <area shape="rect" id="node2" href="$d2/d76/population_8h.html" title="population.h" alt="" coords="240,80,331,107"/>
 <area shape="rect" id="node3" href="$d5/d1f/individual_8h.html" title="individual.h" alt="" coords="242,155,328,181"/>
-<area shape="rect" id="node4" href="$d7/de0/stack_8h.html" title="../dat/stack.h" alt="" coords="634,709,732,736"/>
+<area shape="rect" id="node4" href="$db/d3b/state_8h.html" title="../dat/state.h" alt="" coords="634,709,730,736"/>
 <area shape="rect" id="node10" href="$d2/dbd/data_8h.html" title="../dat/data.h" alt="" coords="325,635,416,661"/>
 <area shape="rect" id="node11" href="$d5/d60/utils_8h.html" title="../util/utils.h" alt="" coords="196,709,287,736"/>
 <area shape="rect" id="node18" href="$da/d33/params_8h.html" title="../params.h" alt="" coords="343,312,431,339"/>
@@ -10,7 +10,7 @@
 <area shape="rect" id="node17" href="$da/d41/error_8h.html" title="../util/error.h" alt="" coords="356,784,447,811"/>
 <area shape="rect" id="node19" href="$d1/dc6/nodewrapper_8h.html" title="pop/nodewrapper.h" alt="" coords="1257,403,1388,429"/>
 <area shape="rect" id="node29" href="$da/dbc/nodevector_8h.html" title="pop/nodevector.h" alt="" coords="324,485,447,512"/>
-<area shape="rect" id="node20" href="$d1/d77/node_8h.html" title="op/node.h" alt="" coords="806,560,884,587"/>
+<area shape="rect" id="node20" href="$d1/d77/node_8h.html" title="op/node.h" alt="" coords="804,560,882,587"/>
 <area shape="rect" id="node21" href="$d8/d2e/n__2dgaussian_8h.html" title="op/arithmetic/n_2dgaussian.h" alt="" coords="687,485,879,512"/>
 <area shape="rect" id="node22" href="$d2/d00/n__add_8h.html" title="op/arithmetic/n_add.h" alt="" coords="1079,485,1226,512"/>
 <area shape="rect" id="node23" href="$d5/d42/n__cos_8h.html" title="op/arithmetic/n_cos.h" alt="" coords="1250,485,1396,512"/>

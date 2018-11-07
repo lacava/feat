@@ -1,17 +1,17 @@
 <map id="auto_backprop.h" name="auto_backprop.h">
 <area shape="rect" id="node6" href="$da/dbc/nodevector_8h.html" title="../pop/nodevector.h" alt="" coords="487,328,621,355"/>
 <area shape="rect" id="node9" href="$d8/dc0/init_8h.html" title="../../init.h" alt="" coords="2909,709,2983,736"/>
-<area shape="rect" id="node11" href="$d7/de0/stack_8h.html" title="../../dat/stack.h" alt="" coords="199,635,309,661"/>
+<area shape="rect" id="node11" href="$db/d3b/state_8h.html" title="../../dat/state.h" alt="" coords="199,635,307,661"/>
 <area shape="rect" id="node20" href="$d4/d6c/n__Dx_8h.html" title="op/n_Dx.h" alt="" coords="525,411,607,437"/>
 <area shape="rect" id="node21" href="$df/d34/metrics_8h.html" title="../eval/metrics.h" alt="" coords="3991,155,4107,181"/>
 <area shape="rect" id="node26" href="$d5/d1f/individual_8h.html" title="../pop/individual.h" alt="" coords="299,80,423,107"/>
 <area shape="rect" id="node27" href="$da/d33/params_8h.html" title="../params.h" alt="" coords="499,237,587,264"/>
 <area shape="rect" id="node29" href="$d7/d60/ml_8h.html" title="../model/ml.h" alt="" coords="2068,155,2167,181"/>
 <area shape="rect" id="node8" href="$d1/d77/node_8h.html" title="op/node.h" alt="" coords="606,485,684,512"/>
-<area shape="rect" id="node18" href="$da/d41/error_8h.html" title="../util/error.h" alt="" coords="465,709,556,736"/>
+<area shape="rect" id="node18" href="$da/d41/error_8h.html" title="../util/error.h" alt="" coords="463,709,555,736"/>
 <area shape="rect" id="node13" href="$d2/dbd/data_8h.html" title="../../dat/data.h" alt="" coords="347,560,451,587"/>
 <area shape="rect" id="node19" href="$d2/da9/rnd_8h.html" title="../../util/rnd.h" alt="" coords="2899,635,2995,661"/>
-<area shape="rect" id="node14" href="$d5/d60/utils_8h.html" title="../util/utils.h" alt="" coords="695,635,785,661"/>
+<area shape="rect" id="node14" href="$d5/d60/utils_8h.html" title="../util/utils.h" alt="" coords="693,635,784,661"/>
 <area shape="rect" id="node28" href="$d1/dc6/nodewrapper_8h.html" title="pop/nodewrapper.h" alt="" coords="2675,411,2807,437"/>
 <area shape="rect" id="node44" href="$d0/d7f/MyCARTree_8h.html" title="shogun/MyCARTree.h" alt="" coords="1869,237,2021,264"/>
 <area shape="rect" id="node47" href="$d4/dcc/MulticlassLogisticRegression_8h.html" title="shogun/MulticlassLogistic\lRegression.h" alt="" coords="3571,230,3743,271"/>

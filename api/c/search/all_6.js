@@ -2,7 +2,7 @@ var searchData=
 [
   ['dat',['Dat',['../d4/dca/namespaceFT_1_1Dat.html',1,'FT']]],
   ['eval',['Eval',['../de/dcf/namespaceFT_1_1Eval.html',1,'FT']]],
-  ['f',['F',['../db/dff/classFT_1_1Feat.html#a79c174854ebad874115b6d2625fad7c9',1,'FT::Feat::F()'],['../df/d42/structFT_1_1Dat_1_1Stacks.html#a7306341d3b94908e1f230b01dba15011',1,'FT::Dat::Stacks::f()'],['../d2/dfc/structFT_1_1Dat_1_1Trace.html#a337de9f1d8c80437454ad0bca8b4db81',1,'FT::Dat::Trace::f()']]],
+  ['f',['F',['../db/dff/classFT_1_1Feat.html#a79c174854ebad874115b6d2625fad7c9',1,'FT::Feat::F()'],['../dd/d3f/structFT_1_1Dat_1_1State.html#a5b8195c6c1ae2fe1e84fe229ceabbc24',1,'FT::Dat::State::f()'],['../d2/dfc/structFT_1_1Dat_1_1Trace.html#a337de9f1d8c80437454ad0bca8b4db81',1,'FT::Dat::Trace::f()']]],
   ['f_5fv',['F_v',['../db/dff/classFT_1_1Feat.html#a28308f4d3eea71af9e1bc78dab3f3689',1,'FT::Feat']]],
   ['fast_5fnds',['fast_nds',['../dd/df1/structFT_1_1Sel_1_1NSGA2.html#a5d21e4d11ebe1db97bc6a7e644a85f18',1,'FT::Sel::NSGA2']]],
   ['feat',['Feat',['../db/dff/classFT_1_1Feat.html#ae06f06b1a719c586a94a660b363348a2',1,'FT::Feat']]],
@@ -26,7 +26,7 @@ var searchData=
   ['form_5ft1',['form_t1',['../db/dff/classshogun_1_1CMyCARTree.html#a4fa218866aa1bbbd73347819f201c17c',1,'shogun::CMyCARTree']]],
   ['forward_5fprop',['forward_prop',['../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a4b23f3d6ccef8051eb2a937c20d70d46',1,'FT::Opt::AutoBackProp']]],
   ['front',['front',['../dd/df1/structFT_1_1Sel_1_1NSGA2.html#af2328747dedba60ec34a7239da787246',1,'FT::Sel::NSGA2']]],
-  ['fs',['fs',['../df/d42/structFT_1_1Dat_1_1Stacks.html#a42a63b322f889b1f5d795b1913ab2218',1,'FT::Dat::Stacks']]],
+  ['fs',['fs',['../dd/d3f/structFT_1_1Dat_1_1State.html#a23b7b3a302332a2c782896afbbb89e6b',1,'FT::Dat::State']]],
   ['ft',['FT',['../d2/d35/namespaceFT.html',1,'']]],
   ['funcpointer',['funcPointer',['../de/dcf/namespaceFT_1_1Eval.html#aa55d8db72171c5c3cdee276b3cc6b3a1',1,'FT::Eval']]],
   ['functions',['functions',['../de/d2c/structFT_1_1Parameters.html#a73627d83a91b1eb185457c0f87c9d473',1,'FT::Parameters']]],

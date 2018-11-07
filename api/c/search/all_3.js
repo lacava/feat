@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['c',['c',['../df/d42/structFT_1_1Dat_1_1Stacks.html#a8f7ae8a71d6f2a6c2f0c516a4f8255d5',1,'FT::Dat::Stacks::c()'],['../d2/dfc/structFT_1_1Dat_1_1Trace.html#adb2aa90554958f02b62d7e190d6c5281',1,'FT::Dat::Trace::c()'],['../da/def/classFT_1_1Pop_1_1Individual.html#a6b4d171ae06d7e8b5f1269925ea7bba2',1,'FT::Pop::Individual::c()']]],
+  ['c',['c',['../dd/d3f/structFT_1_1Dat_1_1State.html#acf1bcb0f6d4cb3e64b4275f165cb21af',1,'FT::Dat::State::c()'],['../d2/dfc/structFT_1_1Dat_1_1Trace.html#adb2aa90554958f02b62d7e190d6c5281',1,'FT::Dat::Trace::c()'],['../da/def/classFT_1_1Pop_1_1Individual.html#a6b4d171ae06d7e8b5f1269925ea7bba2',1,'FT::Pop::Individual::c()']]],
   ['callback',['callback',['../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a4c78f0809800eb4ae9b941a85c41a8a5',1,'FT::Opt::AutoBackProp::callback()'],['../d8/d06/classFT_1_1Opt_1_1HillClimb.html#af30a5b046580f47e1c9c6679b68926c2',1,'FT::Opt::HillClimb::callback()']]],
   ['carttrain',['CARTtrain',['../db/dff/classshogun_1_1CMyCARTree.html#a86f30bff54847757167cfa28989d99ce',1,'shogun::CMyCARTree']]],
-  ['check',['check',['../df/d42/structFT_1_1Dat_1_1Stacks.html#ada327dccb4792ba1c69a86f4296c73f9',1,'FT::Dat::Stacks']]],
+  ['check',['check',['../dd/d3f/structFT_1_1Dat_1_1State.html#a54e010c29a1fa4f6d41f8c57dc6b969c',1,'FT::Dat::State']]],
   ['check_5fdominance',['check_dominance',['../da/def/classFT_1_1Pop_1_1Individual.html#a91c78ed5d389fa6a9348574d43da33e8',1,'FT::Pop::Individual']]],
-  ['check_5fs',['check_s',['../df/d42/structFT_1_1Dat_1_1Stacks.html#a7c67fef31d2e6c7ea757a3010c7c6778',1,'FT::Dat::Stacks']]],
+  ['check_5fs',['check_s',['../dd/d3f/structFT_1_1Dat_1_1State.html#a39ddd797f2a899fafe89fa242f3679d9',1,'FT::Dat::State']]],
   ['class_5fweights',['class_weights',['../de/d2c/structFT_1_1Parameters.html#a4bfe7e5d3bc6ba873466f9fab3f63e65',1,'FT::Parameters']]],
   ['classes',['classes',['../de/d2c/structFT_1_1Parameters.html#a49fe9f7e71e11f5532b57267843b11fc',1,'FT::Parameters']]],
   ['classification',['classification',['../de/d36/classFT_1_1Dat_1_1Data.html#a8197ce4d48e72ec1f40340ea72ebadf8',1,'FT::Dat::Data::classification()'],['../de/d2c/structFT_1_1Parameters.html#a206ae40d847bc59f26332a8de5b86114',1,'FT::Parameters::classification()']]],
@@ -39,7 +39,7 @@ var searchData=
   ['cross_5frate',['cross_rate',['../de/d2c/structFT_1_1Parameters.html#a409721e42ee8b49d3a94c42278651e77',1,'FT::Parameters::cross_rate()'],['../d0/d80/classFT_1_1Vary_1_1Variation.html#a9bac5f3ece4514c4927a3657d95b433b',1,'FT::Vary::Variation::cross_rate()']]],
   ['crowd_5fdist',['crowd_dist',['../da/def/classFT_1_1Pop_1_1Individual.html#acef9a79479a149b9dc7dbce5695cdc7f',1,'FT::Pop::Individual']]],
   ['crowding_5fdistance',['crowding_distance',['../dd/df1/structFT_1_1Sel_1_1NSGA2.html#af8e470451e6b40d9c13a745ee581c5d0',1,'FT::Sel::NSGA2']]],
-  ['cs',['cs',['../df/d42/structFT_1_1Dat_1_1Stacks.html#a20c08e898402c62c999fa4797de4847a',1,'FT::Dat::Stacks']]],
+  ['cs',['cs',['../dd/d3f/structFT_1_1Dat_1_1State.html#a8b87c2b4147cd15aeb42f2bff33ae981',1,'FT::Dat::State']]],
   ['current_5fgen',['current_gen',['../de/d2c/structFT_1_1Parameters.html#a9443d73894519bb40e283083e38681c4',1,'FT::Parameters']]],
   ['cut_5fweakest_5flink',['cut_weakest_link',['../db/dff/classshogun_1_1CMyCARTree.html#a55d6c9400c772eb50260f688bec58f4f',1,'shogun::CMyCARTree']]]
 ];

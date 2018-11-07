@@ -1,9 +1,9 @@
 var searchData=
 [
   ['carttrain',['CARTtrain',['../db/dff/classshogun_1_1CMyCARTree.html#a86f30bff54847757167cfa28989d99ce',1,'shogun::CMyCARTree']]],
-  ['check',['check',['../df/d42/structFT_1_1Dat_1_1Stacks.html#ada327dccb4792ba1c69a86f4296c73f9',1,'FT::Dat::Stacks']]],
+  ['check',['check',['../dd/d3f/structFT_1_1Dat_1_1State.html#a54e010c29a1fa4f6d41f8c57dc6b969c',1,'FT::Dat::State']]],
   ['check_5fdominance',['check_dominance',['../da/def/classFT_1_1Pop_1_1Individual.html#a91c78ed5d389fa6a9348574d43da33e8',1,'FT::Pop::Individual']]],
-  ['check_5fs',['check_s',['../df/d42/structFT_1_1Dat_1_1Stacks.html#a7c67fef31d2e6c7ea757a3010c7c6778',1,'FT::Dat::Stacks']]],
+  ['check_5fs',['check_s',['../dd/d3f/structFT_1_1Dat_1_1State.html#a39ddd797f2a899fafe89fa242f3679d9',1,'FT::Dat::State']]],
   ['clean',['clean',['../d1/d5d/namespaceFT_1_1Util.html#ae37fd6fa798681e27b4f2295771743e4',1,'FT::Util']]],
   ['clear',['clear',['../d8/d30/classFT_1_1Dat_1_1Stack.html#a63580a7ee7a58ac12c45480ab88f4e64',1,'FT::Dat::Stack']]],
   ['clear_5ffeature_5ftypes',['clear_feature_types',['../db/dff/classshogun_1_1CMyCARTree.html#ae51cf1473b5fd493cec2a51982ce65ba',1,'shogun::CMyCARTree']]],

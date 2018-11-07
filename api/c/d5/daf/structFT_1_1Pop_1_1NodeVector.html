@@ -163,6 +163,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a629262f65b56f468c0932e0b88e436e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a331154b40483b28f2c345342f5670581"><td class="memItemLeft" align="right" valign="top">vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html#a331154b40483b28f2c345342f5670581">get_weights</a> ()</td></tr>
 <tr class="separator:a331154b40483b28f2c345342f5670581"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a854dc1c8f482c8842b4c8eb6c02157c0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html#a854dc1c8f482c8842b4c8eb6c02157c0">is_valid_program</a> (unsigned num_features, vector&lt; string &gt; longitudinalMap)</td></tr>
+<tr class="separator:a854dc1c8f482c8842b4c8eb6c02157c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0598808d1c5d1021b939fdc4855cab3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html#a0598808d1c5d1021b939fdc4855cab3d">make_tree</a> (const <a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a> &amp;functions, const <a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a> &amp;terminals, int max_d, const vector&lt; double &gt; &amp;term_weights, char otype, const vector&lt; char &gt; &amp;term_types)</td></tr>
+<tr class="separator:a0598808d1c5d1021b939fdc4855cab3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71bae231bb22145fe338604cfa38cc7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html#a71bae231bb22145fe338604cfa38cc7d">make_program</a> (const <a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a> &amp;functions, const <a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a> &amp;terminals, int max_d, const vector&lt; double &gt; &amp;term_weights, int dim, char otype, vector&lt; string &gt; longitudinalMap, const vector&lt; char &gt; &amp;term_types)</td></tr>
+<tr class="separator:a71bae231bb22145fe338604cfa38cc7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>an extension of a vector of unique pointers to nodes </p>
@@ -302,6 +308,152 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="../../df/ded/nodevector_8cc_source.html#l00163">163</a> of file <a class="el" href="../../df/ded/nodevector_8cc_source.html">nodevector.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a854dc1c8f482c8842b4c8eb6c02157c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FT::Pop::NodeVector::is_valid_program </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>num_features</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; string &gt;&#160;</td>
+          <td class="paramname"><em>longitudinalMap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>checks whether program fulfills all its arities. </p>
+
+<p>Definition at line <a class="el" href="../../df/ded/nodevector_8cc_source.html#l00176">176</a> of file <a class="el" href="../../df/ded/nodevector_8cc_source.html">nodevector.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a71bae231bb22145fe338604cfa38cc7d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FT::Pop::NodeVector::make_program </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>functions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>terminals</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>max_d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>term_weights</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dim</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>otype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; string &gt;&#160;</td>
+          <td class="paramname"><em>longitudinalMap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const vector&lt; char &gt; &amp;&#160;</td>
+          <td class="paramname"><em>term_types</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/ded/nodevector_8cc_source.html#l00345">345</a> of file <a class="el" href="../../df/ded/nodevector_8cc_source.html">nodevector.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0598808d1c5d1021b939fdc4855cab3d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FT::Pop::NodeVector::make_tree </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>functions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>terminals</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>max_d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>term_weights</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>otype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const vector&lt; char &gt; &amp;&#160;</td>
+          <td class="paramname"><em>term_types</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>recursively builds a program with complete arguments.</p>
+
+<p>Definition at line <a class="el" href="../../df/ded/nodevector_8cc_source.html#l00214">214</a> of file <a class="el" href="../../df/ded/nodevector_8cc_source.html">nodevector.cc</a>.</p>
 
 </div>
 </div>

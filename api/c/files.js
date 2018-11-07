@@ -276,7 +276,11 @@ var files =
     ] ],
     [ "parser.cc", "dc/dc9/parser_8cc.html", "dc/dc9/parser_8cc" ],
     [ "population.cc", "de/d3d/population_8cc.html", "de/d3d/population_8cc" ],
-    [ "population.h", "d2/d76/population_8h.html", "d2/d76/population_8h" ],
+    [ "population.h", "d2/d76/population_8h.html", [
+      [ "Population", "d6/d5f/structFT_1_1Pop_1_1Population.html", "d6/d5f/structFT_1_1Pop_1_1Population" ],
+      [ "SortComplexity", "de/dad/structFT_1_1Pop_1_1Population_1_1SortComplexity.html", "de/dad/structFT_1_1Pop_1_1Population_1_1SortComplexity" ],
+      [ "SameFitComplexity", "d7/dee/structFT_1_1Pop_1_1Population_1_1SameFitComplexity.html", "d7/dee/structFT_1_1Pop_1_1Population_1_1SameFitComplexity" ]
+    ] ],
     [ "random.cc", "df/d1f/random_8cc.html", null ],
     [ "random.h", "d1/d79/random_8h.html", [
       [ "Random", "d4/de1/structFT_1_1Sel_1_1Random.html", "d4/de1/structFT_1_1Sel_1_1Random" ]
@@ -295,8 +299,8 @@ var files =
     [ "simulated_annealing.h", "d9/dab/simulated__annealing_8h.html", [
       [ "SimAnneal", "d2/d6e/structFT_1_1Sel_1_1SimAnneal.html", "d2/d6e/structFT_1_1Sel_1_1SimAnneal" ]
     ] ],
-    [ "stack.cc", "d9/de4/stack_8cc.html", null ],
-    [ "stack.h", "d7/de0/stack_8h.html", "d7/de0/stack_8h" ],
+    [ "state.cc", "d5/d2b/state_8cc.html", null ],
+    [ "state.h", "db/d3b/state_8h.html", "db/d3b/state_8h" ],
     [ "testMetrics.h", "d3/ddb/testMetrics_8h.html", "d3/ddb/testMetrics_8h" ],
     [ "utils.cc", "d7/da9/utils_8cc.html", "d7/da9/utils_8cc" ],
     [ "utils.h", "d5/d60/utils_8h.html", "d5/d60/utils_8h" ],
