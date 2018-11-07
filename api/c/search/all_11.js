@@ -104,7 +104,7 @@ var searchData=
   ['sortcomplexity',['SortComplexity',['../de/dad/structFT_1_1Pop_1_1Population_1_1SortComplexity.html#ac0f872c49d5aca5098c0973cfefd9452',1,'FT::Pop::Population::SortComplexity::SortComplexity()'],['../d7/d9f/structFT_1_1Pop_1_1Archive.html#aa7f979e377803df70b8b2bf4f1b25a31',1,'FT::Pop::Archive::sortComplexity()']]],
   ['sorted_5ffront',['sorted_front',['../d6/d5f/structFT_1_1Pop_1_1Population.html#aaac76d7fe163c2f41e4c91a5067ed64e',1,'FT::Pop::Population']]],
   ['splice_5fprograms',['splice_programs',['../d0/d80/classFT_1_1Vary_1_1Variation.html#a4a42773d8410ddfea661baeb5238b0dc',1,'FT::Vary::Variation']]],
-  ['split',['split',['../de/d2c/structFT_1_1Parameters.html#aba5d0cd6fdeecbe77f560e202bbd1253',1,'FT::Parameters::split()'],['../dc/dc9/parser_8cc.html#add313f0fe82466f4c1c4622307d928bc',1,'split():&#160;parser.cc']]],
+  ['split',['split',['../de/d2c/structFT_1_1Parameters.html#aba5d0cd6fdeecbe77f560e202bbd1253',1,'FT::Parameters']]],
   ['split_5flongitudinal',['split_longitudinal',['../d4/d10/classFT_1_1Dat_1_1DataRef.html#a6055e2e53eeb7e8ebc2cea9810795a5c',1,'FT::Dat::DataRef']]],
   ['squared_5fdifference',['squared_difference',['../de/dcf/namespaceFT_1_1Eval.html#a75dc651a9261f538c15fcaae24b3408f',1,'FT::Eval::squared_difference(const VectorXd &amp;y, const VectorXd &amp;yhat)'],['../de/dcf/namespaceFT_1_1Eval.html#a397ad457e06615e6fba429bb2a5152a1',1,'FT::Eval::squared_difference(const VectorXd &amp;y, shared_ptr&lt; CLabels &gt; &amp;labels, const vector&lt; float &gt; &amp;weights)']]],
   ['st',['st',['../d8/d30/classFT_1_1Dat_1_1Stack.html#a71e074110b85a6a19d1f6ed2955bb447',1,'FT::Dat::Stack']]],

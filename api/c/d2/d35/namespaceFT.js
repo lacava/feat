@@ -2,7 +2,6 @@ var namespaceFT =
 [
     [ "Dat", "d4/dca/namespaceFT_1_1Dat.html", "d4/dca/namespaceFT_1_1Dat" ],
     [ "Eval", "de/dcf/namespaceFT_1_1Eval.html", "de/dcf/namespaceFT_1_1Eval" ],
-    [ "metrics", "d2/dbc/namespaceFT_1_1metrics.html", null ],
     [ "Model", "d3/d65/namespaceFT_1_1Model.html", "d3/d65/namespaceFT_1_1Model" ],
     [ "Opt", "d2/d7b/namespaceFT_1_1Opt.html", "d2/d7b/namespaceFT_1_1Opt" ],
     [ "Pop", "d0/dd8/namespaceFT_1_1Pop.html", "d0/dd8/namespaceFT_1_1Pop" ],

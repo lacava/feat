@@ -274,7 +274,6 @@ var files =
       [ "BP", "d4/d04/structFT_1_1Parameters_1_1BP.html", "d4/d04/structFT_1_1Parameters_1_1BP" ],
       [ "HC", "d0/d29/structFT_1_1Parameters_1_1HC.html", "d0/d29/structFT_1_1Parameters_1_1HC" ]
     ] ],
-    [ "parser.cc", "dc/dc9/parser_8cc.html", "dc/dc9/parser_8cc" ],
     [ "population.cc", "de/d3d/population_8cc.html", "de/d3d/population_8cc" ],
     [ "population.h", "d2/d76/population_8h.html", [
       [ "Population", "d6/d5f/structFT_1_1Pop_1_1Population.html", "d6/d5f/structFT_1_1Pop_1_1Population" ],
@@ -301,7 +300,6 @@ var files =
     ] ],
     [ "state.cc", "d5/d2b/state_8cc.html", null ],
     [ "state.h", "db/d3b/state_8h.html", "db/d3b/state_8h" ],
-    [ "testMetrics.h", "d3/ddb/testMetrics_8h.html", "d3/ddb/testMetrics_8h" ],
     [ "utils.cc", "d7/da9/utils_8cc.html", "d7/da9/utils_8cc" ],
     [ "utils.h", "d5/d60/utils_8h.html", "d5/d60/utils_8h" ],
     [ "variation.cc", "de/d10/variation_8cc.html", "de/d10/variation_8cc" ],

@@ -30,7 +30,6 @@ var searchData=
   ['ft',['FT',['../d2/d35/namespaceFT.html',1,'']]],
   ['funcpointer',['funcPointer',['../de/dcf/namespaceFT_1_1Eval.html#aa55d8db72171c5c3cdee276b3cc6b3a1',1,'FT::Eval']]],
   ['functions',['functions',['../de/d2c/structFT_1_1Parameters.html#a73627d83a91b1eb185457c0f87c9d473',1,'FT::Parameters']]],
-  ['metrics',['metrics',['../d2/dbc/namespaceFT_1_1metrics.html',1,'FT']]],
   ['model',['Model',['../d3/d65/namespaceFT_1_1Model.html',1,'FT']]],
   ['op',['Op',['../dc/dd9/namespaceFT_1_1Pop_1_1Op.html',1,'FT::Pop']]],
   ['opt',['Opt',['../d2/d7b/namespaceFT_1_1Opt.html',1,'FT']]],

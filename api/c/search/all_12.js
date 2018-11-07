@@ -5,11 +5,10 @@ var searchData=
   ['tcreated',['tCreated',['../d4/d10/classFT_1_1Dat_1_1DataRef.html#abc372748bbb2e37f60fc15788078bf16',1,'FT::Dat::DataRef']]],
   ['term_5fweights',['term_weights',['../de/d2c/structFT_1_1Parameters.html#a9ce3967947412217110573e04828b040',1,'FT::Parameters']]],
   ['terminals',['terminals',['../de/d2c/structFT_1_1Parameters.html#aaddb140c8f882260363f0ae34e1ab1f4',1,'FT::Parameters']]],
-  ['testmetrics_2eh',['testMetrics.h',['../d3/ddb/testMetrics_8h.html',1,'']]],
   ['threshold',['threshold',['../db/dc8/classFT_1_1Pop_1_1Op_1_1NodeSplit.html#a7297b414cedeaa827ec2cfadc44d6c16',1,'FT::Pop::Op::NodeSplit']]],
   ['timer',['Timer',['../db/db7/classFT_1_1Util_1_1Timer.html#ade956722930d5169849105b3829a9b63',1,'FT::Util::Timer::Timer()'],['../db/dff/classFT_1_1Feat.html#af5be17d09edb530c180bc20ed0a98326',1,'FT::Feat::timer()']]],
   ['timer',['Timer',['../db/db7/classFT_1_1Util_1_1Timer.html',1,'FT::Util']]],
-  ['to_5fstring',['to_string',['../dc/dc9/parser_8cc.html#a7650e12c899a04cd7fd772184d7cbac4',1,'to_string():&#160;parser.cc'],['../d1/d5d/namespaceFT_1_1Util.html#afe062564286e6b13100de60f8fe9b947',1,'FT::Util::to_string()']]],
+  ['to_5fstring',['to_string',['../d1/d5d/namespaceFT_1_1Util.html#afe062564286e6b13100de60f8fe9b947',1,'FT::Util']]],
   ['tokens',['tokens',['../de/d16/classInputParser.html#a23ce0e47972606dd65099570ec4385b8',1,'InputParser']]],
   ['top',['top',['../d8/d30/classFT_1_1Dat_1_1Stack.html#a3d2b074c7bc9f61e0b29b223ba71750e',1,'FT::Dat::Stack']]],
   ['total_5farity',['total_arity',['../d2/dfb/classFT_1_1Pop_1_1Op_1_1Node.html#a00e0702a82418ac8dbea312b8f3f66aa',1,'FT::Pop::Op::Node']]],
@@ -22,6 +21,6 @@ var searchData=
   ['transform',['transform',['../db/dff/classFT_1_1Feat.html#a70683df873b3584aa2ad346264280398',1,'FT::Feat::transform(MatrixXd &amp;X, std::map&lt; string, std::pair&lt; vector&lt; ArrayXd &gt;, vector&lt; ArrayXd &gt; &gt; &gt; Z=std::map&lt; string, std::pair&lt; vector&lt; ArrayXd &gt;, vector&lt; ArrayXd &gt; &gt; &gt;(), Individual *ind=0)'],['../db/dff/classFT_1_1Feat.html#a66b684acced2dc80d99448a480df6803',1,'FT::Feat::transform(double *X, int rows_x, int cols_x)']]],
   ['transform_5fwith_5fz',['transform_with_z',['../db/dff/classFT_1_1Feat.html#adf34059fe576ca1c776bc88008a72795',1,'FT::Feat']]],
   ['transit_5finto_5fvalues',['transit_into_values',['../df/d48/structshogun_1_1MyCARTreeNodeData.html#a08e9e8337e14d676a88bb9fff0b1a571',1,'shogun::MyCARTreeNodeData']]],
-  ['trim',['trim',['../dc/dc9/parser_8cc.html#a6907b1d08edcfb79736f0f455127a0c3',1,'trim():&#160;parser.cc'],['../d1/d5d/namespaceFT_1_1Util.html#a4c54a24d5a8475c9c5d6087e68feaca9',1,'FT::Util::trim()']]],
+  ['trim',['trim',['../d1/d5d/namespaceFT_1_1Util.html#a4c54a24d5a8475c9c5d6087e68feaca9',1,'FT::Util']]],
   ['ttypes',['ttypes',['../de/d2c/structFT_1_1Parameters.html#abdc07ad1c8f89ecfa5edd52c97892f42',1,'FT::Parameters']]]
 ];
