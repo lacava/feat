@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('d3/d65/namespaceFT_1_1Model.html','../
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -109,7 +109,8 @@ $(document).ready(function(){initNavTree('d3/d65/namespaceFT_1_1Model.html','../
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">FT::Model Namespace Reference</div>  </div>
 </div><!--header-->
@@ -123,10 +124,53 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d6f/classFT_1_1Model_1_1ML.html">ML</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">class that specifies the machine learning algorithm to pair with <a class="el" href="../../db/dff/classFT_1_1Feat.html" title="main class for the Feat learner. ">Feat</a>.  <a href="../../dd/d6f/classFT_1_1Model_1_1ML.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a3e165e7a7c8603ac4380303142185fdc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdc">ML_TYPE</a> { <br/>
+&#160;&#160;<a class="el" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdca3d5d1c52bcc79dcb8c2a48fb35d97504">LARS</a>, 
+<a class="el" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdca9f44aeb2d68842cbf2c188d378a0bedb">Ridge</a>, 
+<a class="el" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdca8933f5ba0c99bafd045664e2b97e81eb">RF</a>, 
+<a class="el" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdca5c949a17e4fce802fa936311c97203d7">SVM</a>, 
+<br/>
+&#160;&#160;<a class="el" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcae7278cab84c3f5938d783b7837f0159e">CART</a>, 
+<a class="el" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcad59b1dd6668ea0d9e128fa72a2d88f03">LR</a>
+<br/>
+ }</td></tr>
+<tr class="separator:a3e165e7a7c8603ac4380303142185fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>namespace containing <a class="el" href="../../dd/d6f/classFT_1_1Model_1_1ML.html" title="class that specifies the machine learning algorithm to pair with Feat. ">ML</a> methods used in <a class="el" href="../../db/dff/classFT_1_1Feat.html" title="main class for the Feat learner. ">Feat</a> </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="a3e165e7a7c8603ac4380303142185fdc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdc">FT::Model::ML_TYPE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a3e165e7a7c8603ac4380303142185fdca3d5d1c52bcc79dcb8c2a48fb35d97504"></a>LARS</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a3e165e7a7c8603ac4380303142185fdca9f44aeb2d68842cbf2c188d378a0bedb"></a>Ridge</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a3e165e7a7c8603ac4380303142185fdca8933f5ba0c99bafd045664e2b97e81eb"></a>RF</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a3e165e7a7c8603ac4380303142185fdca5c949a17e4fce802fa936311c97203d7"></a>SVM</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a3e165e7a7c8603ac4380303142185fdcae7278cab84c3f5938d783b7837f0159e"></a>CART</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a3e165e7a7c8603ac4380303142185fdcad59b1dd6668ea0d9e128fa72a2d88f03"></a>LR</em>&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="../../d7/d60/ml_8h_source.html#l00059">59</a> of file <a class="el" href="../../d7/d60/ml_8h_source.html">ml.h</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

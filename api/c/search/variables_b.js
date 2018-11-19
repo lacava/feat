@@ -4,6 +4,7 @@ var searchData=
   ['m_5falphas',['m_alphas',['../db/dff/classshogun_1_1CMyCARTree.html#a0177205fad542ccac5a2f199981e3fe3',1,'shogun::CMyCARTree']]],
   ['m_5fapply_5fcv_5fpruning',['m_apply_cv_pruning',['../db/dff/classshogun_1_1CMyCARTree.html#a37e6b4bd0968364625d9886e21581a2e',1,'shogun::CMyCARTree']]],
   ['m_5fc',['m_C',['../df/d62/classshogun_1_1CMyMulticlassLibLinear.html#ae24a49a56a10e75e0e12f1d5e10e5db2',1,'shogun::CMyMulticlassLibLinear']]],
+  ['m_5fcertainty',['m_certainty',['../db/dff/classshogun_1_1CMyCARTree.html#a96914adb9b9075eceb49a9a1a8ccd5f5',1,'shogun::CMyCARTree']]],
   ['m_5fepsilon',['m_epsilon',['../db/d4e/classshogun_1_1CMulticlassLogisticRegression.html#a1b2770da7b9faa1992263603dfe37a32',1,'shogun::CMulticlassLogisticRegression::m_epsilon()'],['../df/d62/classshogun_1_1CMyMulticlassLibLinear.html#a07d68d1ef9c905eb7b225e9a4c71bcce',1,'shogun::CMyMulticlassLibLinear::m_epsilon()']]],
   ['m_5ffolds',['m_folds',['../db/dff/classshogun_1_1CMyCARTree.html#adb5488448adf329fe004865880cca2dd',1,'shogun::CMyCARTree']]],
   ['m_5flabel_5fepsilon',['m_label_epsilon',['../db/dff/classshogun_1_1CMyCARTree.html#a09d4852996e99895742fe5f90b5faffb',1,'shogun::CMyCARTree']]],
@@ -33,5 +34,7 @@ var searchData=
   ['min_5fsplit_5fgain',['MIN_SPLIT_GAIN',['../db/dff/classshogun_1_1CMyCARTree.html#a470c47e13d68d22929c515489ecc3e7f',1,'shogun::CMyCARTree']]],
   ['missing',['MISSING',['../db/dff/classshogun_1_1CMyCARTree.html#a24f3fd6ba041039c69b7c24a2555a3fa',1,'shogun::CMyCARTree']]],
   ['ml',['ml',['../de/d2c/structFT_1_1Parameters.html#a7e11bd6f94c1474b695cc9c823e8ea46',1,'FT::Parameters::ml()'],['../da/def/classFT_1_1Pop_1_1Individual.html#a89a0dd8092be106f4017e1bbee038479',1,'FT::Pop::Individual::ml()']]],
-  ['ml_5ftype',['ml_type',['../dd/d6f/classFT_1_1Model_1_1ML.html#a52659d246ca0b29f06eaf7080bc10a2e',1,'FT::Model::ML']]]
+  ['ml_5fhash',['ml_hash',['../dd/d6f/classFT_1_1Model_1_1ML.html#ad2270894476657fa627fd7644f010363',1,'FT::Model::ML']]],
+  ['ml_5fstr',['ml_str',['../dd/d6f/classFT_1_1Model_1_1ML.html#aa3472d5ccfaabd560da07639798d55fb',1,'FT::Model::ML']]],
+  ['ml_5ftype',['ml_type',['../dd/d6f/classFT_1_1Model_1_1ML.html#ae083737f9ae15a9c1441ebc8c95bd894',1,'FT::Model::ML']]]
 ];

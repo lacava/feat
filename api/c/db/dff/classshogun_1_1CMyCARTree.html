@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('db/dff/classshogun_1_1CMyCARTree.html'
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -121,14 +121,6 @@ $(document).ready(function(){initNavTree('db/dff/classshogun_1_1CMyCARTree.html'
 </div><!--header-->
 <div class="contents">
 
-<p>This class implements the Classification And Regression Trees algorithm by Breiman et al for decision tree learning. A CART tree is a binary decision tree that is constructed by splitting a node into two child nodes repeatedly, beginning with the root node that contains the whole dataset. <br/>
- <br/>
-TREE GROWING PROCESS : <br/>
-During the tree growing process, we recursively split a node into left child and right child so that the resulting nodes are "purest". We do this until any of the stopping criteria is met. To find the best split, we scan through all possible splits in all predictive attributes. The best split is one that maximises some splitting criterion. For classification tasks, ie. when the dependent attribute is categorical, the Gini index is used. For regression tasks, ie. when the dependent variable is continuous, least squares deviation is used. The algorithm uses two stopping criteria : if node becomes completely "pure", ie. all its members have identical dependent variable, or all of them have identical predictive attributes (independent variables). <br/>
- <br/>
-.  
- <a href="../../db/dff/classshogun_1_1CMyCARTree.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for shogun::CMyCARTree:</div>
@@ -148,6 +140,12 @@ Collaboration diagram for shogun::CMyCARTree:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2e5bed54ada24d9ea1facbc25571286d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classshogun_1_1CMyCARTree.html#a2e5bed54ada24d9ea1facbc25571286d">CMyCARTree</a> ()</td></tr>
+<tr class="memdesc:a2e5bed54ada24d9ea1facbc25571286d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class implements the Classification And Regression Trees algorithm by Breiman et al for decision tree learning. A CART tree is a binary decision tree that is constructed by splitting a node into two child nodes repeatedly, beginning with the root node that contains the whole dataset. <br/>
+ <br/>
+TREE GROWING PROCESS : <br/>
+During the tree growing process, we recursively split a node into left child and right child so that the resulting nodes are "purest". We do this until any of the stopping criteria is met. To find the best split, we scan through all possible splits in all predictive attributes. The best split is one that maximises some splitting criterion. For classification tasks, ie. when the dependent attribute is categorical, the Gini index is used. For regression tasks, ie. when the dependent variable is continuous, least squares deviation is used. The algorithm uses two stopping criteria : if node becomes completely "pure", ie. all its members have identical dependent variable, or all of them have identical predictive attributes (independent variables). <br/>
+ <br/>
+.  <a href="#a2e5bed54ada24d9ea1facbc25571286d">More...</a><br/></td></tr>
 <tr class="separator:a2e5bed54ada24d9ea1facbc25571286d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add4415cd0d5b869bf33ca1ea23ef6833"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classshogun_1_1CMyCARTree.html#add4415cd0d5b869bf33ca1ea23ef6833">CMyCARTree</a> (SGVector&lt; bool &gt; attribute_types, EProblemType prob_type=PT_MULTICLASS)</td></tr>
 <tr class="separator:add4415cd0d5b869bf33ca1ea23ef6833"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,6 +163,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a43775693c35c83e84848bb0da5433bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f750d8d327e05c7295bbbcad10b4cdf"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classshogun_1_1CMyCARTree.html#a2f750d8d327e05c7295bbbcad10b4cdf">is_label_valid</a> (CLabels *lab) const </td></tr>
 <tr class="separator:a2f750d8d327e05c7295bbbcad10b4cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44ceed4c99876f0310a8c0bb15fe8fb0"><td class="memItemLeft" align="right" valign="top">virtual CBinaryLabels *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classshogun_1_1CMyCARTree.html#a44ceed4c99876f0310a8c0bb15fe8fb0">apply_binary</a> (CFeatures *data=NULL)</td></tr>
+<tr class="separator:a44ceed4c99876f0310a8c0bb15fe8fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b765354b43119e5c98b08bb3ab73d21"><td class="memItemLeft" align="right" valign="top">virtual CMulticlassLabels *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classshogun_1_1CMyCARTree.html#a2b765354b43119e5c98b08bb3ab73d21">apply_multiclass</a> (CFeatures *data=NULL)</td></tr>
 <tr class="separator:a2b765354b43119e5c98b08bb3ab73d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a600d66b60e54b46820a70172e67ac3bb"><td class="memItemLeft" align="right" valign="top">virtual CRegressionLabels *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classshogun_1_1CMyCARTree.html#a600d66b60e54b46820a70172e67ac3bb">apply_regression</a> (CFeatures *data=NULL)</td></tr>
@@ -207,6 +207,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aeb53d300185b39adc5f437273ac07ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a188eb408001bb7d7d38bda4819a49ce8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classshogun_1_1CMyCARTree.html#a188eb408001bb7d7d38bda4819a49ce8">feature_importances</a> ()</td></tr>
 <tr class="separator:a188eb408001bb7d7d38bda4819a49ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8d49d66534ca6b093156ccf33520d9c"><td class="memItemLeft" align="right" valign="top">SGVector&lt; float64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classshogun_1_1CMyCARTree.html#af8d49d66534ca6b093156ccf33520d9c">get_certainty_vector</a> () const </td></tr>
+<tr class="separator:af8d49d66534ca6b093156ccf33520d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2fcc2bba4f787f87f1682b27ffc47fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classshogun_1_1CMyCARTree.html#ab2fcc2bba4f787f87f1682b27ffc47fd">set_probabilities</a> (CLabels *labels, CFeatures *data=NULL)</td></tr>
+<tr class="separator:ab2fcc2bba4f787f87f1682b27ffc47fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -242,8 +246,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a64fe270e87afc7b6346012e03a8c8808"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a950b666b0f2578b5a79a83db15634d59"><td class="memItemLeft" align="right" valign="top">float64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classshogun_1_1CMyCARTree.html#a950b666b0f2578b5a79a83db15634d59">least_squares_deviation</a> (const SGVector&lt; float64_t &gt; &amp;labels, const SGVector&lt; float64_t &gt; &amp;weights, float64_t &amp;total_weight)</td></tr>
 <tr class="separator:a950b666b0f2578b5a79a83db15634d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a190065b7f59271e5894a21a99c0ae8ae"><td class="memItemLeft" align="right" valign="top">CLabels *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classshogun_1_1CMyCARTree.html#a190065b7f59271e5894a21a99c0ae8ae">apply_from_current_node</a> (CDenseFeatures&lt; float64_t &gt; *feats, bnode_t *current)</td></tr>
-<tr class="separator:a190065b7f59271e5894a21a99c0ae8ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad044b3cf24da304311a3a6f160cd8f3a"><td class="memItemLeft" align="right" valign="top">CLabels *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classshogun_1_1CMyCARTree.html#ad044b3cf24da304311a3a6f160cd8f3a">apply_from_current_node</a> (CDenseFeatures&lt; float64_t &gt; *feats, bnode_t *current, bool set_certainty=false)</td></tr>
+<tr class="separator:ad044b3cf24da304311a3a6f160cd8f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7794ca48372f992ca77c877e95c3bdbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classshogun_1_1CMyCARTree.html#a7794ca48372f992ca77c877e95c3bdbd">prune_by_cross_validation</a> (CDenseFeatures&lt; float64_t &gt; *data, int32_t folds)</td></tr>
 <tr class="separator:a7794ca48372f992ca77c877e95c3bdbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab939611f760287f5aa1c1ae1ca7cc604"><td class="memItemLeft" align="right" valign="top">float64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classshogun_1_1CMyCARTree.html#ab939611f760287f5aa1c1ae1ca7cc604">compute_error</a> (CLabels *labels, CLabels *reference, SGVector&lt; float64_t &gt; weights)</td></tr>
@@ -291,9 +295,27 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a557b7e78d423a5059c1790f3d125db8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cee8d3495aff77632a6ee820498ba56"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classshogun_1_1CMyCARTree.html#a5cee8d3495aff77632a6ee820498ba56">m_min_node_size</a></td></tr>
 <tr class="separator:a5cee8d3495aff77632a6ee820498ba56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96914adb9b9075eceb49a9a1a8ccd5f5"><td class="memItemLeft" align="right" valign="top">SGVector&lt; float64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classshogun_1_1CMyCARTree.html#a96914adb9b9075eceb49a9a1a8ccd5f5">m_certainty</a></td></tr>
+<tr class="separator:a96914adb9b9075eceb49a9a1a8ccd5f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class implements the Classification And Regression Trees algorithm by Breiman et al for decision tree learning. A CART tree is a binary decision tree that is constructed by splitting a node into two child nodes repeatedly, beginning with the root node that contains the whole dataset. <br/>
+<div class="textblock">
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00042">42</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a2e5bed54ada24d9ea1facbc25571286d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CMyCARTree::CMyCARTree </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This class implements the Classification And Regression Trees algorithm by Breiman et al for decision tree learning. A CART tree is a binary decision tree that is constructed by splitting a node into two child nodes repeatedly, beginning with the root node that contains the whole dataset. <br/>
  <br/>
 TREE GROWING PROCESS : <br/>
 During the tree growing process, we recursively split a node into left child and right child so that the resulting nodes are "purest". We do this until any of the stopping criteria is met. To find the best split, we scan through all possible splits in all predictive attributes. The best split is one that maximises some splitting criterion. For classification tasks, ie. when the dependent attribute is categorical, the Gini index is used. For regression tasks, ie. when the dependent variable is continuous, least squares deviation is used. The algorithm uses two stopping criteria : if node becomes completely "pure", ie. all its members have identical dependent variable, or all of them have identical predictive attributes (independent variables). <br/>
@@ -310,23 +332,7 @@ While choosing the best split at a node, missing attribute values are left out. 
  \(\lambda_{i,j} = \frac{min(P_L,P_R)-(1-P_{L_iL_j}-P_{R_iR_j})}{min(P_L,P_R)}\) <br/>
 where \(P_L\) and \(P_R\) are the node probabilities for the optimal split of node i into left and right nodes respectively, \(P_{L_iL_j}\) ( \(P_{R_iR_j}\) resp.) is the probability that both (optimal) node i and (surrogate) node j send an observation to the Left (Right resp.). <br/>
 We use best surrogate split, 2nd best surrogate split and so on until all data points with missing attributes in a node have been sent to left/right child. If all possible surrogate splits are used up but some data points are still to be assigned left/right child, majority rule is used, ie. the data points are assigned the child where majority of data points have gone from the node. <br/>
-cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=%2Fcom.ibm.spss.statistics.help%2Falg_tree-cart.htm">http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=%2Fcom.ibm.spss.statistics.help%2Falg_tree-cart.htm</a> </p>
-
-<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00076">76</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a2e5bed54ada24d9ea1facbc25571286d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">CMyCARTree::CMyCARTree </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>default constructor </p>
+cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=%2Fcom.ibm.spss.statistics.help%2Falg_tree-cart.htmdefault">http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=%2Fcom.ibm.spss.statistics.help%2Falg_tree-cart.htmdefault</a> constructor </p>
 
 <p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00056">56</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
@@ -445,7 +451,41 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a190065b7f59271e5894a21a99c0ae8ae"></a>
+<a class="anchor" id="a44ceed4c99876f0310a8c0bb15fe8fb0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CBinaryLabels * CMyCARTree::apply_binary </td>
+          <td>(</td>
+          <td class="paramtype">CFeatures *&#160;</td>
+          <td class="paramname"><em>data</em> = <code>NULL</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>WGL: classify data using Classification Tree </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>data to be classified </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>BinaryLabels corresponding to labels of various test vectors </dd></dl>
+
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00115">115</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad044b3cf24da304311a3a6f160cd8f3a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -462,7 +502,13 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bnode_t *&#160;</td>
-          <td class="paramname"><em>current</em>&#160;</td>
+          <td class="paramname"><em>current</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>set_certainty</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -486,7 +532,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>classification/regression labels of input data </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01122">1122</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01140">1140</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -520,7 +566,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>MulticlassLabels corresponding to labels of various test vectors </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00115">115</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00134">134</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -554,7 +600,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Regression output for various test vectors </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00129">129</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00148">148</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -613,7 +659,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pointer to the root of the CART subtree </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00330">330</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00349">349</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -631,7 +677,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>clear feature types of various features </p>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00215">215</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00234">234</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -649,7 +695,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>clear weights of data points </p>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00198">198</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00217">217</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -762,7 +808,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>index to the best attribute </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00547">547</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00566">566</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -814,7 +860,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>error evaluated </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01346">1346</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01378">1378</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -858,7 +904,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01455">1455</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01487">1487</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -877,7 +923,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 <p>WGL: return Gini importance scores for features </p>
 <p>Importance is defined as the sum across all splits in the tree of the information criterion brought about by each feature.</p>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01544">1544</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01576">1576</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -911,7 +957,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>alpha value corresponding to the weakest link in subtree </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01434">1434</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01466">1466</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -944,7 +990,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01485">1485</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01517">1517</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1003,7 +1049,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>least squared deviation gain achieved after spliting the node </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01070">1070</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01089">1089</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1055,7 +1101,25 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Gini gain achieved after spliting the node </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01084">1084</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01103">1103</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af8d49d66534ca6b093156ccf33520d9c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SGVector&lt; float64_t &gt; CMyCARTree::get_certainty_vector </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>WGL: gets the probability estimate for each sample TODO: make this set_probabilities </p>
+
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01234">1234</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1074,7 +1138,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 <p>set feature types of various features </p>
 <dl class="section return"><dt>Returns</dt><dd>bool vector - true for nominal feature false for continuous feature type </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00210">210</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00229">229</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1111,7 +1175,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>WGL: recursive function for getting node importance </p>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01559">1559</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01591">1591</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1176,7 +1240,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 <p>get max allowed tree depth</p>
 <dl class="section return"><dt>Returns</dt><dd>max allowed tree depth </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00232">232</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00251">251</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1195,7 +1259,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 <p>get min allowed node size</p>
 <dl class="section return"><dt>Returns</dt><dd>min allowed node size </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00243">243</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00262">262</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1241,7 +1305,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 <p>get number of subsets used for cross validation</p>
 <dl class="section return"><dt>Returns</dt><dd>number of folds used in cross validation </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00221">221</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00240">240</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1286,7 +1350,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>unique labels </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00523">523</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00542">542</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1305,7 +1369,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 <p>get weights of data points </p>
 <dl class="section return"><dt>Returns</dt><dd>vector of weights </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00193">193</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00212">212</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1350,7 +1414,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Gini index of the node </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01096">1096</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01115">1115</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1437,7 +1501,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>vector denoting whether a data point goes to left child for all data points including ones with missing attributes </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00933">933</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00952">952</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1524,7 +1588,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>vector denoting whether a data point goes to left child for all data points including ones with missing attributes </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00990">990</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01009">1009</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1550,7 +1614,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>initializes members of class </p>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01511">1511</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01543">1543</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1636,7 +1700,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>least squares deviation of the data </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01106">1106</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01125">1125</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1670,7 +1734,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00310">310</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00329">329</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1714,7 +1778,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01207">1207</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01239">1239</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1748,7 +1812,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>CDynamicObjectArray of pruned trees </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01384">1384</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01416">1416</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1791,7 +1855,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00141">141</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00160">160</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1841,7 +1905,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00204">204</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00223">223</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1866,7 +1930,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00254">254</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00273">273</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1949,7 +2013,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00237">237</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00256">256</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1974,7 +2038,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00248">248</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00267">267</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -1999,7 +2063,36 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00226">226</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00245">245</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab2fcc2bba4f787f87f1682b27ffc47fd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMyCARTree::set_probabilities </td>
+          <td>(</td>
+          <td class="paramtype">CLabels *&#160;</td>
+          <td class="paramname"><em>labels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CFeatures *&#160;</td>
+          <td class="paramname"><em>data</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>WGL: sets the probabilities on each label according to m_certainty </p>
+
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l01609">1609</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -2027,7 +2120,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00303">303</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00322">322</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -2052,7 +2145,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00187">187</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00206">206</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -2111,7 +2204,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>vector denoting whether a data point goes to left child for all data points including ones with missing attributes </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00858">858</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00877">877</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -2145,7 +2238,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00260">260</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html#l00279">279</a> of file <a class="el" href="../../d7/d9e/MyCARTree_8cc_source.html">MyCARTree.cc</a>.</p>
 
 </div>
 </div>
@@ -2169,7 +2262,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>equality epsilon </p>
 
-<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00424">424</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00441">441</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
 
 </div>
 </div>
@@ -2192,7 +2285,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>stores \(\alpha_k\) values evaluated in cost-complexity pruning </p>
 
-<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00461">461</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00478">478</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
 
 </div>
 </div>
@@ -2215,7 +2308,30 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>flag indicating whether cross validation pruning has to be applied or not - false by default </p>
 
-<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00452">452</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00469">469</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a96914adb9b9075eceb49a9a1a8ccd5f5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SGVector&lt;float64_t&gt; shogun::CMyCARTree::m_certainty</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>percentage of certainty of labels predicted by decision tree ie. weight of elements belonging to predicted class in a node/ total weight in a node </p>
+
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00489">489</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
 
 </div>
 </div>
@@ -2238,7 +2354,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>V in V-fold cross validation - 5 by default </p>
 
-<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00455">455</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00472">472</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
 
 </div>
 </div>
@@ -2261,7 +2377,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>equality range for regression labels </p>
 
-<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00428">428</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00445">445</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
 
 </div>
 </div>
@@ -2284,7 +2400,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>max allowed depth of tree </p>
 
-<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00464">464</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00481">481</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
 
 </div>
 </div>
@@ -2307,7 +2423,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>minimum number of feature vectors required in a node </p>
 
-<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00467">467</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00484">484</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
 
 </div>
 </div>
@@ -2330,7 +2446,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>Problem type : PT_MULTICLASS or PT_REGRESSION </p>
 
-<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00458">458</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00475">475</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
 
 </div>
 </div>
@@ -2353,7 +2469,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>vector depicting whether various feature dimensions are nominal or not </p>
 
-<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00431">431</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00448">448</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
 
 </div>
 </div>
@@ -2376,7 +2492,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>If pre sorted features are used in train </p>
 
-<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00443">443</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00460">460</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
 
 </div>
 </div>
@@ -2399,7 +2515,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>sorted transposed features </p>
 
-<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00437">437</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00454">454</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
 
 </div>
 </div>
@@ -2422,7 +2538,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>sorted indices </p>
 
-<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00440">440</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00457">457</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
 
 </div>
 </div>
@@ -2445,7 +2561,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>flag storing whether the type of various feature dimensions are specified using is_nominal_feature </p>
 
-<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00446">446</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00463">463</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
 
 </div>
 </div>
@@ -2468,7 +2584,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>weights of samples in training set </p>
 
-<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00434">434</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00451">451</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
 
 </div>
 </div>
@@ -2491,7 +2607,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>flag storing whether weights of samples are specified using weights vector </p>
 
-<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00449">449</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00466">466</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
 
 </div>
 </div>
@@ -2514,7 +2630,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>min gain for splitting to be allowed </p>
 
-<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00421">421</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00438">438</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
 
 </div>
 </div>
@@ -2537,7 +2653,7 @@ cf. <a href="http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=
 </div><div class="memdoc">
 <p>denotes that a feature in a vector is missing MISSING = NOT_A_NUMBER </p>
 
-<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00418">418</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html#l00435">435</a> of file <a class="el" href="../../d0/d7f/MyCARTree_8h_source.html">MyCARTree.h</a>.</p>
 
 </div>
 </div>

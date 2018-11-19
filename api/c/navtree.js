@@ -7,7 +7,9 @@ var NAVTREE =
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
         [ "Variables", "namespacemembers_vars.html", null ],
-        [ "Typedefs", "namespacemembers_type.html", null ]
+        [ "Typedefs", "namespacemembers_type.html", null ],
+        [ "Enumerations", "namespacemembers_enum.html", null ],
+        [ "Enumerator", "namespacemembers_eval.html", null ]
       ] ]
     ] ],
     [ "Classes", null, [
@@ -39,10 +41,10 @@ var NAVTREEINDEX =
 "annotated.html",
 "d4/d04/structFT_1_1Parameters_1_1BP.html#aa22e510dec75682804aa812223f1e2f4",
 "d7/d2b/classFT_1_1Pop_1_1Op_1_1NodeLongitudinal.html#a665f44b9f5f2d02e6e6aad815fd0df23",
-"da/da2/metrics_8cc.html#a60c1fde8f69d7de8436b2e39f6d114e7",
-"db/dff/classFT_1_1Feat.html#ab6978a1d4421f56a70cf148b0a5624fd",
-"de/d2c/structFT_1_1Parameters.html#a2fc9772d05e72f1e79bd9fb4fa4a1b95",
-"functions_func_n.html"
+"da/da2/metrics_8cc.html#a0a4abab1b81f02a93de91b6354195b1d",
+"db/dff/classFT_1_1Feat.html#aa7f998174d4f55a45a291695b86bd2ff",
+"de/d28/classFT_1_1Pop_1_1Op_1_1NodeLog.html#ade6435ab296b6f38e5d971f623786992",
+"functions_f.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
