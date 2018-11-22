@@ -1,5 +1,6 @@
 var utils_8cc =
 [
+    [ "argmiddle", "d7/da9/utils_8cc.html#a6b54031aa131a6713827da3c52c210f7", null ],
     [ "clean", "d7/da9/utils_8cc.html#ae37fd6fa798681e27b4f2295771743e4", null ],
     [ "condition_number", "d7/da9/utils_8cc.html#ab15f4315225cd5da2c965c9466d353aa", null ],
     [ "corrcoef", "d7/da9/utils_8cc.html#a140f4f26aaee120a9b55fa87ee2e2d79", null ],

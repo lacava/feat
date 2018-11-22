@@ -30,6 +30,7 @@ var searchData=
   ['max_5fstall',['max_stall',['../de/d2c/structFT_1_1Parameters.html#a30f7f95ef22a0228e87e297ab1305ca2',1,'FT::Parameters']]],
   ['max_5ftime',['max_time',['../de/d2c/structFT_1_1Parameters.html#a2fc9772d05e72f1e79bd9fb4fa4a1b95',1,'FT::Parameters']]],
   ['max_5ftrain_5ftime',['max_train_time',['../dd/d6f/classFT_1_1Model_1_1ML.html#a3cce878e1dac7299c597fd11b2dddc33',1,'FT::Model::ML']]],
+  ['med_5floss_5fv',['med_loss_v',['../db/dff/classFT_1_1Feat.html#af4612eb4720d492602ff652318f71409',1,'FT::Feat']]],
   ['min_5fdbl',['MIN_DBL',['../d2/d35/namespaceFT.html#a248f7301a92cd80d7c492cc3d51ea7dc',1,'FT']]],
   ['min_5fsplit_5fgain',['MIN_SPLIT_GAIN',['../db/dff/classshogun_1_1CMyCARTree.html#a470c47e13d68d22929c515489ecc3e7f',1,'shogun::CMyCARTree']]],
   ['missing',['MISSING',['../db/dff/classshogun_1_1CMyCARTree.html#a24f3fd6ba041039c69b7c24a2555a3fa',1,'shogun::CMyCARTree']]],

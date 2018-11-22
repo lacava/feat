@@ -2,6 +2,7 @@ var utils_8h =
 [
     [ "Timer", "db/db7/classFT_1_1Util_1_1Timer.html", "db/db7/classFT_1_1Util_1_1Timer" ],
     [ "Normalizer", "dd/d51/structFT_1_1Util_1_1Normalizer.html", "dd/d51/structFT_1_1Util_1_1Normalizer" ],
+    [ "argmiddle", "d5/d60/utils_8h.html#a6b54031aa131a6713827da3c52c210f7", null ],
     [ "argsort", "d5/d60/utils_8h.html#ad59ee3e7a54ccbe150da50e232d38a92", null ],
     [ "clean", "d5/d60/utils_8h.html#ae37fd6fa798681e27b4f2295771743e4", null ],
     [ "condition_number", "d5/d60/utils_8h.html#ab15f4315225cd5da2c965c9466d353aa", null ],
