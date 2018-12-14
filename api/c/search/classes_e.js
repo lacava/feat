@@ -8,9 +8,9 @@ var searchData=
   ['sortcomplexity',['SortComplexity',['../de/dad/structFT_1_1Pop_1_1Population_1_1SortComplexity.html',1,'FT::Pop::Population']]],
   ['stack',['Stack',['../d8/d30/classFT_1_1Dat_1_1Stack.html',1,'FT::Dat']]],
   ['stack_3c_20arrayxb_20_3e',['Stack&lt; ArrayXb &gt;',['../d8/d30/classFT_1_1Dat_1_1Stack.html',1,'FT::Dat']]],
-  ['stack_3c_20arrayxd_20_3e',['Stack&lt; ArrayXd &gt;',['../d8/d30/classFT_1_1Dat_1_1Stack.html',1,'FT::Dat']]],
+  ['stack_3c_20arrayxf_20_3e',['Stack&lt; ArrayXf &gt;',['../d8/d30/classFT_1_1Dat_1_1Stack.html',1,'FT::Dat']]],
   ['stack_3c_20arrayxi_20_3e',['Stack&lt; ArrayXi &gt;',['../d8/d30/classFT_1_1Dat_1_1Stack.html',1,'FT::Dat']]],
-  ['stack_3c_20std_3a_3apair_3c_20vector_3c_20arrayxd_20_3e_2c_20vector_3c_20arrayxd_20_3e_20_3e_20_3e',['Stack&lt; std::pair&lt; vector&lt; ArrayXd &gt;, vector&lt; ArrayXd &gt; &gt; &gt;',['../d8/d30/classFT_1_1Dat_1_1Stack.html',1,'FT::Dat']]],
+  ['stack_3c_20std_3a_3apair_3c_20vector_3c_20arrayxf_20_3e_2c_20vector_3c_20arrayxf_20_3e_20_3e_20_3e',['Stack&lt; std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt;',['../d8/d30/classFT_1_1Dat_1_1Stack.html',1,'FT::Dat']]],
   ['stack_3c_20string_20_3e',['Stack&lt; string &gt;',['../d8/d30/classFT_1_1Dat_1_1Stack.html',1,'FT::Dat']]],
   ['state',['State',['../dd/d3f/structFT_1_1Dat_1_1State.html',1,'FT::Dat']]]
 ];

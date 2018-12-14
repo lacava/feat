@@ -5,7 +5,7 @@ var init_8h =
     [ "omp_set_num_threads", "d8/dc0/init_8h.html#a34d9416d559c78e525082e3b25582658", null ],
     [ "ArrayXb", "d8/dc0/init_8h.html#a6a33354c51ab1e4986b2a222aac825a7", null ],
     [ "VectorXl", "d8/dc0/init_8h.html#a21d1558c9c77cb1f9f2d2afb82cf20e3", null ],
-    [ "MAX_DBL", "d8/dc0/init_8h.html#ae77877ad2b5e76ebfaacf9415673b323", null ],
-    [ "MIN_DBL", "d8/dc0/init_8h.html#a248f7301a92cd80d7c492cc3d51ea7dc", null ],
-    [ "NEAR_ZERO", "d8/dc0/init_8h.html#a7ebb2c11cf06c655fc138dbfe63365f7", null ]
+    [ "MAX_FLT", "d8/dc0/init_8h.html#a6e1cdc0c22ce9984edff09f0ccb7983c", null ],
+    [ "MIN_FLT", "d8/dc0/init_8h.html#adedc8696a3aadf2341172df10ad84445", null ],
+    [ "NEAR_ZERO", "d8/dc0/init_8h.html#a8f5cbe6bf6c40a1c1b427d5b0038f008", null ]
 ];

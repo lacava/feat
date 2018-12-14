@@ -1,9 +1,9 @@
 var structFT_1_1Util_1_1Normalizer =
 [
-    [ "fit", "dd/d51/structFT_1_1Util_1_1Normalizer.html#a18e5c80453fa52974df90d26ef1327db", null ],
-    [ "fit_normalize", "dd/d51/structFT_1_1Util_1_1Normalizer.html#a46adee9309808d6164898bc4aa29a141", null ],
-    [ "normalize", "dd/d51/structFT_1_1Util_1_1Normalizer.html#aad84e8898f7b291b4c44da2928005bfe", null ],
+    [ "fit", "dd/d51/structFT_1_1Util_1_1Normalizer.html#a499c17aed9381728f5c4ccc9f1abef64", null ],
+    [ "fit_normalize", "dd/d51/structFT_1_1Util_1_1Normalizer.html#ab6ed63bfb614f90b469cd2ee069f614c", null ],
+    [ "normalize", "dd/d51/structFT_1_1Util_1_1Normalizer.html#ab6fd830d0df127d67d85072de631c625", null ],
     [ "dtypes", "dd/d51/structFT_1_1Util_1_1Normalizer.html#a16f2b1e21bd80f5b51651c4e21536d94", null ],
-    [ "offset", "dd/d51/structFT_1_1Util_1_1Normalizer.html#afe95594dbd44b500c69a8b574931ebe8", null ],
-    [ "scale", "dd/d51/structFT_1_1Util_1_1Normalizer.html#a40ce5164da20de09b5027a36b7be4f61", null ]
+    [ "offset", "dd/d51/structFT_1_1Util_1_1Normalizer.html#aefc8c4078d85ae96f709c23c79b0b70e", null ],
+    [ "scale", "dd/d51/structFT_1_1Util_1_1Normalizer.html#a42d899c4ca0d8d9b297814f9f06bbf8c", null ]
 ];

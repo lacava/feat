@@ -6,10 +6,12 @@ var files =
     ] ],
     [ "auto_backprop.cc", "d5/d02/auto__backprop_8cc.html", null ],
     [ "auto_backprop.h", "d6/d8a/auto__backprop_8h.html", "d6/d8a/auto__backprop_8h" ],
+    [ "cuda_utils.h", "de/d4f/cuda__utils_8h.html", "de/d4f/cuda__utils_8h" ],
     [ "data.cc", "d4/d05/data_8cc.html", null ],
     [ "data.h", "d2/dbd/data_8h.html", "d2/dbd/data_8h" ],
     [ "error.cc", "df/dea/error_8cc.html", "df/dea/error_8cc" ],
     [ "error.h", "da/d41/error_8h.html", "da/d41/error_8h" ],
+    [ "error_handling.h", "d3/d11/error__handling_8h.html", "d3/d11/error__handling_8h" ],
     [ "evaluation.cc", "d5/d3a/evaluation_8cc.html", null ],
     [ "evaluation.h", "d3/df9/evaluation_8h.html", "d3/df9/evaluation_8h" ],
     [ "feat.cc", "dc/d37/feat_8cc.html", "dc/d37/feat_8cc" ],
@@ -25,6 +27,7 @@ var files =
     [ "init.h", "d8/dc0/init_8h.html", "d8/dc0/init_8h" ],
     [ "io.cc", "db/dd3/io_8cc.html", "db/dd3/io_8cc" ],
     [ "io.h", "dc/dac/io_8h.html", "dc/dac/io_8h" ],
+    [ "kernels.h", "d0/d01/kernels_8h.html", "d0/d01/kernels_8h" ],
     [ "lexicase.cc", "d7/dd3/lexicase_8cc.html", null ],
     [ "lexicase.h", "d3/d12/lexicase_8h.html", [
       [ "Lexicase", "db/d76/structFT_1_1Sel_1_1Lexicase.html", "db/d76/structFT_1_1Sel_1_1Lexicase" ]
@@ -298,6 +301,7 @@ var files =
     ] ],
     [ "state.cc", "d5/d2b/state_8cc.html", null ],
     [ "state.h", "db/d3b/state_8h.html", "db/d3b/state_8h" ],
+    [ "state_utils.h", "d3/d35/state__utils_8h.html", "d3/d35/state__utils_8h" ],
     [ "utils.cc", "d7/da9/utils_8cc.html", "d7/da9/utils_8cc" ],
     [ "utils.h", "d5/d60/utils_8h.html", "d5/d60/utils_8h" ],
     [ "variation.cc", "de/d10/variation_8cc.html", "de/d10/variation_8cc" ],

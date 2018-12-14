@@ -9,8 +9,10 @@ var classFT_1_1Dat_1_1Stack =
     [ "empty", "d8/d30/classFT_1_1Dat_1_1Stack.html#aa5f723e3a19cd26c59f36243cc2149f9", null ],
     [ "end", "d8/d30/classFT_1_1Dat_1_1Stack.html#ad3e9bc7f3da68c1fcea70e47117c52ec", null ],
     [ "end", "d8/d30/classFT_1_1Dat_1_1Stack.html#aa364983877a48296c94efbe5aed3f6e3", null ],
+    [ "operator[]", "d8/d30/classFT_1_1Dat_1_1Stack.html#a01bb28dbc2f4a1aa82b34e8c4c324e6d", null ],
     [ "pop", "d8/d30/classFT_1_1Dat_1_1Stack.html#a1a9ccfe042ab6e9cae8027702202f567", null ],
     [ "push", "d8/d30/classFT_1_1Dat_1_1Stack.html#ac9515b35f42e5f3315aca40b6e6bdb29", null ],
+    [ "resize", "d8/d30/classFT_1_1Dat_1_1Stack.html#aa8c84d5a40145eda898bdcbd8d913521", null ],
     [ "size", "d8/d30/classFT_1_1Dat_1_1Stack.html#a4c1afdce83c8670e2d654f18f6487064", null ],
     [ "top", "d8/d30/classFT_1_1Dat_1_1Stack.html#a3d2b074c7bc9f61e0b29b223ba71750e", null ],
     [ "st", "d8/d30/classFT_1_1Dat_1_1Stack.html#a71e074110b85a6a19d1f6ed2955bb447", null ]

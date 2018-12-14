@@ -29,6 +29,7 @@ var NAVTREE =
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
+        [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
@@ -39,12 +40,12 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d4/d04/structFT_1_1Parameters_1_1BP.html#aa22e510dec75682804aa812223f1e2f4",
-"d7/d2b/classFT_1_1Pop_1_1Op_1_1NodeLongitudinal.html#a107e8dcdfd3e50dc1d367af88dd73bb2",
-"da/da2/metrics_8cc.html",
-"db/dff/classFT_1_1Feat.html#aa46144d8615e6d422246e6a7f705bea6",
-"de/d28/classFT_1_1Pop_1_1Op_1_1NodeLog.html#a2ab12b6c79530f14f1625c00d702373d",
-"functions_c.html"
+"d3/d06/nsga2_8h.html",
+"d6/d5f/structFT_1_1Pop_1_1Population.html#af8acd2b85d5839c4058dd356a5b66ec6",
+"d8/dc0/init_8h.html#a8f5cbe6bf6c40a1c1b427d5b0038f008",
+"db/dff/classFT_1_1Feat.html#a0f39d4c58662d28aa9d005126cf51f7f",
+"dd/d51/structFT_1_1Util_1_1Normalizer.html#ab6ed63bfb614f90b469cd2ee069f614c",
+"df/d51/classFT_1_1Pop_1_1Op_1_1NodeConstant.html#a51915499ba827dad4703d7988bdfc132"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

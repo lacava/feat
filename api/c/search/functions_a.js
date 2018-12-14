@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['kurtosis',['kurtosis',['../d1/d5d/namespaceFT_1_1Util.html#a1629ce84b96703476c271a567fd26bb1',1,'FT::Util']]]
+  ['kurtosis',['kurtosis',['../d1/d5d/namespaceFT_1_1Util.html#a8d21d29f224899f7818e41ddd21bcf7f',1,'FT::Util']]]
 ];

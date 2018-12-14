@@ -140,74 +140,77 @@ Functions</h2></td></tr>
 <tr class="memitem:acf52b08ccede5464385595db052ee765"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#acf52b08ccede5464385595db052ee765">HandleErrorNoThrow</a> (string err, const char *file, int line)</td></tr>
 <tr class="memdesc:acf52b08ccede5464385595db052ee765"><td class="mdescLeft">&#160;</td><td class="mdescRight">prints error to stderr and returns  <a href="#acf52b08ccede5464385595db052ee765">More...</a><br/></td></tr>
 <tr class="separator:acf52b08ccede5464385595db052ee765"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95c28b79f6f724f5fb5553822cbf9960"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#a95c28b79f6f724f5fb5553822cbf9960">printProgress</a> (double percentage)</td></tr>
-<tr class="memdesc:a95c28b79f6f724f5fb5553822cbf9960"><td class="mdescLeft">&#160;</td><td class="mdescRight">outputs a progress bar, filled according to  <a href="#a95c28b79f6f724f5fb5553822cbf9960">More...</a><br/></td></tr>
-<tr class="separator:a95c28b79f6f724f5fb5553822cbf9960"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29e0d573f3828f4b3f42e3451d89dbfa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#a29e0d573f3828f4b3f42e3451d89dbfa">load_csv</a> (const std::string &amp;path, MatrixXd &amp;X, VectorXd &amp;y, vector&lt; string &gt; &amp;names, vector&lt; char &gt; &amp;dtypes, bool &amp;binary_endpoint, char sep)</td></tr>
-<tr class="memdesc:a29e0d573f3828f4b3f42e3451d89dbfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">load csv file into matrix.  <a href="#a29e0d573f3828f4b3f42e3451d89dbfa">More...</a><br/></td></tr>
-<tr class="separator:a29e0d573f3828f4b3f42e3451d89dbfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b548d25381c0b6c2fbc767420eae135"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#a5b548d25381c0b6c2fbc767420eae135">load_longitudinal</a> (const std::string &amp;path, std::map&lt; string, std::pair&lt; vector&lt; ArrayXd &gt;, vector&lt; ArrayXd &gt; &gt; &gt; &amp;Z, char sep)</td></tr>
-<tr class="memdesc:a5b548d25381c0b6c2fbc767420eae135"><td class="mdescLeft">&#160;</td><td class="mdescRight">load longitudinal csv file into matrix.  <a href="#a5b548d25381c0b6c2fbc767420eae135">More...</a><br/></td></tr>
-<tr class="separator:a5b548d25381c0b6c2fbc767420eae135"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad862b7f734b5fbc3414ef74e2406238d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#ad862b7f734b5fbc3414ef74e2406238d">load_partial_longitudinal</a> (const std::string &amp;path, std::map&lt; string, std::pair&lt; vector&lt; ArrayXd &gt;, vector&lt; ArrayXd &gt; &gt; &gt; &amp;Z, char sep, const vector&lt; int &gt; &amp;idx)</td></tr>
-<tr class="memdesc:ad862b7f734b5fbc3414ef74e2406238d"><td class="mdescLeft">&#160;</td><td class="mdescRight">load partial longitudinal csv file into matrix according to idx vector  <a href="#ad862b7f734b5fbc3414ef74e2406238d">More...</a><br/></td></tr>
-<tr class="separator:ad862b7f734b5fbc3414ef74e2406238d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae37fd6fa798681e27b4f2295771743e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#ae37fd6fa798681e27b4f2295771743e4">clean</a> (ArrayXd &amp;x)</td></tr>
-<tr class="memdesc:ae37fd6fa798681e27b4f2295771743e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">limits node output to be between MIN_DBL and MAX_DBL  <a href="#ae37fd6fa798681e27b4f2295771743e4">More...</a><br/></td></tr>
-<tr class="separator:ae37fd6fa798681e27b4f2295771743e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1bfaaf379891dc76ce9da4365329788"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#ae1bfaaf379891dc76ce9da4365329788">printProgress</a> (float percentage)</td></tr>
+<tr class="memdesc:ae1bfaaf379891dc76ce9da4365329788"><td class="mdescLeft">&#160;</td><td class="mdescRight">outputs a progress bar, filled according to  <a href="#ae1bfaaf379891dc76ce9da4365329788">More...</a><br/></td></tr>
+<tr class="separator:ae1bfaaf379891dc76ce9da4365329788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee5e757a768b1d11723a17a957b42acc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#aee5e757a768b1d11723a17a957b42acc">load_csv</a> (const std::string &amp;path, MatrixXf &amp;X, VectorXf &amp;y, vector&lt; string &gt; &amp;names, vector&lt; char &gt; &amp;dtypes, bool &amp;binary_endpoint, char sep)</td></tr>
+<tr class="memdesc:aee5e757a768b1d11723a17a957b42acc"><td class="mdescLeft">&#160;</td><td class="mdescRight">load csv file into matrix.  <a href="#aee5e757a768b1d11723a17a957b42acc">More...</a><br/></td></tr>
+<tr class="separator:aee5e757a768b1d11723a17a957b42acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cb7cf1e84b8bd6972815fd57ac48c4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#a6cb7cf1e84b8bd6972815fd57ac48c4d">load_longitudinal</a> (const std::string &amp;path, std::map&lt; string, std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt; &amp;Z, char sep)</td></tr>
+<tr class="memdesc:a6cb7cf1e84b8bd6972815fd57ac48c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">load longitudinal csv file into matrix.  <a href="#a6cb7cf1e84b8bd6972815fd57ac48c4d">More...</a><br/></td></tr>
+<tr class="separator:a6cb7cf1e84b8bd6972815fd57ac48c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a819c0666590cda58db361656c87c605b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#a819c0666590cda58db361656c87c605b">load_partial_longitudinal</a> (const std::string &amp;path, std::map&lt; string, std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt; &amp;Z, char sep, const vector&lt; int &gt; &amp;idx)</td></tr>
+<tr class="memdesc:a819c0666590cda58db361656c87c605b"><td class="mdescLeft">&#160;</td><td class="mdescRight">load partial longitudinal csv file into matrix according to idx vector  <a href="#a819c0666590cda58db361656c87c605b">More...</a><br/></td></tr>
+<tr class="separator:a819c0666590cda58db361656c87c605b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea590c3a1595610c3ae351b926a77728"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#aea590c3a1595610c3ae351b926a77728">clean</a> (ArrayXf &amp;x)</td></tr>
+<tr class="memdesc:aea590c3a1595610c3ae351b926a77728"><td class="mdescLeft">&#160;</td><td class="mdescRight">limits node output to be between MIN_FLT and MAX_FLT  <a href="#aea590c3a1595610c3ae351b926a77728">More...</a><br/></td></tr>
+<tr class="separator:aea590c3a1595610c3ae351b926a77728"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15f79c11509d2effb17f6a6cc82d0a64"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#a15f79c11509d2effb17f6a6cc82d0a64">ltrim</a> (std::string str, const std::string &amp;chars)</td></tr>
 <tr class="separator:a15f79c11509d2effb17f6a6cc82d0a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad832f4e284437af673895cedbadda37d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#ad832f4e284437af673895cedbadda37d">rtrim</a> (std::string str, const std::string &amp;chars)</td></tr>
 <tr class="separator:ad832f4e284437af673895cedbadda37d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c54a24d5a8475c9c5d6087e68feaca9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#a4c54a24d5a8475c9c5d6087e68feaca9">trim</a> (std::string str, const std::string &amp;chars)</td></tr>
 <tr class="separator:a4c54a24d5a8475c9c5d6087e68feaca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34078a7cc1e5d69dadca293133f5fb77"><td class="memItemLeft" align="right" valign="top">vector&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#a34078a7cc1e5d69dadca293133f5fb77">find_dtypes</a> (MatrixXd &amp;X)</td></tr>
-<tr class="memdesc:a34078a7cc1e5d69dadca293133f5fb77"><td class="mdescLeft">&#160;</td><td class="mdescRight">determines data types of columns of matrix X.  <a href="#a34078a7cc1e5d69dadca293133f5fb77">More...</a><br/></td></tr>
-<tr class="separator:a34078a7cc1e5d69dadca293133f5fb77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1ff0c6ee7dcb70dfcfec49a9e5f6689"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#ab1ff0c6ee7dcb70dfcfec49a9e5f6689">reorder_longitudinal</a> (vector&lt; ArrayXd &gt; &amp;vec1, const vector&lt; int &gt; &amp;order)</td></tr>
-<tr class="memdesc:ab1ff0c6ee7dcb70dfcfec49a9e5f6689"><td class="mdescLeft">&#160;</td><td class="mdescRight">reordering utility for shuffling longitudinal data.  <a href="#ab1ff0c6ee7dcb70dfcfec49a9e5f6689">More...</a><br/></td></tr>
-<tr class="separator:ab1ff0c6ee7dcb70dfcfec49a9e5f6689"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c4e9ad02ec9953034b10ac31696b30b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#a7c4e9ad02ec9953034b10ac31696b30b">median</a> (const ArrayXd &amp;v)</td></tr>
-<tr class="memdesc:a7c4e9ad02ec9953034b10ac31696b30b"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate median  <a href="#a7c4e9ad02ec9953034b10ac31696b30b">More...</a><br/></td></tr>
-<tr class="separator:a7c4e9ad02ec9953034b10ac31696b30b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b54031aa131a6713827da3c52c210f7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#a6b54031aa131a6713827da3c52c210f7">argmiddle</a> (vector&lt; double &gt; &amp;v)</td></tr>
-<tr class="memdesc:a6b54031aa131a6713827da3c52c210f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the (first) index of the element with the middlest value in v  <a href="#a6b54031aa131a6713827da3c52c210f7">More...</a><br/></td></tr>
-<tr class="separator:a6b54031aa131a6713827da3c52c210f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dd487ab5a0ee0d11ab972d80dc3101a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#a9dd487ab5a0ee0d11ab972d80dc3101a">variance</a> (const ArrayXd &amp;v)</td></tr>
-<tr class="memdesc:a9dd487ab5a0ee0d11ab972d80dc3101a"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate variance  <a href="#a9dd487ab5a0ee0d11ab972d80dc3101a">More...</a><br/></td></tr>
-<tr class="separator:a9dd487ab5a0ee0d11ab972d80dc3101a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd295046ff6d2599d5f2e5f691c9f044"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#abd295046ff6d2599d5f2e5f691c9f044">skew</a> (const ArrayXd &amp;v)</td></tr>
-<tr class="memdesc:abd295046ff6d2599d5f2e5f691c9f044"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate skew  <a href="#abd295046ff6d2599d5f2e5f691c9f044">More...</a><br/></td></tr>
-<tr class="separator:abd295046ff6d2599d5f2e5f691c9f044"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1629ce84b96703476c271a567fd26bb1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#a1629ce84b96703476c271a567fd26bb1">kurtosis</a> (const ArrayXd &amp;v)</td></tr>
-<tr class="memdesc:a1629ce84b96703476c271a567fd26bb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate kurtosis  <a href="#a1629ce84b96703476c271a567fd26bb1">More...</a><br/></td></tr>
-<tr class="separator:a1629ce84b96703476c271a567fd26bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0a8677302af30776099567f021960f1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#ae0a8677302af30776099567f021960f1">covariance</a> (const ArrayXd &amp;x, const ArrayXd &amp;y)</td></tr>
-<tr class="memdesc:ae0a8677302af30776099567f021960f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">covariance of x and y  <a href="#ae0a8677302af30776099567f021960f1">More...</a><br/></td></tr>
-<tr class="separator:ae0a8677302af30776099567f021960f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af997913c26ce4098442d311fe5bb6b64"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#af997913c26ce4098442d311fe5bb6b64">slope</a> (const ArrayXd &amp;x, const ArrayXd &amp;y)</td></tr>
-<tr class="memdesc:af997913c26ce4098442d311fe5bb6b64"><td class="mdescLeft">&#160;</td><td class="mdescRight">slope of x/y  <a href="#af997913c26ce4098442d311fe5bb6b64">More...</a><br/></td></tr>
-<tr class="separator:af997913c26ce4098442d311fe5bb6b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac91b6260423684b65d6a46512609121f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#ac91b6260423684b65d6a46512609121f">pearson_correlation</a> (const ArrayXd &amp;x, const ArrayXd &amp;y)</td></tr>
-<tr class="memdesc:ac91b6260423684b65d6a46512609121f"><td class="mdescLeft">&#160;</td><td class="mdescRight">the normalized covariance of x and y  <a href="#ac91b6260423684b65d6a46512609121f">More...</a><br/></td></tr>
-<tr class="separator:ac91b6260423684b65d6a46512609121f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afacbbcbcac0a99c75773540fe0e83e9e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#afacbbcbcac0a99c75773540fe0e83e9e">mad</a> (const ArrayXd &amp;x)</td></tr>
-<tr class="memdesc:afacbbcbcac0a99c75773540fe0e83e9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">median absolute deviation  <a href="#afacbbcbcac0a99c75773540fe0e83e9e">More...</a><br/></td></tr>
-<tr class="separator:afacbbcbcac0a99c75773540fe0e83e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ba3bae667777ee7d4750140ac23750d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dbd/data_8h.html#a6a33354c51ab1e4986b2a222aac825a7">ArrayXb</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#a1ba3bae667777ee7d4750140ac23750d">isinf</a> (const ArrayXd &amp;x)</td></tr>
-<tr class="memdesc:a1ba3bae667777ee7d4750140ac23750d"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true for elements of x that are infinite  <a href="#a1ba3bae667777ee7d4750140ac23750d">More...</a><br/></td></tr>
-<tr class="separator:a1ba3bae667777ee7d4750140ac23750d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d9114656b1cd586fced56f6d9e11f13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dbd/data_8h.html#a6a33354c51ab1e4986b2a222aac825a7">ArrayXb</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#a1d9114656b1cd586fced56f6d9e11f13">isnan</a> (const ArrayXd &amp;x)</td></tr>
-<tr class="memdesc:a1d9114656b1cd586fced56f6d9e11f13"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true for elements of x that are NaN  <a href="#a1d9114656b1cd586fced56f6d9e11f13">More...</a><br/></td></tr>
-<tr class="separator:a1d9114656b1cd586fced56f6d9e11f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab15f4315225cd5da2c965c9466d353aa"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#ab15f4315225cd5da2c965c9466d353aa">condition_number</a> (const MatrixXd &amp;X)</td></tr>
-<tr class="memdesc:ab15f4315225cd5da2c965c9466d353aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the condition number of a matrix.  <a href="#ab15f4315225cd5da2c965c9466d353aa">More...</a><br/></td></tr>
-<tr class="separator:ab15f4315225cd5da2c965c9466d353aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a140f4f26aaee120a9b55fa87ee2e2d79"><td class="memItemLeft" align="right" valign="top">MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#a140f4f26aaee120a9b55fa87ee2e2d79">corrcoef</a> (const MatrixXd &amp;X)</td></tr>
-<tr class="memdesc:a140f4f26aaee120a9b55fa87ee2e2d79"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the pearson correlation coefficients of matrix.  <a href="#a140f4f26aaee120a9b55fa87ee2e2d79">More...</a><br/></td></tr>
-<tr class="separator:a140f4f26aaee120a9b55fa87ee2e2d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2eb3808a79f08817400a5d269bc1ee32"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#a2eb3808a79f08817400a5d269bc1ee32">mean_square_corrcoef</a> (const MatrixXd &amp;X)</td></tr>
-<tr class="separator:a2eb3808a79f08817400a5d269bc1ee32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac43be485eba16c4f5eb623540c46844e"><td class="memItemLeft" align="right" valign="top">vector&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#ac43be485eba16c4f5eb623540c46844e">find_dtypes</a> (MatrixXf &amp;X)</td></tr>
+<tr class="memdesc:ac43be485eba16c4f5eb623540c46844e"><td class="mdescLeft">&#160;</td><td class="mdescRight">determines data types of columns of matrix X.  <a href="#ac43be485eba16c4f5eb623540c46844e">More...</a><br/></td></tr>
+<tr class="separator:ac43be485eba16c4f5eb623540c46844e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a8ebc40832e83114c06bcd1966570ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#a0a8ebc40832e83114c06bcd1966570ac">reorder_longitudinal</a> (vector&lt; ArrayXf &gt; &amp;vec1, const vector&lt; int &gt; &amp;order)</td></tr>
+<tr class="memdesc:a0a8ebc40832e83114c06bcd1966570ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">reordering utility for shuffling longitudinal data.  <a href="#a0a8ebc40832e83114c06bcd1966570ac">More...</a><br/></td></tr>
+<tr class="separator:a0a8ebc40832e83114c06bcd1966570ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadbd58123f785707d258471164100c72"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#aadbd58123f785707d258471164100c72">median</a> (const ArrayXf &amp;v)</td></tr>
+<tr class="memdesc:aadbd58123f785707d258471164100c72"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate median  <a href="#aadbd58123f785707d258471164100c72">More...</a><br/></td></tr>
+<tr class="separator:aadbd58123f785707d258471164100c72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cc83951f22136db5ae6f0631b3da9e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#a6cc83951f22136db5ae6f0631b3da9e2">argmiddle</a> (vector&lt; float &gt; &amp;v)</td></tr>
+<tr class="memdesc:a6cc83951f22136db5ae6f0631b3da9e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the (first) index of the element with the middlest value in v  <a href="#a6cc83951f22136db5ae6f0631b3da9e2">More...</a><br/></td></tr>
+<tr class="separator:a6cc83951f22136db5ae6f0631b3da9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9b47939fc53e06cf1d935a35483a300"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#ae9b47939fc53e06cf1d935a35483a300">variance</a> (const ArrayXf &amp;v, float mean)</td></tr>
+<tr class="memdesc:ae9b47939fc53e06cf1d935a35483a300"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate variance when mean provided  <a href="#ae9b47939fc53e06cf1d935a35483a300">More...</a><br/></td></tr>
+<tr class="separator:ae9b47939fc53e06cf1d935a35483a300"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98bf666640b97a3bae5c94c05532d5a8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#a98bf666640b97a3bae5c94c05532d5a8">variance</a> (const ArrayXf &amp;v)</td></tr>
+<tr class="memdesc:a98bf666640b97a3bae5c94c05532d5a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate variance  <a href="#a98bf666640b97a3bae5c94c05532d5a8">More...</a><br/></td></tr>
+<tr class="separator:a98bf666640b97a3bae5c94c05532d5a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16850d3c9fdef59e18f2f9fd3ad4fd46"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#a16850d3c9fdef59e18f2f9fd3ad4fd46">skew</a> (const ArrayXf &amp;v)</td></tr>
+<tr class="memdesc:a16850d3c9fdef59e18f2f9fd3ad4fd46"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate skew  <a href="#a16850d3c9fdef59e18f2f9fd3ad4fd46">More...</a><br/></td></tr>
+<tr class="separator:a16850d3c9fdef59e18f2f9fd3ad4fd46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d21d29f224899f7818e41ddd21bcf7f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#a8d21d29f224899f7818e41ddd21bcf7f">kurtosis</a> (const ArrayXf &amp;v)</td></tr>
+<tr class="memdesc:a8d21d29f224899f7818e41ddd21bcf7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate kurtosis  <a href="#a8d21d29f224899f7818e41ddd21bcf7f">More...</a><br/></td></tr>
+<tr class="separator:a8d21d29f224899f7818e41ddd21bcf7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66a5c6b17b000fbed3eb8e9263db323d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#a66a5c6b17b000fbed3eb8e9263db323d">covariance</a> (const ArrayXf &amp;x, const ArrayXf &amp;y)</td></tr>
+<tr class="memdesc:a66a5c6b17b000fbed3eb8e9263db323d"><td class="mdescLeft">&#160;</td><td class="mdescRight">covariance of x and y  <a href="#a66a5c6b17b000fbed3eb8e9263db323d">More...</a><br/></td></tr>
+<tr class="separator:a66a5c6b17b000fbed3eb8e9263db323d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b98624a17d33cf72c0c1088225b88c6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#a3b98624a17d33cf72c0c1088225b88c6">slope</a> (const ArrayXf &amp;x, const ArrayXf &amp;y)</td></tr>
+<tr class="memdesc:a3b98624a17d33cf72c0c1088225b88c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">slope of x/y  <a href="#a3b98624a17d33cf72c0c1088225b88c6">More...</a><br/></td></tr>
+<tr class="separator:a3b98624a17d33cf72c0c1088225b88c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89ec9c5bc490ae9bfb73db1e405f8893"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#a89ec9c5bc490ae9bfb73db1e405f8893">pearson_correlation</a> (const ArrayXf &amp;x, const ArrayXf &amp;y)</td></tr>
+<tr class="memdesc:a89ec9c5bc490ae9bfb73db1e405f8893"><td class="mdescLeft">&#160;</td><td class="mdescRight">the normalized covariance of x and y  <a href="#a89ec9c5bc490ae9bfb73db1e405f8893">More...</a><br/></td></tr>
+<tr class="separator:a89ec9c5bc490ae9bfb73db1e405f8893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28a2eb9b5dedd4a1d01f28a021f3fb77"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#a28a2eb9b5dedd4a1d01f28a021f3fb77">mad</a> (const ArrayXf &amp;x)</td></tr>
+<tr class="memdesc:a28a2eb9b5dedd4a1d01f28a021f3fb77"><td class="mdescLeft">&#160;</td><td class="mdescRight">median absolute deviation  <a href="#a28a2eb9b5dedd4a1d01f28a021f3fb77">More...</a><br/></td></tr>
+<tr class="separator:a28a2eb9b5dedd4a1d01f28a021f3fb77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3118ffbc572dddfd5c655e1b3fc82a6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dbd/data_8h.html#a6a33354c51ab1e4986b2a222aac825a7">ArrayXb</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#a3118ffbc572dddfd5c655e1b3fc82a6b">isinf</a> (const ArrayXf &amp;x)</td></tr>
+<tr class="memdesc:a3118ffbc572dddfd5c655e1b3fc82a6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true for elements of x that are infinite  <a href="#a3118ffbc572dddfd5c655e1b3fc82a6b">More...</a><br/></td></tr>
+<tr class="separator:a3118ffbc572dddfd5c655e1b3fc82a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f8254d6ffcc0e7a59f26891868de87a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dbd/data_8h.html#a6a33354c51ab1e4986b2a222aac825a7">ArrayXb</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#a3f8254d6ffcc0e7a59f26891868de87a">isnan</a> (const ArrayXf &amp;x)</td></tr>
+<tr class="memdesc:a3f8254d6ffcc0e7a59f26891868de87a"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true for elements of x that are NaN  <a href="#a3f8254d6ffcc0e7a59f26891868de87a">More...</a><br/></td></tr>
+<tr class="separator:a3f8254d6ffcc0e7a59f26891868de87a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bb5926e88f04d944ea148050ccbc475"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#a0bb5926e88f04d944ea148050ccbc475">condition_number</a> (const MatrixXf &amp;X)</td></tr>
+<tr class="memdesc:a0bb5926e88f04d944ea148050ccbc475"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the condition number of a matrix.  <a href="#a0bb5926e88f04d944ea148050ccbc475">More...</a><br/></td></tr>
+<tr class="separator:a0bb5926e88f04d944ea148050ccbc475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7096abc4ea5c2b2851279ead36160de7"><td class="memItemLeft" align="right" valign="top">MatrixXf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#a7096abc4ea5c2b2851279ead36160de7">corrcoef</a> (const MatrixXf &amp;X)</td></tr>
+<tr class="memdesc:a7096abc4ea5c2b2851279ead36160de7"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the pearson correlation coefficients of matrix.  <a href="#a7096abc4ea5c2b2851279ead36160de7">More...</a><br/></td></tr>
+<tr class="separator:a7096abc4ea5c2b2851279ead36160de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a611f301ff90bc6dc7f6f84505c733a48"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#a611f301ff90bc6dc7f6f84505c733a48">mean_square_corrcoef</a> (const MatrixXf &amp;X)</td></tr>
+<tr class="separator:a611f301ff90bc6dc7f6f84505c733a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6950dc08ecf11f4b0d9beca238f012f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ad6950dc08ecf11f4b0d9beca238f012f"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#ad6950dc08ecf11f4b0d9beca238f012f">in</a> (const vector&lt; T &gt; v, const T &amp;i)</td></tr>
 <tr class="memdesc:ad6950dc08ecf11f4b0d9beca238f012f"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if element is in vector.  <a href="#ad6950dc08ecf11f4b0d9beca238f012f">More...</a><br/></td></tr>
@@ -245,14 +248,14 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>namespace containing various utility functions used in <a class="el" href="../../db/dff/classFT_1_1Feat.html" title="main class for the Feat learner. ">Feat</a> </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a6b54031aa131a6713827da3c52c210f7"></a>
+<a class="anchor" id="a6cc83951f22136db5ae6f0631b3da9e2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">int FT::Util::argmiddle </td>
           <td>(</td>
-          <td class="paramtype">vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">vector&lt; float &gt; &amp;&#160;</td>
           <td class="paramname"><em>v</em></td><td>)</td>
           <td></td>
         </tr>
@@ -261,7 +264,7 @@ Variables</h2></td></tr>
 
 <p>returns the (first) index of the element with the middlest value in v </p>
 
-<p>Definition at line <a class="el" href="../../d7/da9/utils_8cc_source.html#l00154">154</a> of file <a class="el" href="../../d7/da9/utils_8cc_source.html">utils.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/da9/utils_8cc_source.html#l00155">155</a> of file <a class="el" href="../../d7/da9/utils_8cc_source.html">utils.cc</a>.</p>
 
 </div>
 </div>
@@ -293,38 +296,38 @@ template&lt;typename T &gt; </div>
 
 <p>return indices that sort a vector </p>
 
-<p>Definition at line <a class="el" href="../../d5/d60/utils_8h_source.html#l00079">79</a> of file <a class="el" href="../../d5/d60/utils_8h_source.html">utils.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d60/utils_8h_source.html#l00082">82</a> of file <a class="el" href="../../d5/d60/utils_8h_source.html">utils.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae37fd6fa798681e27b4f2295771743e4"></a>
+<a class="anchor" id="aea590c3a1595610c3ae351b926a77728"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void FT::Util::clean </td>
           <td>(</td>
-          <td class="paramtype">ArrayXd &amp;&#160;</td>
+          <td class="paramtype">ArrayXf &amp;&#160;</td>
           <td class="paramname"><em>x</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>limits node output to be between MIN_DBL and MAX_DBL </p>
+<p>limits node output to be between MIN_FLT and MAX_FLT </p>
 
 <p>Definition at line <a class="el" href="../../d7/da9/utils_8cc_source.html#l00018">18</a> of file <a class="el" href="../../d7/da9/utils_8cc_source.html">utils.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab15f4315225cd5da2c965c9466d353aa"></a>
+<a class="anchor" id="a0bb5926e88f04d944ea148050ccbc475"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double FT::Util::condition_number </td>
+          <td class="memname">float FT::Util::condition_number </td>
           <td>(</td>
-          <td class="paramtype">const MatrixXd &amp;&#160;</td>
+          <td class="paramtype">const MatrixXf &amp;&#160;</td>
           <td class="paramname"><em>X</em></td><td>)</td>
           <td></td>
         </tr>
@@ -333,18 +336,18 @@ template&lt;typename T &gt; </div>
 
 <p>returns the condition number of a matrix. </p>
 
-<p>Definition at line <a class="el" href="../../d7/da9/utils_8cc_source.html#l00323">323</a> of file <a class="el" href="../../d7/da9/utils_8cc_source.html">utils.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/da9/utils_8cc_source.html#l00331">331</a> of file <a class="el" href="../../d7/da9/utils_8cc_source.html">utils.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a140f4f26aaee120a9b55fa87ee2e2d79"></a>
+<a class="anchor" id="a7096abc4ea5c2b2851279ead36160de7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">MatrixXd FT::Util::corrcoef </td>
+          <td class="memname">MatrixXf FT::Util::corrcoef </td>
           <td>(</td>
-          <td class="paramtype">const MatrixXd &amp;&#160;</td>
+          <td class="paramtype">const MatrixXf &amp;&#160;</td>
           <td class="paramname"><em>X</em></td><td>)</td>
           <td></td>
         </tr>
@@ -353,24 +356,24 @@ template&lt;typename T &gt; </div>
 
 <p>returns the pearson correlation coefficients of matrix. </p>
 
-<p>Definition at line <a class="el" href="../../d7/da9/utils_8cc_source.html#l00351">351</a> of file <a class="el" href="../../d7/da9/utils_8cc_source.html">utils.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/da9/utils_8cc_source.html#l00359">359</a> of file <a class="el" href="../../d7/da9/utils_8cc_source.html">utils.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae0a8677302af30776099567f021960f1"></a>
+<a class="anchor" id="a66a5c6b17b000fbed3eb8e9263db323d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double FT::Util::covariance </td>
+          <td class="memname">float FT::Util::covariance </td>
           <td>(</td>
-          <td class="paramtype">const ArrayXd &amp;&#160;</td>
+          <td class="paramtype">const ArrayXf &amp;&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const ArrayXd &amp;&#160;</td>
+          <td class="paramtype">const ArrayXf &amp;&#160;</td>
           <td class="paramname"><em>y</em>&#160;</td>
         </tr>
         <tr>
@@ -383,18 +386,18 @@ template&lt;typename T &gt; </div>
 
 <p>covariance of x and y </p>
 
-<p>Definition at line <a class="el" href="../../d7/da9/utils_8cc_source.html#l00202">202</a> of file <a class="el" href="../../d7/da9/utils_8cc_source.html">utils.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/da9/utils_8cc_source.html#l00210">210</a> of file <a class="el" href="../../d7/da9/utils_8cc_source.html">utils.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a34078a7cc1e5d69dadca293133f5fb77"></a>
+<a class="anchor" id="ac43be485eba16c4f5eb623540c46844e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">vector&lt; char &gt; FT::Util::find_dtypes </td>
           <td>(</td>
-          <td class="paramtype">MatrixXd &amp;&#160;</td>
+          <td class="paramtype">MatrixXf &amp;&#160;</td>
           <td class="paramname"><em>X</em></td><td>)</td>
           <td></td>
         </tr>
@@ -512,14 +515,14 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a1ba3bae667777ee7d4750140ac23750d"></a>
+<a class="anchor" id="a3118ffbc572dddfd5c655e1b3fc82a6b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../../d2/dbd/data_8h.html#a6a33354c51ab1e4986b2a222aac825a7">ArrayXb</a> FT::Util::isinf </td>
           <td>(</td>
-          <td class="paramtype">const ArrayXd &amp;&#160;</td>
+          <td class="paramtype">const ArrayXf &amp;&#160;</td>
           <td class="paramname"><em>x</em></td><td>)</td>
           <td></td>
         </tr>
@@ -528,18 +531,18 @@ template&lt;typename T &gt; </div>
 
 <p>returns true for elements of x that are infinite </p>
 
-<p>Definition at line <a class="el" href="../../d7/da9/utils_8cc_source.html#l00295">295</a> of file <a class="el" href="../../d7/da9/utils_8cc_source.html">utils.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/da9/utils_8cc_source.html#l00303">303</a> of file <a class="el" href="../../d7/da9/utils_8cc_source.html">utils.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a1d9114656b1cd586fced56f6d9e11f13"></a>
+<a class="anchor" id="a3f8254d6ffcc0e7a59f26891868de87a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../../d2/dbd/data_8h.html#a6a33354c51ab1e4986b2a222aac825a7">ArrayXb</a> FT::Util::isnan </td>
           <td>(</td>
-          <td class="paramtype">const ArrayXd &amp;&#160;</td>
+          <td class="paramtype">const ArrayXf &amp;&#160;</td>
           <td class="paramname"><em>x</em></td><td>)</td>
           <td></td>
         </tr>
@@ -548,18 +551,18 @@ template&lt;typename T &gt; </div>
 
 <p>returns true for elements of x that are NaN </p>
 
-<p>Definition at line <a class="el" href="../../d7/da9/utils_8cc_source.html#l00304">304</a> of file <a class="el" href="../../d7/da9/utils_8cc_source.html">utils.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/da9/utils_8cc_source.html#l00312">312</a> of file <a class="el" href="../../d7/da9/utils_8cc_source.html">utils.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a1629ce84b96703476c271a567fd26bb1"></a>
+<a class="anchor" id="a8d21d29f224899f7818e41ddd21bcf7f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double FT::Util::kurtosis </td>
+          <td class="memname">float FT::Util::kurtosis </td>
           <td>(</td>
-          <td class="paramtype">const ArrayXd &amp;&#160;</td>
+          <td class="paramtype">const ArrayXf &amp;&#160;</td>
           <td class="paramname"><em>v</em></td><td>)</td>
           <td></td>
         </tr>
@@ -568,11 +571,11 @@ template&lt;typename T &gt; </div>
 
 <p>calculate kurtosis </p>
 
-<p>Definition at line <a class="el" href="../../d7/da9/utils_8cc_source.html#l00191">191</a> of file <a class="el" href="../../d7/da9/utils_8cc_source.html">utils.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/da9/utils_8cc_source.html#l00199">199</a> of file <a class="el" href="../../d7/da9/utils_8cc_source.html">utils.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a29e0d573f3828f4b3f42e3451d89dbfa"></a>
+<a class="anchor" id="aee5e757a768b1d11723a17a957b42acc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -585,13 +588,13 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">MatrixXd &amp;&#160;</td>
+          <td class="paramtype">MatrixXf &amp;&#160;</td>
           <td class="paramname"><em>X</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">VectorXd &amp;&#160;</td>
+          <td class="paramtype">VectorXf &amp;&#160;</td>
           <td class="paramname"><em>y</em>, </td>
         </tr>
         <tr>
@@ -632,7 +635,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a5b548d25381c0b6c2fbc767420eae135"></a>
+<a class="anchor" id="a6cb7cf1e84b8bd6972815fd57ac48c4d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -645,7 +648,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::map&lt; string, std::pair&lt; vector&lt; ArrayXd &gt;, vector&lt; ArrayXd &gt; &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">std::map&lt; string, std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt; &amp;&#160;</td>
           <td class="paramname"><em>Z</em>, </td>
         </tr>
         <tr>
@@ -668,7 +671,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ad862b7f734b5fbc3414ef74e2406238d"></a>
+<a class="anchor" id="a819c0666590cda58db361656c87c605b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -681,7 +684,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::map&lt; string, std::pair&lt; vector&lt; ArrayXd &gt;, vector&lt; ArrayXd &gt; &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">std::map&lt; string, std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt; &amp;&#160;</td>
           <td class="paramname"><em>Z</em>, </td>
         </tr>
         <tr>
@@ -739,14 +742,14 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="afacbbcbcac0a99c75773540fe0e83e9e"></a>
+<a class="anchor" id="a28a2eb9b5dedd4a1d01f28a021f3fb77"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double FT::Util::mad </td>
+          <td class="memname">float FT::Util::mad </td>
           <td>(</td>
-          <td class="paramtype">const ArrayXd &amp;&#160;</td>
+          <td class="paramtype">const ArrayXf &amp;&#160;</td>
           <td class="paramname"><em>x</em></td><td>)</td>
           <td></td>
         </tr>
@@ -755,36 +758,36 @@ template&lt;typename T &gt; </div>
 
 <p>median absolute deviation </p>
 
-<p>Definition at line <a class="el" href="../../d7/da9/utils_8cc_source.html#l00226">226</a> of file <a class="el" href="../../d7/da9/utils_8cc_source.html">utils.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/da9/utils_8cc_source.html#l00234">234</a> of file <a class="el" href="../../d7/da9/utils_8cc_source.html">utils.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a2eb3808a79f08817400a5d269bc1ee32"></a>
+<a class="anchor" id="a611f301ff90bc6dc7f6f84505c733a48"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double FT::Util::mean_square_corrcoef </td>
+          <td class="memname">float FT::Util::mean_square_corrcoef </td>
           <td>(</td>
-          <td class="paramtype">const MatrixXd &amp;&#160;</td>
+          <td class="paramtype">const MatrixXf &amp;&#160;</td>
           <td class="paramname"><em>X</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d7/da9/utils_8cc_source.html#l00370">370</a> of file <a class="el" href="../../d7/da9/utils_8cc_source.html">utils.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/da9/utils_8cc_source.html#l00378">378</a> of file <a class="el" href="../../d7/da9/utils_8cc_source.html">utils.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a7c4e9ad02ec9953034b10ac31696b30b"></a>
+<a class="anchor" id="aadbd58123f785707d258471164100c72"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double FT::Util::median </td>
+          <td class="memname">float FT::Util::median </td>
           <td>(</td>
-          <td class="paramtype">const ArrayXd &amp;&#160;</td>
+          <td class="paramtype">const ArrayXf &amp;&#160;</td>
           <td class="paramname"><em>v</em></td><td>)</td>
           <td></td>
         </tr>
@@ -797,20 +800,20 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ac91b6260423684b65d6a46512609121f"></a>
+<a class="anchor" id="a89ec9c5bc490ae9bfb73db1e405f8893"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double FT::Util::pearson_correlation </td>
+          <td class="memname">float FT::Util::pearson_correlation </td>
           <td>(</td>
-          <td class="paramtype">const ArrayXd &amp;&#160;</td>
+          <td class="paramtype">const ArrayXf &amp;&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const ArrayXd &amp;&#160;</td>
+          <td class="paramtype">const ArrayXf &amp;&#160;</td>
           <td class="paramname"><em>y</em>&#160;</td>
         </tr>
         <tr>
@@ -823,18 +826,18 @@ template&lt;typename T &gt; </div>
 
 <p>the normalized covariance of x and y </p>
 
-<p>Definition at line <a class="el" href="../../d7/da9/utils_8cc_source.html#l00221">221</a> of file <a class="el" href="../../d7/da9/utils_8cc_source.html">utils.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/da9/utils_8cc_source.html#l00229">229</a> of file <a class="el" href="../../d7/da9/utils_8cc_source.html">utils.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a95c28b79f6f724f5fb5553822cbf9960"></a>
+<a class="anchor" id="ae1bfaaf379891dc76ce9da4365329788"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void FT::Util::printProgress </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>percentage</em></td><td>)</td>
           <td></td>
         </tr>
@@ -853,14 +856,14 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ab1ff0c6ee7dcb70dfcfec49a9e5f6689"></a>
+<a class="anchor" id="a0a8ebc40832e83114c06bcd1966570ac"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void FT::Util::reorder_longitudinal </td>
           <td>(</td>
-          <td class="paramtype">vector&lt; ArrayXd &gt; &amp;&#160;</td>
+          <td class="paramtype">vector&lt; ArrayXf &gt; &amp;&#160;</td>
           <td class="paramname"><em>vec1</em>, </td>
         </tr>
         <tr>
@@ -911,14 +914,14 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="abd295046ff6d2599d5f2e5f691c9f044"></a>
+<a class="anchor" id="a16850d3c9fdef59e18f2f9fd3ad4fd46"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double FT::Util::skew </td>
+          <td class="memname">float FT::Util::skew </td>
           <td>(</td>
-          <td class="paramtype">const ArrayXd &amp;&#160;</td>
+          <td class="paramtype">const ArrayXf &amp;&#160;</td>
           <td class="paramname"><em>v</em></td><td>)</td>
           <td></td>
         </tr>
@@ -927,24 +930,24 @@ template&lt;typename T &gt; </div>
 
 <p>calculate skew </p>
 
-<p>Definition at line <a class="el" href="../../d7/da9/utils_8cc_source.html#l00179">179</a> of file <a class="el" href="../../d7/da9/utils_8cc_source.html">utils.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/da9/utils_8cc_source.html#l00187">187</a> of file <a class="el" href="../../d7/da9/utils_8cc_source.html">utils.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="af997913c26ce4098442d311fe5bb6b64"></a>
+<a class="anchor" id="a3b98624a17d33cf72c0c1088225b88c6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double FT::Util::slope </td>
+          <td class="memname">float FT::Util::slope </td>
           <td>(</td>
-          <td class="paramtype">const ArrayXd &amp;&#160;</td>
+          <td class="paramtype">const ArrayXf &amp;&#160;</td>
           <td class="paramname"><em>y</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const ArrayXd &amp;&#160;</td>
+          <td class="paramtype">const ArrayXf &amp;&#160;</td>
           <td class="paramname"><em>x</em>&#160;</td>
         </tr>
         <tr>
@@ -957,7 +960,7 @@ template&lt;typename T &gt; </div>
 
 <p>slope of x/y </p>
 
-<p>Definition at line <a class="el" href="../../d7/da9/utils_8cc_source.html#l00215">215</a> of file <a class="el" href="../../d7/da9/utils_8cc_source.html">utils.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/da9/utils_8cc_source.html#l00223">223</a> of file <a class="el" href="../../d7/da9/utils_8cc_source.html">utils.cc</a>.</p>
 
 </div>
 </div>
@@ -979,7 +982,7 @@ template&lt;typename T &gt; </div>
 
 <p>return the softmax transformation of a vector. </p>
 
-<p>Definition at line <a class="el" href="../../d5/d60/utils_8h_source.html#l00128">128</a> of file <a class="el" href="../../d5/d60/utils_8h_source.html">utils.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d60/utils_8h_source.html#l00131">131</a> of file <a class="el" href="../../d5/d60/utils_8h_source.html">utils.h</a>.</p>
 
 </div>
 </div>
@@ -1001,7 +1004,7 @@ template&lt;typename T &gt; </div>
 
 <p>template function to convert objects to string for logging </p>
 
-<p>Definition at line <a class="el" href="../../d5/d60/utils_8h_source.html#l00189">189</a> of file <a class="el" href="../../d5/d60/utils_8h_source.html">utils.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d60/utils_8h_source.html#l00192">192</a> of file <a class="el" href="../../d5/d60/utils_8h_source.html">utils.h</a>.</p>
 
 </div>
 </div>
@@ -1051,7 +1054,7 @@ template&lt;typename T &gt; </div>
 
 <p>returns unique elements in vector </p>
 
-<p>Definition at line <a class="el" href="../../d5/d60/utils_8h_source.html#l00170">170</a> of file <a class="el" href="../../d5/d60/utils_8h_source.html">utils.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d60/utils_8h_source.html#l00173">173</a> of file <a class="el" href="../../d5/d60/utils_8h_source.html">utils.h</a>.</p>
 
 </div>
 </div>
@@ -1073,18 +1076,48 @@ template&lt;typename T &gt; </div>
 
 <p>returns unique elements in Eigen vector </p>
 
-<p>Definition at line <a class="el" href="../../d5/d60/utils_8h_source.html#l00181">181</a> of file <a class="el" href="../../d5/d60/utils_8h_source.html">utils.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d60/utils_8h_source.html#l00184">184</a> of file <a class="el" href="../../d5/d60/utils_8h_source.html">utils.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a9dd487ab5a0ee0d11ab972d80dc3101a"></a>
+<a class="anchor" id="ae9b47939fc53e06cf1d935a35483a300"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double FT::Util::variance </td>
+          <td class="memname">float FT::Util::variance </td>
           <td>(</td>
-          <td class="paramtype">const ArrayXd &amp;&#160;</td>
+          <td class="paramtype">const ArrayXf &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>mean</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>calculate variance when mean provided </p>
+
+<p>Definition at line <a class="el" href="../../d7/da9/utils_8cc_source.html#l00173">173</a> of file <a class="el" href="../../d7/da9/utils_8cc_source.html">utils.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a98bf666640b97a3bae5c94c05532d5a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float FT::Util::variance </td>
+          <td>(</td>
+          <td class="paramtype">const ArrayXf &amp;&#160;</td>
           <td class="paramname"><em>v</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1093,7 +1126,7 @@ template&lt;typename T &gt; </div>
 
 <p>calculate variance </p>
 
-<p>Definition at line <a class="el" href="../../d7/da9/utils_8cc_source.html#l00171">171</a> of file <a class="el" href="../../d7/da9/utils_8cc_source.html">utils.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/da9/utils_8cc_source.html#l00180">180</a> of file <a class="el" href="../../d7/da9/utils_8cc_source.html">utils.cc</a>.</p>
 
 </div>
 </div>
