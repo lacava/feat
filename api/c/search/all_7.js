@@ -87,6 +87,7 @@ var searchData=
   ['gpu_5frelu',['GPU_Relu',['../dc/dd9/namespaceFT_1_1Pop_1_1Op.html#ac3a331219a1f6e9d93034bf7cbb26a30',1,'FT::Pop::Op']]],
   ['gpu_5fsign',['GPU_Sign',['../dc/dd9/namespaceFT_1_1Pop_1_1Op.html#a7f5a7dee06e54f8394605c08c0420a31',1,'FT::Pop::Op']]],
   ['gpu_5fsin',['GPU_Sin',['../dc/dd9/namespaceFT_1_1Pop_1_1Op.html#a82074f2ad743fe54fedd8bc39a70fc8b',1,'FT::Pop::Op']]],
+  ['gpu_5fsplit',['GPU_Split',['../dc/dd9/namespaceFT_1_1Pop_1_1Op.html#ab93b9b0ff927db560540b0d98a77ab6f',1,'FT::Pop::Op::GPU_Split(float *xf, bool *xb, size_t idxf, size_t idxb, size_t N, float threshold)'],['../dc/dd9/namespaceFT_1_1Pop_1_1Op.html#a478006ae4f95c10457fd6522100a5a87',1,'FT::Pop::Op::GPU_Split(int *xi, bool *xb, size_t idxi, size_t idxb, size_t N, float threshold)']]],
   ['gpu_5fsqrt',['GPU_Sqrt',['../dc/dd9/namespaceFT_1_1Pop_1_1Op.html#a2ba76faebebad6dd28aacf43d43f1d55',1,'FT::Pop::Op']]],
   ['gpu_5fsquare',['GPU_Square',['../dc/dd9/namespaceFT_1_1Pop_1_1Op.html#af4709976ae945f7c6263ef3b8d9ad7bc',1,'FT::Pop::Op']]],
   ['gpu_5fstep',['GPU_Step',['../dc/dd9/namespaceFT_1_1Pop_1_1Op.html#a3b2fb64caf7ba1371ba223ef7a7dbdce',1,'FT::Pop::Op']]],

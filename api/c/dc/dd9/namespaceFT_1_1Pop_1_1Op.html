@@ -293,6 +293,10 @@ Functions</h2></td></tr>
 <tr class="separator:a6a47e49d076054b55657eeb8f0412175"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa07a86d60b13a1b80b97418a3597e4ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dd9/namespaceFT_1_1Pop_1_1Op.html#aa07a86d60b13a1b80b97418a3597e4ea">GPU_IfThenElse</a> (float *xf, bool *xb, size_t idxf, size_t idxb, size_t N)</td></tr>
 <tr class="separator:aa07a86d60b13a1b80b97418a3597e4ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab93b9b0ff927db560540b0d98a77ab6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dd9/namespaceFT_1_1Pop_1_1Op.html#ab93b9b0ff927db560540b0d98a77ab6f">GPU_Split</a> (float *xf, bool *xb, size_t idxf, size_t idxb, size_t N, float threshold)</td></tr>
+<tr class="separator:ab93b9b0ff927db560540b0d98a77ab6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a478006ae4f95c10457fd6522100a5a87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dd9/namespaceFT_1_1Pop_1_1Op.html#a478006ae4f95c10457fd6522100a5a87">GPU_Split</a> (int *xi, bool *xb, size_t idxi, size_t idxb, size_t N, float threshold)</td></tr>
+<tr class="separator:a478006ae4f95c10457fd6522100a5a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a938949438f874ab452fc69be49902d51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dd9/namespaceFT_1_1Pop_1_1Op.html#a938949438f874ab452fc69be49902d51">GPU_Constant</a> (float *dev_x, float value, size_t idx, size_t N)</td></tr>
 <tr class="separator:a938949438f874ab452fc69be49902d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a719e0df8d7aa85bc4ab79bdd85cb8318"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dd9/namespaceFT_1_1Pop_1_1Op.html#a719e0df8d7aa85bc4ab79bdd85cb8318">GPU_Constant</a> (bool *dev_x, bool value, size_t idx, size_t N)</td></tr>
@@ -1717,6 +1721,106 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>W0</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab93b9b0ff927db560540b0d98a77ab6f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FT::Pop::Op::GPU_Split </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>xf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>xb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>idxf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>idxb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>N</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>threshold</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a478006ae4f95c10457fd6522100a5a87"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FT::Pop::Op::GPU_Split </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>xi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>xb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>idxi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>idxb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>N</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>threshold</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

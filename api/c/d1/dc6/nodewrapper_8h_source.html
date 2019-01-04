@@ -154,45 +154,39 @@ $(document).ready(function(){initNavTree('d1/dc6/nodewrapper_8h_source.html','..
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/dbb/n__ifthenelse_8h.html">op/control/n_ifthenelse.h</a>&quot;</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">//learn</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#ifndef USE_CUDA</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"></span><span class="preprocessor">    #include &quot;<a class="code" href="../../d3/d59/n__split_8h.html">op/learn/n_split.h</a>&quot;</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor"></span>    <span class="comment">//extra include </span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">//remove after n_split implemented for cuda</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="../../d4/d7f/n__train_8h.html">op/n_train.h</a>&quot;</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">//logic nodes</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d0/df3/n__and_8h.html">op/logic/n_and.h</a>&quot;</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/d53/n__equal_8h.html">op/logic/n_equal.h</a>&quot;</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/d5b/n__geq_8h.html">op/logic/n_geq.h</a>&quot;</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/d75/n__greaterthan_8h.html">op/logic/n_greaterthan.h</a>&quot;</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../da/dff/n__leq_8h.html">op/logic/n_leq.h</a>&quot;</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/def/n__lessthan_8h.html">op/logic/n_lessthan.h</a>&quot;</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/dd1/n__not_8h.html">op/logic/n_not.h</a>&quot;</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/d9f/n__or_8h.html">op/logic/n_or.h</a>&quot;</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/dcd/n__xor_8h.html">op/logic/n_xor.h</a>&quot;</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">//longitudinal nodes</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dd/d31/n__count_8h.html">op/longitudinal/n_count.h</a>&quot;</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d7/dfe/n__kurtosis_8h.html">op/longitudinal/n_kurtosis.h</a>&quot;</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d0/d2d/n__longitudinal_8h.html">op/longitudinal/n_longitudinal.h</a>&quot;</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/d82/n__max_8h.html">op/longitudinal/n_max.h</a>&quot;</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d2/d2a/n__mean_8h.html">op/longitudinal/n_mean.h</a>&quot;</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/d6c/n__median_8h.html">op/longitudinal/n_median.h</a>&quot;</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/d28/n__min_8h.html">op/longitudinal/n_min.h</a>&quot;</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/d73/n__mode_8h.html">op/longitudinal/n_mode.h</a>&quot;</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/df6/n__recent_8h.html">op/longitudinal/n_recent.h</a>&quot;</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d7/d68/n__skew_8h.html">op/longitudinal/n_skew.h</a>&quot;</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d0/d89/n__slope_8h.html">op/longitudinal/n_slope.h</a>&quot;</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/deb/n__time_8h.html">op/longitudinal/n_time.h</a>&quot;</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../da/d36/n__var_8h.html">op/longitudinal/n_var.h</a>&quot;</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">//terminal nodes</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/dbe/n__constant_8h.html">op/terminals/n_constant.h</a>&quot;</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../da/da2/n__variable_8h.html">op/terminals/n_variable.h</a>&quot;</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/d59/n__split_8h.html">op/learn/n_split.h</a>&quot;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">//logic nodes</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d0/df3/n__and_8h.html">op/logic/n_and.h</a>&quot;</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/d53/n__equal_8h.html">op/logic/n_equal.h</a>&quot;</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/d5b/n__geq_8h.html">op/logic/n_geq.h</a>&quot;</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/d75/n__greaterthan_8h.html">op/logic/n_greaterthan.h</a>&quot;</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../da/dff/n__leq_8h.html">op/logic/n_leq.h</a>&quot;</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/def/n__lessthan_8h.html">op/logic/n_lessthan.h</a>&quot;</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/dd1/n__not_8h.html">op/logic/n_not.h</a>&quot;</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/d9f/n__or_8h.html">op/logic/n_or.h</a>&quot;</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/dcd/n__xor_8h.html">op/logic/n_xor.h</a>&quot;</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">//longitudinal nodes</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dd/d31/n__count_8h.html">op/longitudinal/n_count.h</a>&quot;</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d7/dfe/n__kurtosis_8h.html">op/longitudinal/n_kurtosis.h</a>&quot;</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d0/d2d/n__longitudinal_8h.html">op/longitudinal/n_longitudinal.h</a>&quot;</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/d82/n__max_8h.html">op/longitudinal/n_max.h</a>&quot;</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d2/d2a/n__mean_8h.html">op/longitudinal/n_mean.h</a>&quot;</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/d6c/n__median_8h.html">op/longitudinal/n_median.h</a>&quot;</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/d28/n__min_8h.html">op/longitudinal/n_min.h</a>&quot;</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/d73/n__mode_8h.html">op/longitudinal/n_mode.h</a>&quot;</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/df6/n__recent_8h.html">op/longitudinal/n_recent.h</a>&quot;</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d7/d68/n__skew_8h.html">op/longitudinal/n_skew.h</a>&quot;</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d0/d89/n__slope_8h.html">op/longitudinal/n_slope.h</a>&quot;</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/deb/n__time_8h.html">op/longitudinal/n_time.h</a>&quot;</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../da/d36/n__var_8h.html">op/longitudinal/n_var.h</a>&quot;</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">//terminal nodes</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/dbe/n__constant_8h.html">op/terminals/n_constant.h</a>&quot;</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../da/da2/n__variable_8h.html">op/terminals/n_variable.h</a>&quot;</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="n__log_8h_html"><div class="ttname"><a href="../../d2/db4/n__log_8h.html">n_log.h</a></div></div>
 <div class="ttc" id="n__longitudinal_8h_html"><div class="ttname"><a href="../../d0/d2d/n__longitudinal_8h.html">n_longitudinal.h</a></div></div>
 <div class="ttc" id="n__lessthan_8h_html"><div class="ttname"><a href="../../d5/def/n__lessthan_8h.html">n_lessthan.h</a></div></div>
@@ -232,7 +226,6 @@ $(document).ready(function(){initNavTree('d1/dc6/nodewrapper_8h_source.html','..
 <div class="ttc" id="n__step_8h_html"><div class="ttname"><a href="../../d3/d77/n__step_8h.html">n_step.h</a></div></div>
 <div class="ttc" id="n__greaterthan_8h_html"><div class="ttname"><a href="../../d6/d75/n__greaterthan_8h.html">n_greaterthan.h</a></div></div>
 <div class="ttc" id="n__2dgaussian_8h_html"><div class="ttname"><a href="../../d8/d2e/n__2dgaussian_8h.html">n_2dgaussian.h</a></div></div>
-<div class="ttc" id="n__train_8h_html"><div class="ttname"><a href="../../d4/d7f/n__train_8h.html">n_train.h</a></div></div>
 <div class="ttc" id="n__square_8h_html"><div class="ttname"><a href="../../df/df1/n__square_8h.html">n_square.h</a></div></div>
 <div class="ttc" id="n__recent_8h_html"><div class="ttname"><a href="../../d8/df6/n__recent_8h.html">n_recent.h</a></div></div>
 <div class="ttc" id="n__cos_8h_html"><div class="ttname"><a href="../../d5/d42/n__cos_8h.html">n_cos.h</a></div></div>

@@ -28,6 +28,8 @@ var kernels_8h =
     [ "GPU_Relu", "d0/d01/kernels_8h.html#ac3a331219a1f6e9d93034bf7cbb26a30", null ],
     [ "GPU_Sign", "d0/d01/kernels_8h.html#a7f5a7dee06e54f8394605c08c0420a31", null ],
     [ "GPU_Sin", "d0/d01/kernels_8h.html#a82074f2ad743fe54fedd8bc39a70fc8b", null ],
+    [ "GPU_Split", "d0/d01/kernels_8h.html#ab93b9b0ff927db560540b0d98a77ab6f", null ],
+    [ "GPU_Split", "d0/d01/kernels_8h.html#a478006ae4f95c10457fd6522100a5a87", null ],
     [ "GPU_Sqrt", "d0/d01/kernels_8h.html#a2ba76faebebad6dd28aacf43d43f1d55", null ],
     [ "GPU_Square", "d0/d01/kernels_8h.html#af4709976ae945f7c6263ef3b8d9ad7bc", null ],
     [ "GPU_Step", "d0/d01/kernels_8h.html#a3b2fb64caf7ba1371ba223ef7a7dbdce", null ],

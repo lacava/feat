@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"db/dff/classFT_1_1Feat.html#a0352ff140bbdb21acae534b0f9dcd805":[1,0,0,8,23],
+"db/dff/classFT_1_1Feat.html#a0be7b4df9bfdcf91f67707d3854d1764":[1,0,0,8,77],
 "db/dff/classFT_1_1Feat.html#a0f39d4c58662d28aa9d005126cf51f7f":[1,0,0,8,41],
 "db/dff/classFT_1_1Feat.html#a15c499b8735c8e4b19a1c06271544a51":[1,0,0,8,75],
 "db/dff/classFT_1_1Feat.html#a1d298b216554e3e2b4ba9124246adaa1":[1,0,0,8,16],
@@ -208,8 +210,8 @@ var NAVTREEINDEX4 =
 "dc/dac/io_8h.html#aee5e757a768b1d11723a17a957b42acc":[2,0,20,0],
 "dc/dac/io_8h_source.html":[2,0,20],
 "dc/dd8/classArchive.html":[1,0,2],
-"dc/dd9/namespaceFT_1_1Pop_1_1Op.html":[1,0,0,4,0],
 "dc/dd9/namespaceFT_1_1Pop_1_1Op.html":[0,0,0,4,0],
+"dc/dd9/namespaceFT_1_1Pop_1_1Op.html":[1,0,0,4,0],
 "dc/ddf/n__count_8cc.html":[2,0,49],
 "dc/ddf/n__count_8cc_source.html":[2,0,49],
 "dc/df5/selection__operator_8cc.html":[2,0,155],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "dd/d3f/structFT_1_1Dat_1_1State.html#af3d376f76cde8148b65b82a926727b42":[1,0,0,0,3,13],
 "dd/d3f/structFT_1_1Dat_1_1State.html#afa657c4f8de581178c092405aac0d73b":[1,0,0,0,3,12],
 "dd/d51/structFT_1_1Util_1_1Normalizer.html":[1,0,0,6,2],
-"dd/d51/structFT_1_1Util_1_1Normalizer.html#a16f2b1e21bd80f5b51651c4e21536d94":[1,0,0,6,2,3],
-"dd/d51/structFT_1_1Util_1_1Normalizer.html#a42d899c4ca0d8d9b297814f9f06bbf8c":[1,0,0,6,2,5],
-"dd/d51/structFT_1_1Util_1_1Normalizer.html#a499c17aed9381728f5c4ccc9f1abef64":[1,0,0,6,2,0]
+"dd/d51/structFT_1_1Util_1_1Normalizer.html#a16f2b1e21bd80f5b51651c4e21536d94":[1,0,0,6,2,3]
 };
