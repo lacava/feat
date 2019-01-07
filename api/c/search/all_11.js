@@ -1,7 +1,7 @@
 var searchData=
 [
   ['samefitcomplexity',['SameFitComplexity',['../d7/dee/structFT_1_1Pop_1_1Population_1_1SameFitComplexity.html',1,'FT::Pop::Population']]],
-  ['samefitcomplexity',['sameFitComplexity',['../d7/d9f/structFT_1_1Pop_1_1Archive.html#a9f267ee643da14b07e716cdb55abbfd7',1,'FT::Pop::Archive::sameFitComplexity()'],['../d7/dee/structFT_1_1Pop_1_1Population_1_1SameFitComplexity.html#a4abffdccd259b6efcebc3b2b6c6d0b76',1,'FT::Pop::Population::SameFitComplexity::SameFitComplexity()']]],
+  ['samefitcomplexity',['SameFitComplexity',['../d7/dee/structFT_1_1Pop_1_1Population_1_1SameFitComplexity.html#a4abffdccd259b6efcebc3b2b6c6d0b76',1,'FT::Pop::Population::SameFitComplexity::SameFitComplexity()'],['../d7/d9f/structFT_1_1Pop_1_1Archive.html#a9f267ee643da14b07e716cdb55abbfd7',1,'FT::Pop::Archive::sameFitComplexity()']]],
   ['sample_5fweights',['sample_weights',['../de/d2c/structFT_1_1Parameters.html#a55546feac96125ac36f567eb5191d6d0',1,'FT::Parameters']]],
   ['scale',['scale',['../dd/d51/structFT_1_1Util_1_1Normalizer.html#a42d899c4ca0d8d9b297814f9f06bbf8c',1,'FT::Util::Normalizer']]],
   ['score',['score',['../d6/d6f/classFT_1_1Eval_1_1Evaluation.html#a23874df0f6b2b762c59b9d6b2f8d7fe9',1,'FT::Eval::Evaluation::score()'],['../db/dff/classFT_1_1Feat.html#a4a4064ceb79a834ca038143a40307235',1,'FT::Feat::score()']]],
@@ -100,7 +100,7 @@ var searchData=
   ['softmax',['softmax',['../d1/d5d/namespaceFT_1_1Util.html#a42cbd7e5d0917789504316bcaec4f77c',1,'FT::Util']]],
   ['sort_5fn',['sort_n',['../d5/d9e/structFT_1_1Sel_1_1NSGA2_1_1sort__n.html#a2c1768415884064a3f5e1c91943e29b9',1,'FT::Sel::NSGA2::sort_n']]],
   ['sort_5fn',['sort_n',['../d5/d9e/structFT_1_1Sel_1_1NSGA2_1_1sort__n.html',1,'FT::Sel::NSGA2']]],
-  ['sortcomplexity',['sortComplexity',['../d7/d9f/structFT_1_1Pop_1_1Archive.html#aa7f979e377803df70b8b2bf4f1b25a31',1,'FT::Pop::Archive::sortComplexity()'],['../de/dad/structFT_1_1Pop_1_1Population_1_1SortComplexity.html#ac0f872c49d5aca5098c0973cfefd9452',1,'FT::Pop::Population::SortComplexity::SortComplexity()']]],
+  ['sortcomplexity',['SortComplexity',['../de/dad/structFT_1_1Pop_1_1Population_1_1SortComplexity.html#ac0f872c49d5aca5098c0973cfefd9452',1,'FT::Pop::Population::SortComplexity::SortComplexity()'],['../d7/d9f/structFT_1_1Pop_1_1Archive.html#aa7f979e377803df70b8b2bf4f1b25a31',1,'FT::Pop::Archive::sortComplexity()']]],
   ['sortcomplexity',['SortComplexity',['../de/dad/structFT_1_1Pop_1_1Population_1_1SortComplexity.html',1,'FT::Pop::Population']]],
   ['sorted_5ffront',['sorted_front',['../d6/d5f/structFT_1_1Pop_1_1Population.html#aaac76d7fe163c2f41e4c91a5067ed64e',1,'FT::Pop::Population']]],
   ['splice_5fprograms',['splice_programs',['../d0/d80/classFT_1_1Vary_1_1Variation.html#a4a42773d8410ddfea661baeb5238b0dc',1,'FT::Vary::Variation']]],

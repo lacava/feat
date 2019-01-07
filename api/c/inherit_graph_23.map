@@ -1,5 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$d2/dfb/classFT_1_1Pop_1_1Op_1_1Node.html" title="Represents nodes in a program. " alt="" coords="5,1019,139,1045"/>
+<area shape="rect" id="node1" href="$d2/dfb/classFT_1_1Pop_1_1Op_1_1Node.html" title="Represents nodes in a program. " alt="" coords="5,968,139,995"/>
 <area shape="rect" id="node2" href="$d7/dd0/classFT_1_1Pop_1_1Op_1_1NodeAnd.html" title="FT::Pop::Op::NodeAnd" alt="" coords="215,309,371,336"/>
 <area shape="rect" id="node3" href="$df/d51/classFT_1_1Pop_1_1Op_1_1NodeConstant.html" title="FT::Pop::Op::NodeConstant" alt="" coords="200,360,387,387"/>
 <area shape="rect" id="node4" href="$db/da0/classFT_1_1Pop_1_1Op_1_1NodeCount.html" title="FT::Pop::Op::NodeCount" alt="" coords="209,411,377,437"/>
@@ -16,19 +16,17 @@
 <area shape="rect" id="node34" href="$d2/de5/classFT_1_1Pop_1_1Op_1_1NodeMean.html" title="FT::Pop::Op::NodeMean" alt="" coords="211,968,376,995"/>
 <area shape="rect" id="node35" href="$d0/de8/classFT_1_1Pop_1_1Op_1_1NodeMedian.html" title="FT::Pop::Op::NodeMedian" alt="" coords="206,1019,381,1045"/>
 <area shape="rect" id="node36" href="$d9/d90/classFT_1_1Pop_1_1Op_1_1NodeMin.html" title="FT::Pop::Op::NodeMin" alt="" coords="216,1069,371,1096"/>
-<area shape="rect" id="node37" href="$d7/daa/classFT_1_1Pop_1_1Op_1_1NodeMode.html" title="FT::Pop::Op::NodeMode" alt="" coords="211,1120,376,1147"/>
-<area shape="rect" id="node38" href="$dd/d88/classFT_1_1Pop_1_1Op_1_1NodeNot.html" title="FT::Pop::Op::NodeNot" alt="" coords="216,1171,371,1197"/>
-<area shape="rect" id="node39" href="$d8/d4e/classFT_1_1Pop_1_1Op_1_1NodeOr.html" title="FT::Pop::Op::NodeOr" alt="" coords="220,1221,367,1248"/>
-<area shape="rect" id="node40" href="$db/d0c/classFT_1_1Pop_1_1Op_1_1NodeRecent.html" title="FT::Pop::Op::NodeRecent" alt="" coords="206,1272,381,1299"/>
-<area shape="rect" id="node41" href="$d6/d76/classFT_1_1Pop_1_1Op_1_1NodeSign.html" title="FT::Pop::Op::NodeSign" alt="" coords="214,1323,373,1349"/>
-<area shape="rect" id="node42" href="$d6/d11/classFT_1_1Pop_1_1Op_1_1NodeSkew.html" title="FT::Pop::Op::NodeSkew" alt="" coords="210,1373,377,1400"/>
-<area shape="rect" id="node43" href="$d4/d92/classFT_1_1Pop_1_1Op_1_1NodeSlope.html" title="FT::Pop::Op::NodeSlope" alt="" coords="210,1424,377,1451"/>
-<area shape="rect" id="node44" href="$d5/d96/classFT_1_1Pop_1_1Op_1_1NodeStep.html" title="FT::Pop::Op::NodeStep" alt="" coords="213,1475,373,1501"/>
-<area shape="rect" id="node45" href="$df/dca/classFT_1_1Pop_1_1Op_1_1NodeTime.html" title="FT::Pop::Op::NodeTime" alt="" coords="212,1525,375,1552"/>
-<area shape="rect" id="node46" href="$de/d2e/classFT_1_1Pop_1_1Op_1_1NodeTrain.html" title="FT::Pop::Op::NodeTrain" alt="" coords="212,1576,375,1603"/>
-<area shape="rect" id="node48" href="$d1/d63/classFT_1_1Pop_1_1Op_1_1NodeVar.html" title="FT::Pop::Op::NodeVar" alt="" coords="217,1627,370,1653"/>
-<area shape="rect" id="node49" href="$d7/dd3/classFT_1_1Pop_1_1Op_1_1NodeVariable.html" title="FT::Pop::Op::NodeVariable\&lt; T \&gt;" alt="" coords="187,1677,399,1704"/>
-<area shape="rect" id="node50" href="$df/d63/classFT_1_1Pop_1_1Op_1_1NodeXor.html" title="FT::Pop::Op::NodeXor" alt="" coords="217,1728,370,1755"/>
+<area shape="rect" id="node37" href="$dd/d88/classFT_1_1Pop_1_1Op_1_1NodeNot.html" title="FT::Pop::Op::NodeNot" alt="" coords="216,1120,371,1147"/>
+<area shape="rect" id="node38" href="$d8/d4e/classFT_1_1Pop_1_1Op_1_1NodeOr.html" title="FT::Pop::Op::NodeOr" alt="" coords="220,1171,367,1197"/>
+<area shape="rect" id="node39" href="$db/d0c/classFT_1_1Pop_1_1Op_1_1NodeRecent.html" title="FT::Pop::Op::NodeRecent" alt="" coords="206,1221,381,1248"/>
+<area shape="rect" id="node40" href="$d6/d76/classFT_1_1Pop_1_1Op_1_1NodeSign.html" title="FT::Pop::Op::NodeSign" alt="" coords="214,1272,373,1299"/>
+<area shape="rect" id="node41" href="$d6/d11/classFT_1_1Pop_1_1Op_1_1NodeSkew.html" title="FT::Pop::Op::NodeSkew" alt="" coords="210,1323,377,1349"/>
+<area shape="rect" id="node42" href="$d4/d92/classFT_1_1Pop_1_1Op_1_1NodeSlope.html" title="FT::Pop::Op::NodeSlope" alt="" coords="210,1373,377,1400"/>
+<area shape="rect" id="node43" href="$d5/d96/classFT_1_1Pop_1_1Op_1_1NodeStep.html" title="FT::Pop::Op::NodeStep" alt="" coords="213,1424,373,1451"/>
+<area shape="rect" id="node44" href="$de/d2e/classFT_1_1Pop_1_1Op_1_1NodeTrain.html" title="FT::Pop::Op::NodeTrain" alt="" coords="212,1475,375,1501"/>
+<area shape="rect" id="node46" href="$d1/d63/classFT_1_1Pop_1_1Op_1_1NodeVar.html" title="FT::Pop::Op::NodeVar" alt="" coords="217,1525,370,1552"/>
+<area shape="rect" id="node47" href="$d7/dd3/classFT_1_1Pop_1_1Op_1_1NodeVariable.html" title="FT::Pop::Op::NodeVariable\&lt; T \&gt;" alt="" coords="187,1576,399,1603"/>
+<area shape="rect" id="node48" href="$df/d63/classFT_1_1Pop_1_1Op_1_1NodeXor.html" title="FT::Pop::Op::NodeXor" alt="" coords="217,1627,370,1653"/>
 <area shape="rect" id="node6" href="$d7/d79/classFT_1_1Pop_1_1Op_1_1Node2dGaussian.html" title="FT::Pop::Op::Node2dGaussian" alt="" coords="448,5,651,32"/>
 <area shape="rect" id="node7" href="$d1/dbd/classFT_1_1Pop_1_1Op_1_1NodeAdd.html" title="FT::Pop::Op::NodeAdd" alt="" coords="471,56,627,83"/>
 <area shape="rect" id="node8" href="$d0/d3a/classFT_1_1Pop_1_1Op_1_1NodeCos.html" title="FT::Pop::Op::NodeCos" alt="" coords="471,107,628,133"/>
@@ -48,5 +46,5 @@
 <area shape="rect" id="node22" href="$d0/d22/classFT_1_1Pop_1_1Op_1_1NodeSquare.html" title="FT::Pop::Op::NodeSquare" alt="" coords="462,816,637,843"/>
 <area shape="rect" id="node23" href="$d8/d61/classFT_1_1Pop_1_1Op_1_1NodeSubtract.html" title="FT::Pop::Op::NodeSubtract" alt="" coords="458,867,641,893"/>
 <area shape="rect" id="node24" href="$db/da6/classFT_1_1Pop_1_1Op_1_1NodeTanh.html" title="FT::Pop::Op::NodeTanh" alt="" coords="468,917,631,944"/>
-<area shape="rect" id="node47" href="$db/dc8/classFT_1_1Pop_1_1Op_1_1NodeSplit.html" title="FT::Pop::Op::NodeSplit\&lt; T \&gt;" alt="" coords="454,1576,645,1603"/>
+<area shape="rect" id="node45" href="$db/dc8/classFT_1_1Pop_1_1Op_1_1NodeSplit.html" title="FT::Pop::Op::NodeSplit\&lt; T \&gt;" alt="" coords="454,1475,645,1501"/>
 </map>

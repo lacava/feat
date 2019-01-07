@@ -63,7 +63,6 @@ var hierarchy =
       [ "FT::Pop::Op::NodeMean", "d2/de5/classFT_1_1Pop_1_1Op_1_1NodeMean.html", null ],
       [ "FT::Pop::Op::NodeMedian", "d0/de8/classFT_1_1Pop_1_1Op_1_1NodeMedian.html", null ],
       [ "FT::Pop::Op::NodeMin", "d9/d90/classFT_1_1Pop_1_1Op_1_1NodeMin.html", null ],
-      [ "FT::Pop::Op::NodeMode", "d7/daa/classFT_1_1Pop_1_1Op_1_1NodeMode.html", null ],
       [ "FT::Pop::Op::NodeNot", "dd/d88/classFT_1_1Pop_1_1Op_1_1NodeNot.html", null ],
       [ "FT::Pop::Op::NodeOr", "d8/d4e/classFT_1_1Pop_1_1Op_1_1NodeOr.html", null ],
       [ "FT::Pop::Op::NodeRecent", "db/d0c/classFT_1_1Pop_1_1Op_1_1NodeRecent.html", null ],
@@ -71,7 +70,6 @@ var hierarchy =
       [ "FT::Pop::Op::NodeSkew", "d6/d11/classFT_1_1Pop_1_1Op_1_1NodeSkew.html", null ],
       [ "FT::Pop::Op::NodeSlope", "d4/d92/classFT_1_1Pop_1_1Op_1_1NodeSlope.html", null ],
       [ "FT::Pop::Op::NodeStep", "d5/d96/classFT_1_1Pop_1_1Op_1_1NodeStep.html", null ],
-      [ "FT::Pop::Op::NodeTime", "df/dca/classFT_1_1Pop_1_1Op_1_1NodeTime.html", null ],
       [ "FT::Pop::Op::NodeTrain", "de/d2e/classFT_1_1Pop_1_1Op_1_1NodeTrain.html", [
         [ "FT::Pop::Op::NodeSplit< T >", "db/dc8/classFT_1_1Pop_1_1Op_1_1NodeSplit.html", null ]
       ] ],

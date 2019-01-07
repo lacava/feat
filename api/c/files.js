@@ -169,10 +169,6 @@ var files =
     [ "n_min.h", "d9/d28/n__min_8h.html", [
       [ "NodeMin", "d9/d90/classFT_1_1Pop_1_1Op_1_1NodeMin.html", "d9/d90/classFT_1_1Pop_1_1Op_1_1NodeMin" ]
     ] ],
-    [ "n_mode.cc", "d6/d0e/n__mode_8cc.html", null ],
-    [ "n_mode.h", "df/d73/n__mode_8h.html", [
-      [ "NodeMode", "d7/daa/classFT_1_1Pop_1_1Op_1_1NodeMode.html", "d7/daa/classFT_1_1Pop_1_1Op_1_1NodeMode" ]
-    ] ],
     [ "n_multiply.cc", "da/d45/n__multiply_8cc.html", null ],
     [ "n_multiply.h", "d8/dd4/n__multiply_8h.html", [
       [ "NodeMultiply", "d2/dea/classFT_1_1Pop_1_1Op_1_1NodeMultiply.html", "d2/dea/classFT_1_1Pop_1_1Op_1_1NodeMultiply" ]
@@ -232,10 +228,6 @@ var files =
     [ "n_tanh.cc", "df/d81/n__tanh_8cc.html", null ],
     [ "n_tanh.h", "de/df1/n__tanh_8h.html", [
       [ "NodeTanh", "db/da6/classFT_1_1Pop_1_1Op_1_1NodeTanh.html", "db/da6/classFT_1_1Pop_1_1Op_1_1NodeTanh" ]
-    ] ],
-    [ "n_time.cc", "d1/d1c/n__time_8cc.html", null ],
-    [ "n_time.h", "d3/deb/n__time_8h.html", [
-      [ "NodeTime", "df/dca/classFT_1_1Pop_1_1Op_1_1NodeTime.html", "df/dca/classFT_1_1Pop_1_1Op_1_1NodeTime" ]
     ] ],
     [ "n_train.h", "d4/d7f/n__train_8h.html", [
       [ "NodeTrain", "de/d2e/classFT_1_1Pop_1_1Op_1_1NodeTrain.html", "de/d2e/classFT_1_1Pop_1_1Op_1_1NodeTrain" ]
