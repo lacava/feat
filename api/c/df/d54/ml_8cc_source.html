@@ -365,183 +365,170 @@ $(document).ready(function(){initNavTree('df/d54/ml_8cc_source.html','../../');}
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                </div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            }</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (prob_type!=PT_REGRESSION)                         <span class="comment">// multiclass classification       </span></div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;            {</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                p_est-&gt;set_labels(some&lt;CMulticlassLabels&gt;(SGVector&lt;float64_t&gt;(_y)));</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                <span class="comment">/* auto labels_train = (CMulticlassLabels *)p_est-&gt;get_labels(); */</span></div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                <span class="comment">/* SGVector&lt;double&gt; labs = labels_train-&gt;get_unique_labels(); */</span></div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                <span class="comment">/* std::cout &lt;&lt; &quot;unique labels: \n&quot;; */</span> </div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                <span class="comment">/* for (int i = 0; i &lt; labs.size(); ++i) */</span> </div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                <span class="comment">/*     std::cout &lt;&lt; labs[i] &lt;&lt; &quot; &quot; ; */</span> </div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                <span class="comment">/* std::cout &lt;&lt; &quot;\n&quot;; */</span></div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                <span class="comment">/* int nclasses = labels_train-&gt;get_num_classes(); */</span></div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                <span class="comment">/* std::cout &lt;&lt; &quot;nclasses: &quot; &lt;&lt; nclasses &lt;&lt; &quot;\n&quot;; */</span></div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;            }</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;            <span class="keywordflow">else</span>                                                    <span class="comment">// regression</span></div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                p_est-&gt;set_labels(some&lt;CRegressionLabels&gt;(SGVector&lt;float64_t&gt;(_y)));</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;            </div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;            <span class="comment">// train ml</span></div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;            params.<a class="code" href="../../de/d2c/structFT_1_1Parameters.html#abaae697a8ddcb9ddd5e2b190915151ee">msg</a>(<span class="stringliteral">&quot;ML training on thread&quot;</span> </div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                       + <a class="code" href="../../d1/d5d/namespaceFT_1_1Util.html#afe062564286e6b13100de60f8fe9b947">std::to_string</a>(<a class="code" href="../../d8/dc0/init_8h.html#a889ec205c635b219999c761b28cc39ba">omp_get_thread_num</a>()) + <span class="stringliteral">&quot;...&quot;</span>,3,<span class="stringliteral">&quot; &quot;</span>);       </div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;            <span class="comment">// *** Train the model ***  </span></div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            p_est-&gt;train(features);</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;            <span class="comment">// *** Train the model ***</span></div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;            params.<a class="code" href="../../de/d2c/structFT_1_1Parameters.html#abaae697a8ddcb9ddd5e2b190915151ee">msg</a>(<span class="stringliteral">&quot;done.&quot;</span>,3);</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;           </div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            <span class="comment">//get output</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;            SGVector&lt;double&gt; y_pred; </div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;            shared_ptr&lt;CLabels&gt; labels;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;            <span class="keywordflow">if</span> (prob_type==PT_BINARY &amp;&amp; </div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                 (ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcad59b1dd6668ea0d9e128fa72a2d88f03">LR</a> || ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdca5c949a17e4fce802fa936311c97203d7">SVM</a> || ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcae7278cab84c3f5938d783b7837f0159e">CART</a>))     <span class="comment">// binary classification</span></div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;            {</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                <span class="keywordtype">bool</span> proba = params.<a class="code" href="../../de/d2c/structFT_1_1Parameters.html#a671b0c827027e417243edc7fd3ea77a6">scorer</a>.compare(<span class="stringliteral">&quot;log&quot;</span>)==0;</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                labels = shared_ptr&lt;CLabels&gt;(p_est-&gt;apply_binary(features));</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                <span class="keywordflow">if</span> (proba)</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                {</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                    <span class="keywordflow">if</span> (ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcae7278cab84c3f5938d783b7837f0159e">CART</a>)</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                    {</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                        dynamic_pointer_cast&lt;<a class="code" href="../../db/dff/classshogun_1_1CMyCARTree.html">sh::CMyCARTree</a>&gt;(p_est)-&gt;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                            set_probabilities(labels.get(), features);</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                    }</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                    {</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                        dynamic_pointer_cast&lt;<a class="code" href="../../de/d65/classshogun_1_1CMyLibLinear.html">sh::CMyLibLinear</a>&gt;(p_est)-&gt;</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                            set_probabilities(labels.get(), features);</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                    }</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                }</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                y_pred = dynamic_pointer_cast&lt;sh::CBinaryLabels&gt;(labels)-&gt;get_labels();</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                <span class="comment">/* cout &lt;&lt; &quot;y_pred: &quot;; */</span></div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                <span class="comment">/* y_pred.display_vector(); */</span></div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;            </div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                <span class="comment">/* SGVector&lt;double&gt; tmp = dynamic_pointer_cast&lt;sh::CBinaryLabels&gt;(labels)-&gt;get_values(); */</span></div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                <span class="comment">/* cout &lt;&lt; &quot;y_proba:\n&quot;; */</span></div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                <span class="comment">/* tmp.display_vector(); */</span></div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;               </div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                p_est-&gt;set_labels(some&lt;CMulticlassLabels&gt;(SGVector&lt;float64_t&gt;(_y)));</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            <span class="keywordflow">else</span>                                                    <span class="comment">// regression</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                p_est-&gt;set_labels(some&lt;CRegressionLabels&gt;(SGVector&lt;float64_t&gt;(_y)));</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            </div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            <span class="comment">// train ml</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;            params.<a class="code" href="../../de/d2c/structFT_1_1Parameters.html#abaae697a8ddcb9ddd5e2b190915151ee">msg</a>(<span class="stringliteral">&quot;ML training on thread&quot;</span> </div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                       + <a class="code" href="../../d1/d5d/namespaceFT_1_1Util.html#afe062564286e6b13100de60f8fe9b947">std::to_string</a>(<a class="code" href="../../d8/dc0/init_8h.html#a889ec205c635b219999c761b28cc39ba">omp_get_thread_num</a>()) + <span class="stringliteral">&quot;...&quot;</span>,3,<span class="stringliteral">&quot; &quot;</span>);       </div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            <span class="comment">// *** Train the model ***  </span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            p_est-&gt;train(features);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            <span class="comment">// *** Train the model ***</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;            params.<a class="code" href="../../de/d2c/structFT_1_1Parameters.html#abaae697a8ddcb9ddd5e2b190915151ee">msg</a>(<span class="stringliteral">&quot;done.&quot;</span>,3);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;           </div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;            <span class="comment">//get output</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            SGVector&lt;double&gt; y_pred; </div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;            shared_ptr&lt;CLabels&gt; labels;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;            <span class="keywordflow">if</span> (prob_type==PT_BINARY &amp;&amp; </div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                 (ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcad59b1dd6668ea0d9e128fa72a2d88f03">LR</a> || ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdca5c949a17e4fce802fa936311c97203d7">SVM</a> || ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcae7278cab84c3f5938d783b7837f0159e">CART</a>))     <span class="comment">// binary classification</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;            {</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                <span class="keywordtype">bool</span> proba = params.<a class="code" href="../../de/d2c/structFT_1_1Parameters.html#a671b0c827027e417243edc7fd3ea77a6">scorer</a>.compare(<span class="stringliteral">&quot;log&quot;</span>)==0;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                labels = shared_ptr&lt;CLabels&gt;(p_est-&gt;apply_binary(features));</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                <span class="keywordflow">if</span> (proba)</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                {</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                    <span class="keywordflow">if</span> (ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcae7278cab84c3f5938d783b7837f0159e">CART</a>)</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                    {</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                        dynamic_pointer_cast&lt;<a class="code" href="../../db/dff/classshogun_1_1CMyCARTree.html">sh::CMyCARTree</a>&gt;(p_est)-&gt;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                            set_probabilities(labels.get(), features);</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                    }</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                    {</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                        dynamic_pointer_cast&lt;<a class="code" href="../../de/d65/classshogun_1_1CMyLibLinear.html">sh::CMyLibLinear</a>&gt;(p_est)-&gt;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                            set_probabilities(labels.get(), features);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                    }</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                }</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                y_pred = dynamic_pointer_cast&lt;sh::CBinaryLabels&gt;(labels)-&gt;get_labels();</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                <span class="comment">/* cout &lt;&lt; &quot;y_pred: &quot;; */</span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                <span class="comment">/* y_pred.display_vector(); */</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;            </div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                <span class="comment">/* SGVector&lt;double&gt; tmp = dynamic_pointer_cast&lt;sh::CBinaryLabels&gt;(labels)-&gt;get_values(); */</span></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                <span class="comment">/* cout &lt;&lt; &quot;y_proba:\n&quot;; */</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                <span class="comment">/* tmp.display_vector(); */</span></div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;               </div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;            }</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (params.<a class="code" href="../../de/d2c/structFT_1_1Parameters.html#a206ae40d847bc59f26332a8de5b86114">classification</a>)                         <span class="comment">// multiclass classification</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;            {</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                labels = shared_ptr&lt;CLabels&gt;(p_est-&gt;apply_multiclass(features));</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                y_pred = dynamic_pointer_cast&lt;sh::CMulticlassLabels&gt;(labels)-&gt;get_labels();</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;            }</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;            <span class="keywordflow">else</span>                                                    <span class="comment">// regression</span></div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;            {</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                labels = shared_ptr&lt;CLabels&gt;(p_est-&gt;apply_regression(features));</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                y_pred = dynamic_pointer_cast&lt;sh::CRegressionLabels&gt;(labels)-&gt;get_labels();</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                <span class="comment">/* delete reg; */</span></div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;            }</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (params.<a class="code" href="../../de/d2c/structFT_1_1Parameters.html#a206ae40d847bc59f26332a8de5b86114">classification</a>)                         <span class="comment">// multiclass classification</span></div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;            {</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                labels = shared_ptr&lt;CLabels&gt;(p_est-&gt;apply_multiclass(features));</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                y_pred = dynamic_pointer_cast&lt;sh::CMulticlassLabels&gt;(labels)-&gt;get_labels();</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;            }</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;            <span class="keywordflow">else</span>                                                    <span class="comment">// regression</span></div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;            {</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                labels = shared_ptr&lt;CLabels&gt;(p_est-&gt;apply_regression(features));</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                y_pred = dynamic_pointer_cast&lt;sh::CRegressionLabels&gt;(labels)-&gt;get_labels();</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                <span class="comment">/* delete reg; */</span></div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;            }</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;            <span class="comment">//y_pred.display_vector();</span></div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;            <span class="comment">// map to Eigen vector</span></div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            Map&lt;VectorXd&gt; yhat(y_pred.data(),y_pred.size());</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;           </div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            <span class="comment">/* std::cout &lt;&lt; &quot;yhat: &quot; &lt;&lt; yhat.transpose() &lt;&lt; &quot;\n&quot;; */</span> </div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../d1/d5d/namespaceFT_1_1Util.html#a3118ffbc572dddfd5c655e1b3fc82a6b">isinf</a>(yhat.array()).any() || <a class="code" href="../../d1/d5d/namespaceFT_1_1Util.html#a3f8254d6ffcc0e7a59f26891868de87a">isnan</a>(yhat.array()).any() || yhat.size()==0)</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;            {</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                pass = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;            }</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;            <span class="comment">/* cout &lt;&lt; &quot;Returning from fit() from the ML class&quot; &lt;&lt; std::endl; */</span></div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;            <span class="keywordflow">return</span> labels;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        }</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;</div>
-<div class="line"><a name="l00353"></a><span class="lineno"><a class="line" href="../../dd/d6f/classFT_1_1Model_1_1ML.html#a414326dd97eb21965c6d693f2ec1fb48">  353</a></span>&#160;        VectorXf ML::fit_vector(MatrixXf&amp; X, VectorXf&amp; y, <span class="keyword">const</span> <a class="code" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a>&amp; params, <span class="keywordtype">bool</span>&amp; pass,</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                         <span class="keyword">const</span> vector&lt;char&gt;&amp; dtypes)</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        {</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;            shared_ptr&lt;CLabels&gt; labels = fit(X, y, params, pass, dtypes); </div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;            </div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;            <span class="keywordflow">return</span> labels_to_vector(labels);     </div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        }</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div>
-<div class="line"><a name="l00361"></a><span class="lineno"><a class="line" href="../../dd/d6f/classFT_1_1Model_1_1ML.html#adf63be10b9d2a34cc50f69e42c58285a">  361</a></span>&#160;        shared_ptr&lt;CLabels&gt; ML::predict(MatrixXf&amp; X)</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        {</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;            <span class="keywordflow">if</span> (normalize)</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                N.normalize(X);</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                </div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;            MatrixXd _X = X.template cast&lt;double&gt;();</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;            <span class="keyword">auto</span> features = some&lt;CDenseFeatures&lt;float64_t&gt;&gt;(SGMatrix&lt;float64_t&gt;(_X));</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;            </div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;            shared_ptr&lt;CLabels&gt; labels;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;           </div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;            <span class="keywordflow">if</span> (prob_type==PT_BINARY &amp;&amp; </div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;                    (ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdca5c949a17e4fce802fa936311c97203d7">SVM</a> || ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcad59b1dd6668ea0d9e128fa72a2d88f03">LR</a> || ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcae7278cab84c3f5938d783b7837f0159e">CART</a>)){</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;                labels = std::shared_ptr&lt;CLabels&gt;(p_est-&gt;apply_binary(features));</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;                <span class="keywordflow">if</span> (ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcae7278cab84c3f5938d783b7837f0159e">CART</a>)</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                    dynamic_pointer_cast&lt;<a class="code" href="../../db/dff/classshogun_1_1CMyCARTree.html">sh::CMyCARTree</a>&gt;(p_est)-&gt;set_probabilities(labels.get(), </div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                                                                                   features);</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                    dynamic_pointer_cast&lt;<a class="code" href="../../de/d65/classshogun_1_1CMyLibLinear.html">sh::CMyLibLinear</a>&gt;(p_est)-&gt;set_probabilities(labels.get(), </div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                                                                                     features);</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            }</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (prob_type != PT_REGRESSION)</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                labels = std::shared_ptr&lt;CLabels&gt;(p_est-&gt;apply_multiclass(features));</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;                labels = std::shared_ptr&lt;CLabels&gt;(p_est-&gt;apply_regression(features));</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;            </div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;            <span class="keywordflow">return</span> labels ;</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        }</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;</div>
-<div class="line"><a name="l00390"></a><span class="lineno"><a class="line" href="../../dd/d6f/classFT_1_1Model_1_1ML.html#a49adcc0558f475d477ce2a9247a26cf9">  390</a></span>&#160;        VectorXf ML::predict_vector(MatrixXf&amp; X)</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        {</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;            shared_ptr&lt;CLabels&gt; labels = predict(X);</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;            <span class="keywordflow">return</span> labels_to_vector(labels);     </div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;            </div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        }</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;</div>
-<div class="line"><a name="l00397"></a><span class="lineno"><a class="line" href="../../dd/d6f/classFT_1_1Model_1_1ML.html#aae33134488d841f39f780c26f1051fa3">  397</a></span>&#160;        ArrayXXf ML::predict_proba(MatrixXf&amp; X)</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        {</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;            shared_ptr&lt;CLabels&gt; labels = shared_ptr&lt;CLabels&gt;(predict(X));</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;               </div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;            <span class="keywordflow">if</span> (prob_type==PT_BINARY &amp;&amp; </div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                    (ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdca5c949a17e4fce802fa936311c97203d7">SVM</a> || ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcad59b1dd6668ea0d9e128fa72a2d88f03">LR</a> || ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcae7278cab84c3f5938d783b7837f0159e">CART</a>))</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;            {</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;                shared_ptr&lt;CBinaryLabels&gt; BLabels = dynamic_pointer_cast&lt;CBinaryLabels&gt;(labels);</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;                <span class="comment">/* BLabels-&gt;scores_to_probabilities(); */</span></div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                SGVector&lt;double&gt; tmp= BLabels-&gt;get_values();</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;                ArrayXXd confidences(1,tmp.size());</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                confidences.row(0) = Map&lt;ArrayXd&gt;(tmp.data(),tmp.size()); </div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;                <span class="keywordflow">return</span> confidences.template cast&lt;float&gt;();</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;            }</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (prob_type == PT_MULTICLASS)</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;            {</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;                shared_ptr&lt;CMulticlassLabels&gt; MLabels = dynamic_pointer_cast&lt;CMulticlassLabels&gt;(labels);</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;                MatrixXd confidences(MLabels-&gt;get_num_classes(), MLabels-&gt;get_num_labels()) ; </div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i =0; i&lt;confidences.rows(); ++i)</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;                {</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;                    SGVector&lt;double&gt; tmp = MLabels-&gt;get_multiclass_confidences(<span class="keywordtype">int</span>(i));</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;                    confidences.row(i) = Map&lt;ArrayXd&gt;(tmp.data(),tmp.size());</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;                    <span class="comment">/* std::cout &lt;&lt; confidences.row(i) &lt;&lt; &quot;\n&quot;; */</span></div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;                }</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;                <span class="keywordflow">return</span> confidences.template cast&lt;float&gt;();;</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;            }</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;                <a class="code" href="../../da/d41/error_8h.html#aa4c550bcd71e4ec1c97b111e1360509a">HANDLE_ERROR_THROW</a>(<span class="stringliteral">&quot;Error: predict_proba not defined for problem type or ML method&quot;</span>);</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        }</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;</div>
-<div class="line"><a name="l00427"></a><span class="lineno"><a class="line" href="../../dd/d6f/classFT_1_1Model_1_1ML.html#ad99b341011fec43531f70a73d1d9b18e">  427</a></span>&#160;        VectorXf ML::labels_to_vector(<span class="keyword">const</span> shared_ptr&lt;CLabels&gt;&amp; labels)</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        {</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;            SGVector&lt;double&gt; y_pred;</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;            <span class="keywordflow">if</span> (prob_type==PT_BINARY &amp;&amp; </div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;                    (ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdca5c949a17e4fce802fa936311c97203d7">SVM</a> || ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcad59b1dd6668ea0d9e128fa72a2d88f03">LR</a> || ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcae7278cab84c3f5938d783b7837f0159e">CART</a>))</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;                y_pred = dynamic_pointer_cast&lt;sh::CBinaryLabels&gt;(labels)-&gt;get_labels();</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (prob_type != PT_REGRESSION)</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;                y_pred = dynamic_pointer_cast&lt;sh::CMulticlassLabels&gt;(labels)-&gt;get_labels();</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;                y_pred = dynamic_pointer_cast&lt;sh::CRegressionLabels&gt;(labels)-&gt;get_labels();</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;           </div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;            Map&lt;VectorXd&gt; yhat(y_pred.data(),y_pred.size());</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;            </div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;            <span class="keywordflow">if</span> (prob_type==PT_BINARY &amp;&amp; </div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;                    (ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcad59b1dd6668ea0d9e128fa72a2d88f03">LR</a> || ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdca5c949a17e4fce802fa936311c97203d7">SVM</a> || ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcae7278cab84c3f5938d783b7837f0159e">CART</a>))</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;                <span class="comment">// convert -1 to 0</span></div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;                yhat = (yhat.cast&lt;<span class="keywordtype">int</span>&gt;().array() == -1).select(0,yhat);</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;            <span class="keywordflow">return</span> yhat.template cast&lt;float&gt;();</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;        }</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    }</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;}</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            <span class="comment">//y_pred.display_vector();</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;            <span class="comment">// map to Eigen vector</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;            Map&lt;VectorXd&gt; yhat(y_pred.data(),y_pred.size());</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;           </div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;            <span class="comment">//std::cout &lt;&lt; &quot;yhat: &quot; &lt;&lt; yhat.transpose() &lt;&lt; &quot;\n&quot;; </span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../d1/d5d/namespaceFT_1_1Util.html#a3118ffbc572dddfd5c655e1b3fc82a6b">isinf</a>(yhat.array()).any() || <a class="code" href="../../d1/d5d/namespaceFT_1_1Util.html#a3f8254d6ffcc0e7a59f26891868de87a">isnan</a>(yhat.array()).any() || yhat.size()==0)</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                pass = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;            </div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;            <span class="keywordflow">return</span> labels;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        }</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
+<div class="line"><a name="l00340"></a><span class="lineno"><a class="line" href="../../dd/d6f/classFT_1_1Model_1_1ML.html#a414326dd97eb21965c6d693f2ec1fb48">  340</a></span>&#160;        VectorXf ML::fit_vector(MatrixXf&amp; X, VectorXf&amp; y, <span class="keyword">const</span> <a class="code" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a>&amp; params, <span class="keywordtype">bool</span>&amp; pass,</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                         <span class="keyword">const</span> vector&lt;char&gt;&amp; dtypes)</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        {</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            shared_ptr&lt;CLabels&gt; labels = fit(X, y, params, pass, dtypes); </div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;            </div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            <span class="keywordflow">return</span> labels_to_vector(labels);     </div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        }</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
+<div class="line"><a name="l00348"></a><span class="lineno"><a class="line" href="../../dd/d6f/classFT_1_1Model_1_1ML.html#adf63be10b9d2a34cc50f69e42c58285a">  348</a></span>&#160;        shared_ptr&lt;CLabels&gt; ML::predict(MatrixXf&amp; X)</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        {</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;            <span class="keywordflow">if</span> (normalize)</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                N.normalize(X);</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;                </div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;            MatrixXd _X = X.template cast&lt;double&gt;();</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;            <span class="keyword">auto</span> features = some&lt;CDenseFeatures&lt;float64_t&gt;&gt;(SGMatrix&lt;float64_t&gt;(_X));</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;            </div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;            shared_ptr&lt;CLabels&gt; labels;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;           </div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            <span class="keywordflow">if</span> (prob_type==PT_BINARY &amp;&amp; </div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                    (ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdca5c949a17e4fce802fa936311c97203d7">SVM</a> || ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcad59b1dd6668ea0d9e128fa72a2d88f03">LR</a> || ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcae7278cab84c3f5938d783b7837f0159e">CART</a>)){</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                labels = std::shared_ptr&lt;CLabels&gt;(p_est-&gt;apply_binary(features));</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                <span class="keywordflow">if</span> (ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcae7278cab84c3f5938d783b7837f0159e">CART</a>)</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                    dynamic_pointer_cast&lt;<a class="code" href="../../db/dff/classshogun_1_1CMyCARTree.html">sh::CMyCARTree</a>&gt;(p_est)-&gt;set_probabilities(labels.get(), </div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;                                                                                   features);</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                    dynamic_pointer_cast&lt;<a class="code" href="../../de/d65/classshogun_1_1CMyLibLinear.html">sh::CMyLibLinear</a>&gt;(p_est)-&gt;set_probabilities(labels.get(), </div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                                                                                     features);</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;            }</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (prob_type != PT_REGRESSION)</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;                labels = std::shared_ptr&lt;CLabels&gt;(p_est-&gt;apply_multiclass(features));</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                labels = std::shared_ptr&lt;CLabels&gt;(p_est-&gt;apply_regression(features));</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;            </div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;            <span class="keywordflow">return</span> labels ;</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        }</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;</div>
+<div class="line"><a name="l00377"></a><span class="lineno"><a class="line" href="../../dd/d6f/classFT_1_1Model_1_1ML.html#a49adcc0558f475d477ce2a9247a26cf9">  377</a></span>&#160;        VectorXf ML::predict_vector(MatrixXf&amp; X)</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        {</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;            shared_ptr&lt;CLabels&gt; labels = predict(X);</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;            <span class="keywordflow">return</span> labels_to_vector(labels);     </div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            </div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        }</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;</div>
+<div class="line"><a name="l00384"></a><span class="lineno"><a class="line" href="../../dd/d6f/classFT_1_1Model_1_1ML.html#aae33134488d841f39f780c26f1051fa3">  384</a></span>&#160;        ArrayXXf ML::predict_proba(MatrixXf&amp; X)</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        {</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;            shared_ptr&lt;CLabels&gt; labels = shared_ptr&lt;CLabels&gt;(predict(X));</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;               </div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;            <span class="keywordflow">if</span> (prob_type==PT_BINARY &amp;&amp; </div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                    (ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdca5c949a17e4fce802fa936311c97203d7">SVM</a> || ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcad59b1dd6668ea0d9e128fa72a2d88f03">LR</a> || ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcae7278cab84c3f5938d783b7837f0159e">CART</a>))</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;            {</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;                shared_ptr&lt;CBinaryLabels&gt; BLabels = dynamic_pointer_cast&lt;CBinaryLabels&gt;(labels);</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;                <span class="comment">/* BLabels-&gt;scores_to_probabilities(); */</span></div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                SGVector&lt;double&gt; tmp= BLabels-&gt;get_values();</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;                ArrayXXd confidences(1,tmp.size());</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;                confidences.row(0) = Map&lt;ArrayXd&gt;(tmp.data(),tmp.size()); </div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;                <span class="keywordflow">return</span> confidences.template cast&lt;float&gt;();</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;            }</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (prob_type == PT_MULTICLASS)</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;            {</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                shared_ptr&lt;CMulticlassLabels&gt; MLabels = dynamic_pointer_cast&lt;CMulticlassLabels&gt;(labels);</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                MatrixXd confidences(MLabels-&gt;get_num_classes(), MLabels-&gt;get_num_labels()) ; </div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i =0; i&lt;confidences.rows(); ++i)</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                {</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;                    SGVector&lt;double&gt; tmp = MLabels-&gt;get_multiclass_confidences(<span class="keywordtype">int</span>(i));</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;                    confidences.row(i) = Map&lt;ArrayXd&gt;(tmp.data(),tmp.size());</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                    <span class="comment">/* std::cout &lt;&lt; confidences.row(i) &lt;&lt; &quot;\n&quot;; */</span></div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;                }</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                <span class="keywordflow">return</span> confidences.template cast&lt;float&gt;();;</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;            }</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;                <a class="code" href="../../da/d41/error_8h.html#aa4c550bcd71e4ec1c97b111e1360509a">HANDLE_ERROR_THROW</a>(<span class="stringliteral">&quot;Error: predict_proba not defined for problem type or ML method&quot;</span>);</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;        }</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;</div>
+<div class="line"><a name="l00414"></a><span class="lineno"><a class="line" href="../../dd/d6f/classFT_1_1Model_1_1ML.html#ad99b341011fec43531f70a73d1d9b18e">  414</a></span>&#160;        VectorXf ML::labels_to_vector(<span class="keyword">const</span> shared_ptr&lt;CLabels&gt;&amp; labels)</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        {</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;            SGVector&lt;double&gt; y_pred;</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;            <span class="keywordflow">if</span> (prob_type==PT_BINARY &amp;&amp; </div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;                    (ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdca5c949a17e4fce802fa936311c97203d7">SVM</a> || ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcad59b1dd6668ea0d9e128fa72a2d88f03">LR</a> || ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcae7278cab84c3f5938d783b7837f0159e">CART</a>))</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;                y_pred = dynamic_pointer_cast&lt;sh::CBinaryLabels&gt;(labels)-&gt;get_labels();</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (prob_type != PT_REGRESSION)</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;                y_pred = dynamic_pointer_cast&lt;sh::CMulticlassLabels&gt;(labels)-&gt;get_labels();</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;                y_pred = dynamic_pointer_cast&lt;sh::CRegressionLabels&gt;(labels)-&gt;get_labels();</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;           </div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;            Map&lt;VectorXd&gt; yhat(y_pred.data(),y_pred.size());</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;            </div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;            <span class="keywordflow">if</span> (prob_type==PT_BINARY &amp;&amp; </div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;                    (ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcad59b1dd6668ea0d9e128fa72a2d88f03">LR</a> || ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdca5c949a17e4fce802fa936311c97203d7">SVM</a> || ml_type == <a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcae7278cab84c3f5938d783b7837f0159e">CART</a>))</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;                <span class="comment">// convert -1 to 0</span></div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;                yhat = (yhat.cast&lt;<span class="keywordtype">int</span>&gt;().array() == -1).select(0,yhat);</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;            <span class="keywordflow">return</span> yhat.template cast&lt;float&gt;();</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        }</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    }</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;}</div>
 <div class="ttc" id="structFT_1_1Parameters_html_a60b1f33621b61544a3c0ca929b088c7d"><div class="ttname"><a href="../../de/d2c/structFT_1_1Parameters.html#a60b1f33621b61544a3c0ca929b088c7d">FT::Parameters::n_classes</a></div><div class="ttdeci">unsigned int n_classes</div><div class="ttdoc">number of classes for classification </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d33/params_8h_source.html#l00051">params.h:51</a></div></div>
 <div class="ttc" id="namespaceFT_1_1Model_html_a3e165e7a7c8603ac4380303142185fdca3d5d1c52bcc79dcb8c2a48fb35d97504"><div class="ttname"><a href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdca3d5d1c52bcc79dcb8c2a48fb35d97504">FT::Model::LARS</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d60/ml_8h_source.html#l00060">ml.h:60</a></div></div>
 <div class="ttc" id="namespaceFT_1_1Model_html_a3e165e7a7c8603ac4380303142185fdca9f44aeb2d68842cbf2c188d378a0bedb"><div class="ttname"><a href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdca9f44aeb2d68842cbf2c188d378a0bedb">FT::Model::Ridge</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d60/ml_8h_source.html#l00061">ml.h:61</a></div></div>
@@ -552,11 +539,11 @@ $(document).ready(function(){initNavTree('df/d54/ml_8cc_source.html','../../');}
 <div class="ttc" id="namespaceFT_1_1Model_html_a3e165e7a7c8603ac4380303142185fdca5c949a17e4fce802fa936311c97203d7"><div class="ttname"><a href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdca5c949a17e4fce802fa936311c97203d7">FT::Model::SVM</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d60/ml_8h_source.html#l00063">ml.h:63</a></div></div>
 <div class="ttc" id="structFT_1_1Parameters_html_a671b0c827027e417243edc7fd3ea77a6"><div class="ttname"><a href="../../de/d2c/structFT_1_1Parameters.html#a671b0c827027e417243edc7fd3ea77a6">FT::Parameters::scorer</a></div><div class="ttdeci">string scorer</div><div class="ttdoc">loss function </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d33/params_8h_source.html#l00056">params.h:56</a></div></div>
 <div class="ttc" id="ml_8h_html"><div class="ttname"><a href="../../d7/d60/ml_8h.html">ml.h</a></div></div>
-<div class="ttc" id="namespaceFT_1_1Util_html_a3118ffbc572dddfd5c655e1b3fc82a6b"><div class="ttname"><a href="../../d1/d5d/namespaceFT_1_1Util.html#a3118ffbc572dddfd5c655e1b3fc82a6b">FT::Util::isinf</a></div><div class="ttdeci">ArrayXb isinf(const ArrayXf &amp;x)</div><div class="ttdoc">returns true for elements of x that are infinite </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/da9/utils_8cc_source.html#l00303">utils.cc:303</a></div></div>
+<div class="ttc" id="namespaceFT_1_1Util_html_a3118ffbc572dddfd5c655e1b3fc82a6b"><div class="ttname"><a href="../../d1/d5d/namespaceFT_1_1Util.html#a3118ffbc572dddfd5c655e1b3fc82a6b">FT::Util::isinf</a></div><div class="ttdeci">ArrayXb isinf(const ArrayXf &amp;x)</div><div class="ttdoc">returns true for elements of x that are infinite </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/da9/utils_8cc_source.html#l00255">utils.cc:255</a></div></div>
 <div class="ttc" id="structFT_1_1Parameters_html_a7e11bd6f94c1474b695cc9c823e8ea46"><div class="ttname"><a href="../../de/d2c/structFT_1_1Parameters.html#a7e11bd6f94c1474b695cc9c823e8ea46">FT::Parameters::ml</a></div><div class="ttdeci">string ml</div><div class="ttdoc">machine learner used with Feat </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d33/params_8h_source.html#l00028">params.h:28</a></div></div>
 <div class="ttc" id="namespaceFT_1_1Model_html_a3e165e7a7c8603ac4380303142185fdcae7278cab84c3f5938d783b7837f0159e"><div class="ttname"><a href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcae7278cab84c3f5938d783b7837f0159e">FT::Model::CART</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d60/ml_8h_source.html#l00064">ml.h:64</a></div></div>
 <div class="ttc" id="namespaceFT_1_1Model_html_a3e165e7a7c8603ac4380303142185fdcad59b1dd6668ea0d9e128fa72a2d88f03"><div class="ttname"><a href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcad59b1dd6668ea0d9e128fa72a2d88f03">FT::Model::LR</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d60/ml_8h_source.html#l00065">ml.h:65</a></div></div>
-<div class="ttc" id="namespaceFT_1_1Util_html_afe062564286e6b13100de60f8fe9b947"><div class="ttname"><a href="../../d1/d5d/namespaceFT_1_1Util.html#afe062564286e6b13100de60f8fe9b947">FT::Util::to_string</a></div><div class="ttdeci">string to_string(const T &amp;value)</div><div class="ttdoc">template function to convert objects to string for logging </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d60/utils_8h_source.html#l00192">utils.h:192</a></div></div>
+<div class="ttc" id="namespaceFT_1_1Util_html_afe062564286e6b13100de60f8fe9b947"><div class="ttname"><a href="../../d1/d5d/namespaceFT_1_1Util.html#afe062564286e6b13100de60f8fe9b947">FT::Util::to_string</a></div><div class="ttdeci">string to_string(const T &amp;value)</div><div class="ttdoc">template function to convert objects to string for logging </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d60/utils_8h_source.html#l00188">utils.h:188</a></div></div>
 <div class="ttc" id="structFT_1_1Parameters_html_abaae697a8ddcb9ddd5e2b190915151ee"><div class="ttname"><a href="../../de/d2c/structFT_1_1Parameters.html#abaae697a8ddcb9ddd5e2b190915151ee">FT::Parameters::msg</a></div><div class="ttdeci">string msg(string m, int v, string sep=&quot;\n&quot;) const </div><div class="ttdoc">print message with verbosity control. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc0/params_8cc_source.html#l00071">params.cc:71</a></div></div>
 <div class="ttc" id="error_8h_html_aa4c550bcd71e4ec1c97b111e1360509a"><div class="ttname"><a href="../../da/d41/error_8h.html#aa4c550bcd71e4ec1c97b111e1360509a">HANDLE_ERROR_THROW</a></div><div class="ttdeci">#define HANDLE_ERROR_THROW(err)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d41/error_8h_source.html#l00026">error.h:26</a></div></div>
 <div class="ttc" id="classshogun_1_1CMyMulticlassLibLinear_html"><div class="ttname"><a href="../../df/d62/classshogun_1_1CMyMulticlassLibLinear.html">shogun::CMyMulticlassLibLinear</a></div><div class="ttdoc">multiclass LibLinear wrapper. Uses Crammer-Singer formulation and gradient descent optimization algor...</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html#l00044">MyMulticlassLibLinear.h:44</a></div></div>
@@ -564,7 +551,7 @@ $(document).ready(function(){initNavTree('df/d54/ml_8cc_source.html','../../');}
 <div class="ttc" id="structFT_1_1Parameters_html_a13aa6e90bb1700d03dff25925839781f"><div class="ttname"><a href="../../de/d2c/structFT_1_1Parameters.html#a13aa6e90bb1700d03dff25925839781f">FT::Parameters::dtypes</a></div><div class="ttdeci">vector&lt; char &gt; dtypes</div><div class="ttdoc">data types of input parameters </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d33/params_8h_source.html#l00049">params.h:49</a></div></div>
 <div class="ttc" id="classshogun_1_1CMyCARTree_html"><div class="ttname"><a href="../../db/dff/classshogun_1_1CMyCARTree.html">shogun::CMyCARTree</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d7f/MyCARTree_8h_source.html#l00042">MyCARTree.h:42</a></div></div>
 <div class="ttc" id="structFT_1_1Parameters_html_a206ae40d847bc59f26332a8de5b86114"><div class="ttname"><a href="../../de/d2c/structFT_1_1Parameters.html#a206ae40d847bc59f26332a8de5b86114">FT::Parameters::classification</a></div><div class="ttdeci">bool classification</div><div class="ttdoc">flag to conduct classification rather than </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d33/params_8h_source.html#l00029">params.h:29</a></div></div>
-<div class="ttc" id="namespaceFT_1_1Util_html_a3f8254d6ffcc0e7a59f26891868de87a"><div class="ttname"><a href="../../d1/d5d/namespaceFT_1_1Util.html#a3f8254d6ffcc0e7a59f26891868de87a">FT::Util::isnan</a></div><div class="ttdeci">ArrayXb isnan(const ArrayXf &amp;x)</div><div class="ttdoc">returns true for elements of x that are NaN </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/da9/utils_8cc_source.html#l00312">utils.cc:312</a></div></div>
+<div class="ttc" id="namespaceFT_1_1Util_html_a3f8254d6ffcc0e7a59f26891868de87a"><div class="ttname"><a href="../../d1/d5d/namespaceFT_1_1Util.html#a3f8254d6ffcc0e7a59f26891868de87a">FT::Util::isnan</a></div><div class="ttdeci">ArrayXb isnan(const ArrayXf &amp;x)</div><div class="ttdoc">returns true for elements of x that are NaN </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/da9/utils_8cc_source.html#l00264">utils.cc:264</a></div></div>
 <div class="ttc" id="classshogun_1_1CMyLibLinear_html"><div class="ttname"><a href="../../de/d65/classshogun_1_1CMyLibLinear.html">shogun::CMyLibLinear</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/db3/MyLibLinear_8h_source.html#l00011">MyLibLinear.h:11</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

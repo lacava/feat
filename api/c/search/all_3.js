@@ -10,7 +10,7 @@ var searchData=
   ['choose_5fgpu',['choose_gpu',['../dc/dd9/namespaceFT_1_1Pop_1_1Op.html#a4a69f6d2c4281cede80c6c5d153ae8a9',1,'FT::Pop::Op']]],
   ['class_5fweights',['class_weights',['../de/d2c/structFT_1_1Parameters.html#a4bfe7e5d3bc6ba873466f9fab3f63e65',1,'FT::Parameters']]],
   ['classes',['classes',['../de/d2c/structFT_1_1Parameters.html#a49fe9f7e71e11f5532b57267843b11fc',1,'FT::Parameters']]],
-  ['classification',['classification',['../de/d36/classFT_1_1Dat_1_1Data.html#a8197ce4d48e72ec1f40340ea72ebadf8',1,'FT::Dat::Data::classification()'],['../de/d2c/structFT_1_1Parameters.html#a206ae40d847bc59f26332a8de5b86114',1,'FT::Parameters::classification()']]],
+  ['classification',['classification',['../de/d36/classFT_1_1Dat_1_1Data.html#a8197ce4d48e72ec1f40340ea72ebadf8',1,'FT::Dat::Data::classification()'],['../d4/d10/classFT_1_1Dat_1_1DataRef.html#a20f6c6dc4e6d1fdbae5470cd716be7c9',1,'FT::Dat::DataRef::classification()'],['../de/d2c/structFT_1_1Parameters.html#a206ae40d847bc59f26332a8de5b86114',1,'FT::Parameters::classification()']]],
   ['clean',['clean',['../d1/d5d/namespaceFT_1_1Util.html#aea590c3a1595610c3ae351b926a77728',1,'FT::Util']]],
   ['clear',['clear',['../d8/d30/classFT_1_1Dat_1_1Stack.html#a63580a7ee7a58ac12c45480ab88f4e64',1,'FT::Dat::Stack']]],
   ['clear_5ffeature_5ftypes',['clear_feature_types',['../db/dff/classshogun_1_1CMyCARTree.html#ae51cf1473b5fd493cec2a51982ce65ba',1,'shogun::CMyCARTree']]],

@@ -149,11 +149,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a306371f39b36235d73fedbbe812ce139"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a42d1214afcb90cd9f17e0ff9188aa9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/classFT_1_1Dat_1_1DataRef.html#a5a42d1214afcb90cd9f17e0ff9188aa9">setValidationData</a> (<a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> *d)</td></tr>
 <tr class="separator:a5a42d1214afcb90cd9f17e0ff9188aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a694c7d1ede849de047fd2c5f115eabc8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/classFT_1_1Dat_1_1DataRef.html#a694c7d1ede849de047fd2c5f115eabc8">shuffle_data</a> ()</td></tr>
+<tr class="memdesc:a694c7d1ede849de047fd2c5f115eabc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">shuffles original data  <a href="#a694c7d1ede849de047fd2c5f115eabc8">More...</a><br/></td></tr>
+<tr class="separator:a694c7d1ede849de047fd2c5f115eabc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b35a7ffc07ed46f4d7e743683da3cf0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/classFT_1_1Dat_1_1DataRef.html#a5b35a7ffc07ed46f4d7e743683da3cf0">split_stratified</a> (float split)</td></tr>
+<tr class="memdesc:a5b35a7ffc07ed46f4d7e743683da3cf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">split classification data as stratas  <a href="#a5b35a7ffc07ed46f4d7e743683da3cf0">More...</a><br/></td></tr>
+<tr class="separator:a5b35a7ffc07ed46f4d7e743683da3cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad35c008b0c3a4d7783225060e2f4846d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/classFT_1_1Dat_1_1DataRef.html#ad35c008b0c3a4d7783225060e2f4846d">train_test_split</a> (bool shuffle, float split)</td></tr>
 <tr class="memdesc:ad35c008b0c3a4d7783225060e2f4846d"><td class="mdescLeft">&#160;</td><td class="mdescRight">splits data into training and validation folds.  <a href="#ad35c008b0c3a4d7783225060e2f4846d">More...</a><br/></td></tr>
 <tr class="separator:ad35c008b0c3a4d7783225060e2f4846d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5c063e857730d13152e5ff0c0b1fd8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/classFT_1_1Dat_1_1DataRef.html#ad5c063e857730d13152e5ff0c0b1fd8e">split_longitudinal</a> (std::map&lt; string, std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt; &amp;Z, std::map&lt; string, std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt; &amp;<a class="el" href="../../d4/d10/classFT_1_1Dat_1_1DataRef.html#aaf64e8e3434eab176613e92753162e86">Z_t</a>, std::map&lt; string, std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt; &amp;<a class="el" href="../../d4/d10/classFT_1_1Dat_1_1DataRef.html#a099ab47b534ebe522ee31605a5f0c910">Z_v</a>, float split)</td></tr>
 <tr class="separator:ad5c063e857730d13152e5ff0c0b1fd8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedc979315e55681c3cf1405c99f3d7ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/classFT_1_1Dat_1_1DataRef.html#aedc979315e55681c3cf1405c99f3d7ea">reorder_longitudinal</a> (vector&lt; ArrayXf &gt; &amp;vec1, const vector&lt; int &gt; &amp;order)</td></tr>
+<tr class="memdesc:aedc979315e55681c3cf1405c99f3d7ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">reordering utility for shuffling longitudinal data.  <a href="#aedc979315e55681c3cf1405c99f3d7ea">More...</a><br/></td></tr>
+<tr class="separator:aedc979315e55681c3cf1405c99f3d7ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -188,6 +197,8 @@ Private Attributes</h2></td></tr>
 &lt; vector&lt; ArrayXf &gt;, vector<br class="typebreak"/>
 &lt; ArrayXf &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/classFT_1_1Dat_1_1DataRef.html#a099ab47b534ebe522ee31605a5f0c910">Z_v</a></td></tr>
 <tr class="separator:a099ab47b534ebe522ee31605a5f0c910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20f6c6dc4e6d1fdbae5470cd716be7c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/classFT_1_1Dat_1_1DataRef.html#a20f6c6dc4e6d1fdbae5470cd716be7c9">classification</a></td></tr>
+<tr class="separator:a20f6c6dc4e6d1fdbae5470cd716be7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -223,7 +234,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/d05/data_8cc_source.html#l00077">77</a> of file <a class="el" href="../../d4/d05/data_8cc_source.html">data.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d05/data_8cc_source.html#l00079">79</a> of file <a class="el" href="../../d4/d05/data_8cc_source.html">data.cc</a>.</p>
 
 </div>
 </div>
@@ -266,6 +277,36 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aedc979315e55681c3cf1405c99f3d7ea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FT::Dat::DataRef::reorder_longitudinal </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; ArrayXf &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vec1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>order</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>reordering utility for shuffling longitudinal data. </p>
+
+<p>Definition at line <a class="el" href="../../d4/d05/data_8cc_source.html#l00357">357</a> of file <a class="el" href="../../d4/d05/data_8cc_source.html">data.cc</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ac7053953b4e57561b6b01595d29d9b44"></a>
 <div class="memitem">
 <div class="memproto">
@@ -302,7 +343,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/d05/data_8cc_source.html#l00098">98</a> of file <a class="el" href="../../d4/d05/data_8cc_source.html">data.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d05/data_8cc_source.html#l00100">100</a> of file <a class="el" href="../../d4/d05/data_8cc_source.html">data.cc</a>.</p>
 
 </div>
 </div>
@@ -320,7 +361,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/d05/data_8cc_source.html#l00112">112</a> of file <a class="el" href="../../d4/d05/data_8cc_source.html">data.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d05/data_8cc_source.html#l00116">116</a> of file <a class="el" href="../../d4/d05/data_8cc_source.html">data.cc</a>.</p>
 
 </div>
 </div>
@@ -360,7 +401,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/d05/data_8cc_source.html#l00124">124</a> of file <a class="el" href="../../d4/d05/data_8cc_source.html">data.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d05/data_8cc_source.html#l00130">130</a> of file <a class="el" href="../../d4/d05/data_8cc_source.html">data.cc</a>.</p>
 
 </div>
 </div>
@@ -388,7 +429,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/d05/data_8cc_source.html#l00132">132</a> of file <a class="el" href="../../d4/d05/data_8cc_source.html">data.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d05/data_8cc_source.html#l00140">140</a> of file <a class="el" href="../../d4/d05/data_8cc_source.html">data.cc</a>.</p>
 
 </div>
 </div>
@@ -428,7 +469,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/d05/data_8cc_source.html#l00141">141</a> of file <a class="el" href="../../d4/d05/data_8cc_source.html">data.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d05/data_8cc_source.html#l00149">149</a> of file <a class="el" href="../../d4/d05/data_8cc_source.html">data.cc</a>.</p>
 
 </div>
 </div>
@@ -446,7 +487,26 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/d05/data_8cc_source.html#l00149">149</a> of file <a class="el" href="../../d4/d05/data_8cc_source.html">data.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d05/data_8cc_source.html#l00157">157</a> of file <a class="el" href="../../d4/d05/data_8cc_source.html">data.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a694c7d1ede849de047fd2c5f115eabc8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FT::Dat::DataRef::shuffle_data </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>shuffles original data </p>
+
+<p>Definition at line <a class="el" href="../../d4/d05/data_8cc_source.html#l00163">163</a> of file <a class="el" href="../../d4/d05/data_8cc_source.html">data.cc</a>.</p>
 
 </div>
 </div>
@@ -486,7 +546,27 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/d05/data_8cc_source.html#l00207">207</a> of file <a class="el" href="../../d4/d05/data_8cc_source.html">data.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d05/data_8cc_source.html#l00304">304</a> of file <a class="el" href="../../d4/d05/data_8cc_source.html">data.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5b35a7ffc07ed46f4d7e743683da3cf0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FT::Dat::DataRef::split_stratified </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>split</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>split classification data as stratas </p>
+
+<p>Definition at line <a class="el" href="../../d4/d05/data_8cc_source.html#l00188">188</a> of file <a class="el" href="../../d4/d05/data_8cc_source.html">data.cc</a>.</p>
 
 </div>
 </div>
@@ -516,11 +596,33 @@ Private Attributes</h2></td></tr>
 
 <p>splits data into training and validation folds. </p>
 
-<p>Definition at line <a class="el" href="../../d4/d05/data_8cc_source.html#l00155">155</a> of file <a class="el" href="../../d4/d05/data_8cc_source.html">data.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d05/data_8cc_source.html#l00269">269</a> of file <a class="el" href="../../d4/d05/data_8cc_source.html">data.cc</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a20f6c6dc4e6d1fdbae5470cd716be7c9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FT::Dat::DataRef::classification</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d2/dbd/data_8h_source.html#l00079">79</a> of file <a class="el" href="../../d2/dbd/data_8h_source.html">data.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ad194b6b2eb890e2ccaf578ad760a3627"></a>
 <div class="memitem">
 <div class="memproto">
@@ -531,7 +633,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/dbd/data_8h_source.html#l00080">80</a> of file <a class="el" href="../../d2/dbd/data_8h_source.html">data.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dbd/data_8h_source.html#l00082">82</a> of file <a class="el" href="../../d2/dbd/data_8h_source.html">data.h</a>.</p>
 
 </div>
 </div>
@@ -567,7 +669,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/dbd/data_8h_source.html#l00082">82</a> of file <a class="el" href="../../d2/dbd/data_8h_source.html">data.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dbd/data_8h_source.html#l00084">84</a> of file <a class="el" href="../../d2/dbd/data_8h_source.html">data.h</a>.</p>
 
 </div>
 </div>
@@ -603,7 +705,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/dbd/data_8h_source.html#l00081">81</a> of file <a class="el" href="../../d2/dbd/data_8h_source.html">data.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dbd/data_8h_source.html#l00083">83</a> of file <a class="el" href="../../d2/dbd/data_8h_source.html">data.h</a>.</p>
 
 </div>
 </div>

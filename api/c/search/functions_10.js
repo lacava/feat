@@ -4,7 +4,7 @@ var searchData=
   ['random_5fchoice',['random_choice',['../d8/d33/classFT_1_1Util_1_1Rnd.html#a675de7b9db4403af2a4ba87d1ee700ca',1,'FT::Util::Rnd::random_choice(const vector&lt; T &gt; &amp;v)'],['../d8/d33/classFT_1_1Util_1_1Rnd.html#ab32fe760e7c5e8994daa4a782a95be2b',1,'FT::Util::Rnd::random_choice(const vector&lt; T &gt; &amp;v, const vector&lt; D &gt; &amp;w)']]],
   ['random_5fnode',['random_node',['../d5/d5e/namespaceFT_1_1Vary.html#a85f3dfbd35002170051ed43b65a7f752',1,'FT::Vary']]],
   ['register_5fparameters',['register_parameters',['../db/d4e/classshogun_1_1CMulticlassLogisticRegression.html#aadde2195844564c8c7e9c889a52a8b1c',1,'shogun::CMulticlassLogisticRegression::register_parameters()'],['../df/d62/classshogun_1_1CMyMulticlassLibLinear.html#ad29675e3e0a7949ec1dade1dfbb4422f',1,'shogun::CMyMulticlassLibLinear::register_parameters()']]],
-  ['reorder_5flongitudinal',['reorder_longitudinal',['../d1/d5d/namespaceFT_1_1Util.html#a0a8ebc40832e83114c06bcd1966570ac',1,'FT::Util']]],
+  ['reorder_5flongitudinal',['reorder_longitudinal',['../d4/d10/classFT_1_1Dat_1_1DataRef.html#aedc979315e55681c3cf1405c99f3d7ea',1,'FT::Dat::DataRef']]],
   ['reset',['Reset',['../db/db7/classFT_1_1Util_1_1Timer.html#aa8ecf602dad27115f7947da3caba6780',1,'FT::Util::Timer']]],
   ['reset_5ftrain_5fstate',['reset_train_state',['../df/d62/classshogun_1_1CMyMulticlassLibLinear.html#ad55392a06667d448248e62aaed8c9343',1,'shogun::CMyMulticlassLibLinear']]],
   ['resize',['resize',['../d8/d30/classFT_1_1Dat_1_1Stack.html#aa8c84d5a40145eda898bdcbd8d913521',1,'FT::Dat::Stack::resize()'],['../d6/d5f/structFT_1_1Pop_1_1Population.html#a04d926921b35a8db40e54c9471ff7281',1,'FT::Pop::Population::resize()']]],

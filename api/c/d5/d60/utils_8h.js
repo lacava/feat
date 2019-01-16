@@ -18,7 +18,6 @@ var utils_8h =
     [ "mean_square_corrcoef", "d5/d60/utils_8h.html#a611f301ff90bc6dc7f6f84505c733a48", null ],
     [ "median", "d5/d60/utils_8h.html#aadbd58123f785707d258471164100c72", null ],
     [ "pearson_correlation", "d5/d60/utils_8h.html#a89ec9c5bc490ae9bfb73db1e405f8893", null ],
-    [ "reorder_longitudinal", "d5/d60/utils_8h.html#a0a8ebc40832e83114c06bcd1966570ac", null ],
     [ "rtrim", "d5/d60/utils_8h.html#ad832f4e284437af673895cedbadda37d", null ],
     [ "skew", "d5/d60/utils_8h.html#a16850d3c9fdef59e18f2f9fd3ad4fd46", null ],
     [ "slope", "d5/d60/utils_8h.html#a3b98624a17d33cf72c0c1088225b88c6", null ],

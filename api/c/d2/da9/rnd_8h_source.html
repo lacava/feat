@@ -186,46 +186,48 @@ $(document).ready(function(){initNavTree('d2/da9/rnd_8h_source.html','../../');}
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                    <span class="keywordflow">if</span>(w.size() == 0)</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                    {   </div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                        cout&lt;&lt;<span class="stringliteral">&quot;random_choice() w.size() = 0 Calling random_choice(v)\n&quot;</span>;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                        <span class="keywordflow">return</span> random_choice(v);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                    }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                    <span class="keywordflow">if</span>(w.size() != v.size())</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                    {   </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                        cout&lt;&lt;<span class="stringliteral">&quot;WARN! random_choice() w.size() &quot;</span> &lt;&lt; w.size() &lt;&lt; <span class="stringliteral">&quot;!= v.size() &quot;</span> </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                            &lt;&lt; v.size() &lt;&lt; <span class="stringliteral">&quot;, Calling random_choice(v)\n&quot;</span>;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                        <span class="keywordflow">return</span> random_choice(v);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                    }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                    {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                        assert(v.size() == w.size());</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                        std::discrete_distribution&lt;size_t&gt; dis(w.begin(), w.end());</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                        <span class="keywordflow">return</span> v[dis(rg[<a class="code" href="../../d8/dc0/init_8h.html#a889ec205c635b219999c761b28cc39ba">omp_get_thread_num</a>()])]; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                    }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                }</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                <span class="keywordtype">float</span> gasdev();</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                        </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                        cout &lt;&lt; <span class="stringliteral">&quot;W size is &quot;</span> &lt;&lt; w.size() &lt;&lt; <span class="stringliteral">&quot;v size is &quot;</span> &lt;&lt; v.size() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                        <span class="keywordflow">return</span> random_choice(v);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                    }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                    <span class="keywordflow">if</span>(w.size() != v.size())</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                    {   </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                        cout&lt;&lt;<span class="stringliteral">&quot;WARN! random_choice() w.size() &quot;</span> &lt;&lt; w.size() &lt;&lt; <span class="stringliteral">&quot;!= v.size() &quot;</span> </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                            &lt;&lt; v.size() &lt;&lt; <span class="stringliteral">&quot;, Calling random_choice(v)\n&quot;</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                        <span class="keywordflow">return</span> random_choice(v);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                    }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                    {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                        assert(v.size() == w.size());</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                        std::discrete_distribution&lt;size_t&gt; dis(w.begin(), w.end());</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                        <span class="keywordflow">return</span> v[dis(rg[<a class="code" href="../../d8/dc0/init_8h.html#a889ec205c635b219999c761b28cc39ba">omp_get_thread_num</a>()])]; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                    }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                <span class="keywordtype">float</span> gasdev();</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                <a class="code" href="../../d8/d33/classFT_1_1Util_1_1Rnd.html">Rnd</a>();</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                ~<a class="code" href="../../d8/d33/classFT_1_1Util_1_1Rnd.html">Rnd</a>();</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                </div>
-<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="../../d8/d33/classFT_1_1Util_1_1Rnd.html#a69b042618271495c3fbb8216ff672582">  112</a></span>&#160;                vector&lt;std::mt19937&gt; <a class="code" href="../../d8/d33/classFT_1_1Util_1_1Rnd.html#a69b042618271495c3fbb8216ff672582">rg</a>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <a class="code" href="../../d8/d33/classFT_1_1Util_1_1Rnd.html">Rnd</a>();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                ~<a class="code" href="../../d8/d33/classFT_1_1Util_1_1Rnd.html">Rnd</a>();</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                </div>
-<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="../../d8/d33/classFT_1_1Util_1_1Rnd.html#a7656bedfc4aa95f478cabe545266c11a">  114</a></span>&#160;                <span class="keyword">static</span> <a class="code" href="../../d8/d33/classFT_1_1Util_1_1Rnd.html">Rnd</a>* <a class="code" href="../../d8/d33/classFT_1_1Util_1_1Rnd.html#a7656bedfc4aa95f478cabe545266c11a">instance</a>;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;         </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        };</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        </div>
-<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="../../d1/d5d/namespaceFT_1_1Util.html#ae367d016366cf550b2710d3a9b776b52">  118</a></span>&#160;        <span class="keyword">static</span> <a class="code" href="../../d8/d33/classFT_1_1Util_1_1Rnd.html">Rnd</a> &amp;<a class="code" href="../../d1/d5d/namespaceFT_1_1Util.html#ae367d016366cf550b2710d3a9b776b52">r</a> = *Rnd::initRand();</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="namespaceFT_1_1Util_html_ae367d016366cf550b2710d3a9b776b52"><div class="ttname"><a href="../../d1/d5d/namespaceFT_1_1Util.html#ae367d016366cf550b2710d3a9b776b52">FT::Util::r</a></div><div class="ttdeci">static Rnd &amp; r</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/da9/rnd_8h_source.html#l00118">rnd.h:118</a></div></div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="../../d8/d33/classFT_1_1Util_1_1Rnd.html#a69b042618271495c3fbb8216ff672582">  114</a></span>&#160;                vector&lt;std::mt19937&gt; <a class="code" href="../../d8/d33/classFT_1_1Util_1_1Rnd.html#a69b042618271495c3fbb8216ff672582">rg</a>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                </div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="../../d8/d33/classFT_1_1Util_1_1Rnd.html#a7656bedfc4aa95f478cabe545266c11a">  116</a></span>&#160;                <span class="keyword">static</span> <a class="code" href="../../d8/d33/classFT_1_1Util_1_1Rnd.html">Rnd</a>* <a class="code" href="../../d8/d33/classFT_1_1Util_1_1Rnd.html#a7656bedfc4aa95f478cabe545266c11a">instance</a>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;         </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        };</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        </div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="../../d1/d5d/namespaceFT_1_1Util.html#ae367d016366cf550b2710d3a9b776b52">  120</a></span>&#160;        <span class="keyword">static</span> <a class="code" href="../../d8/d33/classFT_1_1Util_1_1Rnd.html">Rnd</a> &amp;<a class="code" href="../../d1/d5d/namespaceFT_1_1Util.html#ae367d016366cf550b2710d3a9b776b52">r</a> = *Rnd::initRand();</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="namespaceFT_1_1Util_html_ae367d016366cf550b2710d3a9b776b52"><div class="ttname"><a href="../../d1/d5d/namespaceFT_1_1Util.html#ae367d016366cf550b2710d3a9b776b52">FT::Util::r</a></div><div class="ttdeci">static Rnd &amp; r</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/da9/rnd_8h_source.html#l00120">rnd.h:120</a></div></div>
 <div class="ttc" id="namespaceFT_1_1Pop_html_a740d6310f660bf2851f192e556e10fe6"><div class="ttname"><a href="../../d0/dd8/namespaceFT_1_1Pop.html#a740d6310f660bf2851f192e556e10fe6">FT::Pop::last</a></div><div class="ttdeci">int last</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d3d/population_8cc_source.html#l00013">population.cc:13</a></div></div>
 <div class="ttc" id="init_8h_html_a889ec205c635b219999c761b28cc39ba"><div class="ttname"><a href="../../d8/dc0/init_8h.html#a889ec205c635b219999c761b28cc39ba">omp_get_thread_num</a></div><div class="ttdeci">#define omp_get_thread_num()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dc0/init_8h_source.html#l00012">init.h:12</a></div></div>
 <div class="ttc" id="classFT_1_1Util_1_1Rnd_html"><div class="ttname"><a href="../../d8/d33/classFT_1_1Util_1_1Rnd.html">FT::Util::Rnd</a></div><div class="ttdoc">Defines a multi-core random number generator and its operators. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/da9/rnd_8h_source.html#l00029">rnd.h:29</a></div></div>
-<div class="ttc" id="classFT_1_1Util_1_1Rnd_html_a69b042618271495c3fbb8216ff672582"><div class="ttname"><a href="../../d8/d33/classFT_1_1Util_1_1Rnd.html#a69b042618271495c3fbb8216ff672582">FT::Util::Rnd::rg</a></div><div class="ttdeci">vector&lt; std::mt19937 &gt; rg</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/da9/rnd_8h_source.html#l00112">rnd.h:112</a></div></div>
-<div class="ttc" id="classFT_1_1Util_1_1Rnd_html_a7656bedfc4aa95f478cabe545266c11a"><div class="ttname"><a href="../../d8/d33/classFT_1_1Util_1_1Rnd.html#a7656bedfc4aa95f478cabe545266c11a">FT::Util::Rnd::instance</a></div><div class="ttdeci">static Rnd * instance</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/da9/rnd_8h_source.html#l00114">rnd.h:114</a></div></div>
+<div class="ttc" id="classFT_1_1Util_1_1Rnd_html_a69b042618271495c3fbb8216ff672582"><div class="ttname"><a href="../../d8/d33/classFT_1_1Util_1_1Rnd.html#a69b042618271495c3fbb8216ff672582">FT::Util::Rnd::rg</a></div><div class="ttdeci">vector&lt; std::mt19937 &gt; rg</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/da9/rnd_8h_source.html#l00114">rnd.h:114</a></div></div>
+<div class="ttc" id="classFT_1_1Util_1_1Rnd_html_a7656bedfc4aa95f478cabe545266c11a"><div class="ttname"><a href="../../d8/d33/classFT_1_1Util_1_1Rnd.html#a7656bedfc4aa95f478cabe545266c11a">FT::Util::Rnd::instance</a></div><div class="ttdeci">static Rnd * instance</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/da9/rnd_8h_source.html#l00116">rnd.h:116</a></div></div>
 <div class="ttc" id="classFT_1_1Util_1_1Rnd_html_ac84f0e6e6c8c1340d2168cd0b85bdf26"><div class="ttname"><a href="../../d8/d33/classFT_1_1Util_1_1Rnd.html#ac84f0e6e6c8c1340d2168cd0b85bdf26">FT::Util::Rnd::shuffle</a></div><div class="ttdeci">void shuffle(RandomAccessIterator first, RandomAccessIterator last)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/da9/rnd_8h_source.html#l00050">rnd.h:50</a></div></div>
 <div class="ttc" id="classFT_1_1Util_1_1Rnd_html_aedda4fcb3ae7bab75a35c29fb5ab0ee6"><div class="ttname"><a href="../../d8/d33/classFT_1_1Util_1_1Rnd.html#aedda4fcb3ae7bab75a35c29fb5ab0ee6">FT::Util::Rnd::select_randomly</a></div><div class="ttdeci">Iter select_randomly(Iter start, Iter end)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/da9/rnd_8h_source.html#l00060">rnd.h:60</a></div></div>
 <div class="ttc" id="classFT_1_1Util_1_1Rnd_html_a675de7b9db4403af2a4ba87d1ee700ca"><div class="ttname"><a href="../../d8/d33/classFT_1_1Util_1_1Rnd.html#a675de7b9db4403af2a4ba87d1ee700ca">FT::Util::Rnd::random_choice</a></div><div class="ttdeci">T random_choice(const vector&lt; T &gt; &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/da9/rnd_8h_source.html#l00068">rnd.h:68</a></div></div>

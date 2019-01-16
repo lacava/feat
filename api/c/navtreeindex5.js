@@ -1,5 +1,7 @@
 var NAVTREEINDEX5 =
 {
+"dd/d6f/classFT_1_1Model_1_1ML.html#a3cce878e1dac7299c597fd11b2dddc33":[1,0,0,2,0,11],
+"dd/d6f/classFT_1_1Model_1_1ML.html#a414326dd97eb21965c6d693f2ec1fb48":[1,0,0,2,0,3],
 "dd/d6f/classFT_1_1Model_1_1ML.html#a49adcc0558f475d477ce2a9247a26cf9":[1,0,0,2,0,9],
 "dd/d6f/classFT_1_1Model_1_1ML.html#a4f75085e4c64bd5ce6ecd285ab29cf60":[1,0,0,2,0,15],
 "dd/d6f/classFT_1_1Model_1_1ML.html#a7264512948a3b6a3078ce546c11fd66a":[1,0,0,2,0,17],
@@ -182,8 +184,8 @@ var NAVTREEINDEX5 =
 "de/db3/MyLibLinear_8h_source.html":[2,0,36],
 "de/dbc/MyCARTreeNodeData_8cc.html":[2,0,33],
 "de/dbc/MyCARTreeNodeData_8cc_source.html":[2,0,33],
-"de/dcf/namespaceFT_1_1Eval.html":[0,0,0,1],
 "de/dcf/namespaceFT_1_1Eval.html":[1,0,0,1],
+"de/dcf/namespaceFT_1_1Eval.html":[0,0,0,1],
 "de/ddb/n__gaussian_8h.html":[2,0,66],
 "de/ddb/n__gaussian_8h_source.html":[2,0,66],
 "de/df1/n__tanh_8h.html":[2,0,124],
@@ -247,7 +249,5 @@ var NAVTREEINDEX5 =
 "df/d53/n__equal_8h.html":[2,0,58],
 "df/d53/n__equal_8h_source.html":[2,0,58],
 "df/d54/ml_8cc.html":[2,0,27],
-"df/d54/ml_8cc_source.html":[2,0,27],
-"df/d62/classshogun_1_1CMyMulticlassLibLinear.html":[1,0,1,4],
-"df/d62/classshogun_1_1CMyMulticlassLibLinear.html#a07d68d1ef9c905eb7b225e9a4c71bcce":[1,0,1,4,23]
+"df/d54/ml_8cc_source.html":[2,0,27]
 };
