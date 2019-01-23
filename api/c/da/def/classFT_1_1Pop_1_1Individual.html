@@ -206,12 +206,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad55335f433b3ac02157a5f09361fd35f"><td class="memItemLeft" align="right" valign="top">vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html#ad55335f433b3ac02157a5f09361fd35f">get_p</a> () const </td></tr>
 <tr class="memdesc:ad55335f433b3ac02157a5f09361fd35f"><td class="mdescLeft">&#160;</td><td class="mdescRight">get probabilities of variation  <a href="#ad55335f433b3ac02157a5f09361fd35f">More...</a><br/></td></tr>
 <tr class="separator:ad55335f433b3ac02157a5f09361fd35f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd4ae49a501854e98d815494b6322e23"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html#acd4ae49a501854e98d815494b6322e23">get_p</a> (const size_t i) const </td></tr>
-<tr class="memdesc:acd4ae49a501854e98d815494b6322e23"><td class="mdescLeft">&#160;</td><td class="mdescRight">get inverted weight probability for pogram location i  <a href="#acd4ae49a501854e98d815494b6322e23">More...</a><br/></td></tr>
-<tr class="separator:acd4ae49a501854e98d815494b6322e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a795dde484a11d7ac063f83a8fc331cba"><td class="memItemLeft" align="right" valign="top">vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html#a795dde484a11d7ac063f83a8fc331cba">get_p</a> (const vector&lt; size_t &gt; &amp;locs) const </td></tr>
-<tr class="memdesc:a795dde484a11d7ac063f83a8fc331cba"><td class="mdescLeft">&#160;</td><td class="mdescRight">get probability of variation for program locations locs  <a href="#a795dde484a11d7ac063f83a8fc331cba">More...</a><br/></td></tr>
-<tr class="separator:a795dde484a11d7ac063f83a8fc331cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e87ec2c383cb48ab2107feec9e81fc3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html#a1e87ec2c383cb48ab2107feec9e81fc3">get_p</a> (const size_t i, bool normalize=true) const </td></tr>
+<tr class="memdesc:a1e87ec2c383cb48ab2107feec9e81fc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">get inverted weight probability for pogram location i  <a href="#a1e87ec2c383cb48ab2107feec9e81fc3">More...</a><br/></td></tr>
+<tr class="separator:a1e87ec2c383cb48ab2107feec9e81fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af573c55f8859be134e2619b4002277bb"><td class="memItemLeft" align="right" valign="top">vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html#af573c55f8859be134e2619b4002277bb">get_p</a> (const vector&lt; size_t &gt; &amp;locs, bool normalize=false) const </td></tr>
+<tr class="memdesc:af573c55f8859be134e2619b4002277bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">get probability of variation for program locations locs  <a href="#af573c55f8859be134e2619b4002277bb">More...</a><br/></td></tr>
+<tr class="separator:af573c55f8859be134e2619b4002277bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9588bc79194e57e9fd572c6e166dc7aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html#a9588bc79194e57e9fd572c6e166dc7aa">set_p</a> (const vector&lt; float &gt; &amp;weights, const float &amp;fb)</td></tr>
 <tr class="memdesc:a9588bc79194e57e9fd572c6e166dc7aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">set probabilities  <a href="#a9588bc79194e57e9fd572c6e166dc7aa">More...</a><br/></td></tr>
 <tr class="separator:a9588bc79194e57e9fd572c6e166dc7aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -352,7 +352,7 @@ Public Attributes</h2></td></tr>
 
 <p>check whether this dominates b. </p>
 
-<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00755">755</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00758">758</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
 </div>
 </div>
@@ -401,7 +401,7 @@ Public Attributes</h2></td></tr>
 
 <p>calculate program complexity. </p>
 
-<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00817">817</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00820">820</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
 </div>
 </div>
@@ -437,7 +437,7 @@ Public Attributes</h2></td></tr>
 
 <p>fits an ML model to the data after transformation </p>
 
-<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00142">142</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00145">145</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
 </div>
 </div>
@@ -478,7 +478,7 @@ Public Attributes</h2></td></tr>
 the dimensionality is equal to the number of times the program arities are fully
 satisfied. 
 </pre>
-<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00732">732</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00735">735</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
 </div>
 </div>
@@ -497,7 +497,7 @@ satisfied.
 
 <p>return symbolic representation of program </p>
 
-<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00677">677</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00680">680</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
 </div>
 </div>
@@ -516,7 +516,7 @@ satisfied.
 
 <p>return vectorized representation of program </p>
 
-<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00708">708</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00711">711</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
 </div>
 </div>
@@ -535,7 +535,7 @@ satisfied.
 
 <p>get maximum stack size needed for evaluation. </p>
 
-<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00856">856</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00859">859</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
 </div>
 </div>
@@ -577,7 +577,7 @@ satisfied.
 
 </div>
 </div>
-<a class="anchor" id="acd4ae49a501854e98d815494b6322e23"></a>
+<a class="anchor" id="a1e87ec2c383cb48ab2107feec9e81fc3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -585,8 +585,18 @@ satisfied.
           <td class="memname">float FT::Pop::Individual::get_p </td>
           <td>(</td>
           <td class="paramtype">const size_t&#160;</td>
-          <td class="paramname"><em>i</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>normalize</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -595,16 +605,17 @@ satisfied.
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">i</td><td>index in program </td></tr>
+    <tr><td class="paramname">normalize</td><td>(true): normalizes the probability by the size of the subprogram. Useful when the total probability over the program nodes should sum to 1. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>weight associated with node </dd></dl>
 
-<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00103">103</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00104">104</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a795dde484a11d7ac063f83a8fc331cba"></a>
+<a class="anchor" id="af573c55f8859be134e2619b4002277bb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -612,15 +623,33 @@ satisfied.
           <td class="memname">vector&lt; float &gt; FT::Pop::Individual::get_p </td>
           <td>(</td>
           <td class="paramtype">const vector&lt; size_t &gt; &amp;&#160;</td>
-          <td class="paramname"><em>locs</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramname"><em>locs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>normalize</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>get probability of variation for program locations locs </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">locs</td><td>program indices to return probabilities for. </td></tr>
+    <tr><td class="paramname">normalize</td><td>(false): normalize probabilities by size of subprogram </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>float vector of probabilities</dd></dl>
 
-<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00135">135</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00134">134</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
 </div>
 </div>
@@ -665,7 +694,7 @@ satisfied.
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Phi: n_features x n_samples transformation</dd></dl>
 
-<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00221">221</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00224">224</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
 </div>
 </div>
@@ -711,7 +740,7 @@ satisfied.
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Phi: n_features x n_samples transformation</dd></dl>
 
-<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00431">431</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00434">434</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
 </div>
 </div>
@@ -746,7 +775,7 @@ satisfied.
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00168">168</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00171">171</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
 </div>
 </div>
@@ -780,7 +809,7 @@ satisfied.
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00189">189</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00192">192</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
 </div>
 </div>
@@ -808,7 +837,7 @@ satisfied.
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00214">214</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00217">217</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
 </div>
 </div>
@@ -827,7 +856,7 @@ satisfied.
 
 <p>return program name list </p>
 
-<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00844">844</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00847">847</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
 </div>
 </div>
@@ -866,7 +895,7 @@ satisfied.
 <p>set obj vector given a string of objective names </p>
 <p>Input: objectives: vector of strings naming objectives.</p>
 
-<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00790">790</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00793">793</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
 </div>
 </div>
