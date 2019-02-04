@@ -2,6 +2,8 @@ var utils_8h =
 [
     [ "Timer", "db/db7/classFT_1_1Util_1_1Timer.html", "db/db7/classFT_1_1Util_1_1Timer" ],
     [ "Normalizer", "dd/d51/structFT_1_1Util_1_1Normalizer.html", "dd/d51/structFT_1_1Util_1_1Normalizer" ],
+    [ "Log_Stats", "d8/dd3/structFT_1_1Util_1_1Log__Stats.html", "d8/dd3/structFT_1_1Util_1_1Log__Stats" ],
+    [ "Log_stats", "d5/d60/utils_8h.html#a49edc746d277ceda291d862b3d226706", null ],
     [ "argmiddle", "d5/d60/utils_8h.html#a6cc83951f22136db5ae6f0631b3da9e2", null ],
     [ "argsort", "d5/d60/utils_8h.html#ad59ee3e7a54ccbe150da50e232d38a92", null ],
     [ "clean", "d5/d60/utils_8h.html#aea590c3a1595610c3ae351b926a77728", null ],

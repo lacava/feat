@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['calculate_5fstats',['calculate_stats',['../db/dff/classFT_1_1Feat.html#a729dfb2168e87b399f01e61bb1cd49db',1,'FT::Feat']]],
   ['carttrain',['CARTtrain',['../db/dff/classshogun_1_1CMyCARTree.html#a86f30bff54847757167cfa28989d99ce',1,'shogun::CMyCARTree']]],
   ['check',['check',['../dd/d3f/structFT_1_1Dat_1_1State.html#a54e010c29a1fa4f6d41f8c57dc6b969c',1,'FT::Dat::State']]],
   ['check_5fdominance',['check_dominance',['../da/def/classFT_1_1Pop_1_1Individual.html#a91c78ed5d389fa6a9348574d43da33e8',1,'FT::Pop::Individual']]],

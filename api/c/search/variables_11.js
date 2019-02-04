@@ -6,6 +6,7 @@ var searchData=
   ['term_5fweights',['term_weights',['../de/d2c/structFT_1_1Parameters.html#a87c3d2c445f4abbdc7bdd3c5108ed04b',1,'FT::Parameters']]],
   ['terminals',['terminals',['../de/d2c/structFT_1_1Parameters.html#aaddb140c8f882260363f0ae34e1ab1f4',1,'FT::Parameters']]],
   ['threshold',['threshold',['../db/dc8/classFT_1_1Pop_1_1Op_1_1NodeSplit.html#a729cab7697a058d621fd7a11b8426641',1,'FT::Pop::Op::NodeSplit']]],
+  ['time',['time',['../d8/dd3/structFT_1_1Util_1_1Log__Stats.html#a492687953e83f9cc77ca67a5e2ccb224',1,'FT::Util::Log_Stats']]],
   ['timer',['timer',['../db/dff/classFT_1_1Feat.html#af5be17d09edb530c180bc20ed0a98326',1,'FT::Feat']]],
   ['tokens',['tokens',['../de/d16/classInputParser.html#a23ce0e47972606dd65099570ec4385b8',1,'InputParser']]],
   ['total_5fweight',['total_weight',['../df/d48/structshogun_1_1MyCARTreeNodeData.html#afe68e3fe805ff0e926663ab96eef6419',1,'shogun::MyCARTreeNodeData']]],

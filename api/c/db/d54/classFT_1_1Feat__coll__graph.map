@@ -1,15 +1,16 @@
 <map id="FT::Feat" name="FT::Feat">
-<area shape="rect" id="node4" href="$dd/d51/structFT_1_1Util_1_1Normalizer.html" title="normalizes a matrix to unit variance, 0 mean centered. " alt="" coords="653,609,790,636"/>
-<area shape="rect" id="node8" href="$de/d2c/structFT_1_1Parameters.html" title="holds the hyperparameters for Feat. " alt="" coords="970,483,1083,509"/>
-<area shape="rect" id="node20" href="$da/def/classFT_1_1Pop_1_1Individual.html" title="individual programs in the population " alt="" coords="655,959,787,985"/>
-<area shape="rect" id="node9" href="$d5/daf/structFT_1_1Pop_1_1NodeVector.html" title="an extension of a vector of unique pointers to nodes " alt="" coords="367,933,513,960"/>
-<area shape="rect" id="node10" title="STL class. " alt="" coords="152,926,312,967"/>
-<area shape="rect" id="node12" href="$d0/d29/structFT_1_1Parameters_1_1HC.html" title="FT::Parameters::HC" alt="" coords="651,237,792,264"/>
-<area shape="rect" id="node14" title="STL class. " alt="" coords="400,328,480,355"/>
-<area shape="rect" id="node28" href="$d8/d53/structFT_1_1Sel_1_1SelectionOperator.html" title="base class for selection operators. " alt="" coords="633,467,810,493"/>
-<area shape="rect" id="node15" title="STL class. " alt="" coords="169,321,295,362"/>
-<area shape="rect" id="node17" href="$d4/d04/structFT_1_1Parameters_1_1BP.html" title="FT::Parameters::BP" alt="" coords="652,416,791,443"/>
-<area shape="rect" id="node19" href="$db/db7/classFT_1_1Util_1_1Timer.html" title="class for timing things. " alt="" coords="1220,684,1327,711"/>
-<area shape="rect" id="node25" href="$d7/d9f/structFT_1_1Pop_1_1Archive.html" title="FT::Pop::Archive" alt="" coords="1213,817,1334,844"/>
-<area shape="rect" id="node27" href="$dd/df1/structFT_1_1Sel_1_1NSGA2.html" title="FT::Sel::NSGA2" alt="" coords="967,817,1086,844"/>
+<area shape="rect" id="node4" href="$dd/d51/structFT_1_1Util_1_1Normalizer.html" title="normalizes a matrix to unit variance, 0 mean centered. " alt="" coords="701,208,838,235"/>
+<area shape="rect" id="node8" href="$de/d2c/structFT_1_1Parameters.html" title="holds the hyperparameters for Feat. " alt="" coords="1018,584,1131,611"/>
+<area shape="rect" id="node22" href="$da/def/classFT_1_1Pop_1_1Individual.html" title="individual programs in the population " alt="" coords="703,1065,835,1092"/>
+<area shape="rect" id="node19" href="$d8/dd3/structFT_1_1Util_1_1Log__Stats.html" title="FT::Util::Log_Stats" alt="" coords="703,148,836,175"/>
+<area shape="rect" id="node9" href="$d5/daf/structFT_1_1Pop_1_1NodeVector.html" title="an extension of a vector of unique pointers to nodes " alt="" coords="369,948,516,975"/>
+<area shape="rect" id="node10" title="STL class. " alt="" coords="152,941,312,982"/>
+<area shape="rect" id="node12" href="$d0/d29/structFT_1_1Parameters_1_1HC.html" title="FT::Parameters::HC" alt="" coords="699,493,840,520"/>
+<area shape="rect" id="node14" title="STL class. " alt="" coords="403,768,483,795"/>
+<area shape="rect" id="node30" href="$d8/d53/structFT_1_1Sel_1_1SelectionOperator.html" title="base class for selection operators. " alt="" coords="681,980,858,1007"/>
+<area shape="rect" id="node15" title="STL class. " alt="" coords="169,761,295,802"/>
+<area shape="rect" id="node17" href="$d4/d04/structFT_1_1Parameters_1_1BP.html" title="FT::Parameters::BP" alt="" coords="700,351,839,377"/>
+<area shape="rect" id="node21" href="$db/db7/classFT_1_1Util_1_1Timer.html" title="class for timing things. " alt="" coords="1268,1429,1375,1456"/>
+<area shape="rect" id="node27" href="$d7/d9f/structFT_1_1Pop_1_1Archive.html" title="FT::Pop::Archive" alt="" coords="1261,979,1382,1005"/>
+<area shape="rect" id="node29" href="$dd/df1/structFT_1_1Sel_1_1NSGA2.html" title="FT::Sel::NSGA2" alt="" coords="1015,948,1134,975"/>
 </map>

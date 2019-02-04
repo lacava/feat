@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['seconds',['seconds',['../db/db7/classFT_1_1Util_1_1Timer.html#aac64ae295ad2eb784612316af1eb64fd',1,'FT::Util::Timer']]]
+  ['log_5fstats',['Log_stats',['../d1/d5d/namespaceFT_1_1Util.html#a49edc746d277ceda291d862b3d226706',1,'FT::Util']]]
 ];

@@ -17,6 +17,8 @@ var searchData=
   ['locs',['locs',['../d6/d5f/structFT_1_1Pop_1_1Population.html#ad2e826beadaf6dc18d5c70e9292ff57a',1,'FT::Pop::Population']]],
   ['log_5floss',['log_loss',['../de/dcf/namespaceFT_1_1Eval.html#a6f75ec6cc65d95ea24fc42e5bc6a61e9',1,'FT::Eval::log_loss(const VectorXf &amp;y, const VectorXf &amp;yhat, const vector&lt; float &gt; &amp;class_weights)'],['../de/dcf/namespaceFT_1_1Eval.html#a4d588297f4724cd1f4901ff07b323c6f',1,'FT::Eval::log_loss(const VectorXf &amp;y, shared_ptr&lt; CLabels &gt; &amp;labels, const vector&lt; float &gt; &amp;class_weights)']]],
   ['log_5floss_5flabel',['log_loss_label',['../de/dcf/namespaceFT_1_1Eval.html#ada606c591bed1832596118ffdce9abfc',1,'FT::Eval']]],
+  ['log_5fstats',['Log_Stats',['../d8/dd3/structFT_1_1Util_1_1Log__Stats.html',1,'FT::Util']]],
+  ['log_5fstats',['Log_stats',['../d1/d5d/namespaceFT_1_1Util.html#a49edc746d277ceda291d862b3d226706',1,'FT::Util']]],
   ['logfile',['logfile',['../db/dff/classFT_1_1Feat.html#aba080b7328bd2531c64c3e1fb742e448',1,'FT::Feat']]],
   ['longitudinalmap',['longitudinalMap',['../de/d2c/structFT_1_1Parameters.html#aa3ab262f22397d37832d905cbad45cb7',1,'FT::Parameters']]],
   ['lr',['LR',['../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcad59b1dd6668ea0d9e128fa72a2d88f03',1,'FT::Model']]],

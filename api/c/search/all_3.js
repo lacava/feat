@@ -1,6 +1,7 @@
 var searchData=
 [
   ['c',['c',['../dd/d3f/structFT_1_1Dat_1_1State.html#acf1bcb0f6d4cb3e64b4275f165cb21af',1,'FT::Dat::State::c()'],['../d2/dfc/structFT_1_1Dat_1_1Trace.html#adb2aa90554958f02b62d7e190d6c5281',1,'FT::Dat::Trace::c()'],['../da/def/classFT_1_1Pop_1_1Individual.html#a6b4d171ae06d7e8b5f1269925ea7bba2',1,'FT::Pop::Individual::c()']]],
+  ['calculate_5fstats',['calculate_stats',['../db/dff/classFT_1_1Feat.html#a729dfb2168e87b399f01e61bb1cd49db',1,'FT::Feat']]],
   ['callback',['callback',['../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#ad42407ceca35b1b7a74cb79e983ee33c',1,'FT::Opt::AutoBackProp::callback()'],['../d8/d06/classFT_1_1Opt_1_1HillClimb.html#ab800b3d22424626aefb3f738f6225948',1,'FT::Opt::HillClimb::callback()']]],
   ['cart',['CART',['../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcae7278cab84c3f5938d783b7837f0159e',1,'FT::Model']]],
   ['carttrain',['CARTtrain',['../db/dff/classshogun_1_1CMyCARTree.html#a86f30bff54847757167cfa28989d99ce',1,'shogun::CMyCARTree']]],
@@ -27,8 +28,8 @@ var searchData=
   ['cmymulticlassliblinear',['CMyMulticlassLibLinear',['../df/d62/classshogun_1_1CMyMulticlassLibLinear.html',1,'shogun']]],
   ['cmymulticlassliblinear',['CMyMulticlassLibLinear',['../df/d62/classshogun_1_1CMyMulticlassLibLinear.html#a2466910481f4b9c9a8f6ae2568f02a69',1,'shogun::CMyMulticlassLibLinear::CMyMulticlassLibLinear()'],['../df/d62/classshogun_1_1CMyMulticlassLibLinear.html#a0f88ee8afb48789069685401925c5615',1,'shogun::CMyMulticlassLibLinear::CMyMulticlassLibLinear(float64_t C, CDotFeatures *features, CLabels *labs)']]],
   ['cn',['CN',['../da/def/classFT_1_1Pop_1_1Individual.html#a49c3b8631b98ade6afc3b698f842a036',1,'FT::Pop::Individual']]],
-  ['comparator_5fobj',['comparator_obj',['../d4/d2a/structFT_1_1Sel_1_1NSGA2_1_1comparator__obj.html#aae05cf4b9f86d4754f9d5f77729fc4e8',1,'FT::Sel::NSGA2::comparator_obj']]],
   ['comparator_5fobj',['comparator_obj',['../d4/d2a/structFT_1_1Sel_1_1NSGA2_1_1comparator__obj.html',1,'FT::Sel::NSGA2']]],
+  ['comparator_5fobj',['comparator_obj',['../d4/d2a/structFT_1_1Sel_1_1NSGA2_1_1comparator__obj.html#aae05cf4b9f86d4754f9d5f77729fc4e8',1,'FT::Sel::NSGA2::comparator_obj']]],
   ['complexity',['complexity',['../d2/dfb/classFT_1_1Pop_1_1Op_1_1Node.html#ab58463d2be2261881c2912c517a0be8c',1,'FT::Pop::Op::Node::complexity()'],['../da/def/classFT_1_1Pop_1_1Individual.html#a11aae1af1c9faca9eb3c9686d3ad9639',1,'FT::Pop::Individual::complexity()']]],
   ['compute_5fbest_5fattribute',['compute_best_attribute',['../db/dff/classshogun_1_1CMyCARTree.html#a22f7d955f43ef8d3735346391a721824',1,'shogun::CMyCARTree']]],
   ['compute_5ferror',['compute_error',['../db/dff/classshogun_1_1CMyCARTree.html#ab939611f760287f5aa1c1ae1ca7cc604',1,'shogun::CMyCARTree']]],

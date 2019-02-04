@@ -24,6 +24,7 @@ var hierarchy =
     [ "FT::Opt::HillClimb", "d8/d06/classFT_1_1Opt_1_1HillClimb.html", null ],
     [ "FT::Pop::Individual", "da/def/classFT_1_1Pop_1_1Individual.html", null ],
     [ "InputParser", "de/d16/classInputParser.html", null ],
+    [ "FT::Util::Log_Stats", "d8/dd3/structFT_1_1Util_1_1Log__Stats.html", null ],
     [ "FT::Model::ML", "dd/d6f/classFT_1_1Model_1_1ML.html", null ],
     [ "shogun::MyCARTreeNodeData", "df/d48/structshogun_1_1MyCARTreeNodeData.html", null ],
     [ "FT::Pop::Op::Node", "d2/dfb/classFT_1_1Pop_1_1Op_1_1Node.html", [
