@@ -40,7 +40,7 @@ var searchData=
   ['cost_5ffunc',['cost_func',['../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a37c4d5f25510ce0fdc8c41e234f76cd2',1,'FT::Opt::AutoBackProp::cost_func()'],['../d8/d06/classFT_1_1Opt_1_1HillClimb.html#a1dff09a35f1af7785d203d39ca4ad97c',1,'FT::Opt::HillClimb::cost_func()']]],
   ['covariance',['covariance',['../d1/d5d/namespaceFT_1_1Util.html#a66a5c6b17b000fbed3eb8e9263db323d',1,'FT::Util']]],
   ['createnode',['createNode',['../de/d2c/structFT_1_1Parameters.html#a24a000d8f1b4c4971ceee5aa9f1e1738',1,'FT::Parameters']]],
-  ['cross',['cross',['../d0/d80/classFT_1_1Vary_1_1Variation.html#a0a7c3f1c1dde013cbd4906b0783560bc',1,'FT::Vary::Variation']]],
+  ['cross',['cross',['../d0/d80/classFT_1_1Vary_1_1Variation.html#a0317577cef6e8a2ffe2ad7ed83ceab16',1,'FT::Vary::Variation']]],
   ['cross_5frate',['cross_rate',['../de/d2c/structFT_1_1Parameters.html#a409721e42ee8b49d3a94c42278651e77',1,'FT::Parameters::cross_rate()'],['../d0/d80/classFT_1_1Vary_1_1Variation.html#a9bac5f3ece4514c4927a3657d95b433b',1,'FT::Vary::Variation::cross_rate()']]],
   ['crowd_5fdist',['crowd_dist',['../da/def/classFT_1_1Pop_1_1Individual.html#acef9a79479a149b9dc7dbce5695cdc7f',1,'FT::Pop::Individual']]],
   ['crowding_5fdistance',['crowding_distance',['../dd/df1/structFT_1_1Sel_1_1NSGA2.html#af8e470451e6b40d9c13a745ee581c5d0',1,'FT::Sel::NSGA2']]],

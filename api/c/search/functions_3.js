@@ -27,7 +27,7 @@ var searchData=
   ['corrcoef',['corrcoef',['../d1/d5d/namespaceFT_1_1Util.html#a7096abc4ea5c2b2851279ead36160de7',1,'FT::Util']]],
   ['covariance',['covariance',['../d1/d5d/namespaceFT_1_1Util.html#a66a5c6b17b000fbed3eb8e9263db323d',1,'FT::Util']]],
   ['createnode',['createNode',['../de/d2c/structFT_1_1Parameters.html#a24a000d8f1b4c4971ceee5aa9f1e1738',1,'FT::Parameters']]],
-  ['cross',['cross',['../d0/d80/classFT_1_1Vary_1_1Variation.html#a0a7c3f1c1dde013cbd4906b0783560bc',1,'FT::Vary::Variation']]],
+  ['cross',['cross',['../d0/d80/classFT_1_1Vary_1_1Variation.html#a0317577cef6e8a2ffe2ad7ed83ceab16',1,'FT::Vary::Variation']]],
   ['crowding_5fdistance',['crowding_distance',['../dd/df1/structFT_1_1Sel_1_1NSGA2.html#af8e470451e6b40d9c13a745ee581c5d0',1,'FT::Sel::NSGA2']]],
   ['cut_5fweakest_5flink',['cut_weakest_link',['../db/dff/classshogun_1_1CMyCARTree.html#a55d6c9400c772eb50260f688bec58f4f',1,'shogun::CMyCARTree']]]
 ];

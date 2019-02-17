@@ -11,7 +11,7 @@ var searchData=
   ['hc',['hc',['../de/d2c/structFT_1_1Parameters.html#a88e134f47f97c8d44089c0f2918d684b',1,'FT::Parameters::hc()'],['../d0/d29/structFT_1_1Parameters_1_1HC.html#a0d50d6cf8c4ead23c1abe9c87e0285d6',1,'FT::Parameters::HC::HC()']]],
   ['hc',['HC',['../d0/d29/structFT_1_1Parameters_1_1HC.html',1,'FT::Parameters']]],
   ['high_5fresolution_5fclock',['high_resolution_clock',['../db/db7/classFT_1_1Util_1_1Timer.html#a6dbf8024a6e2676c3759e1485407b750',1,'FT::Util::Timer']]],
-  ['hillclimb',['HillClimb',['../d8/d06/classFT_1_1Opt_1_1HillClimb.html#a45217d1e8a2921f1fc219ec931df9324',1,'FT::Opt::HillClimb::HillClimb()'],['../de/d2c/structFT_1_1Parameters.html#a5578452073ba1e69d0acd493fd033e6c',1,'FT::Parameters::hillclimb()']]],
+  ['hillclimb',['hillclimb',['../de/d2c/structFT_1_1Parameters.html#a5578452073ba1e69d0acd493fd033e6c',1,'FT::Parameters::hillclimb()'],['../d8/d06/classFT_1_1Opt_1_1HillClimb.html#a45217d1e8a2921f1fc219ec931df9324',1,'FT::Opt::HillClimb::HillClimb()']]],
   ['hillclimb',['HillClimb',['../d8/d06/classFT_1_1Opt_1_1HillClimb.html',1,'FT::Opt']]],
   ['hillclimb_2ecc',['hillclimb.cc',['../d4/dfe/hillclimb_8cc.html',1,'']]],
   ['hillclimb_2eh',['hillclimb.h',['../d3/d59/hillclimb_8h.html',1,'']]]

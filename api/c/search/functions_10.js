@@ -7,6 +7,7 @@ var searchData=
   ['reorder_5flongitudinal',['reorder_longitudinal',['../d4/d10/classFT_1_1Dat_1_1DataRef.html#aedc979315e55681c3cf1405c99f3d7ea',1,'FT::Dat::DataRef']]],
   ['reset',['Reset',['../db/db7/classFT_1_1Util_1_1Timer.html#aa8ecf602dad27115f7947da3caba6780',1,'FT::Util::Timer']]],
   ['reset_5ftrain_5fstate',['reset_train_state',['../df/d62/classshogun_1_1CMyMulticlassLibLinear.html#ad55392a06667d448248e62aaed8c9343',1,'shogun::CMyMulticlassLibLinear']]],
+  ['residual_5fcross',['residual_cross',['../d0/d80/classFT_1_1Vary_1_1Variation.html#a0c9db8428b8759e2128123ba01a12e98',1,'FT::Vary::Variation']]],
   ['resize',['resize',['../d8/d30/classFT_1_1Dat_1_1Stack.html#aa8c84d5a40145eda898bdcbd8d913521',1,'FT::Dat::Stack::resize()'],['../d6/d5f/structFT_1_1Pop_1_1Population.html#a04d926921b35a8db40e54c9471ff7281',1,'FT::Pop::Population::resize()']]],
   ['rnd',['Rnd',['../d8/d33/classFT_1_1Util_1_1Rnd.html#a3259fe980516157571c565c402d97f46',1,'FT::Util::Rnd']]],
   ['rnd_5fclone',['rnd_clone',['../d2/dfb/classFT_1_1Pop_1_1Op_1_1Node.html#a848c3eb42ffbd6b086c81a130ecba679',1,'FT::Pop::Op::Node']]],

@@ -1,6 +1,6 @@
 var classFT_1_1Feat =
 [
-    [ "Feat", "db/dff/classFT_1_1Feat.html#ad8bd1e418bdbd5c4b548785fe03c35c9", null ],
+    [ "Feat", "db/dff/classFT_1_1Feat.html#aeb2c3334d5d4c03420f460ba71ed053b", null ],
     [ "~Feat", "db/dff/classFT_1_1Feat.html#a7797e289bc355fd92d2d65ae0b3fae1d", null ],
     [ "calculate_stats", "db/dff/classFT_1_1Feat.html#a729dfb2168e87b399f01e61bb1cd49db", null ],
     [ "final_model", "db/dff/classFT_1_1Feat.html#a8b756059dbd7d8d0de509515cb90c3eb", null ],
@@ -87,11 +87,14 @@ var classFT_1_1Feat =
     [ "set_pop_size", "db/dff/classFT_1_1Feat.html#a9ec3b484537655f2066ac982d2d24042", null ],
     [ "set_print_pop", "db/dff/classFT_1_1Feat.html#ad5f21e4a64e86a8d10b4b1d2862f56e5", null ],
     [ "set_random_state", "db/dff/classFT_1_1Feat.html#a15c499b8735c8e4b19a1c06271544a51", null ],
+    [ "set_residual_xo", "db/dff/classFT_1_1Feat.html#aa02213ced95b40bb0f0ba9e960a0b899", null ],
+    [ "set_root_xo_rate", "db/dff/classFT_1_1Feat.html#a0ed5c7134c4131560434466e4228bab4", null ],
     [ "set_scorer", "db/dff/classFT_1_1Feat.html#a39eda2f1a14b93e86d996b4a262a9021", null ],
     [ "set_selection", "db/dff/classFT_1_1Feat.html#a0be7b4df9bfdcf91f67707d3854d1764", null ],
-    [ "set_semantic_xo", "db/dff/classFT_1_1Feat.html#a8810a5fdeca4cda9f20a4a0d81eb2c0b", null ],
     [ "set_shuffle", "db/dff/classFT_1_1Feat.html#ab47b4abe7aa70ae88525ccbe30e077b9", null ],
+    [ "set_softmax_norm", "db/dff/classFT_1_1Feat.html#ad5d38ce69057c328bef13342b10dc6e1", null ],
     [ "set_split", "db/dff/classFT_1_1Feat.html#a263bc4af4de45a55186394a8f0db18f4", null ],
+    [ "set_stagewise_xo", "db/dff/classFT_1_1Feat.html#adfdfeab2e7528beca68db01588823a10", null ],
     [ "set_survival", "db/dff/classFT_1_1Feat.html#ae63059431600ab734962201e379ea357", null ],
     [ "set_use_batch", "db/dff/classFT_1_1Feat.html#a60f537b340ce3b02ab1482e2461a3a8d", null ],
     [ "set_verbosity", "db/dff/classFT_1_1Feat.html#adfe06031824311d1f02afa24805aba5e", null ],
