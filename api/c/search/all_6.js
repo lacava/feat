@@ -9,7 +9,7 @@ var searchData=
   ['feat',['Feat',['../db/dff/classFT_1_1Feat.html',1,'FT']]],
   ['feat_2ecc',['feat.cc',['../dc/d37/feat_8cc.html',1,'']]],
   ['feat_2eh',['feat.h',['../d3/dff/feat_8h.html',1,'']]],
-  ['feature_5fimportances',['feature_importances',['../db/dff/classshogun_1_1CMyCARTree.html#a188eb408001bb7d7d38bda4819a49ce8',1,'shogun::CMyCARTree']]],
+  ['feature_5fimportances',['feature_importances',['../db/dff/classshogun_1_1CMyCARTree.html#a188eb408001bb7d7d38bda4819a49ce8',1,'shogun::CMyCARTree::feature_importances()'],['../da/d0f/classshogun_1_1CMyRandomForest.html#a39c7786f22fe499e94208e3c963a35f9',1,'shogun::CMyRandomForest::feature_importances()']]],
   ['feature_5fnames',['feature_names',['../de/d2c/structFT_1_1Parameters.html#ab036088636ec2dcfe8bb0215700f631b',1,'FT::Parameters']]],
   ['feedback',['feedback',['../de/d2c/structFT_1_1Parameters.html#a49e4ab05b5d8993d27f1538955dcbeee',1,'FT::Parameters']]],
   ['final_5fmodel',['final_model',['../db/dff/classFT_1_1Feat.html#a8b756059dbd7d8d0de509515cb90c3eb',1,'FT::Feat']]],

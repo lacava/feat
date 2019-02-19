@@ -42,10 +42,10 @@ var NAVTREEINDEX =
 "annotated.html",
 "d2/dfc/structFT_1_1Dat_1_1Trace.html#af03a1d8b67a98150c1b440b7be7e49a6",
 "d6/d5f/structFT_1_1Pop_1_1Population.html#af6b599a9413d8c0167b48ee004ef2124",
-"d8/dd3/structFT_1_1Util_1_1Log__Stats.html#a3cda627028f0a0783dbe213bf3bd20bd",
-"db/dff/classFT_1_1Feat.html",
-"dd/d3f/structFT_1_1Dat_1_1State.html#a54e010c29a1fa4f6d41f8c57dc6b969c",
-"df/d48/selection_8h_source.html"
+"d8/dc0/init_8h_source.html",
+"db/db7/classFT_1_1Util_1_1Timer.html",
+"dc/d88/classFT_1_1Pop_1_1Op_1_1NodeSqrt.html#a0827f4b9742cea8c7fa461e2db73c4dc",
+"de/db3/MyLibLinear_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

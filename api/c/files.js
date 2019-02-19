@@ -57,6 +57,14 @@ var files =
     [ "MyMulticlassLibLinear.h", "d0/d5c/MyMulticlassLibLinear_8h.html", [
       [ "CMyMulticlassLibLinear", "df/d62/classshogun_1_1CMyMulticlassLibLinear.html", "df/d62/classshogun_1_1CMyMulticlassLibLinear" ]
     ] ],
+    [ "MyRandomCARTree.cc", "d6/def/MyRandomCARTree_8cc.html", null ],
+    [ "MyRandomCARTree.h", "d9/d6c/MyRandomCARTree_8h.html", [
+      [ "CMyRandomCARTree", "da/de2/classshogun_1_1CMyRandomCARTree.html", "da/de2/classshogun_1_1CMyRandomCARTree" ]
+    ] ],
+    [ "MyRandomForest.cc", "d8/de9/MyRandomForest_8cc.html", null ],
+    [ "MyRandomForest.h", "d8/d37/MyRandomForest_8h.html", [
+      [ "CMyRandomForest", "da/d0f/classshogun_1_1CMyRandomForest.html", "da/d0f/classshogun_1_1CMyRandomForest" ]
+    ] ],
     [ "n_2dgaussian.cc", "d1/d61/n__2dgaussian_8cc.html", null ],
     [ "n_2dgaussian.h", "d8/d2e/n__2dgaussian_8h.html", [
       [ "Node2dGaussian", "d7/d79/classFT_1_1Pop_1_1Op_1_1Node2dGaussian.html", "d7/d79/classFT_1_1Pop_1_1Op_1_1Node2dGaussian" ]

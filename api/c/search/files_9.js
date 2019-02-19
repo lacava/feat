@@ -14,5 +14,9 @@ var searchData=
   ['myliblinear_2ecc',['MyLibLinear.cc',['../d6/d1c/MyLibLinear_8cc.html',1,'']]],
   ['myliblinear_2eh',['MyLibLinear.h',['../de/db3/MyLibLinear_8h.html',1,'']]],
   ['mymulticlassliblinear_2ecc',['MyMulticlassLibLinear.cc',['../dc/d6b/MyMulticlassLibLinear_8cc.html',1,'']]],
-  ['mymulticlassliblinear_2eh',['MyMulticlassLibLinear.h',['../d0/d5c/MyMulticlassLibLinear_8h.html',1,'']]]
+  ['mymulticlassliblinear_2eh',['MyMulticlassLibLinear.h',['../d0/d5c/MyMulticlassLibLinear_8h.html',1,'']]],
+  ['myrandomcartree_2ecc',['MyRandomCARTree.cc',['../d6/def/MyRandomCARTree_8cc.html',1,'']]],
+  ['myrandomcartree_2eh',['MyRandomCARTree.h',['../d9/d6c/MyRandomCARTree_8h.html',1,'']]],
+  ['myrandomforest_2ecc',['MyRandomForest.cc',['../d8/de9/MyRandomForest_8cc.html',1,'']]],
+  ['myrandomforest_2eh',['MyRandomForest.h',['../d8/d37/MyRandomForest_8h.html',1,'']]]
 ];

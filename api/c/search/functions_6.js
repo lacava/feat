@@ -2,7 +2,7 @@ var searchData=
 [
   ['fast_5fnds',['fast_nds',['../dd/df1/structFT_1_1Sel_1_1NSGA2.html#a5d21e4d11ebe1db97bc6a7e644a85f18',1,'FT::Sel::NSGA2']]],
   ['feat',['Feat',['../db/dff/classFT_1_1Feat.html#aeb2c3334d5d4c03420f460ba71ed053b',1,'FT::Feat']]],
-  ['feature_5fimportances',['feature_importances',['../db/dff/classshogun_1_1CMyCARTree.html#a188eb408001bb7d7d38bda4819a49ce8',1,'shogun::CMyCARTree']]],
+  ['feature_5fimportances',['feature_importances',['../db/dff/classshogun_1_1CMyCARTree.html#a188eb408001bb7d7d38bda4819a49ce8',1,'shogun::CMyCARTree::feature_importances()'],['../da/d0f/classshogun_1_1CMyRandomForest.html#a39c7786f22fe499e94208e3c963a35f9',1,'shogun::CMyRandomForest::feature_importances()']]],
   ['final_5fmodel',['final_model',['../db/dff/classFT_1_1Feat.html#a8b756059dbd7d8d0de509515cb90c3eb',1,'FT::Feat']]],
   ['find_5fdtypes',['find_dtypes',['../d1/d5d/namespaceFT_1_1Util.html#ac43be485eba16c4f5eb623540c46844e',1,'FT::Util']]],
   ['find_5fweakest_5falpha',['find_weakest_alpha',['../db/dff/classshogun_1_1CMyCARTree.html#ac89dad9e58da2371f65f4096a708155a',1,'shogun::CMyCARTree']]],

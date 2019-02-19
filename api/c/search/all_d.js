@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['n',['n',['../dc/da7/structFT_1_1Opt_1_1BP__NODE.html#a6d32594a18476b11ec10628b435c9f7f',1,'FT::Opt::BP_NODE::n()'],['../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#aa5df24c6ce9e8722f4c51b2e2676a6df',1,'FT::Opt::AutoBackProp::n()'],['../db/dff/classFT_1_1Feat.html#afcfa4779605e55727c8217bb300d40e4',1,'FT::Feat::N()'],['../dd/d6f/classFT_1_1Model_1_1ML.html#a4f75085e4c64bd5ce6ecd285ab29cf60',1,'FT::Model::ML::N()']]],
+  ['n',['N',['../db/dff/classFT_1_1Feat.html#afcfa4779605e55727c8217bb300d40e4',1,'FT::Feat::N()'],['../dd/d6f/classFT_1_1Model_1_1ML.html#a4f75085e4c64bd5ce6ecd285ab29cf60',1,'FT::Model::ML::N()'],['../dc/da7/structFT_1_1Opt_1_1BP__NODE.html#a6d32594a18476b11ec10628b435c9f7f',1,'FT::Opt::BP_NODE::n()'],['../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#aa5df24c6ce9e8722f4c51b2e2676a6df',1,'FT::Opt::AutoBackProp::n()']]],
   ['n_5f2dgaussian_2ecc',['n_2dgaussian.cc',['../d1/d61/n__2dgaussian_8cc.html',1,'']]],
   ['n_5f2dgaussian_2eh',['n_2dgaussian.h',['../d8/d2e/n__2dgaussian_8h.html',1,'']]],
   ['n_5fadd_2ecc',['n_add.cc',['../d5/df4/n__add_8cc.html',1,'']]],

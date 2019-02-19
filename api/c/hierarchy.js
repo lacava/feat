@@ -5,6 +5,9 @@ var hierarchy =
     [ "FT::Opt::AutoBackProp", "d2/d73/classFT_1_1Opt_1_1AutoBackProp.html", null ],
     [ "FT::Parameters::BP", "d4/d04/structFT_1_1Parameters_1_1BP.html", null ],
     [ "FT::Opt::BP_NODE", "dc/da7/structFT_1_1Opt_1_1BP__NODE.html", null ],
+    [ "CBaggingMachine", null, [
+      [ "shogun::CMyRandomForest", "da/d0f/classshogun_1_1CMyRandomForest.html", null ]
+    ] ],
     [ "CLibLinear", null, [
       [ "shogun::CMyLibLinear", "de/d65/classshogun_1_1CMyLibLinear.html", null ]
     ] ],
@@ -14,7 +17,9 @@ var hierarchy =
     ] ],
     [ "FT::Sel::NSGA2::comparator_obj", "d4/d2a/structFT_1_1Sel_1_1NSGA2_1_1comparator__obj.html", null ],
     [ "CTreeMachine", null, [
-      [ "shogun::CMyCARTree", "db/dff/classshogun_1_1CMyCARTree.html", null ]
+      [ "shogun::CMyCARTree", "db/dff/classshogun_1_1CMyCARTree.html", [
+        [ "shogun::CMyRandomCARTree", "da/de2/classshogun_1_1CMyRandomCARTree.html", null ]
+      ] ]
     ] ],
     [ "FT::Dat::Data", "de/d36/classFT_1_1Dat_1_1Data.html", null ],
     [ "FT::Dat::DataRef", "d4/d10/classFT_1_1Dat_1_1DataRef.html", null ],
