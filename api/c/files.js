@@ -32,6 +32,8 @@ var files =
     [ "lexicase.h", "d3/d12/lexicase_8h.html", [
       [ "Lexicase", "db/d76/structFT_1_1Sel_1_1Lexicase.html", "db/d76/structFT_1_1Sel_1_1Lexicase" ]
     ] ],
+    [ "logger.cc", "d5/d6e/logger_8cc.html", null ],
+    [ "logger.h", "d1/d8c/logger_8h.html", "d1/d8c/logger_8h" ],
     [ "main.cc", "d9/d0f/main_8cc.html", "d9/d0f/main_8cc" ],
     [ "metrics.cc", "da/da2/metrics_8cc.html", "da/da2/metrics_8cc" ],
     [ "metrics.h", "df/d34/metrics_8h.html", "df/d34/metrics_8h" ],

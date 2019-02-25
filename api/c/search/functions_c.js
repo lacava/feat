@@ -12,7 +12,6 @@ var searchData=
   ['ml',['ML',['../dd/d6f/classFT_1_1Model_1_1ML.html#a0a28a3dd57e3df2acbac55df092815fd',1,'FT::Model::ML']]],
   ['mse',['mse',['../de/dcf/namespaceFT_1_1Eval.html#ad889b801a717f5ce3893f52193d245a8',1,'FT::Eval']]],
   ['mse_5flabel',['mse_label',['../de/dcf/namespaceFT_1_1Eval.html#a8160f50f38e1db2c194bec4b605a0b1f',1,'FT::Eval']]],
-  ['msg',['msg',['../de/d2c/structFT_1_1Parameters.html#abaae697a8ddcb9ddd5e2b190915151ee',1,'FT::Parameters']]],
   ['multi_5flog_5floss',['multi_log_loss',['../de/dcf/namespaceFT_1_1Eval.html#a0b762274b92d8a68c2ceccd11b7ff947',1,'FT::Eval::multi_log_loss(const VectorXf &amp;y, const ArrayXXf &amp;confidences, const vector&lt; float &gt; &amp;class_weights)'],['../de/dcf/namespaceFT_1_1Eval.html#a0073249d32fa64d710f82ace9b9e8f64',1,'FT::Eval::multi_log_loss(const VectorXf &amp;y, shared_ptr&lt; CLabels &gt; &amp;labels, const vector&lt; float &gt; &amp;class_weights)']]],
   ['multi_5flog_5floss_5flabel',['multi_log_loss_label',['../de/dcf/namespaceFT_1_1Eval.html#a96eb1d23c1c1dedf68bce9e5e7798245',1,'FT::Eval']]],
   ['mutate',['mutate',['../d0/d80/classFT_1_1Vary_1_1Variation.html#a15fd82e9d1ddefb573929cd1e6122a4b',1,'FT::Vary::Variation']]],

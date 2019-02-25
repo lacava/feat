@@ -17,7 +17,7 @@ var searchData=
   ['delete_5fmutate',['delete_mutate',['../d0/d80/classFT_1_1Vary_1_1Variation.html#a3c03c83a8a5b11fd1233ba22c4ae46b2',1,'FT::Vary::Variation']]],
   ['deriv_5flist',['deriv_list',['../dc/da7/structFT_1_1Opt_1_1BP__NODE.html#adf8203a2f00c437dd33e543a806c86e0',1,'FT::Opt::BP_NODE']]],
   ['derivative',['derivative',['../d5/ddc/classFT_1_1Pop_1_1Op_1_1NodeDx.html#a8759d9060878657ebaa233fe2cffa828',1,'FT::Pop::Op::NodeDx']]],
-  ['destroy',['destroy',['../d8/d33/classFT_1_1Util_1_1Rnd.html#a2507a379e9d5a9345618d6c0a2799234',1,'FT::Util::Rnd']]],
+  ['destroy',['destroy',['../d9/da2/classFT_1_1Util_1_1Logger.html#ae8891cef45a7426bf6325682c6535d1e',1,'FT::Util::Logger::destroy()'],['../d8/d33/classFT_1_1Util_1_1Rnd.html#a2507a379e9d5a9345618d6c0a2799234',1,'FT::Util::Rnd::destroy()']]],
   ['dev_5fallocate',['dev_allocate',['../dc/dd9/namespaceFT_1_1Pop_1_1Op.html#ad1388dfda7bcd3fa98ddf4de3aefe03b',1,'FT::Pop::Op']]],
   ['dim',['dim',['../da/def/classFT_1_1Pop_1_1Individual.html#a28b4a9c1c56941da84a203f863b99bcf',1,'FT::Pop::Individual']]],
   ['dim_5fblock',['DIM_BLOCK',['../de/d4f/cuda__utils_8h.html#afb1f85b2d79590fc4495a13fadc2e87b',1,'cuda_utils.h']]],

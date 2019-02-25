@@ -7,6 +7,6 @@ var searchData=
   ['dataref',['DataRef',['../d4/d10/classFT_1_1Dat_1_1DataRef.html#a6bf60e1f5691115fe5e65d03772b8ad6',1,'FT::Dat::DataRef::DataRef()'],['../d4/d10/classFT_1_1Dat_1_1DataRef.html#a434acc685379dbd4295f3238f33ac576',1,'FT::Dat::DataRef::DataRef(MatrixXf &amp;X, VectorXf &amp;y, std::map&lt; string, std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt; &amp;Z, bool c=false)']]],
   ['delete_5fmutate',['delete_mutate',['../d0/d80/classFT_1_1Vary_1_1Variation.html#a3c03c83a8a5b11fd1233ba22c4ae46b2',1,'FT::Vary::Variation']]],
   ['derivative',['derivative',['../d5/ddc/classFT_1_1Pop_1_1Op_1_1NodeDx.html#a8759d9060878657ebaa233fe2cffa828',1,'FT::Pop::Op::NodeDx']]],
-  ['destroy',['destroy',['../d8/d33/classFT_1_1Util_1_1Rnd.html#a2507a379e9d5a9345618d6c0a2799234',1,'FT::Util::Rnd']]],
+  ['destroy',['destroy',['../d9/da2/classFT_1_1Util_1_1Logger.html#ae8891cef45a7426bf6325682c6535d1e',1,'FT::Util::Logger::destroy()'],['../d8/d33/classFT_1_1Util_1_1Rnd.html#a2507a379e9d5a9345618d6c0a2799234',1,'FT::Util::Rnd::destroy()']]],
   ['dev_5fallocate',['dev_allocate',['../dc/dd9/namespaceFT_1_1Pop_1_1Op.html#ad1388dfda7bcd3fa98ddf4de3aefe03b',1,'FT::Pop::Op']]]
 ];

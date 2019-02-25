@@ -1,9 +1,10 @@
 <map id="params.cc" name="params.cc">
-<area shape="rect" id="node2" href="$da/d33/params_8h.html" title="params.h" alt="" coords="5831,80,5906,107"/>
-<area shape="rect" id="node3" href="$d1/dc6/nodewrapper_8h.html" title="pop/nodewrapper.h" alt="" coords="3786,155,3917,181"/>
-<area shape="rect" id="node49" href="$da/dbc/nodevector_8h.html" title="pop/nodevector.h" alt="" coords="7641,229,7764,256"/>
-<area shape="rect" id="node50" href="$d5/d60/utils_8h.html" title="../util/utils.h" alt="" coords="5906,155,5997,181"/>
-<area shape="rect" id="node5" href="$d1/d77/node_8h.html" title="op/node.h" alt="" coords="5400,304,5478,331"/>
+<area shape="rect" id="node2" href="$da/d33/params_8h.html" title="params.h" alt="" coords="5703,80,5778,107"/>
+<area shape="rect" id="node3" href="$d1/dc6/nodewrapper_8h.html" title="pop/nodewrapper.h" alt="" coords="3704,155,3836,181"/>
+<area shape="rect" id="node48" href="$da/dbc/nodevector_8h.html" title="pop/nodevector.h" alt="" coords="7465,229,7588,256"/>
+<area shape="rect" id="node49" href="$d1/d8c/logger_8h.html" title="util/logger.h" alt="" coords="5738,155,5826,181"/>
+<area shape="rect" id="node50" href="$d5/d60/utils_8h.html" title="../util/utils.h" alt="" coords="5852,155,5942,181"/>
+<area shape="rect" id="node5" href="$d1/d77/node_8h.html" title="op/node.h" alt="" coords="5332,304,5410,331"/>
 <area shape="rect" id="node6" href="$d8/d2e/n__2dgaussian_8h.html" title="op/arithmetic/n_2dgaussian.h" alt="" coords="34,229,226,256"/>
 <area shape="rect" id="node7" href="$d2/d00/n__add_8h.html" title="op/arithmetic/n_add.h" alt="" coords="250,229,397,256"/>
 <area shape="rect" id="node8" href="$d5/d42/n__cos_8h.html" title="op/arithmetic/n_cos.h" alt="" coords="421,229,568,256"/>
@@ -46,5 +47,4 @@
 <area shape="rect" id="node45" href="$d8/df6/n__recent_8h.html" title="op/longitudinal/n_recent.h" alt="" coords="6892,229,7062,256"/>
 <area shape="rect" id="node46" href="$d7/d68/n__skew_8h.html" title="op/longitudinal/n_skew.h" alt="" coords="7086,229,7250,256"/>
 <area shape="rect" id="node47" href="$d0/d89/n__slope_8h.html" title="op/longitudinal/n_slope.h" alt="" coords="7276,229,7440,256"/>
-<area shape="rect" id="node48" href="$da/d36/n__var_8h.html" title="op/longitudinal/n_var.h" alt="" coords="7465,229,7617,256"/>
 </map>
