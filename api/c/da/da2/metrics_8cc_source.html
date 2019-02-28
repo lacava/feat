@@ -539,70 +539,82 @@ $(document).ready(function(){initNavTree('da/da2/metrics_8cc_source.html','../..
 <div class="line"><a name="l00432"></a><span class="lineno"><a class="line" href="../../de/dcf/namespaceFT_1_1Eval.html#a2f6d4897cd16310aa17a960c29aa44d0">  432</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="../../de/dcf/namespaceFT_1_1Eval.html#a2f6d4897cd16310aa17a960c29aa44d0">bal_zero_one_loss_label</a>(<span class="keyword">const</span> VectorXf&amp; y, <span class="keyword">const</span> shared_ptr&lt;CLabels&gt;&amp; labels, </div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;                                       VectorXf&amp; loss, <span class="keyword">const</span> vector&lt;float&gt;&amp; class_weights)</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;        {</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;            SGVector&lt;double&gt; _tmp = dynamic_pointer_cast&lt;sh::CMulticlassLabels&gt;(labels)-&gt;get_labels();</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;            SGVector&lt;float&gt; tmp(_tmp.begin(), _tmp.end());</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;            Map&lt;VectorXf&gt; yhat(tmp.data(),tmp.size());</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="../../de/dcf/namespaceFT_1_1Eval.html#ab85b0607be62c8c4e0a061b0f2681025">bal_zero_one_loss</a>(y, yhat, loss, class_weights);</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        }</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;</div>
-<div class="line"><a name="l00442"></a><span class="lineno"><a class="line" href="../../de/dcf/namespaceFT_1_1Eval.html#ac74fb7d125fb1f2c51e20551200167ee">  442</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="../../de/dcf/namespaceFT_1_1Eval.html#ac74fb7d125fb1f2c51e20551200167ee">zero_one_loss</a>(<span class="keyword">const</span> VectorXf&amp; y, <span class="keyword">const</span> VectorXf&amp; yhat, VectorXf&amp; loss, </div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;                   <span class="keyword">const</span> vector&lt;float&gt;&amp; class_weights)</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        {</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;            loss = (yhat.cast&lt;<span class="keywordtype">int</span>&gt;().array() != y.cast&lt;<span class="keywordtype">int</span>&gt;().array()).cast&lt;float&gt;();</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;            <span class="comment">//TODO: weight loss by sample weights</span></div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;            <span class="keywordflow">return</span> loss.mean();</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        }</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        </div>
-<div class="line"><a name="l00451"></a><span class="lineno"><a class="line" href="../../de/dcf/namespaceFT_1_1Eval.html#a6cb390934a9c1f32862dbf319eb40e5e">  451</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="../../de/dcf/namespaceFT_1_1Eval.html#a6cb390934a9c1f32862dbf319eb40e5e">zero_one_loss_label</a>(<span class="keyword">const</span> VectorXf&amp; y, <span class="keyword">const</span> shared_ptr&lt;CLabels&gt;&amp; labels, VectorXf&amp; loss, </div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;                   <span class="keyword">const</span> vector&lt;float&gt;&amp; class_weights)</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        {</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;            SGVector&lt;double&gt; _tmp = dynamic_pointer_cast&lt;sh::CBinaryLabels&gt;(labels)-&gt;get_labels();</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;            SGVector&lt;float&gt; tmp(_tmp.begin(), _tmp.end());</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;            Map&lt;VectorXf&gt; yhat(tmp.data(),tmp.size());</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="../../de/dcf/namespaceFT_1_1Eval.html#ac74fb7d125fb1f2c51e20551200167ee">zero_one_loss</a>(y,yhat,loss,class_weights);</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;        }</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;       </div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;        <span class="comment">/* float bal_log_loss(const VectorXf&amp; y, const shared_ptr&lt;CLabels&gt;&amp; labels, VectorXf&amp; loss, */</span> </div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;        <span class="comment">/*            const vector&lt;float&gt;&amp; weights=vector&lt;float&gt;() ) */</span></div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;        <span class="comment">/* { */</span></div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;          </div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;        <span class="comment">/*     loss = log_loss(y,yhat); */</span></div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;        <span class="comment">/*     vector&lt;float&gt; uc = unique(y); */</span></div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;        <span class="comment">/*     vector&lt;int&gt; c; */</span> </div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;        <span class="comment">/*     for (const auto&amp; i : uc) */</span></div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;        <span class="comment">/*         c.push_back(int(i)); */</span></div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;            </div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;        <span class="comment">/*     vector&lt;float&gt; class_loss(c.size(),0); */</span></div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;        <span class="comment">/*     for (unsigned i = 0; i &lt; c.size(); ++i) */</span></div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;        <span class="comment">/*     { */</span></div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;        <span class="comment">/*         int n = (y.cast&lt;int&gt;().array() == c[i]).count(); */</span></div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;        <span class="comment">/*         class_loss[i] = (y.cast&lt;int&gt;().array() == c[i]).select(loss.array(),0).sum()/n; */</span></div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;            </div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;        <span class="comment">/*     } */</span></div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;        <span class="comment">/*     // return balanced class losses */</span> </div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;        <span class="comment">/*     Map&lt;ArrayXf&gt; cl(class_loss.data(),class_loss.size()); */</span>        </div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;        <span class="comment">/*     return cl.mean(); */</span></div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;        <span class="comment">/* } */</span></div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    } <span class="comment">// metrics</span></div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;} <span class="comment">// FT</span></div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        </div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;            SGVector&lt;double&gt; _tmp;</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;            </div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;            <span class="keyword">auto</span> ptrmulticast = dynamic_pointer_cast&lt;sh::CMulticlassLabels&gt;(labels);</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;            </div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;            <span class="keywordflow">if</span>(ptrmulticast == NULL)</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;            {</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;                <span class="keyword">auto</span> ptrbinary = dynamic_pointer_cast&lt;sh::CBinaryLabels&gt;(labels);</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;                _tmp = ptrbinary-&gt;get_labels();</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;            }</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;                _tmp = ptrmulticast-&gt;get_labels();</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;                </div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;            SGVector&lt;float&gt; tmp(_tmp.begin(), _tmp.end());</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;            Map&lt;VectorXf&gt; yhat(tmp.data(),tmp.size());</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="../../de/dcf/namespaceFT_1_1Eval.html#ab85b0607be62c8c4e0a061b0f2681025">bal_zero_one_loss</a>(y, yhat, loss, class_weights);</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        }</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;</div>
+<div class="line"><a name="l00454"></a><span class="lineno"><a class="line" href="../../de/dcf/namespaceFT_1_1Eval.html#ac74fb7d125fb1f2c51e20551200167ee">  454</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="../../de/dcf/namespaceFT_1_1Eval.html#ac74fb7d125fb1f2c51e20551200167ee">zero_one_loss</a>(<span class="keyword">const</span> VectorXf&amp; y, <span class="keyword">const</span> VectorXf&amp; yhat, VectorXf&amp; loss, </div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;                   <span class="keyword">const</span> vector&lt;float&gt;&amp; class_weights)</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        {</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;            loss = (yhat.cast&lt;<span class="keywordtype">int</span>&gt;().array() != y.cast&lt;<span class="keywordtype">int</span>&gt;().array()).cast&lt;float&gt;();</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;            <span class="comment">//TODO: weight loss by sample weights</span></div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;            <span class="keywordflow">return</span> loss.mean();</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;        }</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;        </div>
+<div class="line"><a name="l00463"></a><span class="lineno"><a class="line" href="../../de/dcf/namespaceFT_1_1Eval.html#a6cb390934a9c1f32862dbf319eb40e5e">  463</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="../../de/dcf/namespaceFT_1_1Eval.html#a6cb390934a9c1f32862dbf319eb40e5e">zero_one_loss_label</a>(<span class="keyword">const</span> VectorXf&amp; y, <span class="keyword">const</span> shared_ptr&lt;CLabels&gt;&amp; labels, VectorXf&amp; loss, </div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;                   <span class="keyword">const</span> vector&lt;float&gt;&amp; class_weights)</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;        {</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;            SGVector&lt;double&gt; _tmp = dynamic_pointer_cast&lt;sh::CBinaryLabels&gt;(labels)-&gt;get_labels();</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;            SGVector&lt;float&gt; tmp(_tmp.begin(), _tmp.end());</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;            Map&lt;VectorXf&gt; yhat(tmp.data(),tmp.size());</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="../../de/dcf/namespaceFT_1_1Eval.html#ac74fb7d125fb1f2c51e20551200167ee">zero_one_loss</a>(y,yhat,loss,class_weights);</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;        }</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;       </div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;        <span class="comment">/* float bal_log_loss(const VectorXf&amp; y, const shared_ptr&lt;CLabels&gt;&amp; labels, VectorXf&amp; loss, */</span> </div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;        <span class="comment">/*            const vector&lt;float&gt;&amp; weights=vector&lt;float&gt;() ) */</span></div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;        <span class="comment">/* { */</span></div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;          </div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;        <span class="comment">/*     loss = log_loss(y,yhat); */</span></div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;        <span class="comment">/*     vector&lt;float&gt; uc = unique(y); */</span></div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;        <span class="comment">/*     vector&lt;int&gt; c; */</span> </div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;        <span class="comment">/*     for (const auto&amp; i : uc) */</span></div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;        <span class="comment">/*         c.push_back(int(i)); */</span></div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;            </div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;        <span class="comment">/*     vector&lt;float&gt; class_loss(c.size(),0); */</span></div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;        <span class="comment">/*     for (unsigned i = 0; i &lt; c.size(); ++i) */</span></div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;        <span class="comment">/*     { */</span></div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        <span class="comment">/*         int n = (y.cast&lt;int&gt;().array() == c[i]).count(); */</span></div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;        <span class="comment">/*         class_loss[i] = (y.cast&lt;int&gt;().array() == c[i]).select(loss.array(),0).sum()/n; */</span></div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;            </div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;        <span class="comment">/*     } */</span></div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;        <span class="comment">/*     // return balanced class losses */</span> </div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;        <span class="comment">/*     Map&lt;ArrayXf&gt; cl(class_loss.data(),class_loss.size()); */</span>        </div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;        <span class="comment">/*     return cl.mean(); */</span></div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;        <span class="comment">/* } */</span></div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    } <span class="comment">// metrics</span></div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;} <span class="comment">// FT</span></div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;</div>
 <div class="ttc" id="namespaceFT_1_1Eval_html_a2f6d4897cd16310aa17a960c29aa44d0"><div class="ttname"><a href="../../de/dcf/namespaceFT_1_1Eval.html#a2f6d4897cd16310aa17a960c29aa44d0">FT::Eval::bal_zero_one_loss_label</a></div><div class="ttdeci">float bal_zero_one_loss_label(const VectorXf &amp;y, const shared_ptr&lt; CLabels &gt; &amp;labels, VectorXf &amp;loss, const vector&lt; float &gt; &amp;class_weights)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da2/metrics_8cc_source.html#l00432">metrics.cc:432</a></div></div>
 <div class="ttc" id="namespaceFT_1_1Eval_html_ab85b0607be62c8c4e0a061b0f2681025"><div class="ttname"><a href="../../de/dcf/namespaceFT_1_1Eval.html#ab85b0607be62c8c4e0a061b0f2681025">FT::Eval::bal_zero_one_loss</a></div><div class="ttdeci">float bal_zero_one_loss(const VectorXf &amp;y, const VectorXf &amp;yhat, VectorXf &amp;loss, const vector&lt; float &gt; &amp;class_weights)</div><div class="ttdoc">1 - balanced accuracy </div><div class="ttdef"><b>Definition:</b> <a href="../../da/da2/metrics_8cc_source.html#l00386">metrics.cc:386</a></div></div>
 <div class="ttc" id="namespaceFT_1_1Eval_html_ae8c83ce14085608e4d42f6a237b03994"><div class="ttname"><a href="../../de/dcf/namespaceFT_1_1Eval.html#ae8c83ce14085608e4d42f6a237b03994">FT::Eval::d_multi_log_loss</a></div><div class="ttdeci">VectorXf d_multi_log_loss(const VectorXf &amp;y, shared_ptr&lt; CLabels &gt; &amp;labels, const vector&lt; float &gt; &amp;class_weights)</div><div class="ttdoc">derivative of multinomial log loss </div><div class="ttdef"><b>Definition:</b> <a href="../../da/da2/metrics_8cc_source.html#l00325">metrics.cc:325</a></div></div>
 <div class="ttc" id="namespaceFT_1_1Eval_html_ac3d5dfea53f5d2cdfccf0aed84a25646"><div class="ttname"><a href="../../de/dcf/namespaceFT_1_1Eval.html#ac3d5dfea53f5d2cdfccf0aed84a25646">FT::Eval::mean_log_loss</a></div><div class="ttdeci">float mean_log_loss(const VectorXf &amp;y, const VectorXf &amp;yhat, VectorXf &amp;loss, const vector&lt; float &gt; &amp;class_weights)</div><div class="ttdoc">log loss </div><div class="ttdef"><b>Definition:</b> <a href="../../da/da2/metrics_8cc_source.html#l00141">metrics.cc:141</a></div></div>
-<div class="ttc" id="namespaceFT_1_1Eval_html_ac74fb7d125fb1f2c51e20551200167ee"><div class="ttname"><a href="../../de/dcf/namespaceFT_1_1Eval.html#ac74fb7d125fb1f2c51e20551200167ee">FT::Eval::zero_one_loss</a></div><div class="ttdeci">float zero_one_loss(const VectorXf &amp;y, const VectorXf &amp;yhat, VectorXf &amp;loss, const vector&lt; float &gt; &amp;class_weights)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da2/metrics_8cc_source.html#l00442">metrics.cc:442</a></div></div>
+<div class="ttc" id="namespaceFT_1_1Eval_html_ac74fb7d125fb1f2c51e20551200167ee"><div class="ttname"><a href="../../de/dcf/namespaceFT_1_1Eval.html#ac74fb7d125fb1f2c51e20551200167ee">FT::Eval::zero_one_loss</a></div><div class="ttdeci">float zero_one_loss(const VectorXf &amp;y, const VectorXf &amp;yhat, VectorXf &amp;loss, const vector&lt; float &gt; &amp;class_weights)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da2/metrics_8cc_source.html#l00454">metrics.cc:454</a></div></div>
 <div class="ttc" id="namespaceFT_1_1Eval_html_a971d675572e7f45e0080e6f22a44cdf5"><div class="ttname"><a href="../../de/dcf/namespaceFT_1_1Eval.html#a971d675572e7f45e0080e6f22a44cdf5">FT::Eval::d_squared_difference</a></div><div class="ttdeci">VectorXf d_squared_difference(const VectorXf &amp;y, shared_ptr&lt; CLabels &gt; &amp;labels, const vector&lt; float &gt; &amp;weights)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da2/metrics_8cc_source.html#l00048">metrics.cc:48</a></div></div>
 <div class="ttc" id="namespaceFT_1_1Eval_html_ada606c591bed1832596118ffdce9abfc"><div class="ttname"><a href="../../de/dcf/namespaceFT_1_1Eval.html#ada606c591bed1832596118ffdce9abfc">FT::Eval::log_loss_label</a></div><div class="ttdeci">float log_loss_label(const VectorXf &amp;y, const shared_ptr&lt; CLabels &gt; &amp;labels, VectorXf &amp;loss, const vector&lt; float &gt; &amp;class_weights)</div><div class="ttdoc">log loss </div><div class="ttdef"><b>Definition:</b> <a href="../../da/da2/metrics_8cc_source.html#l00185">metrics.cc:185</a></div></div>
 <div class="ttc" id="namespaceFT_1_1Eval_html_a74697a8e2fb602d3de4047f287ea545e"><div class="ttname"><a href="../../de/dcf/namespaceFT_1_1Eval.html#a74697a8e2fb602d3de4047f287ea545e">FT::Eval::d_log_loss</a></div><div class="ttdeci">VectorXf d_log_loss(const VectorXf &amp;y, shared_ptr&lt; CLabels &gt; &amp;labels, const vector&lt; float &gt; &amp;class_weights)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da2/metrics_8cc_source.html#l00211">metrics.cc:211</a></div></div>
 <div class="ttc" id="namespaceFT_1_1Util_html_adceed0a578007465db70834c5fead0b9"><div class="ttname"><a href="../../d1/d5d/namespaceFT_1_1Util.html#adceed0a578007465db70834c5fead0b9">FT::Util::unique</a></div><div class="ttdeci">vector&lt; T &gt; unique(vector&lt; T &gt; w)</div><div class="ttdoc">returns unique elements in vector </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d60/utils_8h_source.html#l00169">utils.h:169</a></div></div>
 <div class="ttc" id="namespaceFT_1_1Eval_html_a4d588297f4724cd1f4901ff07b323c6f"><div class="ttname"><a href="../../de/dcf/namespaceFT_1_1Eval.html#a4d588297f4724cd1f4901ff07b323c6f">FT::Eval::log_loss</a></div><div class="ttdeci">VectorXf log_loss(const VectorXf &amp;y, shared_ptr&lt; CLabels &gt; &amp;labels, const vector&lt; float &gt; &amp;class_weights)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da2/metrics_8cc_source.html#l00115">metrics.cc:115</a></div></div>
-<div class="ttc" id="namespaceFT_1_1Eval_html_a6cb390934a9c1f32862dbf319eb40e5e"><div class="ttname"><a href="../../de/dcf/namespaceFT_1_1Eval.html#a6cb390934a9c1f32862dbf319eb40e5e">FT::Eval::zero_one_loss_label</a></div><div class="ttdeci">float zero_one_loss_label(const VectorXf &amp;y, const shared_ptr&lt; CLabels &gt; &amp;labels, VectorXf &amp;loss, const vector&lt; float &gt; &amp;class_weights)</div><div class="ttdoc">1 - accuracy </div><div class="ttdef"><b>Definition:</b> <a href="../../da/da2/metrics_8cc_source.html#l00451">metrics.cc:451</a></div></div>
+<div class="ttc" id="namespaceFT_1_1Eval_html_a6cb390934a9c1f32862dbf319eb40e5e"><div class="ttname"><a href="../../de/dcf/namespaceFT_1_1Eval.html#a6cb390934a9c1f32862dbf319eb40e5e">FT::Eval::zero_one_loss_label</a></div><div class="ttdeci">float zero_one_loss_label(const VectorXf &amp;y, const shared_ptr&lt; CLabels &gt; &amp;labels, VectorXf &amp;loss, const vector&lt; float &gt; &amp;class_weights)</div><div class="ttdoc">1 - accuracy </div><div class="ttdef"><b>Definition:</b> <a href="../../da/da2/metrics_8cc_source.html#l00463">metrics.cc:463</a></div></div>
 <div class="ttc" id="namespaceFT_1_1Util_html_afe062564286e6b13100de60f8fe9b947"><div class="ttname"><a href="../../d1/d5d/namespaceFT_1_1Util.html#afe062564286e6b13100de60f8fe9b947">FT::Util::to_string</a></div><div class="ttdeci">string to_string(const T &amp;value)</div><div class="ttdoc">template function to convert objects to string for logging </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d60/utils_8h_source.html#l00188">utils.h:188</a></div></div>
 <div class="ttc" id="error_8h_html_aa4c550bcd71e4ec1c97b111e1360509a"><div class="ttname"><a href="../../da/d41/error_8h.html#aa4c550bcd71e4ec1c97b111e1360509a">HANDLE_ERROR_THROW</a></div><div class="ttdeci">#define HANDLE_ERROR_THROW(err)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d41/error_8h_source.html#l00026">error.h:26</a></div></div>
 <div class="ttc" id="namespaceFT_1_1Eval_html_aa86d833ed6e8e766a3d2c424af3ed8b3"><div class="ttname"><a href="../../de/dcf/namespaceFT_1_1Eval.html#aa86d833ed6e8e766a3d2c424af3ed8b3">FT::Eval::mean_multi_log_loss</a></div><div class="ttdeci">float mean_multi_log_loss(const VectorXf &amp;y, const ArrayXXf &amp;confidences, VectorXf &amp;loss, const vector&lt; float &gt; &amp;class_weights)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da2/metrics_8cc_source.html#l00275">metrics.cc:275</a></div></div>
