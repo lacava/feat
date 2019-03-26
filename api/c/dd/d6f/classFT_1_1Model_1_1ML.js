@@ -7,7 +7,7 @@ var classFT_1_1Model_1_1ML =
     [ "get_weights", "dd/d6f/classFT_1_1Model_1_1ML.html#a1ae95f84aa53ac51c3973a285c4742b9", null ],
     [ "init", "dd/d6f/classFT_1_1Model_1_1ML.html#aa5ffe6ed96079975040ba20a58fe7c3f", null ],
     [ "labels_to_vector", "dd/d6f/classFT_1_1Model_1_1ML.html#ad99b341011fec43531f70a73d1d9b18e", null ],
-    [ "predict", "dd/d6f/classFT_1_1Model_1_1ML.html#adf63be10b9d2a34cc50f69e42c58285a", null ],
+    [ "predict", "dd/d6f/classFT_1_1Model_1_1ML.html#a6ef140e23dbf86b0bd620318cea95baa", null ],
     [ "predict_proba", "dd/d6f/classFT_1_1Model_1_1ML.html#aae33134488d841f39f780c26f1051fa3", null ],
     [ "predict_vector", "dd/d6f/classFT_1_1Model_1_1ML.html#a49adcc0558f475d477ce2a9247a26cf9", null ],
     [ "set_dtypes", "dd/d6f/classFT_1_1Model_1_1ML.html#acecf36d817c5c3b85b7de2e454c11685", null ],

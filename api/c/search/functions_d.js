@@ -49,5 +49,6 @@ var searchData=
   ['nodevector',['NodeVector',['../d5/daf/structFT_1_1Pop_1_1NodeVector.html#ae749541f710077e2b3292395137c9fd9',1,'FT::Pop::NodeVector::NodeVector()'],['../d5/daf/structFT_1_1Pop_1_1NodeVector.html#a42306bc1a745deadaa67df877369e0f0',1,'FT::Pop::NodeVector::NodeVector(const NodeVector &amp;other)'],['../d5/daf/structFT_1_1Pop_1_1NodeVector.html#ac1a264e95b80f02837c7157765177063',1,'FT::Pop::NodeVector::NodeVector(NodeVector &amp;&amp;other)']]],
   ['nodexor',['NodeXor',['../df/d63/classFT_1_1Pop_1_1Op_1_1NodeXor.html#a6ad6d064c9456a50e5aaa64aec74d4bd',1,'FT::Pop::Op::NodeXor']]],
   ['normalize',['normalize',['../dd/d51/structFT_1_1Util_1_1Normalizer.html#ab6fd830d0df127d67d85072de631c625',1,'FT::Util::Normalizer']]],
+  ['normalizer',['Normalizer',['../dd/d51/structFT_1_1Util_1_1Normalizer.html#ae24184fdf8c95ea9ce7a8dfaff42c1c4',1,'FT::Util::Normalizer']]],
   ['nsga2',['NSGA2',['../dd/df1/structFT_1_1Sel_1_1NSGA2.html#a5a234861a49f70b3fa83e8fe839eb928',1,'FT::Sel::NSGA2']]]
 ];

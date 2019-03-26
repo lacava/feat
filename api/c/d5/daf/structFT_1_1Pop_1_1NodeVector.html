@@ -165,10 +165,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab637fc36be20826a84c7e3edade38f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a854dc1c8f482c8842b4c8eb6c02157c0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html#a854dc1c8f482c8842b4c8eb6c02157c0">is_valid_program</a> (unsigned num_features, vector&lt; string &gt; longitudinalMap)</td></tr>
 <tr class="separator:a854dc1c8f482c8842b4c8eb6c02157c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ab8320693a02fb531d4062d651794f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html#a8ab8320693a02fb531d4062d651794f7">make_tree</a> (const <a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a> &amp;functions, const <a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a> &amp;terminals, int max_d, const vector&lt; float &gt; &amp;term_weights, char otype, const vector&lt; char &gt; &amp;term_types)</td></tr>
-<tr class="separator:a8ab8320693a02fb531d4062d651794f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3066b1e046c5de1d901a98565c128a59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html#a3066b1e046c5de1d901a98565c128a59">make_program</a> (const <a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a> &amp;functions, const <a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a> &amp;terminals, int max_d, const vector&lt; float &gt; &amp;term_weights, int dim, char otype, vector&lt; string &gt; longitudinalMap, const vector&lt; char &gt; &amp;term_types)</td></tr>
-<tr class="separator:a3066b1e046c5de1d901a98565c128a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ef28b18ec876851c61e59e8078c664f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html#a9ef28b18ec876851c61e59e8078c664f">make_tree</a> (const <a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a> &amp;functions, const <a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a> &amp;terminals, int max_d, const vector&lt; float &gt; &amp;term_weights, const vector&lt; float &gt; &amp;op_weights, char otype, const vector&lt; char &gt; &amp;term_types)</td></tr>
+<tr class="separator:a9ef28b18ec876851c61e59e8078c664f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64dce7ce78bc25cf2bc0d93312b3f664"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html#a64dce7ce78bc25cf2bc0d93312b3f664">make_program</a> (const <a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a> &amp;functions, const <a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a> &amp;terminals, int max_d, const vector&lt; float &gt; &amp;term_weights, const vector&lt; float &gt; &amp;op_weights, int dim, char otype, vector&lt; string &gt; longitudinalMap, const vector&lt; char &gt; &amp;term_types)</td></tr>
+<tr class="separator:a64dce7ce78bc25cf2bc0d93312b3f664"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>an extension of a vector of unique pointers to nodes </p>
@@ -340,7 +340,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3066b1e046c5de1d901a98565c128a59"></a>
+<a class="anchor" id="a64dce7ce78bc25cf2bc0d93312b3f664"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -367,6 +367,12 @@ Public Member Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">const vector&lt; float &gt; &amp;&#160;</td>
           <td class="paramname"><em>term_weights</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const vector&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>op_weights</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -400,11 +406,11 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/ded/nodevector_8cc_source.html#l00346">346</a> of file <a class="el" href="../../df/ded/nodevector_8cc_source.html">nodevector.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../df/ded/nodevector_8cc_source.html#l00359">359</a> of file <a class="el" href="../../df/ded/nodevector_8cc_source.html">nodevector.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a8ab8320693a02fb531d4062d651794f7"></a>
+<a class="anchor" id="a9ef28b18ec876851c61e59e8078c664f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -431,6 +437,12 @@ Public Member Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">const vector&lt; float &gt; &amp;&#160;</td>
           <td class="paramname"><em>term_weights</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const vector&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>op_weights</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
