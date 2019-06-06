@@ -2,7 +2,7 @@ var structFT_1_1Parameters =
 [
     [ "BP", "d4/d04/structFT_1_1Parameters_1_1BP.html", "d4/d04/structFT_1_1Parameters_1_1BP" ],
     [ "HC", "d0/d29/structFT_1_1Parameters_1_1HC.html", "d0/d29/structFT_1_1Parameters_1_1HC" ],
-    [ "Parameters", "de/d2c/structFT_1_1Parameters.html#a19dd93d6a6ab82eed5dbe7e5c549c2c1", null ],
+    [ "Parameters", "de/d2c/structFT_1_1Parameters.html#ac5ee6e331302716fbe3a0dc1710a4fcb", null ],
     [ "~Parameters", "de/d2c/structFT_1_1Parameters.html#a076962362db14b59e1b6c8df0eac62df", null ],
     [ "createNode", "de/d2c/structFT_1_1Parameters.html#a24a000d8f1b4c4971ceee5aa9f1e1738", null ],
     [ "init", "de/d2c/structFT_1_1Parameters.html#a210d5c0a83658a79572a9ef4c289e250", null ],
@@ -46,6 +46,7 @@ var structFT_1_1Parameters =
     [ "max_time", "de/d2c/structFT_1_1Parameters.html#a2fc9772d05e72f1e79bd9fb4fa4a1b95", null ],
     [ "ml", "de/d2c/structFT_1_1Parameters.html#a7e11bd6f94c1474b695cc9c823e8ea46", null ],
     [ "n_classes", "de/d2c/structFT_1_1Parameters.html#a60b1f33621b61544a3c0ca929b088c7d", null ],
+    [ "normalize", "de/d2c/structFT_1_1Parameters.html#a9ee92495a6061da2fb1751b4f6a6f8b3", null ],
     [ "num_features", "de/d2c/structFT_1_1Parameters.html#a8983b68ffc67ff7368fae48058c3b077", null ],
     [ "objectives", "de/d2c/structFT_1_1Parameters.html#aace18d360f786428143860deb1531a86", null ],
     [ "op_weights", "de/d2c/structFT_1_1Parameters.html#acd10489871721704e909cced880aa7e4", null ],
