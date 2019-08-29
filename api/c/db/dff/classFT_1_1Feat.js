@@ -101,6 +101,7 @@ var classFT_1_1Feat =
     [ "transform", "db/dff/classFT_1_1Feat.html#a490cc3e839717e8b6a28fde0a2b3e643", null ],
     [ "transform", "db/dff/classFT_1_1Feat.html#a5e6abc52394ae1939f0cd67e0b22c596", null ],
     [ "transform_with_z", "db/dff/classFT_1_1Feat.html#a367b4a3212b1bdb5367fc1d586281edf", null ],
+    [ "univariate_initial_model", "db/dff/classFT_1_1Feat.html#a558631d73037019ed7673e4804f3e700", null ],
     [ "update_best", "db/dff/classFT_1_1Feat.html#a9267257d74384f43df34c0f4e164db48", null ],
     [ "update_stall_count", "db/dff/classFT_1_1Feat.html#a9b38b55c6dca590aae30240f8056ddb8", null ],
     [ "arch", "db/dff/classFT_1_1Feat.html#aec8126568742c11379cc62fb7a4672c8", null ],

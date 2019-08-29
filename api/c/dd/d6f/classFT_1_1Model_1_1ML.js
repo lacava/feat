@@ -1,6 +1,6 @@
 var classFT_1_1Model_1_1ML =
 [
-    [ "ML", "dd/d6f/classFT_1_1Model_1_1ML.html#a0a28a3dd57e3df2acbac55df092815fd", null ],
+    [ "ML", "dd/d6f/classFT_1_1Model_1_1ML.html#a53d9d24f2c1cd0c1f3f478ead9345c24", null ],
     [ "~ML", "dd/d6f/classFT_1_1Model_1_1ML.html#ade8819a17d3a265662b401087e3a6d0a", null ],
     [ "fit", "dd/d6f/classFT_1_1Model_1_1ML.html#aff132bcd796b9e35e8b2e4c0d0879479", null ],
     [ "fit_vector", "dd/d6f/classFT_1_1Model_1_1ML.html#a414326dd97eb21965c6d693f2ec1fb48", null ],

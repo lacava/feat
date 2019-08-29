@@ -44,8 +44,8 @@ var NAVTREEINDEX =
 "d6/d5f/structFT_1_1Pop_1_1Population.html#a9af7e1f1af2a7ffe6bf6575c8075ea6e",
 "d8/dc0/init_8h.html#a6a33354c51ab1e4986b2a222aac825a7",
 "db/da0/classFT_1_1Pop_1_1Op_1_1NodeCount.html#a393f77e35472f7f250ff763220884017",
-"dc/d37/feat_8cc.html",
-"de/d81/MyCARTreeNodeData_8h_source.html"
+"db/dff/classshogun_1_1CMyCARTree.html#afd05aa4b260efa81d17923c832c61a4c",
+"de/d81/MyCARTreeNodeData_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

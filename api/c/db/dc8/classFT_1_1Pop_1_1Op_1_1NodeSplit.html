@@ -143,12 +143,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab6f82cee3a451c2d7cd93bb5da53aeef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dc8/classFT_1_1Pop_1_1Op_1_1NodeSplit.html#ab6f82cee3a451c2d7cd93bb5da53aeef">set_threshold</a> (ArrayXf &amp;x, VectorXf &amp;y, bool classification)</td></tr>
 <tr class="memdesc:ab6f82cee3a451c2d7cd93bb5da53aeef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses a heuristic to set a splitting threshold.  <a href="#ab6f82cee3a451c2d7cd93bb5da53aeef">More...</a><br/></td></tr>
 <tr class="separator:ab6f82cee3a451c2d7cd93bb5da53aeef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4ffb1a053cbbb69e48b1efcd6e02e45"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dc8/classFT_1_1Pop_1_1Op_1_1NodeSplit.html#ad4ffb1a053cbbb69e48b1efcd6e02e45">gain</a> (const VectorXf &amp;lsplit, const VectorXf &amp;rsplit, bool classification=false)</td></tr>
-<tr class="memdesc:ad4ffb1a053cbbb69e48b1efcd6e02e45"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the gain of a split  <a href="#ad4ffb1a053cbbb69e48b1efcd6e02e45">More...</a><br/></td></tr>
-<tr class="separator:ad4ffb1a053cbbb69e48b1efcd6e02e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46f1029e0e955f1348dc3482260529f9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dc8/classFT_1_1Pop_1_1Op_1_1NodeSplit.html#a46f1029e0e955f1348dc3482260529f9">gini_impurity_index</a> (const VectorXf &amp;classes)</td></tr>
-<tr class="memdesc:a46f1029e0e955f1348dc3482260529f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">gini impurity of classes in classes  <a href="#a46f1029e0e955f1348dc3482260529f9">More...</a><br/></td></tr>
-<tr class="separator:a46f1029e0e955f1348dc3482260529f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4494852eb498253c39b1275636ed25e4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dc8/classFT_1_1Pop_1_1Op_1_1NodeSplit.html#a4494852eb498253c39b1275636ed25e4">gain</a> (const VectorXf &amp;lsplit, const VectorXf &amp;rsplit, bool classification=false, vector&lt; float &gt; unique_classes=vector&lt; float &gt;())</td></tr>
+<tr class="memdesc:a4494852eb498253c39b1275636ed25e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the gain of a split  <a href="#a4494852eb498253c39b1275636ed25e4">More...</a><br/></td></tr>
+<tr class="separator:a4494852eb498253c39b1275636ed25e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b0e2383fef67865d875017c7fc06a96"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dc8/classFT_1_1Pop_1_1Op_1_1NodeSplit.html#a5b0e2383fef67865d875017c7fc06a96">gini_impurity_index</a> (const VectorXf &amp;classes, vector&lt; float &gt; uc)</td></tr>
+<tr class="memdesc:a5b0e2383fef67865d875017c7fc06a96"><td class="mdescLeft">&#160;</td><td class="mdescRight">gini impurity of classes in classes  <a href="#a5b0e2383fef67865d875017c7fc06a96">More...</a><br/></td></tr>
+<tr class="separator:a5b0e2383fef67865d875017c7fc06a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa281bb05f9da2bcf5f953e4cea58fd88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dc8/classFT_1_1Pop_1_1Op_1_1NodeSplit.html#aa281bb05f9da2bcf5f953e4cea58fd88">evaluate</a> (const <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> &amp;data, <a class="el" href="../../dd/d3f/structFT_1_1Dat_1_1State.html">State</a> &amp;state)</td></tr>
 <tr class="memdesc:aa281bb05f9da2bcf5f953e4cea58fd88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates the node and updates the state states.  <a href="#aa281bb05f9da2bcf5f953e4cea58fd88">More...</a><br/></td></tr>
 <tr class="separator:aa281bb05f9da2bcf5f953e4cea58fd88"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -386,7 +386,7 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ad4ffb1a053cbbb69e48b1efcd6e02e45"></a>
+<a class="anchor" id="a4494852eb498253c39b1275636ed25e4"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -408,7 +408,13 @@ template&lt;class T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>classification</em> = <code>false</code>&#160;</td>
+          <td class="paramname"><em>classification</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; float &gt;&#160;</td>
+          <td class="paramname"><em>unique_classes</em> = <code>vector&lt;float&gt;()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -420,11 +426,11 @@ template&lt;class T &gt; </div>
 
 <p>returns the gain of a split </p>
 
-<p>Definition at line <a class="el" href="../../d5/d80/n__split_8cc_source.html#l00160">160</a> of file <a class="el" href="../../d5/d80/n__split_8cc_source.html">n_split.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d80/n__split_8cc_source.html#l00169">169</a> of file <a class="el" href="../../d5/d80/n__split_8cc_source.html">n_split.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a46f1029e0e955f1348dc3482260529f9"></a>
+<a class="anchor" id="a5b0e2383fef67865d875017c7fc06a96"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -434,15 +440,25 @@ template&lt;class T &gt; </div>
           <td class="memname">float <a class="el" href="../../db/dc8/classFT_1_1Pop_1_1Op_1_1NodeSplit.html">FT::Pop::Op::NodeSplit</a>&lt; T &gt;::gini_impurity_index </td>
           <td>(</td>
           <td class="paramtype">const VectorXf &amp;&#160;</td>
-          <td class="paramname"><em>classes</em></td><td>)</td>
+          <td class="paramname"><em>classes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">vector&lt; float &gt;&#160;</td>
+          <td class="paramname"><em>uc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>gini impurity of classes in classes </p>
 
-<p>Definition at line <a class="el" href="../../d5/d80/n__split_8cc_source.html#l00182">182</a> of file <a class="el" href="../../d5/d80/n__split_8cc_source.html">n_split.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d80/n__split_8cc_source.html#l00193">193</a> of file <a class="el" href="../../d5/d80/n__split_8cc_source.html">n_split.cc</a>.</p>
 
 </div>
 </div>
