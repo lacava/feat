@@ -59,7 +59,6 @@ var NAVTREEINDEX4 =
 "db/dff/classFT_1_1Feat.html#a0ed5c7134c4131560434466e4228bab4":[1,0,0,8,88],
 "db/dff/classFT_1_1Feat.html#a0f39d4c58662d28aa9d005126cf51f7f":[1,0,0,8,52],
 "db/dff/classFT_1_1Feat.html#a15c499b8735c8e4b19a1c06271544a51":[1,0,0,8,86],
-"db/dff/classFT_1_1Feat.html#a18585cde8853496382759eb92ca60d3f":[1,0,0,8,0],
 "db/dff/classFT_1_1Feat.html#a191be809b5581b41936410cc37cd144f":[1,0,0,8,45],
 "db/dff/classFT_1_1Feat.html#a1d298b216554e3e2b4ba9124246adaa1":[1,0,0,8,19],
 "db/dff/classFT_1_1Feat.html#a263bc4af4de45a55186394a8f0db18f4":[1,0,0,8,93],
@@ -106,6 +105,7 @@ var NAVTREEINDEX4 =
 "db/dff/classFT_1_1Feat.html#a6e6669504b0480f383f113e98384dc6a":[1,0,0,8,58],
 "db/dff/classFT_1_1Feat.html#a729dfb2168e87b399f01e61bb1cd49db":[1,0,0,8,2],
 "db/dff/classFT_1_1Feat.html#a73efbdfdbc6f3797718432b2f115fdb2":[1,0,0,8,11],
+"db/dff/classFT_1_1Feat.html#a744f9dff6964d740576ec766d31c4e80":[1,0,0,8,128],
 "db/dff/classFT_1_1Feat.html#a76a11db1f1a9d132c64b698894758a54":[1,0,0,8,13],
 "db/dff/classFT_1_1Feat.html#a7797e289bc355fd92d2d65ae0b3fae1d":[1,0,0,8,1],
 "db/dff/classFT_1_1Feat.html#a77d7dfe063841576706472ec77e5216c":[1,0,0,8,9],
@@ -138,6 +138,7 @@ var NAVTREEINDEX4 =
 "db/dff/classFT_1_1Feat.html#aaca8ff45cde2971501c526a702ebc15e":[1,0,0,8,74],
 "db/dff/classFT_1_1Feat.html#aad81cf1008b7f98d360579d23a4f5e4f":[1,0,0,8,117],
 "db/dff/classFT_1_1Feat.html#aae0baf89218f51e8fabe0740d57dde8b":[1,0,0,8,73],
+"db/dff/classFT_1_1Feat.html#aaf776320f46b3e821d63bc9638ed589a":[1,0,0,8,0],
 "db/dff/classFT_1_1Feat.html#ab13338a75e9ea96a9db3336741a3b971":[1,0,0,8,118],
 "db/dff/classFT_1_1Feat.html#ab43c978eea3e9942278c5b8ad49f0ba8":[1,0,0,8,109],
 "db/dff/classFT_1_1Feat.html#ab47b4abe7aa70ae88525ccbe30e077b9":[1,0,0,8,91],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "db/dff/classshogun_1_1CMyCARTree.html#aead1f0cb2584dc0c26a6763ca101c5a5":[1,0,1,1,3],
 "db/dff/classshogun_1_1CMyCARTree.html#aeb53d300185b39adc5f437273ac07ee0":[1,0,1,1,49],
 "db/dff/classshogun_1_1CMyCARTree.html#af044b26506214f476b0c182e88626f0b":[1,0,1,1,42],
-"db/dff/classshogun_1_1CMyCARTree.html#af4a29ff465c12e2325a085bd9fb8cb6a":[1,0,1,1,62],
-"db/dff/classshogun_1_1CMyCARTree.html#af8d49d66534ca6b093156ccf33520d9c":[1,0,1,1,19]
+"db/dff/classshogun_1_1CMyCARTree.html#af4a29ff465c12e2325a085bd9fb8cb6a":[1,0,1,1,62]
 };

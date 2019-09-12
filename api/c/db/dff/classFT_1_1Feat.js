@@ -1,6 +1,6 @@
 var classFT_1_1Feat =
 [
-    [ "Feat", "db/dff/classFT_1_1Feat.html#a18585cde8853496382759eb92ca60d3f", null ],
+    [ "Feat", "db/dff/classFT_1_1Feat.html#aaf776320f46b3e821d63bc9638ed589a", null ],
     [ "~Feat", "db/dff/classFT_1_1Feat.html#a7797e289bc355fd92d2d65ae0b3fae1d", null ],
     [ "calculate_stats", "db/dff/classFT_1_1Feat.html#a729dfb2168e87b399f01e61bb1cd49db", null ],
     [ "final_model", "db/dff/classFT_1_1Feat.html#a8b756059dbd7d8d0de509515cb90c3eb", null ],
@@ -127,5 +127,6 @@ var classFT_1_1Feat =
     [ "str_dim", "db/dff/classFT_1_1Feat.html#aa3ecfa399e827a3e633a40780c66c600", null ],
     [ "survival", "db/dff/classFT_1_1Feat.html#aa46144d8615e6d422246e6a7f705bea6", null ],
     [ "timer", "db/dff/classFT_1_1Feat.html#af5be17d09edb530c180bc20ed0a98326", null ],
-    [ "use_arch", "db/dff/classFT_1_1Feat.html#a4f8ecac48492e069570784ce200b3c90", null ]
+    [ "use_arch", "db/dff/classFT_1_1Feat.html#a4f8ecac48492e069570784ce200b3c90", null ],
+    [ "val_from_arch", "db/dff/classFT_1_1Feat.html#a744f9dff6964d740576ec766d31c4e80", null ]
 ];

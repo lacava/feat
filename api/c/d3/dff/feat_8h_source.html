@@ -177,338 +177,342 @@ $(document).ready(function(){initNavTree('d3/dff/feat_8h_source.html','../../');
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                   <span class="keywordtype">bool</span> classification = <span class="keyword">false</span>, <span class="keywordtype">int</span> verbosity = 2, <span class="keywordtype">int</span> max_stall = 0,</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                   <span class="keywordtype">string</span> sel =<span class="stringliteral">&quot;lexicase&quot;</span>, <span class="keywordtype">string</span> surv=<span class="stringliteral">&quot;nsga2&quot;</span>, <span class="keywordtype">float</span> cross_rate = 0.5,</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                   <span class="keywordtype">float</span> root_xo_rate = 0.5, <span class="keywordtype">char</span> otype=<span class="charliteral">&#39;a&#39;</span>, <span class="keywordtype">string</span> functions = <span class="stringliteral">&quot;&quot;</span>, </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> max_depth = 3, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> max_dim = 10, <span class="keywordtype">int</span> random_state=0, </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                   <span class="keywordtype">bool</span> erc = <span class="keyword">false</span>, <span class="keywordtype">string</span> obj=<span class="stringliteral">&quot;fitness,complexity&quot;</span>, <span class="keywordtype">bool</span> shuffle=<span class="keyword">true</span>, </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                   <span class="keywordtype">float</span> split=0.75, <span class="keywordtype">float</span> fb=0.5, <span class="keywordtype">string</span> scorer=<span class="stringliteral">&quot;&quot;</span>, <span class="keywordtype">string</span> feature_names=<span class="stringliteral">&quot;&quot;</span>,</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                   <span class="keywordtype">bool</span> backprop=<span class="keyword">false</span>,<span class="keywordtype">int</span> iters=10, <span class="keywordtype">float</span> lr=0.1, <span class="keywordtype">int</span> bs=100, <span class="keywordtype">int</span> n_threads=0,</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                   <span class="keywordtype">bool</span> hillclimb=<span class="keyword">false</span>, <span class="keywordtype">string</span> logfile=<span class="stringliteral">&quot;&quot;</span>, <span class="keywordtype">int</span> max_time=-1, </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                   <span class="keywordtype">bool</span> use_batch = <span class="keyword">false</span>, <span class="keywordtype">bool</span> residual_xo = <span class="keyword">false</span>, <span class="keywordtype">bool</span> stagewise_xo = <span class="keyword">false</span>,</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                   <span class="keywordtype">bool</span> softmax_norm=<span class="keyword">false</span>, <span class="keywordtype">int</span> print_pop=0, <span class="keywordtype">bool</span> normalize=<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordtype">void</span> set_pop_size(<span class="keywordtype">int</span> pop_size);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordtype">void</span> set_generations(<span class="keywordtype">int</span> gens);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                        </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordtype">void</span> set_ml(<span class="keywordtype">string</span> ml);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keywordtype">void</span> set_classification(<span class="keywordtype">bool</span> classification);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                 </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordtype">void</span> set_verbosity(<span class="keywordtype">int</span> verbosity);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                        </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordtype">void</span> set_max_stall(<span class="keywordtype">int</span> max_stall);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                        </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keywordtype">void</span> set_selection(<span class="keywordtype">string</span> sel);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                        </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keywordtype">void</span> set_survival(<span class="keywordtype">string</span> surv);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                        </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keywordtype">void</span> set_cross_rate(<span class="keywordtype">float</span> cross_rate);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="keywordtype">void</span> set_root_xo_rate(<span class="keywordtype">float</span> cross_rate);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                        </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <span class="keywordtype">void</span> set_otype(<span class="keywordtype">char</span> ot);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                        </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="keywordtype">void</span> set_functions(<span class="keywordtype">string</span> functions);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                        </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            <span class="keywordtype">void</span> set_max_depth(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> max_depth);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;             </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <span class="keywordtype">void</span> set_max_dim(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> max_dim);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="keywordtype">void</span> set_max_dim(<span class="keywordtype">string</span> str);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            </div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            <span class="keywordtype">void</span> set_random_state(<span class="keywordtype">int</span> random_state);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                        </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            <span class="keywordtype">void</span> set_erc(<span class="keywordtype">bool</span> erc);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            </div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            <span class="keywordtype">void</span> set_shuffle(<span class="keywordtype">bool</span> sh);</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <span class="keywordtype">void</span> set_objectives(<span class="keywordtype">string</span> obj);</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            </div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <span class="keywordtype">void</span> set_split(<span class="keywordtype">float</span> sp);</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            </div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="keywordtype">void</span> set_dtypes(vector&lt;char&gt; dtypes);</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            <span class="keywordtype">void</span> set_feedback(<span class="keywordtype">float</span> fb);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="keywordtype">void</span> set_logfile(<span class="keywordtype">string</span> s);</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <span class="keywordtype">void</span> set_scorer(<span class="keywordtype">string</span> s);</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            </div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <span class="keywordtype">void</span> set_feature_names(<span class="keywordtype">string</span> s);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> max_depth = 3, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> max_dim = 10, </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                   <span class="keywordtype">int</span> random_state=0, </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                   <span class="keywordtype">bool</span> erc = <span class="keyword">false</span>, <span class="keywordtype">string</span> obj=<span class="stringliteral">&quot;fitness,complexity&quot;</span>, <span class="keywordtype">bool</span> shuffle=<span class="keyword">true</span>, </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                   <span class="keywordtype">float</span> split=0.75, <span class="keywordtype">float</span> fb=0.5, <span class="keywordtype">string</span> scorer=<span class="stringliteral">&quot;&quot;</span>, <span class="keywordtype">string</span> feature_names=<span class="stringliteral">&quot;&quot;</span>,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                   <span class="keywordtype">bool</span> backprop=<span class="keyword">false</span>,<span class="keywordtype">int</span> iters=10, <span class="keywordtype">float</span> lr=0.1, <span class="keywordtype">int</span> bs=100, <span class="keywordtype">int</span> n_threads=0,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                   <span class="keywordtype">bool</span> hillclimb=<span class="keyword">false</span>, <span class="keywordtype">string</span> logfile=<span class="stringliteral">&quot;&quot;</span>, <span class="keywordtype">int</span> max_time=-1, </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                   <span class="keywordtype">bool</span> use_batch = <span class="keyword">false</span>, <span class="keywordtype">bool</span> residual_xo = <span class="keyword">false</span>, <span class="keywordtype">bool</span> stagewise_xo = <span class="keyword">false</span>,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                   <span class="keywordtype">bool</span> softmax_norm=<span class="keyword">false</span>, <span class="keywordtype">int</span> print_pop=0, </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                   <span class="keywordtype">bool</span> normalize=<span class="keyword">true</span>, <span class="keywordtype">bool</span> val_from_arch=<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordtype">void</span> set_pop_size(<span class="keywordtype">int</span> pop_size);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordtype">void</span> set_generations(<span class="keywordtype">int</span> gens);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                        </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordtype">void</span> set_ml(<span class="keywordtype">string</span> ml);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordtype">void</span> set_classification(<span class="keywordtype">bool</span> classification);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                 </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keywordtype">void</span> set_verbosity(<span class="keywordtype">int</span> verbosity);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                        </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keywordtype">void</span> set_max_stall(<span class="keywordtype">int</span> max_stall);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                        </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordtype">void</span> set_selection(<span class="keywordtype">string</span> sel);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                        </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keywordtype">void</span> set_survival(<span class="keywordtype">string</span> surv);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                        </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="keywordtype">void</span> set_cross_rate(<span class="keywordtype">float</span> cross_rate);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <span class="keywordtype">void</span> set_root_xo_rate(<span class="keywordtype">float</span> cross_rate);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                        </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <span class="keywordtype">void</span> set_otype(<span class="keywordtype">char</span> ot);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                        </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <span class="keywordtype">void</span> set_functions(<span class="keywordtype">string</span> functions);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                        </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <span class="keywordtype">void</span> set_max_depth(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> max_depth);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;             </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <span class="keywordtype">void</span> set_max_dim(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> max_dim);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <span class="keywordtype">void</span> set_max_dim(<span class="keywordtype">string</span> str);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            <span class="keywordtype">void</span> set_random_state(<span class="keywordtype">int</span> random_state);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                        </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <span class="keywordtype">void</span> set_erc(<span class="keywordtype">bool</span> erc);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            <span class="keywordtype">void</span> set_shuffle(<span class="keywordtype">bool</span> sh);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <span class="keywordtype">void</span> set_objectives(<span class="keywordtype">string</span> obj);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <span class="keywordtype">void</span> set_split(<span class="keywordtype">float</span> sp);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            <span class="keywordtype">void</span> set_dtypes(vector&lt;char&gt; dtypes);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="keywordtype">void</span> set_feedback(<span class="keywordtype">float</span> fb);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <span class="keywordtype">void</span> set_logfile(<span class="keywordtype">string</span> s);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <span class="keywordtype">void</span> set_scorer(<span class="keywordtype">string</span> s);</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            </div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <span class="keywordtype">void</span> set_feature_names(vector&lt;string&gt;&amp; s);</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            <span class="keywordtype">void</span> set_backprop(<span class="keywordtype">bool</span> bp);</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            </div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            <span class="keywordtype">void</span> set_hillclimb(<span class="keywordtype">bool</span> hc);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <span class="keywordtype">void</span> set_feature_names(<span class="keywordtype">string</span> s);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <span class="keywordtype">void</span> set_feature_names(vector&lt;string&gt;&amp; s);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            <span class="keywordtype">void</span> set_backprop(<span class="keywordtype">bool</span> bp);</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            </div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keywordtype">void</span> set_iters(<span class="keywordtype">int</span> iters);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keywordtype">void</span> set_hillclimb(<span class="keywordtype">bool</span> hc);</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            </div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <span class="keywordtype">void</span> set_lr(<span class="keywordtype">float</span> lr);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <span class="keywordtype">void</span> set_iters(<span class="keywordtype">int</span> iters);</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            </div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            <span class="keywordtype">void</span> set_batch_size(<span class="keywordtype">int</span> bs);</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;             </div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <span class="keywordtype">void</span> set_n_threads(<span class="keywordtype">unsigned</span> t);</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            </div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            <span class="keywordtype">void</span> set_max_time(<span class="keywordtype">int</span> time);</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            </div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            <span class="keywordtype">void</span> set_use_batch();</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            </div>
-<div class="line"><a name="l00185"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#aa02213ced95b40bb0f0ba9e960a0b899">  185</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="../../db/dff/classFT_1_1Feat.html#aa02213ced95b40bb0f0ba9e960a0b899">set_residual_xo</a>(<span class="keywordtype">bool</span> res_xo=<span class="keyword">true</span>){params.residual_xo=res_xo;};</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            </div>
-<div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#adfdfeab2e7528beca68db01588823a10">  188</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="../../db/dff/classFT_1_1Feat.html#adfdfeab2e7528beca68db01588823a10">set_stagewise_xo</a>(<span class="keywordtype">bool</span> sem_xo=<span class="keyword">true</span>){params.stagewise_xo=sem_xo;};</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            </div>
-<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#ad5d38ce69057c328bef13342b10dc6e1">  191</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="../../db/dff/classFT_1_1Feat.html#ad5d38ce69057c328bef13342b10dc6e1">set_softmax_norm</a>(<span class="keywordtype">bool</span> sftmx=<span class="keyword">true</span>){params.softmax_norm=sftmx;};</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
-<div class="line"><a name="l00193"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#ad5f21e4a64e86a8d10b4b1d2862f56e5">  193</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="../../db/dff/classFT_1_1Feat.html#ad5f21e4a64e86a8d10b4b1d2862f56e5">set_print_pop</a>(<span class="keywordtype">int</span> pp){ print_pop=pp; };</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            <span class="comment">/*                                                      </span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="comment">             * getting functions</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="comment">             */</span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            <span class="keywordtype">int</span> get_pop_size();</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            </div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            <span class="keywordtype">int</span> get_generations();</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            </div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            <span class="keywordtype">string</span> get_ml();</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            </div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            <span class="keywordtype">bool</span> get_classification();</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            </div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            <span class="keywordtype">int</span> get_max_stall();</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            </div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;            vector&lt;char&gt; get_otypes();</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;            </div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;            <span class="keywordtype">int</span> get_verbosity();</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            </div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            <span class="keywordtype">int</span> get_max_depth();</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            </div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            <span class="keywordtype">float</span> get_cross_rate();</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            </div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            <span class="keywordtype">int</span> get_max_size();</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            </div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            <span class="keywordtype">int</span> get_max_dim();</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            </div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            <span class="keywordtype">bool</span> get_erc();</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;           </div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            <span class="keywordtype">string</span> get_logfile();</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            <span class="keywordtype">int</span> get_num_features();</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;            </div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;            <span class="keywordtype">bool</span> get_shuffle();</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            </div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;            <span class="keywordtype">float</span> get_split();</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            </div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            <span class="comment">/* void add_function(unique_ptr&lt;Node&gt; N){ params.functions.push_back(N-&gt;clone()); } */</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            </div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            vector&lt;char&gt; get_dtypes();</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            <span class="keywordtype">float</span> get_feedback();</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;           </div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            <span class="keywordtype">string</span> get_representation();</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            <span class="keywordtype">string</span> get_model();</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            <span class="keywordtype">int</span> get_n_params();</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            <span class="keywordtype">int</span> get_dim();</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            <span class="keywordtype">int</span> get_complexity();</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            <span class="keywordtype">string</span> get_eqns(<span class="keywordtype">bool</span> front=<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;           </div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            ArrayXf get_coefs();</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;            <span class="keywordtype">int</span> get_n_nodes();</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            std::map&lt;string, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt;&gt;&gt; get_Z(<span class="keywordtype">string</span> s, </div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                    <span class="keywordtype">int</span> * idx, <span class="keywordtype">int</span> idx_size);</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;            ~<a class="code" href="../../db/dff/classFT_1_1Feat.html">Feat</a>();</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                        </div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;            <span class="keywordtype">void</span> fit(MatrixXf&amp; X,</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                     VectorXf&amp; y,</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                     std::map&lt;<span class="keywordtype">string</span>, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt; &gt; &gt; Z = </div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                            std::map&lt;<span class="keywordtype">string</span>, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt; &gt; &gt;());</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                            </div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;            <span class="keywordtype">void</span> run_generation(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> g,</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                            vector&lt;size_t&gt; survivors,</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                            <a class="code" href="../../d4/d10/classFT_1_1Dat_1_1DataRef.html">DataRef</a> &amp;d,</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                            std::ofstream &amp;log,</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                            <span class="keywordtype">float</span> percentage,</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                            <span class="keywordtype">unsigned</span>&amp; stall_count);</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                     </div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;            <span class="keywordtype">void</span> fit(<span class="keywordtype">float</span> * X,<span class="keywordtype">int</span> rowsX,<span class="keywordtype">int</span> colsX, <span class="keywordtype">float</span> * Y,<span class="keywordtype">int</span> lenY);</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;            <span class="keywordtype">void</span> fit_with_z(<span class="keywordtype">float</span> * X, <span class="keywordtype">int</span> rowsX, <span class="keywordtype">int</span> colsX, <span class="keywordtype">float</span> * Y, <span class="keywordtype">int</span> lenY, <span class="keywordtype">string</span> s, </div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                            <span class="keywordtype">int</span> * idx, <span class="keywordtype">int</span> idx_size);</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;           </div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;            VectorXf predict(MatrixXf&amp; X,</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                             std::map&lt;<span class="keywordtype">string</span>, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt; &gt; &gt; Z = </div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                                std::map&lt;<span class="keywordtype">string</span>, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt; &gt; &gt;());  </div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;            </div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;            shared_ptr&lt;CLabels&gt; predict_labels(MatrixXf&amp; X,</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                             std::map&lt;<span class="keywordtype">string</span>, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt; &gt; &gt; Z = </div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                              std::map&lt;<span class="keywordtype">string</span>, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt; &gt; &gt;());  </div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;            ArrayXXf predict_proba(MatrixXf&amp; X,</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                             std::map&lt;<span class="keywordtype">string</span>, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt; &gt; &gt; Z = </div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                              std::map&lt;<span class="keywordtype">string</span>, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt; &gt; &gt;());  </div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            </div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;            ArrayXXf predict_proba(<span class="keywordtype">float</span> * X, <span class="keywordtype">int</span> rows_x, <span class="keywordtype">int</span> cols_x);</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    </div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;            VectorXf predict_with_z(<span class="keywordtype">float</span> * X, <span class="keywordtype">int</span> rowsX,<span class="keywordtype">int</span> colsX, </div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                                    <span class="keywordtype">string</span> s, <span class="keywordtype">int</span> * idx, <span class="keywordtype">int</span> idx_size);</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            ArrayXXf predict_proba_with_z(<span class="keywordtype">float</span> * X, <span class="keywordtype">int</span> rowsX,<span class="keywordtype">int</span> colsX, </div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                                    <span class="keywordtype">string</span> s, <span class="keywordtype">int</span> * idx, <span class="keywordtype">int</span> idx_size);  </div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;            VectorXf predict(<span class="keywordtype">float</span> * X, <span class="keywordtype">int</span> rowsX, <span class="keywordtype">int</span> colsX);      </div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;            </div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;            MatrixXf transform(MatrixXf&amp; X,</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                               std::map&lt;<span class="keywordtype">string</span>, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt; &gt; &gt; Z = </div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                                 std::map&lt;<span class="keywordtype">string</span>, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt; &gt; &gt;(),</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                               <a class="code" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> *ind = 0);</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;            </div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;            MatrixXf transform(<span class="keywordtype">float</span> * X,  <span class="keywordtype">int</span> rows_x, <span class="keywordtype">int</span> cols_x);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            <span class="keywordtype">void</span> set_lr(<span class="keywordtype">float</span> lr);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            <span class="keywordtype">void</span> set_batch_size(<span class="keywordtype">int</span> bs);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;             </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            <span class="keywordtype">void</span> set_n_threads(<span class="keywordtype">unsigned</span> t);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            </div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            <span class="keywordtype">void</span> set_max_time(<span class="keywordtype">int</span> time);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            </div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            <span class="keywordtype">void</span> set_use_batch();</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            </div>
+<div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#aa02213ced95b40bb0f0ba9e960a0b899">  187</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="../../db/dff/classFT_1_1Feat.html#aa02213ced95b40bb0f0ba9e960a0b899">set_residual_xo</a>(<span class="keywordtype">bool</span> res_xo=<span class="keyword">true</span>){params.residual_xo=res_xo;};</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            </div>
+<div class="line"><a name="l00190"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#adfdfeab2e7528beca68db01588823a10">  190</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="../../db/dff/classFT_1_1Feat.html#adfdfeab2e7528beca68db01588823a10">set_stagewise_xo</a>(<span class="keywordtype">bool</span> sem_xo=<span class="keyword">true</span>){params.stagewise_xo=sem_xo;};</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            </div>
+<div class="line"><a name="l00193"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#ad5d38ce69057c328bef13342b10dc6e1">  193</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="../../db/dff/classFT_1_1Feat.html#ad5d38ce69057c328bef13342b10dc6e1">set_softmax_norm</a>(<span class="keywordtype">bool</span> sftmx=<span class="keyword">true</span>){params.softmax_norm=sftmx;};</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#ad5f21e4a64e86a8d10b4b1d2862f56e5">  195</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="../../db/dff/classFT_1_1Feat.html#ad5f21e4a64e86a8d10b4b1d2862f56e5">set_print_pop</a>(<span class="keywordtype">int</span> pp){ print_pop=pp; };</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            <span class="comment">/*                                                      </span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="comment">             * getting functions</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="comment">             */</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            <span class="keywordtype">int</span> get_pop_size();</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            </div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            <span class="keywordtype">int</span> get_generations();</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            </div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            <span class="keywordtype">string</span> get_ml();</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            </div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            <span class="keywordtype">bool</span> get_classification();</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            </div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;            <span class="keywordtype">int</span> get_max_stall();</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;            </div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            vector&lt;char&gt; get_otypes();</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;            </div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            <span class="keywordtype">int</span> get_verbosity();</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            </div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            <span class="keywordtype">int</span> get_max_depth();</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            </div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            <span class="keywordtype">float</span> get_cross_rate();</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            </div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            <span class="keywordtype">int</span> get_max_size();</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            </div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;            <span class="keywordtype">int</span> get_max_dim();</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            </div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            <span class="keywordtype">bool</span> get_erc();</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;           </div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            <span class="keywordtype">string</span> get_logfile();</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            <span class="keywordtype">int</span> get_num_features();</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;            </div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            <span class="keywordtype">bool</span> get_shuffle();</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;            </div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            <span class="keywordtype">float</span> get_split();</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            </div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            <span class="comment">/* void add_function(unique_ptr&lt;Node&gt; N){ params.functions.push_back(N-&gt;clone()); } */</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            </div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            vector&lt;char&gt; get_dtypes();</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            <span class="keywordtype">float</span> get_feedback();</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;           </div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            <span class="keywordtype">string</span> get_representation();</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;            <span class="keywordtype">string</span> get_model();</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            <span class="keywordtype">int</span> get_n_params();</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            <span class="keywordtype">int</span> get_dim();</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            <span class="keywordtype">int</span> get_complexity();</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            <span class="keywordtype">string</span> get_eqns(<span class="keywordtype">bool</span> front=<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;           </div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            ArrayXf get_coefs();</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            <span class="keywordtype">int</span> get_n_nodes();</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;            std::map&lt;string, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt;&gt;&gt; get_Z(<span class="keywordtype">string</span> s, </div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                    <span class="keywordtype">int</span> * idx, <span class="keywordtype">int</span> idx_size);</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;            ~<a class="code" href="../../db/dff/classFT_1_1Feat.html">Feat</a>();</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                        </div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;            <span class="keywordtype">void</span> fit(MatrixXf&amp; X,</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                     VectorXf&amp; y,</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                     std::map&lt;<span class="keywordtype">string</span>, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt; &gt; &gt; Z = </div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                            std::map&lt;<span class="keywordtype">string</span>, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt; &gt; &gt;());</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                            </div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;            <span class="keywordtype">void</span> run_generation(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> g,</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                            vector&lt;size_t&gt; survivors,</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                            <a class="code" href="../../d4/d10/classFT_1_1Dat_1_1DataRef.html">DataRef</a> &amp;d,</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                            std::ofstream &amp;log,</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                            <span class="keywordtype">float</span> percentage,</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                            <span class="keywordtype">unsigned</span>&amp; stall_count);</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                     </div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;            <span class="keywordtype">void</span> fit(<span class="keywordtype">float</span> * X,<span class="keywordtype">int</span> rowsX,<span class="keywordtype">int</span> colsX, <span class="keywordtype">float</span> * Y,<span class="keywordtype">int</span> lenY);</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;            <span class="keywordtype">void</span> fit_with_z(<span class="keywordtype">float</span> * X, <span class="keywordtype">int</span> rowsX, <span class="keywordtype">int</span> colsX, <span class="keywordtype">float</span> * Y, <span class="keywordtype">int</span> lenY, <span class="keywordtype">string</span> s, </div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                            <span class="keywordtype">int</span> * idx, <span class="keywordtype">int</span> idx_size);</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;           </div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;            VectorXf predict(MatrixXf&amp; X,</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                             std::map&lt;<span class="keywordtype">string</span>, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt; &gt; &gt; Z = </div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                                std::map&lt;<span class="keywordtype">string</span>, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt; &gt; &gt;());  </div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;            </div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;            shared_ptr&lt;CLabels&gt; predict_labels(MatrixXf&amp; X,</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                             std::map&lt;<span class="keywordtype">string</span>, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt; &gt; &gt; Z = </div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                              std::map&lt;<span class="keywordtype">string</span>, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt; &gt; &gt;());  </div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;            ArrayXXf predict_proba(MatrixXf&amp; X,</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                             std::map&lt;<span class="keywordtype">string</span>, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt; &gt; &gt; Z = </div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                              std::map&lt;<span class="keywordtype">string</span>, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt; &gt; &gt;());  </div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;            </div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;            ArrayXXf predict_proba(<span class="keywordtype">float</span> * X, <span class="keywordtype">int</span> rows_x, <span class="keywordtype">int</span> cols_x);</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    </div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            VectorXf predict_with_z(<span class="keywordtype">float</span> * X, <span class="keywordtype">int</span> rowsX,<span class="keywordtype">int</span> colsX, </div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                                    <span class="keywordtype">string</span> s, <span class="keywordtype">int</span> * idx, <span class="keywordtype">int</span> idx_size);</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;            ArrayXXf predict_proba_with_z(<span class="keywordtype">float</span> * X, <span class="keywordtype">int</span> rowsX,<span class="keywordtype">int</span> colsX, </div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                                    <span class="keywordtype">string</span> s, <span class="keywordtype">int</span> * idx, <span class="keywordtype">int</span> idx_size);  </div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;            VectorXf predict(<span class="keywordtype">float</span> * X, <span class="keywordtype">int</span> rowsX, <span class="keywordtype">int</span> colsX);      </div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;            </div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;            MatrixXf transform(MatrixXf&amp; X,</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                               std::map&lt;<span class="keywordtype">string</span>, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt; &gt; &gt; Z = </div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                                 std::map&lt;<span class="keywordtype">string</span>, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt; &gt; &gt;(),</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                               <a class="code" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> *ind = 0);</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            </div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            MatrixXf transform_with_z(<span class="keywordtype">float</span> * X, <span class="keywordtype">int</span> rowsX, <span class="keywordtype">int</span> colsX, <span class="keywordtype">string</span> s, </div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                                      <span class="keywordtype">int</span> * idx, <span class="keywordtype">int</span> idx_size);</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            </div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;            VectorXf fit_predict(MatrixXf&amp; X,</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                                 VectorXf&amp; y,</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                                 std::map&lt;<span class="keywordtype">string</span>, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt; &gt; &gt; Z = </div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                                 std::map&lt;<span class="keywordtype">string</span>, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt; &gt; &gt;());</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                                 </div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;            VectorXf fit_predict(<span class="keywordtype">float</span> * X, <span class="keywordtype">int</span> rows_x, <span class="keywordtype">int</span> cols_x, <span class="keywordtype">float</span> * Y, <span class="keywordtype">int</span> len_y);</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;            </div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;            MatrixXf fit_transform(MatrixXf&amp; X,</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;                                   VectorXf&amp; y,</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;                                   std::map&lt;<span class="keywordtype">string</span>, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt; &gt; &gt; Z = </div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                                   std::map&lt;<span class="keywordtype">string</span>, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt; &gt; &gt;());</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;                                   </div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;            MatrixXf fit_transform(<span class="keywordtype">float</span> * X, <span class="keywordtype">int</span> rows_x, <span class="keywordtype">int</span> cols_x, <span class="keywordtype">float</span> * Y, <span class="keywordtype">int</span> len_y);</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                  </div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;            <span class="keywordtype">float</span> score(MatrixXf&amp; X, <span class="keyword">const</span> VectorXf&amp; y,</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;                     std::map&lt;<span class="keywordtype">string</span>, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt; &gt; &gt; Z =</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                    std::map&lt;<span class="keywordtype">string</span>, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt; &gt; &gt;()); </div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;            <span class="keywordtype">void</span> print_population();</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;            </div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;            vector&lt;int&gt; get_gens();</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;            </div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;            vector&lt;float&gt; get_timers();</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;            </div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;            vector&lt;float&gt; get_best_scores();</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;            </div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;            vector&lt;float&gt; get_best_score_vals();</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;            </div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            vector&lt;float&gt; get_med_scores();</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;            </div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;            vector&lt;float&gt; get_med_loss_vals();</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;            </div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;            vector&lt;unsigned&gt; get_med_size();</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;            </div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;            vector&lt;unsigned&gt; get_med_complexities();</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;            </div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;            vector&lt;unsigned&gt; get_med_num_params();</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;            </div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;            vector&lt;unsigned&gt; get_med_dim();</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;            </div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;            <span class="comment">// Parameters</span></div>
-<div class="line"><a name="l00401"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#abb9d09572b0bb378a16b810a6dcc3491">  401</a></span>&#160;            <a class="code" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> <a class="code" href="../../db/dff/classFT_1_1Feat.html#abb9d09572b0bb378a16b810a6dcc3491">params</a>;  </div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;</div>
-<div class="line"><a name="l00403"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#ab43c978eea3e9942278c5b8ad49f0ba8">  403</a></span>&#160;            MatrixXf <a class="code" href="../../db/dff/classFT_1_1Feat.html#ab43c978eea3e9942278c5b8ad49f0ba8">F</a>;        </div>
-<div class="line"><a name="l00404"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#adf04c2504199f7edb5c4800a4e320dd3">  404</a></span>&#160;            MatrixXf <a class="code" href="../../db/dff/classFT_1_1Feat.html#adf04c2504199f7edb5c4800a4e320dd3">F_v</a>;      </div>
-<div class="line"><a name="l00405"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#af5be17d09edb530c180bc20ed0a98326">  405</a></span>&#160;            <a class="code" href="../../db/db7/classFT_1_1Util_1_1Timer.html">Timer</a> <a class="code" href="../../db/dff/classFT_1_1Feat.html#af5be17d09edb530c180bc20ed0a98326">timer</a>;       </div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;            <span class="comment">// subclasses for main steps of the evolutionary routine</span></div>
-<div class="line"><a name="l00407"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#ab6978a1d4421f56a70cf148b0a5624fd">  407</a></span>&#160;            shared_ptr&lt;Population&gt; <a class="code" href="../../db/dff/classFT_1_1Feat.html#ab6978a1d4421f56a70cf148b0a5624fd">p_pop</a>;           </div>
-<div class="line"><a name="l00408"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#aad81cf1008b7f98d360579d23a4f5e4f">  408</a></span>&#160;            shared_ptr&lt;Selection&gt; <a class="code" href="../../db/dff/classFT_1_1Feat.html#aad81cf1008b7f98d360579d23a4f5e4f">p_sel</a>;            </div>
-<div class="line"><a name="l00409"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#adc7312c00563ce4cd8b68b02fb87a99b">  409</a></span>&#160;            shared_ptr&lt;Evaluation&gt; <a class="code" href="../../db/dff/classFT_1_1Feat.html#adc7312c00563ce4cd8b68b02fb87a99b">p_eval</a>;          </div>
-<div class="line"><a name="l00410"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#abcdbdd9eb915979a3cbca8990e56b49f">  410</a></span>&#160;            shared_ptr&lt;Variation&gt; <a class="code" href="../../db/dff/classFT_1_1Feat.html#abcdbdd9eb915979a3cbca8990e56b49f">p_variation</a>;      </div>
-<div class="line"><a name="l00411"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#ab13338a75e9ea96a9db3336741a3b971">  411</a></span>&#160;            shared_ptr&lt;Selection&gt; <a class="code" href="../../db/dff/classFT_1_1Feat.html#ab13338a75e9ea96a9db3336741a3b971">p_surv</a>;           </div>
-<div class="line"><a name="l00412"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#a431fb5909d6e7c8ddd3f5d28ced11d6c">  412</a></span>&#160;            shared_ptr&lt;ML&gt; <a class="code" href="../../db/dff/classFT_1_1Feat.html#a431fb5909d6e7c8ddd3f5d28ced11d6c">p_ml</a>;    </div>
-<div class="line"><a name="l00413"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#aec8126568742c11379cc62fb7a4672c8">  413</a></span>&#160;            <a class="code" href="../../d7/d9f/structFT_1_1Pop_1_1Archive.html">Archive</a> <a class="code" href="../../db/dff/classFT_1_1Feat.html#aec8126568742c11379cc62fb7a4672c8">arch</a>;          </div>
-<div class="line"><a name="l00414"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#a4f8ecac48492e069570784ce200b3c90">  414</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="../../db/dff/classFT_1_1Feat.html#a4f8ecac48492e069570784ce200b3c90">use_arch</a>;         </div>
-<div class="line"><a name="l00415"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#aa46144d8615e6d422246e6a7f705bea6">  415</a></span>&#160;            <span class="keywordtype">string</span> <a class="code" href="../../db/dff/classFT_1_1Feat.html#aa46144d8615e6d422246e6a7f705bea6">survival</a>;                        </div>
-<div class="line"><a name="l00416"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#afcfa4779605e55727c8217bb300d40e4">  416</a></span>&#160;            <a class="code" href="../../dd/d51/structFT_1_1Util_1_1Normalizer.html">Normalizer</a> <a class="code" href="../../db/dff/classFT_1_1Feat.html#afcfa4779605e55727c8217bb300d40e4">N</a>;                           </div>
-<div class="line"><a name="l00417"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#aa1d94c8c67ddc6e56a24e80970e8b6ce">  417</a></span>&#160;            <span class="keywordtype">string</span> <a class="code" href="../../db/dff/classFT_1_1Feat.html#aa1d94c8c67ddc6e56a24e80970e8b6ce">scorer</a>;                          </div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;            <span class="comment">// performance tracking</span></div>
-<div class="line"><a name="l00419"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#a91d55fcefc3c57eb0bb922a47233ed12">  419</a></span>&#160;            <span class="keywordtype">float</span> <a class="code" href="../../db/dff/classFT_1_1Feat.html#a91d55fcefc3c57eb0bb922a47233ed12">best_score</a>;                      </div>
-<div class="line"><a name="l00420"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#acdec80b5a74242d0c78498d4b9771fbd">  420</a></span>&#160;            <span class="keywordtype">float</span> <a class="code" href="../../db/dff/classFT_1_1Feat.html#acdec80b5a74242d0c78498d4b9771fbd">best_score_v</a>;                    </div>
-<div class="line"><a name="l00421"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#aea5c0f8b3eeb79a9684cc395e4a1ebf5">  421</a></span>&#160;            <span class="keywordtype">float</span> <a class="code" href="../../db/dff/classFT_1_1Feat.html#aea5c0f8b3eeb79a9684cc395e4a1ebf5">best_med_score</a>;  </div>
-<div class="line"><a name="l00422"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#a628667fc9e695d918c5b198e49f2dcc1">  422</a></span>&#160;            <span class="keywordtype">float</span> <a class="code" href="../../db/dff/classFT_1_1Feat.html#a628667fc9e695d918c5b198e49f2dcc1">med_loss_v</a>;      </div>
-<div class="line"><a name="l00423"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#aa3ecfa399e827a3e633a40780c66c600">  423</a></span>&#160;            <span class="keywordtype">string</span> <a class="code" href="../../db/dff/classFT_1_1Feat.html#aa3ecfa399e827a3e633a40780c66c600">str_dim</a>; </div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;            <span class="keywordtype">void</span> update_best(<span class="keyword">const</span> <a class="code" href="../../d4/d10/classFT_1_1Dat_1_1DataRef.html">DataRef</a>&amp; d, <span class="keywordtype">bool</span> val=<span class="keyword">false</span>);    </div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;            </div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;            <span class="keywordtype">void</span> calculate_stats();</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;            <span class="keywordtype">void</span> print_stats(std::ofstream&amp; log,</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;                             <span class="keywordtype">float</span> fraction);      </div>
-<div class="line"><a name="l00432"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#a7cf6d268c2b010ebcc10ad95cac81831">  432</a></span>&#160;            <a class="code" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> <a class="code" href="../../db/dff/classFT_1_1Feat.html#a7cf6d268c2b010ebcc10ad95cac81831">best_ind</a>;                    </div>
-<div class="line"><a name="l00433"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#aba080b7328bd2531c64c3e1fb742e448">  433</a></span>&#160;            <span class="keywordtype">string</span> <a class="code" href="../../db/dff/classFT_1_1Feat.html#aba080b7328bd2531c64c3e1fb742e448">logfile</a>;                         </div>
-<div class="line"><a name="l00434"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#ae3dbfaf2093cfca7a19294317fdb64bf">  434</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="../../db/dff/classFT_1_1Feat.html#ae3dbfaf2093cfca7a19294317fdb64bf">print_pop</a>;  </div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;            <span class="comment">// gets weights via univariate initial models</span></div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;            vector&lt;float&gt; univariate_initial_model(<a class="code" href="../../d4/d10/classFT_1_1Dat_1_1DataRef.html">DataRef</a> &amp;d, <span class="keywordtype">int</span> n_feats);</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;            <span class="keywordtype">void</span> initial_model(<a class="code" href="../../d4/d10/classFT_1_1Dat_1_1DataRef.html">DataRef</a> &amp;d);</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;            <span class="keywordtype">void</span> final_model(<a class="code" href="../../d4/d10/classFT_1_1Dat_1_1DataRef.html">DataRef</a>&amp; d);</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;            <span class="keywordtype">void</span> update_stall_count(<span class="keywordtype">unsigned</span>&amp; stall_count, MatrixXf&amp; F, </div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;                    <span class="keyword">const</span> <a class="code" href="../../d4/d10/classFT_1_1Dat_1_1DataRef.html">DataRef</a>&amp; d);</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;            </div>
-<div class="line"><a name="l00446"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#a96d29df09000c7e5da012fefcbec724b">  446</a></span>&#160;            <a class="code" href="../../d8/dd3/structFT_1_1Util_1_1Log__Stats.html">Log_Stats</a> <a class="code" href="../../db/dff/classFT_1_1Feat.html#a96d29df09000c7e5da012fefcbec724b">stats</a>;</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    };</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;}</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classFT_1_1Feat_html_aad81cf1008b7f98d360579d23a4f5e4f"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#aad81cf1008b7f98d360579d23a4f5e4f">FT::Feat::p_sel</a></div><div class="ttdeci">shared_ptr&lt; Selection &gt; p_sel</div><div class="ttdoc">selection algorithm </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00408">feat.h:408</a></div></div>
-<div class="ttc" id="classFT_1_1Feat_html_af5be17d09edb530c180bc20ed0a98326"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#af5be17d09edb530c180bc20ed0a98326">FT::Feat::timer</a></div><div class="ttdeci">Timer timer</div><div class="ttdoc">start time of training </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00405">feat.h:405</a></div></div>
-<div class="ttc" id="classFT_1_1Feat_html_aec8126568742c11379cc62fb7a4672c8"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#aec8126568742c11379cc62fb7a4672c8">FT::Feat::arch</a></div><div class="ttdeci">Archive arch</div><div class="ttdoc">pareto front archive </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00413">feat.h:413</a></div></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;            MatrixXf transform(<span class="keywordtype">float</span> * X,  <span class="keywordtype">int</span> rows_x, <span class="keywordtype">int</span> cols_x);</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            </div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            MatrixXf transform_with_z(<span class="keywordtype">float</span> * X, <span class="keywordtype">int</span> rowsX, <span class="keywordtype">int</span> colsX, <span class="keywordtype">string</span> s, </div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                                      <span class="keywordtype">int</span> * idx, <span class="keywordtype">int</span> idx_size);</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;            </div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;            VectorXf fit_predict(MatrixXf&amp; X,</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                                 VectorXf&amp; y,</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                                 std::map&lt;<span class="keywordtype">string</span>, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt; &gt; &gt; Z = </div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                                 std::map&lt;<span class="keywordtype">string</span>, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt; &gt; &gt;());</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;                                 </div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;            VectorXf fit_predict(<span class="keywordtype">float</span> * X, <span class="keywordtype">int</span> rows_x, <span class="keywordtype">int</span> cols_x, <span class="keywordtype">float</span> * Y, <span class="keywordtype">int</span> len_y);</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;            </div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;            MatrixXf fit_transform(MatrixXf&amp; X,</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                                   VectorXf&amp; y,</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;                                   std::map&lt;<span class="keywordtype">string</span>, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt; &gt; &gt; Z = </div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                                   std::map&lt;<span class="keywordtype">string</span>, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt; &gt; &gt;());</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                                   </div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;            MatrixXf fit_transform(<span class="keywordtype">float</span> * X, <span class="keywordtype">int</span> rows_x, <span class="keywordtype">int</span> cols_x, <span class="keywordtype">float</span> * Y, <span class="keywordtype">int</span> len_y);</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                  </div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;            <span class="keywordtype">float</span> score(MatrixXf&amp; X, <span class="keyword">const</span> VectorXf&amp; y,</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                     std::map&lt;<span class="keywordtype">string</span>, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt; &gt; &gt; Z =</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                    std::map&lt;<span class="keywordtype">string</span>, std::pair&lt;vector&lt;ArrayXf&gt;, vector&lt;ArrayXf&gt; &gt; &gt;()); </div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;            <span class="keywordtype">void</span> print_population();</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;            </div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;            vector&lt;int&gt; get_gens();</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;            </div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;            vector&lt;float&gt; get_timers();</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;            </div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;            vector&lt;float&gt; get_best_scores();</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;            </div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            vector&lt;float&gt; get_best_score_vals();</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            </div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;            vector&lt;float&gt; get_med_scores();</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;            </div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;            vector&lt;float&gt; get_med_loss_vals();</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;            </div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;            vector&lt;unsigned&gt; get_med_size();</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;            </div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;            vector&lt;unsigned&gt; get_med_complexities();</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;            </div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;            vector&lt;unsigned&gt; get_med_num_params();</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;            </div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;            vector&lt;unsigned&gt; get_med_dim();</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;            </div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;            <span class="comment">// Parameters</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#abb9d09572b0bb378a16b810a6dcc3491">  403</a></span>&#160;            <a class="code" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> <a class="code" href="../../db/dff/classFT_1_1Feat.html#abb9d09572b0bb378a16b810a6dcc3491">params</a>;  </div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;</div>
+<div class="line"><a name="l00405"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#ab43c978eea3e9942278c5b8ad49f0ba8">  405</a></span>&#160;            MatrixXf <a class="code" href="../../db/dff/classFT_1_1Feat.html#ab43c978eea3e9942278c5b8ad49f0ba8">F</a>;        </div>
+<div class="line"><a name="l00406"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#adf04c2504199f7edb5c4800a4e320dd3">  406</a></span>&#160;            MatrixXf <a class="code" href="../../db/dff/classFT_1_1Feat.html#adf04c2504199f7edb5c4800a4e320dd3">F_v</a>;      </div>
+<div class="line"><a name="l00407"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#af5be17d09edb530c180bc20ed0a98326">  407</a></span>&#160;            <a class="code" href="../../db/db7/classFT_1_1Util_1_1Timer.html">Timer</a> <a class="code" href="../../db/dff/classFT_1_1Feat.html#af5be17d09edb530c180bc20ed0a98326">timer</a>;       </div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;            <span class="comment">// subclasses for main steps of the evolutionary routine</span></div>
+<div class="line"><a name="l00409"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#ab6978a1d4421f56a70cf148b0a5624fd">  409</a></span>&#160;            shared_ptr&lt;Population&gt; <a class="code" href="../../db/dff/classFT_1_1Feat.html#ab6978a1d4421f56a70cf148b0a5624fd">p_pop</a>;           </div>
+<div class="line"><a name="l00410"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#aad81cf1008b7f98d360579d23a4f5e4f">  410</a></span>&#160;            shared_ptr&lt;Selection&gt; <a class="code" href="../../db/dff/classFT_1_1Feat.html#aad81cf1008b7f98d360579d23a4f5e4f">p_sel</a>;            </div>
+<div class="line"><a name="l00411"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#adc7312c00563ce4cd8b68b02fb87a99b">  411</a></span>&#160;            shared_ptr&lt;Evaluation&gt; <a class="code" href="../../db/dff/classFT_1_1Feat.html#adc7312c00563ce4cd8b68b02fb87a99b">p_eval</a>;          </div>
+<div class="line"><a name="l00412"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#abcdbdd9eb915979a3cbca8990e56b49f">  412</a></span>&#160;            shared_ptr&lt;Variation&gt; <a class="code" href="../../db/dff/classFT_1_1Feat.html#abcdbdd9eb915979a3cbca8990e56b49f">p_variation</a>;      </div>
+<div class="line"><a name="l00413"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#ab13338a75e9ea96a9db3336741a3b971">  413</a></span>&#160;            shared_ptr&lt;Selection&gt; <a class="code" href="../../db/dff/classFT_1_1Feat.html#ab13338a75e9ea96a9db3336741a3b971">p_surv</a>;           </div>
+<div class="line"><a name="l00414"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#a431fb5909d6e7c8ddd3f5d28ced11d6c">  414</a></span>&#160;            shared_ptr&lt;ML&gt; <a class="code" href="../../db/dff/classFT_1_1Feat.html#a431fb5909d6e7c8ddd3f5d28ced11d6c">p_ml</a>;    </div>
+<div class="line"><a name="l00415"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#aec8126568742c11379cc62fb7a4672c8">  415</a></span>&#160;            <a class="code" href="../../d7/d9f/structFT_1_1Pop_1_1Archive.html">Archive</a> <a class="code" href="../../db/dff/classFT_1_1Feat.html#aec8126568742c11379cc62fb7a4672c8">arch</a>;          </div>
+<div class="line"><a name="l00416"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#a4f8ecac48492e069570784ce200b3c90">  416</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="../../db/dff/classFT_1_1Feat.html#a4f8ecac48492e069570784ce200b3c90">use_arch</a>;         </div>
+<div class="line"><a name="l00417"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#aa46144d8615e6d422246e6a7f705bea6">  417</a></span>&#160;            <span class="keywordtype">string</span> <a class="code" href="../../db/dff/classFT_1_1Feat.html#aa46144d8615e6d422246e6a7f705bea6">survival</a>;                        </div>
+<div class="line"><a name="l00418"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#afcfa4779605e55727c8217bb300d40e4">  418</a></span>&#160;            <a class="code" href="../../dd/d51/structFT_1_1Util_1_1Normalizer.html">Normalizer</a> <a class="code" href="../../db/dff/classFT_1_1Feat.html#afcfa4779605e55727c8217bb300d40e4">N</a>;                           </div>
+<div class="line"><a name="l00419"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#aa1d94c8c67ddc6e56a24e80970e8b6ce">  419</a></span>&#160;            <span class="keywordtype">string</span> <a class="code" href="../../db/dff/classFT_1_1Feat.html#aa1d94c8c67ddc6e56a24e80970e8b6ce">scorer</a>;                          </div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;            <span class="comment">// performance tracking</span></div>
+<div class="line"><a name="l00421"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#a91d55fcefc3c57eb0bb922a47233ed12">  421</a></span>&#160;            <span class="keywordtype">float</span> <a class="code" href="../../db/dff/classFT_1_1Feat.html#a91d55fcefc3c57eb0bb922a47233ed12">best_score</a>;                      </div>
+<div class="line"><a name="l00422"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#acdec80b5a74242d0c78498d4b9771fbd">  422</a></span>&#160;            <span class="keywordtype">float</span> <a class="code" href="../../db/dff/classFT_1_1Feat.html#acdec80b5a74242d0c78498d4b9771fbd">best_score_v</a>;                    </div>
+<div class="line"><a name="l00423"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#aea5c0f8b3eeb79a9684cc395e4a1ebf5">  423</a></span>&#160;            <span class="keywordtype">float</span> <a class="code" href="../../db/dff/classFT_1_1Feat.html#aea5c0f8b3eeb79a9684cc395e4a1ebf5">best_med_score</a>;  </div>
+<div class="line"><a name="l00424"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#a628667fc9e695d918c5b198e49f2dcc1">  424</a></span>&#160;            <span class="keywordtype">float</span> <a class="code" href="../../db/dff/classFT_1_1Feat.html#a628667fc9e695d918c5b198e49f2dcc1">med_loss_v</a>;      </div>
+<div class="line"><a name="l00425"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#aa3ecfa399e827a3e633a40780c66c600">  425</a></span>&#160;            <span class="keywordtype">string</span> <a class="code" href="../../db/dff/classFT_1_1Feat.html#aa3ecfa399e827a3e633a40780c66c600">str_dim</a>; </div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;            <span class="keywordtype">void</span> update_best(<span class="keyword">const</span> <a class="code" href="../../d4/d10/classFT_1_1Dat_1_1DataRef.html">DataRef</a>&amp; d, <span class="keywordtype">bool</span> val=<span class="keyword">false</span>);    </div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;            </div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;            <span class="keywordtype">void</span> calculate_stats();</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;            <span class="keywordtype">void</span> print_stats(std::ofstream&amp; log,</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;                             <span class="keywordtype">float</span> fraction);      </div>
+<div class="line"><a name="l00434"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#a7cf6d268c2b010ebcc10ad95cac81831">  434</a></span>&#160;            <a class="code" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> <a class="code" href="../../db/dff/classFT_1_1Feat.html#a7cf6d268c2b010ebcc10ad95cac81831">best_ind</a>;                    </div>
+<div class="line"><a name="l00435"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#aba080b7328bd2531c64c3e1fb742e448">  435</a></span>&#160;            <span class="keywordtype">string</span> <a class="code" href="../../db/dff/classFT_1_1Feat.html#aba080b7328bd2531c64c3e1fb742e448">logfile</a>;                         </div>
+<div class="line"><a name="l00436"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#ae3dbfaf2093cfca7a19294317fdb64bf">  436</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="../../db/dff/classFT_1_1Feat.html#ae3dbfaf2093cfca7a19294317fdb64bf">print_pop</a>;  </div>
+<div class="line"><a name="l00437"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#a744f9dff6964d740576ec766d31c4e80">  437</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="../../db/dff/classFT_1_1Feat.html#a744f9dff6964d740576ec766d31c4e80">val_from_arch</a>; </div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;            <span class="comment">// gets weights via univariate initial models</span></div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;            vector&lt;float&gt; univariate_initial_model(<a class="code" href="../../d4/d10/classFT_1_1Dat_1_1DataRef.html">DataRef</a> &amp;d, <span class="keywordtype">int</span> n_feats);</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;            <span class="keywordtype">void</span> initial_model(<a class="code" href="../../d4/d10/classFT_1_1Dat_1_1DataRef.html">DataRef</a> &amp;d);</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;            <span class="keywordtype">void</span> final_model(<a class="code" href="../../d4/d10/classFT_1_1Dat_1_1DataRef.html">DataRef</a>&amp; d);</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;            <span class="keywordtype">void</span> update_stall_count(<span class="keywordtype">unsigned</span>&amp; stall_count, MatrixXf&amp; F, </div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;                    <span class="keyword">const</span> <a class="code" href="../../d4/d10/classFT_1_1Dat_1_1DataRef.html">DataRef</a>&amp; d);</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;            </div>
+<div class="line"><a name="l00449"></a><span class="lineno"><a class="line" href="../../db/dff/classFT_1_1Feat.html#a96d29df09000c7e5da012fefcbec724b">  449</a></span>&#160;            <a class="code" href="../../d8/dd3/structFT_1_1Util_1_1Log__Stats.html">Log_Stats</a> <a class="code" href="../../db/dff/classFT_1_1Feat.html#a96d29df09000c7e5da012fefcbec724b">stats</a>;</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    };</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;}</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classFT_1_1Feat_html_aad81cf1008b7f98d360579d23a4f5e4f"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#aad81cf1008b7f98d360579d23a4f5e4f">FT::Feat::p_sel</a></div><div class="ttdeci">shared_ptr&lt; Selection &gt; p_sel</div><div class="ttdoc">selection algorithm </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00410">feat.h:410</a></div></div>
+<div class="ttc" id="classFT_1_1Feat_html_af5be17d09edb530c180bc20ed0a98326"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#af5be17d09edb530c180bc20ed0a98326">FT::Feat::timer</a></div><div class="ttdeci">Timer timer</div><div class="ttdoc">start time of training </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00407">feat.h:407</a></div></div>
+<div class="ttc" id="classFT_1_1Feat_html_aec8126568742c11379cc62fb7a4672c8"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#aec8126568742c11379cc62fb7a4672c8">FT::Feat::arch</a></div><div class="ttdeci">Archive arch</div><div class="ttdoc">pareto front archive </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00415">feat.h:415</a></div></div>
 <div class="ttc" id="classFT_1_1Util_1_1Timer_html"><div class="ttname"><a href="../../db/db7/classFT_1_1Util_1_1Timer.html">FT::Util::Timer</a></div><div class="ttdoc">class for timing things. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d60/utils_8h_source.html#l00100">utils.h:100</a></div></div>
 <div class="ttc" id="structFT_1_1Util_1_1Normalizer_html"><div class="ttname"><a href="../../dd/d51/structFT_1_1Util_1_1Normalizer.html">FT::Util::Normalizer</a></div><div class="ttdoc">normalizes a matrix to unit variance, 0 mean centered. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d60/utils_8h_source.html#l00143">utils.h:143</a></div></div>
 <div class="ttc" id="init_8h_html"><div class="ttname"><a href="../../d8/dc0/init_8h.html">init.h</a></div></div>
-<div class="ttc" id="classFT_1_1Feat_html_a628667fc9e695d918c5b198e49f2dcc1"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#a628667fc9e695d918c5b198e49f2dcc1">FT::Feat::med_loss_v</a></div><div class="ttdeci">float med_loss_v</div><div class="ttdoc">current val loss of median individual </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00422">feat.h:422</a></div></div>
+<div class="ttc" id="classFT_1_1Feat_html_a628667fc9e695d918c5b198e49f2dcc1"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#a628667fc9e695d918c5b198e49f2dcc1">FT::Feat::med_loss_v</a></div><div class="ttdeci">float med_loss_v</div><div class="ttdoc">current val loss of median individual </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00424">feat.h:424</a></div></div>
 <div class="ttc" id="node_8h_html"><div class="ttname"><a href="../../d1/d77/node_8h.html">node.h</a></div></div>
 <div class="ttc" id="classFT_1_1Dat_1_1DataRef_html"><div class="ttname"><a href="../../d4/d10/classFT_1_1Dat_1_1DataRef.html">FT::Dat::DataRef</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/data_8h_source.html#l00065">data.h:65</a></div></div>
-<div class="ttc" id="classFT_1_1Feat_html_a91d55fcefc3c57eb0bb922a47233ed12"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#a91d55fcefc3c57eb0bb922a47233ed12">FT::Feat::best_score</a></div><div class="ttdeci">float best_score</div><div class="ttdoc">current best score </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00419">feat.h:419</a></div></div>
-<div class="ttc" id="classFT_1_1Feat_html_afcfa4779605e55727c8217bb300d40e4"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#afcfa4779605e55727c8217bb300d40e4">FT::Feat::N</a></div><div class="ttdeci">Normalizer N</div><div class="ttdoc">scales training data. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00416">feat.h:416</a></div></div>
-<div class="ttc" id="classFT_1_1Feat_html_aa3ecfa399e827a3e633a40780c66c600"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#aa3ecfa399e827a3e633a40780c66c600">FT::Feat::str_dim</a></div><div class="ttdeci">string str_dim</div><div class="ttdoc">dimensionality as multiple of number of cols </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00423">feat.h:423</a></div></div>
-<div class="ttc" id="classFT_1_1Feat_html_ad5d38ce69057c328bef13342b10dc6e1"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#ad5d38ce69057c328bef13342b10dc6e1">FT::Feat::set_softmax_norm</a></div><div class="ttdeci">void set_softmax_norm(bool sftmx=true)</div><div class="ttdoc">use softmax </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00191">feat.h:191</a></div></div>
+<div class="ttc" id="classFT_1_1Feat_html_a91d55fcefc3c57eb0bb922a47233ed12"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#a91d55fcefc3c57eb0bb922a47233ed12">FT::Feat::best_score</a></div><div class="ttdeci">float best_score</div><div class="ttdoc">current best score </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00421">feat.h:421</a></div></div>
+<div class="ttc" id="classFT_1_1Feat_html_afcfa4779605e55727c8217bb300d40e4"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#afcfa4779605e55727c8217bb300d40e4">FT::Feat::N</a></div><div class="ttdeci">Normalizer N</div><div class="ttdoc">scales training data. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00418">feat.h:418</a></div></div>
+<div class="ttc" id="classFT_1_1Feat_html_aa3ecfa399e827a3e633a40780c66c600"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#aa3ecfa399e827a3e633a40780c66c600">FT::Feat::str_dim</a></div><div class="ttdeci">string str_dim</div><div class="ttdoc">dimensionality as multiple of number of cols </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00425">feat.h:425</a></div></div>
+<div class="ttc" id="classFT_1_1Feat_html_ad5d38ce69057c328bef13342b10dc6e1"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#ad5d38ce69057c328bef13342b10dc6e1">FT::Feat::set_softmax_norm</a></div><div class="ttdeci">void set_softmax_norm(bool sftmx=true)</div><div class="ttdoc">use softmax </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00193">feat.h:193</a></div></div>
 <div class="ttc" id="variation_8h_html"><div class="ttname"><a href="../../d4/d1f/variation_8h.html">variation.h</a></div></div>
 <div class="ttc" id="archive_8h_html"><div class="ttname"><a href="../../d9/d28/archive_8h.html">archive.h</a></div></div>
 <div class="ttc" id="structFT_1_1Pop_1_1Archive_html"><div class="ttname"><a href="../../d7/d9f/structFT_1_1Pop_1_1Archive.html">FT::Pop::Archive</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d28/archive_8h_source.html#l00026">archive.h:26</a></div></div>
 <div class="ttc" id="io_8h_html"><div class="ttname"><a href="../../dc/dac/io_8h.html">io.h</a></div></div>
+<div class="ttc" id="classFT_1_1Feat_html_a744f9dff6964d740576ec766d31c4e80"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#a744f9dff6964d740576ec766d31c4e80">FT::Feat::val_from_arch</a></div><div class="ttdeci">bool val_from_arch</div><div class="ttdoc">model selection only uses Pareto front </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00437">feat.h:437</a></div></div>
 <div class="ttc" id="utils_8h_html"><div class="ttname"><a href="../../d5/d60/utils_8h.html">utils.h</a></div></div>
 <div class="ttc" id="population_8h_html"><div class="ttname"><a href="../../d2/d76/population_8h.html">population.h</a></div></div>
 <div class="ttc" id="classFT_1_1Pop_1_1Individual_html"><div class="ttname"><a href="../../da/def/classFT_1_1Pop_1_1Individual.html">FT::Pop::Individual</a></div><div class="ttdoc">individual programs in the population </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d1f/individual_8h_source.html#l00029">individual.h:29</a></div></div>
 <div class="ttc" id="selection_8h_html"><div class="ttname"><a href="../../df/d48/selection_8h.html">selection.h</a></div></div>
-<div class="ttc" id="classFT_1_1Feat_html_aa1d94c8c67ddc6e56a24e80970e8b6ce"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#aa1d94c8c67ddc6e56a24e80970e8b6ce">FT::Feat::scorer</a></div><div class="ttdeci">string scorer</div><div class="ttdoc">scoring function name. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00417">feat.h:417</a></div></div>
-<div class="ttc" id="classFT_1_1Feat_html_ad5f21e4a64e86a8d10b4b1d2862f56e5"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#ad5f21e4a64e86a8d10b4b1d2862f56e5">FT::Feat::set_print_pop</a></div><div class="ttdeci">void set_print_pop(int pp)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00193">feat.h:193</a></div></div>
+<div class="ttc" id="classFT_1_1Feat_html_aa1d94c8c67ddc6e56a24e80970e8b6ce"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#aa1d94c8c67ddc6e56a24e80970e8b6ce">FT::Feat::scorer</a></div><div class="ttdeci">string scorer</div><div class="ttdoc">scoring function name. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00419">feat.h:419</a></div></div>
+<div class="ttc" id="classFT_1_1Feat_html_ad5f21e4a64e86a8d10b4b1d2862f56e5"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#ad5f21e4a64e86a8d10b4b1d2862f56e5">FT::Feat::set_print_pop</a></div><div class="ttdeci">void set_print_pop(int pp)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00195">feat.h:195</a></div></div>
 <div class="ttc" id="rnd_8h_html"><div class="ttname"><a href="../../d2/da9/rnd_8h.html">rnd.h</a></div></div>
-<div class="ttc" id="classFT_1_1Feat_html_a431fb5909d6e7c8ddd3f5d28ced11d6c"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#a431fb5909d6e7c8ddd3f5d28ced11d6c">FT::Feat::p_ml</a></div><div class="ttdeci">shared_ptr&lt; ML &gt; p_ml</div><div class="ttdoc">pointer to machine learning class </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00412">feat.h:412</a></div></div>
+<div class="ttc" id="classFT_1_1Feat_html_a431fb5909d6e7c8ddd3f5d28ced11d6c"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#a431fb5909d6e7c8ddd3f5d28ced11d6c">FT::Feat::p_ml</a></div><div class="ttdeci">shared_ptr&lt; ML &gt; p_ml</div><div class="ttdoc">pointer to machine learning class </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00414">feat.h:414</a></div></div>
 <div class="ttc" id="n__median_8h_html"><div class="ttname"><a href="../../d5/d6c/n__median_8h.html">n_median.h</a></div></div>
 <div class="ttc" id="ml_8h_html"><div class="ttname"><a href="../../d7/d60/ml_8h.html">ml.h</a></div></div>
 <div class="ttc" id="params_8h_html"><div class="ttname"><a href="../../da/d33/params_8h.html">params.h</a></div></div>
-<div class="ttc" id="classFT_1_1Feat_html_ab43c978eea3e9942278c5b8ad49f0ba8"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#ab43c978eea3e9942278c5b8ad49f0ba8">FT::Feat::F</a></div><div class="ttdeci">MatrixXf F</div><div class="ttdoc">matrix of fitness values for population </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00403">feat.h:403</a></div></div>
-<div class="ttc" id="classFT_1_1Feat_html_aba080b7328bd2531c64c3e1fb742e448"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#aba080b7328bd2531c64c3e1fb742e448">FT::Feat::logfile</a></div><div class="ttdeci">string logfile</div><div class="ttdoc">log filename </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00433">feat.h:433</a></div></div>
-<div class="ttc" id="classFT_1_1Feat_html_ae3dbfaf2093cfca7a19294317fdb64bf"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#ae3dbfaf2093cfca7a19294317fdb64bf">FT::Feat::print_pop</a></div><div class="ttdeci">int print_pop</div><div class="ttdoc">controls whether pop is printed each gen </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00434">feat.h:434</a></div></div>
-<div class="ttc" id="classFT_1_1Feat_html_acdec80b5a74242d0c78498d4b9771fbd"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#acdec80b5a74242d0c78498d4b9771fbd">FT::Feat::best_score_v</a></div><div class="ttdeci">float best_score_v</div><div class="ttdoc">best validation score </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00420">feat.h:420</a></div></div>
+<div class="ttc" id="classFT_1_1Feat_html_ab43c978eea3e9942278c5b8ad49f0ba8"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#ab43c978eea3e9942278c5b8ad49f0ba8">FT::Feat::F</a></div><div class="ttdeci">MatrixXf F</div><div class="ttdoc">matrix of fitness values for population </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00405">feat.h:405</a></div></div>
+<div class="ttc" id="classFT_1_1Feat_html_aba080b7328bd2531c64c3e1fb742e448"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#aba080b7328bd2531c64c3e1fb742e448">FT::Feat::logfile</a></div><div class="ttdeci">string logfile</div><div class="ttdoc">log filename </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00435">feat.h:435</a></div></div>
+<div class="ttc" id="classFT_1_1Feat_html_ae3dbfaf2093cfca7a19294317fdb64bf"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#ae3dbfaf2093cfca7a19294317fdb64bf">FT::Feat::print_pop</a></div><div class="ttdeci">int print_pop</div><div class="ttdoc">controls whether pop is printed each gen </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00436">feat.h:436</a></div></div>
+<div class="ttc" id="classFT_1_1Feat_html_acdec80b5a74242d0c78498d4b9771fbd"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#acdec80b5a74242d0c78498d4b9771fbd">FT::Feat::best_score_v</a></div><div class="ttdeci">float best_score_v</div><div class="ttdoc">best validation score </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00422">feat.h:422</a></div></div>
 <div class="ttc" id="classFT_1_1Feat_html"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html">FT::Feat</a></div><div class="ttdoc">main class for the Feat learner. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00068">feat.h:68</a></div></div>
-<div class="ttc" id="classFT_1_1Feat_html_adfdfeab2e7528beca68db01588823a10"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#adfdfeab2e7528beca68db01588823a10">FT::Feat::set_stagewise_xo</a></div><div class="ttdeci">void set_stagewise_xo(bool sem_xo=true)</div><div class="ttdoc">use stagewise crossover </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00188">feat.h:188</a></div></div>
-<div class="ttc" id="classFT_1_1Feat_html_adc7312c00563ce4cd8b68b02fb87a99b"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#adc7312c00563ce4cd8b68b02fb87a99b">FT::Feat::p_eval</a></div><div class="ttdeci">shared_ptr&lt; Evaluation &gt; p_eval</div><div class="ttdoc">evaluation code </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00409">feat.h:409</a></div></div>
+<div class="ttc" id="classFT_1_1Feat_html_adfdfeab2e7528beca68db01588823a10"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#adfdfeab2e7528beca68db01588823a10">FT::Feat::set_stagewise_xo</a></div><div class="ttdeci">void set_stagewise_xo(bool sem_xo=true)</div><div class="ttdoc">use stagewise crossover </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00190">feat.h:190</a></div></div>
+<div class="ttc" id="classFT_1_1Feat_html_adc7312c00563ce4cd8b68b02fb87a99b"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#adc7312c00563ce4cd8b68b02fb87a99b">FT::Feat::p_eval</a></div><div class="ttdeci">shared_ptr&lt; Evaluation &gt; p_eval</div><div class="ttdoc">evaluation code </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00411">feat.h:411</a></div></div>
 <div class="ttc" id="evaluation_8h_html"><div class="ttname"><a href="../../d3/df9/evaluation_8h.html">evaluation.h</a></div></div>
-<div class="ttc" id="classFT_1_1Feat_html_a96d29df09000c7e5da012fefcbec724b"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#a96d29df09000c7e5da012fefcbec724b">FT::Feat::stats</a></div><div class="ttdeci">Log_Stats stats</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00446">feat.h:446</a></div></div>
-<div class="ttc" id="classFT_1_1Feat_html_abb9d09572b0bb378a16b810a6dcc3491"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#abb9d09572b0bb378a16b810a6dcc3491">FT::Feat::params</a></div><div class="ttdeci">Parameters params</div><div class="ttdoc">hyperparameters of Feat </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00401">feat.h:401</a></div></div>
+<div class="ttc" id="classFT_1_1Feat_html_a96d29df09000c7e5da012fefcbec724b"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#a96d29df09000c7e5da012fefcbec724b">FT::Feat::stats</a></div><div class="ttdeci">Log_Stats stats</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00449">feat.h:449</a></div></div>
+<div class="ttc" id="classFT_1_1Feat_html_abb9d09572b0bb378a16b810a6dcc3491"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#abb9d09572b0bb378a16b810a6dcc3491">FT::Feat::params</a></div><div class="ttdeci">Parameters params</div><div class="ttdoc">hyperparameters of Feat </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00403">feat.h:403</a></div></div>
 <div class="ttc" id="feat_8h_html_a6a33354c51ab1e4986b2a222aac825a7"><div class="ttname"><a href="../../d3/dff/feat_8h.html#a6a33354c51ab1e4986b2a222aac825a7">ArrayXb</a></div><div class="ttdeci">Eigen::Array&lt; bool, Eigen::Dynamic, 1 &gt; ArrayXb</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00041">feat.h:41</a></div></div>
-<div class="ttc" id="classFT_1_1Feat_html_a4f8ecac48492e069570784ce200b3c90"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#a4f8ecac48492e069570784ce200b3c90">FT::Feat::use_arch</a></div><div class="ttdeci">bool use_arch</div><div class="ttdoc">internal control over use of archive </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00414">feat.h:414</a></div></div>
+<div class="ttc" id="classFT_1_1Feat_html_a4f8ecac48492e069570784ce200b3c90"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#a4f8ecac48492e069570784ce200b3c90">FT::Feat::use_arch</a></div><div class="ttdeci">bool use_arch</div><div class="ttdoc">internal control over use of archive </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00416">feat.h:416</a></div></div>
 <div class="ttc" id="logger_8h_html"><div class="ttname"><a href="../../d1/d8c/logger_8h.html">logger.h</a></div></div>
 <div class="ttc" id="structFT_1_1Util_1_1Log__Stats_html"><div class="ttname"><a href="../../d8/dd3/structFT_1_1Util_1_1Log__Stats.html">FT::Util::Log_Stats</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d60/utils_8h_source.html#l00209">utils.h:209</a></div></div>
-<div class="ttc" id="classFT_1_1Feat_html_abcdbdd9eb915979a3cbca8990e56b49f"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#abcdbdd9eb915979a3cbca8990e56b49f">FT::Feat::p_variation</a></div><div class="ttdeci">shared_ptr&lt; Variation &gt; p_variation</div><div class="ttdoc">variation operators </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00410">feat.h:410</a></div></div>
-<div class="ttc" id="classFT_1_1Feat_html_ab13338a75e9ea96a9db3336741a3b971"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#ab13338a75e9ea96a9db3336741a3b971">FT::Feat::p_surv</a></div><div class="ttdeci">shared_ptr&lt; Selection &gt; p_surv</div><div class="ttdoc">survival algorithm </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00411">feat.h:411</a></div></div>
-<div class="ttc" id="classFT_1_1Feat_html_adf04c2504199f7edb5c4800a4e320dd3"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#adf04c2504199f7edb5c4800a4e320dd3">FT::Feat::F_v</a></div><div class="ttdeci">MatrixXf F_v</div><div class="ttdoc">matrix of validation scores </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00404">feat.h:404</a></div></div>
+<div class="ttc" id="classFT_1_1Feat_html_abcdbdd9eb915979a3cbca8990e56b49f"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#abcdbdd9eb915979a3cbca8990e56b49f">FT::Feat::p_variation</a></div><div class="ttdeci">shared_ptr&lt; Variation &gt; p_variation</div><div class="ttdoc">variation operators </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00412">feat.h:412</a></div></div>
+<div class="ttc" id="classFT_1_1Feat_html_ab13338a75e9ea96a9db3336741a3b971"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#ab13338a75e9ea96a9db3336741a3b971">FT::Feat::p_surv</a></div><div class="ttdeci">shared_ptr&lt; Selection &gt; p_surv</div><div class="ttdoc">survival algorithm </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00413">feat.h:413</a></div></div>
+<div class="ttc" id="classFT_1_1Feat_html_adf04c2504199f7edb5c4800a4e320dd3"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#adf04c2504199f7edb5c4800a4e320dd3">FT::Feat::F_v</a></div><div class="ttdeci">MatrixXf F_v</div><div class="ttdoc">matrix of validation scores </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00406">feat.h:406</a></div></div>
 <div class="ttc" id="structFT_1_1Parameters_html"><div class="ttname"><a href="../../de/d2c/structFT_1_1Parameters.html">FT::Parameters</a></div><div class="ttdoc">holds the hyperparameters for Feat. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d33/params_8h_source.html#l00023">params.h:23</a></div></div>
 <div class="ttc" id="cuda__utils_8h_html"><div class="ttname"><a href="../../de/d4f/cuda__utils_8h.html">cuda_utils.h</a></div></div>
-<div class="ttc" id="classFT_1_1Feat_html_aea5c0f8b3eeb79a9684cc395e4a1ebf5"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#aea5c0f8b3eeb79a9684cc395e4a1ebf5">FT::Feat::best_med_score</a></div><div class="ttdeci">float best_med_score</div><div class="ttdoc">best median population score </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00421">feat.h:421</a></div></div>
-<div class="ttc" id="classFT_1_1Feat_html_aa46144d8615e6d422246e6a7f705bea6"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#aa46144d8615e6d422246e6a7f705bea6">FT::Feat::survival</a></div><div class="ttdeci">string survival</div><div class="ttdoc">stores survival mode </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00415">feat.h:415</a></div></div>
-<div class="ttc" id="classFT_1_1Feat_html_ab6978a1d4421f56a70cf148b0a5624fd"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#ab6978a1d4421f56a70cf148b0a5624fd">FT::Feat::p_pop</a></div><div class="ttdeci">shared_ptr&lt; Population &gt; p_pop</div><div class="ttdoc">population of programs </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00407">feat.h:407</a></div></div>
-<div class="ttc" id="classFT_1_1Feat_html_aa02213ced95b40bb0f0ba9e960a0b899"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#aa02213ced95b40bb0f0ba9e960a0b899">FT::Feat::set_residual_xo</a></div><div class="ttdeci">void set_residual_xo(bool res_xo=true)</div><div class="ttdoc">use residual crossover </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00185">feat.h:185</a></div></div>
-<div class="ttc" id="classFT_1_1Feat_html_a7cf6d268c2b010ebcc10ad95cac81831"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#a7cf6d268c2b010ebcc10ad95cac81831">FT::Feat::best_ind</a></div><div class="ttdeci">Individual best_ind</div><div class="ttdoc">best individual </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00432">feat.h:432</a></div></div>
+<div class="ttc" id="classFT_1_1Feat_html_aea5c0f8b3eeb79a9684cc395e4a1ebf5"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#aea5c0f8b3eeb79a9684cc395e4a1ebf5">FT::Feat::best_med_score</a></div><div class="ttdeci">float best_med_score</div><div class="ttdoc">best median population score </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00423">feat.h:423</a></div></div>
+<div class="ttc" id="classFT_1_1Feat_html_aa46144d8615e6d422246e6a7f705bea6"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#aa46144d8615e6d422246e6a7f705bea6">FT::Feat::survival</a></div><div class="ttdeci">string survival</div><div class="ttdoc">stores survival mode </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00417">feat.h:417</a></div></div>
+<div class="ttc" id="classFT_1_1Feat_html_ab6978a1d4421f56a70cf148b0a5624fd"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#ab6978a1d4421f56a70cf148b0a5624fd">FT::Feat::p_pop</a></div><div class="ttdeci">shared_ptr&lt; Population &gt; p_pop</div><div class="ttdoc">population of programs </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00409">feat.h:409</a></div></div>
+<div class="ttc" id="classFT_1_1Feat_html_aa02213ced95b40bb0f0ba9e960a0b899"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#aa02213ced95b40bb0f0ba9e960a0b899">FT::Feat::set_residual_xo</a></div><div class="ttdeci">void set_residual_xo(bool res_xo=true)</div><div class="ttdoc">use residual crossover </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00187">feat.h:187</a></div></div>
+<div class="ttc" id="classFT_1_1Feat_html_a7cf6d268c2b010ebcc10ad95cac81831"><div class="ttname"><a href="../../db/dff/classFT_1_1Feat.html#a7cf6d268c2b010ebcc10ad95cac81831">FT::Feat::best_ind</a></div><div class="ttdeci">Individual best_ind</div><div class="ttdoc">best individual </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/feat_8h_source.html#l00434">feat.h:434</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

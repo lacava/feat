@@ -109,7 +109,7 @@ var searchData=
   ['softmax_5fnorm',['softmax_norm',['../de/d2c/structFT_1_1Parameters.html#a01b1fbfe3b22f877ddd86adec369b03d',1,'FT::Parameters']]],
   ['sort_5fn',['sort_n',['../d5/d9e/structFT_1_1Sel_1_1NSGA2_1_1sort__n.html#a2c1768415884064a3f5e1c91943e29b9',1,'FT::Sel::NSGA2::sort_n']]],
   ['sort_5fn',['sort_n',['../d5/d9e/structFT_1_1Sel_1_1NSGA2_1_1sort__n.html',1,'FT::Sel::NSGA2']]],
-  ['sortcomplexity',['SortComplexity',['../de/dad/structFT_1_1Pop_1_1Population_1_1SortComplexity.html#ac0f872c49d5aca5098c0973cfefd9452',1,'FT::Pop::Population::SortComplexity::SortComplexity()'],['../d7/d9f/structFT_1_1Pop_1_1Archive.html#aa7f979e377803df70b8b2bf4f1b25a31',1,'FT::Pop::Archive::sortComplexity()']]],
+  ['sortcomplexity',['sortComplexity',['../d7/d9f/structFT_1_1Pop_1_1Archive.html#aa7f979e377803df70b8b2bf4f1b25a31',1,'FT::Pop::Archive::sortComplexity()'],['../de/dad/structFT_1_1Pop_1_1Population_1_1SortComplexity.html#ac0f872c49d5aca5098c0973cfefd9452',1,'FT::Pop::Population::SortComplexity::SortComplexity()']]],
   ['sortcomplexity',['SortComplexity',['../de/dad/structFT_1_1Pop_1_1Population_1_1SortComplexity.html',1,'FT::Pop::Population']]],
   ['sorted_5ffront',['sorted_front',['../d6/d5f/structFT_1_1Pop_1_1Population.html#aaac76d7fe163c2f41e4c91a5067ed64e',1,'FT::Pop::Population']]],
   ['splice_5fprograms',['splice_programs',['../d0/d80/classFT_1_1Vary_1_1Variation.html#a4a42773d8410ddfea661baeb5238b0dc',1,'FT::Vary::Variation']]],
