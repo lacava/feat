@@ -139,6 +139,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6bb9fb82ea205837639c982bde9ec765"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d80/classFT_1_1Vary_1_1Variation.html#a6bb9fb82ea205837639c982bde9ec765">vary</a> (<a class="el" href="../../d6/d5f/structFT_1_1Pop_1_1Population.html">Population</a> &amp;pop, const vector&lt; size_t &gt; &amp;parents, const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;params, const <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> &amp;d)</td></tr>
 <tr class="memdesc:a6bb9fb82ea205837639c982bde9ec765"><td class="mdescLeft">&#160;</td><td class="mdescRight">method to handle variation of population  <a href="#a6bb9fb82ea205837639c982bde9ec765">More...</a><br/></td></tr>
 <tr class="separator:a6bb9fb82ea205837639c982bde9ec765"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c03c83a8a5b11fd1233ba22c4ae46b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d80/classFT_1_1Vary_1_1Variation.html#a3c03c83a8a5b11fd1233ba22c4ae46b2">delete_mutate</a> (<a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> &amp;child, const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;params)</td></tr>
+<tr class="separator:a3c03c83a8a5b11fd1233ba22c4ae46b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc7b5a9174e5b49910d0c61536a18b80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d80/classFT_1_1Vary_1_1Variation.html#abc7b5a9174e5b49910d0c61536a18b80">delete_dimension_mutate</a> (<a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> &amp;child, const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;params)</td></tr>
+<tr class="separator:abc7b5a9174e5b49910d0c61536a18b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77dd3bdcf7f682f2150fb21a2c030c0f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d80/classFT_1_1Vary_1_1Variation.html#a77dd3bdcf7f682f2150fb21a2c030c0f">correlation_delete_mutate</a> (<a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> &amp;child, MatrixXf Phi, const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;params, const <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> &amp;d)</td></tr>
+<tr class="separator:a77dd3bdcf7f682f2150fb21a2c030c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -151,15 +157,13 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a61b1b6fff1484ce71b32e73ef03c0194"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d80/classFT_1_1Vary_1_1Variation.html#a61b1b6fff1484ce71b32e73ef03c0194">stagewise_cross</a> (<a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> &amp;mom, <a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> &amp;dad, <a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> &amp;child, const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;params, const <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> &amp;d)</td></tr>
 <tr class="memdesc:a61b1b6fff1484ce71b32e73ef03c0194"><td class="mdescLeft">&#160;</td><td class="mdescRight">stagewise crossover  <a href="#a61b1b6fff1484ce71b32e73ef03c0194">More...</a><br/></td></tr>
 <tr class="separator:a61b1b6fff1484ce71b32e73ef03c0194"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15fd82e9d1ddefb573929cd1e6122a4b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d80/classFT_1_1Vary_1_1Variation.html#a15fd82e9d1ddefb573929cd1e6122a4b">mutate</a> (<a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> &amp;mom, <a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> &amp;child, const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;params)</td></tr>
-<tr class="memdesc:a15fd82e9d1ddefb573929cd1e6122a4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">mutation  <a href="#a15fd82e9d1ddefb573929cd1e6122a4b">More...</a><br/></td></tr>
-<tr class="separator:a15fd82e9d1ddefb573929cd1e6122a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d75bc7b2548a902c655912d3bfca555"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d80/classFT_1_1Vary_1_1Variation.html#a3d75bc7b2548a902c655912d3bfca555">mutate</a> (<a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> &amp;mom, <a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> &amp;child, const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;params, const <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> &amp;d)</td></tr>
+<tr class="memdesc:a3d75bc7b2548a902c655912d3bfca555"><td class="mdescLeft">&#160;</td><td class="mdescRight">mutation  <a href="#a3d75bc7b2548a902c655912d3bfca555">More...</a><br/></td></tr>
+<tr class="separator:a3d75bc7b2548a902c655912d3bfca555"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee857d51c57fe4ac81501572bda8f3b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d80/classFT_1_1Vary_1_1Variation.html#aee857d51c57fe4ac81501572bda8f3b8">point_mutate</a> (<a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> &amp;child, const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;params)</td></tr>
 <tr class="separator:aee857d51c57fe4ac81501572bda8f3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa17907669297d2ea9fb94464c767e50e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d80/classFT_1_1Vary_1_1Variation.html#aa17907669297d2ea9fb94464c767e50e">insert_mutate</a> (<a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> &amp;child, const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;params)</td></tr>
 <tr class="separator:aa17907669297d2ea9fb94464c767e50e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c03c83a8a5b11fd1233ba22c4ae46b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d80/classFT_1_1Vary_1_1Variation.html#a3c03c83a8a5b11fd1233ba22c4ae46b2">delete_mutate</a> (<a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> &amp;child, const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;params)</td></tr>
-<tr class="separator:a3c03c83a8a5b11fd1233ba22c4ae46b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a42773d8410ddfea661baeb5238b0dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d80/classFT_1_1Vary_1_1Variation.html#a4a42773d8410ddfea661baeb5238b0dc">splice_programs</a> (<a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a> &amp;vnew, const <a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a> &amp;v1, size_t i1, size_t j1, const <a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a> &amp;v2, size_t i2, size_t j2)</td></tr>
 <tr class="memdesc:a4a42773d8410ddfea661baeb5238b0dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">splice two programs together  <a href="#a4a42773d8410ddfea661baeb5238b0dc">More...</a><br/></td></tr>
 <tr class="separator:a4a42773d8410ddfea661baeb5238b0dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,7 +179,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="../../d4/d1f/variation_8h_source.html#l00031">31</a> of file <a class="el" href="../../d4/d1f/variation_8h_source.html">variation.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d1f/variation_8h_source.html#l00032">32</a> of file <a class="el" href="../../d4/d1f/variation_8h_source.html">variation.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a083fe18122f043e07ea030540ffdd219"></a>
 <div class="memitem">
@@ -218,6 +222,57 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a77dd3bdcf7f682f2150fb21a2c030c0f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FT::Vary::Variation::correlation_delete_mutate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> &amp;&#160;</td>
+          <td class="paramname"><em>child</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MatrixXf&#160;</td>
+          <td class="paramname"><em>Phi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> &amp;&#160;</td>
+          <td class="paramname"><em>d</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>deletion mutation. works by pruning a dimension. the dimension that is pruned matches these criteria: 1) it is in the pair of features most highly correlated. 2) it is less correlated with the dependent variable than its pair. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">child</td><td>individual to be mutated </td></tr>
+    <tr><td class="paramname">Phi</td><td>the behavior of the parent </td></tr>
+    <tr><td class="paramname">params</td><td>parameters </td></tr>
+    <tr><td class="paramname">d</td><td>data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>mutated child</dd></dl>
+
+<p>Definition at line <a class="el" href="../../de/d10/variation_8cc_source.html#l00454">454</a> of file <a class="el" href="../../de/d10/variation_8cc_source.html">variation.cc</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a0317577cef6e8a2ffe2ad7ed83ceab16"></a>
 <div class="memitem">
 <div class="memproto">
@@ -281,16 +336,50 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>child: mom with dad subtree graft</dd></dl>
 
-<p>Definition at line <a class="el" href="../../de/d10/variation_8cc_source.html#l00348">348</a> of file <a class="el" href="../../de/d10/variation_8cc_source.html">variation.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../de/d10/variation_8cc_source.html#l00540">540</a> of file <a class="el" href="../../de/d10/variation_8cc_source.html">variation.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abc7b5a9174e5b49910d0c61536a18b80"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FT::Vary::Variation::delete_dimension_mutate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> &amp;&#160;</td>
+          <td class="paramname"><em>child</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>deletion mutation. works by pruning a dimension. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">child</td><td>individual to be mutated </td></tr>
+    <tr><td class="paramname">params</td><td>parameters </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>mutated child</dd></dl>
+
+<p>Definition at line <a class="el" href="../../de/d10/variation_8cc_source.html#l00428">428</a> of file <a class="el" href="../../de/d10/variation_8cc_source.html">variation.cc</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="a3c03c83a8a5b11fd1233ba22c4ae46b2"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void FT::Vary::Variation::delete_mutate </td>
@@ -310,11 +399,6 @@ Private Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>deletion mutation. works by pruning a dimension. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -326,7 +410,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>mutated child</dd></dl>
 
-<p>Definition at line <a class="el" href="../../de/d10/variation_8cc_source.html#l00323">323</a> of file <a class="el" href="../../de/d10/variation_8cc_source.html">variation.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../de/d10/variation_8cc_source.html#l00350">350</a> of file <a class="el" href="../../de/d10/variation_8cc_source.html">variation.cc</a>.</p>
 
 </div>
 </div>
@@ -390,11 +474,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>modified child</dd></dl>
 
-<p>Definition at line <a class="el" href="../../de/d10/variation_8cc_source.html#l00213">213</a> of file <a class="el" href="../../de/d10/variation_8cc_source.html">variation.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../de/d10/variation_8cc_source.html#l00226">226</a> of file <a class="el" href="../../de/d10/variation_8cc_source.html">variation.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a15fd82e9d1ddefb573929cd1e6122a4b"></a>
+<a class="anchor" id="a3d75bc7b2548a902c655912d3bfca555"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -417,7 +501,13 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;&#160;</td>
-          <td class="paramname"><em>params</em>&#160;</td>
+          <td class="paramname"><em>params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> &amp;&#160;</td>
+          <td class="paramname"><em>d</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -444,7 +534,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if valid child, false if not</dd></dl>
 
-<p>Definition at line <a class="el" href="../../de/d10/variation_8cc_source.html#l00115">115</a> of file <a class="el" href="../../de/d10/variation_8cc_source.html">variation.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../de/d10/variation_8cc_source.html#l00117">117</a> of file <a class="el" href="../../de/d10/variation_8cc_source.html">variation.cc</a>.</p>
 
 </div>
 </div>
@@ -489,7 +579,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>modified child</dd></dl>
 
-<p>Definition at line <a class="el" href="../../de/d10/variation_8cc_source.html#l00155">155</a> of file <a class="el" href="../../de/d10/variation_8cc_source.html">variation.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../de/d10/variation_8cc_source.html#l00168">168</a> of file <a class="el" href="../../de/d10/variation_8cc_source.html">variation.cc</a>.</p>
 
 </div>
 </div>
@@ -563,7 +653,7 @@ Private Attributes</h2></td></tr>
 
 <p>debugging printout of crossover operation. </p>
 
-<p>Definition at line <a class="el" href="../../de/d10/variation_8cc_source.html#l00727">727</a> of file <a class="el" href="../../de/d10/variation_8cc_source.html">variation.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../de/d10/variation_8cc_source.html#l00951">951</a> of file <a class="el" href="../../de/d10/variation_8cc_source.html">variation.cc</a>.</p>
 
 </div>
 </div>
@@ -630,7 +720,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>child: mom with dad subtree graft</dd></dl>
 
-<p>Definition at line <a class="el" href="../../de/d10/variation_8cc_source.html#l00437">437</a> of file <a class="el" href="../../de/d10/variation_8cc_source.html">variation.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../de/d10/variation_8cc_source.html#l00634">634</a> of file <a class="el" href="../../de/d10/variation_8cc_source.html">variation.cc</a>.</p>
 
 </div>
 </div>
@@ -731,7 +821,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>vnew: new vector</dd></dl>
 
-<p>Definition at line <a class="el" href="../../de/d10/variation_8cc_source.html#l00695">695</a> of file <a class="el" href="../../de/d10/variation_8cc_source.html">variation.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../de/d10/variation_8cc_source.html#l00919">919</a> of file <a class="el" href="../../de/d10/variation_8cc_source.html">variation.cc</a>.</p>
 
 </div>
 </div>
@@ -803,7 +893,7 @@ Private Attributes</h2></td></tr>
 </ul>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="../../de/d10/variation_8cc_source.html#l00535">535</a> of file <a class="el" href="../../de/d10/variation_8cc_source.html">variation.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../de/d10/variation_8cc_source.html#l00732">732</a> of file <a class="el" href="../../de/d10/variation_8cc_source.html">variation.cc</a>.</p>
 
 </div>
 </div>
@@ -880,7 +970,7 @@ Private Attributes</h2></td></tr>
 
 <p>fraction of crossover in total variation </p>
 
-<p>Definition at line <a class="el" href="../../d4/d1f/variation_8h_source.html#l00083">83</a> of file <a class="el" href="../../d4/d1f/variation_8h_source.html">variation.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d1f/variation_8h_source.html#l00092">92</a> of file <a class="el" href="../../d4/d1f/variation_8h_source.html">variation.h</a>.</p>
 
 </div>
 </div>

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['calculate_5fstats',['calculate_stats',['../db/dff/classFT_1_1Feat.html#a729dfb2168e87b399f01e61bb1cd49db',1,'FT::Feat']]],
+  ['calculate_5fstats',['calculate_stats',['../db/dff/classFT_1_1Feat.html#a095249c06750e3c0c522d70672b3a042',1,'FT::Feat']]],
   ['carttrain',['CARTtrain',['../db/dff/classshogun_1_1CMyCARTree.html#a86f30bff54847757167cfa28989d99ce',1,'shogun::CMyCARTree']]],
   ['check',['check',['../dd/d3f/structFT_1_1Dat_1_1State.html#a54e010c29a1fa4f6d41f8c57dc6b969c',1,'FT::Dat::State']]],
   ['check_5fdominance',['check_dominance',['../da/def/classFT_1_1Pop_1_1Individual.html#a91c78ed5d389fa6a9348574d43da33e8',1,'FT::Pop::Individual']]],
@@ -27,6 +27,7 @@ var searchData=
   ['copy_5ffrom_5fdevice',['copy_from_device',['../dc/dd9/namespaceFT_1_1Pop_1_1Op.html#aba22d8fd7b011191fdc8d6e0e7f1a4e3',1,'FT::Pop::Op::copy_from_device(float *dev_f, float *host_f, size_t Sizef)'],['../dc/dd9/namespaceFT_1_1Pop_1_1Op.html#a8a240ca35a1f755473ecbf77097f8df7',1,'FT::Pop::Op::copy_from_device(int *dev_c, int *host_c, size_t Sizec)'],['../dc/dd9/namespaceFT_1_1Pop_1_1Op.html#aeb96d9a3f6902f777d0e84a3ba7eb99b',1,'FT::Pop::Op::copy_from_device(bool *dev_b, bool *host_b, size_t Sizeb)'],['../dc/dd9/namespaceFT_1_1Pop_1_1Op.html#af0ccda9ad976fd2abc24069eaa913c46',1,'FT::Pop::Op::copy_from_device(float *dev_f, float *host_f, size_t Sizef, int *dev_c, int *host_c, size_t Sizec, bool *dev_b, bool *host_b, size_t Sizeb)']]],
   ['copy_5fto_5ftrace',['copy_to_trace',['../d2/dfc/structFT_1_1Dat_1_1Trace.html#a32bef82d38cf4e32fa47b19bfc0dcae5',1,'FT::Dat::Trace']]],
   ['corrcoef',['corrcoef',['../d1/d5d/namespaceFT_1_1Util.html#a7096abc4ea5c2b2851279ead36160de7',1,'FT::Util']]],
+  ['correlation_5fdelete_5fmutate',['correlation_delete_mutate',['../d0/d80/classFT_1_1Vary_1_1Variation.html#a77dd3bdcf7f682f2150fb21a2c030c0f',1,'FT::Vary::Variation']]],
   ['covariance',['covariance',['../d1/d5d/namespaceFT_1_1Util.html#a66a5c6b17b000fbed3eb8e9263db323d',1,'FT::Util']]],
   ['createnode',['createNode',['../de/d2c/structFT_1_1Parameters.html#a24a000d8f1b4c4971ceee5aa9f1e1738',1,'FT::Parameters']]],
   ['cross',['cross',['../d0/d80/classFT_1_1Vary_1_1Variation.html#a0317577cef6e8a2ffe2ad7ed83ceab16',1,'FT::Vary::Variation']]],
