@@ -103,7 +103,7 @@ var searchData=
   ['simanneal',['SimAnneal',['../d2/d6e/structFT_1_1Sel_1_1SimAnneal.html',1,'FT::Sel']]],
   ['simanneal',['SimAnneal',['../d2/d6e/structFT_1_1Sel_1_1SimAnneal.html#a89454b4f9601a9f286c7651e35e40bc4',1,'FT::Sel::SimAnneal']]],
   ['simplify',['simplify',['../db/dff/classFT_1_1Feat.html#a1f2f2b75149a66b1f28789c38f7b13bd',1,'FT::Feat']]],
-  ['simplify_5fmodel',['simplify_model',['../db/dff/classFT_1_1Feat.html#ae00141f8a910455005883f36b2c47cc5',1,'FT::Feat']]],
+  ['simplify_5fmodel',['simplify_model',['../db/dff/classFT_1_1Feat.html#afb9b0ed7a8fc6798652968c977f22d0a',1,'FT::Feat']]],
   ['simulated_5fannealing_2ecc',['simulated_annealing.cc',['../d1/dcf/simulated__annealing_8cc.html',1,'']]],
   ['simulated_5fannealing_2eh',['simulated_annealing.h',['../d9/dab/simulated__annealing_8h.html',1,'']]],
   ['size',['size',['../d8/d30/classFT_1_1Dat_1_1Stack.html#a4c1afdce83c8670e2d654f18f6487064',1,'FT::Dat::Stack::size()'],['../dd/d3f/structFT_1_1Dat_1_1State.html#a68fb010b8b9dd34ad217ced49e7b44ba',1,'FT::Dat::State::size()'],['../d2/dfc/structFT_1_1Dat_1_1Trace.html#a7b3dc4d918e0f215a2196f247663e12f',1,'FT::Dat::Trace::size()'],['../da/def/classFT_1_1Pop_1_1Individual.html#ad44520ebcfaa6ef5663470337d8e02ed',1,'FT::Pop::Individual::size()'],['../d6/d5f/structFT_1_1Pop_1_1Population.html#a92afad15b7de0024d4923f2d532ca45f',1,'FT::Pop::Population::size()']]],

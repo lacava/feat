@@ -86,7 +86,7 @@ var searchData=
   ['shuffle',['shuffle',['../d8/d33/classFT_1_1Util_1_1Rnd.html#ac84f0e6e6c8c1340d2168cd0b85bdf26',1,'FT::Util::Rnd']]],
   ['shuffle_5fdata',['shuffle_data',['../d4/d10/classFT_1_1Dat_1_1DataRef.html#a694c7d1ede849de047fd2c5f115eabc8',1,'FT::Dat::DataRef']]],
   ['simanneal',['SimAnneal',['../d2/d6e/structFT_1_1Sel_1_1SimAnneal.html#a89454b4f9601a9f286c7651e35e40bc4',1,'FT::Sel::SimAnneal']]],
-  ['simplify_5fmodel',['simplify_model',['../db/dff/classFT_1_1Feat.html#ae00141f8a910455005883f36b2c47cc5',1,'FT::Feat']]],
+  ['simplify_5fmodel',['simplify_model',['../db/dff/classFT_1_1Feat.html#afb9b0ed7a8fc6798652968c977f22d0a',1,'FT::Feat']]],
   ['size',['size',['../d8/d30/classFT_1_1Dat_1_1Stack.html#a4c1afdce83c8670e2d654f18f6487064',1,'FT::Dat::Stack::size()'],['../dd/d3f/structFT_1_1Dat_1_1State.html#a68fb010b8b9dd34ad217ced49e7b44ba',1,'FT::Dat::State::size()'],['../d2/dfc/structFT_1_1Dat_1_1Trace.html#a7b3dc4d918e0f215a2196f247663e12f',1,'FT::Dat::Trace::size()'],['../da/def/classFT_1_1Pop_1_1Individual.html#ad44520ebcfaa6ef5663470337d8e02ed',1,'FT::Pop::Individual::size()'],['../d6/d5f/structFT_1_1Pop_1_1Population.html#a92afad15b7de0024d4923f2d532ca45f',1,'FT::Pop::Population::size()']]],
   ['skew',['skew',['../d1/d5d/namespaceFT_1_1Util.html#a16850d3c9fdef59e18f2f9fd3ad4fd46',1,'FT::Util']]],
   ['slope',['slope',['../d4/d92/classFT_1_1Pop_1_1Op_1_1NodeSlope.html#a0db78db602f2f72750848ca8e4970220',1,'FT::Pop::Op::NodeSlope::slope()'],['../d1/d5d/namespaceFT_1_1Util.html#a3b98624a17d33cf72c0c1088225b88c6',1,'FT::Util::slope()']]],

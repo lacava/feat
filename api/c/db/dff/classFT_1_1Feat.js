@@ -100,7 +100,7 @@ var classFT_1_1Feat =
     [ "set_survival", "db/dff/classFT_1_1Feat.html#ae63059431600ab734962201e379ea357", null ],
     [ "set_use_batch", "db/dff/classFT_1_1Feat.html#a60f537b340ce3b02ab1482e2461a3a8d", null ],
     [ "set_verbosity", "db/dff/classFT_1_1Feat.html#adfe06031824311d1f02afa24805aba5e", null ],
-    [ "simplify_model", "db/dff/classFT_1_1Feat.html#ae00141f8a910455005883f36b2c47cc5", null ],
+    [ "simplify_model", "db/dff/classFT_1_1Feat.html#afb9b0ed7a8fc6798652968c977f22d0a", null ],
     [ "transform", "db/dff/classFT_1_1Feat.html#a490cc3e839717e8b6a28fde0a2b3e643", null ],
     [ "transform", "db/dff/classFT_1_1Feat.html#a5e6abc52394ae1939f0cd67e0b22c596", null ],
     [ "transform_with_z", "db/dff/classFT_1_1Feat.html#a367b4a3212b1bdb5367fc1d586281edf", null ],

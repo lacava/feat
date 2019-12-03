@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.5.1">
     
     
       
@@ -44,7 +44,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.30686662.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.1b62728e.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
       
@@ -55,7 +55,7 @@
       
     
     
-      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+      <script src="../../assets/javascripts/modernizr.268332fc.js"></script>
     
     
       
@@ -535,10 +535,10 @@
 <div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">pmlb</span> <span class="kn">import</span> <span class="n">fetch_data</span>
 <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span> <span class="k">as</span> <span class="n">mse</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
 <span class="n">dataset</span><span class="o">=</span><span class="s1">&#39;690_visualizing_galaxy&#39;</span>
-<span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">fetch_data</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span><span class="n">return_X_y</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">fetch_data</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span><span class="n">return_X_y</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">X_t</span><span class="p">,</span><span class="n">X_v</span><span class="p">,</span> <span class="n">y_t</span><span class="p">,</span> <span class="n">y_v</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">train_size</span><span class="o">=</span><span class="mf">0.75</span><span class="p">,</span><span class="n">test_size</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
 </pre></div>
 
@@ -557,7 +557,7 @@
             <span class="n">max_depth</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span>                    <span class="c1"># constrain features to depth of 6</span>
             <span class="n">max_dim</span><span class="o">=</span><span class="nb">min</span><span class="p">([</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span><span class="mi">50</span><span class="p">]),</span> <span class="c1"># limit representation dimensionality</span>
             <span class="n">random_state</span><span class="o">=</span><span class="n">random_state</span><span class="p">,</span>
-            <span class="n">backprop</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>                 <span class="c1"># use gradient descent to optimize weights</span>
+            <span class="n">backprop</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>                 <span class="c1"># use gradient descent to optimize weights</span>
             <span class="n">iters</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
             <span class="n">n_threads</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>                   <span class="c1"># max 1 threads</span>
             <span class="n">verbosity</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>                   <span class="c1"># verbose output</span>
@@ -599,10 +599,10 @@
 <h2 id="visualizing-the-archive">Visualizing the Archive<a class="headerlink" href="#visualizing-the-archive" title="Permanent link">&para;</a></h2>
 <p>Let&rsquo;s visualize this archive with the test scores. This gives us a sense of how increasing the representation 
 complexity affects the quality of the model and its generalization. </p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 <span class="n">matplotlib</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;figure.figsize&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
 <span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span> 
 <span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
@@ -626,7 +626,7 @@ complexity affects the quality of the model and its generalization. </p>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">fit_train</span><span class="p">,</span><span class="n">complexity</span><span class="p">,</span><span class="s1">&#39;--ro&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Train&#39;</span><span class="p">,</span><span class="n">markersize</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">fit_test</span><span class="p">,</span><span class="n">complexity</span><span class="p">,</span><span class="s1">&#39;--bx&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Validation&#39;</span><span class="p">)</span>
 <span class="n">best</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">fit_test</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="s1">&#39;best:&#39;</span><span class="p">,</span><span class="n">complexity</span><span class="p">[</span><span class="n">best</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;best:&#39;</span><span class="p">,</span><span class="n">complexity</span><span class="p">[</span><span class="n">best</span><span class="p">])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">fit_test</span><span class="p">[</span><span class="n">best</span><span class="p">],</span><span class="n">complexity</span><span class="p">[</span><span class="n">best</span><span class="p">],</span><span class="s1">&#39;sk&#39;</span><span class="p">,</span><span class="n">markersize</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span>
          <span class="n">markerfacecolor</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Model Selection&#39;</span><span class="p">)</span>
 
@@ -640,7 +640,7 @@ complexity affects the quality of the model and its generalization. </p>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">((</span><span class="n">test_score</span><span class="p">[</span><span class="s1">&#39;elasticnet&#39;</span><span class="p">],</span><span class="n">test_score</span><span class="p">[</span><span class="s1">&#39;elasticnet&#39;</span><span class="p">]),(</span><span class="n">y1</span><span class="p">,</span><span class="n">y2</span><span class="p">),</span>
          <span class="s1">&#39;-sm&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;ElasticNet Test&#39;</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
 
-<span class="k">print</span><span class="p">(</span><span class="s1">&#39;complexity&#39;</span><span class="p">,</span><span class="n">complexity</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;complexity&#39;</span><span class="p">,</span><span class="n">complexity</span><span class="p">)</span>
 <span class="n">eqn</span><span class="p">[</span><span class="n">best</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;0)]$</span><span class="se">\n</span><span class="s1">$&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">eqn</span><span class="p">[</span><span class="n">best</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;0)]&#39;</span><span class="p">))</span>
 <span class="c1"># complexity[-1] = complexity[-1]-10 # adjust placement of last equation</span>
 <span class="n">xoff</span> <span class="o">=</span> <span class="mi">70</span>
@@ -755,7 +755,7 @@ in general oscillate around the test score of the final model. </p>
       
     </div>
     
-      <script src="../../assets/javascripts/application.ac79c3b0.js"></script>
+      <script src="../../assets/javascripts/application.8e03edeb.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       

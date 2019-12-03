@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.5.1">
     
     
       
@@ -44,7 +44,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.30686662.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.1b62728e.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
       
@@ -55,7 +55,7 @@
       
     
     
-      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+      <script src="../../assets/javascripts/modernizr.268332fc.js"></script>
     
     
       
@@ -559,8 +559,8 @@ measurements from different patients collected in non-uniform intervals. </p>
 <p>In this example, we make up a classification rule that says that each patient with an 
 increasing body mass index (BMI) and a high maximum glucose level in their blood panel will be
 assigned as a case (class = 1). </p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">rv_continuous</span><span class="p">,</span> <span class="n">rv_discrete</span>
 
 <span class="k">def</span> <span class="nf">make_classification</span><span class="p">(</span><span class="n">pdict</span><span class="p">,</span> <span class="n">data_long</span><span class="p">):</span>
@@ -625,9 +625,9 @@ assigned as a case (class = 1). </p>
     <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">from_records</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">,</span><span class="s1">&#39;sex&#39;</span><span class="p">,</span><span class="s1">&#39;race&#39;</span><span class="p">,</span><span class="s1">&#39;class&#39;</span><span class="p">])</span>
     <span class="n">df_long</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">from_records</span><span class="p">(</span><span class="n">data_long</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> 
                                         <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">,</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="s1">&#39;date&#39;</span><span class="p">,</span><span class="s1">&#39;value&#39;</span><span class="p">])</span>
-    <span class="n">df</span><span class="o">.</span><span class="n">sort_index</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>   
+    <span class="n">df</span><span class="o">.</span><span class="n">sort_index</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>   
     <span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;d_example_patients.csv&#39;</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">0</span><span class="p">),</span><span class="s1">&#39;controls,&#39;</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">1</span><span class="p">),</span><span class="s1">&#39;cases&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">0</span><span class="p">),</span><span class="s1">&#39;controls,&#39;</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">1</span><span class="p">),</span><span class="s1">&#39;cases&#39;</span><span class="p">)</span>
     <span class="c1">#shuffle rows</span>
     <span class="n">df_long</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;d_example_patients_long.csv&#39;</span><span class="p">)</span>
 </pre></div>
@@ -637,15 +637,15 @@ assigned as a case (class = 1). </p>
 <p>Next we set up the learner. We need to declare the longitudinal operators we want to search over. 
 They are defined as a comma-delimited list of strings using the <code>functions</code> argument. In this case, 
 the operators on the second row of the declaration below all operate on longitudinal data.</p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
 <span class="kn">from</span> <span class="nn">feat</span> <span class="kn">import</span> <span class="n">Feat</span>
 <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">StratifiedKFold</span>
 
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;d_example_patients.csv&#39;</span><span class="p">)</span>
-<span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;class&#39;</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">values</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
 <span class="n">zfile</span> <span class="o">=</span> <span class="s1">&#39;d_example_patients_long.csv&#39;</span>
@@ -657,13 +657,13 @@ the operators on the second row of the declaration below all operate on longitud
            <span class="n">gens</span> <span class="o">=</span> <span class="mi">20</span><span class="p">,</span>
            <span class="n">pop_size</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span>
            <span class="n">verbosity</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-           <span class="n">shuffle</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+           <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
            <span class="n">ml</span><span class="o">=</span><span class="s1">&#39;LR&#39;</span><span class="p">,</span>
-           <span class="n">classification</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+           <span class="n">classification</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
            <span class="n">feature_names</span> <span class="o">=</span> <span class="s1">&#39;,&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;class&#39;</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">columns</span><span class="p">),</span>
            <span class="n">functions</span><span class="o">=</span><span class="s2">&quot;+,-,*,/,exp,log,and,or,not,=,&lt;,&lt;=,&gt;,&gt;=,ite,split,split_c,&quot;</span>
                      <span class="s2">&quot;mean,median,max,min,variance,skew,kurtosis,slope,count&quot;</span><span class="p">,</span>
-           <span class="n">backprop</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+           <span class="n">backprop</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
            <span class="n">iters</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
            <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span>
            <span class="n">n_threads</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -678,7 +678,7 @@ the operators on the second row of the declaration below all operate on longitud
     <span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="n">train_idx</span><span class="p">],</span><span class="n">y</span><span class="p">[</span><span class="n">train_idx</span><span class="p">],</span><span class="n">zfile</span><span class="p">,</span><span class="n">train_idx</span><span class="p">)</span>
     <span class="n">scores</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">clf</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="n">test_idx</span><span class="p">],</span><span class="n">y</span><span class="p">[</span><span class="n">test_idx</span><span class="p">],</span><span class="n">zfile</span><span class="p">,</span><span class="n">test_idx</span><span class="p">))</span>
 
-<span class="k">print</span><span class="p">(</span><span class="s1">&#39;scores:&#39;</span><span class="p">,</span><span class="n">scores</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;scores:&#39;</span><span class="p">,</span><span class="n">scores</span><span class="p">)</span>
 </pre></div>
 
 
@@ -710,7 +710,7 @@ scores: [18.407151361726235, 18.151251136485943, 16.59542398484813]
 
 <h2 id="model-interpretation">Model Interpretation<a class="headerlink" href="#model-interpretation" title="Permanent link">&para;</a></h2>
 <p>Now let&rsquo;s fit a model to all the data and try to interpret it. </p>
-<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s1">&#39;fitting longer to all data...&#39;</span><span class="p">)</span>
+<div class="codehilite"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;fitting longer to all data...&#39;</span><span class="p">)</span>
 <span class="n">clf</span><span class="o">.</span><span class="n">gens</span> <span class="o">=</span> <span class="mi">20</span>
 <span class="n">clf</span><span class="o">.</span><span class="n">verbosity</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">zfile</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">X</span><span class="p">)))</span>
@@ -776,12 +776,12 @@ max(z_glucose)  -0.705487
 <span class="c1">#scale the projection to zero mean, unit deviation</span>
 <span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
 <span class="n">proj</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">proj</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s1">&#39;proj:&#39;</span><span class="p">,</span><span class="n">proj</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span><span class="n">proj</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;proj:&#39;</span><span class="p">,</span><span class="n">proj</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span><span class="n">proj</span><span class="p">)</span>
 
 <span class="c1"># plot</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
-<span class="kn">import</span> <span class="nn">matplotlib.patheffects</span> <span class="kn">as</span> <span class="nn">PathEffects</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">matplotlib.patheffects</span> <span class="k">as</span> <span class="nn">PathEffects</span>
 
 
 <span class="c1"># We choose a color palette with seaborn.</span>
@@ -809,7 +809,7 @@ max(z_glucose)  -0.705487
 
 <span class="c1"># add labels from representation</span>
 <span class="n">rep</span> <span class="o">=</span> <span class="p">[</span><span class="n">r</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;[&#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">clf</span><span class="o">.</span><span class="n">get_representation</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;]&#39;</span><span class="p">)</span> <span class="k">if</span> <span class="n">r</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span><span class="p">]</span>
-<span class="k">print</span><span class="p">(</span><span class="s1">&#39;rep:&#39;</span><span class="p">,</span><span class="n">rep</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;rep:&#39;</span><span class="p">,</span><span class="n">rep</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="n">rep</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="n">rep</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 
@@ -889,7 +889,7 @@ max(z_glucose)  -0.705487
       
     </div>
     
-      <script src="../../assets/javascripts/application.ac79c3b0.js"></script>
+      <script src="../../assets/javascripts/application.8e03edeb.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
