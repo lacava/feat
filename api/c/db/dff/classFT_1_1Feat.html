@@ -326,17 +326,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab7a1851a4992f2544352268d31de389d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#ab7a1851a4992f2544352268d31de389d">get_n_nodes</a> ()</td></tr>
 <tr class="memdesc:ab7a1851a4992f2544352268d31de389d"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the number of nodes in the best model  <a href="#ab7a1851a4992f2544352268d31de389d">More...</a><br/></td></tr>
 <tr class="separator:ab7a1851a4992f2544352268d31de389d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa96f903633e799ebbd93d313bb88315b"><td class="memItemLeft" align="right" valign="top">std::map&lt; string, std::pair<br class="typebreak"/>
-&lt; vector&lt; ArrayXf &gt;, vector<br class="typebreak"/>
-&lt; ArrayXf &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#aa96f903633e799ebbd93d313bb88315b">get_Z</a> (string s, int *idx, int idx_size)</td></tr>
+<tr class="memitem:aa96f903633e799ebbd93d313bb88315b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#aa96f903633e799ebbd93d313bb88315b">get_Z</a> (string s, int *idx, int idx_size)</td></tr>
 <tr class="memdesc:aa96f903633e799ebbd93d313bb88315b"><td class="mdescLeft">&#160;</td><td class="mdescRight">get longitudinal data from file s  <a href="#aa96f903633e799ebbd93d313bb88315b">More...</a><br/></td></tr>
 <tr class="separator:aa96f903633e799ebbd93d313bb88315b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7797e289bc355fd92d2d65ae0b3fae1d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#a7797e289bc355fd92d2d65ae0b3fae1d">~Feat</a> ()</td></tr>
 <tr class="memdesc:a7797e289bc355fd92d2d65ae0b3fae1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">destructor  <a href="#a7797e289bc355fd92d2d65ae0b3fae1d">More...</a><br/></td></tr>
 <tr class="separator:a7797e289bc355fd92d2d65ae0b3fae1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43c8a8dc301eeefb4443ca273e0499e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#a43c8a8dc301eeefb4443ca273e0499e0">fit</a> (MatrixXf &amp;X, VectorXf &amp;y, std::map&lt; string, std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt; Z=std::map&lt; string, std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt;())</td></tr>
-<tr class="memdesc:a43c8a8dc301eeefb4443ca273e0499e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">train a model.  <a href="#a43c8a8dc301eeefb4443ca273e0499e0">More...</a><br/></td></tr>
-<tr class="separator:a43c8a8dc301eeefb4443ca273e0499e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630ccaa642ebdc9951f849cb98d415f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#a630ccaa642ebdc9951f849cb98d415f5">fit</a> (MatrixXf &amp;X, VectorXf &amp;y, <a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a> Z=<a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a>())</td></tr>
+<tr class="memdesc:a630ccaa642ebdc9951f849cb98d415f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">train a model.  <a href="#a630ccaa642ebdc9951f849cb98d415f5">More...</a><br/></td></tr>
+<tr class="separator:a630ccaa642ebdc9951f849cb98d415f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e6669504b0480f383f113e98384dc6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#a6e6669504b0480f383f113e98384dc6a">run_generation</a> (unsigned int g, vector&lt; size_t &gt; survivors, <a class="el" href="../../d4/d10/classFT_1_1Dat_1_1DataRef.html">DataRef</a> &amp;d, std::ofstream &amp;log, float percentage, unsigned &amp;stall_count)</td></tr>
 <tr class="separator:a6e6669504b0480f383f113e98384dc6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61aa8da2c8ed0786b50892f5558f60f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#a61aa8da2c8ed0786b50892f5558f60f1">fit</a> (float *X, int rowsX, int colsX, float *Y, int lenY)</td></tr>
@@ -345,15 +343,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac194481ccc9bb8cb152f62407a88097c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#ac194481ccc9bb8cb152f62407a88097c">fit_with_z</a> (float *X, int rowsX, int colsX, float *Y, int lenY, string s, int *idx, int idx_size)</td></tr>
 <tr class="memdesc:ac194481ccc9bb8cb152f62407a88097c"><td class="mdescLeft">&#160;</td><td class="mdescRight">train a model, first loading longitudinal samples (Z) from file.  <a href="#ac194481ccc9bb8cb152f62407a88097c">More...</a><br/></td></tr>
 <tr class="separator:ac194481ccc9bb8cb152f62407a88097c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7ae275c1e28b741d189b2ba83758f97"><td class="memItemLeft" align="right" valign="top">VectorXf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#ac7ae275c1e28b741d189b2ba83758f97">predict</a> (MatrixXf &amp;X, std::map&lt; string, std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt; Z=std::map&lt; string, std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt;())</td></tr>
-<tr class="memdesc:ac7ae275c1e28b741d189b2ba83758f97"><td class="mdescLeft">&#160;</td><td class="mdescRight">predict on unseen data.  <a href="#ac7ae275c1e28b741d189b2ba83758f97">More...</a><br/></td></tr>
-<tr class="separator:ac7ae275c1e28b741d189b2ba83758f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5674ec97ddb1aeee29b71cf10eb1409"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; CLabels &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#ad5674ec97ddb1aeee29b71cf10eb1409">predict_labels</a> (MatrixXf &amp;X, std::map&lt; string, std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt; Z=std::map&lt; string, std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt;())</td></tr>
-<tr class="memdesc:ad5674ec97ddb1aeee29b71cf10eb1409"><td class="mdescLeft">&#160;</td><td class="mdescRight">predict on unseen data. return CLabels.  <a href="#ad5674ec97ddb1aeee29b71cf10eb1409">More...</a><br/></td></tr>
-<tr class="separator:ad5674ec97ddb1aeee29b71cf10eb1409"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f39d4c58662d28aa9d005126cf51f7f"><td class="memItemLeft" align="right" valign="top">ArrayXXf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#a0f39d4c58662d28aa9d005126cf51f7f">predict_proba</a> (MatrixXf &amp;X, std::map&lt; string, std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt; Z=std::map&lt; string, std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt;())</td></tr>
-<tr class="memdesc:a0f39d4c58662d28aa9d005126cf51f7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">predict probabilities of each class.  <a href="#a0f39d4c58662d28aa9d005126cf51f7f">More...</a><br/></td></tr>
-<tr class="separator:a0f39d4c58662d28aa9d005126cf51f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a675d7724185c2ccd4c4ef3b3dd02ddd6"><td class="memItemLeft" align="right" valign="top">VectorXf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#a675d7724185c2ccd4c4ef3b3dd02ddd6">predict</a> (MatrixXf &amp;X, <a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a> Z=<a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a>())</td></tr>
+<tr class="memdesc:a675d7724185c2ccd4c4ef3b3dd02ddd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">predict on unseen data.  <a href="#a675d7724185c2ccd4c4ef3b3dd02ddd6">More...</a><br/></td></tr>
+<tr class="separator:a675d7724185c2ccd4c4ef3b3dd02ddd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab182421feb40ba7da30f51d274b9fc5f"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; CLabels &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#ab182421feb40ba7da30f51d274b9fc5f">predict_labels</a> (MatrixXf &amp;X, <a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a> Z=<a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a>())</td></tr>
+<tr class="memdesc:ab182421feb40ba7da30f51d274b9fc5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">predict on unseen data. return CLabels.  <a href="#ab182421feb40ba7da30f51d274b9fc5f">More...</a><br/></td></tr>
+<tr class="separator:ab182421feb40ba7da30f51d274b9fc5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77ee1844051dd735cc6533ce02736383"><td class="memItemLeft" align="right" valign="top">ArrayXXf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#a77ee1844051dd735cc6533ce02736383">predict_proba</a> (MatrixXf &amp;X, <a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a> Z=<a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a>())</td></tr>
+<tr class="memdesc:a77ee1844051dd735cc6533ce02736383"><td class="mdescLeft">&#160;</td><td class="mdescRight">predict probabilities of each class.  <a href="#a77ee1844051dd735cc6533ce02736383">More...</a><br/></td></tr>
+<tr class="separator:a77ee1844051dd735cc6533ce02736383"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ddffcef2951027fc1723ac817a9ee26"><td class="memItemLeft" align="right" valign="top">ArrayXXf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#a4ddffcef2951027fc1723ac817a9ee26">predict_proba</a> (float *X, int rows_x, int cols_x)</td></tr>
 <tr class="separator:a4ddffcef2951027fc1723ac817a9ee26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ed3868f560b6cd4f788c678e5419367"><td class="memItemLeft" align="right" valign="top">VectorXf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#a9ed3868f560b6cd4f788c678e5419367">predict_with_z</a> (float *X, int rowsX, int colsX, string s, int *idx, int idx_size)</td></tr>
@@ -365,27 +363,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a54eea62aeb8a4362254a1cdcb896d971"><td class="memItemLeft" align="right" valign="top">VectorXf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#a54eea62aeb8a4362254a1cdcb896d971">predict</a> (float *X, int rowsX, int colsX)</td></tr>
 <tr class="memdesc:a54eea62aeb8a4362254a1cdcb896d971"><td class="mdescLeft">&#160;</td><td class="mdescRight">predict on unseen data.  <a href="#a54eea62aeb8a4362254a1cdcb896d971">More...</a><br/></td></tr>
 <tr class="separator:a54eea62aeb8a4362254a1cdcb896d971"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a490cc3e839717e8b6a28fde0a2b3e643"><td class="memItemLeft" align="right" valign="top">MatrixXf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#a490cc3e839717e8b6a28fde0a2b3e643">transform</a> (MatrixXf &amp;X, std::map&lt; string, std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt; Z=std::map&lt; string, std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt;(), <a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> *ind=0)</td></tr>
-<tr class="memdesc:a490cc3e839717e8b6a28fde0a2b3e643"><td class="mdescLeft">&#160;</td><td class="mdescRight">transform an input matrix using a program.  <a href="#a490cc3e839717e8b6a28fde0a2b3e643">More...</a><br/></td></tr>
-<tr class="separator:a490cc3e839717e8b6a28fde0a2b3e643"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a7d3ef3a9f80276cb239347b65c1fe5"><td class="memItemLeft" align="right" valign="top">MatrixXf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#a1a7d3ef3a9f80276cb239347b65c1fe5">transform</a> (MatrixXf &amp;X, <a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a> Z=<a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a>(), <a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> *ind=0)</td></tr>
+<tr class="memdesc:a1a7d3ef3a9f80276cb239347b65c1fe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">transform an input matrix using a program.  <a href="#a1a7d3ef3a9f80276cb239347b65c1fe5">More...</a><br/></td></tr>
+<tr class="separator:a1a7d3ef3a9f80276cb239347b65c1fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e6abc52394ae1939f0cd67e0b22c596"><td class="memItemLeft" align="right" valign="top">MatrixXf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#a5e6abc52394ae1939f0cd67e0b22c596">transform</a> (float *X, int rows_x, int cols_x)</td></tr>
 <tr class="separator:a5e6abc52394ae1939f0cd67e0b22c596"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a367b4a3212b1bdb5367fc1d586281edf"><td class="memItemLeft" align="right" valign="top">MatrixXf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#a367b4a3212b1bdb5367fc1d586281edf">transform_with_z</a> (float *X, int rowsX, int colsX, string s, int *idx, int idx_size)</td></tr>
 <tr class="memdesc:a367b4a3212b1bdb5367fc1d586281edf"><td class="mdescLeft">&#160;</td><td class="mdescRight">train a model, first loading longitudinal samples (Z) from file.  <a href="#a367b4a3212b1bdb5367fc1d586281edf">More...</a><br/></td></tr>
 <tr class="separator:a367b4a3212b1bdb5367fc1d586281edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a473b67012d0f8b1063009ca1ba78ff4d"><td class="memItemLeft" align="right" valign="top">VectorXf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#a473b67012d0f8b1063009ca1ba78ff4d">fit_predict</a> (MatrixXf &amp;X, VectorXf &amp;y, std::map&lt; string, std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt; Z=std::map&lt; string, std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt;())</td></tr>
-<tr class="memdesc:a473b67012d0f8b1063009ca1ba78ff4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">convenience function calls fit then predict.  <a href="#a473b67012d0f8b1063009ca1ba78ff4d">More...</a><br/></td></tr>
-<tr class="separator:a473b67012d0f8b1063009ca1ba78ff4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52a574bbc1976be1f5ec563ef79d16eb"><td class="memItemLeft" align="right" valign="top">VectorXf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#a52a574bbc1976be1f5ec563ef79d16eb">fit_predict</a> (MatrixXf &amp;X, VectorXf &amp;y, <a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a> Z=<a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a>())</td></tr>
+<tr class="memdesc:a52a574bbc1976be1f5ec563ef79d16eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">convenience function calls fit then predict.  <a href="#a52a574bbc1976be1f5ec563ef79d16eb">More...</a><br/></td></tr>
+<tr class="separator:a52a574bbc1976be1f5ec563ef79d16eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e555f3bb32d74ef971d631b6c5c271e"><td class="memItemLeft" align="right" valign="top">VectorXf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#a3e555f3bb32d74ef971d631b6c5c271e">fit_predict</a> (float *X, int rows_x, int cols_x, float *Y, int len_y)</td></tr>
 <tr class="separator:a3e555f3bb32d74ef971d631b6c5c271e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c71388f08ff87f0f5aab59800216e52"><td class="memItemLeft" align="right" valign="top">MatrixXf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#a7c71388f08ff87f0f5aab59800216e52">fit_transform</a> (MatrixXf &amp;X, VectorXf &amp;y, std::map&lt; string, std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt; Z=std::map&lt; string, std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt;())</td></tr>
-<tr class="memdesc:a7c71388f08ff87f0f5aab59800216e52"><td class="mdescLeft">&#160;</td><td class="mdescRight">convenience function calls fit then transform.  <a href="#a7c71388f08ff87f0f5aab59800216e52">More...</a><br/></td></tr>
-<tr class="separator:a7c71388f08ff87f0f5aab59800216e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe0a98bb08a7d4d7020393314ead8d98"><td class="memItemLeft" align="right" valign="top">MatrixXf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#abe0a98bb08a7d4d7020393314ead8d98">fit_transform</a> (MatrixXf &amp;X, VectorXf &amp;y, <a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a> Z=<a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a>())</td></tr>
+<tr class="memdesc:abe0a98bb08a7d4d7020393314ead8d98"><td class="mdescLeft">&#160;</td><td class="mdescRight">convenience function calls fit then transform.  <a href="#abe0a98bb08a7d4d7020393314ead8d98">More...</a><br/></td></tr>
+<tr class="separator:abe0a98bb08a7d4d7020393314ead8d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77d7dfe063841576706472ec77e5216c"><td class="memItemLeft" align="right" valign="top">MatrixXf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#a77d7dfe063841576706472ec77e5216c">fit_transform</a> (float *X, int rows_x, int cols_x, float *Y, int len_y)</td></tr>
 <tr class="separator:a77d7dfe063841576706472ec77e5216c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a4064ceb79a834ca038143a40307235"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#a4a4064ceb79a834ca038143a40307235">score</a> (MatrixXf &amp;X, const VectorXf &amp;y, std::map&lt; string, std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt; Z=std::map&lt; string, std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt;())</td></tr>
-<tr class="memdesc:a4a4064ceb79a834ca038143a40307235"><td class="mdescLeft">&#160;</td><td class="mdescRight">scoring function  <a href="#a4a4064ceb79a834ca038143a40307235">More...</a><br/></td></tr>
-<tr class="separator:a4a4064ceb79a834ca038143a40307235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27535b3dce895e85983ee1c533fb9f42"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#a27535b3dce895e85983ee1c533fb9f42">score</a> (MatrixXf &amp;X, const VectorXf &amp;y, <a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a> Z=<a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a>())</td></tr>
+<tr class="memdesc:a27535b3dce895e85983ee1c533fb9f42"><td class="mdescLeft">&#160;</td><td class="mdescRight">scoring function  <a href="#a27535b3dce895e85983ee1c533fb9f42">More...</a><br/></td></tr>
+<tr class="separator:a27535b3dce895e85983ee1c533fb9f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b71d9fd0bc2ac87563151d3392abe39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classFT_1_1Feat.html#a6b71d9fd0bc2ac87563151d3392abe39">print_population</a> ()</td></tr>
 <tr class="memdesc:a6b71d9fd0bc2ac87563151d3392abe39"><td class="mdescLeft">&#160;</td><td class="mdescRight">prints population obj scores each generation  <a href="#a6b71d9fd0bc2ac87563151d3392abe39">More...</a><br/></td></tr>
 <tr class="separator:a6b71d9fd0bc2ac87563151d3392abe39"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -529,7 +527,7 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><p>main class for the <a class="el" href="../../db/dff/classFT_1_1Feat.html" title="main class for the Feat learner. ">Feat</a> learner. </p>
 <p><a class="el" href="../../db/dff/classFT_1_1Feat.html" title="main class for the Feat learner. ">Feat</a> optimizes feature represenations for a given machine learning algorithm. It does so by using evolutionary computation to optimize a population of programs. Each program represents a set of feature transformations. </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00068">68</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00069">69</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a27d192805cb38174941c036c4b2e22bc"></a>
 <div class="memitem">
@@ -833,7 +831,7 @@ Private Attributes</h2></td></tr>
 
 <p>calculate and print stats </p>
 
-<p>Definition at line <a class="el" href="../../dc/d37/feat_8cc_source.html#l01150">1150</a> of file <a class="el" href="../../dc/d37/feat_8cc_source.html">feat.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d37/feat_8cc_source.html#l01149">1149</a> of file <a class="el" href="../../dc/d37/feat_8cc_source.html">feat.cc</a>.</p>
 
 </div>
 </div>
@@ -865,7 +863,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a43c8a8dc301eeefb4443ca273e0499e0"></a>
+<a class="anchor" id="a630ccaa642ebdc9951f849cb98d415f5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -884,8 +882,8 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::map&lt; string, std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt;&#160;</td>
-          <td class="paramname"><em>Z</em> = <code>std::map&lt;string,&#160;std::pair&lt;vector&lt;ArrayXf&gt;,&#160;vector&lt;ArrayXf&gt;&#160;&gt;&#160;&gt;()</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a>&#160;</td>
+          <td class="paramname"><em>Z</em> = <code><a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -965,7 +963,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a473b67012d0f8b1063009ca1ba78ff4d"></a>
+<a class="anchor" id="a52a574bbc1976be1f5ec563ef79d16eb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -984,8 +982,8 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::map&lt; string, std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt;&#160;</td>
-          <td class="paramname"><em>Z</em> = <code>std::map&lt;string,&#160;std::pair&lt;vector&lt;ArrayXf&gt;,&#160;vector&lt;ArrayXf&gt;&#160;&gt;&#160;&gt;()</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a>&#160;</td>
+          <td class="paramname"><em>Z</em> = <code><a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1047,7 +1045,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7c71388f08ff87f0f5aab59800216e52"></a>
+<a class="anchor" id="abe0a98bb08a7d4d7020393314ead8d98"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1066,8 +1064,8 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::map&lt; string, std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt;&#160;</td>
-          <td class="paramname"><em>Z</em> = <code>std::map&lt;string,&#160;std::pair&lt;vector&lt;ArrayXf&gt;,&#160;vector&lt;ArrayXf&gt;&#160;&gt;&#160;&gt;()</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a>&#160;</td>
+          <td class="paramname"><em>Z</em> = <code><a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1210,7 +1208,7 @@ Private Attributes</h2></td></tr>
 
 <p>return best score values statistics arrays </p>
 
-<p>Definition at line <a class="el" href="../../dc/d37/feat_8cc_source.html#l01380">1380</a> of file <a class="el" href="../../dc/d37/feat_8cc_source.html">feat.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d37/feat_8cc_source.html#l01379">1379</a> of file <a class="el" href="../../dc/d37/feat_8cc_source.html">feat.cc</a>.</p>
 
 </div>
 </div>
@@ -1229,7 +1227,7 @@ Private Attributes</h2></td></tr>
 
 <p>return best score statistics arrays </p>
 
-<p>Definition at line <a class="el" href="../../dc/d37/feat_8cc_source.html#l01378">1378</a> of file <a class="el" href="../../dc/d37/feat_8cc_source.html">feat.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d37/feat_8cc_source.html#l01377">1377</a> of file <a class="el" href="../../dc/d37/feat_8cc_source.html">feat.cc</a>.</p>
 
 </div>
 </div>
@@ -1440,7 +1438,7 @@ Private Attributes</h2></td></tr>
 
 <p>return generations statistics arrays </p>
 
-<p>Definition at line <a class="el" href="../../dc/d37/feat_8cc_source.html#l01374">1374</a> of file <a class="el" href="../../dc/d37/feat_8cc_source.html">feat.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d37/feat_8cc_source.html#l01373">1373</a> of file <a class="el" href="../../dc/d37/feat_8cc_source.html">feat.cc</a>.</p>
 
 </div>
 </div>
@@ -1554,7 +1552,7 @@ Private Attributes</h2></td></tr>
 
 <p>return median complexity statistics arrays </p>
 
-<p>Definition at line <a class="el" href="../../dc/d37/feat_8cc_source.html#l01388">1388</a> of file <a class="el" href="../../dc/d37/feat_8cc_source.html">feat.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d37/feat_8cc_source.html#l01387">1387</a> of file <a class="el" href="../../dc/d37/feat_8cc_source.html">feat.cc</a>.</p>
 
 </div>
 </div>
@@ -1573,7 +1571,7 @@ Private Attributes</h2></td></tr>
 
 <p>return median dimensions statistics arrays </p>
 
-<p>Definition at line <a class="el" href="../../dc/d37/feat_8cc_source.html#l01392">1392</a> of file <a class="el" href="../../dc/d37/feat_8cc_source.html">feat.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d37/feat_8cc_source.html#l01391">1391</a> of file <a class="el" href="../../dc/d37/feat_8cc_source.html">feat.cc</a>.</p>
 
 </div>
 </div>
@@ -1592,7 +1590,7 @@ Private Attributes</h2></td></tr>
 
 <p>return median loss values statistics arrays </p>
 
-<p>Definition at line <a class="el" href="../../dc/d37/feat_8cc_source.html#l01384">1384</a> of file <a class="el" href="../../dc/d37/feat_8cc_source.html">feat.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d37/feat_8cc_source.html#l01383">1383</a> of file <a class="el" href="../../dc/d37/feat_8cc_source.html">feat.cc</a>.</p>
 
 </div>
 </div>
@@ -1611,7 +1609,7 @@ Private Attributes</h2></td></tr>
 
 <p>return median num params statistics arrays </p>
 
-<p>Definition at line <a class="el" href="../../dc/d37/feat_8cc_source.html#l01390">1390</a> of file <a class="el" href="../../dc/d37/feat_8cc_source.html">feat.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d37/feat_8cc_source.html#l01389">1389</a> of file <a class="el" href="../../dc/d37/feat_8cc_source.html">feat.cc</a>.</p>
 
 </div>
 </div>
@@ -1630,7 +1628,7 @@ Private Attributes</h2></td></tr>
 
 <p>return median scores statistics arrays </p>
 
-<p>Definition at line <a class="el" href="../../dc/d37/feat_8cc_source.html#l01382">1382</a> of file <a class="el" href="../../dc/d37/feat_8cc_source.html">feat.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d37/feat_8cc_source.html#l01381">1381</a> of file <a class="el" href="../../dc/d37/feat_8cc_source.html">feat.cc</a>.</p>
 
 </div>
 </div>
@@ -1649,7 +1647,7 @@ Private Attributes</h2></td></tr>
 
 <p>return median size statistics arrays </p>
 
-<p>Definition at line <a class="el" href="../../dc/d37/feat_8cc_source.html#l01386">1386</a> of file <a class="el" href="../../dc/d37/feat_8cc_source.html">feat.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d37/feat_8cc_source.html#l01385">1385</a> of file <a class="el" href="../../dc/d37/feat_8cc_source.html">feat.cc</a>.</p>
 
 </div>
 </div>
@@ -1858,7 +1856,7 @@ Private Attributes</h2></td></tr>
 
 <p>return time statistics arrays </p>
 
-<p>Definition at line <a class="el" href="../../dc/d37/feat_8cc_source.html#l01376">1376</a> of file <a class="el" href="../../dc/d37/feat_8cc_source.html">feat.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d37/feat_8cc_source.html#l01375">1375</a> of file <a class="el" href="../../dc/d37/feat_8cc_source.html">feat.cc</a>.</p>
 
 </div>
 </div>
@@ -1946,7 +1944,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac7ae275c1e28b741d189b2ba83758f97"></a>
+<a class="anchor" id="a675d7724185c2ccd4c4ef3b3dd02ddd6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1959,8 +1957,8 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::map&lt; string, std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt;&#160;</td>
-          <td class="paramname"><em>Z</em> = <code>std::map&lt;string,&#160;std::pair&lt;vector&lt;ArrayXf&gt;,&#160;vector&lt;ArrayXf&gt;&#160;&gt;&#160;&gt;()</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a>&#160;</td>
+          <td class="paramname"><em>Z</em> = <code><a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2012,7 +2010,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad5674ec97ddb1aeee29b71cf10eb1409"></a>
+<a class="anchor" id="ab182421feb40ba7da30f51d274b9fc5f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2025,8 +2023,8 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::map&lt; string, std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt;&#160;</td>
-          <td class="paramname"><em>Z</em> = <code>std::map&lt;string,&#160;std::pair&lt;vector&lt;ArrayXf&gt;,&#160;vector&lt;ArrayXf&gt;&#160;&gt;&#160;&gt;()</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a>&#160;</td>
+          <td class="paramname"><em>Z</em> = <code><a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2042,7 +2040,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0f39d4c58662d28aa9d005126cf51f7f"></a>
+<a class="anchor" id="a77ee1844051dd735cc6533ce02736383"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2055,8 +2053,8 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::map&lt; string, std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt;&#160;</td>
-          <td class="paramname"><em>Z</em> = <code>std::map&lt;string,&#160;std::pair&lt;vector&lt;ArrayXf&gt;,&#160;vector&lt;ArrayXf&gt;&#160;&gt;&#160;&gt;()</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a>&#160;</td>
+          <td class="paramname"><em>Z</em> = <code><a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2230,7 +2228,7 @@ Private Attributes</h2></td></tr>
 <p>prints population obj scores each generation </p>
 <p>&lt; log file stream </p>
 
-<p>Definition at line <a class="el" href="../../dc/d37/feat_8cc_source.html#l01340">1340</a> of file <a class="el" href="../../dc/d37/feat_8cc_source.html">feat.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d37/feat_8cc_source.html#l01339">1339</a> of file <a class="el" href="../../dc/d37/feat_8cc_source.html">feat.cc</a>.</p>
 
 </div>
 </div>
@@ -2266,7 +2264,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d37/feat_8cc_source.html#l01227">1227</a> of file <a class="el" href="../../dc/d37/feat_8cc_source.html">feat.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d37/feat_8cc_source.html#l01226">1226</a> of file <a class="el" href="../../dc/d37/feat_8cc_source.html">feat.cc</a>.</p>
 
 </div>
 </div>
@@ -2322,7 +2320,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4a4064ceb79a834ca038143a40307235"></a>
+<a class="anchor" id="a27535b3dce895e85983ee1c533fb9f42"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2341,8 +2339,8 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::map&lt; string, std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt;&#160;</td>
-          <td class="paramname"><em>Z</em> = <code>std::map&lt;string,&#160;std::pair&lt;vector&lt;ArrayXf&gt;,&#160;vector&lt;ArrayXf&gt;&#160;&gt;&#160;&gt;()</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a>&#160;</td>
+          <td class="paramname"><em>Z</em> = <code><a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2886,7 +2884,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00201">201</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00202">202</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
 
 </div>
 </div>
@@ -2934,7 +2932,7 @@ Private Attributes</h2></td></tr>
 
 <p>use residual crossover </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00193">193</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00194">194</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
 
 </div>
 </div>
@@ -3061,7 +3059,7 @@ Private Attributes</h2></td></tr>
 
 <p>use softmax </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00199">199</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00200">200</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
 
 </div>
 </div>
@@ -3109,7 +3107,7 @@ Private Attributes</h2></td></tr>
 
 <p>use stagewise crossover </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00196">196</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00197">197</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
 
 </div>
 </div>
@@ -3210,7 +3208,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a490cc3e839717e8b6a28fde0a2b3e643"></a>
+<a class="anchor" id="a1a7d3ef3a9f80276cb239347b65c1fe5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3223,8 +3221,8 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::map&lt; string, std::pair&lt; vector&lt; ArrayXf &gt;, vector&lt; ArrayXf &gt; &gt; &gt;&#160;</td>
-          <td class="paramname"><em>Z</em> = <code>std::map&lt;string,&#160;std::pair&lt;vector&lt;ArrayXf&gt;,&#160;vector&lt;ArrayXf&gt;&#160;&gt;&#160;&gt;()</code>, </td>
+          <td class="paramtype"><a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a>&#160;</td>
+          <td class="paramname"><em>Z</em> = <code><a class="el" href="../../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c">LongData</a>()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -3459,7 +3457,7 @@ Private Attributes</h2></td></tr>
 
 <p>pareto front archive </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00421">421</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00411">411</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
 
 </div>
 </div>
@@ -3483,7 +3481,7 @@ Private Attributes</h2></td></tr>
 
 <p>best individual </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00440">440</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00430">430</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
 
 </div>
 </div>
@@ -3507,7 +3505,7 @@ Private Attributes</h2></td></tr>
 
 <p>best median population score </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00429">429</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00419">419</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
 
 </div>
 </div>
@@ -3531,7 +3529,7 @@ Private Attributes</h2></td></tr>
 
 <p>current best score </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00427">427</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00417">417</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
 
 </div>
 </div>
@@ -3555,7 +3553,7 @@ Private Attributes</h2></td></tr>
 
 <p>best validation score </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00428">428</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00418">418</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
 
 </div>
 </div>
@@ -3579,7 +3577,7 @@ Private Attributes</h2></td></tr>
 
 <p>matrix of fitness values for population </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00411">411</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00401">401</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
 
 </div>
 </div>
@@ -3603,7 +3601,7 @@ Private Attributes</h2></td></tr>
 
 <p>matrix of validation scores </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00412">412</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00402">402</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
 
 </div>
 </div>
@@ -3627,7 +3625,7 @@ Private Attributes</h2></td></tr>
 
 <p>log filename </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00441">441</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00431">431</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
 
 </div>
 </div>
@@ -3651,7 +3649,7 @@ Private Attributes</h2></td></tr>
 
 <p>current val loss of median individual </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00430">430</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00420">420</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
 
 </div>
 </div>
@@ -3675,7 +3673,7 @@ Private Attributes</h2></td></tr>
 
 <p>scales training data. </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00424">424</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00414">414</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
 
 </div>
 </div>
@@ -3699,7 +3697,7 @@ Private Attributes</h2></td></tr>
 
 <p>evaluation code </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00417">417</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00407">407</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
 
 </div>
 </div>
@@ -3723,7 +3721,7 @@ Private Attributes</h2></td></tr>
 
 <p>pointer to machine learning class </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00420">420</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00410">410</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
 
 </div>
 </div>
@@ -3747,7 +3745,7 @@ Private Attributes</h2></td></tr>
 
 <p>population of programs </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00415">415</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00405">405</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
 
 </div>
 </div>
@@ -3771,7 +3769,7 @@ Private Attributes</h2></td></tr>
 
 <p>selection algorithm </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00416">416</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00406">406</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
 
 </div>
 </div>
@@ -3795,7 +3793,7 @@ Private Attributes</h2></td></tr>
 
 <p>survival algorithm </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00419">419</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00409">409</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
 
 </div>
 </div>
@@ -3819,7 +3817,7 @@ Private Attributes</h2></td></tr>
 
 <p>variation operators </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00418">418</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00408">408</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
 
 </div>
 </div>
@@ -3843,7 +3841,7 @@ Private Attributes</h2></td></tr>
 
 <p>hyperparameters of <a class="el" href="../../db/dff/classFT_1_1Feat.html" title="main class for the Feat learner. ">Feat</a> </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00409">409</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00399">399</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
 
 </div>
 </div>
@@ -3867,7 +3865,7 @@ Private Attributes</h2></td></tr>
 
 <p>controls whether pop is printed each gen </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00442">442</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00432">432</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
 
 </div>
 </div>
@@ -3891,7 +3889,7 @@ Private Attributes</h2></td></tr>
 
 <p>scoring function name. </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00425">425</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00415">415</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
 
 </div>
 </div>
@@ -3915,7 +3913,7 @@ Private Attributes</h2></td></tr>
 
 <p>post-run simplification </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00444">444</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00434">434</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
 
 </div>
 </div>
@@ -3937,7 +3935,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00457">457</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00447">447</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
 
 </div>
 </div>
@@ -3961,7 +3959,7 @@ Private Attributes</h2></td></tr>
 
 <p>dimensionality as multiple of number of cols </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00431">431</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00421">421</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
 
 </div>
 </div>
@@ -3985,7 +3983,7 @@ Private Attributes</h2></td></tr>
 
 <p>stores survival mode </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00423">423</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00413">413</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
 
 </div>
 </div>
@@ -4009,7 +4007,7 @@ Private Attributes</h2></td></tr>
 
 <p>start time of training </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00413">413</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00403">403</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
 
 </div>
 </div>
@@ -4033,7 +4031,7 @@ Private Attributes</h2></td></tr>
 
 <p>internal control over use of archive </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00422">422</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00412">412</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
 
 </div>
 </div>
@@ -4057,7 +4055,7 @@ Private Attributes</h2></td></tr>
 
 <p>model selection only uses Pareto front </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00443">443</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/feat_8h_source.html#l00433">433</a> of file <a class="el" href="../../d3/dff/feat_8h_source.html">feat.h</a>.</p>
 
 </div>
 </div>

@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"d8/dc0/init_8h.html":[2,0,18],
+"d8/dc0/init_8h.html#a21d1558c9c77cb1f9f2d2afb82cf20e3":[2,0,18,4],
 "d8/dc0/init_8h.html#a34d9416d559c78e525082e3b25582658":[2,0,18,2],
 "d8/dc0/init_8h.html#a59e73060d1552ccda56039c7f3d25a84":[2,0,18,0],
 "d8/dc0/init_8h.html#a6a33354c51ab1e4986b2a222aac825a7":[2,0,18,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "db/d76/structFT_1_1Sel_1_1Lexicase.html#a7b21dedbf0dbd6200b1f6fddfdf7ee3f":[1,0,0,5,0,2],
 "db/d76/structFT_1_1Sel_1_1Lexicase.html#ab5e3b4670d83194bea27b7d0d8714c7c":[1,0,0,5,0,1],
 "db/d82/n__max_8h.html":[2,0,94],
-"db/d82/n__max_8h_source.html":[2,0,94],
-"db/d83/n__logit_8cc.html":[2,0,89],
-"db/d83/n__logit_8cc_source.html":[2,0,89]
+"db/d82/n__max_8h_source.html":[2,0,94]
 };

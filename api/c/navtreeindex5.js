@@ -1,5 +1,7 @@
 var NAVTREEINDEX5 =
 {
+"db/dff/classshogun_1_1CMyCARTree.html#add4415cd0d5b869bf33ca1ea23ef6833":[1,0,1,1,1],
+"db/dff/classshogun_1_1CMyCARTree.html#ae30b09f2bf39c7f123584187e5bf0698":[1,0,1,1,23],
 "db/dff/classshogun_1_1CMyCARTree.html#ae51cf1473b5fd493cec2a51982ce65ba":[1,0,1,1,9],
 "db/dff/classshogun_1_1CMyCARTree.html#ae700ef4d03a1f45da4b2db81fed10132":[1,0,1,1,36],
 "db/dff/classshogun_1_1CMyCARTree.html#aead1f0cb2584dc0c26a6763ca101c5a5":[1,0,1,1,3],
@@ -37,8 +39,8 @@ var NAVTREEINDEX5 =
 "dc/dac/io_8h.html#aee5e757a768b1d11723a17a957b42acc":[2,0,20,0],
 "dc/dac/io_8h_source.html":[2,0,20],
 "dc/dd8/classArchive.html":[1,0,2],
-"dc/dd9/namespaceFT_1_1Pop_1_1Op.html":[1,0,0,4,0],
 "dc/dd9/namespaceFT_1_1Pop_1_1Op.html":[0,0,0,4,0],
+"dc/dd9/namespaceFT_1_1Pop_1_1Op.html":[1,0,0,4,0],
 "dc/ddf/n__count_8cc.html":[2,0,55],
 "dc/ddf/n__count_8cc_source.html":[2,0,55],
 "dc/df5/selection__operator_8cc.html":[2,0,157],
@@ -61,8 +63,8 @@ var NAVTREEINDEX5 =
 "dd/d3f/structFT_1_1Dat_1_1State.html#a54e010c29a1fa4f6d41f8c57dc6b969c":[1,0,0,0,3,0],
 "dd/d3f/structFT_1_1Dat_1_1State.html#a57d8738a2f2619094f02a2523a3b5369":[1,0,0,0,3,11],
 "dd/d3f/structFT_1_1Dat_1_1State.html#a68fb010b8b9dd34ad217ced49e7b44ba":[1,0,0,0,3,14],
-"dd/d3f/structFT_1_1Dat_1_1State.html#a69f21a182ecb8f20d5523696b2c5f966":[1,0,0,0,3,7],
 "dd/d3f/structFT_1_1Dat_1_1State.html#a69f21a182ecb8f20d5523696b2c5f966":[1,0,0,0,3,8],
+"dd/d3f/structFT_1_1Dat_1_1State.html#a69f21a182ecb8f20d5523696b2c5f966":[1,0,0,0,3,7],
 "dd/d3f/structFT_1_1Dat_1_1State.html#a69f21a182ecb8f20d5523696b2c5f966":[1,0,0,0,3,9],
 "dd/d3f/structFT_1_1Dat_1_1State.html#a6e8dbca7b2dfd17879a7555b1c7de208":[1,0,0,0,3,4],
 "dd/d3f/structFT_1_1Dat_1_1State.html#a78d36b0648a8174ec3ce136678b736b1":[1,0,0,0,3,3],
@@ -223,11 +225,11 @@ var NAVTREEINDEX5 =
 "de/d36/classFT_1_1Dat_1_1Data.html#a2a214518bf2b8cf2aa33840c0c10551a":[1,0,0,0,0,1],
 "de/d36/classFT_1_1Dat_1_1Data.html#a3ec008cfacb9b8b1f7474a6bfc8eb6f9":[1,0,0,0,0,6],
 "de/d36/classFT_1_1Dat_1_1Data.html#a8197ce4d48e72ec1f40340ea72ebadf8":[1,0,0,0,0,3],
-"de/d36/classFT_1_1Dat_1_1Data.html#a94158ff87c6d154bb1e385f90810fbf1":[1,0,0,0,0,0],
+"de/d36/classFT_1_1Dat_1_1Data.html#a89d79b49e7a149964181062e29aab1e5":[1,0,0,0,0,0],
+"de/d36/classFT_1_1Dat_1_1Data.html#aafaf7fdf2cae86fe424fb73ec5c80087":[1,0,0,0,0,7],
 "de/d36/classFT_1_1Dat_1_1Data.html#abbf7b7de9c6f8604484f8868a457db40":[1,0,0,0,0,4],
 "de/d36/classFT_1_1Dat_1_1Data.html#ac5b293f4fa477026fac22f2a310da751":[1,0,0,0,0,5],
 "de/d36/classFT_1_1Dat_1_1Data.html#acff1f25dc6d8bb0e1d1663a9acc2d14a":[1,0,0,0,0,2],
-"de/d36/classFT_1_1Dat_1_1Data.html#af52c9ea2ec9c43b9d864a0364e923b1c":[1,0,0,0,0,7],
 "de/d3d/population_8cc.html":[2,0,149],
 "de/d3d/population_8cc.html#a740d6310f660bf2851f192e556e10fe6":[2,0,149,0],
 "de/d3d/population_8cc_source.html":[2,0,149],
@@ -247,7 +249,5 @@ var NAVTREEINDEX5 =
 "de/d4f/cuda__utils_8h.html#a889ec205c635b219999c761b28cc39ba":[2,0,4,1],
 "de/d4f/cuda__utils_8h.html#afb1f85b2d79590fc4495a13fadc2e87b":[2,0,4,4],
 "de/d4f/cuda__utils_8h_source.html":[2,0,4],
-"de/d65/classshogun_1_1CMyLibLinear.html":[1,0,1,3],
-"de/d65/classshogun_1_1CMyLibLinear.html#a00b657c07fd38fc33cc85c51b6f2d60d":[1,0,1,3,2],
-"de/d65/classshogun_1_1CMyLibLinear.html#a1cebc1500990b3469bd13c56670635a9":[1,0,1,3,0]
+"de/d65/classshogun_1_1CMyLibLinear.html":[1,0,1,3]
 };

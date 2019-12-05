@@ -25,6 +25,7 @@ var searchData=
   ['logger',['Logger',['../d9/da2/classFT_1_1Util_1_1Logger.html',1,'FT::Util']]],
   ['logger_2ecc',['logger.cc',['../d5/d6e/logger_8cc.html',1,'']]],
   ['logger_2eh',['logger.h',['../d1/d8c/logger_8h.html',1,'']]],
+  ['longdata',['LongData',['../d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c',1,'LongData():&#160;data.h'],['../d3/dff/feat_8h.html#ae0794aaed93e28865882959b3c2d1b1c',1,'LongData():&#160;feat.h']]],
   ['longitudinalmap',['longitudinalMap',['../de/d2c/structFT_1_1Parameters.html#aa3ab262f22397d37832d905cbad45cb7',1,'FT::Parameters']]],
   ['lr',['LR',['../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcad59b1dd6668ea0d9e128fa72a2d88f03',1,'FT::Model']]],
   ['ltrim',['ltrim',['../d1/d5d/namespaceFT_1_1Util.html#a15f79c11509d2effb17f6a6cc82d0a64',1,'FT::Util']]]

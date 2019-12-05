@@ -2,16 +2,16 @@ var classFT_1_1Dat_1_1DataRef =
 [
     [ "DataRef", "d4/d10/classFT_1_1Dat_1_1DataRef.html#a6bf60e1f5691115fe5e65d03772b8ad6", null ],
     [ "~DataRef", "d4/d10/classFT_1_1Dat_1_1DataRef.html#aa6e4b03cfad153350684d80cd04d53fd", null ],
-    [ "DataRef", "d4/d10/classFT_1_1Dat_1_1DataRef.html#a434acc685379dbd4295f3238f33ac576", null ],
+    [ "DataRef", "d4/d10/classFT_1_1Dat_1_1DataRef.html#a0989b95381f9a8c4bd3e459dc34f2499", null ],
     [ "reorder_longitudinal", "d4/d10/classFT_1_1Dat_1_1DataRef.html#aedc979315e55681c3cf1405c99f3d7ea", null ],
-    [ "setOriginalData", "d4/d10/classFT_1_1Dat_1_1DataRef.html#ac7053953b4e57561b6b01595d29d9b44", null ],
+    [ "setOriginalData", "d4/d10/classFT_1_1Dat_1_1DataRef.html#a6b3a34775cd16694c10636581ac65c72", null ],
     [ "setOriginalData", "d4/d10/classFT_1_1Dat_1_1DataRef.html#aaf740500a93981dde3e3ba61729d764e", null ],
-    [ "setTrainingData", "d4/d10/classFT_1_1Dat_1_1DataRef.html#ad7bd31d75ec6c1c8083c950d50665904", null ],
+    [ "setTrainingData", "d4/d10/classFT_1_1Dat_1_1DataRef.html#a18b5345e78676d28800d3f5adc8e3dc2", null ],
     [ "setTrainingData", "d4/d10/classFT_1_1Dat_1_1DataRef.html#a39ba33fbbec63198006987f85e203730", null ],
-    [ "setValidationData", "d4/d10/classFT_1_1Dat_1_1DataRef.html#a306371f39b36235d73fedbbe812ce139", null ],
+    [ "setValidationData", "d4/d10/classFT_1_1Dat_1_1DataRef.html#ae77f79c3edff17892dc4b12c227640d9", null ],
     [ "setValidationData", "d4/d10/classFT_1_1Dat_1_1DataRef.html#a5a42d1214afcb90cd9f17e0ff9188aa9", null ],
     [ "shuffle_data", "d4/d10/classFT_1_1Dat_1_1DataRef.html#a694c7d1ede849de047fd2c5f115eabc8", null ],
-    [ "split_longitudinal", "d4/d10/classFT_1_1Dat_1_1DataRef.html#ad5c063e857730d13152e5ff0c0b1fd8e", null ],
+    [ "split_longitudinal", "d4/d10/classFT_1_1Dat_1_1DataRef.html#a32bd9d6e4d3fadf28ed9d3246639edca", null ],
     [ "split_stratified", "d4/d10/classFT_1_1Dat_1_1DataRef.html#a5b35a7ffc07ed46f4d7e743683da3cf0", null ],
     [ "train_test_split", "d4/d10/classFT_1_1Dat_1_1DataRef.html#ad35c008b0c3a4d7783225060e2f4846d", null ],
     [ "classification", "d4/d10/classFT_1_1Dat_1_1DataRef.html#a20f6c6dc4e6d1fdbae5470cd716be7c9", null ],
@@ -25,6 +25,6 @@ var classFT_1_1Dat_1_1DataRef =
     [ "X_v", "d4/d10/classFT_1_1Dat_1_1DataRef.html#a2e708020b63316cc7c9da4a54b443f0a", null ],
     [ "y_t", "d4/d10/classFT_1_1Dat_1_1DataRef.html#a0b33b11688621732936eb1acc9199670", null ],
     [ "y_v", "d4/d10/classFT_1_1Dat_1_1DataRef.html#a9883d142e94965f889263fddb95592b4", null ],
-    [ "Z_t", "d4/d10/classFT_1_1Dat_1_1DataRef.html#aaf64e8e3434eab176613e92753162e86", null ],
-    [ "Z_v", "d4/d10/classFT_1_1Dat_1_1DataRef.html#a099ab47b534ebe522ee31605a5f0c910", null ]
+    [ "Z_t", "d4/d10/classFT_1_1Dat_1_1DataRef.html#a9ac9f8de940d6609236de38cfda93473", null ],
+    [ "Z_v", "d4/d10/classFT_1_1Dat_1_1DataRef.html#adace91dbb8e8ed7e3003cd0362c9bd73", null ]
 ];

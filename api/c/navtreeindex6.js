@@ -1,5 +1,7 @@
 var NAVTREEINDEX6 =
 {
+"de/d65/classshogun_1_1CMyLibLinear.html#a00b657c07fd38fc33cc85c51b6f2d60d":[1,0,1,3,2],
+"de/d65/classshogun_1_1CMyLibLinear.html#a1cebc1500990b3469bd13c56670635a9":[1,0,1,3,0],
 "de/d65/classshogun_1_1CMyLibLinear.html#adfef5db1003394d5cac34d89ae8e978e":[1,0,1,3,3],
 "de/d65/classshogun_1_1CMyLibLinear.html#afbc769b3dd62dd7fcf3ca7a82a239604":[1,0,1,3,1],
 "de/d6e/structFT_1_1Sel_1_1Selection.html":[1,0,0,5,4],
@@ -148,8 +150,8 @@ var NAVTREEINDEX6 =
 "df/df1/n__square_8h.html":[2,0,124],
 "df/df1/n__square_8h_source.html":[2,0,124],
 "files.html":[2,0],
-"functions.html":[1,3,0],
 "functions.html":[1,3,0,0],
+"functions.html":[1,3,0],
 "functions_a.html":[1,3,0,1],
 "functions_b.html":[1,3,0,2],
 "functions_c.html":[1,3,0,3],

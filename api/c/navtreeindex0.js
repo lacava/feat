@@ -210,6 +210,7 @@ var NAVTREEINDEX0 =
 "d2/db4/n__log_8h_source.html":[2,0,88],
 "d2/dbd/data_8h.html":[2,0,6],
 "d2/dbd/data_8h.html#a6a33354c51ab1e4986b2a222aac825a7":[2,0,6,2],
+"d2/dbd/data_8h.html#ae0794aaed93e28865882959b3c2d1b1c":[2,0,6,3],
 "d2/dbd/data_8h_source.html":[2,0,6],
 "d2/dd5/n__logit_8h.html":[2,0,90],
 "d2/dd5/n__logit_8h_source.html":[2,0,90],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "d2/dfb/classFT_1_1Pop_1_1Op_1_1Node.html#af1164c4b0002d6e3dda4fc88864d0b09":[1,0,0,4,0,45,1],
 "d2/dfc/structFT_1_1Dat_1_1Trace.html":[1,0,0,0,4],
 "d2/dfc/structFT_1_1Dat_1_1Trace.html#a1317ad7728833c4589eaa2fa1682f09c":[1,0,0,0,4,3],
-"d2/dfc/structFT_1_1Dat_1_1Trace.html#a18aefdd4be9997b80320f1d525a3fa37":[1,0,0,0,4,8],
-"d2/dfc/structFT_1_1Dat_1_1Trace.html#a31b3d7a992ea0e7b9bda33f5537fbc0f":[1,0,0,0,4,6]
+"d2/dfc/structFT_1_1Dat_1_1Trace.html#a18aefdd4be9997b80320f1d525a3fa37":[1,0,0,0,4,8]
 };
