@@ -1,5 +1,7 @@
 <map id="n_train.h" name="n_train.h">
 <area shape="rect" id="node2" href="$d3/d59/n__split_8h.html" title="n_split.h" alt="" coords="1043,80,1113,107"/>
+<area shape="rect" id="node40" href="$d5/dee/n__fuzzy__split_8h.html" title="n_fuzzy_split.h" alt="" coords="739,80,849,107"/>
+<area shape="rect" id="node42" href="$dc/d31/n__fuzzy__fixed__split_8h.html" title="n_fuzzy_fixed_split.h" alt="" coords="873,80,1018,107"/>
 <area shape="rect" id="node3" href="$d1/dc6/nodewrapper_8h.html" title="nodewrapper.h" alt="" coords="966,155,1073,181"/>
 <area shape="rect" id="node39" href="$d5/d80/n__split_8cc.html" title="n_split.cc" alt="" coords="1097,155,1175,181"/>
 <area shape="rect" id="node4" href="$da/d33/params_8h.html" title="params.h" alt="" coords="981,229,1057,256"/>
@@ -37,4 +39,6 @@
 <area shape="rect" id="node29" href="$df/d1f/random_8cc.html" title="random.cc" alt="" coords="295,677,377,704"/>
 <area shape="rect" id="node31" href="$d1/dcf/simulated__annealing_8cc.html" title="simulated_annealing.cc" alt="" coords="403,677,561,704"/>
 <area shape="rect" id="node34" href="$de/d10/variation_8cc.html" title="variation.cc" alt="" coords="21,603,110,629"/>
+<area shape="rect" id="node41" href="$dd/d61/n__fuzzy__split_8cc.html" title="n_fuzzy_split.cc" alt="" coords="649,155,765,181"/>
+<area shape="rect" id="node43" href="$d8/d35/n__fuzzy__fixed__split_8cc.html" title="n_fuzzy_fixed_split.cc" alt="" coords="790,155,942,181"/>
 </map>

@@ -14,6 +14,8 @@ var searchData=
   ['nodeexponent',['NodeExponent',['../d8/d78/classFT_1_1Pop_1_1Op_1_1NodeExponent.html',1,'FT::Pop::Op']]],
   ['nodeexponential',['NodeExponential',['../de/d40/classFT_1_1Pop_1_1Op_1_1NodeExponential.html',1,'FT::Pop::Op']]],
   ['nodefloat',['NodeFloat',['../d6/dc7/classFT_1_1Pop_1_1Op_1_1NodeFloat.html',1,'FT::Pop::Op']]],
+  ['nodefuzzyfixedsplit',['NodeFuzzyFixedSplit',['../dd/d91/classFT_1_1Pop_1_1Op_1_1NodeFuzzyFixedSplit.html',1,'FT::Pop::Op']]],
+  ['nodefuzzysplit',['NodeFuzzySplit',['../de/d7e/classFT_1_1Pop_1_1Op_1_1NodeFuzzySplit.html',1,'FT::Pop::Op']]],
   ['nodegaussian',['NodeGaussian',['../da/de8/classFT_1_1Pop_1_1Op_1_1NodeGaussian.html',1,'FT::Pop::Op']]],
   ['nodegeq',['NodeGEQ',['../d6/d82/classFT_1_1Pop_1_1Op_1_1NodeGEQ.html',1,'FT::Pop::Op']]],
   ['nodegreaterthan',['NodeGreaterThan',['../d9/d6d/classFT_1_1Pop_1_1Op_1_1NodeGreaterThan.html',1,'FT::Pop::Op']]],

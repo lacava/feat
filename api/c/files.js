@@ -119,6 +119,14 @@ var files =
     [ "n_float.h", "d7/d10/n__float_8h.html", [
       [ "NodeFloat", "d6/dc7/classFT_1_1Pop_1_1Op_1_1NodeFloat.html", "d6/dc7/classFT_1_1Pop_1_1Op_1_1NodeFloat" ]
     ] ],
+    [ "n_fuzzy_fixed_split.cc", "d8/d35/n__fuzzy__fixed__split_8cc.html", null ],
+    [ "n_fuzzy_fixed_split.h", "dc/d31/n__fuzzy__fixed__split_8h.html", [
+      [ "NodeFuzzyFixedSplit", "dd/d91/classFT_1_1Pop_1_1Op_1_1NodeFuzzyFixedSplit.html", "dd/d91/classFT_1_1Pop_1_1Op_1_1NodeFuzzyFixedSplit" ]
+    ] ],
+    [ "n_fuzzy_split.cc", "dd/d61/n__fuzzy__split_8cc.html", null ],
+    [ "n_fuzzy_split.h", "d5/dee/n__fuzzy__split_8h.html", [
+      [ "NodeFuzzySplit", "de/d7e/classFT_1_1Pop_1_1Op_1_1NodeFuzzySplit.html", "de/d7e/classFT_1_1Pop_1_1Op_1_1NodeFuzzySplit" ]
+    ] ],
     [ "n_gaussian.cc", "d1/dcb/n__gaussian_8cc.html", null ],
     [ "n_gaussian.h", "de/ddb/n__gaussian_8h.html", [
       [ "NodeGaussian", "da/de8/classFT_1_1Pop_1_1Op_1_1NodeGaussian.html", "da/de8/classFT_1_1Pop_1_1Op_1_1NodeGaussian" ]

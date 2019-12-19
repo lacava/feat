@@ -22,6 +22,8 @@ var namespaceFT_1_1Pop_1_1Op =
     [ "NodeTanh", "db/da6/classFT_1_1Pop_1_1Op_1_1NodeTanh.html", "db/da6/classFT_1_1Pop_1_1Op_1_1NodeTanh" ],
     [ "NodeIf", "db/df2/classFT_1_1Pop_1_1Op_1_1NodeIf.html", "db/df2/classFT_1_1Pop_1_1Op_1_1NodeIf" ],
     [ "NodeIfThenElse", "d8/d60/classFT_1_1Pop_1_1Op_1_1NodeIfThenElse.html", "d8/d60/classFT_1_1Pop_1_1Op_1_1NodeIfThenElse" ],
+    [ "NodeFuzzyFixedSplit", "dd/d91/classFT_1_1Pop_1_1Op_1_1NodeFuzzyFixedSplit.html", "dd/d91/classFT_1_1Pop_1_1Op_1_1NodeFuzzyFixedSplit" ],
+    [ "NodeFuzzySplit", "de/d7e/classFT_1_1Pop_1_1Op_1_1NodeFuzzySplit.html", "de/d7e/classFT_1_1Pop_1_1Op_1_1NodeFuzzySplit" ],
     [ "NodeSplit", "db/dc8/classFT_1_1Pop_1_1Op_1_1NodeSplit.html", "db/dc8/classFT_1_1Pop_1_1Op_1_1NodeSplit" ],
     [ "NodeAnd", "d7/dd0/classFT_1_1Pop_1_1Op_1_1NodeAnd.html", "d7/dd0/classFT_1_1Pop_1_1Op_1_1NodeAnd" ],
     [ "NodeEqual", "d3/d2c/classFT_1_1Pop_1_1Op_1_1NodeEqual.html", "d3/d2c/classFT_1_1Pop_1_1Op_1_1NodeEqual" ],

@@ -78,6 +78,8 @@ var hierarchy =
       [ "FT::Pop::Op::NodeSlope", "d4/d92/classFT_1_1Pop_1_1Op_1_1NodeSlope.html", null ],
       [ "FT::Pop::Op::NodeStep", "d5/d96/classFT_1_1Pop_1_1Op_1_1NodeStep.html", null ],
       [ "FT::Pop::Op::NodeTrain", "de/d2e/classFT_1_1Pop_1_1Op_1_1NodeTrain.html", [
+        [ "FT::Pop::Op::NodeFuzzyFixedSplit< T >", "dd/d91/classFT_1_1Pop_1_1Op_1_1NodeFuzzyFixedSplit.html", null ],
+        [ "FT::Pop::Op::NodeFuzzySplit< T >", "de/d7e/classFT_1_1Pop_1_1Op_1_1NodeFuzzySplit.html", null ],
         [ "FT::Pop::Op::NodeSplit< T >", "db/dc8/classFT_1_1Pop_1_1Op_1_1NodeSplit.html", null ]
       ] ],
       [ "FT::Pop::Op::NodeVar", "d1/d63/classFT_1_1Pop_1_1Op_1_1NodeVar.html", null ],
