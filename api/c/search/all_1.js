@@ -8,8 +8,7 @@ var searchData=
   ['apply_5fmulticlass',['apply_multiclass',['../db/dff/classshogun_1_1CMyCARTree.html#a2b765354b43119e5c98b08bb3ab73d21',1,'shogun::CMyCARTree']]],
   ['apply_5fregression',['apply_regression',['../db/dff/classshogun_1_1CMyCARTree.html#a600d66b60e54b46820a70172e67ac3bb',1,'shogun::CMyCARTree']]],
   ['arch',['arch',['../db/dff/classFT_1_1Feat.html#aec8126568742c11379cc62fb7a4672c8',1,'FT::Feat']]],
-  ['archive',['Archive',['../d7/d9f/structFT_1_1Pop_1_1Archive.html',1,'FT::Pop']]],
-  ['archive',['Archive',['../dc/dd8/classArchive.html',1,'Archive'],['../d7/d9f/structFT_1_1Pop_1_1Archive.html#ace5bafe90aa69117426942cf49ae3c70',1,'FT::Pop::Archive::archive()'],['../d7/d9f/structFT_1_1Pop_1_1Archive.html#a4a2c0b86f5a65108d2355e652f627200',1,'FT::Pop::Archive::Archive()']]],
+  ['archive',['Archive',['../d7/d9f/structFT_1_1Pop_1_1Archive.html',1,'FT::Pop::Archive'],['../dc/dd8/classArchive.html',1,'Archive'],['../d7/d9f/structFT_1_1Pop_1_1Archive.html#ace5bafe90aa69117426942cf49ae3c70',1,'FT::Pop::Archive::archive()'],['../d7/d9f/structFT_1_1Pop_1_1Archive.html#a4a2c0b86f5a65108d2355e652f627200',1,'FT::Pop::Archive::Archive()']]],
   ['archive_2ecc',['archive.cc',['../d3/d95/archive_8cc.html',1,'']]],
   ['archive_2eh',['archive.h',['../d9/d28/archive_8h.html',1,'']]],
   ['argmiddle',['argmiddle',['../d1/d5d/namespaceFT_1_1Util.html#a6cc83951f22136db5ae6f0631b3da9e2',1,'FT::Util']]],
@@ -23,6 +22,5 @@ var searchData=
   ['attribute_5fid',['attribute_id',['../df/d48/structshogun_1_1MyCARTreeNodeData.html#ac4cca4ec9e468af63ee3ea34da882156',1,'shogun::MyCARTreeNodeData']]],
   ['auto_5fbackprop_2ecc',['auto_backprop.cc',['../d5/d02/auto__backprop_8cc.html',1,'']]],
   ['auto_5fbackprop_2eh',['auto_backprop.h',['../d6/d8a/auto__backprop_8h.html',1,'']]],
-  ['autobackprop',['AutoBackProp',['../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#afa57ae1d9d982c58fefaf87556f9afac',1,'FT::Opt::AutoBackProp']]],
-  ['autobackprop',['AutoBackProp',['../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html',1,'FT::Opt']]]
+  ['autobackprop',['AutoBackProp',['../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html',1,'FT::Opt::AutoBackProp'],['../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#afa57ae1d9d982c58fefaf87556f9afac',1,'FT::Opt::AutoBackProp::AutoBackProp()']]]
 ];

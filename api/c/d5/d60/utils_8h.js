@@ -7,6 +7,7 @@ var utils_8h =
     [ "argmiddle", "d5/d60/utils_8h.html#a6cc83951f22136db5ae6f0631b3da9e2", null ],
     [ "argsort", "d5/d60/utils_8h.html#ad59ee3e7a54ccbe150da50e232d38a92", null ],
     [ "clean", "d5/d60/utils_8h.html#aea590c3a1595610c3ae351b926a77728", null ],
+    [ "clean", "d5/d60/utils_8h.html#ab0a5eda713d08ccfc9f182d0f013db47", null ],
     [ "condition_number", "d5/d60/utils_8h.html#a0bb5926e88f04d944ea148050ccbc475", null ],
     [ "corrcoef", "d5/d60/utils_8h.html#a7096abc4ea5c2b2851279ead36160de7", null ],
     [ "covariance", "d5/d60/utils_8h.html#a66a5c6b17b000fbed3eb8e9263db323d", null ],

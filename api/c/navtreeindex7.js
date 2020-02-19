@@ -1,12 +1,15 @@
 var NAVTREEINDEX7 =
 {
+"functions_vars_u.html":[1,3,2,18],
+"functions_vars_v.html":[1,3,2,19],
+"functions_vars_w.html":[1,3,2,20],
+"functions_vars_x.html":[1,3,2,21],
 "functions_vars_y.html":[1,3,2,22],
 "functions_vars_z.html":[1,3,2,23],
 "functions_w.html":[1,3,0,20],
 "functions_x.html":[1,3,0,21],
 "functions_y.html":[1,3,0,22],
 "functions_z.html":[1,3,0,23],
-"functions_~.html":[1,3,0,24],
 "globals.html":[2,1,0],
 "globals_defs.html":[2,1,4],
 "globals_func.html":[2,1,1],

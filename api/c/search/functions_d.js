@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['next_5fbranch',['next_branch',['../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a9f92bc99f3d441e77c26362fca0a8546',1,'FT::Opt::AutoBackProp']]],
+  ['next_5fbranch',['next_branch',['../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a1a473411f367933cd95d5511450bb34b',1,'FT::Opt::AutoBackProp']]],
   ['node',['Node',['../d2/dfb/classFT_1_1Pop_1_1Op_1_1Node.html#a23d80cbdcde010de9ac6cff8acde0ca3',1,'FT::Pop::Op::Node']]],
   ['node2dgaussian',['Node2dGaussian',['../d7/d79/classFT_1_1Pop_1_1Op_1_1Node2dGaussian.html#a26e13a7a60af259071163af410c6fc04',1,'FT::Pop::Op::Node2dGaussian']]],
   ['nodeadd',['NodeAdd',['../d1/dbd/classFT_1_1Pop_1_1Op_1_1NodeAdd.html#a5367546939c9140847e8eb96fa107ad8',1,'FT::Pop::Op::NodeAdd']]],
@@ -47,7 +47,7 @@ var searchData=
   ['nodesubtract',['NodeSubtract',['../d8/d61/classFT_1_1Pop_1_1Op_1_1NodeSubtract.html#a02b8db86572072a230404222b585ef0b',1,'FT::Pop::Op::NodeSubtract']]],
   ['nodetanh',['NodeTanh',['../db/da6/classFT_1_1Pop_1_1Op_1_1NodeTanh.html#a4ab266ecf58872db633567f91b3a9cb4',1,'FT::Pop::Op::NodeTanh']]],
   ['nodevar',['NodeVar',['../d1/d63/classFT_1_1Pop_1_1Op_1_1NodeVar.html#a00388c0a699dd38337f9803ec3937441',1,'FT::Pop::Op::NodeVar']]],
-  ['nodevariable',['NodeVariable',['../d7/dd3/classFT_1_1Pop_1_1Op_1_1NodeVariable.html#ac717abd79ec45b28cbe0208d4ef3ddfa',1,'FT::Pop::Op::NodeVariable']]],
+  ['nodevariable',['NodeVariable',['../d7/dd3/classFT_1_1Pop_1_1Op_1_1NodeVariable.html#a850871fe63bc599f847924389d1a2a20',1,'FT::Pop::Op::NodeVariable']]],
   ['nodevector',['NodeVector',['../d5/daf/structFT_1_1Pop_1_1NodeVector.html#ae749541f710077e2b3292395137c9fd9',1,'FT::Pop::NodeVector::NodeVector()'],['../d5/daf/structFT_1_1Pop_1_1NodeVector.html#a42306bc1a745deadaa67df877369e0f0',1,'FT::Pop::NodeVector::NodeVector(const NodeVector &amp;other)'],['../d5/daf/structFT_1_1Pop_1_1NodeVector.html#ac1a264e95b80f02837c7157765177063',1,'FT::Pop::NodeVector::NodeVector(NodeVector &amp;&amp;other)']]],
   ['nodexor',['NodeXor',['../df/d63/classFT_1_1Pop_1_1Op_1_1NodeXor.html#a6ad6d064c9456a50e5aaa64aec74d4bd',1,'FT::Pop::Op::NodeXor']]],
   ['normalize',['normalize',['../dd/d51/structFT_1_1Util_1_1Normalizer.html#ab6fd830d0df127d67d85072de631c625',1,'FT::Util::Normalizer']]],

@@ -1,11 +1,11 @@
 var classFT_1_1Opt_1_1AutoBackProp =
 [
-    [ "callback", "d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#ad42407ceca35b1b7a74cb79e983ee33c", null ],
+    [ "callback", "d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a336692a8e54e08320b33700bf2f06360", null ],
     [ "AutoBackProp", "d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#afa57ae1d9d982c58fefaf87556f9afac", null ],
     [ "backprop", "d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a765f6b7c7598064006ab80f8f3612864", null ],
     [ "backprop2", "d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#aeab2e8f609301b9cc53046b76f435d0d", null ],
     [ "forward_prop", "d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a71d49aad055cf9b076c60f5c3f844859", null ],
-    [ "next_branch", "d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a9f92bc99f3d441e77c26362fca0a8546", null ],
+    [ "next_branch", "d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a1a473411f367933cd95d5511450bb34b", null ],
     [ "print_weights", "d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#ade64420c4781f84b0c02a8d0aef04878", null ],
     [ "run", "d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a054a27008fa34e7baaac6adf1bf8a62d", null ],
     [ "a", "d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#aa0a43898206cf72883550fe1d9825d22", null ],

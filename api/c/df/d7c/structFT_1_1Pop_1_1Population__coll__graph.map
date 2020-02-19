@@ -1,7 +1,5 @@
 <map id="FT::Pop::Population" name="FT::Pop::Population">
-<area shape="rect" id="node3" href="$da/def/classFT_1_1Pop_1_1Individual.html" title="individual programs in the population " alt="" coords="633,211,765,237"/>
-<area shape="rect" id="node4" href="$d5/daf/structFT_1_1Pop_1_1NodeVector.html" title="an extension of a vector of unique pointers to nodes " alt="" coords="367,13,513,40"/>
-<area shape="rect" id="node5" title="STL class. " alt="" coords="152,6,312,47"/>
-<area shape="rect" id="node8" title="STL class. " alt="" coords="400,115,480,141"/>
-<area shape="rect" id="node9" title="STL class. " alt="" coords="169,107,295,149"/>
+<area shape="rect" id="node3" href="$da/def/classFT_1_1Pop_1_1Individual.html" title="individual programs in the population " alt="" coords="675,197,815,223"/>
+<area shape="rect" id="node4" href="$d5/daf/structFT_1_1Pop_1_1NodeVector.html" title="an extension of a vector of unique pointers to nodes " alt="" coords="393,13,544,39"/>
+<area shape="rect" id="node5" title="STL class. " alt="" coords="157,5,336,47"/>
 </map>
