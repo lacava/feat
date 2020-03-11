@@ -5,6 +5,7 @@ var searchData=
   ['callback',['callback',['../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a336692a8e54e08320b33700bf2f06360',1,'FT::Opt::AutoBackProp::callback()'],['../d8/d06/classFT_1_1Opt_1_1HillClimb.html#aeca988a19032d71787337e2179751827',1,'FT::Opt::HillClimb::callback()']]],
   ['cart',['CART',['../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcae7278cab84c3f5938d783b7837f0159e',1,'FT::Model']]],
   ['carttrain',['CARTtrain',['../db/dff/classshogun_1_1CMyCARTree.html#a86f30bff54847757167cfa28989d99ce',1,'shogun::CMyCARTree']]],
+  ['cases',['cases',['../de/d36/classFT_1_1Dat_1_1Data.html#a25047737ceab70d2a3e001877bddd691',1,'FT::Dat::Data']]],
   ['check',['check',['../dd/d3f/structFT_1_1Dat_1_1State.html#a54e010c29a1fa4f6d41f8c57dc6b969c',1,'FT::Dat::State']]],
   ['check_5fdominance',['check_dominance',['../da/def/classFT_1_1Pop_1_1Individual.html#a5b9d518f1abcd32986aea0aa0603cd0a',1,'FT::Pop::Individual']]],
   ['check_5fs',['check_s',['../dd/d3f/structFT_1_1Dat_1_1State.html#a39ddd797f2a899fafe89fa242f3679d9',1,'FT::Dat::State']]],

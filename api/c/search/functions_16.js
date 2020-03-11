@@ -7,6 +7,8 @@ var searchData=
   ['_7ecmyrandomforest',['~CMyRandomForest',['../da/d0f/classshogun_1_1CMyRandomForest.html#a801c1b3795f7e01c69d4aca6f93048f8',1,'shogun::CMyRandomForest']]],
   ['_7edataref',['~DataRef',['../d4/d10/classFT_1_1Dat_1_1DataRef.html#aa6e4b03cfad153350684d80cd04d53fd',1,'FT::Dat::DataRef']]],
   ['_7eevaluation',['~Evaluation',['../d6/d6f/classFT_1_1Eval_1_1Evaluation.html#ab3d4fd7d6d4c6c08aac98e0765e6b525',1,'FT::Eval::Evaluation']]],
+  ['_7efairlexicase',['~FairLexicase',['../d8/dd2/structFT_1_1Sel_1_1FairLexicase.html#afc64a714178766d087b5676d7c091325',1,'FT::Sel::FairLexicase']]],
+  ['_7efairlexicase2',['~FairLexicase2',['../df/de5/structFT_1_1Sel_1_1FairLexicase2.html#af92f98234395ba4138c20076240c84aa',1,'FT::Sel::FairLexicase2']]],
   ['_7efeat',['~Feat',['../db/dff/classFT_1_1Feat.html#a7797e289bc355fd92d2d65ae0b3fae1d',1,'FT::Feat']]],
   ['_7elexicase',['~Lexicase',['../db/d76/structFT_1_1Sel_1_1Lexicase.html#ab5e3b4670d83194bea27b7d0d8714c7c',1,'FT::Sel::Lexicase']]],
   ['_7eml',['~ML',['../dd/d6f/classFT_1_1Model_1_1ML.html#ade8819a17d3a265662b401087e3a6d0a',1,'FT::Model::ML']]],
@@ -23,5 +25,6 @@ var searchData=
   ['_7eselectionoperator',['~SelectionOperator',['../d8/d53/structFT_1_1Sel_1_1SelectionOperator.html#ad3a0ddb725194b193ab31e4a438b06f2',1,'FT::Sel::SelectionOperator']]],
   ['_7esimanneal',['~SimAnneal',['../d2/d6e/structFT_1_1Sel_1_1SimAnneal.html#a73d34a046548b334d3f74af6a8dca660',1,'FT::Sel::SimAnneal']]],
   ['_7estack',['~Stack',['../d8/d30/classFT_1_1Dat_1_1Stack.html#a9185575b170a259c856b54b3c1aa4d11',1,'FT::Dat::Stack']]],
+  ['_7etournament',['~Tournament',['../df/d24/structFT_1_1Sel_1_1Tournament.html#a3990f301e8d2624d8de2e2a9c8c4135d',1,'FT::Sel::Tournament']]],
   ['_7evariation',['~Variation',['../d0/d80/classFT_1_1Vary_1_1Variation.html#a341c64f63bc1cd01a9ebab5551b10efc',1,'FT::Vary::Variation']]]
 ];

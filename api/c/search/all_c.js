@@ -31,6 +31,7 @@ var searchData=
   ['main_2ecc',['main.cc',['../d9/d0f/main_8cc.html',1,'']]],
   ['make_5fprogram',['make_program',['../d5/daf/structFT_1_1Pop_1_1NodeVector.html#a64dce7ce78bc25cf2bc0d93312b3f664',1,'FT::Pop::NodeVector']]],
   ['make_5ftree',['make_tree',['../d5/daf/structFT_1_1Pop_1_1NodeVector.html#a9ef28b18ec876851c61e59e8078c664f',1,'FT::Pop::NodeVector']]],
+  ['marginal_5ffairness',['marginal_fairness',['../d6/d6f/classFT_1_1Eval_1_1Evaluation.html#ab8b51d4d131cfb90837a8bf9b0448170',1,'FT::Eval::Evaluation']]],
   ['max_5fdepth',['max_depth',['../de/d2c/structFT_1_1Parameters.html#a7a9f2ad48ee7d68da04915e65c04dca4',1,'FT::Parameters']]],
   ['max_5fdim',['max_dim',['../de/d2c/structFT_1_1Parameters.html#a1f87c96a8192d9e12a551beede8f9f5d',1,'FT::Parameters']]],
   ['max_5fflt',['MAX_FLT',['../d1/d77/node_8h.html#a58ce70c44358a600c06e31eb3be28b61',1,'MAX_FLT():&#160;node.h'],['../d2/d35/namespaceFT.html#a6e1cdc0c22ce9984edff09f0ccb7983c',1,'FT::MAX_FLT()']]],

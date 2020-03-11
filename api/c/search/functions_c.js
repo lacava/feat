@@ -5,6 +5,7 @@ var searchData=
   ['main',['main',['../d9/d0f/main_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main.cc']]],
   ['make_5fprogram',['make_program',['../d5/daf/structFT_1_1Pop_1_1NodeVector.html#a64dce7ce78bc25cf2bc0d93312b3f664',1,'FT::Pop::NodeVector']]],
   ['make_5ftree',['make_tree',['../d5/daf/structFT_1_1Pop_1_1NodeVector.html#a9ef28b18ec876851c61e59e8078c664f',1,'FT::Pop::NodeVector']]],
+  ['marginal_5ffairness',['marginal_fairness',['../d6/d6f/classFT_1_1Eval_1_1Evaluation.html#ab8b51d4d131cfb90837a8bf9b0448170',1,'FT::Eval::Evaluation']]],
   ['mean_5flog_5floss',['mean_log_loss',['../de/dcf/namespaceFT_1_1Eval.html#ac3d5dfea53f5d2cdfccf0aed84a25646',1,'FT::Eval']]],
   ['mean_5fmulti_5flog_5floss',['mean_multi_log_loss',['../de/dcf/namespaceFT_1_1Eval.html#aa86d833ed6e8e766a3d2c424af3ed8b3',1,'FT::Eval']]],
   ['mean_5fsquare_5fcorrcoef',['mean_square_corrcoef',['../d1/d5d/namespaceFT_1_1Util.html#a611f301ff90bc6dc7f6f84505c733a48',1,'FT::Util']]],

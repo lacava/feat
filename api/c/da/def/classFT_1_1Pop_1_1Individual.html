@@ -114,8 +114,6 @@ Collaboration diagram for FT::Pop::Individual:</div>
 Public Types</h2></td></tr>
 <tr class="memitem:ab0435179cb37c5747b67c655a5848c47"><td class="memItemLeft" align="right" valign="top">typedef Array&lt; bool, Dynamic, Dynamic, RowMajor &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html#ab0435179cb37c5747b67c655a5848c47">ArrayXXb</a></td></tr>
 <tr class="separator:ab0435179cb37c5747b67c655a5848c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1a9cf17ca7f32b2052797a6b21c2a6b"><td class="memItemLeft" align="right" valign="top">typedef Array&lt; float, Dynamic, Dynamic, RowMajor &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html#ab1a9cf17ca7f32b2052797a6b21c2a6b">ArrayXXf</a></td></tr>
-<tr class="separator:ab1a9cf17ca7f32b2052797a6b21c2a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -139,6 +137,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae3a97cb34157c37245d190356488e72f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b8a0c16afe79c636f46ce8304629c7d"><td class="memItemLeft" align="right" valign="top">VectorXf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html#a8b8a0c16afe79c636f46ce8304629c7d">predict_drop</a> (const <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> &amp;d, const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;params, int drop_idx)</td></tr>
 <tr class="separator:a8b8a0c16afe79c636f46ce8304629c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c36a98dfd29097776315f8ed89d7bb9"><td class="memItemLeft" align="right" valign="top">ArrayXXf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html#a0c36a98dfd29097776315f8ed89d7bb9">predict_proba</a> (const <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> &amp;d, const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;params)</td></tr>
+<tr class="separator:a0c36a98dfd29097776315f8ed89d7bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a4f1adc2e7c91725440d9efbb10cc36"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html#a5a4f1adc2e7c91725440d9efbb10cc36">get_eqn</a> () const</td></tr>
 <tr class="memdesc:a5a4f1adc2e7c91725440d9efbb10cc36"><td class="mdescLeft">&#160;</td><td class="mdescRight">return symbolic representation of program  <a href="#a5a4f1adc2e7c91725440d9efbb10cc36">More...</a><br /></td></tr>
 <tr class="separator:a5a4f1adc2e7c91725440d9efbb10cc36"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,6 +220,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ae9be4fe350f44a20250f5551459758bc"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html#ae9be4fe350f44a20250f5551459758bc">fitness_v</a></td></tr>
 <tr class="memdesc:ae9be4fe350f44a20250f5551459758bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">aggregate validation fitness score  <a href="#ae9be4fe350f44a20250f5551459758bc">More...</a><br /></td></tr>
 <tr class="separator:ae9be4fe350f44a20250f5551459758bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a171d1fcc08abb41da99e92775028f7aa"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html#a171d1fcc08abb41da99e92775028f7aa">fairness</a></td></tr>
+<tr class="memdesc:a171d1fcc08abb41da99e92775028f7aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">aggregate fairness score  <a href="#a171d1fcc08abb41da99e92775028f7aa">More...</a><br /></td></tr>
+<tr class="separator:a171d1fcc08abb41da99e92775028f7aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad06ed59e216c9b791ce9cd934f2e2236"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html#ad06ed59e216c9b791ce9cd934f2e2236">fairness_v</a></td></tr>
+<tr class="memdesc:ad06ed59e216c9b791ce9cd934f2e2236"><td class="mdescLeft">&#160;</td><td class="mdescRight">aggregate validation fairness score  <a href="#ad06ed59e216c9b791ce9cd934f2e2236">More...</a><br /></td></tr>
+<tr class="separator:ad06ed59e216c9b791ce9cd934f2e2236"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49c3b8631b98ade6afc3b698f842a036"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html#a49c3b8631b98ade6afc3b698f842a036">CN</a></td></tr>
 <tr class="separator:a49c3b8631b98ade6afc3b698f842a036"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72e4359e01971a45b625ca4b6459b05a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html#a72e4359e01971a45b625ca4b6459b05a">loc</a></td></tr>
@@ -279,23 +285,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00154">154</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
-
-</div>
-</div>
-<a id="ab1a9cf17ca7f32b2052797a6b21c2a6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1a9cf17ca7f32b2052797a6b21c2a6b">&#9670;&nbsp;</a></span>ArrayXXf</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef Array&lt;float, Dynamic, Dynamic, RowMajor&gt; <a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html#ab1a9cf17ca7f32b2052797a6b21c2a6b">FT::Pop::Individual::ArrayXXf</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00155">155</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00159">159</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
 
 </div>
 </div>
@@ -338,7 +328,7 @@ Public Attributes</h2></td></tr>
 
 <p>check whether this dominates b. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00812">812</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00835">835</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
 </div>
 </div>
@@ -410,7 +400,7 @@ Public Attributes</h2></td></tr>
 
 <p>calculate program complexity. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00879">879</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00905">905</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
 </div>
 </div>
@@ -493,7 +483,7 @@ of a program. the dimensionality is equal to the number of
 times the program arities are fully
 satisfied. 
 </pre>
-<p class="definition">Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00787">787</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00810">810</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
 </div>
 </div>
@@ -514,7 +504,7 @@ satisfied.
 
 <p>return symbolic representation of program </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00710">710</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00732">732</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
 </div>
 </div>
@@ -535,7 +525,7 @@ satisfied.
 
 <p>return vectorized representation of program </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00763">763</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00786">786</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
 </div>
 </div>
@@ -556,7 +546,7 @@ satisfied.
 
 <p>get maximum stack size needed for evaluation. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00920">920</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00946">946</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
 </div>
 </div>
@@ -726,7 +716,7 @@ satisfied.
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Phi: n_features x n_samples transformation</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00351">351</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00371">371</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
 </div>
 </div>
@@ -773,7 +763,7 @@ satisfied.
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00505">505</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00526">526</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
 </div>
 </div>
@@ -845,7 +835,37 @@ satisfied.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00246">246</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00266">266</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+
+</div>
+</div>
+<a id="a0c36a98dfd29097776315f8ed89d7bb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c36a98dfd29097776315f8ed89d7bb9">&#9670;&nbsp;</a></span>predict_proba()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ArrayXXf FT::Pop::Individual::predict_proba </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> &amp;&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00247">247</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
 </div>
 </div>
@@ -875,7 +895,7 @@ satisfied.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00271">271</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00291">291</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
 </div>
 </div>
@@ -896,7 +916,7 @@ satisfied.
 
 <p>return program name list </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00907">907</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00933">933</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
 </div>
 </div>
@@ -939,7 +959,7 @@ satisfied.
 <p>set obj vector given a string of objective names </p>
 <p>Input: objectives: vector of strings naming objectives.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00850">850</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00873">873</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
 </div>
 </div>
@@ -1029,7 +1049,7 @@ satisfied.
 
 <p>set parent ids using id values </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00136">136</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00141">141</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
 
 </div>
 </div>
@@ -1095,7 +1115,7 @@ satisfied.
 
 <p>converts program states to output matrices </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00276">276</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/da3/individual_8cc_source.html#l00296">296</a> of file <a class="el" href="../../de/da3/individual_8cc_source.html">individual.cc</a>.</p>
 
 </div>
 </div>
@@ -1114,7 +1134,7 @@ satisfied.
 
 <p>the complexity of the program. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00047">47</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00049">49</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
 
 </div>
 </div>
@@ -1130,7 +1150,7 @@ satisfied.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00037">37</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00039">39</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
 
 </div>
 </div>
@@ -1148,7 +1168,7 @@ satisfied.
 
 <p>crowding distance on the Pareto front </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00046">46</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00048">48</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
 
 </div>
 </div>
@@ -1166,7 +1186,7 @@ satisfied.
 
 <p>number of individuals this dominates </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00043">43</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00045">45</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
 
 </div>
 </div>
@@ -1184,7 +1204,7 @@ satisfied.
 
 <p>dimensionality of individual </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00041">41</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00043">43</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
 
 </div>
 </div>
@@ -1202,7 +1222,7 @@ satisfied.
 
 <p>individual indices this dominates </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00044">44</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00046">46</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
 
 </div>
 </div>
@@ -1220,7 +1240,43 @@ satisfied.
 
 <p>the data types of each column of the </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00048">48</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00050">50</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
+
+</div>
+</div>
+<a id="a171d1fcc08abb41da99e92775028f7aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a171d1fcc08abb41da99e92775028f7aa">&#9670;&nbsp;</a></span>fairness</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float FT::Pop::Individual::fairness</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>aggregate fairness score </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00037">37</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
+
+</div>
+</div>
+<a id="ad06ed59e216c9b791ce9cd934f2e2236"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad06ed59e216c9b791ce9cd934f2e2236">&#9670;&nbsp;</a></span>fairness_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float FT::Pop::Individual::fairness_v</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>aggregate validation fairness score </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00038">38</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
 
 </div>
 </div>
@@ -1274,7 +1330,7 @@ satisfied.
 
 <p>tracking id </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00050">50</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00052">52</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
 
 </div>
 </div>
@@ -1292,7 +1348,7 @@ satisfied.
 
 <p>index of individual in semantic matrix F </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00038">38</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00040">40</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
 
 </div>
 </div>
@@ -1328,7 +1384,7 @@ satisfied.
 
 <p>objectives for use with Pareto selection </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00042">42</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00044">44</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
 
 </div>
 </div>
@@ -1346,7 +1402,7 @@ satisfied.
 
 <p>probability of variation of subprograms </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00040">40</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00042">42</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
 
 </div>
 </div>
@@ -1364,7 +1420,7 @@ satisfied.
 
 <p>ids of parents </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00051">51</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00053">53</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
 
 </div>
 </div>
@@ -1418,7 +1474,7 @@ satisfied.
 
 <p>pareto front rank </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00045">45</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00047">47</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
 
 </div>
 </div>
@@ -1436,7 +1492,7 @@ satisfied.
 
 <p>weights from ML training on program output </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00039">39</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00041">41</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
 
 </div>
 </div>

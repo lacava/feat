@@ -40,13 +40,13 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d2/dfc/structFT_1_1Dat_1_1Trace.html#a31b3d7a992ea0e7b9bda33f5537fbc0f",
-"d6/d5f/structFT_1_1Pop_1_1Population.html#a2632838ce6765104f4ceb1a183836d3d",
-"d8/da5/classFT_1_1Pop_1_1Op_1_1NodeRelu.html#a025cc1e3aee5f9bac24ce296e6c9f908",
-"db/d76/structFT_1_1Sel_1_1Lexicase.html",
-"db/dff/classshogun_1_1CMyCARTree.html#abbd01cfa7eaa3c60c918c4ac79fe4d64",
-"de/d36/classFT_1_1Dat_1_1Data.html#aafaf7fdf2cae86fe424fb73ec5c80087",
-"functions_vars_u.html"
+"d2/dfb/classFT_1_1Pop_1_1Op_1_1Node.html#a986f13e2324eb96693870784700a5237",
+"d6/d1c/MyLibLinear_8cc_source.html",
+"d8/d78/classFT_1_1Pop_1_1Op_1_1NodeExponent.html#a3baa6c13c2009fcabd06eaf749b8c786",
+"db/d4e/classshogun_1_1CMulticlassLogisticRegression.html#a16a86979d10bb32a22e983ff4629a819",
+"db/dff/classshogun_1_1CMyCARTree.html#a4df79fbb094d9935f06d78515f5b208c",
+"de/d2c/structFT_1_1Parameters.html#a88e134f47f97c8d44089c0f2918d684b",
+"functions_func.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

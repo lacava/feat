@@ -18,5 +18,8 @@ var searchData=
   ['print_5fpop',['print_pop',['../db/dff/classFT_1_1Feat.html#ae3dbfaf2093cfca7a19294317fdb64bf',1,'FT::Feat']]],
   ['prob_5ftype',['prob_type',['../dd/d6f/classFT_1_1Model_1_1ML.html#a9f9dfdd299149dd7f42c5db36757f29a',1,'FT::Model::ML']]],
   ['program',['program',['../da/def/classFT_1_1Pop_1_1Individual.html#a88d308c675946399dc9b42e51061f66a',1,'FT::Pop::Individual']]],
+  ['protect',['protect',['../de/d36/classFT_1_1Dat_1_1Data.html#a9b2f44c9ce89e3bacea8e49b942398d5',1,'FT::Dat::Data']]],
+  ['protect_5flevels',['protect_levels',['../de/d36/classFT_1_1Dat_1_1Data.html#aa02d07b0f0ffb212907951b3f4d0a433',1,'FT::Dat::Data']]],
+  ['protected_5fgroups',['protected_groups',['../de/d36/classFT_1_1Dat_1_1Data.html#a0a48352bc9d9af110f7131238c7ef056',1,'FT::Dat::Data::protected_groups()'],['../de/d2c/structFT_1_1Parameters.html#ab396bb7ba71e81e4a02e0435f3cb159e',1,'FT::Parameters::protected_groups()']]],
   ['pselector',['pselector',['../de/d6e/structFT_1_1Sel_1_1Selection.html#ac36aa4a3b7040dd35a2131ae97d949bd',1,'FT::Sel::Selection']]]
 ];

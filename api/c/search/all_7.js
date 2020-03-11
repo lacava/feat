@@ -5,6 +5,7 @@ var searchData=
   ['generation',['generation',['../d8/dd3/structFT_1_1Util_1_1Log__Stats.html#ac7cc0e9d4d4eb27b40224af7d349ba6a',1,'FT::Util::Log_Stats']]],
   ['gens',['gens',['../de/d2c/structFT_1_1Parameters.html#a7b17dbd6ccc8cbac4f38bde7b51629ce',1,'FT::Parameters']]],
   ['get',['get',['../dd/d3f/structFT_1_1Dat_1_1State.html#a81f5792ff587ed9cb0cf7745fc40e966',1,'FT::Dat::State::get()'],['../d2/dfc/structFT_1_1Dat_1_1Trace.html#af03a1d8b67a98150c1b440b7be7e49a6',1,'FT::Dat::Trace::get()'],['../dd/d3f/structFT_1_1Dat_1_1State.html#a78d36b0648a8174ec3ce136678b736b1',1,'FT::Dat::State::get()'],['../dd/d3f/structFT_1_1Dat_1_1State.html#a6e8dbca7b2dfd17879a7555b1c7de208',1,'FT::Dat::State::get()'],['../dd/d3f/structFT_1_1Dat_1_1State.html#ad4c3ad6ad9a420de73af154f5b6b18e5',1,'FT::Dat::State::get()'],['../d2/dfc/structFT_1_1Dat_1_1Trace.html#a619a29e5112d4e13102cccf9300304b2',1,'FT::Dat::Trace::get()'],['../d2/dfc/structFT_1_1Dat_1_1Trace.html#a1317ad7728833c4589eaa2fa1682f09c',1,'FT::Dat::Trace::get()'],['../d2/dfc/structFT_1_1Dat_1_1Trace.html#a47dcc41b6c0f34e4c5ea290b9c22603e',1,'FT::Dat::Trace::get()']]],
+  ['get_5farchive_5fsize',['get_archive_size',['../db/dff/classFT_1_1Feat.html#a08785f5b77e2954eb2c4c6713196e0cb',1,'FT::Feat']]],
   ['get_5fbatch',['get_batch',['../de/d36/classFT_1_1Dat_1_1Data.html#a65ccadbbd3c9a50654c00028d454a431',1,'FT::Dat::Data']]],
   ['get_5fbest_5fscore_5fvals',['get_best_score_vals',['../db/dff/classFT_1_1Feat.html#a73efbdfdbc6f3797718432b2f115fdb2',1,'FT::Feat']]],
   ['get_5fbest_5fscores',['get_best_scores',['../db/dff/classFT_1_1Feat.html#a3beac417b5654f9f2eb19af4057ccef7',1,'FT::Feat']]],
@@ -108,5 +109,6 @@ var searchData=
   ['gpu_5fsubtract',['GPU_Subtract',['../dc/dd9/namespaceFT_1_1Pop_1_1Op.html#ac44aca01b3e7d48d12ca48cf4656bfef',1,'FT::Pop::Op']]],
   ['gpu_5ftanh',['GPU_Tanh',['../dc/dd9/namespaceFT_1_1Pop_1_1Op.html#a41dcf95c3ba315e49fc2e5b596d11f07',1,'FT::Pop::Op']]],
   ['gpu_5fvariable',['GPU_Variable',['../dc/dd9/namespaceFT_1_1Pop_1_1Op.html#afd8903d30b7ca55fba957fab89a44f46',1,'FT::Pop::Op::GPU_Variable(float *dev_x, float *host_x, size_t idx, size_t N)'],['../dc/dd9/namespaceFT_1_1Pop_1_1Op.html#a69ad9b971a97b31dd64307687376cde2',1,'FT::Pop::Op::GPU_Variable(int *dev_x, int *host_x, size_t idx, size_t N)'],['../dc/dd9/namespaceFT_1_1Pop_1_1Op.html#a80f64b86a9e0720469e653bafd582803',1,'FT::Pop::Op::GPU_Variable(bool *dev_x, bool *host_x, size_t idx, size_t N)']]],
-  ['gpu_5fxor',['GPU_Xor',['../dc/dd9/namespaceFT_1_1Pop_1_1Op.html#a9a89e24a6630e42ce547b48eb408f57c',1,'FT::Pop::Op']]]
+  ['gpu_5fxor',['GPU_Xor',['../dc/dd9/namespaceFT_1_1Pop_1_1Op.html#a9a89e24a6630e42ce547b48eb408f57c',1,'FT::Pop::Op']]],
+  ['group_5fintersections',['group_intersections',['../de/d36/classFT_1_1Dat_1_1Data.html#a352382a96a3505334e378e40f3f6574f',1,'FT::Dat::Data']]]
 ];

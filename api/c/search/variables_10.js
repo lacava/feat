@@ -10,6 +10,7 @@ var searchData=
   ['shuffle',['shuffle',['../de/d2c/structFT_1_1Parameters.html#aca9f6951f7bb932f7d36abaabbc8bb23',1,'FT::Parameters']]],
   ['simplify',['simplify',['../db/dff/classFT_1_1Feat.html#a1f2f2b75149a66b1f28789c38f7b13bd',1,'FT::Feat']]],
   ['softmax_5fnorm',['softmax_norm',['../de/d2c/structFT_1_1Parameters.html#a01b1fbfe3b22f877ddd86adec369b03d',1,'FT::Parameters']]],
+  ['sort_5fcomplexity',['sort_complexity',['../d7/d9f/structFT_1_1Pop_1_1Archive.html#ac34c4f0cf3530a49487a013252be884f',1,'FT::Pop::Archive']]],
   ['split',['split',['../de/d2c/structFT_1_1Parameters.html#ac9b2cd0a715a8256cf5bb312272e3438',1,'FT::Parameters']]],
   ['st',['st',['../d8/d30/classFT_1_1Dat_1_1Stack.html#a71e074110b85a6a19d1f6ed2955bb447',1,'FT::Dat::Stack']]],
   ['stagewise_5fxo',['stagewise_xo',['../de/d2c/structFT_1_1Parameters.html#a753a9355acfa2d92f2cbf9b67140305a',1,'FT::Parameters']]],

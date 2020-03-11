@@ -1,7 +1,11 @@
 var searchData=
 [
+  ['fairlexicase',['FairLexicase',['../d8/dd2/structFT_1_1Sel_1_1FairLexicase.html#af78ad9eaa231199f5e011641f6748b26',1,'FT::Sel::FairLexicase']]],
+  ['fairlexicase2',['FairLexicase2',['../df/de5/structFT_1_1Sel_1_1FairLexicase2.html#aafc439b7fac832c2d2b6347d93f596c2',1,'FT::Sel::FairLexicase2']]],
+  ['false_5fpositive_5floss',['false_positive_loss',['../de/dcf/namespaceFT_1_1Eval.html#a4ef0d37d5e504dc68f3bb7a8755ffb0b',1,'FT::Eval']]],
+  ['false_5fpositive_5floss_5flabel',['false_positive_loss_label',['../de/dcf/namespaceFT_1_1Eval.html#aca41170e663ec93ba3344d5e8e20e1e5',1,'FT::Eval']]],
   ['fast_5fnds',['fast_nds',['../dd/df1/structFT_1_1Sel_1_1NSGA2.html#a5d21e4d11ebe1db97bc6a7e644a85f18',1,'FT::Sel::NSGA2']]],
-  ['feat',['Feat',['../db/dff/classFT_1_1Feat.html#a27d192805cb38174941c036c4b2e22bc',1,'FT::Feat']]],
+  ['feat',['Feat',['../db/dff/classFT_1_1Feat.html#a4571f401379ccab72644475672673920',1,'FT::Feat']]],
   ['feature_5fimportances',['feature_importances',['../db/dff/classshogun_1_1CMyCARTree.html#a188eb408001bb7d7d38bda4819a49ce8',1,'shogun::CMyCARTree::feature_importances()'],['../da/d0f/classshogun_1_1CMyRandomForest.html#a39c7786f22fe499e94208e3c963a35f9',1,'shogun::CMyRandomForest::feature_importances()']]],
   ['final_5fmodel',['final_model',['../db/dff/classFT_1_1Feat.html#a8b756059dbd7d8d0de509515cb90c3eb',1,'FT::Feat']]],
   ['find_5fdtypes',['find_dtypes',['../d1/d5d/namespaceFT_1_1Util.html#ac43be485eba16c4f5eb623540c46844e',1,'FT::Util']]],

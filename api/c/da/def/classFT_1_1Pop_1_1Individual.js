@@ -1,7 +1,6 @@
 var classFT_1_1Pop_1_1Individual =
 [
     [ "ArrayXXb", "da/def/classFT_1_1Pop_1_1Individual.html#ab0435179cb37c5747b67c655a5848c47", null ],
-    [ "ArrayXXf", "da/def/classFT_1_1Pop_1_1Individual.html#ab1a9cf17ca7f32b2052797a6b21c2a6b", null ],
     [ "Individual", "da/def/classFT_1_1Pop_1_1Individual.html#a2a1844055edc74bce3f210adf5b2ea53", null ],
     [ "check_dominance", "da/def/classFT_1_1Pop_1_1Individual.html#a5b9d518f1abcd32986aea0aa0603cd0a", null ],
     [ "clone", "da/def/classFT_1_1Pop_1_1Individual.html#a5ed3f9833309c9c8d77debbf7f71e0a7", null ],
@@ -21,6 +20,7 @@ var classFT_1_1Pop_1_1Individual =
     [ "out_trace", "da/def/classFT_1_1Pop_1_1Individual.html#ab57e2107ba8bc36b1d89d71fd6c08585", null ],
     [ "predict", "da/def/classFT_1_1Pop_1_1Individual.html#a680ca921b541ed7e59f600769761f330", null ],
     [ "predict_drop", "da/def/classFT_1_1Pop_1_1Individual.html#a8b8a0c16afe79c636f46ce8304629c7d", null ],
+    [ "predict_proba", "da/def/classFT_1_1Pop_1_1Individual.html#a0c36a98dfd29097776315f8ed89d7bb9", null ],
     [ "predict_vector", "da/def/classFT_1_1Pop_1_1Individual.html#ae3a97cb34157c37245d190356488e72f", null ],
     [ "program_str", "da/def/classFT_1_1Pop_1_1Individual.html#aa2d90b33a8e1e02a6ec8998baf77eceb", null ],
     [ "set_id", "da/def/classFT_1_1Pop_1_1Individual.html#ad926eb9707e2688fa0f66fea074db4a2", null ],
@@ -38,6 +38,8 @@ var classFT_1_1Pop_1_1Individual =
     [ "dim", "da/def/classFT_1_1Pop_1_1Individual.html#a28b4a9c1c56941da84a203f863b99bcf", null ],
     [ "dominated", "da/def/classFT_1_1Pop_1_1Individual.html#aabf73c05c1596509e70a51354277c083", null ],
     [ "dtypes", "da/def/classFT_1_1Pop_1_1Individual.html#a414f114c583d607edf642d49ee1563bd", null ],
+    [ "fairness", "da/def/classFT_1_1Pop_1_1Individual.html#a171d1fcc08abb41da99e92775028f7aa", null ],
+    [ "fairness_v", "da/def/classFT_1_1Pop_1_1Individual.html#ad06ed59e216c9b791ce9cd934f2e2236", null ],
     [ "fitness", "da/def/classFT_1_1Pop_1_1Individual.html#a70e1bf2190b22bc29a10857a8c146690", null ],
     [ "fitness_v", "da/def/classFT_1_1Pop_1_1Individual.html#ae9be4fe350f44a20250f5551459758bc", null ],
     [ "id", "da/def/classFT_1_1Pop_1_1Individual.html#a5714266e4d2beb2b21ef8030781a2461", null ],

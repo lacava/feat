@@ -95,6 +95,9 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 <li>SameFitComplexity()
 : <a class="el" href="d7/dee/structFT_1_1Pop_1_1Population_1_1SameFitComplexity.html#a4abffdccd259b6efcebc3b2b6c6d0b76">FT::Pop::Population::SameFitComplexity</a>
 </li>
+<li>sameObjectives()
+: <a class="el" href="d7/d9f/structFT_1_1Pop_1_1Archive.html#a0b6147bbd2a24cab7e1a0022b57d5416">FT::Pop::Archive</a>
+</li>
 <li>sample_weights
 : <a class="el" href="de/d2c/structFT_1_1Parameters.html#a55546feac96125ac36f567eb5191d6d0">FT::Parameters</a>
 </li>
@@ -121,12 +124,15 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 : <a class="el" href="db/db7/classFT_1_1Util_1_1Timer.html#aac64ae295ad2eb784612316af1eb64fd">FT::Util::Timer</a>
 </li>
 <li>select()
-: <a class="el" href="db/d76/structFT_1_1Sel_1_1Lexicase.html#a7b21dedbf0dbd6200b1f6fddfdf7ee3f">FT::Sel::Lexicase</a>
-, <a class="el" href="dd/df1/structFT_1_1Sel_1_1NSGA2.html#acacc551bfb18c84ef39a1c0e05ea7919">FT::Sel::NSGA2</a>
-, <a class="el" href="d4/de1/structFT_1_1Sel_1_1Random.html#abc4d5c75de2fbf74b5c4e37459bd25ab">FT::Sel::Random</a>
-, <a class="el" href="de/d6e/structFT_1_1Sel_1_1Selection.html#ad44f631be2792ec8267d88f91e22c754">FT::Sel::Selection</a>
-, <a class="el" href="d8/d53/structFT_1_1Sel_1_1SelectionOperator.html#a43579b86d6210910e0a48825c97ed5ff">FT::Sel::SelectionOperator</a>
-, <a class="el" href="d2/d6e/structFT_1_1Sel_1_1SimAnneal.html#ad8280667e2bf3435b614e5ddc42b0c08">FT::Sel::SimAnneal</a>
+: <a class="el" href="df/de5/structFT_1_1Sel_1_1FairLexicase2.html#a0bb6354e190789defe58b22388fe2e4f">FT::Sel::FairLexicase2</a>
+, <a class="el" href="d8/dd2/structFT_1_1Sel_1_1FairLexicase.html#ae0ea6f2451e1da24fcadeb6caa18165e">FT::Sel::FairLexicase</a>
+, <a class="el" href="db/d76/structFT_1_1Sel_1_1Lexicase.html#a4f7e11397901bd5bda82db48c690d89b">FT::Sel::Lexicase</a>
+, <a class="el" href="dd/df1/structFT_1_1Sel_1_1NSGA2.html#a9d70d374cc24dd0fe9a6477c7a37ea5e">FT::Sel::NSGA2</a>
+, <a class="el" href="d4/de1/structFT_1_1Sel_1_1Random.html#aecc3562a88d7ff962948d02576a9bc53">FT::Sel::Random</a>
+, <a class="el" href="de/d6e/structFT_1_1Sel_1_1Selection.html#a33b53b08fc254e6085e0b00d4dde59cc">FT::Sel::Selection</a>
+, <a class="el" href="d8/d53/structFT_1_1Sel_1_1SelectionOperator.html#a7a8d1e860bb6ca73864ed7b8f09f1aec">FT::Sel::SelectionOperator</a>
+, <a class="el" href="d2/d6e/structFT_1_1Sel_1_1SimAnneal.html#ae1324377c82e230b3a759b0fa3f64d83">FT::Sel::SimAnneal</a>
+, <a class="el" href="df/d24/structFT_1_1Sel_1_1Tournament.html#a1b0fac7d4a2c631469ada336d8da4b1f">FT::Sel::Tournament</a>
 </li>
 <li>select_randomly()
 : <a class="el" href="d8/d33/classFT_1_1Util_1_1Rnd.html#aedda4fcb3ae7bab75a35c29fb5ab0ee6">FT::Util::Rnd</a>
@@ -268,6 +274,7 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 <li>set_objectives()
 : <a class="el" href="db/dff/classFT_1_1Feat.html#af9475c56f274b3fbf6c5034b906979ce">FT::Feat</a>
 , <a class="el" href="de/d2c/structFT_1_1Parameters.html#a8dd349f093773eaa0a13d3bf8dc3a7eb">FT::Parameters</a>
+, <a class="el" href="d7/d9f/structFT_1_1Pop_1_1Archive.html#afea485da71fa05bb72698cc59b211f1c">FT::Pop::Archive</a>
 </li>
 <li>set_op_weights()
 : <a class="el" href="de/d2c/structFT_1_1Parameters.html#a30788b764973685a850eb4037f4fe69b">FT::Parameters</a>
@@ -295,6 +302,11 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 : <a class="el" href="db/dff/classshogun_1_1CMyCARTree.html#ab2fcc2bba4f787f87f1682b27ffc47fd">shogun::CMyCARTree</a>
 , <a class="el" href="de/d65/classshogun_1_1CMyLibLinear.html#adfef5db1003394d5cac34d89ae8e978e">shogun::CMyLibLinear</a>
 , <a class="el" href="da/d0f/classshogun_1_1CMyRandomForest.html#a41fa150daa30c0d8db679c17daed688d">shogun::CMyRandomForest</a>
+</li>
+<li>set_protected_groups()
+: <a class="el" href="de/d36/classFT_1_1Dat_1_1Data.html#adbe6c6e2a1120da35194907e774ae135">FT::Dat::Data</a>
+, <a class="el" href="db/dff/classFT_1_1Feat.html#a60cac897f07a7d9f844849d647c6b0c8">FT::Feat</a>
+, <a class="el" href="de/d2c/structFT_1_1Parameters.html#abaa231bf2f16b025ba5f0029fa19649e">FT::Parameters</a>
 </li>
 <li>set_random_state()
 : <a class="el" href="db/dff/classFT_1_1Feat.html#a15c499b8735c8e4b19a1c06271544a51">FT::Feat</a>
@@ -384,10 +396,10 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 : <a class="el" href="db/d4e/classshogun_1_1CMulticlassLogisticRegression.html#a4f9e29a8ec5ebb130d6a682602174e70">shogun::CMulticlassLogisticRegression</a>
 </li>
 <li>setOriginalData()
-: <a class="el" href="d4/d10/classFT_1_1Dat_1_1DataRef.html#aaf740500a93981dde3e3ba61729d764e">FT::Dat::DataRef</a>
+: <a class="el" href="d4/d10/classFT_1_1Dat_1_1DataRef.html#a81ab243d0b42ae80bbc2293bb5cef9a6">FT::Dat::DataRef</a>
 </li>
 <li>setTrainingData()
-: <a class="el" href="d4/d10/classFT_1_1Dat_1_1DataRef.html#a39ba33fbbec63198006987f85e203730">FT::Dat::DataRef</a>
+: <a class="el" href="d4/d10/classFT_1_1Dat_1_1DataRef.html#a8236f3c6850d9e35d3c0226458afaa5d">FT::Dat::DataRef</a>
 </li>
 <li>setValidationData()
 : <a class="el" href="d4/d10/classFT_1_1Dat_1_1DataRef.html#a5a42d1214afcb90cd9f17e0ff9188aa9">FT::Dat::DataRef</a>
@@ -421,6 +433,9 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 <li>softmax_norm
 : <a class="el" href="de/d2c/structFT_1_1Parameters.html#a01b1fbfe3b22f877ddd86adec369b03d">FT::Parameters</a>
 </li>
+<li>sort_complexity
+: <a class="el" href="d7/d9f/structFT_1_1Pop_1_1Archive.html#ac34c4f0cf3530a49487a013252be884f">FT::Pop::Archive</a>
+</li>
 <li>sort_n()
 : <a class="el" href="d5/d9e/structFT_1_1Sel_1_1NSGA2_1_1sort__n.html#a2c1768415884064a3f5e1c91943e29b9">FT::Sel::NSGA2::sort_n</a>
 </li>
@@ -432,6 +447,9 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 </li>
 <li>sorted_front()
 : <a class="el" href="d6/d5f/structFT_1_1Pop_1_1Population.html#aaac76d7fe163c2f41e4c91a5067ed64e">FT::Pop::Population</a>
+</li>
+<li>sortObj1()
+: <a class="el" href="d7/d9f/structFT_1_1Pop_1_1Archive.html#a17f48562b876c90421c0e885314add39">FT::Pop::Archive</a>
 </li>
 <li>splice_programs()
 : <a class="el" href="d0/d80/classFT_1_1Vary_1_1Variation.html#a4a42773d8410ddfea661baeb5238b0dc">FT::Vary::Variation</a>
@@ -484,13 +502,16 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 , <a class="el" href="d8/d53/structFT_1_1Sel_1_1SelectionOperator.html#ae8bf8f6a727f78e3fa309d3f84d9d45d">FT::Sel::SelectionOperator</a>
 </li>
 <li>survive()
-: <a class="el" href="db/d76/structFT_1_1Sel_1_1Lexicase.html#a5266a61fcc933c2173012965fb1d43a9">FT::Sel::Lexicase</a>
-, <a class="el" href="dd/df1/structFT_1_1Sel_1_1NSGA2.html#ad973d95fea5caffc3e2e124d64265b75">FT::Sel::NSGA2</a>
-, <a class="el" href="d8/d7b/structFT_1_1Sel_1_1Offspring.html#a97ec8f89ae67dcd6d3230e21bfc3014a">FT::Sel::Offspring</a>
-, <a class="el" href="d4/de1/structFT_1_1Sel_1_1Random.html#a2b21e4fa022d7719d797f84ee54edce8">FT::Sel::Random</a>
-, <a class="el" href="de/d6e/structFT_1_1Sel_1_1Selection.html#a527645de5936a37b5538893bab48af59">FT::Sel::Selection</a>
-, <a class="el" href="d8/d53/structFT_1_1Sel_1_1SelectionOperator.html#aa9fbc75c14dcf8e6b4e004c2ff6f94c9">FT::Sel::SelectionOperator</a>
-, <a class="el" href="d2/d6e/structFT_1_1Sel_1_1SimAnneal.html#a654f5123c05c25d6bd961699ec4ed19b">FT::Sel::SimAnneal</a>
+: <a class="el" href="df/de5/structFT_1_1Sel_1_1FairLexicase2.html#af1c8ea5ba70a2717cb4f5657b3d134d6">FT::Sel::FairLexicase2</a>
+, <a class="el" href="d8/dd2/structFT_1_1Sel_1_1FairLexicase.html#a948480f46e5e3c59066e7c336366bd69">FT::Sel::FairLexicase</a>
+, <a class="el" href="db/d76/structFT_1_1Sel_1_1Lexicase.html#a00de431f6af0a851c165f4108c92a734">FT::Sel::Lexicase</a>
+, <a class="el" href="dd/df1/structFT_1_1Sel_1_1NSGA2.html#ac359fc328ac4d7c7da91e5bde4c511eb">FT::Sel::NSGA2</a>
+, <a class="el" href="d8/d7b/structFT_1_1Sel_1_1Offspring.html#ab3543621d155d24b04dd48f1a212b257">FT::Sel::Offspring</a>
+, <a class="el" href="d4/de1/structFT_1_1Sel_1_1Random.html#a44b75fbbcf2e9811a1a28c71c2c05249">FT::Sel::Random</a>
+, <a class="el" href="de/d6e/structFT_1_1Sel_1_1Selection.html#a18fc31286c717da5e256ae22d19744ff">FT::Sel::Selection</a>
+, <a class="el" href="d8/d53/structFT_1_1Sel_1_1SelectionOperator.html#a15074c7dbfa7cd4d9deb4e2b767a43db">FT::Sel::SelectionOperator</a>
+, <a class="el" href="d2/d6e/structFT_1_1Sel_1_1SimAnneal.html#aa352a990ab596f150be734b69a3ad4c9">FT::Sel::SimAnneal</a>
+, <a class="el" href="df/d24/structFT_1_1Sel_1_1Tournament.html#add6a6068c92efeba2034dda078484d09">FT::Sel::Tournament</a>
 </li>
 </ul>
 </div><!-- contents -->

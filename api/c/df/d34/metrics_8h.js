@@ -7,6 +7,8 @@ var metrics_8h =
     [ "d_multi_log_loss", "df/d34/metrics_8h.html#ae8c83ce14085608e4d42f6a237b03994", null ],
     [ "d_squared_difference", "df/d34/metrics_8h.html#a0f720323ad9ed0039e73613d918ad792", null ],
     [ "d_squared_difference", "df/d34/metrics_8h.html#a971d675572e7f45e0080e6f22a44cdf5", null ],
+    [ "false_positive_loss", "df/d34/metrics_8h.html#a4ef0d37d5e504dc68f3bb7a8755ffb0b", null ],
+    [ "false_positive_loss_label", "df/d34/metrics_8h.html#aca41170e663ec93ba3344d5e8e20e1e5", null ],
     [ "log_loss", "df/d34/metrics_8h.html#a6f75ec6cc65d95ea24fc42e5bc6a61e9", null ],
     [ "log_loss", "df/d34/metrics_8h.html#a4d588297f4724cd1f4901ff07b323c6f", null ],
     [ "log_loss_label", "df/d34/metrics_8h.html#ada606c591bed1832596118ffdce9abfc", null ],

@@ -93,11 +93,14 @@ var hierarchy =
     [ "FT::Pop::Population::SameFitComplexity", "d7/dee/structFT_1_1Pop_1_1Population_1_1SameFitComplexity.html", null ],
     [ "FT::Sel::Selection", "de/d6e/structFT_1_1Sel_1_1Selection.html", null ],
     [ "FT::Sel::SelectionOperator", "d8/d53/structFT_1_1Sel_1_1SelectionOperator.html", [
+      [ "FT::Sel::FairLexicase", "d8/dd2/structFT_1_1Sel_1_1FairLexicase.html", null ],
+      [ "FT::Sel::FairLexicase2", "df/de5/structFT_1_1Sel_1_1FairLexicase2.html", null ],
       [ "FT::Sel::Lexicase", "db/d76/structFT_1_1Sel_1_1Lexicase.html", null ],
       [ "FT::Sel::NSGA2", "dd/df1/structFT_1_1Sel_1_1NSGA2.html", null ],
       [ "FT::Sel::Offspring", "d8/d7b/structFT_1_1Sel_1_1Offspring.html", null ],
       [ "FT::Sel::Random", "d4/de1/structFT_1_1Sel_1_1Random.html", null ],
-      [ "FT::Sel::SimAnneal", "d2/d6e/structFT_1_1Sel_1_1SimAnneal.html", null ]
+      [ "FT::Sel::SimAnneal", "d2/d6e/structFT_1_1Sel_1_1SimAnneal.html", null ],
+      [ "FT::Sel::Tournament", "df/d24/structFT_1_1Sel_1_1Tournament.html", null ]
     ] ],
     [ "FT::Sel::NSGA2::sort_n", "d5/d9e/structFT_1_1Sel_1_1NSGA2_1_1sort__n.html", null ],
     [ "FT::Pop::Population::SortComplexity", "de/dad/structFT_1_1Pop_1_1Population_1_1SortComplexity.html", null ],
