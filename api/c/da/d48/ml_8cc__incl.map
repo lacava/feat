@@ -1,20 +1,16 @@
 <map id="ml.cc" name="ml.cc">
-<area shape="rect" id="node2" href="$d7/d60/ml_8h.html" title="ml.h" alt="" coords="2013,80,2063,107"/>
-<area shape="rect" id="node18" href="$d0/d7f/MyCARTree_8h.html" title="shogun/MyCARTree.h" alt="" coords="575,162,733,189"/>
-<area shape="rect" id="node25" href="$d4/dcc/MulticlassLogisticRegression_8h.html" title="shogun/MulticlassLogistic\lRegression.h" alt="" coords="2268,244,2456,285"/>
-<area shape="rect" id="node31" href="$d0/d5c/MyMulticlassLibLinear_8h.html" title="shogun/MyMulticlassLibLinear.h" alt="" coords="2505,251,2731,278"/>
-<area shape="rect" id="node35" href="$de/db3/MyLibLinear_8h.html" title="shogun/MyLibLinear.h" alt="" coords="2755,162,2918,189"/>
-<area shape="rect" id="node37" href="$d8/d37/MyRandomForest_8h.html" title="shogun/MyRandomForest.h" alt="" coords="3361,251,3560,278"/>
-<area shape="rect" id="node39" href="$da/d33/params_8h.html" title="../params.h" alt="" coords="3921,162,4016,189"/>
-<area shape="rect" id="node21" href="$de/d81/MyCARTreeNodeData_8h.html" title="MyCARTreeNodeData.h" alt="" coords="691,251,862,278"/>
-<area shape="rect" id="node40" href="$d1/dc6/nodewrapper_8h.html" title="pop/nodewrapper.h" alt="" coords="4365,251,4511,278"/>
-<area shape="rect" id="node48" href="$da/dbc/nodevector_8h.html" title="pop/nodevector.h" alt="" coords="4043,251,4177,278"/>
-<area shape="rect" id="node49" href="$d1/d8c/logger_8h.html" title="util/logger.h" alt="" coords="3919,251,4018,278"/>
-<area shape="rect" id="node50" href="$d5/d60/utils_8h.html" title="../util/utils.h" alt="" coords="3797,251,3895,278"/>
-<area shape="rect" id="node42" href="$d1/d77/node_8h.html" title="op/node.h" alt="" coords="4067,341,4153,367"/>
-<area shape="rect" id="node43" href="$d8/d2e/n__2dgaussian_8h.html" title="op/arithmetic/n_2dgaussian.h" alt="" coords="5003,341,5217,367"/>
-<area shape="rect" id="node44" href="$d2/d00/n__add_8h.html" title="op/arithmetic/n_add.h" alt="" coords="4177,341,4341,367"/>
-<area shape="rect" id="node45" href="$d5/d42/n__cos_8h.html" title="op/arithmetic/n_cos.h" alt="" coords="4417,341,4579,367"/>
-<area shape="rect" id="node46" href="$d4/dfb/n__cube_8h.html" title="op/arithmetic/n_cube.h" alt="" coords="4603,341,4774,367"/>
-<area shape="rect" id="node47" href="$de/d0f/n__divide_8h.html" title="op/arithmetic/n_divide.h" alt="" coords="4799,341,4979,367"/>
+<area shape="rect" id="node2" href="$d7/d60/ml_8h.html" title="ml.h" alt="" coords="2753,80,2804,107"/>
+<area shape="rect" id="node18" href="$d0/d7f/MyCARTree_8h.html" title="shogun/MyCARTree.h" alt="" coords="2559,162,2716,189"/>
+<area shape="rect" id="node25" href="$d4/dcc/MulticlassLogisticRegression_8h.html" title="shogun/MulticlassLogistic\lRegression.h" alt="" coords="1295,244,1483,285"/>
+<area shape="rect" id="node31" href="$d0/d5c/MyMulticlassLibLinear_8h.html" title="shogun/MyMulticlassLibLinear.h" alt="" coords="1611,251,1837,278"/>
+<area shape="rect" id="node35" href="$de/db3/MyLibLinear_8h.html" title="shogun/MyLibLinear.h" alt="" coords="4608,162,4771,189"/>
+<area shape="rect" id="node37" href="$d8/d37/MyRandomForest_8h.html" title="shogun/MyRandomForest.h" alt="" coords="2329,251,2527,278"/>
+<area shape="rect" id="node39" href="$da/d33/params_8h.html" title="../params.h" alt="" coords="2842,162,2937,189"/>
+<area shape="rect" id="node44" href="$d5/d60/utils_8h.html" title="../util/utils.h" alt="" coords="3408,251,3507,278"/>
+<area shape="rect" id="node21" href="$de/d81/MyCARTreeNodeData_8h.html" title="MyCARTreeNodeData.h" alt="" coords="2552,251,2723,278"/>
+<area shape="rect" id="node40" href="$d1/dc6/nodewrapper_8h.html" title="pop/nodewrapper.h" alt="" coords="3691,251,3837,278"/>
+<area shape="rect" id="node41" href="$da/dbc/nodevector_8h.html" title="pop/nodevector.h" alt="" coords="3531,251,3666,278"/>
+<area shape="rect" id="node43" href="$d1/d8c/logger_8h.html" title="util/logger.h" alt="" coords="3861,251,3960,278"/>
+<area shape="rect" id="node42" href="$da/d41/error_8h.html" title="error.h" alt="" coords="3920,341,3984,367"/>
+<area shape="rect" id="node50" href="$d8/dc0/init_8h.html" title="../../init.h" alt="" coords="3527,341,3606,367"/>
 </map>

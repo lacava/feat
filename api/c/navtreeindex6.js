@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"de/d2c/structFT_1_1Parameters.html#a87c3d2c445f4abbdc7bdd3c5108ed04b":[1,0,0,9,65],
 "de/d2c/structFT_1_1Parameters.html#a88e134f47f97c8d44089c0f2918d684b":[1,0,0,9,38],
 "de/d2c/structFT_1_1Parameters.html#a8983b68ffc67ff7368fae48058c3b077":[1,0,0,9,49],
 "de/d2c/structFT_1_1Parameters.html#a8dd349f093773eaa0a13d3bf8dc3a7eb":[1,0,0,9,12],
@@ -110,8 +111,8 @@ var NAVTREEINDEX6 =
 "de/db3/MyLibLinear_8h_source.html":[2,0,42],
 "de/dbc/MyCARTreeNodeData_8cc.html":[2,0,39],
 "de/dbc/MyCARTreeNodeData_8cc_source.html":[2,0,39],
-"de/dcf/namespaceFT_1_1Eval.html":[0,0,0,1],
 "de/dcf/namespaceFT_1_1Eval.html":[1,0,0,1],
+"de/dcf/namespaceFT_1_1Eval.html":[0,0,0,1],
 "de/ddb/n__gaussian_8h.html":[2,0,80],
 "de/ddb/n__gaussian_8h_source.html":[2,0,80],
 "de/df1/n__tanh_8h.html":[2,0,138],
@@ -223,8 +224,8 @@ var NAVTREEINDEX6 =
 "df/d81/n__tanh_8cc_source.html":[2,0,137],
 "df/da6/n__sign_8h.html":[2,0,120],
 "df/da6/n__sign_8h_source.html":[2,0,120],
-"df/da7/namespaceshogun.html":[0,0,1],
 "df/da7/namespaceshogun.html":[1,0,1],
+"df/da7/namespaceshogun.html":[0,0,1],
 "df/dbe/n__constant_8h.html":[2,0,56],
 "df/dbe/n__constant_8h_source.html":[2,0,56],
 "df/de5/structFT_1_1Sel_1_1FairLexicase2.html":[1,0,0,5,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "functions_b.html":[1,3,0,2],
 "functions_c.html":[1,3,0,3],
 "functions_d.html":[1,3,0,4],
-"functions_e.html":[1,3,0,5],
-"functions_f.html":[1,3,0,6]
+"functions_e.html":[1,3,0,5]
 };

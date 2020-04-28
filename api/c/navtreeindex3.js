@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"d8/d78/classFT_1_1Pop_1_1Op_1_1NodeExponent.html":[1,0,0,4,0,11],
 "d8/d78/classFT_1_1Pop_1_1Op_1_1NodeExponent.html#a3baa6c13c2009fcabd06eaf749b8c786":[1,0,0,4,0,11,0],
 "d8/d78/classFT_1_1Pop_1_1Op_1_1NodeExponent.html#a4a451b66bfbe3fc3523d8293418db550":[1,0,0,4,0,11,2],
 "d8/d78/classFT_1_1Pop_1_1Op_1_1NodeExponent.html#a80f071ba8574d014477f1ccf85ab55b9":[1,0,0,4,0,11,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "db/d0c/classFT_1_1Pop_1_1Op_1_1NodeRecent.html#ae5f1f2c0dc838ee869ae3ee6059bc7d3":[1,0,0,4,0,34,3],
 "db/d3b/state_8h.html":[2,0,170],
 "db/d3b/state_8h.html#a6a33354c51ab1e4986b2a222aac825a7":[2,0,170,3],
-"db/d3b/state_8h_source.html":[2,0,170],
-"db/d4e/classshogun_1_1CMulticlassLogisticRegression.html":[1,0,1,0]
+"db/d3b/state_8h_source.html":[2,0,170]
 };

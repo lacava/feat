@@ -92,6 +92,7 @@ var NAVTREEINDEX2 =
 "d7/d5d/n__or_8cc_source.html":[2,0,113],
 "d7/d60/ml_8h.html":[2,0,34],
 "d7/d60/ml_8h.html#a3e165e7a7c8603ac4380303142185fdc":[2,0,34,1],
+"d7/d60/ml_8h.html#a3e165e7a7c8603ac4380303142185fdca0cb130c816c05644b67cc81c2f5f91c1":[2,0,34,1,6],
 "d7/d60/ml_8h.html#a3e165e7a7c8603ac4380303142185fdca3d5d1c52bcc79dcb8c2a48fb35d97504":[2,0,34,1,0],
 "d7/d60/ml_8h.html#a3e165e7a7c8603ac4380303142185fdca5c949a17e4fce802fa936311c97203d7":[2,0,34,1,3],
 "d7/d60/ml_8h.html#a3e165e7a7c8603ac4380303142185fdca8933f5ba0c99bafd045664e2b97e81eb":[2,0,34,1,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "d8/d61/classFT_1_1Pop_1_1Op_1_1NodeSubtract.html#a3e58c307ead67c9954e201d91edd0162":[1,0,0,4,0,44,1],
 "d8/d61/classFT_1_1Pop_1_1Op_1_1NodeSubtract.html#a4968cf72067504758012d74f6aac880e":[1,0,0,4,0,44,3],
 "d8/d61/classFT_1_1Pop_1_1Op_1_1NodeSubtract.html#a62fc9569da8a6349b09911ebb3afd4a1":[1,0,0,4,0,44,5],
-"d8/d61/classFT_1_1Pop_1_1Op_1_1NodeSubtract.html#acb4dbbb369a191398aeafc1acf043413":[1,0,0,4,0,44,2],
-"d8/d78/classFT_1_1Pop_1_1Op_1_1NodeExponent.html":[1,0,0,4,0,11]
+"d8/d61/classFT_1_1Pop_1_1Op_1_1NodeSubtract.html#acb4dbbb369a191398aeafc1acf043413":[1,0,0,4,0,44,2]
 };

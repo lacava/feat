@@ -7,6 +7,7 @@ var ml_8h =
       [ "RF", "d7/d60/ml_8h.html#a3e165e7a7c8603ac4380303142185fdca8933f5ba0c99bafd045664e2b97e81eb", null ],
       [ "SVM", "d7/d60/ml_8h.html#a3e165e7a7c8603ac4380303142185fdca5c949a17e4fce802fa936311c97203d7", null ],
       [ "CART", "d7/d60/ml_8h.html#a3e165e7a7c8603ac4380303142185fdcae7278cab84c3f5938d783b7837f0159e", null ],
-      [ "LR", "d7/d60/ml_8h.html#a3e165e7a7c8603ac4380303142185fdcad59b1dd6668ea0d9e128fa72a2d88f03", null ]
+      [ "LR", "d7/d60/ml_8h.html#a3e165e7a7c8603ac4380303142185fdcad59b1dd6668ea0d9e128fa72a2d88f03", null ],
+      [ "L1_LR", "d7/d60/ml_8h.html#a3e165e7a7c8603ac4380303142185fdca0cb130c816c05644b67cc81c2f5f91c1", null ]
     ] ]
 ];

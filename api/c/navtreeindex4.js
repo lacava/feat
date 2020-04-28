@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"db/d4e/classshogun_1_1CMulticlassLogisticRegression.html":[1,0,1,0],
 "db/d4e/classshogun_1_1CMulticlassLogisticRegression.html#a16a86979d10bb32a22e983ff4629a819":[1,0,1,0,5],
 "db/d4e/classshogun_1_1CMulticlassLogisticRegression.html#a1b2770da7b9faa1992263603dfe37a32":[1,0,1,0,14],
 "db/d4e/classshogun_1_1CMulticlassLogisticRegression.html#a355e3f94e1743e61c2bfd48140397ebf":[1,0,1,0,16],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "db/dff/classshogun_1_1CMyCARTree.html#a43775693c35c83e84848bb0da5433bfc":[1,0,1,1,44],
 "db/dff/classshogun_1_1CMyCARTree.html#a44ceed4c99876f0310a8c0bb15fe8fb0":[1,0,1,1,4],
 "db/dff/classshogun_1_1CMyCARTree.html#a460df8bfb6a6719465ea1015600f8d7b":[1,0,1,1,17],
-"db/dff/classshogun_1_1CMyCARTree.html#a465976f2b757a9f5f5c055955995ecc4":[1,0,1,1,61],
-"db/dff/classshogun_1_1CMyCARTree.html#a470c47e13d68d22929c515489ecc3e7f":[1,0,1,1,69]
+"db/dff/classshogun_1_1CMyCARTree.html#a465976f2b757a9f5f5c055955995ecc4":[1,0,1,1,61]
 };
