@@ -45,8 +45,8 @@ var NAVTREEINDEX =
 "d8/d78/classFT_1_1Pop_1_1Op_1_1NodeExponent.html",
 "db/d4e/classshogun_1_1CMulticlassLogisticRegression.html",
 "db/dff/classshogun_1_1CMyCARTree.html#a470c47e13d68d22929c515489ecc3e7f",
-"de/d2c/structFT_1_1Parameters.html#a87c3d2c445f4abbdc7bdd3c5108ed04b",
-"functions_f.html"
+"de/d2c/structFT_1_1Parameters.html#a8253360dc4ad47b3f94f813daa13867a",
+"functions_e.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

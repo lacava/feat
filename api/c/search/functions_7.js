@@ -7,6 +7,7 @@ var searchData=
   ['get_5fbatch',['get_batch',['../de/d36/classFT_1_1Dat_1_1Data.html#a65ccadbbd3c9a50654c00028d454a431',1,'FT::Dat::Data']]],
   ['get_5fbest_5fscore_5fvals',['get_best_score_vals',['../db/dff/classFT_1_1Feat.html#a73efbdfdbc6f3797718432b2f115fdb2',1,'FT::Feat']]],
   ['get_5fbest_5fscores',['get_best_scores',['../db/dff/classFT_1_1Feat.html#a3beac417b5654f9f2eb19af4057ccef7',1,'FT::Feat']]],
+  ['get_5fbias',['get_bias',['../dd/d6f/classFT_1_1Model_1_1ML.html#a5945e4c0994b265263eb607fcee29310',1,'FT::Model::ML']]],
   ['get_5fc',['get_C',['../df/d62/classshogun_1_1CMyMulticlassLibLinear.html#a7a5eca0f6ef7d3ce791abbe1a06449c3',1,'shogun::CMyMulticlassLibLinear']]],
   ['get_5fcertainty_5fvector',['get_certainty_vector',['../db/dff/classshogun_1_1CMyCARTree.html#ae2bfe5364f84fff2f9c4a1ad3708e323',1,'shogun::CMyCARTree']]],
   ['get_5fclassification',['get_classification',['../db/dff/classFT_1_1Feat.html#a76a11db1f1a9d132c64b698894758a54',1,'FT::Feat']]],

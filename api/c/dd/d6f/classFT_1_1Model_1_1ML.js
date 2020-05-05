@@ -4,6 +4,7 @@ var classFT_1_1Model_1_1ML =
     [ "~ML", "dd/d6f/classFT_1_1Model_1_1ML.html#ade8819a17d3a265662b401087e3a6d0a", null ],
     [ "fit", "dd/d6f/classFT_1_1Model_1_1ML.html#aff132bcd796b9e35e8b2e4c0d0879479", null ],
     [ "fit_vector", "dd/d6f/classFT_1_1Model_1_1ML.html#a414326dd97eb21965c6d693f2ec1fb48", null ],
+    [ "get_bias", "dd/d6f/classFT_1_1Model_1_1ML.html#a5945e4c0994b265263eb607fcee29310", null ],
     [ "get_weights", "dd/d6f/classFT_1_1Model_1_1ML.html#a1ae95f84aa53ac51c3973a285c4742b9", null ],
     [ "init", "dd/d6f/classFT_1_1Model_1_1ML.html#aa5ffe6ed96079975040ba20a58fe7c3f", null ],
     [ "labels_to_vector", "dd/d6f/classFT_1_1Model_1_1ML.html#ad99b341011fec43531f70a73d1d9b18e", null ],

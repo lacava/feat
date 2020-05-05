@@ -135,6 +135,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad99b341011fec43531f70a73d1d9b18e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acecf36d817c5c3b85b7de2e454c11685"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d6f/classFT_1_1Model_1_1ML.html#acecf36d817c5c3b85b7de2e454c11685">set_dtypes</a> (const vector&lt; char &gt; &amp;dtypes)</td></tr>
 <tr class="separator:acecf36d817c5c3b85b7de2e454c11685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5945e4c0994b265263eb607fcee29310"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d6f/classFT_1_1Model_1_1ML.html#a5945e4c0994b265263eb607fcee29310">get_bias</a> ()</td></tr>
+<tr class="separator:a5945e4c0994b265263eb607fcee29310"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -159,7 +161,7 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a3cce878e1dac7299c597fd11b2dddc33"><td class="mdescLeft">&#160;</td><td class="mdescRight">max seconds allowed for training  <a href="#a3cce878e1dac7299c597fd11b2dddc33">More...</a><br /></td></tr>
 <tr class="separator:a3cce878e1dac7299c597fd11b2dddc33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe6f06ec075650c359b54194acf7e651"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d6f/classFT_1_1Model_1_1ML.html#abe6f06ec075650c359b54194acf7e651">normalize</a></td></tr>
-<tr class="memdesc:abe6f06ec075650c359b54194acf7e651"><td class="mdescLeft">&#160;</td><td class="mdescRight">control whether <a class="el" href="../../dd/d6f/classFT_1_1Model_1_1ML.html" title="class that specifies the machine learning algorithm to pair with Feat. ">ML</a> normalizes its input before training  <a href="#abe6f06ec075650c359b54194acf7e651">More...</a><br /></td></tr>
+<tr class="memdesc:abe6f06ec075650c359b54194acf7e651"><td class="mdescLeft">&#160;</td><td class="mdescRight">control whether <a class="el" href="../../dd/d6f/classFT_1_1Model_1_1ML.html" title="class that specifies the machine learning algorithm to pair with Feat. ">ML</a> normalizes its input before training returns bias for linear machines  <a href="#abe6f06ec075650c359b54194acf7e651">More...</a><br /></td></tr>
 <tr class="separator:abe6f06ec075650c359b54194acf7e651"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -225,7 +227,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00146">146</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00161">161</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
 
 </div>
 </div>
@@ -286,7 +288,7 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>yhat: n_samples vector of outputs</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00240">240</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00251">251</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
 
 </div>
 </div>
@@ -334,7 +336,26 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00413">413</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00453">453</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
+
+</div>
+</div>
+<a id="a5945e4c0994b265263eb607fcee29310"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5945e4c0994b265263eb607fcee29310">&#9670;&nbsp;</a></span>get_bias()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float FT::Model::ML::get_bias </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00616">616</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
 
 </div>
 </div>
@@ -354,7 +375,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>weight vector from model.</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00163">163</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00181">181</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
 
 </div>
 </div>
@@ -395,7 +416,7 @@ Public Attributes</h2></td></tr>
 
 <p>utility function to convert CLabels types to VectorXd types. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00533">533</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00591">591</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
 
 </div>
 </div>
@@ -425,7 +446,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00421">421</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00462">462</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
 
 </div>
 </div>
@@ -445,7 +466,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00503">503</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00556">556</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
 
 </div>
 </div>
@@ -465,7 +486,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00496">496</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00549">549</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
 
 </div>
 </div>
@@ -485,7 +506,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00148">148</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00163">163</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
 
 </div>
 </div>
@@ -590,7 +611,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>control whether <a class="el" href="../../dd/d6f/classFT_1_1Model_1_1ML.html" title="class that specifies the machine learning algorithm to pair with Feat. ">ML</a> normalizes its input before training </p>
+<p>control whether <a class="el" href="../../dd/d6f/classFT_1_1Model_1_1ML.html" title="class that specifies the machine learning algorithm to pair with Feat. ">ML</a> normalizes its input before training returns bias for linear machines </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d60/ml_8h_source.html#l00124">124</a> of file <a class="el" href="../../d7/d60/ml_8h_source.html">ml.h</a>.</p>
 
