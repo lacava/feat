@@ -13,7 +13,9 @@ var files =
     [ "error.h", "da/d41/error_8h.html", "da/d41/error_8h" ],
     [ "error_handling.h", "d3/d11/error__handling_8h.html", "d3/d11/error__handling_8h" ],
     [ "evaluation.cc", "d5/d3a/evaluation_8cc.html", null ],
-    [ "evaluation.h", "d3/df9/evaluation_8h.html", "d3/df9/evaluation_8h" ],
+    [ "evaluation.h", "d3/df9/evaluation_8h.html", [
+      [ "Evaluation", "d6/d6f/classFT_1_1Eval_1_1Evaluation.html", "d6/d6f/classFT_1_1Eval_1_1Evaluation" ]
+    ] ],
     [ "fair_lexicase.cc", "d2/d2a/fair__lexicase_8cc.html", null ],
     [ "fair_lexicase.h", "dd/dae/fair__lexicase_8h.html", [
       [ "FairLexicase", "d8/dd2/structFT_1_1Sel_1_1FairLexicase.html", "d8/dd2/structFT_1_1Sel_1_1FairLexicase" ]
@@ -305,6 +307,8 @@ var files =
     ] ],
     [ "rnd.cc", "dd/d3a/rnd_8cc.html", null ],
     [ "rnd.h", "d2/da9/rnd_8h.html", "d2/da9/rnd_8h" ],
+    [ "scorer.cc", "d3/d74/scorer_8cc.html", null ],
+    [ "scorer.h", "da/d3b/scorer_8h.html", "da/d3b/scorer_8h" ],
     [ "selection.cc", "d3/d48/selection_8cc.html", null ],
     [ "selection.h", "df/d48/selection_8h.html", [
       [ "Selection", "de/d6e/structFT_1_1Sel_1_1Selection.html", "de/d6e/structFT_1_1Sel_1_1Selection" ]

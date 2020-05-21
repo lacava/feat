@@ -1,15 +1,17 @@
 <map id="ml.h" name="ml.h">
-<area shape="rect" id="node17" href="$d0/d7f/MyCARTree_8h.html" title="shogun/MyCARTree.h" alt="" coords="2557,87,2714,114"/>
-<area shape="rect" id="node24" href="$d4/dcc/MulticlassLogisticRegression_8h.html" title="shogun/MulticlassLogistic\lRegression.h" alt="" coords="1283,169,1471,211"/>
-<area shape="rect" id="node30" href="$d0/d5c/MyMulticlassLibLinear_8h.html" title="shogun/MyMulticlassLibLinear.h" alt="" coords="1574,177,1801,203"/>
-<area shape="rect" id="node34" href="$de/db3/MyLibLinear_8h.html" title="shogun/MyLibLinear.h" alt="" coords="4606,87,4769,114"/>
-<area shape="rect" id="node36" href="$d8/d37/MyRandomForest_8h.html" title="shogun/MyRandomForest.h" alt="" coords="2327,177,2525,203"/>
-<area shape="rect" id="node38" href="$da/d33/params_8h.html" title="../params.h" alt="" coords="2789,87,2884,114"/>
-<area shape="rect" id="node44" href="$d5/d60/utils_8h.html" title="../util/utils.h" alt="" coords="3618,177,3717,203"/>
-<area shape="rect" id="node20" href="$de/d81/MyCARTreeNodeData_8h.html" title="MyCARTreeNodeData.h" alt="" coords="2550,177,2721,203"/>
-<area shape="rect" id="node39" href="$d1/dc6/nodewrapper_8h.html" title="pop/nodewrapper.h" alt="" coords="3135,177,3282,203"/>
-<area shape="rect" id="node41" href="$da/dbc/nodevector_8h.html" title="pop/nodevector.h" alt="" coords="3327,177,3461,203"/>
-<area shape="rect" id="node43" href="$d1/d8c/logger_8h.html" title="util/logger.h" alt="" coords="3486,177,3585,203"/>
-<area shape="rect" id="node42" href="$da/d41/error_8h.html" title="error.h" alt="" coords="3501,266,3565,293"/>
-<area shape="rect" id="node50" href="$d8/dc0/init_8h.html" title="../../init.h" alt="" coords="3589,266,3668,293"/>
+<area shape="rect" id="node17" href="$d0/d7f/MyCARTree_8h.html" title="shogun/MyCARTree.h" alt="" coords="2706,87,2863,114"/>
+<area shape="rect" id="node23" href="$d4/dcc/MulticlassLogisticRegression_8h.html" title="shogun/MulticlassLogistic\lRegression.h" alt="" coords="1179,169,1367,211"/>
+<area shape="rect" id="node29" href="$d0/d5c/MyMulticlassLibLinear_8h.html" title="shogun/MyMulticlassLibLinear.h" alt="" coords="1649,177,1875,203"/>
+<area shape="rect" id="node33" href="$de/db3/MyLibLinear_8h.html" title="shogun/MyLibLinear.h" alt="" coords="4695,87,4858,114"/>
+<area shape="rect" id="node35" href="$d8/d37/MyRandomForest_8h.html" title="shogun/MyRandomForest.h" alt="" coords="2303,177,2501,203"/>
+<area shape="rect" id="node37" href="$da/d33/params_8h.html" title="../params.h" alt="" coords="3620,177,3715,203"/>
+<area shape="rect" id="node42" href="$d5/d60/utils_8h.html" title="../util/utils.h" alt="" coords="3495,266,3594,293"/>
+<area shape="rect" id="node49" href="$da/d3b/scorer_8h.html" title="../eval/scorer.h" alt="" coords="2967,87,3085,114"/>
+<area shape="rect" id="node20" href="$de/d81/MyCARTreeNodeData_8h.html" title="MyCARTreeNodeData.h" alt="" coords="2526,177,2697,203"/>
+<area shape="rect" id="node38" href="$d1/dc6/nodewrapper_8h.html" title="pop/nodewrapper.h" alt="" coords="3901,266,4047,293"/>
+<area shape="rect" id="node39" href="$da/dbc/nodevector_8h.html" title="pop/nodevector.h" alt="" coords="3741,266,3876,293"/>
+<area shape="rect" id="node41" href="$d1/d8c/logger_8h.html" title="util/logger.h" alt="" coords="3618,266,3717,293"/>
+<area shape="rect" id="node40" href="$da/d41/error_8h.html" title="error.h" alt="" coords="3765,348,3829,375"/>
+<area shape="rect" id="node48" href="$d8/dc0/init_8h.html" title="../../init.h" alt="" coords="3225,348,3304,375"/>
+<area shape="rect" id="node50" href="$df/d34/metrics_8h.html" title="metrics.h" alt="" coords="3062,177,3145,203"/>
 </map>

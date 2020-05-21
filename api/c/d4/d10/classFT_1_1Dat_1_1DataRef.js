@@ -3,6 +3,7 @@ var classFT_1_1Dat_1_1DataRef =
     [ "DataRef", "d4/d10/classFT_1_1Dat_1_1DataRef.html#a6bf60e1f5691115fe5e65d03772b8ad6", null ],
     [ "~DataRef", "d4/d10/classFT_1_1Dat_1_1DataRef.html#aa6e4b03cfad153350684d80cd04d53fd", null ],
     [ "DataRef", "d4/d10/classFT_1_1Dat_1_1DataRef.html#ac631a1c5e2a2ea9811fb308769cb52eb", null ],
+    [ "init", "d4/d10/classFT_1_1Dat_1_1DataRef.html#a04f110ba04c5b850f7462d2b3bbb06b2", null ],
     [ "reorder_longitudinal", "d4/d10/classFT_1_1Dat_1_1DataRef.html#aedc979315e55681c3cf1405c99f3d7ea", null ],
     [ "setOriginalData", "d4/d10/classFT_1_1Dat_1_1DataRef.html#a81ab243d0b42ae80bbc2293bb5cef9a6", null ],
     [ "setOriginalData", "d4/d10/classFT_1_1Dat_1_1DataRef.html#aaf740500a93981dde3e3ba61729d764e", null ],

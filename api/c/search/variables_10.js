@@ -1,11 +1,11 @@
 var searchData=
 [
+  ['s',['S',['../d6/d6f/classFT_1_1Eval_1_1Evaluation.html#a96d128663bb73049a4253415e42944fa',1,'FT::Eval::Evaluation']]],
   ['sample_5fweights',['sample_weights',['../de/d2c/structFT_1_1Parameters.html#a55546feac96125ac36f567eb5191d6d0',1,'FT::Parameters']]],
   ['scale',['scale',['../dd/d51/structFT_1_1Util_1_1Normalizer.html#a42d899c4ca0d8d9b297814f9f06bbf8c',1,'FT::Util::Normalizer']]],
   ['scale_5fall',['scale_all',['../dd/d51/structFT_1_1Util_1_1Normalizer.html#a3a79512aacb8cef7968b8facad3db40a',1,'FT::Util::Normalizer']]],
-  ['score',['score',['../d6/d6f/classFT_1_1Eval_1_1Evaluation.html#a84535436863c4abe8b6e4ab486aca6e3',1,'FT::Eval::Evaluation']]],
-  ['score_5fhash',['score_hash',['../d6/d6f/classFT_1_1Eval_1_1Evaluation.html#aa3465ed24ba092d4fb56eb228b2fc246',1,'FT::Eval::Evaluation::score_hash()'],['../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a2544c0c8103dd368d60764a5895c7128',1,'FT::Opt::AutoBackProp::score_hash()'],['../d8/d06/classFT_1_1Opt_1_1HillClimb.html#a10804d3c4b7904f264d9a543fc40bbba',1,'FT::Opt::HillClimb::score_hash()']]],
-  ['scorer',['scorer',['../db/dff/classFT_1_1Feat.html#aa1d94c8c67ddc6e56a24e80970e8b6ce',1,'FT::Feat::scorer()'],['../de/d2c/structFT_1_1Parameters.html#a671b0c827027e417243edc7fd3ea77a6',1,'FT::Parameters::scorer()']]],
+  ['score_5fhash',['score_hash',['../d1/d91/classFT_1_1Eval_1_1Scorer.html#a6097374b7aa9d53904aab4b0f639b3d8',1,'FT::Eval::Scorer::score_hash()'],['../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a2544c0c8103dd368d60764a5895c7128',1,'FT::Opt::AutoBackProp::score_hash()'],['../d8/d06/classFT_1_1Opt_1_1HillClimb.html#a10804d3c4b7904f264d9a543fc40bbba',1,'FT::Opt::HillClimb::score_hash()']]],
+  ['scorer',['scorer',['../d1/d91/classFT_1_1Eval_1_1Scorer.html#a78cf55dfd14a03bbd3ce6a5636054bdf',1,'FT::Eval::Scorer::scorer()'],['../db/dff/classFT_1_1Feat.html#aa1d94c8c67ddc6e56a24e80970e8b6ce',1,'FT::Feat::scorer()'],['../de/d2c/structFT_1_1Parameters.html#a671b0c827027e417243edc7fd3ea77a6',1,'FT::Parameters::scorer()']]],
   ['selector',['selector',['../d7/d9f/structFT_1_1Pop_1_1Archive.html#af70e20576fe15ad2b21a0c06e1a5640f',1,'FT::Pop::Archive']]],
   ['shuffle',['shuffle',['../de/d2c/structFT_1_1Parameters.html#aca9f6951f7bb932f7d36abaabbc8bb23',1,'FT::Parameters']]],
   ['simplify',['simplify',['../db/dff/classFT_1_1Feat.html#a1f2f2b75149a66b1f28789c38f7b13bd',1,'FT::Feat']]],

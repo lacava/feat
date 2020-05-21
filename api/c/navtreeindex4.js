@@ -1,5 +1,17 @@
 var NAVTREEINDEX4 =
 {
+"da/def/classFT_1_1Pop_1_1Individual.html#afc5e187ae95e9530ec5e49344e695ff6":[1,0,0,4,2,16],
+"da/dff/n__leq_8h.html":[2,0,92],
+"da/dff/n__leq_8h_source.html":[2,0,92],
+"db/d0c/classFT_1_1Pop_1_1Op_1_1NodeRecent.html":[1,0,0,4,0,34],
+"db/d0c/classFT_1_1Pop_1_1Op_1_1NodeRecent.html#a2e192be1c48b1cb9e85b6c32ea367dd5":[1,0,0,4,0,34,0],
+"db/d0c/classFT_1_1Pop_1_1Op_1_1NodeRecent.html#a2ec6d91618837d8d620e2adf0e76ce61":[1,0,0,4,0,34,1],
+"db/d0c/classFT_1_1Pop_1_1Op_1_1NodeRecent.html#a8edab505698b6c1a0d25b891ae6b9f5a":[1,0,0,4,0,34,4],
+"db/d0c/classFT_1_1Pop_1_1Op_1_1NodeRecent.html#ab04af5995c0a2f420499fd915e972e7a":[1,0,0,4,0,34,2],
+"db/d0c/classFT_1_1Pop_1_1Op_1_1NodeRecent.html#ae5f1f2c0dc838ee869ae3ee6059bc7d3":[1,0,0,4,0,34,3],
+"db/d3b/state_8h.html":[2,0,172],
+"db/d3b/state_8h.html#a6a33354c51ab1e4986b2a222aac825a7":[2,0,172,3],
+"db/d3b/state_8h_source.html":[2,0,172],
 "db/d4e/classshogun_1_1CMulticlassLogisticRegression.html":[1,0,1,0],
 "db/d4e/classshogun_1_1CMulticlassLogisticRegression.html#a16a86979d10bb32a22e983ff4629a819":[1,0,1,0,5],
 "db/d4e/classshogun_1_1CMulticlassLogisticRegression.html#a1b2770da7b9faa1992263603dfe37a32":[1,0,1,0,14],
@@ -237,17 +249,5 @@ var NAVTREEINDEX4 =
 "db/dff/classshogun_1_1CMyCARTree.html#a188eb408001bb7d7d38bda4819a49ce8":[1,0,1,1,14],
 "db/dff/classshogun_1_1CMyCARTree.html#a1ee806bd0259f747956507f346362c9c":[1,0,1,1,24],
 "db/dff/classshogun_1_1CMyCARTree.html#a1f9f2d850e1dbc2142aa173fecda40d3":[1,0,1,1,29],
-"db/dff/classshogun_1_1CMyCARTree.html#a22f7d955f43ef8d3735346391a721824":[1,0,1,1,11],
-"db/dff/classshogun_1_1CMyCARTree.html#a24f3fd6ba041039c69b7c24a2555a3fa":[1,0,1,1,70],
-"db/dff/classshogun_1_1CMyCARTree.html#a2ad2d2429748c8bb7737afeedc3af95c":[1,0,1,1,68],
-"db/dff/classshogun_1_1CMyCARTree.html#a2b765354b43119e5c98b08bb3ab73d21":[1,0,1,1,6],
-"db/dff/classshogun_1_1CMyCARTree.html#a2e5bed54ada24d9ea1facbc25571286d":[1,0,1,1,0],
-"db/dff/classshogun_1_1CMyCARTree.html#a301aa09c8de426452e84d4873d3f8207":[1,0,1,1,18],
-"db/dff/classshogun_1_1CMyCARTree.html#a35ff64f75c87966a5afffd21efd90c53":[1,0,1,1,63],
-"db/dff/classshogun_1_1CMyCARTree.html#a37e6b4bd0968364625d9886e21581a2e":[1,0,1,1,55],
-"db/dff/classshogun_1_1CMyCARTree.html#a429b059069cd1c02efb6ae81f78921b6":[1,0,1,1,28],
-"db/dff/classshogun_1_1CMyCARTree.html#a43775693c35c83e84848bb0da5433bfc":[1,0,1,1,44],
-"db/dff/classshogun_1_1CMyCARTree.html#a44ceed4c99876f0310a8c0bb15fe8fb0":[1,0,1,1,4],
-"db/dff/classshogun_1_1CMyCARTree.html#a460df8bfb6a6719465ea1015600f8d7b":[1,0,1,1,17],
-"db/dff/classshogun_1_1CMyCARTree.html#a465976f2b757a9f5f5c055955995ecc4":[1,0,1,1,61]
+"db/dff/classshogun_1_1CMyCARTree.html#a22f7d955f43ef8d3735346391a721824":[1,0,1,1,11]
 };

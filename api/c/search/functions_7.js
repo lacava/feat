@@ -29,6 +29,7 @@ var searchData=
   ['get_5fgens',['get_gens',['../db/dff/classFT_1_1Feat.html#a552528657e6b2159cdee0415d2bbafee',1,'FT::Feat']]],
   ['get_5fimportance',['get_importance',['../db/dff/classshogun_1_1CMyCARTree.html#ab987dae41acef2f018a5f52a171882aa',1,'shogun::CMyCARTree']]],
   ['get_5flabel_5fepsilon',['get_label_epsilon',['../db/dff/classshogun_1_1CMyCARTree.html#a5267b5943eff38b25e88115b01a4b507',1,'shogun::CMyCARTree']]],
+  ['get_5flabels',['get_labels',['../dd/d6f/classFT_1_1Model_1_1ML.html#ac98838147da55fd300db825b9d29be31',1,'FT::Model::ML']]],
   ['get_5flog_5flevel',['get_log_level',['../d9/da2/classFT_1_1Util_1_1Logger.html#a6ac7ad5debea9bbc0f69b9021f880f1b',1,'FT::Util::Logger']]],
   ['get_5flogfile',['get_logfile',['../db/dff/classFT_1_1Feat.html#ab7b33b5cdf06038755304526b02b5961',1,'FT::Feat']]],
   ['get_5fmachine_5fproblem_5ftype',['get_machine_problem_type',['../db/dff/classshogun_1_1CMyCARTree.html#a4df79fbb094d9935f06d78515f5b208c',1,'shogun::CMyCARTree::get_machine_problem_type()'],['../da/d0f/classshogun_1_1CMyRandomForest.html#a5e53f80772ae423936d9d4e79c9f7624',1,'shogun::CMyRandomForest::get_machine_problem_type()']]],

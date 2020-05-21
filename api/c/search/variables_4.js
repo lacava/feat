@@ -10,5 +10,5 @@ var searchData=
   ['dim_5fblock',['DIM_BLOCK',['../de/d4f/cuda__utils_8h.html#afb1f85b2d79590fc4495a13fadc2e87b',1,'cuda_utils.h']]],
   ['dim_5fgrid',['DIM_GRID',['../de/d4f/cuda__utils_8h.html#a689dd2f2a0e2882c4a5a1321aff607ca',1,'cuda_utils.h']]],
   ['dominated',['dominated',['../da/def/classFT_1_1Pop_1_1Individual.html#aabf73c05c1596509e70a51354277c083',1,'FT::Pop::Individual']]],
-  ['dtypes',['dtypes',['../de/d2c/structFT_1_1Parameters.html#a13aa6e90bb1700d03dff25925839781f',1,'FT::Parameters::dtypes()'],['../da/def/classFT_1_1Pop_1_1Individual.html#a414f114c583d607edf642d49ee1563bd',1,'FT::Pop::Individual::dtypes()'],['../dd/d51/structFT_1_1Util_1_1Normalizer.html#a16f2b1e21bd80f5b51651c4e21536d94',1,'FT::Util::Normalizer::dtypes()']]]
+  ['dtypes',['dtypes',['../dd/d6f/classFT_1_1Model_1_1ML.html#ad98e619eb0647b0ac60354f52209dc31',1,'FT::Model::ML::dtypes()'],['../de/d2c/structFT_1_1Parameters.html#a13aa6e90bb1700d03dff25925839781f',1,'FT::Parameters::dtypes()'],['../da/def/classFT_1_1Pop_1_1Individual.html#a414f114c583d607edf642d49ee1563bd',1,'FT::Pop::Individual::dtypes()'],['../dd/d51/structFT_1_1Util_1_1Normalizer.html#a16f2b1e21bd80f5b51651c4e21536d94',1,'FT::Util::Normalizer::dtypes()']]]
 ];

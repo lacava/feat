@@ -1,6 +1,7 @@
 var searchData=
 [
   ['samefitcomplexity',['SameFitComplexity',['../d7/dee/structFT_1_1Pop_1_1Population_1_1SameFitComplexity.html',1,'FT::Pop::Population']]],
+  ['scorer',['Scorer',['../d1/d91/classFT_1_1Eval_1_1Scorer.html',1,'FT::Eval']]],
   ['selection',['Selection',['../de/d6e/structFT_1_1Sel_1_1Selection.html',1,'FT::Sel']]],
   ['selectionoperator',['SelectionOperator',['../d8/d53/structFT_1_1Sel_1_1SelectionOperator.html',1,'FT::Sel']]],
   ['simanneal',['SimAnneal',['../d2/d6e/structFT_1_1Sel_1_1SimAnneal.html',1,'FT::Sel']]],

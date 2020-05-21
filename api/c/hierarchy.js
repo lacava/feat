@@ -91,6 +91,7 @@ var hierarchy =
     [ "FT::Pop::Population", "d6/d5f/structFT_1_1Pop_1_1Population.html", null ],
     [ "FT::Util::Rnd", "d8/d33/classFT_1_1Util_1_1Rnd.html", null ],
     [ "FT::Pop::Population::SameFitComplexity", "d7/dee/structFT_1_1Pop_1_1Population_1_1SameFitComplexity.html", null ],
+    [ "FT::Eval::Scorer", "d1/d91/classFT_1_1Eval_1_1Scorer.html", null ],
     [ "FT::Sel::Selection", "de/d6e/structFT_1_1Sel_1_1Selection.html", null ],
     [ "FT::Sel::SelectionOperator", "d8/d53/structFT_1_1Sel_1_1SelectionOperator.html", [
       [ "FT::Sel::FairLexicase", "d8/dd2/structFT_1_1Sel_1_1FairLexicase.html", null ],

@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['scorer_2ecc',['scorer.cc',['../d3/d74/scorer_8cc.html',1,'']]],
+  ['scorer_2eh',['scorer.h',['../da/d3b/scorer_8h.html',1,'']]],
   ['selection_2ecc',['selection.cc',['../d3/d48/selection_8cc.html',1,'']]],
   ['selection_2eh',['selection.h',['../df/d48/selection_8h.html',1,'']]],
   ['selection_5foperator_2ecc',['selection_operator.cc',['../dc/df5/selection__operator_8cc.html',1,'']]],
