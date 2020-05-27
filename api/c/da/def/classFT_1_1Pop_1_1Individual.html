@@ -131,9 +131,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aba26869d81d1bffb45272d8942d238f5"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; CLabels &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html#aba26869d81d1bffb45272d8942d238f5">fit</a> (const <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> &amp;d, const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;params, bool &amp;pass)</td></tr>
 <tr class="memdesc:aba26869d81d1bffb45272d8942d238f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">fits an ML model to the data after transformation  <a href="#aba26869d81d1bffb45272d8942d238f5">More...</a><br /></td></tr>
 <tr class="separator:aba26869d81d1bffb45272d8942d238f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa617608dda82412ac83595a650d3548e"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; CLabels &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html#aa617608dda82412ac83595a650d3548e">fit_tune</a> (const <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> &amp;d, const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;params, bool &amp;pass)</td></tr>
-<tr class="memdesc:aa617608dda82412ac83595a650d3548e"><td class="mdescLeft">&#160;</td><td class="mdescRight">fits and tunes an ML model to the data after transformation  <a href="#aa617608dda82412ac83595a650d3548e">More...</a><br /></td></tr>
-<tr class="separator:aa617608dda82412ac83595a650d3548e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe8f3685699ad104818b8b93c268aff3"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; CLabels &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html#afe8f3685699ad104818b8b93c268aff3">fit_tune</a> (const <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> &amp;d, const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;params, bool &amp;pass, bool set_default=false)</td></tr>
+<tr class="memdesc:afe8f3685699ad104818b8b93c268aff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">fits and tunes an ML model to the data after transformation  <a href="#afe8f3685699ad104818b8b93c268aff3">More...</a><br /></td></tr>
+<tr class="separator:afe8f3685699ad104818b8b93c268aff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7d5b05d88742659e3f08d0dfd1efcda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html#aa7d5b05d88742659e3f08d0dfd1efcda">tune</a> (const <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> &amp;d, const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;params)</td></tr>
 <tr class="memdesc:aa7d5b05d88742659e3f08d0dfd1efcda"><td class="mdescLeft">&#160;</td><td class="mdescRight">tunes an ML model to the data after transformation  <a href="#aa7d5b05d88742659e3f08d0dfd1efcda">More...</a><br /></td></tr>
 <tr class="separator:aa7d5b05d88742659e3f08d0dfd1efcda"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -291,7 +291,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00166">166</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00167">167</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
 
 </div>
 </div>
@@ -448,8 +448,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aa617608dda82412ac83595a650d3548e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa617608dda82412ac83595a650d3548e">&#9670;&nbsp;</a></span>fit_tune()</h2>
+<a id="afe8f3685699ad104818b8b93c268aff3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe8f3685699ad104818b8b93c268aff3">&#9670;&nbsp;</a></span>fit_tune()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -470,7 +470,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool &amp;&#160;</td>
-          <td class="paramname"><em>pass</em>&#160;</td>
+          <td class="paramname"><em>pass</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>set_default</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1093,7 +1099,7 @@ satisfied.
 
 <p>set parent ids using id values </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00148">148</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d1f/individual_8h_source.html#l00149">149</a> of file <a class="el" href="../../d5/d1f/individual_8h_source.html">individual.h</a>.</p>
 
 </div>
 </div>

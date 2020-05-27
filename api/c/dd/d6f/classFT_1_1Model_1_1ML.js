@@ -3,7 +3,7 @@ var classFT_1_1Model_1_1ML =
     [ "ML", "dd/d6f/classFT_1_1Model_1_1ML.html#a53d9d24f2c1cd0c1f3f478ead9345c24", null ],
     [ "~ML", "dd/d6f/classFT_1_1Model_1_1ML.html#ade8819a17d3a265662b401087e3a6d0a", null ],
     [ "fit", "dd/d6f/classFT_1_1Model_1_1ML.html#aff132bcd796b9e35e8b2e4c0d0879479", null ],
-    [ "fit_tune", "dd/d6f/classFT_1_1Model_1_1ML.html#ac75a95df7d4f8b9729a9cfdf8adf42c2", null ],
+    [ "fit_tune", "dd/d6f/classFT_1_1Model_1_1ML.html#aef04884c6aaef32fc167e8918d4c8c6d", null ],
     [ "fit_vector", "dd/d6f/classFT_1_1Model_1_1ML.html#a414326dd97eb21965c6d693f2ec1fb48", null ],
     [ "get_bias", "dd/d6f/classFT_1_1Model_1_1ML.html#a5945e4c0994b265263eb607fcee29310", null ],
     [ "get_labels", "dd/d6f/classFT_1_1Model_1_1ML.html#ac98838147da55fd300db825b9d29be31", null ],

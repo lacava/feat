@@ -14,7 +14,7 @@ var searchData=
   ['fit_5fnormalize',['fit_normalize',['../dd/d51/structFT_1_1Util_1_1Normalizer.html#ab6ed63bfb614f90b469cd2ee069f614c',1,'FT::Util::Normalizer']]],
   ['fit_5fpredict',['fit_predict',['../db/dff/classFT_1_1Feat.html#a52a574bbc1976be1f5ec563ef79d16eb',1,'FT::Feat::fit_predict(MatrixXf &amp;X, VectorXf &amp;y, LongData Z=LongData())'],['../db/dff/classFT_1_1Feat.html#a3e555f3bb32d74ef971d631b6c5c271e',1,'FT::Feat::fit_predict(float *X, int rows_x, int cols_x, float *Y, int len_y)']]],
   ['fit_5ftransform',['fit_transform',['../db/dff/classFT_1_1Feat.html#abe0a98bb08a7d4d7020393314ead8d98',1,'FT::Feat::fit_transform(MatrixXf &amp;X, VectorXf &amp;y, LongData Z=LongData())'],['../db/dff/classFT_1_1Feat.html#a77d7dfe063841576706472ec77e5216c',1,'FT::Feat::fit_transform(float *X, int rows_x, int cols_x, float *Y, int len_y)']]],
-  ['fit_5ftune',['fit_tune',['../dd/d6f/classFT_1_1Model_1_1ML.html#ac75a95df7d4f8b9729a9cfdf8adf42c2',1,'FT::Model::ML::fit_tune()'],['../da/def/classFT_1_1Pop_1_1Individual.html#aa617608dda82412ac83595a650d3548e',1,'FT::Pop::Individual::fit_tune()']]],
+  ['fit_5ftune',['fit_tune',['../dd/d6f/classFT_1_1Model_1_1ML.html#aef04884c6aaef32fc167e8918d4c8c6d',1,'FT::Model::ML::fit_tune()'],['../da/def/classFT_1_1Pop_1_1Individual.html#afe8f3685699ad104818b8b93c268aff3',1,'FT::Pop::Individual::fit_tune()']]],
   ['fit_5fvector',['fit_vector',['../dd/d6f/classFT_1_1Model_1_1ML.html#a414326dd97eb21965c6d693f2ec1fb48',1,'FT::Model::ML']]],
   ['fit_5fwith_5fz',['fit_with_z',['../db/dff/classFT_1_1Feat.html#ac194481ccc9bb8cb152f62407a88097c',1,'FT::Feat']]],
   ['fitness',['fitness',['../d6/d6f/classFT_1_1Eval_1_1Evaluation.html#a44a44c23b8fefe7f746f44506979093c',1,'FT::Eval::Evaluation']]],

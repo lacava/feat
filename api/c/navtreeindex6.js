@@ -201,6 +201,7 @@ var NAVTREEINDEX6 =
 "df/d53/n__equal_8h.html":[2,0,68],
 "df/d53/n__equal_8h_source.html":[2,0,68],
 "df/d54/ml_8cc.html":[2,0,33],
+"df/d54/ml_8cc.html#a95445fd4618f6d8e871f5ec7bb25cc26":[2,0,33,0],
 "df/d54/ml_8cc_source.html":[2,0,33],
 "df/d62/classshogun_1_1CMyMulticlassLibLinear.html":[1,0,1,3],
 "df/d62/classshogun_1_1CMyMulticlassLibLinear.html#a07d68d1ef9c905eb7b225e9a4c71bcce":[1,0,1,3,23],
@@ -241,13 +242,12 @@ var NAVTREEINDEX6 =
 "df/d81/n__tanh_8cc_source.html":[2,0,137],
 "df/da6/n__sign_8h.html":[2,0,120],
 "df/da6/n__sign_8h_source.html":[2,0,120],
-"df/da7/namespaceshogun.html":[0,0,1],
 "df/da7/namespaceshogun.html":[1,0,1],
+"df/da7/namespaceshogun.html":[0,0,1],
 "df/dbe/n__constant_8h.html":[2,0,56],
 "df/dbe/n__constant_8h_source.html":[2,0,56],
 "df/de5/structFT_1_1Sel_1_1FairLexicase2.html":[1,0,0,5,1],
 "df/de5/structFT_1_1Sel_1_1FairLexicase2.html#a0bb6354e190789defe58b22388fe2e4f":[1,0,0,5,1,2],
 "df/de5/structFT_1_1Sel_1_1FairLexicase2.html#aafc439b7fac832c2d2b6347d93f596c2":[1,0,0,5,1,0],
-"df/de5/structFT_1_1Sel_1_1FairLexicase2.html#af1c8ea5ba70a2717cb4f5657b3d134d6":[1,0,0,5,1,3],
-"df/de5/structFT_1_1Sel_1_1FairLexicase2.html#af92f98234395ba4138c20076240c84aa":[1,0,0,5,1,1]
+"df/de5/structFT_1_1Sel_1_1FairLexicase2.html#af1c8ea5ba70a2717cb4f5657b3d134d6":[1,0,0,5,1,3]
 };

@@ -47,7 +47,7 @@ var files =
     [ "main.cc", "d9/d0f/main_8cc.html", "d9/d0f/main_8cc" ],
     [ "metrics.cc", "da/da2/metrics_8cc.html", "da/da2/metrics_8cc" ],
     [ "metrics.h", "df/d34/metrics_8h.html", "df/d34/metrics_8h" ],
-    [ "ml.cc", "df/d54/ml_8cc.html", null ],
+    [ "ml.cc", "df/d54/ml_8cc.html", "df/d54/ml_8cc" ],
     [ "ml.h", "d7/d60/ml_8h.html", "d7/d60/ml_8h" ],
     [ "MulticlassLogisticRegression.cc", "d6/d90/MulticlassLogisticRegression_8cc.html", null ],
     [ "MulticlassLogisticRegression.h", "d4/dcc/MulticlassLogisticRegression_8h.html", [

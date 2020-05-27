@@ -7,7 +7,7 @@ var classFT_1_1Pop_1_1Individual =
     [ "clone", "da/def/classFT_1_1Pop_1_1Individual.html#a09d81fcca6ca0fdbae0dfd770831427e", null ],
     [ "complexity", "da/def/classFT_1_1Pop_1_1Individual.html#a11aae1af1c9faca9eb3c9686d3ad9639", null ],
     [ "fit", "da/def/classFT_1_1Pop_1_1Individual.html#aba26869d81d1bffb45272d8942d238f5", null ],
-    [ "fit_tune", "da/def/classFT_1_1Pop_1_1Individual.html#aa617608dda82412ac83595a650d3548e", null ],
+    [ "fit_tune", "da/def/classFT_1_1Pop_1_1Individual.html#afe8f3685699ad104818b8b93c268aff3", null ],
     [ "get_complexity", "da/def/classFT_1_1Pop_1_1Individual.html#adbe6f031132c8a3208a2af825c185f22", null ],
     [ "get_dim", "da/def/classFT_1_1Pop_1_1Individual.html#aeb3670b4fde6d7e6cf02ccb01860d7bc", null ],
     [ "get_eqn", "da/def/classFT_1_1Pop_1_1Individual.html#a5a4f1adc2e7c91725440d9efbb10cc36", null ],
