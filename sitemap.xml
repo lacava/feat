@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://lacava.github.io/feat/</loc>
-     <lastmod>2020-05-28</lastmod>
+     <lastmod>2020-06-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://lacava.github.io/feat/install/</loc>
-     <lastmod>2020-05-28</lastmod>
+     <lastmod>2020-06-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://lacava.github.io/feat/guide/overview/</loc>
-     <lastmod>2020-05-28</lastmod>
+     <lastmod>2020-06-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://lacava.github.io/feat/guide/basics/</loc>
-     <lastmod>2020-05-28</lastmod>
+     <lastmod>2020-06-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://lacava.github.io/feat/examples/command_line/</loc>
-     <lastmod>2020-05-28</lastmod>
+     <lastmod>2020-06-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://lacava.github.io/feat/examples/archive/</loc>
-     <lastmod>2020-05-28</lastmod>
+     <lastmod>2020-06-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://lacava.github.io/feat/examples/longitudinal/</loc>
-     <lastmod>2020-05-28</lastmod>
+     <lastmod>2020-06-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://lacava.github.io/feat/api/python/api_py/</loc>
-     <lastmod>2020-05-28</lastmod>
+     <lastmod>2020-06-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://lacava.github.io/feat/contributing/</loc>
-     <lastmod>2020-05-28</lastmod>
+     <lastmod>2020-06-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
