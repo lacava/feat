@@ -14,6 +14,7 @@ var searchData=
   ['residual_5fcross',['residual_cross',['../d0/d80/classFT_1_1Vary_1_1Variation.html#ad44670907da51fbd23a923d8a28e164d',1,'FT::Vary::Variation']]],
   ['residual_5fxo',['residual_xo',['../de/d2c/structFT_1_1Parameters.html#a7f69b8478610b04752a59fb682e9bb9b',1,'FT::Parameters']]],
   ['resize',['resize',['../d8/d30/classFT_1_1Dat_1_1Stack.html#aa8c84d5a40145eda898bdcbd8d913521',1,'FT::Dat::Stack::resize()'],['../d6/d5f/structFT_1_1Pop_1_1Population.html#a04d926921b35a8db40e54c9471ff7281',1,'FT::Pop::Population::resize()']]],
+  ['retrieve_5flabels',['retrieve_labels',['../dd/d6f/classFT_1_1Model_1_1ML.html#ae083c9b7347647bd388d7ee94e661f24',1,'FT::Model::ML']]],
   ['rf',['RF',['../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdca8933f5ba0c99bafd045664e2b97e81eb',1,'FT::Model']]],
   ['rg',['rg',['../d8/d33/classFT_1_1Util_1_1Rnd.html#a69b042618271495c3fbb8216ff672582',1,'FT::Util::Rnd']]],
   ['ridge',['Ridge',['../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdca9f44aeb2d68842cbf2c188d378a0bedb',1,'FT::Model']]],

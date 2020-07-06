@@ -13,5 +13,7 @@ var searchData=
   ['total_5fweight',['total_weight',['../df/d48/structshogun_1_1MyCARTreeNodeData.html#afe68e3fe805ff0e926663ab96eef6419',1,'shogun::MyCARTreeNodeData']]],
   ['train',['train',['../de/d2e/classFT_1_1Pop_1_1Op_1_1NodeTrain.html#ae9cca4f3371452be2517a9b84d734433',1,'FT::Pop::Op::NodeTrain']]],
   ['transit_5finto_5fvalues',['transit_into_values',['../df/d48/structshogun_1_1MyCARTreeNodeData.html#a08e9e8337e14d676a88bb9fff0b1a571',1,'shogun::MyCARTreeNodeData']]],
-  ['ttypes',['ttypes',['../de/d2c/structFT_1_1Parameters.html#abdc07ad1c8f89ecfa5edd52c97892f42',1,'FT::Parameters']]]
+  ['ttypes',['ttypes',['../de/d2c/structFT_1_1Parameters.html#abdc07ad1c8f89ecfa5edd52c97892f42',1,'FT::Parameters']]],
+  ['tune_5ffinal',['tune_final',['../de/d2c/structFT_1_1Parameters.html#ae8277cb027afc5790281fe16105da037',1,'FT::Parameters']]],
+  ['tune_5finitial',['tune_initial',['../de/d2c/structFT_1_1Parameters.html#a927ca3edeacc01cc2b679f87738435f0',1,'FT::Parameters']]]
 ];

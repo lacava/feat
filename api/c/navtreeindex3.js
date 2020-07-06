@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"d8/d60/classFT_1_1Pop_1_1Op_1_1NodeIfThenElse.html#add76922eca76f65d88e513909b2e0620":[1,0,0,4,0,20,3],
 "d8/d61/classFT_1_1Pop_1_1Op_1_1NodeSubtract.html":[1,0,0,4,0,44],
 "d8/d61/classFT_1_1Pop_1_1Op_1_1NodeSubtract.html#a01509b28af3d03d8f6abd5b100e4f7f4":[1,0,0,4,0,44,4],
 "d8/d61/classFT_1_1Pop_1_1Op_1_1NodeSubtract.html#a02b8db86572072a230404222b585ef0b":[1,0,0,4,0,44,0],
@@ -45,17 +46,17 @@ var NAVTREEINDEX3 =
 "d8/dd2/structFT_1_1Sel_1_1FairLexicase.html#af78ad9eaa231199f5e011641f6748b26":[1,0,0,5,0,0],
 "d8/dd2/structFT_1_1Sel_1_1FairLexicase.html#afc64a714178766d087b5676d7c091325":[1,0,0,5,0,1],
 "d8/dd3/structFT_1_1Util_1_1Log__Stats.html":[1,0,0,6,0],
-"d8/dd3/structFT_1_1Util_1_1Log__Stats.html#a029ca86bd7544ebda731dbbf29eeff94":[1,0,0,6,0,9],
-"d8/dd3/structFT_1_1Util_1_1Log__Stats.html#a2d307e7613bca247f5974ec4d54e7ee1":[1,0,0,6,0,6],
-"d8/dd3/structFT_1_1Util_1_1Log__Stats.html#a3cda627028f0a0783dbe213bf3bd20bd":[1,0,0,6,0,8],
+"d8/dd3/structFT_1_1Util_1_1Log__Stats.html#a029ca86bd7544ebda731dbbf29eeff94":[1,0,0,6,0,7],
+"d8/dd3/structFT_1_1Util_1_1Log__Stats.html#a17cf8561f1cbb3200b53135da9f18c1b":[1,0,0,6,0,9],
+"d8/dd3/structFT_1_1Util_1_1Log__Stats.html#a2d307e7613bca247f5974ec4d54e7ee1":[1,0,0,6,0,5],
 "d8/dd3/structFT_1_1Util_1_1Log__Stats.html#a492687953e83f9cc77ca67a5e2ccb224":[1,0,0,6,0,10],
-"d8/dd3/structFT_1_1Util_1_1Log__Stats.html#a5ae2199aeafba9b675512b66c81ced4c":[1,0,0,6,0,7],
-"d8/dd3/structFT_1_1Util_1_1Log__Stats.html#a792a835cd21a50782e8b45f6018a2149":[1,0,0,6,0,5],
+"d8/dd3/structFT_1_1Util_1_1Log__Stats.html#a5ae2199aeafba9b675512b66c81ced4c":[1,0,0,6,0,6],
+"d8/dd3/structFT_1_1Util_1_1Log__Stats.html#a792a835cd21a50782e8b45f6018a2149":[1,0,0,6,0,3],
 "d8/dd3/structFT_1_1Util_1_1Log__Stats.html#a7ea44eefeeb7fdfd0d82dcbbe5e14525":[1,0,0,6,0,0],
-"d8/dd3/structFT_1_1Util_1_1Log__Stats.html#a9adf852b0ab5bc188f65827b394b44d2":[1,0,0,6,0,1],
-"d8/dd3/structFT_1_1Util_1_1Log__Stats.html#aabcc3482abdae5ed3616dc42445c1dbd":[1,0,0,6,0,4],
-"d8/dd3/structFT_1_1Util_1_1Log__Stats.html#ac7cc0e9d4d4eb27b40224af7d349ba6a":[1,0,0,6,0,3],
-"d8/dd3/structFT_1_1Util_1_1Log__Stats.html#aff9093c702ebcfb209099c7e624635bd":[1,0,0,6,0,2],
+"d8/dd3/structFT_1_1Util_1_1Log__Stats.html#aa4a8821022f7112185c1ea181822470e":[1,0,0,6,0,8],
+"d8/dd3/structFT_1_1Util_1_1Log__Stats.html#aabcc3482abdae5ed3616dc42445c1dbd":[1,0,0,6,0,2],
+"d8/dd3/structFT_1_1Util_1_1Log__Stats.html#ac7cc0e9d4d4eb27b40224af7d349ba6a":[1,0,0,6,0,1],
+"d8/dd3/structFT_1_1Util_1_1Log__Stats.html#afebb4b1a5b933ec031673f92100c5e88":[1,0,0,6,0,4],
 "d8/dd4/n__multiply_8h.html":[2,0,110],
 "d8/dd4/n__multiply_8h_source.html":[2,0,110],
 "d8/de9/MyRandomForest_8cc.html":[2,0,47],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "da/def/classFT_1_1Pop_1_1Individual.html#ae3a97cb34157c37245d190356488e72f":[1,0,0,4,2,22],
 "da/def/classFT_1_1Pop_1_1Individual.html#ae9be4fe350f44a20250f5551459758bc":[1,0,0,4,2,43],
 "da/def/classFT_1_1Pop_1_1Individual.html#aeb3670b4fde6d7e6cf02ccb01860d7bc":[1,0,0,4,2,9],
-"da/def/classFT_1_1Pop_1_1Individual.html#afa0c465f9ea7c2bd43982d49cab27305":[1,0,0,4,2,29],
-"da/def/classFT_1_1Pop_1_1Individual.html#afc5e187ae95e9530ec5e49344e695ff6":[1,0,0,4,2,16]
+"da/def/classFT_1_1Pop_1_1Individual.html#afa0c465f9ea7c2bd43982d49cab27305":[1,0,0,4,2,29]
 };

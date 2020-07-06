@@ -5,7 +5,7 @@ var searchData=
   ['false_5fpositive_5floss',['false_positive_loss',['../de/dcf/namespaceFT_1_1Eval.html#a4ef0d37d5e504dc68f3bb7a8755ffb0b',1,'FT::Eval']]],
   ['false_5fpositive_5floss_5flabel',['false_positive_loss_label',['../de/dcf/namespaceFT_1_1Eval.html#aca41170e663ec93ba3344d5e8e20e1e5',1,'FT::Eval']]],
   ['fast_5fnds',['fast_nds',['../dd/df1/structFT_1_1Sel_1_1NSGA2.html#a5d21e4d11ebe1db97bc6a7e644a85f18',1,'FT::Sel::NSGA2']]],
-  ['feat',['Feat',['../db/dff/classFT_1_1Feat.html#a4571f401379ccab72644475672673920',1,'FT::Feat']]],
+  ['feat',['Feat',['../db/dff/classFT_1_1Feat.html#ab689592baae07c53d2799ee80ce9c08d',1,'FT::Feat']]],
   ['feature_5fimportances',['feature_importances',['../db/dff/classshogun_1_1CMyCARTree.html#a188eb408001bb7d7d38bda4819a49ce8',1,'shogun::CMyCARTree::feature_importances()'],['../da/d0f/classshogun_1_1CMyRandomForest.html#a39c7786f22fe499e94208e3c963a35f9',1,'shogun::CMyRandomForest::feature_importances()']]],
   ['final_5fmodel',['final_model',['../db/dff/classFT_1_1Feat.html#a8b756059dbd7d8d0de509515cb90c3eb',1,'FT::Feat']]],
   ['find_5fdtypes',['find_dtypes',['../d1/d5d/namespaceFT_1_1Util.html#ac43be485eba16c4f5eb623540c46844e',1,'FT::Util']]],
@@ -17,7 +17,7 @@ var searchData=
   ['fit_5ftune',['fit_tune',['../dd/d6f/classFT_1_1Model_1_1ML.html#aef04884c6aaef32fc167e8918d4c8c6d',1,'FT::Model::ML::fit_tune()'],['../da/def/classFT_1_1Pop_1_1Individual.html#afe8f3685699ad104818b8b93c268aff3',1,'FT::Pop::Individual::fit_tune()']]],
   ['fit_5fvector',['fit_vector',['../dd/d6f/classFT_1_1Model_1_1ML.html#a414326dd97eb21965c6d693f2ec1fb48',1,'FT::Model::ML']]],
   ['fit_5fwith_5fz',['fit_with_z',['../db/dff/classFT_1_1Feat.html#ac194481ccc9bb8cb152f62407a88097c',1,'FT::Feat']]],
-  ['fitness',['fitness',['../d6/d6f/classFT_1_1Eval_1_1Evaluation.html#a44a44c23b8fefe7f746f44506979093c',1,'FT::Eval::Evaluation']]],
+  ['fitness',['fitness',['../d6/d6f/classFT_1_1Eval_1_1Evaluation.html#abae0d4d0e1cddace87334945e9cb3734',1,'FT::Eval::Evaluation']]],
   ['form_5ft1',['form_t1',['../db/dff/classshogun_1_1CMyCARTree.html#a4fa218866aa1bbbd73347819f201c17c',1,'shogun::CMyCARTree']]],
   ['forward_5fprop',['forward_prop',['../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a71d49aad055cf9b076c60f5c3f844859',1,'FT::Opt::AutoBackProp']]],
   ['free_5fdevice',['free_device',['../dc/dd9/namespaceFT_1_1Pop_1_1Op.html#a512559a312843d16c6560fe58a51e2ad',1,'FT::Pop::Op']]]

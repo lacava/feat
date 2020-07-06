@@ -8,13 +8,13 @@ var searchData=
   ['threshold',['threshold',['../dd/d91/classFT_1_1Pop_1_1Op_1_1NodeFuzzyFixedSplit.html#aefcf08a4bb0e93004885d1fc63d06677',1,'FT::Pop::Op::NodeFuzzyFixedSplit::threshold()'],['../de/d7e/classFT_1_1Pop_1_1Op_1_1NodeFuzzySplit.html#af649a6619397cff6ad81c38dcf1a40d0',1,'FT::Pop::Op::NodeFuzzySplit::threshold()'],['../db/dc8/classFT_1_1Pop_1_1Op_1_1NodeSplit.html#a729cab7697a058d621fd7a11b8426641',1,'FT::Pop::Op::NodeSplit::threshold()']]],
   ['threshold_5fset',['threshold_set',['../dd/d91/classFT_1_1Pop_1_1Op_1_1NodeFuzzyFixedSplit.html#a1e51d37f787130f9e0732ea39b35606d',1,'FT::Pop::Op::NodeFuzzyFixedSplit']]],
   ['time',['time',['../d8/dd3/structFT_1_1Util_1_1Log__Stats.html#a492687953e83f9cc77ca67a5e2ccb224',1,'FT::Util::Log_Stats']]],
-  ['timer',['Timer',['../db/db7/classFT_1_1Util_1_1Timer.html',1,'FT::Util::Timer'],['../db/dff/classFT_1_1Feat.html#af5be17d09edb530c180bc20ed0a98326',1,'FT::Feat::timer()'],['../db/db7/classFT_1_1Util_1_1Timer.html#ade956722930d5169849105b3829a9b63',1,'FT::Util::Timer::Timer()']]],
+  ['timer',['Timer',['../db/db7/classFT_1_1Util_1_1Timer.html',1,'FT::Util::Timer'],['../db/db7/classFT_1_1Util_1_1Timer.html#ade956722930d5169849105b3829a9b63',1,'FT::Util::Timer::Timer()'],['../db/dff/classFT_1_1Feat.html#af5be17d09edb530c180bc20ed0a98326',1,'FT::Feat::timer()']]],
   ['to_5fstring',['to_string',['../d1/d5d/namespaceFT_1_1Util.html#afe062564286e6b13100de60f8fe9b947',1,'FT::Util']]],
   ['tokens',['tokens',['../de/d16/classInputParser.html#a23ce0e47972606dd65099570ec4385b8',1,'InputParser']]],
   ['top',['top',['../d8/d30/classFT_1_1Dat_1_1Stack.html#a3d2b074c7bc9f61e0b29b223ba71750e',1,'FT::Dat::Stack']]],
   ['total_5farity',['total_arity',['../d2/dfb/classFT_1_1Pop_1_1Op_1_1Node.html#a00e0702a82418ac8dbea312b8f3f66aa',1,'FT::Pop::Op::Node']]],
   ['total_5fweight',['total_weight',['../df/d48/structshogun_1_1MyCARTreeNodeData.html#afe68e3fe805ff0e926663ab96eef6419',1,'shogun::MyCARTreeNodeData']]],
-  ['tournament',['Tournament',['../df/d24/structFT_1_1Sel_1_1Tournament.html',1,'FT::Sel::Tournament'],['../dd/df1/structFT_1_1Sel_1_1NSGA2.html#aec806be5f9357c5fb79c3235d5a0e671',1,'FT::Sel::NSGA2::tournament()'],['../df/d24/structFT_1_1Sel_1_1Tournament.html#a650d954a3f4d783243101d4ab750337f',1,'FT::Sel::Tournament::tournament(vector&lt; Individual &gt; &amp;pop, size_t i, size_t j) const'],['../df/d24/structFT_1_1Sel_1_1Tournament.html#ac8613a20b4ec05a592cc1cf2daf1e9ad',1,'FT::Sel::Tournament::Tournament(bool surv)']]],
+  ['tournament',['Tournament',['../df/d24/structFT_1_1Sel_1_1Tournament.html',1,'FT::Sel::Tournament'],['../df/d24/structFT_1_1Sel_1_1Tournament.html#ac8613a20b4ec05a592cc1cf2daf1e9ad',1,'FT::Sel::Tournament::Tournament()'],['../dd/df1/structFT_1_1Sel_1_1NSGA2.html#aec806be5f9357c5fb79c3235d5a0e671',1,'FT::Sel::NSGA2::tournament()'],['../df/d24/structFT_1_1Sel_1_1Tournament.html#a650d954a3f4d783243101d4ab750337f',1,'FT::Sel::Tournament::tournament()']]],
   ['tournament_2ecc',['tournament.cc',['../dd/d9f/tournament_8cc.html',1,'']]],
   ['tournament_2eh',['tournament.h',['../d2/db9/tournament_8h.html',1,'']]],
   ['trace',['Trace',['../d2/dfc/structFT_1_1Dat_1_1Trace.html',1,'FT::Dat']]],
@@ -26,5 +26,7 @@ var searchData=
   ['transit_5finto_5fvalues',['transit_into_values',['../df/d48/structshogun_1_1MyCARTreeNodeData.html#a08e9e8337e14d676a88bb9fff0b1a571',1,'shogun::MyCARTreeNodeData']]],
   ['trim',['trim',['../d1/d5d/namespaceFT_1_1Util.html#a4c54a24d5a8475c9c5d6087e68feaca9',1,'FT::Util']]],
   ['ttypes',['ttypes',['../de/d2c/structFT_1_1Parameters.html#abdc07ad1c8f89ecfa5edd52c97892f42',1,'FT::Parameters']]],
-  ['tune',['tune',['../da/def/classFT_1_1Pop_1_1Individual.html#aa7d5b05d88742659e3f08d0dfd1efcda',1,'FT::Pop::Individual']]]
+  ['tune',['tune',['../da/def/classFT_1_1Pop_1_1Individual.html#aa7d5b05d88742659e3f08d0dfd1efcda',1,'FT::Pop::Individual']]],
+  ['tune_5ffinal',['tune_final',['../de/d2c/structFT_1_1Parameters.html#ae8277cb027afc5790281fe16105da037',1,'FT::Parameters']]],
+  ['tune_5finitial',['tune_initial',['../de/d2c/structFT_1_1Parameters.html#a927ca3edeacc01cc2b679f87738435f0',1,'FT::Parameters']]]
 ];

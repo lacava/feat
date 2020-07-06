@@ -116,9 +116,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae520bae21153b01aa153f0f33bada5d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3d4fd7d6d4c6c08aac98e0765e6b525"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d6f/classFT_1_1Eval_1_1Evaluation.html#ab3d4fd7d6d4c6c08aac98e0765e6b525">~Evaluation</a> ()</td></tr>
 <tr class="separator:ab3d4fd7d6d4c6c08aac98e0765e6b525"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44a44c23b8fefe7f746f44506979093c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d6f/classFT_1_1Eval_1_1Evaluation.html#a44a44c23b8fefe7f746f44506979093c">fitness</a> (vector&lt; <a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> &gt; &amp;individuals, const <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> &amp;d, MatrixXf &amp;F, const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;params, bool offspring=false, bool validation=false)</td></tr>
-<tr class="memdesc:a44a44c23b8fefe7f746f44506979093c"><td class="mdescLeft">&#160;</td><td class="mdescRight">fitness of population.  <a href="#a44a44c23b8fefe7f746f44506979093c">More...</a><br /></td></tr>
-<tr class="separator:a44a44c23b8fefe7f746f44506979093c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb32c06aa6f9e7a4f332637319f2c5f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d6f/classFT_1_1Eval_1_1Evaluation.html#abb32c06aa6f9e7a4f332637319f2c5f6">validation</a> (vector&lt; <a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> &gt; &amp;individuals, const <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> &amp;d, const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;params, bool offspring=false)</td></tr>
+<tr class="memdesc:abb32c06aa6f9e7a4f332637319f2c5f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">validation of population.  <a href="#abb32c06aa6f9e7a4f332637319f2c5f6">More...</a><br /></td></tr>
+<tr class="separator:abb32c06aa6f9e7a4f332637319f2c5f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abae0d4d0e1cddace87334945e9cb3734"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d6f/classFT_1_1Eval_1_1Evaluation.html#abae0d4d0e1cddace87334945e9cb3734">fitness</a> (vector&lt; <a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> &gt; &amp;individuals, const <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> &amp;d, MatrixXf &amp;F, const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;params, bool offspring=false)</td></tr>
+<tr class="memdesc:abae0d4d0e1cddace87334945e9cb3734"><td class="mdescLeft">&#160;</td><td class="mdescRight">fitness of population.  <a href="#abae0d4d0e1cddace87334945e9cb3734">More...</a><br /></td></tr>
+<tr class="separator:abae0d4d0e1cddace87334945e9cb3734"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8b51d4d131cfb90837a8bf9b0448170"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d6f/classFT_1_1Eval_1_1Evaluation.html#ab8b51d4d131cfb90837a8bf9b0448170">marginal_fairness</a> (VectorXf &amp;loss, const <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> &amp;d, float base_score, bool use_alpha=false)</td></tr>
 <tr class="separator:ab8b51d4d131cfb90837a8bf9b0448170"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3258423a1fe6b30dd1b12083455d34ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d6f/classFT_1_1Eval_1_1Evaluation.html#a3258423a1fe6b30dd1b12083455d34ab">assign_fit</a> (<a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> &amp;ind, MatrixXf &amp;F, const shared_ptr&lt; CLabels &gt; &amp;yhat, const <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> &amp;d, const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;params, bool val=false)</td></tr>
@@ -234,12 +237,12 @@ Public Attributes</h2></td></tr>
  params: feat parameters
 </pre><p>Output: </p><pre class="fragment"> modifies F and ind.fitness
 </pre>
-<p class="definition">Definition at line <a class="el" href="../../d5/d3a/evaluation_8cc_source.html#l00126">126</a> of file <a class="el" href="../../d5/d3a/evaluation_8cc_source.html">evaluation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d3a/evaluation_8cc_source.html#l00167">167</a> of file <a class="el" href="../../d5/d3a/evaluation_8cc_source.html">evaluation.cc</a>.</p>
 
 </div>
 </div>
-<a id="a44a44c23b8fefe7f746f44506979093c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44a44c23b8fefe7f746f44506979093c">&#9670;&nbsp;</a></span>fitness()</h2>
+<a id="abae0d4d0e1cddace87334945e9cb3734"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abae0d4d0e1cddace87334945e9cb3734">&#9670;&nbsp;</a></span>fitness()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -272,13 +275,7 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>offspring</em> = <code>false</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>validation</em> = <code>false</code>&#160;</td>
+          <td class="paramname"><em>offspring</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -294,11 +291,10 @@ Public Attributes</h2></td></tr>
  @param F: matrix of raw fitness values
  @param params: algorithm parameters
  @param offspring: if true, only evaluate last half of population
- @param validation: if true, call ind.predict instead of ind.fit
 </pre><p>Output </p><pre class="fragment"> F is modified
  pop[:].fitness is modified
 </pre>
-<p class="definition">Definition at line <a class="el" href="../../d5/d3a/evaluation_8cc_source.html#l00031">31</a> of file <a class="el" href="../../d5/d3a/evaluation_8cc_source.html">evaluation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d3a/evaluation_8cc_source.html#l00080">80</a> of file <a class="el" href="../../d5/d3a/evaluation_8cc_source.html">evaluation.cc</a>.</p>
 
 </div>
 </div>
@@ -340,7 +336,51 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d3a/evaluation_8cc_source.html#l00171">171</a> of file <a class="el" href="../../d5/d3a/evaluation_8cc_source.html">evaluation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d3a/evaluation_8cc_source.html#l00212">212</a> of file <a class="el" href="../../d5/d3a/evaluation_8cc_source.html">evaluation.cc</a>.</p>
+
+</div>
+</div>
+<a id="abb32c06aa6f9e7a4f332637319f2c5f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb32c06aa6f9e7a4f332637319f2c5f6">&#9670;&nbsp;</a></span>validation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FT::Eval::Evaluation::validation </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; <a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>individuals</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../de/d36/classFT_1_1Dat_1_1Data.html">Data</a> &amp;&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>offspring</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>validation of population. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d3a/evaluation_8cc_source.html#l00030">30</a> of file <a class="el" href="../../d5/d3a/evaluation_8cc_source.html">evaluation.cc</a>.</p>
 
 </div>
 </div>
@@ -357,7 +397,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/df9/evaluation_8h_source.html#l00067">67</a> of file <a class="el" href="../../d3/df9/evaluation_8h_source.html">evaluation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/df9/evaluation_8h_source.html#l00075">75</a> of file <a class="el" href="../../d3/df9/evaluation_8h_source.html">evaluation.h</a>.</p>
 
 </div>
 </div>

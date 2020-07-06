@@ -2,7 +2,7 @@ var structFT_1_1Parameters =
 [
     [ "BP", "d4/d04/structFT_1_1Parameters_1_1BP.html", "d4/d04/structFT_1_1Parameters_1_1BP" ],
     [ "HC", "d0/d29/structFT_1_1Parameters_1_1HC.html", "d0/d29/structFT_1_1Parameters_1_1HC" ],
-    [ "Parameters", "de/d2c/structFT_1_1Parameters.html#a1d8b9420869ea006cdd3d3d3d26ea533", null ],
+    [ "Parameters", "de/d2c/structFT_1_1Parameters.html#acc4bb8f61b38c3449235ae5495340166", null ],
     [ "~Parameters", "de/d2c/structFT_1_1Parameters.html#a076962362db14b59e1b6c8df0eac62df", null ],
     [ "createNode", "de/d2c/structFT_1_1Parameters.html#a24a000d8f1b4c4971ceee5aa9f1e1738", null ],
     [ "init", "de/d2c/structFT_1_1Parameters.html#a210d5c0a83658a79572a9ef4c289e250", null ],
@@ -68,6 +68,8 @@ var structFT_1_1Parameters =
     [ "term_weights", "de/d2c/structFT_1_1Parameters.html#a87c3d2c445f4abbdc7bdd3c5108ed04b", null ],
     [ "terminals", "de/d2c/structFT_1_1Parameters.html#aaddb140c8f882260363f0ae34e1ab1f4", null ],
     [ "ttypes", "de/d2c/structFT_1_1Parameters.html#abdc07ad1c8f89ecfa5edd52c97892f42", null ],
+    [ "tune_final", "de/d2c/structFT_1_1Parameters.html#ae8277cb027afc5790281fe16105da037", null ],
+    [ "tune_initial", "de/d2c/structFT_1_1Parameters.html#a927ca3edeacc01cc2b679f87738435f0", null ],
     [ "use_batch", "de/d2c/structFT_1_1Parameters.html#a06a17d58447856ba081c99a2c03e0f9b", null ],
     [ "verbosity", "de/d2c/structFT_1_1Parameters.html#a91f77c1dfe0d6254bc0dd083c05fd951", null ]
 ];
