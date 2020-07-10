@@ -159,7 +159,7 @@ var searchData=
   ['nodevector_2eh',['nodevector.h',['../da/dbc/nodevector_8h.html',1,'']]],
   ['nodewrapper_2eh',['nodewrapper.h',['../d1/dc6/nodewrapper_8h.html',1,'']]],
   ['nodexor',['NodeXor',['../df/d63/classFT_1_1Pop_1_1Op_1_1NodeXor.html',1,'FT::Pop::Op::NodeXor'],['../df/d63/classFT_1_1Pop_1_1Op_1_1NodeXor.html#a6ad6d064c9456a50e5aaa64aec74d4bd',1,'FT::Pop::Op::NodeXor::NodeXor()']]],
-  ['normalize',['normalize',['../dd/d6f/classFT_1_1Model_1_1ML.html#abe6f06ec075650c359b54194acf7e651',1,'FT::Model::ML::normalize()'],['../de/d2c/structFT_1_1Parameters.html#a9ee92495a6061da2fb1751b4f6a6f8b3',1,'FT::Parameters::normalize()'],['../dd/d51/structFT_1_1Util_1_1Normalizer.html#ab6fd830d0df127d67d85072de631c625',1,'FT::Util::Normalizer::normalize()']]],
+  ['normalize',['normalize',['../dd/d6f/classFT_1_1Model_1_1ML.html#abe6f06ec075650c359b54194acf7e651',1,'FT::Model::ML::normalize()'],['../de/d2c/structFT_1_1Parameters.html#a9ee92495a6061da2fb1751b4f6a6f8b3',1,'FT::Parameters::normalize()'],['../dd/d51/structFT_1_1Util_1_1Normalizer.html#acc3e3e5c7661db0b413d9883a29dee69',1,'FT::Util::Normalizer::normalize()']]],
   ['normalizer',['Normalizer',['../dd/d51/structFT_1_1Util_1_1Normalizer.html',1,'FT::Util::Normalizer'],['../dd/d51/structFT_1_1Util_1_1Normalizer.html#ae24184fdf8c95ea9ce7a8dfaff42c1c4',1,'FT::Util::Normalizer::Normalizer()']]],
   ['nsga2',['NSGA2',['../dd/df1/structFT_1_1Sel_1_1NSGA2.html',1,'FT::Sel::NSGA2'],['../dd/df1/structFT_1_1Sel_1_1NSGA2.html#a5a234861a49f70b3fa83e8fe839eb928',1,'FT::Sel::NSGA2::NSGA2()']]],
   ['nsga2_2ecc',['nsga2.cc',['../dd/def/nsga2_8cc.html',1,'']]],

@@ -11,7 +11,7 @@ var utils_8h =
     [ "condition_number", "d5/d60/utils_8h.html#a0bb5926e88f04d944ea148050ccbc475", null ],
     [ "corrcoef", "d5/d60/utils_8h.html#a7096abc4ea5c2b2851279ead36160de7", null ],
     [ "covariance", "d5/d60/utils_8h.html#a66a5c6b17b000fbed3eb8e9263db323d", null ],
-    [ "find_dtypes", "d5/d60/utils_8h.html#ac43be485eba16c4f5eb623540c46844e", null ],
+    [ "find_dtypes", "d5/d60/utils_8h.html#a8be9ce40cde2c992231d21d1eefab80e", null ],
     [ "in", "d5/d60/utils_8h.html#ad6950dc08ecf11f4b0d9beca238f012f", null ],
     [ "isinf", "d5/d60/utils_8h.html#a3118ffbc572dddfd5c655e1b3fc82a6b", null ],
     [ "isnan", "d5/d60/utils_8h.html#a3f8254d6ffcc0e7a59f26891868de87a", null ],

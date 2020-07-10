@@ -6,7 +6,7 @@ var utils_8cc =
     [ "condition_number", "d7/da9/utils_8cc.html#a0bb5926e88f04d944ea148050ccbc475", null ],
     [ "corrcoef", "d7/da9/utils_8cc.html#a7096abc4ea5c2b2851279ead36160de7", null ],
     [ "covariance", "d7/da9/utils_8cc.html#a66a5c6b17b000fbed3eb8e9263db323d", null ],
-    [ "find_dtypes", "d7/da9/utils_8cc.html#ac43be485eba16c4f5eb623540c46844e", null ],
+    [ "find_dtypes", "d7/da9/utils_8cc.html#a8be9ce40cde2c992231d21d1eefab80e", null ],
     [ "isinf", "d7/da9/utils_8cc.html#a3118ffbc572dddfd5c655e1b3fc82a6b", null ],
     [ "isnan", "d7/da9/utils_8cc.html#a3f8254d6ffcc0e7a59f26891868de87a", null ],
     [ "kurtosis", "d7/da9/utils_8cc.html#a8d21d29f224899f7818e41ddd21bcf7f", null ],

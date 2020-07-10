@@ -24,7 +24,7 @@ var searchData=
   ['set_5fbackprop',['set_backprop',['../db/dff/classFT_1_1Feat.html#a0088fc0725db1b4c7c7f97d8d404fda2',1,'FT::Feat']]],
   ['set_5fbatch_5fsize',['set_batch_size',['../db/dff/classFT_1_1Feat.html#ae93c64f176954e630b66e5e81d3fbe10',1,'FT::Feat']]],
   ['set_5fc',['set_C',['../df/d62/classshogun_1_1CMyMulticlassLibLinear.html#a469d12d3927477c9bc8683099145ff51',1,'shogun::CMyMulticlassLibLinear']]],
-  ['set_5fclasses',['set_classes',['../de/d2c/structFT_1_1Parameters.html#ad41e8e5c79e2cb6a5ea8c34419383e50',1,'FT::Parameters']]],
+  ['set_5fclasses',['set_classes',['../de/d2c/structFT_1_1Parameters.html#af5268ad7390fabf47bc2da944559a3a6',1,'FT::Parameters']]],
   ['set_5fclassification',['set_classification',['../db/dff/classFT_1_1Feat.html#a362ac99c901ac7c4f8fca90f3446d277',1,'FT::Feat']]],
   ['set_5fcorr_5fdelete_5fmutate',['set_corr_delete_mutate',['../db/dff/classFT_1_1Feat.html#a1649b337275a7dc5a25b4e4650586b3c',1,'FT::Feat']]],
   ['set_5fcross_5frate',['set_cross_rate',['../db/dff/classFT_1_1Feat.html#ae92576a0f6304ca94a893d32f6239d34',1,'FT::Feat::set_cross_rate()'],['../d0/d80/classFT_1_1Vary_1_1Variation.html#a7ce3c727397e299f5c731a1abe9b2be7',1,'FT::Vary::Variation::set_cross_rate()']]],
