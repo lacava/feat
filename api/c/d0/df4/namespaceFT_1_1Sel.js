@@ -1,7 +1,6 @@
 var namespaceFT_1_1Sel =
 [
     [ "FairLexicase", "d8/dd2/structFT_1_1Sel_1_1FairLexicase.html", "d8/dd2/structFT_1_1Sel_1_1FairLexicase" ],
-    [ "FairLexicase2", "df/de5/structFT_1_1Sel_1_1FairLexicase2.html", "df/de5/structFT_1_1Sel_1_1FairLexicase2" ],
     [ "Lexicase", "db/d76/structFT_1_1Sel_1_1Lexicase.html", "db/d76/structFT_1_1Sel_1_1Lexicase" ],
     [ "NSGA2", "dd/df1/structFT_1_1Sel_1_1NSGA2.html", "dd/df1/structFT_1_1Sel_1_1NSGA2" ],
     [ "Offspring", "d8/d7b/structFT_1_1Sel_1_1Offspring.html", "d8/d7b/structFT_1_1Sel_1_1Offspring" ],

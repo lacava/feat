@@ -40,6 +40,7 @@ var classFT_1_1Pop_1_1Individual =
     [ "dim", "da/def/classFT_1_1Pop_1_1Individual.html#a28b4a9c1c56941da84a203f863b99bcf", null ],
     [ "dominated", "da/def/classFT_1_1Pop_1_1Individual.html#aabf73c05c1596509e70a51354277c083", null ],
     [ "dtypes", "da/def/classFT_1_1Pop_1_1Individual.html#a414f114c583d607edf642d49ee1563bd", null ],
+    [ "error", "da/def/classFT_1_1Pop_1_1Individual.html#ac53497bcd2e069eaa0390beb28edcb13", null ],
     [ "fairness", "da/def/classFT_1_1Pop_1_1Individual.html#a171d1fcc08abb41da99e92775028f7aa", null ],
     [ "fairness_v", "da/def/classFT_1_1Pop_1_1Individual.html#ad06ed59e216c9b791ce9cd934f2e2236", null ],
     [ "fitness", "da/def/classFT_1_1Pop_1_1Individual.html#a70e1bf2190b22bc29a10857a8c146690", null ],

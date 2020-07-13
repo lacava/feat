@@ -105,7 +105,7 @@ Collaboration diagram for FT::Pop::Population:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../df/d7c/structFT_1_1Pop_1_1Population__coll__graph.png" border="0" usemap="#FT_1_1Pop_1_1Population_coll__map" alt="Collaboration graph"/></div>
 <map name="FT_1_1Pop_1_1Population_coll__map" id="FT_1_1Pop_1_1Population_coll__map">
-<area shape="rect" id="node3" href="../../da/def/classFT_1_1Pop_1_1Individual.html" title="individual programs in the population " alt="" coords="675,197,815,223"/>
+<area shape="rect" id="node3" href="../../da/def/classFT_1_1Pop_1_1Individual.html" title="individual programs in the population " alt="" coords="675,206,815,233"/>
 <area shape="rect" id="node4" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html" title="an extension of a vector of unique pointers to nodes " alt="" coords="393,13,544,39"/>
 <area shape="rect" id="node5" title="STL class. " alt="" coords="157,5,336,47"/>
 </map>
@@ -131,21 +131,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae1898da92a38e1ac3dbd8da8e90df085"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d5f/structFT_1_1Pop_1_1Population.html#ae1898da92a38e1ac3dbd8da8e90df085">init</a> (const <a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> &amp;starting_model, const <a class="el" href="../../de/d2c/structFT_1_1Parameters.html">Parameters</a> &amp;params, bool random=false)</td></tr>
 <tr class="memdesc:ae1898da92a38e1ac3dbd8da8e90df085"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize population of programs.  <a href="#ae1898da92a38e1ac3dbd8da8e90df085">More...</a><br /></td></tr>
 <tr class="separator:ae1898da92a38e1ac3dbd8da8e90df085"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04d926921b35a8db40e54c9471ff7281"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d5f/structFT_1_1Pop_1_1Population.html#a04d926921b35a8db40e54c9471ff7281">resize</a> (int pop_size, bool resize_locs=false)</td></tr>
-<tr class="memdesc:a04d926921b35a8db40e54c9471ff7281"><td class="mdescLeft">&#160;</td><td class="mdescRight">update individual vector size  <a href="#a04d926921b35a8db40e54c9471ff7281">More...</a><br /></td></tr>
-<tr class="separator:a04d926921b35a8db40e54c9471ff7281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba64eb1d75d8cc1feac764921479fae3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d5f/structFT_1_1Pop_1_1Population.html#aba64eb1d75d8cc1feac764921479fae3">resize</a> (int pop_size)</td></tr>
+<tr class="memdesc:aba64eb1d75d8cc1feac764921479fae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">update individual vector size  <a href="#aba64eb1d75d8cc1feac764921479fae3">More...</a><br /></td></tr>
+<tr class="separator:aba64eb1d75d8cc1feac764921479fae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f5e2d3bb8e41c58e1d40ba7c0eecd0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d5f/structFT_1_1Pop_1_1Population.html#a3f5e2d3bb8e41c58e1d40ba7c0eecd0a">update</a> (vector&lt; size_t &gt; survivors)</td></tr>
 <tr class="memdesc:a3f5e2d3bb8e41c58e1d40ba7c0eecd0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">reduce programs to the indices in survivors.  <a href="#a3f5e2d3bb8e41c58e1d40ba7c0eecd0a">More...</a><br /></td></tr>
 <tr class="separator:a3f5e2d3bb8e41c58e1d40ba7c0eecd0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92afad15b7de0024d4923f2d532ca45f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d5f/structFT_1_1Pop_1_1Population.html#a92afad15b7de0024d4923f2d532ca45f">size</a> ()</td></tr>
 <tr class="memdesc:a92afad15b7de0024d4923f2d532ca45f"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns population size  <a href="#a92afad15b7de0024d4923f2d532ca45f">More...</a><br /></td></tr>
 <tr class="separator:a92afad15b7de0024d4923f2d532ca45f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a767c51caa1bfef89e35f848a6b561170"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d5f/structFT_1_1Pop_1_1Population.html#a767c51caa1bfef89e35f848a6b561170">get_open_loc</a> ()</td></tr>
-<tr class="memdesc:a767c51caa1bfef89e35f848a6b561170"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns an open location  <a href="#a767c51caa1bfef89e35f848a6b561170">More...</a><br /></td></tr>
-<tr class="separator:a767c51caa1bfef89e35f848a6b561170"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7826b6db18e972e67ac6355b123ac0b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d5f/structFT_1_1Pop_1_1Population.html#a7826b6db18e972e67ac6355b123ac0b7">update_open_loc</a> ()</td></tr>
-<tr class="memdesc:a7826b6db18e972e67ac6355b123ac0b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">updates open locations to reflect population.  <a href="#a7826b6db18e972e67ac6355b123ac0b7">More...</a><br /></td></tr>
-<tr class="separator:a7826b6db18e972e67ac6355b123ac0b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2632838ce6765104f4ceb1a183836d3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d5f/structFT_1_1Pop_1_1Population.html#a2632838ce6765104f4ceb1a183836d3d">add</a> (<a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> &amp;)</td></tr>
 <tr class="memdesc:a2632838ce6765104f4ceb1a183836d3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds a program to the population.  <a href="#a2632838ce6765104f4ceb1a183836d3d">More...</a><br /></td></tr>
 <tr class="separator:a2632838ce6765104f4ceb1a183836d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,11 +160,6 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:af8acd2b85d5839c4058dd356a5b66ec6"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="../../da/def/classFT_1_1Pop_1_1Individual.html">Individual</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d5f/structFT_1_1Pop_1_1Population.html#af8acd2b85d5839c4058dd356a5b66ec6">individuals</a></td></tr>
 <tr class="memdesc:af8acd2b85d5839c4058dd356a5b66ec6"><td class="mdescLeft">&#160;</td><td class="mdescRight">individual programs  <a href="#af8acd2b85d5839c4058dd356a5b66ec6">More...</a><br /></td></tr>
 <tr class="separator:af8acd2b85d5839c4058dd356a5b66ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa687a78454acefc026a9ab35299bb0bd"><td class="memItemLeft" align="right" valign="top">vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d5f/structFT_1_1Pop_1_1Population.html#aa687a78454acefc026a9ab35299bb0bd">open_loc</a></td></tr>
-<tr class="memdesc:aa687a78454acefc026a9ab35299bb0bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">unfilled matrix positions  <a href="#aa687a78454acefc026a9ab35299bb0bd">More...</a><br /></td></tr>
-<tr class="separator:aa687a78454acefc026a9ab35299bb0bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2e826beadaf6dc18d5c70e9292ff57a"><td class="memItemLeft" align="right" valign="top">vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d5f/structFT_1_1Pop_1_1Population.html#ad2e826beadaf6dc18d5c70e9292ff57a">locs</a></td></tr>
-<tr class="separator:ad2e826beadaf6dc18d5c70e9292ff57a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Defines a population of programs and functions for constructing them. </p>
@@ -231,7 +220,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d3d/population_8cc_source.html#l00029">29</a> of file <a class="el" href="../../de/d3d/population_8cc_source.html">population.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d3d/population_8cc_source.html#l00026">26</a> of file <a class="el" href="../../de/d3d/population_8cc_source.html">population.cc</a>.</p>
 
 </div>
 </div>
@@ -255,29 +244,7 @@ Public Attributes</h2></td></tr>
 <p>adds a program to the population. </p>
 <p>adds ind to individuals, giving it an open location and bookeeping.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d3d/population_8cc_source.html#l00144">144</a> of file <a class="el" href="../../de/d3d/population_8cc_source.html">population.cc</a>.</p>
-
-</div>
-</div>
-<a id="a767c51caa1bfef89e35f848a6b561170"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a767c51caa1bfef89e35f848a6b561170">&#9670;&nbsp;</a></span>get_open_loc()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t FT::Pop::Population::get_open_loc </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>returns an open location </p>
-<p>grabs an open location and removes it from the vector.</p>
-
-<p class="definition">Definition at line <a class="el" href="../../de/d3d/population_8cc_source.html#l00116">116</a> of file <a class="el" href="../../de/d3d/population_8cc_source.html">population.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d3d/population_8cc_source.html#l00096">96</a> of file <a class="el" href="../../de/d3d/population_8cc_source.html">population.cc</a>.</p>
 
 </div>
 </div>
@@ -316,7 +283,7 @@ Public Attributes</h2></td></tr>
 <p>initialize population of programs. </p>
 <p>create random programs in the population, seeded by initial model weights</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d3d/population_8cc_source.html#l00050">50</a> of file <a class="el" href="../../de/d3d/population_8cc_source.html">population.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d3d/population_8cc_source.html#l00042">42</a> of file <a class="el" href="../../de/d3d/population_8cc_source.html">population.cc</a>.</p>
 
 </div>
 </div>
@@ -338,7 +305,7 @@ Public Attributes</h2></td></tr>
 
 <p>setting and getting from individuals vector </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d3d/population_8cc_source.html#l00045">45</a> of file <a class="el" href="../../de/d3d/population_8cc_source.html">population.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d3d/population_8cc_source.html#l00037">37</a> of file <a class="el" href="../../de/d3d/population_8cc_source.html">population.cc</a>.</p>
 
 </div>
 </div>
@@ -358,7 +325,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d3d/population_8cc_source.html#l00047">47</a> of file <a class="el" href="../../de/d3d/population_8cc_source.html">population.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d3d/population_8cc_source.html#l00039">39</a> of file <a class="el" href="../../de/d3d/population_8cc_source.html">population.cc</a>.</p>
 
 </div>
 </div>
@@ -390,12 +357,12 @@ Public Attributes</h2></td></tr>
 
 <p>return population equations. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d3d/population_8cc_source.html#l00154">154</a> of file <a class="el" href="../../de/d3d/population_8cc_source.html">population.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d3d/population_8cc_source.html#l00105">105</a> of file <a class="el" href="../../de/d3d/population_8cc_source.html">population.cc</a>.</p>
 
 </div>
 </div>
-<a id="a04d926921b35a8db40e54c9471ff7281"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04d926921b35a8db40e54c9471ff7281">&#9670;&nbsp;</a></span>resize()</h2>
+<a id="aba64eb1d75d8cc1feac764921479fae3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba64eb1d75d8cc1feac764921479fae3">&#9670;&nbsp;</a></span>resize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -404,25 +371,15 @@ Public Attributes</h2></td></tr>
           <td class="memname">void FT::Pop::Population::resize </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>pop_size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>pop_size</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>resize_locs</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>update individual vector size </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d3d/population_8cc_source.html#l00032">32</a> of file <a class="el" href="../../de/d3d/population_8cc_source.html">population.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d3d/population_8cc_source.html#l00029">29</a> of file <a class="el" href="../../de/d3d/population_8cc_source.html">population.cc</a>.</p>
 
 </div>
 </div>
@@ -443,7 +400,7 @@ Public Attributes</h2></td></tr>
 
 <p>returns population size </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d3d/population_8cc_source.html#l00043">43</a> of file <a class="el" href="../../de/d3d/population_8cc_source.html">population.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d3d/population_8cc_source.html#l00035">35</a> of file <a class="el" href="../../de/d3d/population_8cc_source.html">population.cc</a>.</p>
 
 </div>
 </div>
@@ -465,7 +422,7 @@ Public Attributes</h2></td></tr>
 
 <p>return complexity-sorted Pareto front indices. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d3d/population_8cc_source.html#l00168">168</a> of file <a class="el" href="../../de/d3d/population_8cc_source.html">population.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d3d/population_8cc_source.html#l00119">119</a> of file <a class="el" href="../../de/d3d/population_8cc_source.html">population.cc</a>.</p>
 
 </div>
 </div>
@@ -488,29 +445,7 @@ Public Attributes</h2></td></tr>
 <p>reduce programs to the indices in survivors. </p>
 <p>cull population down to survivor indices.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d3d/population_8cc_source.html#l00094">94</a> of file <a class="el" href="../../de/d3d/population_8cc_source.html">population.cc</a>.</p>
-
-</div>
-</div>
-<a id="a7826b6db18e972e67ac6355b123ac0b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7826b6db18e972e67ac6355b123ac0b7">&#9670;&nbsp;</a></span>update_open_loc()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void FT::Pop::Population::update_open_loc </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>updates open locations to reflect population. </p>
-<p>updates open_loc to any locations in [0, 2*popsize-1] not in individuals.loc</p>
-
-<p class="definition">Definition at line <a class="el" href="../../de/d3d/population_8cc_source.html#l00125">125</a> of file <a class="el" href="../../de/d3d/population_8cc_source.html">population.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d3d/population_8cc_source.html#l00081">81</a> of file <a class="el" href="../../de/d3d/population_8cc_source.html">population.cc</a>.</p>
 
 </div>
 </div>
@@ -530,40 +465,6 @@ Public Attributes</h2></td></tr>
 <p>individual programs </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/d76/population_8h_source.html#l00029">29</a> of file <a class="el" href="../../d2/d76/population_8h_source.html">population.h</a>.</p>
-
-</div>
-</div>
-<a id="ad2e826beadaf6dc18d5c70e9292ff57a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2e826beadaf6dc18d5c70e9292ff57a">&#9670;&nbsp;</a></span>locs</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt;size_t&gt; FT::Pop::Population::locs</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d2/d76/population_8h_source.html#l00031">31</a> of file <a class="el" href="../../d2/d76/population_8h_source.html">population.h</a>.</p>
-
-</div>
-</div>
-<a id="aa687a78454acefc026a9ab35299bb0bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa687a78454acefc026a9ab35299bb0bd">&#9670;&nbsp;</a></span>open_loc</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt;size_t&gt; FT::Pop::Population::open_loc</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>unfilled matrix positions </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d2/d76/population_8h_source.html#l00030">30</a> of file <a class="el" href="../../d2/d76/population_8h_source.html">population.h</a>.</p>
 
 </div>
 </div>

@@ -20,10 +20,6 @@ var files =
     [ "fair_lexicase.h", "dd/dae/fair__lexicase_8h.html", [
       [ "FairLexicase", "d8/dd2/structFT_1_1Sel_1_1FairLexicase.html", "d8/dd2/structFT_1_1Sel_1_1FairLexicase" ]
     ] ],
-    [ "fair_lexicase2.cc", "d1/db0/fair__lexicase2_8cc.html", null ],
-    [ "fair_lexicase2.h", "d8/dc7/fair__lexicase2_8h.html", [
-      [ "FairLexicase2", "df/de5/structFT_1_1Sel_1_1FairLexicase2.html", "df/de5/structFT_1_1Sel_1_1FairLexicase2" ]
-    ] ],
     [ "feat.cc", "dc/d37/feat_8cc.html", "dc/d37/feat_8cc" ],
     [ "feat.h", "d3/dff/feat_8h.html", "d3/dff/feat_8h" ],
     [ "hillclimb.cc", "d4/dfe/hillclimb_8cc.html", null ],

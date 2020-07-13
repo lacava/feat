@@ -14,7 +14,6 @@ var searchData=
   ['load_5flongitudinal',['load_longitudinal',['../d1/d5d/namespaceFT_1_1Util.html#a6cb7cf1e84b8bd6972815fd57ac48c4d',1,'FT::Util']]],
   ['load_5fpartial_5flongitudinal',['load_partial_longitudinal',['../d1/d5d/namespaceFT_1_1Util.html#a819c0666590cda58db361656c87c605b',1,'FT::Util']]],
   ['loc',['loc',['../da/def/classFT_1_1Pop_1_1Individual.html#a72e4359e01971a45b625ca4b6459b05a',1,'FT::Pop::Individual::loc()'],['../d7/dd3/classFT_1_1Pop_1_1Op_1_1NodeVariable.html#a20e3054a1422618ecc55b02a4cf26801',1,'FT::Pop::Op::NodeVariable::loc()']]],
-  ['locs',['locs',['../d6/d5f/structFT_1_1Pop_1_1Population.html#ad2e826beadaf6dc18d5c70e9292ff57a',1,'FT::Pop::Population']]],
   ['log',['log',['../d9/da2/classFT_1_1Util_1_1Logger.html#a928cd5fe2cc10ecc51507d377c023d02',1,'FT::Util::Logger']]],
   ['log_5floss',['log_loss',['../de/dcf/namespaceFT_1_1Eval.html#a6f75ec6cc65d95ea24fc42e5bc6a61e9',1,'FT::Eval::log_loss(const VectorXf &amp;y, const VectorXf &amp;yhat, const vector&lt; float &gt; &amp;class_weights)'],['../de/dcf/namespaceFT_1_1Eval.html#a4d588297f4724cd1f4901ff07b323c6f',1,'FT::Eval::log_loss(const VectorXf &amp;y, shared_ptr&lt; CLabels &gt; &amp;labels, const vector&lt; float &gt; &amp;class_weights)']]],
   ['log_5floss_5flabel',['log_loss_label',['../de/dcf/namespaceFT_1_1Eval.html#ada606c591bed1832596118ffdce9abfc',1,'FT::Eval']]],

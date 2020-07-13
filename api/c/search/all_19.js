@@ -8,7 +8,6 @@ var searchData=
   ['_7edataref',['~DataRef',['../d4/d10/classFT_1_1Dat_1_1DataRef.html#aa6e4b03cfad153350684d80cd04d53fd',1,'FT::Dat::DataRef']]],
   ['_7eevaluation',['~Evaluation',['../d6/d6f/classFT_1_1Eval_1_1Evaluation.html#ab3d4fd7d6d4c6c08aac98e0765e6b525',1,'FT::Eval::Evaluation']]],
   ['_7efairlexicase',['~FairLexicase',['../d8/dd2/structFT_1_1Sel_1_1FairLexicase.html#afc64a714178766d087b5676d7c091325',1,'FT::Sel::FairLexicase']]],
-  ['_7efairlexicase2',['~FairLexicase2',['../df/de5/structFT_1_1Sel_1_1FairLexicase2.html#af92f98234395ba4138c20076240c84aa',1,'FT::Sel::FairLexicase2']]],
   ['_7efeat',['~Feat',['../db/dff/classFT_1_1Feat.html#a7797e289bc355fd92d2d65ae0b3fae1d',1,'FT::Feat']]],
   ['_7elexicase',['~Lexicase',['../db/d76/structFT_1_1Sel_1_1Lexicase.html#ab5e3b4670d83194bea27b7d0d8714c7c',1,'FT::Sel::Lexicase']]],
   ['_7eml',['~ML',['../dd/d6f/classFT_1_1Model_1_1ML.html#ade8819a17d3a265662b401087e3a6d0a',1,'FT::Model::ML']]],

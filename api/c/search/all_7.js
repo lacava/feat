@@ -55,7 +55,6 @@ var searchData=
   ['get_5fnum_5ffeatures',['get_num_features',['../db/dff/classFT_1_1Feat.html#ad2719399d62452c4e903321692c33571',1,'FT::Feat']]],
   ['get_5fnum_5ffolds',['get_num_folds',['../db/dff/classshogun_1_1CMyCARTree.html#a62ef41f57b12307fd064c5ed903457f7',1,'shogun::CMyCARTree']]],
   ['get_5fnum_5frandom_5ffeatures',['get_num_random_features',['../da/d0f/classshogun_1_1CMyRandomForest.html#a4de2e60f95cacbdf16c1626a1e2562a9',1,'shogun::CMyRandomForest']]],
-  ['get_5fopen_5floc',['get_open_loc',['../d6/d5f/structFT_1_1Pop_1_1Population.html#a767c51caa1bfef89e35f848a6b561170',1,'FT::Pop::Population']]],
   ['get_5fotypes',['get_otypes',['../db/dff/classFT_1_1Feat.html#a5c6acb39d8c005767c7c8679564b8e5f',1,'FT::Feat']]],
   ['get_5fp',['get_p',['../da/def/classFT_1_1Pop_1_1Individual.html#ab19d9d03749416bdf26987b3f0317c77',1,'FT::Pop::Individual::get_p() const'],['../da/def/classFT_1_1Pop_1_1Individual.html#a754c6fb249988e18f91388c7478dc209',1,'FT::Pop::Individual::get_p(const size_t i, bool normalize=true) const'],['../da/def/classFT_1_1Pop_1_1Individual.html#afc5e187ae95e9530ec5e49344e695ff6',1,'FT::Pop::Individual::get_p(const vector&lt; size_t &gt; &amp;locs, bool normalize=false) const']]],
   ['get_5fpop_5fsize',['get_pop_size',['../db/dff/classFT_1_1Feat.html#a99c6921df95c8b8803b2ecd81ac572e6',1,'FT::Feat']]],

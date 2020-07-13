@@ -1,7 +1,7 @@
 <map id="FT::Feat" name="FT::Feat">
 <area shape="rect" id="node4" href="$dd/d51/structFT_1_1Util_1_1Normalizer.html" title="normalizes a matrix to unit variance, 0 mean centered. " alt="" coords="973,850,1120,877"/>
 <area shape="rect" id="node8" href="$de/d2c/structFT_1_1Parameters.html" title="holds the hyperparameters for Feat. " alt="" coords="987,430,1106,457"/>
-<area shape="rect" id="node23" href="$da/def/classFT_1_1Pop_1_1Individual.html" title="individual programs in the population " alt="" coords="977,1325,1117,1351"/>
+<area shape="rect" id="node23" href="$da/def/classFT_1_1Pop_1_1Individual.html" title="individual programs in the population " alt="" coords="977,1323,1117,1350"/>
 <area shape="rect" id="node20" href="$d8/dd3/structFT_1_1Util_1_1Log__Stats.html" title="FT::Util::Log_Stats" alt="" coords="977,1043,1116,1070"/>
 <area shape="rect" id="node9" href="$d5/daf/structFT_1_1Pop_1_1NodeVector.html" title="an extension of a vector of unique pointers to nodes " alt="" coords="567,990,718,1017"/>
 <area shape="rect" id="node10" title="STL class. " alt="" coords="257,1179,436,1220"/>
@@ -11,6 +11,6 @@
 <area shape="rect" id="node15" title="STL class. " alt="" coords="5,297,144,339"/>
 <area shape="rect" id="node17" href="$d4/d04/structFT_1_1Parameters_1_1BP.html" title="FT::Parameters::BP" alt="" coords="571,467,714,494"/>
 <area shape="rect" id="node22" href="$db/db7/classFT_1_1Util_1_1Timer.html" title="class for timing things. " alt="" coords="1515,1094,1629,1121"/>
-<area shape="rect" id="node28" href="$d7/d9f/structFT_1_1Pop_1_1Archive.html" title="FT::Pop::Archive" alt="" coords="1509,1155,1635,1182"/>
-<area shape="rect" id="node30" href="$dd/df1/structFT_1_1Sel_1_1NSGA2.html" title="FT::Sel::NSGA2" alt="" coords="1251,1155,1368,1182"/>
+<area shape="rect" id="node28" href="$d7/d9f/structFT_1_1Pop_1_1Archive.html" title="FT::Pop::Archive" alt="" coords="1509,1170,1635,1197"/>
+<area shape="rect" id="node30" href="$dd/df1/structFT_1_1Sel_1_1NSGA2.html" title="FT::Sel::NSGA2" alt="" coords="1251,1170,1368,1197"/>
 </map>

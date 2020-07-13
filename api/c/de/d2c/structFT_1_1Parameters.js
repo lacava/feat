@@ -5,7 +5,7 @@ var structFT_1_1Parameters =
     [ "Parameters", "de/d2c/structFT_1_1Parameters.html#acc4bb8f61b38c3449235ae5495340166", null ],
     [ "~Parameters", "de/d2c/structFT_1_1Parameters.html#a076962362db14b59e1b6c8df0eac62df", null ],
     [ "createNode", "de/d2c/structFT_1_1Parameters.html#a24a000d8f1b4c4971ceee5aa9f1e1738", null ],
-    [ "init", "de/d2c/structFT_1_1Parameters.html#a439695f30f89613851acd0bfe38bc540", null ],
+    [ "init", "de/d2c/structFT_1_1Parameters.html#a0331e4a597713141a0093924a628d1e1", null ],
     [ "set_classes", "de/d2c/structFT_1_1Parameters.html#af5268ad7390fabf47bc2da944559a3a6", null ],
     [ "set_current_gen", "de/d2c/structFT_1_1Parameters.html#a168b242151f900b73ee0f5db71f0b8ac", null ],
     [ "set_feature_names", "de/d2c/structFT_1_1Parameters.html#a406539e53704a976a8096c8468bd0768", null ],

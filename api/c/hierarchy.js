@@ -95,7 +95,6 @@ var hierarchy =
     [ "FT::Sel::Selection", "de/d6e/structFT_1_1Sel_1_1Selection.html", null ],
     [ "FT::Sel::SelectionOperator", "d8/d53/structFT_1_1Sel_1_1SelectionOperator.html", [
       [ "FT::Sel::FairLexicase", "d8/dd2/structFT_1_1Sel_1_1FairLexicase.html", null ],
-      [ "FT::Sel::FairLexicase2", "df/de5/structFT_1_1Sel_1_1FairLexicase2.html", null ],
       [ "FT::Sel::Lexicase", "db/d76/structFT_1_1Sel_1_1Lexicase.html", null ],
       [ "FT::Sel::NSGA2", "dd/df1/structFT_1_1Sel_1_1NSGA2.html", null ],
       [ "FT::Sel::Offspring", "d8/d7b/structFT_1_1Sel_1_1Offspring.html", null ],
