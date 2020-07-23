@@ -13,5 +13,5 @@ var structFT_1_1Pop_1_1NodeVector =
     [ "operator=", "d5/daf/structFT_1_1Pop_1_1NodeVector.html#a8f32fffee1d23551e55705e52d3c811c", null ],
     [ "roots", "d5/daf/structFT_1_1Pop_1_1NodeVector.html#a5ef6f8ce8ab230a1c519a25dcf4dfe21", null ],
     [ "set_weights", "d5/daf/structFT_1_1Pop_1_1NodeVector.html#a980b106de93c7759b0c2249dcb472322", null ],
-    [ "subtree", "d5/daf/structFT_1_1Pop_1_1NodeVector.html#a93879bcba7ed2a0149a270176938fb45", null ]
+    [ "subtree", "d5/daf/structFT_1_1Pop_1_1NodeVector.html#af47bad5ac0fd337e2408e749f1a26eea", null ]
 ];

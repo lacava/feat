@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['v',['V',['../d5/ddc/classFT_1_1Pop_1_1Op_1_1NodeDx.html#a75d712f54303755c3600300d4df0eb9e',1,'FT::Pop::Op::NodeDx::V()'],['../d4/d10/classFT_1_1Dat_1_1DataRef.html#ab7673ddbc373009b607b1cca5de96900',1,'FT::Dat::DataRef::v()']]],
+  ['v',['v',['../d4/d10/classFT_1_1Dat_1_1DataRef.html#ab7673ddbc373009b607b1cca5de96900',1,'FT::Dat::DataRef::v()'],['../d5/ddc/classFT_1_1Pop_1_1Op_1_1NodeDx.html#a75d712f54303755c3600300d4df0eb9e',1,'FT::Pop::Op::NodeDx::V()']]],
   ['val_5ffrom_5farch',['val_from_arch',['../db/dff/classFT_1_1Feat.html#a744f9dff6964d740576ec766d31c4e80',1,'FT::Feat']]],
   ['validation',['validation',['../de/d36/classFT_1_1Dat_1_1Data.html#abbf7b7de9c6f8604484f8868a457db40',1,'FT::Dat::Data::validation()'],['../d6/d6f/classFT_1_1Eval_1_1Evaluation.html#abb32c06aa6f9e7a4f332637319f2c5f6',1,'FT::Eval::Evaluation::validation()']]],
   ['variance',['variance',['../d1/d5d/namespaceFT_1_1Util.html#ae9b47939fc53e06cf1d935a35483a300',1,'FT::Util::variance(const ArrayXf &amp;v, float mean)'],['../d1/d5d/namespaceFT_1_1Util.html#a98bf666640b97a3bae5c94c05532d5a8',1,'FT::Util::variance(const ArrayXf &amp;v)']]],

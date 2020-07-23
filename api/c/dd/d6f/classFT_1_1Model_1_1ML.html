@@ -115,8 +115,8 @@ Collaboration diagram for FT::Model::ML:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a53d9d24f2c1cd0c1f3f478ead9345c24"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d6f/classFT_1_1Model_1_1ML.html#a53d9d24f2c1cd0c1f3f478ead9345c24">ML</a> (string ml=&quot;LinearRidgeRegression&quot;, bool norm=true, bool classification=false, int n_classes=2)</td></tr>
 <tr class="separator:a53d9d24f2c1cd0c1f3f478ead9345c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5ffe6ed96079975040ba20a58fe7c3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d6f/classFT_1_1Model_1_1ML.html#aa5ffe6ed96079975040ba20a58fe7c3f">init</a> ()</td></tr>
-<tr class="separator:aa5ffe6ed96079975040ba20a58fe7c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a091de81e2a721907cc2f1195e9586a34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d6f/classFT_1_1Model_1_1ML.html#a091de81e2a721907cc2f1195e9586a34">init</a> (bool assign_p_est=true)</td></tr>
+<tr class="separator:a091de81e2a721907cc2f1195e9586a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade8819a17d3a265662b401087e3a6d0a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d6f/classFT_1_1Model_1_1ML.html#ade8819a17d3a265662b401087e3a6d0a">~ML</a> ()</td></tr>
 <tr class="separator:ade8819a17d3a265662b401087e3a6d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ae95f84aa53ac51c3973a285c4742b9"><td class="memItemLeft" align="right" valign="top">vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d6f/classFT_1_1Model_1_1ML.html#a1ae95f84aa53ac51c3973a285c4742b9">get_weights</a> ()</td></tr>
@@ -242,7 +242,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00172">172</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00183">183</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
 
 </div>
 </div>
@@ -303,7 +303,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>yhat: n_samples vector of outputs</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00263">263</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00282">282</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
 
 </div>
 </div>
@@ -359,7 +359,7 @@ Private Attributes</h2></td></tr>
 
 <p>tune algorithm parameters </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00600">600</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00620">620</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
 
 </div>
 </div>
@@ -407,7 +407,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00386">386</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00404">404</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
 
 </div>
 </div>
@@ -428,7 +428,7 @@ Private Attributes</h2></td></tr>
 
 <p>returns bias for linear machines </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00527">527</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00547">547</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
 
 </div>
 </div>
@@ -448,12 +448,12 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>weight vector from model.</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00193">193</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00207">207</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
 
 </div>
 </div>
-<a id="aa5ffe6ed96079975040ba20a58fe7c3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5ffe6ed96079975040ba20a58fe7c3f">&#9670;&nbsp;</a></span>init()</h2>
+<a id="a091de81e2a721907cc2f1195e9586a34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a091de81e2a721907cc2f1195e9586a34">&#9670;&nbsp;</a></span>init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -461,13 +461,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void FT::Model::ML::init </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>assign_p_est</em> = <code>true</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00060">60</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00061">61</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
 
 </div>
 </div>
@@ -489,7 +490,7 @@ Private Attributes</h2></td></tr>
 
 <p>utility function to convert CLabels types to VectorXd types. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00502">502</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00522">522</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
 
 </div>
 </div>
@@ -519,7 +520,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00396">396</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00414">414</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
 
 </div>
 </div>
@@ -539,7 +540,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00467">467</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00487">487</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
 
 </div>
 </div>
@@ -559,7 +560,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00460">460</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00480">480</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
 
 </div>
 </div>
@@ -597,7 +598,7 @@ Private Attributes</h2></td></tr>
 
 <p>returns labels of a fitted model estimating on features </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00538">538</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00558">558</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
 
 </div>
 </div>
@@ -617,7 +618,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00174">174</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00188">188</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
 
 </div>
 </div>

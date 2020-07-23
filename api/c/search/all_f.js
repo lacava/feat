@@ -22,7 +22,7 @@ var searchData=
   ['pop_5ffront',['pop_front',['../d2/d7b/namespaceFT_1_1Opt.html#ae9cb4c34f4d1a86b09e1886eee3391fc',1,'FT::Opt']]],
   ['pop_5fsize',['pop_size',['../de/d2c/structFT_1_1Parameters.html#a8253360dc4ad47b3f94f813daa13867a',1,'FT::Parameters']]],
   ['popstr',['popStr',['../dd/d3f/structFT_1_1Dat_1_1State.html#a57d8738a2f2619094f02a2523a3b5369',1,'FT::Dat::State']]],
-  ['population',['Population',['../d6/d5f/structFT_1_1Pop_1_1Population.html',1,'FT::Pop::Population'],['../d6/d5f/structFT_1_1Pop_1_1Population.html#a9af7e1f1af2a7ffe6bf6575c8075ea6e',1,'FT::Pop::Population::Population()'],['../d6/d5f/structFT_1_1Pop_1_1Population.html#a021299bf7adbe121e9e05b980a761717',1,'FT::Pop::Population::Population(int p)']]],
+  ['population',['Population',['../d6/d5f/structFT_1_1Pop_1_1Population.html',1,'FT::Pop::Population'],['../d6/d5f/structFT_1_1Pop_1_1Population.html#ac9a23f3751a88d4892e74512ee1af820',1,'FT::Pop::Population::Population()']]],
   ['population_2ecc',['population.cc',['../de/d3d/population_8cc.html',1,'']]],
   ['population_2eh',['population.h',['../d2/d76/population_8h.html',1,'']]],
   ['pre_5fsort_5ffeatures',['pre_sort_features',['../db/dff/classshogun_1_1CMyCARTree.html#ae700ef4d03a1f45da4b2db81fed10132',1,'shogun::CMyCARTree']]],
