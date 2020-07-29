@@ -43,9 +43,9 @@ var NAVTREEINDEX =
 "d2/dfb/classFT_1_1Pop_1_1Op_1_1Node.html#a5c3bd66d479da8a3113294dd2116cc4a",
 "d6/d11/classFT_1_1Pop_1_1Op_1_1NodeSkew.html",
 "d8/d61/classFT_1_1Pop_1_1Op_1_1NodeSubtract.html#acb4dbbb369a191398aeafc1acf043413",
-"db/d0c/classFT_1_1Pop_1_1Op_1_1NodeRecent.html#ae5f1f2c0dc838ee869ae3ee6059bc7d3",
-"db/dff/classshogun_1_1CMyCARTree.html#a43775693c35c83e84848bb0da5433bfc",
-"de/d2c/structFT_1_1Parameters.html#a753a9355acfa2d92f2cbf9b67140305a",
+"db/d0c/classFT_1_1Pop_1_1Op_1_1NodeRecent.html#ab04af5995c0a2f420499fd915e972e7a",
+"db/dff/classshogun_1_1CMyCARTree.html#a429b059069cd1c02efb6ae81f78921b6",
+"de/d2c/structFT_1_1Parameters.html#a73627d83a91b1eb185457c0f87c9d473",
 "functions.html"
 ];
 

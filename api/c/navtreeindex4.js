@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"db/d0c/classFT_1_1Pop_1_1Op_1_1NodeRecent.html#ab04af5995c0a2f420499fd915e972e7a":[1,0,0,4,0,34,2],
 "db/d0c/classFT_1_1Pop_1_1Op_1_1NodeRecent.html#ae5f1f2c0dc838ee869ae3ee6059bc7d3":[1,0,0,4,0,34,3],
 "db/d3b/state_8h.html":[2,0,170],
 "db/d3b/state_8h.html#a6a33354c51ab1e4986b2a222aac825a7":[2,0,170,3],
@@ -95,6 +96,7 @@ var NAVTREEINDEX4 =
 "db/dff/classFT_1_1Feat.html#a014d7a01e9980c9f023eeea0198efdfa":[1,0,0,8,16],
 "db/dff/classFT_1_1Feat.html#a02ce42e7d9a1efeff400f16fa823c275":[1,0,0,8,74],
 "db/dff/classFT_1_1Feat.html#a0352ff140bbdb21acae534b0f9dcd805":[1,0,0,8,26],
+"db/dff/classFT_1_1Feat.html#a06d642e9025568a61adb741a8fd88237":[1,0,0,8,0],
 "db/dff/classFT_1_1Feat.html#a08785f5b77e2954eb2c4c6713196e0cb":[1,0,0,8,11],
 "db/dff/classFT_1_1Feat.html#a095249c06750e3c0c522d70672b3a042":[1,0,0,8,2],
 "db/dff/classFT_1_1Feat.html#a0be7b4df9bfdcf91f67707d3854d1764":[1,0,0,8,97],
@@ -106,13 +108,13 @@ var NAVTREEINDEX4 =
 "db/dff/classFT_1_1Feat.html#a191be809b5581b41936410cc37cd144f":[1,0,0,8,46],
 "db/dff/classFT_1_1Feat.html#a1a7d3ef3a9f80276cb239347b65c1fe5":[1,0,0,8,107],
 "db/dff/classFT_1_1Feat.html#a1d298b216554e3e2b4ba9124246adaa1":[1,0,0,8,18],
-"db/dff/classFT_1_1Feat.html#a1f2f2b75149a66b1f28789c38f7b13bd":[1,0,0,8,132],
 "db/dff/classFT_1_1Feat.html#a263bc4af4de45a55186394a8f0db18f4":[1,0,0,8,101],
 "db/dff/classFT_1_1Feat.html#a27535b3dce895e85983ee1c533fb9f42":[1,0,0,8,64],
 "db/dff/classFT_1_1Feat.html#a29bee37dc352312ae6a3adf3ca97ca65":[1,0,0,8,72],
 "db/dff/classFT_1_1Feat.html#a2bc82367924ad367d59f17c441a90bfc":[1,0,0,8,70],
 "db/dff/classFT_1_1Feat.html#a2eb6f3d8cb07d073189f11398ec1b57f":[1,0,0,8,29],
 "db/dff/classFT_1_1Feat.html#a3061cbce5f8ba248f19afa13f65d0ee1":[1,0,0,8,71],
+"db/dff/classFT_1_1Feat.html#a343b2d9d757ee0c492e4ccd977e3ee9e":[1,0,0,8,132],
 "db/dff/classFT_1_1Feat.html#a362ac99c901ac7c4f8fca90f3446d277":[1,0,0,8,67],
 "db/dff/classFT_1_1Feat.html#a367b4a3212b1bdb5367fc1d586281edf":[1,0,0,8,109],
 "db/dff/classFT_1_1Feat.html#a37f31cbb01a196b4e8ce50470c9b3a7d":[1,0,0,8,52],
@@ -146,6 +148,7 @@ var NAVTREEINDEX4 =
 "db/dff/classFT_1_1Feat.html#a61aa8da2c8ed0786b50892f5558f60f1":[1,0,0,8,5],
 "db/dff/classFT_1_1Feat.html#a630ccaa642ebdc9951f849cb98d415f5":[1,0,0,8,4],
 "db/dff/classFT_1_1Feat.html#a634fca77f03f5633463ee4dabb646678":[1,0,0,8,35],
+"db/dff/classFT_1_1Feat.html#a65d5c0295e8151cbf6701124cdc5c15c":[1,0,0,8,99],
 "db/dff/classFT_1_1Feat.html#a670655a6238f84f7da2bfe570a0fb920":[1,0,0,8,49],
 "db/dff/classFT_1_1Feat.html#a675d7724185c2ccd4c4ef3b3dd02ddd6":[1,0,0,8,50],
 "db/dff/classFT_1_1Feat.html#a697e692ec56c3bba59b2da89e94c98c8":[1,0,0,8,19],
@@ -188,7 +191,6 @@ var NAVTREEINDEX4 =
 "db/dff/classFT_1_1Feat.html#ab182421feb40ba7da30f51d274b9fc5f":[1,0,0,8,54],
 "db/dff/classFT_1_1Feat.html#ab43c978eea3e9942278c5b8ad49f0ba8":[1,0,0,8,117],
 "db/dff/classFT_1_1Feat.html#ab47b4abe7aa70ae88525ccbe30e077b9":[1,0,0,8,98],
-"db/dff/classFT_1_1Feat.html#ab689592baae07c53d2799ee80ce9c08d":[1,0,0,8,0],
 "db/dff/classFT_1_1Feat.html#ab6978a1d4421f56a70cf148b0a5624fd":[1,0,0,8,125],
 "db/dff/classFT_1_1Feat.html#ab761ac235f8fc21db404cfba0593c760":[1,0,0,8,121],
 "db/dff/classFT_1_1Feat.html#ab7a1851a4992f2544352268d31de389d":[1,0,0,8,38],
@@ -218,7 +220,6 @@ var NAVTREEINDEX4 =
 "db/dff/classFT_1_1Feat.html#ae92576a0f6304ca94a893d32f6239d34":[1,0,0,8,69],
 "db/dff/classFT_1_1Feat.html#ae93c64f176954e630b66e5e81d3fbe10":[1,0,0,8,66],
 "db/dff/classFT_1_1Feat.html#aea5c0f8b3eeb79a9684cc395e4a1ebf5":[1,0,0,8,116],
-"db/dff/classFT_1_1Feat.html#aeb54608a123554ab7433ef1f4116c1a7":[1,0,0,8,99],
 "db/dff/classFT_1_1Feat.html#aec8126568742c11379cc62fb7a4672c8":[1,0,0,8,113],
 "db/dff/classFT_1_1Feat.html#af19e70b5bb10fb16c48e381093417c18":[1,0,0,8,17],
 "db/dff/classFT_1_1Feat.html#af374bafc823bde2ee5d215a7ba7f7bfd":[1,0,0,8,28],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "db/dff/classshogun_1_1CMyCARTree.html#a2e5bed54ada24d9ea1facbc25571286d":[1,0,1,1,0],
 "db/dff/classshogun_1_1CMyCARTree.html#a301aa09c8de426452e84d4873d3f8207":[1,0,1,1,18],
 "db/dff/classshogun_1_1CMyCARTree.html#a35ff64f75c87966a5afffd21efd90c53":[1,0,1,1,63],
-"db/dff/classshogun_1_1CMyCARTree.html#a37e6b4bd0968364625d9886e21581a2e":[1,0,1,1,55],
-"db/dff/classshogun_1_1CMyCARTree.html#a429b059069cd1c02efb6ae81f78921b6":[1,0,1,1,28]
+"db/dff/classshogun_1_1CMyCARTree.html#a37e6b4bd0968364625d9886e21581a2e":[1,0,1,1,55]
 };

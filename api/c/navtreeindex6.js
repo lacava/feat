@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"de/d2c/structFT_1_1Parameters.html#a73627d83a91b1eb185457c0f87c9d473":[1,0,0,9,36],
 "de/d2c/structFT_1_1Parameters.html#a753a9355acfa2d92f2cbf9b67140305a":[1,0,0,9,63],
 "de/d2c/structFT_1_1Parameters.html#a7a9f2ad48ee7d68da04915e65c04dca4":[1,0,0,9,41],
 "de/d2c/structFT_1_1Parameters.html#a7b17dbd6ccc8cbac4f38bde7b51629ce":[1,0,0,9,37],
@@ -122,8 +123,8 @@ var NAVTREEINDEX6 =
 "de/db3/MyLibLinear_8h_source.html":[2,0,40],
 "de/dbc/MyCARTreeNodeData_8cc.html":[2,0,37],
 "de/dbc/MyCARTreeNodeData_8cc_source.html":[2,0,37],
-"de/dcf/namespaceFT_1_1Eval.html":[1,0,0,1],
 "de/dcf/namespaceFT_1_1Eval.html":[0,0,0,1],
+"de/dcf/namespaceFT_1_1Eval.html":[1,0,0,1],
 "de/ddb/n__gaussian_8h.html":[2,0,78],
 "de/ddb/n__gaussian_8h_source.html":[2,0,78],
 "de/df1/n__tanh_8h.html":[2,0,136],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "df/ded/nodevector_8cc_source.html":[2,0,146],
 "df/df1/n__square_8h.html":[2,0,130],
 "df/df1/n__square_8h_source.html":[2,0,130],
-"files.html":[2,0],
-"functions.html":[1,3,0]
+"files.html":[2,0]
 };

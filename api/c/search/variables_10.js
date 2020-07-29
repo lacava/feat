@@ -8,7 +8,7 @@ var searchData=
   ['scorer',['scorer',['../d1/d91/classFT_1_1Eval_1_1Scorer.html#a78cf55dfd14a03bbd3ce6a5636054bdf',1,'FT::Eval::Scorer::scorer()'],['../db/dff/classFT_1_1Feat.html#aa1d94c8c67ddc6e56a24e80970e8b6ce',1,'FT::Feat::scorer()'],['../de/d2c/structFT_1_1Parameters.html#a671b0c827027e417243edc7fd3ea77a6',1,'FT::Parameters::scorer()']]],
   ['selector',['selector',['../d7/d9f/structFT_1_1Pop_1_1Archive.html#af70e20576fe15ad2b21a0c06e1a5640f',1,'FT::Pop::Archive']]],
   ['shuffle',['shuffle',['../de/d2c/structFT_1_1Parameters.html#aca9f6951f7bb932f7d36abaabbc8bb23',1,'FT::Parameters']]],
-  ['simplify',['simplify',['../db/dff/classFT_1_1Feat.html#a1f2f2b75149a66b1f28789c38f7b13bd',1,'FT::Feat']]],
+  ['simplify',['simplify',['../db/dff/classFT_1_1Feat.html#a343b2d9d757ee0c492e4ccd977e3ee9e',1,'FT::Feat']]],
   ['softmax_5fnorm',['softmax_norm',['../de/d2c/structFT_1_1Parameters.html#a01b1fbfe3b22f877ddd86adec369b03d',1,'FT::Parameters']]],
   ['sort_5fcomplexity',['sort_complexity',['../d7/d9f/structFT_1_1Pop_1_1Archive.html#ac34c4f0cf3530a49487a013252be884f',1,'FT::Pop::Archive']]],
   ['split',['split',['../de/d2c/structFT_1_1Parameters.html#ac9b2cd0a715a8256cf5bb312272e3438',1,'FT::Parameters']]],

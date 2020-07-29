@@ -1,6 +1,6 @@
 var classFT_1_1Feat =
 [
-    [ "Feat", "db/dff/classFT_1_1Feat.html#ab689592baae07c53d2799ee80ce9c08d", null ],
+    [ "Feat", "db/dff/classFT_1_1Feat.html#a06d642e9025568a61adb741a8fd88237", null ],
     [ "~Feat", "db/dff/classFT_1_1Feat.html#a7797e289bc355fd92d2d65ae0b3fae1d", null ],
     [ "calculate_stats", "db/dff/classFT_1_1Feat.html#a095249c06750e3c0c522d70672b3a042", null ],
     [ "final_model", "db/dff/classFT_1_1Feat.html#a8b756059dbd7d8d0de509515cb90c3eb", null ],
@@ -99,7 +99,7 @@ var classFT_1_1Feat =
     [ "set_scorer", "db/dff/classFT_1_1Feat.html#a39eda2f1a14b93e86d996b4a262a9021", null ],
     [ "set_selection", "db/dff/classFT_1_1Feat.html#a0be7b4df9bfdcf91f67707d3854d1764", null ],
     [ "set_shuffle", "db/dff/classFT_1_1Feat.html#ab47b4abe7aa70ae88525ccbe30e077b9", null ],
-    [ "set_simplify", "db/dff/classFT_1_1Feat.html#aeb54608a123554ab7433ef1f4116c1a7", null ],
+    [ "set_simplify", "db/dff/classFT_1_1Feat.html#a65d5c0295e8151cbf6701124cdc5c15c", null ],
     [ "set_softmax_norm", "db/dff/classFT_1_1Feat.html#ad5d38ce69057c328bef13342b10dc6e1", null ],
     [ "set_split", "db/dff/classFT_1_1Feat.html#a263bc4af4de45a55186394a8f0db18f4", null ],
     [ "set_stagewise_xo", "db/dff/classFT_1_1Feat.html#adfdfeab2e7528beca68db01588823a10", null ],
@@ -132,7 +132,7 @@ var classFT_1_1Feat =
     [ "params", "db/dff/classFT_1_1Feat.html#abb9d09572b0bb378a16b810a6dcc3491", null ],
     [ "print_pop", "db/dff/classFT_1_1Feat.html#ae3dbfaf2093cfca7a19294317fdb64bf", null ],
     [ "scorer", "db/dff/classFT_1_1Feat.html#aa1d94c8c67ddc6e56a24e80970e8b6ce", null ],
-    [ "simplify", "db/dff/classFT_1_1Feat.html#a1f2f2b75149a66b1f28789c38f7b13bd", null ],
+    [ "simplify", "db/dff/classFT_1_1Feat.html#a343b2d9d757ee0c492e4ccd977e3ee9e", null ],
     [ "stats", "db/dff/classFT_1_1Feat.html#a96d29df09000c7e5da012fefcbec724b", null ],
     [ "str_dim", "db/dff/classFT_1_1Feat.html#aa3ecfa399e827a3e633a40780c66c600", null ],
     [ "survival", "db/dff/classFT_1_1Feat.html#aa46144d8615e6d422246e6a7f705bea6", null ],

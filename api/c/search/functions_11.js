@@ -66,7 +66,7 @@ var searchData=
   ['set_5fseed',['set_seed',['../d8/d33/classFT_1_1Util_1_1Rnd.html#a396a6b206ad1e8a20e7f4332f3b9b36e',1,'FT::Util::Rnd']]],
   ['set_5fselection',['set_selection',['../db/dff/classFT_1_1Feat.html#a0be7b4df9bfdcf91f67707d3854d1764',1,'FT::Feat']]],
   ['set_5fshuffle',['set_shuffle',['../db/dff/classFT_1_1Feat.html#ab47b4abe7aa70ae88525ccbe30e077b9',1,'FT::Feat']]],
-  ['set_5fsimplify',['set_simplify',['../db/dff/classFT_1_1Feat.html#aeb54608a123554ab7433ef1f4116c1a7',1,'FT::Feat']]],
+  ['set_5fsimplify',['set_simplify',['../db/dff/classFT_1_1Feat.html#a65d5c0295e8151cbf6701124cdc5c15c',1,'FT::Feat']]],
   ['set_5fsoftmax_5fnorm',['set_softmax_norm',['../db/dff/classFT_1_1Feat.html#ad5d38ce69057c328bef13342b10dc6e1',1,'FT::Feat']]],
   ['set_5fsorted_5ffeatures',['set_sorted_features',['../db/dff/classshogun_1_1CMyCARTree.html#aeb53d300185b39adc5f437273ac07ee0',1,'shogun::CMyCARTree']]],
   ['set_5fsplit',['set_split',['../db/dff/classFT_1_1Feat.html#a263bc4af4de45a55186394a8f0db18f4',1,'FT::Feat']]],

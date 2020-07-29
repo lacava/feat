@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"db/dff/classshogun_1_1CMyCARTree.html#a429b059069cd1c02efb6ae81f78921b6":[1,0,1,1,28],
 "db/dff/classshogun_1_1CMyCARTree.html#a43775693c35c83e84848bb0da5433bfc":[1,0,1,1,44],
 "db/dff/classshogun_1_1CMyCARTree.html#a44ceed4c99876f0310a8c0bb15fe8fb0":[1,0,1,1,4],
 "db/dff/classshogun_1_1CMyCARTree.html#a460df8bfb6a6719465ea1015600f8d7b":[1,0,1,1,17],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "de/d2c/structFT_1_1Parameters.html#a671b0c827027e417243edc7fd3ea77a6":[1,0,0,9,59],
 "de/d2c/structFT_1_1Parameters.html#a6cf0ba65de18fb56fd809bbffffe4eb1":[1,0,0,9,14],
 "de/d2c/structFT_1_1Parameters.html#a6e7a360a64a2968a13f7ae8bdb51b9fd":[1,0,0,9,33],
-"de/d2c/structFT_1_1Parameters.html#a71d90f8320952d295fe834e36439f9e6":[1,0,0,9,11],
-"de/d2c/structFT_1_1Parameters.html#a73627d83a91b1eb185457c0f87c9d473":[1,0,0,9,36]
+"de/d2c/structFT_1_1Parameters.html#a71d90f8320952d295fe834e36439f9e6":[1,0,0,9,11]
 };
