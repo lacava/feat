@@ -519,26 +519,33 @@
 
 <p>Then we set up a Feat instance and train the model, storing the final archive. </p>
 <div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">feat</span> <span class="kn">import</span> <span class="n">Feat</span>
+<span class="kn">from</span> <span class="nn">pmlb</span> <span class="kn">import</span> <span class="n">fetch_data</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span> <span class="k">as</span> <span class="n">mse</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">dataset</span><span class="o">=</span><span class="s1">&#39;690_visualizing_galaxy&#39;</span>
+<span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">fetch_data</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span><span class="n">return_X_y</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">X_t</span><span class="p">,</span><span class="n">X_v</span><span class="p">,</span> <span class="n">y_t</span><span class="p">,</span> <span class="n">y_v</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">train_size</span><span class="o">=</span><span class="mf">0.75</span><span class="p">,</span><span class="n">test_size</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+
 <span class="c1"># fix the random state</span>
 <span class="n">random_state</span><span class="o">=</span><span class="mi">11314</span>
 
-<span class="n">fest</span> <span class="o">=</span> <span class="n">Feat</span><span class="p">(</span><span class="n">pop_size</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span>   <span class="c1"># train 500 representations</span>
-            <span class="n">gens</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>                  <span class="c1"># maximum of 200 generations</span>
-            <span class="n">max_time</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span>              <span class="c1"># max time of 1 minute</span>
-            <span class="n">ml</span> <span class="o">=</span> <span class="s2">&quot;LinearRidgeRegression&quot;</span><span class="p">,</span>   <span class="c1"># use ridge regression (the default)</span>
-            <span class="n">sel</span><span class="o">=</span><span class="s1">&#39;lexicase&#39;</span><span class="p">,</span>                 <span class="c1"># use epsilon lexicase selection (the default)</span>
-            <span class="n">surv</span><span class="o">=</span><span class="s1">&#39;nsga2&#39;</span><span class="p">,</span>                   <span class="c1"># use nsga-2 survival (the defaut)</span>
-            <span class="n">max_depth</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span>                    <span class="c1"># constrain features to depth of 6</span>
-            <span class="n">max_dim</span><span class="o">=</span><span class="nb">min</span><span class="p">([</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span><span class="mi">50</span><span class="p">]),</span> <span class="c1"># limit representation dimensionality</span>
-            <span class="n">random_state</span><span class="o">=</span><span class="n">random_state</span><span class="p">,</span>
-            <span class="n">backprop</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>                 <span class="c1"># use gradient descent to optimize weights</span>
-            <span class="n">iters</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
-            <span class="n">n_threads</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>                   <span class="c1"># max 1 threads</span>
-            <span class="n">verbosity</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>                   <span class="c1"># verbose output</span>
-            <span class="n">logfile</span><span class="o">=</span><span class="s1">&#39;feat_&#39;</span><span class="o">+</span><span class="n">dataset</span><span class="o">+</span><span class="s1">&#39;.log&#39;</span><span class="p">,</span> <span class="c1"># save a log file of the training loss</span>
-            <span class="n">print_pop</span><span class="o">=</span><span class="mi">1</span>                    <span class="c1"># print the final population</span>
+<span class="n">fest</span> <span class="o">=</span> <span class="n">Feat</span><span class="p">(</span><span class="n">pop_size</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span>                                                                        
+            <span class="n">gens</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>                  <span class="c1"># maximum of 200 generations                            </span>
+            <span class="n">max_time</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span>              <span class="c1"># max time of 60 seconds                                                         </span>
+            <span class="n">ml</span> <span class="o">=</span> <span class="s2">&quot;LinearRidgeRegression&quot;</span><span class="p">,</span>   <span class="c1"># use ridge regression (the default)                                                     </span>
+            <span class="n">sel</span><span class="o">=</span><span class="s1">&#39;lexicase&#39;</span><span class="p">,</span>                 <span class="c1"># use epsilon lexicase selection (the default)                                                                surv=&#39;nsga2&#39;,                   # use nsga-2 survival (the defaut)                                                    </span>
+            <span class="n">max_depth</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span>                    <span class="c1"># constrain features to depth of 6                                                     </span>
+            <span class="n">max_dim</span><span class="o">=</span><span class="nb">min</span><span class="p">([</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span><span class="mi">50</span><span class="p">]),</span> <span class="c1"># constrain representation dimensionality to 2x the feature space or 50                                                     </span>
+            <span class="n">random_state</span><span class="o">=</span><span class="n">random_state</span><span class="p">,</span>                                                            
+            <span class="n">hillclimb</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>                 <span class="c1"># use stochastic hillclimbing to optimize weights for 10 iterations                                                  </span>
+            <span class="n">iters</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>                                                                            
+            <span class="n">n_threads</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>                   <span class="c1"># restricts to single thread                                                      </span>
+            <span class="n">verbosity</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>                   <span class="c1"># verbose output                                                      </span>
+            <span class="n">tune_final</span><span class="o">=</span><span class="kc">False</span>               <span class="c1"># don&#39;t tune final model</span>
            <span class="p">)</span> 
 
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;FEAT version:&#39;</span><span class="p">,</span> <span class="n">fest</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
 <span class="c1"># train the model</span>
 <span class="n">fest</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_t</span><span class="p">,</span><span class="n">y_t</span><span class="p">)</span>
 
@@ -547,13 +554,35 @@
 <span class="n">test_score</span><span class="p">[</span><span class="s1">&#39;feat&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">mse</span><span class="p">(</span><span class="n">y_v</span><span class="p">,</span><span class="n">fest</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_v</span><span class="p">))</span>
 
 <span class="c1"># store the archive</span>
-<span class="n">str_arc</span> <span class="o">=</span> <span class="n">fest</span><span class="o">.</span><span class="n">get_archive</span><span class="p">()</span>
+<span class="n">archive</span> <span class="o">=</span> <span class="n">fest</span><span class="o">.</span><span class="n">get_archive</span><span class="p">(</span><span class="n">justfront</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;complexity&#39;</span><span class="p">,</span><span class="s1">&#39;fitness&#39;</span><span class="p">,</span><span class="s1">&#39;validation fitness&#39;</span><span class="p">,</span>
+     <span class="s1">&#39;eqn&#39;</span><span class="p">)</span>
+<span class="n">order</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">([</span><span class="n">a</span><span class="p">[</span><span class="s1">&#39;complexity&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">archive</span><span class="p">])</span>
+<span class="n">complexity</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">fit_train</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">fit_test</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">eqn</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">order</span><span class="p">:</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">archive</span><span class="p">[</span><span class="n">o</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">model</span><span class="p">[</span><span class="s1">&#39;pareto_rank&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">model</span><span class="p">[</span><span class="s1">&#39;complexity&#39;</span><span class="p">],</span>
+              <span class="n">model</span><span class="p">[</span><span class="s1">&#39;fitness&#39;</span><span class="p">],</span>
+              <span class="n">model</span><span class="p">[</span><span class="s1">&#39;fitness_v&#39;</span><span class="p">],</span>
+              <span class="n">model</span><span class="p">[</span><span class="s1">&#39;eqn&#39;</span><span class="p">],</span>
+             <span class="p">)</span>
+
+        <span class="n">complexity</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">model</span><span class="p">[</span><span class="s1">&#39;complexity&#39;</span><span class="p">])</span>
+        <span class="n">fit_train</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">model</span><span class="p">[</span><span class="s1">&#39;fitness&#39;</span><span class="p">])</span>
+        <span class="n">fit_test</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">model</span><span class="p">[</span><span class="s1">&#39;fitness_v&#39;</span><span class="p">])</span>
+        <span class="n">eqn</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">model</span><span class="p">[</span><span class="s1">&#39;eqn&#39;</span><span class="p">])</span>
 </code></pre></div>
 
 
 <p>For comparison, we can fit an Elastic Net and Random Forest regression model to the same data:</p>
 <div class="codehilite"><pre><span></span><code><span class="c1"># random forest</span>
-<span class="n">rf</span> <span class="o">=</span> <span class="n">RandomForestRegressor</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">987039487</span><span class="p">)</span>
+<span class="n">rf</span> <span class="o">=</span> <span class="n">RandomForestRegressor</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="n">random_state</span><span class="p">)</span>
 
 <span class="n">rf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_t</span><span class="p">,</span><span class="n">y_t</span><span class="p">)</span>
 
@@ -577,67 +606,49 @@ complexity affects the quality of the model and its generalization. </p>
 <span class="kn">import</span> <span class="nn">matplotlib</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">math</span>
+
 <span class="n">matplotlib</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;figure.figsize&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
 <span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span> 
 <span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
-<span class="n">complexity</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">fit_train</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">fit_val</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">fit_test</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">eqn</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">h</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
-
-<span class="c1"># store archive data from string</span>
-<span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">str_arc</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
-    <span class="n">line</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
-    <span class="n">complexity</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">line</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
-    <span class="n">fit_train</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">line</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
-    <span class="n">fit_test</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">line</span><span class="p">[</span><span class="mi">2</span><span class="p">]))</span>
-    <span class="n">eqn</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">line</span><span class="p">[</span><span class="mi">3</span><span class="p">:]))</span>
-    <span class="n">eqn</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;sqrt&#39;</span><span class="p">,</span><span class="s1">&#39;\sqrt&#39;</span><span class="p">)</span>
+<span class="n">h</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
 
 <span class="c1"># plot archive points </span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">fit_train</span><span class="p">,</span><span class="n">complexity</span><span class="p">,</span><span class="s1">&#39;--ro&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Train&#39;</span><span class="p">,</span><span class="n">markersize</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">fit_test</span><span class="p">,</span><span class="n">complexity</span><span class="p">,</span><span class="s1">&#39;--bx&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Validation&#39;</span><span class="p">)</span>
+<span class="c1"># some models to point out</span>
 <span class="n">best</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">fit_test</span><span class="p">))</span>
+<span class="n">middle</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">fit_test</span><span class="p">[:</span><span class="n">best</span><span class="p">])</span><span class="o">-</span><span class="n">test_score</span><span class="p">[</span><span class="s1">&#39;rf&#39;</span><span class="p">]))</span>
+<span class="n">small</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">fit_test</span><span class="p">[:</span><span class="n">middle</span><span class="p">])</span><span class="o">-</span><span class="n">test_score</span><span class="p">[</span><span class="s1">&#39;elasticnet&#39;</span><span class="p">]))</span>
+
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;best:&#39;</span><span class="p">,</span><span class="n">complexity</span><span class="p">[</span><span class="n">best</span><span class="p">])</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">fit_test</span><span class="p">[</span><span class="n">best</span><span class="p">],</span><span class="n">complexity</span><span class="p">[</span><span class="n">best</span><span class="p">],</span><span class="s1">&#39;sk&#39;</span><span class="p">,</span><span class="n">markersize</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span>
-         <span class="n">markerfacecolor</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Model Selection&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;middle:&#39;</span><span class="p">,</span><span class="n">complexity</span><span class="p">[</span><span class="n">middle</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;small:&#39;</span><span class="p">,</span><span class="n">complexity</span><span class="p">[</span><span class="n">small</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">fit_test</span><span class="p">[</span><span class="n">best</span><span class="p">],</span><span class="n">complexity</span><span class="p">[</span><span class="n">best</span><span class="p">],</span><span class="s1">&#39;sk&#39;</span><span class="p">,</span><span class="n">markersize</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span><span class="n">markerfacecolor</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Model Selection&#39;</span><span class="p">)</span>
 
 <span class="c1"># test score lines</span>
 <span class="n">y1</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
-<span class="n">y2</span> <span class="o">=</span> <span class="mi">58</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">((</span><span class="n">test_score</span><span class="p">[</span><span class="s1">&#39;feat&#39;</span><span class="p">],</span><span class="n">test_score</span><span class="p">[</span><span class="s1">&#39;feat&#39;</span><span class="p">]),(</span><span class="n">y1</span><span class="p">,</span><span class="n">y2</span><span class="p">),</span>
-         <span class="s1">&#39;--k&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;FEAT Test&#39;</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">((</span><span class="n">test_score</span><span class="p">[</span><span class="s1">&#39;rf&#39;</span><span class="p">],</span><span class="n">test_score</span><span class="p">[</span><span class="s1">&#39;rf&#39;</span><span class="p">]),(</span><span class="n">y1</span><span class="p">,</span><span class="n">y2</span><span class="p">),</span>
-         <span class="s1">&#39;-.xg&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;RF Test&#39;</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">((</span><span class="n">test_score</span><span class="p">[</span><span class="s1">&#39;elasticnet&#39;</span><span class="p">],</span><span class="n">test_score</span><span class="p">[</span><span class="s1">&#39;elasticnet&#39;</span><span class="p">]),(</span><span class="n">y1</span><span class="p">,</span><span class="n">y2</span><span class="p">),</span>
-         <span class="s1">&#39;-sm&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;ElasticNet Test&#39;</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="n">y2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">complexity</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">((</span><span class="n">test_score</span><span class="p">[</span><span class="s1">&#39;feat&#39;</span><span class="p">],</span><span class="n">test_score</span><span class="p">[</span><span class="s1">&#39;feat&#39;</span><span class="p">]),(</span><span class="n">y1</span><span class="p">,</span><span class="n">y2</span><span class="p">),</span><span class="s1">&#39;--k&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;FEAT Test&#39;</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">((</span><span class="n">test_score</span><span class="p">[</span><span class="s1">&#39;rf&#39;</span><span class="p">],</span><span class="n">test_score</span><span class="p">[</span><span class="s1">&#39;rf&#39;</span><span class="p">]),(</span><span class="n">y1</span><span class="p">,</span><span class="n">y2</span><span class="p">),</span><span class="s1">&#39;-.xg&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;RF Test&#39;</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">((</span><span class="n">test_score</span><span class="p">[</span><span class="s1">&#39;elasticnet&#39;</span><span class="p">],</span><span class="n">test_score</span><span class="p">[</span><span class="s1">&#39;elasticnet&#39;</span><span class="p">]),(</span><span class="n">y1</span><span class="p">,</span><span class="n">y2</span><span class="p">),</span><span class="s1">&#39;-sm&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;ElasticNet Test&#39;</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;complexity&#39;</span><span class="p">,</span><span class="n">complexity</span><span class="p">)</span>
-<span class="n">eqn</span><span class="p">[</span><span class="n">best</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;0)]$</span><span class="se">\n</span><span class="s1">$&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">eqn</span><span class="p">[</span><span class="n">best</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;0)]&#39;</span><span class="p">))</span>
-<span class="c1"># complexity[-1] = complexity[-1]-10 # adjust placement of last equation</span>
-<span class="n">xoff</span> <span class="o">=</span> <span class="mi">70</span>
+<span class="c1"># eqn[best] = &#39;0)]$\n$&#39;.join(eqn[best].split(&#39;0)]&#39;))</span>
+<span class="n">xoff</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="k">for</span> <span class="n">e</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">c</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">eqn</span><span class="p">,</span><span class="n">fit_test</span><span class="p">,</span><span class="n">complexity</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">c</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">31</span><span class="p">,</span><span class="mi">43</span><span class="p">,</span><span class="mi">53</span><span class="p">]:</span>
-        <span class="k">if</span> <span class="n">c</span> <span class="o">==</span> <span class="mi">5</span> <span class="ow">or</span> <span class="n">c</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span> 
-            <span class="n">t</span> <span class="o">=</span> <span class="n">t</span><span class="o">+</span><span class="mi">200</span>
-        <span class="k">if</span> <span class="n">c</span><span class="o">==</span><span class="n">complexity</span><span class="p">[</span><span class="n">best</span><span class="p">]:</span> 
-            <span class="n">tax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">t</span><span class="o">+</span><span class="mi">18000</span><span class="p">,</span><span class="n">c</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span><span class="s1">&#39;$\leftarrow&#39;</span><span class="o">+</span><span class="n">e</span><span class="o">+</span><span class="s1">&#39;$&#39;</span><span class="p">,</span>
-                           <span class="n">size</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span><span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">)</span>
-            <span class="n">tax</span><span class="o">.</span><span class="n">set_bbox</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.75</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">))</span>
-        <span class="k">elif</span> <span class="n">c</span> <span class="o">==</span> <span class="mi">43</span><span class="p">:</span>
-            <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">t</span><span class="o">+</span><span class="n">xoff</span><span class="p">,</span><span class="n">c</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;$\leftarrow$ overfitting&#39;</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">tax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">t</span><span class="o">+</span><span class="n">xoff</span><span class="p">,</span><span class="n">c</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;$\leftarrow&#39;</span><span class="o">+</span><span class="n">e</span><span class="o">+</span><span class="s1">&#39;$&#39;</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
-            <span class="n">tax</span><span class="o">.</span><span class="n">set_bbox</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.75</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">))</span>
+<span class="c1">#     if c in [1,4,12,31,43,53]:</span>
+    <span class="k">if</span> <span class="n">c</span> <span class="ow">in</span> <span class="p">[</span><span class="n">complexity</span><span class="p">[</span><span class="n">best</span><span class="p">],</span><span class="n">complexity</span><span class="p">[</span><span class="n">middle</span><span class="p">],</span><span class="n">complexity</span><span class="p">[</span><span class="n">small</span><span class="p">]]:</span>
+        <span class="n">t</span> <span class="o">=</span> <span class="n">t</span><span class="o">+</span><span class="n">xoff</span>
+        <span class="n">tax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="s1">&#39;$\leftarrow&#39;</span><span class="o">+</span><span class="n">e</span><span class="o">+</span><span class="s1">&#39;$&#39;</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span><span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span>
+                      <span class="n">verticalalignment</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span>
+<span class="c1">#         tax.set_bbox(dict(facecolor=&#39;white&#39;, alpha=0.75, edgecolor=&#39;none&#39;))</span>
 
-<span class="n">l</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">prop</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;size&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">},</span><span class="n">loc</span><span class="o">=</span><span class="p">[</span><span class="mf">0.72</span><span class="p">,</span><span class="mf">0.05</span><span class="p">])</span>
+<span class="n">l</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">prop</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;size&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">},</span><span class="n">loc</span><span class="o">=</span><span class="p">[</span><span class="mf">1.01</span><span class="p">,</span><span class="mf">0.25</span><span class="p">])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;MSE&#39;</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
-<span class="c1"># plt.gca().set_ylim(10,200)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">150</span><span class="p">,</span><span class="n">right</span><span class="o">=</span><span class="mi">20000</span><span class="p">)</span>
-<span class="c1"># plt.gca().set_yscale(&#39;log&#39;)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">fit_train</span><span class="p">)</span><span class="o">*.</span><span class="mi">75</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">fit_test</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">set_xscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">set_yscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
 
 <span class="c1"># plt.ylim(y1,y2)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">set_yticklabels</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
@@ -651,14 +662,13 @@ complexity affects the quality of the model and its generalization. </p>
 </code></pre></div>
 
 
-<p>This produces the figure below. Note that ElasticNet produces a similar test score to the linear representation
-in Feat&rsquo;s archive, and that Random Forest&rsquo;s test score is near the representation 
-$[(x_2 + x_0)][(x1-x_3)][\sin(x)]$.</p>
-<p>The best model, marked with a square, is selected from the validation curve (blue line). The validation curve 
-shows how models begin to overfit as complexity grows. By visualizing the archive, we can see that a lower 
-complexity model (the representation beginning with $relu(x_3)$) achieves nearly as good of a validation score. 
-In this case it may be preferable to choose that representation instead. We can also see that the validation scores
-in general oscillate around the test score of the final model. </p>
+<p>This produces the figure below. 
+Note that ElasticNet produces a similar test score to the linear representation
+in Feat&rsquo;s archive, and that Random Forest&rsquo;s test score is near the representation shown in the middle.</p>
+<p>The best model, marked with a square, is selected from the validation curve (blue line). 
+The validation curve shows how models begin to overfit as complexity grows. 
+By visualizing the archive, we can see that some lower complexity models achieve nearly as good of a validation score. 
+In this case it may be preferable to choose that representation instead. </p>
 <p><img alt="Feat archive" src="../archive_example.svg" /></p>
                 
               
