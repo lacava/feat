@@ -415,10 +415,6 @@ Then the build process is the following:
 <span class="nb">cd</span> feat <span class="c1"># enter the directory</span>
 conda env create -f ci/test-environment.yml
 conda activate feat-env
-<span class="c1">#add some environment variables, where CONDA_PREFIX is the path to the environment</span>
-<span class="nb">export</span> <span class="nv">SHOGUN_LIB</span><span class="o">=</span><span class="nv">$CONDA_PREFIX</span>/lib/
-<span class="nb">export</span> <span class="nv">SHOGUN_DIR</span><span class="o">=</span><span class="nv">$CONDA_PREFIX</span>/include/
-<span class="nb">export</span> <span class="nv">EIGEN3_INCLUDE_DIR</span><span class="o">=</span><span class="nv">$CONDA_PREFIX</span>/include/eigen3/
 <span class="c1"># install feat</span>
 ./configure <span class="c1"># this runs "mkdir build; cd build; cmake .. "</span>
 ./install <span class="c1"># this runs "make -C build VERBOSE=1 -j8; python setup.py install"</span>
@@ -427,7 +423,21 @@ conda activate feat-env
        </div>
        <p>
         If you want to roll your own with the dependencies, some other options are shown below.
+In this case, you need to tell the
+        <cite>
+         configure
+        </cite>
+        script where Shogun and Eigen are.
+Edit this lines:
        </p>
+       <div class="highlight-bash notranslate">
+        <div class="highlight">
+         <pre><span></span><span class="nb">export</span> <span class="nv">SHOGUN_LIB</span><span class="o">=</span>/your/shogun/lib/
+<span class="nb">export</span> <span class="nv">SHOGUN_DIR</span><span class="o">=</span>/your/shugn/include/
+<span class="nb">export</span> <span class="nv">EIGEN3_INCLUDE_DIR</span><span class="o">=</span>/your/eigen/eigen3/
+</pre>
+        </div>
+       </div>
        <h2 id="dependencies">
         Dependencies
         <a class="headerlink" href="#dependencies" title="Permalink to this headline">
