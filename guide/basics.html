@@ -447,14 +447,14 @@ estimator like so:
      <span class="mf">0.47942554</span><span class="p">,</span><span class="mf">0.87758256</span><span class="p">,</span>
      <span class="mf">0.84147098</span><span class="p">,</span>  <span class="mf">0.54030231</span><span class="p">,</span>
      <span class="mf">0.99749499</span><span class="p">,</span>  <span class="mf">0.0707372</span><span class="p">,</span>
-     <span class="mf">0.90929743</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.41614684</span><span class="p">,</span>
-     <span class="mf">0.59847214</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.80114362</span><span class="p">,</span>
-     <span class="mf">0.14112001</span><span class="p">,</span><span class="o">-</span><span class="mf">0.9899925</span><span class="p">;</span>
+     <span class="mf">0.90929743</span><span class="p">,</span> <span class="mf">-0.41614684</span><span class="p">,</span>
+     <span class="mf">0.59847214</span><span class="p">,</span> <span class="mf">-0.80114362</span><span class="p">,</span>
+     <span class="mf">0.14112001</span><span class="p">,</span><span class="mf">-0.9899925</span><span class="p">;</span>
 <span class="n">X</span><span class="p">.</span><span class="n">transposeInPlace</span><span class="p">();</span>
 
 <span class="n">Eigen</span><span class="o">::</span><span class="n">VectorXd</span> <span class="n">y</span><span class="p">(</span><span class="mi">7</span><span class="p">);</span>
 <span class="n">y</span> <span class="o">&lt;&lt;</span> <span class="mf">3.0</span><span class="p">,</span>  <span class="mf">3.59159876</span><span class="p">,</span>  <span class="mf">3.30384889</span><span class="p">,</span>  <span class="mf">2.20720158</span><span class="p">,</span>  <span class="mf">0.57015434</span><span class="p">,</span>
-         <span class="o">-</span><span class="mf">1.20648656</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.68773747</span><span class="p">;</span>
+         <span class="mf">-1.20648656</span><span class="p">,</span> <span class="mf">-2.68773747</span><span class="p">;</span>
 <span class="c1">// train</span>
 <span class="n">Feat</span> <span class="n">est</span><span class="p">;</span>
 <span class="n">est</span><span class="p">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y</span><span class="p">);</span>
