@@ -1,14 +1,5 @@
 var searchData=
 [
-  ['labels_5fto_5fvector',['labels_to_vector',['../dd/d6f/classFT_1_1Model_1_1ML.html#ad99b341011fec43531f70a73d1d9b18e',1,'FT::Model::ML']]],
-  ['least_5fsquares_5fdeviation',['least_squares_deviation',['../db/dff/classshogun_1_1CMyCARTree.html#a950b666b0f2578b5a79a83db15634d59',1,'shogun::CMyCARTree']]],
-  ['lexicase',['Lexicase',['../db/d76/structFT_1_1Sel_1_1Lexicase.html#a1af8fe2a5b4dd9d92a21103a56b99cee',1,'FT::Sel::Lexicase']]],
-  ['limited',['limited',['../d2/dfb/classFT_1_1Pop_1_1Op_1_1Node.html#a4dcfb86b76b3980eb7e7b7d4a5f73286',1,'FT::Pop::Op::Node']]],
-  ['load_5fcsv',['load_csv',['../d1/d5d/namespaceFT_1_1Util.html#aee5e757a768b1d11723a17a957b42acc',1,'FT::Util']]],
-  ['load_5flongitudinal',['load_longitudinal',['../d1/d5d/namespaceFT_1_1Util.html#a6cb7cf1e84b8bd6972815fd57ac48c4d',1,'FT::Util']]],
-  ['load_5fpartial_5flongitudinal',['load_partial_longitudinal',['../d1/d5d/namespaceFT_1_1Util.html#a819c0666590cda58db361656c87c605b',1,'FT::Util']]],
-  ['log',['log',['../d9/da2/classFT_1_1Util_1_1Logger.html#a928cd5fe2cc10ecc51507d377c023d02',1,'FT::Util::Logger']]],
-  ['log_5floss',['log_loss',['../de/dcf/namespaceFT_1_1Eval.html#a6f75ec6cc65d95ea24fc42e5bc6a61e9',1,'FT::Eval::log_loss(const VectorXf &amp;y, const VectorXf &amp;yhat, const vector&lt; float &gt; &amp;class_weights)'],['../de/dcf/namespaceFT_1_1Eval.html#a4d588297f4724cd1f4901ff07b323c6f',1,'FT::Eval::log_loss(const VectorXf &amp;y, shared_ptr&lt; CLabels &gt; &amp;labels, const vector&lt; float &gt; &amp;class_weights)']]],
-  ['log_5floss_5flabel',['log_loss_label',['../de/dcf/namespaceFT_1_1Eval.html#ada606c591bed1832596118ffdce9abfc',1,'FT::Eval']]],
-  ['ltrim',['ltrim',['../d1/d5d/namespaceFT_1_1Util.html#a15f79c11509d2effb17f6a6cc82d0a64',1,'FT::Util']]]
+  ['key',['key',['../d5/de9/classnlohmann_1_1detail_1_1iteration__proxy__value.html#af2949ac0d70212738030bfda29c5bcc2',1,'nlohmann::detail::iteration_proxy_value::key()'],['../d0/d82/structnlohmann_1_1json__sax.html#a2e0c7ecd80b18d18a8cc76f71cfc2028',1,'nlohmann::json_sax::key()'],['../dc/d68/classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad427febda4997cbd8345a2596af66649',1,'nlohmann::detail::json_sax_dom_parser::key()'],['../d6/d69/classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a0cc4a5192fe9b803276edb831b6099fa',1,'nlohmann::detail::json_sax_dom_callback_parser::key()'],['../d2/d2a/classnlohmann_1_1detail_1_1json__sax__acceptor.html#a59e1ea5e9c8d25346a564bf9287a5c2a',1,'nlohmann::detail::json_sax_acceptor::key()'],['../d1/d7c/classnlohmann_1_1detail_1_1iter__impl.html#a15dfb2744fed2ef40c12a9e9a20d6dbc',1,'nlohmann::detail::iter_impl::key()'],['../de/d74/classnlohmann_1_1detail_1_1json__reverse__iterator.html#adc648a641e8e9a1072c5abd56ad06401',1,'nlohmann::detail::json_reverse_iterator::key()']]],
+  ['kurtosis',['kurtosis',['../d1/d5d/namespaceFT_1_1Util.html#a8d21d29f224899f7818e41ddd21bcf7f',1,'FT::Util']]]
 ];

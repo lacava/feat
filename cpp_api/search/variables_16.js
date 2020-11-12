@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['y',['y',['../de/d36/classFT_1_1Dat_1_1Data.html#a3ec008cfacb9b8b1f7474a6bfc8eb6f9',1,'FT::Dat::Data']]],
-  ['y_5ft',['y_t',['../d4/d10/classFT_1_1Dat_1_1DataRef.html#a0b33b11688621732936eb1acc9199670',1,'FT::Dat::DataRef']]],
-  ['y_5fv',['y_v',['../d4/d10/classFT_1_1Dat_1_1DataRef.html#a9883d142e94965f889263fddb95592b4',1,'FT::Dat::DataRef']]],
-  ['yhat',['yhat',['../da/def/classFT_1_1Pop_1_1Individual.html#a3c3f92b4a01889ae876fe6a39c918176',1,'FT::Pop::Individual']]]
+  ['x',['X',['../de/d36/classFT_1_1Dat_1_1Data.html#ac5b293f4fa477026fac22f2a310da751',1,'FT::Dat::Data']]],
+  ['x_5ft',['X_t',['../d4/d10/classFT_1_1Dat_1_1DataRef.html#a3bc13efff561a80a262a708e0a20f2fe',1,'FT::Dat::DataRef']]],
+  ['x_5fv',['X_v',['../d4/d10/classFT_1_1Dat_1_1DataRef.html#a2e708020b63316cc7c9da4a54b443f0a',1,'FT::Dat::DataRef']]]
 ];

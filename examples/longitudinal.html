@@ -39,8 +39,8 @@
   <title>
    Using Longitudinal Data — FEAT
   </title>
-  <link href="../_static/material.css" rel="stylesheet" type="text/css"/>
   <link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+  <link href="../_static/material.css" rel="stylesheet" type="text/css"/>
   <link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
   <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js">
   </script>
@@ -696,7 +696,7 @@ div.rendered_html tbody tr:hover {
            <span class="n">batch_size</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
            <span class="n">iters</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
            <span class="n">random_state</span><span class="o">=</span><span class="n">random_state</span><span class="p">,</span>
-           <span class="n">n_threads</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+           <span class="n">n_jobs</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
            <span class="n">simplify</span><span class="o">=</span><span class="mf">0.01</span>    <span class="c1"># prune final representations</span>
           <span class="p">)</span>
 
@@ -796,14 +796,10 @@ fitting longer to all data...
         <div class="output_area docutils container">
          <div class="highlight">
           <pre>
-Feat(backprop=True, batch_size=10, feature_names=b'sex,race',
-     functions=b'and,or,not,split,split_c,mean,median,max,min,variance,skew,k'
-               b'urtosis,slope,count',
-     logfile=b'', max_depth=5, max_dim=5, max_time=30,
-     ml=b'LinearRidgeRegression', n_threads=1, normalize=False,
-     obj=b'fitness,complexity', otype=b'a', protected_groups=b'',
-     random_state=42, scorer=b'', sel=b'lexicase', simplify=0.01, surv=b'nsga2',
-     verbosity=2)
+Feat(backprop=True, batch_size=10, feature_names='sex,race',
+     functions='and,or,not,split,split_c,mean,median,max,min,variance,skew,kurtosis,slope,count',
+     max_depth=5, max_dim=5, max_time=30, normalize=False, random_state=42,
+     simplify=0.01, verbosity=2)
 </pre>
          </div>
         </div>
@@ -889,10 +885,10 @@ Feat(backprop=True, batch_size=10, feature_names=b'sex,race',
         <div class="output_area docutils container">
          <div class="highlight">
           <pre>
-Feature         Weight
-offset          8.23132
-slope(z_bmi)            0.795913
-max(z_glucose)          0.731755
+Weight  Feature
+8.23132 offset
+0.80    slope(z_bmi)
+0.73    max(z_glucose)
 
 </pre>
          </div>
@@ -908,7 +904,7 @@ max(z_glucose)          0.731755
         FEAT stores statistics about the training procedure in a dictionary
         <code class="docutils literal notranslate">
          <span class="pre">
-          clf.stats
+          clf.stats_
          </span>
         </code>
         . An example of plotting from this dictionary is shown below.
@@ -923,9 +919,39 @@ max(z_glucose)          0.731755
         <div class="input_area highlight-ipython3 notranslate">
          <div class="highlight">
           <pre>
+<span></span><span class="n">clf</span><span class="o">.</span><span class="n">stats_</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+</pre>
+         </div>
+        </div>
+       </div>
+       <div class="nboutput nblast docutils container">
+        <div class="prompt highlight-none notranslate">
+         <div class="highlight">
+          <pre><span></span>[7]:
+</pre>
+         </div>
+        </div>
+        <div class="output_area docutils container">
+         <div class="highlight">
+          <pre>
+dict_keys(['generation', 'med_complexity', 'med_dim', 'med_loss', 'med_loss_v', 'med_num_params', 'med_size', 'min_loss', 'min_loss_v', 'time'])
+</pre>
+         </div>
+        </div>
+       </div>
+       <div class="nbinput docutils container">
+        <div class="prompt highlight-none notranslate">
+         <div class="highlight">
+          <pre><span></span>[8]:
+</pre>
+         </div>
+        </div>
+        <div class="input_area highlight-ipython3 notranslate">
+         <div class="highlight">
+          <pre>
 <span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">clf</span><span class="o">.</span><span class="n">stats</span><span class="p">[</span><span class="s1">'time'</span><span class="p">],</span> <span class="n">clf</span><span class="o">.</span><span class="n">stats</span><span class="p">[</span><span class="s1">'min_losses'</span><span class="p">],</span> <span class="s1">'b'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">'training loss'</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">clf</span><span class="o">.</span><span class="n">stats</span><span class="p">[</span><span class="s1">'time'</span><span class="p">],</span> <span class="n">clf</span><span class="o">.</span><span class="n">stats</span><span class="p">[</span><span class="s1">'min_losses_val'</span><span class="p">],</span> <span class="s1">'r'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">'validation loss'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">clf</span><span class="o">.</span><span class="n">stats_</span><span class="p">[</span><span class="s1">'time'</span><span class="p">],</span> <span class="n">clf</span><span class="o">.</span><span class="n">stats_</span><span class="p">[</span><span class="s1">'min_loss'</span><span class="p">],</span> <span class="s1">'b'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">'training loss'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">clf</span><span class="o">.</span><span class="n">stats_</span><span class="p">[</span><span class="s1">'time'</span><span class="p">],</span> <span class="n">clf</span><span class="o">.</span><span class="n">stats_</span><span class="p">[</span><span class="s1">'min_loss_v'</span><span class="p">],</span> <span class="s1">'r'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">'validation loss'</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'Time (s)'</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'MSE'</span><span class="p">)</span>
@@ -939,7 +965,36 @@ max(z_glucose)          0.731755
         <div class="prompt empty docutils container">
         </div>
         <div class="output_area docutils container">
-         <img alt="../_images/examples_longitudinal_13_0.png" src="../_images/examples_longitudinal_13_0.png"/>
+         <img alt="../_images/examples_longitudinal_14_0.png" src="../_images/examples_longitudinal_14_0.png"/>
+        </div>
+       </div>
+       <div class="nbinput docutils container">
+        <div class="prompt highlight-none notranslate">
+         <div class="highlight">
+          <pre><span></span>[9]:
+</pre>
+         </div>
+        </div>
+        <div class="input_area highlight-ipython3 notranslate">
+         <div class="highlight">
+          <pre>
+<span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">clf</span><span class="o">.</span><span class="n">stats_</span><span class="p">[</span><span class="s1">'time'</span><span class="p">],</span> <span class="n">clf</span><span class="o">.</span><span class="n">stats_</span><span class="p">[</span><span class="s1">'med_complexity'</span><span class="p">],</span> <span class="s1">'b'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">'median complexity'</span><span class="p">)</span>
+<span class="c1"># plt.plot(clf.stats_['time'], clf.stats_['med_size'], 'r', label='median size')</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'Time (s)'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'Median Complexity'</span><span class="p">)</span>
+<span class="c1"># plt.gca().set_yscale('log')</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">set_xscale</span><span class="p">(</span><span class="s1">'log'</span><span class="p">)</span>
+</pre>
+         </div>
+        </div>
+       </div>
+       <div class="nboutput nblast docutils container">
+        <div class="prompt empty docutils container">
+        </div>
+        <div class="output_area docutils container">
+         <img alt="../_images/examples_longitudinal_15_0.png" src="../_images/examples_longitudinal_15_0.png"/>
         </div>
        </div>
        <h2 id="Visualizing-the-representation">
@@ -954,7 +1009,7 @@ max(z_glucose)          0.731755
        <div class="nbinput docutils container">
         <div class="prompt highlight-none notranslate">
          <div class="highlight">
-          <pre><span></span>[8]:
+          <pre><span></span>[10]:
 </pre>
          </div>
         </div>
@@ -1014,7 +1069,7 @@ rep: ['slope(z_bmi)', 'max(z_glucose)']
         <div class="prompt empty docutils container">
         </div>
         <div class="output_area docutils container">
-         <img alt="../_images/examples_longitudinal_15_1.png" src="../_images/examples_longitudinal_15_1.png"/>
+         <img alt="../_images/examples_longitudinal_17_1.png" src="../_images/examples_longitudinal_17_1.png"/>
         </div>
        </div>
       </article>
@@ -1065,7 +1120,7 @@ rep: ['slope(z_bmi)', 'max(z_glucose)']
       <a href="http://www.sphinx-doc.org/">
        Sphinx
       </a>
-      3.2.1.
+      3.3.0.
              and
       <a href="https://github.com/bashtage/sphinx-material/">
        Material for

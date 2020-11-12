@@ -1,9 +1,7 @@
 var files =
 [
     [ "archive.cc", "d3/d95/archive_8cc.html", null ],
-    [ "archive.h", "d9/d28/archive_8h.html", [
-      [ "Archive", "d7/d9f/structFT_1_1Pop_1_1Archive.html", "d7/d9f/structFT_1_1Pop_1_1Archive" ]
-    ] ],
+    [ "archive.h", "d9/d28/archive_8h.html", "d9/d28/archive_8h" ],
     [ "auto_backprop.cc", "d5/d02/auto__backprop_8cc.html", null ],
     [ "auto_backprop.h", "d6/d8a/auto__backprop_8h.html", "d6/d8a/auto__backprop_8h" ],
     [ "cuda_utils.h", "de/d4f/cuda__utils_8h.html", "de/d4f/cuda__utils_8h" ],
@@ -33,6 +31,7 @@ var files =
     [ "init.h", "d8/dc0/init_8h.html", "d8/dc0/init_8h" ],
     [ "io.cc", "db/dd3/io_8cc.html", "db/dd3/io_8cc" ],
     [ "io.h", "dc/dac/io_8h.html", "dc/dac/io_8h" ],
+    [ "json.hpp", "d5/db8/json_8hpp.html", "d5/db8/json_8hpp" ],
     [ "kernels.h", "d0/d01/kernels_8h.html", "d0/d01/kernels_8h" ],
     [ "lexicase.cc", "d7/dd3/lexicase_8cc.html", null ],
     [ "lexicase.h", "d3/d12/lexicase_8h.html", [
@@ -126,13 +125,9 @@ var files =
       [ "NodeFloat", "d6/dc7/classFT_1_1Pop_1_1Op_1_1NodeFloat.html", "d6/dc7/classFT_1_1Pop_1_1Op_1_1NodeFloat" ]
     ] ],
     [ "n_fuzzy_fixed_split.cc", "d8/d35/n__fuzzy__fixed__split_8cc.html", null ],
-    [ "n_fuzzy_fixed_split.h", "dc/d31/n__fuzzy__fixed__split_8h.html", [
-      [ "NodeFuzzyFixedSplit", "dd/d91/classFT_1_1Pop_1_1Op_1_1NodeFuzzyFixedSplit.html", "dd/d91/classFT_1_1Pop_1_1Op_1_1NodeFuzzyFixedSplit" ]
-    ] ],
+    [ "n_fuzzy_fixed_split.h", "dc/d31/n__fuzzy__fixed__split_8h.html", "dc/d31/n__fuzzy__fixed__split_8h" ],
     [ "n_fuzzy_split.cc", "dd/d61/n__fuzzy__split_8cc.html", null ],
-    [ "n_fuzzy_split.h", "d5/dee/n__fuzzy__split_8h.html", [
-      [ "NodeFuzzySplit", "de/d7e/classFT_1_1Pop_1_1Op_1_1NodeFuzzySplit.html", "de/d7e/classFT_1_1Pop_1_1Op_1_1NodeFuzzySplit" ]
-    ] ],
+    [ "n_fuzzy_split.h", "d5/dee/n__fuzzy__split_8h.html", "d5/dee/n__fuzzy__split_8h" ],
     [ "n_gaussian.cc", "d1/dcb/n__gaussian_8cc.html", null ],
     [ "n_gaussian.h", "de/ddb/n__gaussian_8h.html", [
       [ "NodeGaussian", "da/de8/classFT_1_1Pop_1_1Op_1_1NodeGaussian.html", "da/de8/classFT_1_1Pop_1_1Op_1_1NodeGaussian" ]
@@ -230,9 +225,7 @@ var files =
       [ "NodeSlope", "d4/d92/classFT_1_1Pop_1_1Op_1_1NodeSlope.html", "d4/d92/classFT_1_1Pop_1_1Op_1_1NodeSlope" ]
     ] ],
     [ "n_split.cc", "d5/d80/n__split_8cc.html", null ],
-    [ "n_split.h", "d3/d59/n__split_8h.html", [
-      [ "NodeSplit", "db/dc8/classFT_1_1Pop_1_1Op_1_1NodeSplit.html", "db/dc8/classFT_1_1Pop_1_1Op_1_1NodeSplit" ]
-    ] ],
+    [ "n_split.h", "d3/d59/n__split_8h.html", "d3/d59/n__split_8h" ],
     [ "n_sqrt.cc", "d5/d3a/n__sqrt_8cc.html", null ],
     [ "n_sqrt.h", "d9/d44/n__sqrt_8h.html", [
       [ "NodeSqrt", "dc/d88/classFT_1_1Pop_1_1Op_1_1NodeSqrt.html", "dc/d88/classFT_1_1Pop_1_1Op_1_1NodeSqrt" ]
@@ -261,19 +254,16 @@ var files =
       [ "NodeVar", "d1/d63/classFT_1_1Pop_1_1Op_1_1NodeVar.html", "d1/d63/classFT_1_1Pop_1_1Op_1_1NodeVar" ]
     ] ],
     [ "n_variable.cc", "d0/da6/n__variable_8cc.html", null ],
-    [ "n_variable.h", "da/da2/n__variable_8h.html", [
-      [ "NodeVariable", "d7/dd3/classFT_1_1Pop_1_1Op_1_1NodeVariable.html", "d7/dd3/classFT_1_1Pop_1_1Op_1_1NodeVariable" ]
-    ] ],
+    [ "n_variable.h", "da/da2/n__variable_8h.html", "da/da2/n__variable_8h" ],
     [ "n_xor.cc", "de/dfe/n__xor_8cc.html", null ],
     [ "n_xor.h", "d3/dcd/n__xor_8h.html", [
       [ "NodeXor", "df/d63/classFT_1_1Pop_1_1Op_1_1NodeXor.html", "df/d63/classFT_1_1Pop_1_1Op_1_1NodeXor" ]
     ] ],
     [ "node.cc", "dc/dfd/node_8cc.html", null ],
     [ "node.h", "d1/d77/node_8h.html", "d1/d77/node_8h" ],
-    [ "nodevector.cc", "df/ded/nodevector_8cc.html", null ],
-    [ "nodevector.h", "da/dbc/nodevector_8h.html", [
-      [ "NodeVector", "d5/daf/structFT_1_1Pop_1_1NodeVector.html", "d5/daf/structFT_1_1Pop_1_1NodeVector" ]
-    ] ],
+    [ "nodemap.h", "d2/da0/nodemap_8h.html", "d2/da0/nodemap_8h" ],
+    [ "nodevector.cc", "df/ded/nodevector_8cc.html", "df/ded/nodevector_8cc" ],
+    [ "nodevector.h", "da/dbc/nodevector_8h.html", "da/dbc/nodevector_8h" ],
     [ "nodewrapper.h", "d1/dc6/nodewrapper_8h.html", null ],
     [ "nsga2.cc", "dd/def/nsga2_8cc.html", null ],
     [ "nsga2.h", "d3/d06/nsga2_8h.html", [
@@ -286,17 +276,9 @@ var files =
       [ "Offspring", "d8/d7b/structFT_1_1Sel_1_1Offspring.html", "d8/d7b/structFT_1_1Sel_1_1Offspring" ]
     ] ],
     [ "params.cc", "d4/dc0/params_8cc.html", null ],
-    [ "params.h", "da/d33/params_8h.html", [
-      [ "Parameters", "de/d2c/structFT_1_1Parameters.html", "de/d2c/structFT_1_1Parameters" ],
-      [ "BP", "d4/d04/structFT_1_1Parameters_1_1BP.html", "d4/d04/structFT_1_1Parameters_1_1BP" ],
-      [ "HC", "d0/d29/structFT_1_1Parameters_1_1HC.html", "d0/d29/structFT_1_1Parameters_1_1HC" ]
-    ] ],
+    [ "params.h", "da/d33/params_8h.html", "da/d33/params_8h" ],
     [ "population.cc", "de/d3d/population_8cc.html", "de/d3d/population_8cc" ],
-    [ "population.h", "d2/d76/population_8h.html", [
-      [ "Population", "d6/d5f/structFT_1_1Pop_1_1Population.html", "d6/d5f/structFT_1_1Pop_1_1Population" ],
-      [ "SortComplexity", "de/dad/structFT_1_1Pop_1_1Population_1_1SortComplexity.html", "de/dad/structFT_1_1Pop_1_1Population_1_1SortComplexity" ],
-      [ "SameFitComplexity", "d7/dee/structFT_1_1Pop_1_1Population_1_1SameFitComplexity.html", "d7/dee/structFT_1_1Pop_1_1Population_1_1SameFitComplexity" ]
-    ] ],
+    [ "population.h", "d2/d76/population_8h.html", "d2/d76/population_8h" ],
     [ "random.cc", "df/d1f/random_8cc.html", null ],
     [ "random.h", "d1/d79/random_8h.html", [
       [ "Random", "d4/de1/structFT_1_1Sel_1_1Random.html", "d4/de1/structFT_1_1Sel_1_1Random" ]
@@ -306,13 +288,12 @@ var files =
     [ "scorer.cc", "d3/d74/scorer_8cc.html", null ],
     [ "scorer.h", "da/d3b/scorer_8h.html", "da/d3b/scorer_8h" ],
     [ "selection.cc", "d3/d48/selection_8cc.html", null ],
-    [ "selection.h", "df/d48/selection_8h.html", [
-      [ "Selection", "de/d6e/structFT_1_1Sel_1_1Selection.html", "de/d6e/structFT_1_1Sel_1_1Selection" ]
-    ] ],
+    [ "selection.h", "df/d48/selection_8h.html", "df/d48/selection_8h" ],
     [ "selection_operator.cc", "dc/df5/selection__operator_8cc.html", null ],
     [ "selection_operator.h", "dd/d5d/selection__operator_8h.html", [
       [ "SelectionOperator", "d8/d53/structFT_1_1Sel_1_1SelectionOperator.html", "d8/d53/structFT_1_1Sel_1_1SelectionOperator" ]
     ] ],
+    [ "serialization.h", "dd/d50/serialization_8h.html", "dd/d50/serialization_8h" ],
     [ "simulated_annealing.cc", "d1/dcf/simulated__annealing_8cc.html", null ],
     [ "simulated_annealing.h", "d9/dab/simulated__annealing_8h.html", [
       [ "SimAnneal", "d2/d6e/structFT_1_1Sel_1_1SimAnneal.html", "d2/d6e/structFT_1_1Sel_1_1SimAnneal" ]

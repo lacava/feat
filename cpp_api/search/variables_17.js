@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['z',['z',['../dd/d3f/structFT_1_1Dat_1_1State.html#a40a65c95a79247d8e78f43011a69ffd1',1,'FT::Dat::State::z()'],['../de/d36/classFT_1_1Dat_1_1Data.html#aafaf7fdf2cae86fe424fb73ec5c80087',1,'FT::Dat::Data::Z()']]],
-  ['z_5ft',['Z_t',['../d4/d10/classFT_1_1Dat_1_1DataRef.html#a9ac9f8de940d6609236de38cfda93473',1,'FT::Dat::DataRef']]],
-  ['z_5fv',['Z_v',['../d4/d10/classFT_1_1Dat_1_1DataRef.html#adace91dbb8e8ed7e3003cd0362c9bd73',1,'FT::Dat::DataRef']]],
-  ['zname',['zName',['../d7/d2b/classFT_1_1Pop_1_1Op_1_1NodeLongitudinal.html#a107e8dcdfd3e50dc1d367af88dd73bb2',1,'FT::Pop::Op::NodeLongitudinal']]],
-  ['zs',['zs',['../dd/d3f/structFT_1_1Dat_1_1State.html#a32a5b16a8f100e93ad181989ae620d5d',1,'FT::Dat::State']]]
+  ['y',['y',['../de/d36/classFT_1_1Dat_1_1Data.html#a3ec008cfacb9b8b1f7474a6bfc8eb6f9',1,'FT::Dat::Data']]],
+  ['y_5ft',['y_t',['../d4/d10/classFT_1_1Dat_1_1DataRef.html#a0b33b11688621732936eb1acc9199670',1,'FT::Dat::DataRef']]],
+  ['y_5fv',['y_v',['../d4/d10/classFT_1_1Dat_1_1DataRef.html#a9883d142e94965f889263fddb95592b4',1,'FT::Dat::DataRef']]],
+  ['yhat',['yhat',['../da/def/classFT_1_1Pop_1_1Individual.html#a3c3f92b4a01889ae876fe6a39c918176',1,'FT::Pop::Individual']]]
 ];

@@ -94,12 +94,13 @@ $(document).ready(function(){initNavTree('df/dea/error_8cc.html','../../');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="../../da/d41/error_8h_source.html">error.h</a>&quot;</code><br />
+<code>#include &lt;stdexcept&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for error.cc:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d3/d8f/error_8cc__incl.png" border="0" usemap="#error_8cc" alt=""/></div>
 <map name="error_8cc" id="error_8cc">
-<area shape="rect" id="node2" href="../../da/d41/error_8h.html" title="error.h" alt="" coords="49,80,113,107"/>
+<area shape="rect" id="node2" href="../../da/d41/error_8h.html" title="error.h" alt="" coords="115,80,179,107"/>
 </map>
 </div>
 </div>
@@ -116,12 +117,16 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a348f700b7867d2e61c79dfdc7cfcc941"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#a348f700b7867d2e61c79dfdc7cfcc941">FT::Util::HandleErrorThrow</a> (string err, const char *file, int line)</td></tr>
-<tr class="memdesc:a348f700b7867d2e61c79dfdc7cfcc941"><td class="mdescLeft">&#160;</td><td class="mdescRight">prints error and throws an exception  <a href="../../d1/d5d/namespaceFT_1_1Util.html#a348f700b7867d2e61c79dfdc7cfcc941">More...</a><br /></td></tr>
-<tr class="separator:a348f700b7867d2e61c79dfdc7cfcc941"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf52b08ccede5464385595db052ee765"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#acf52b08ccede5464385595db052ee765">FT::Util::HandleErrorNoThrow</a> (string err, const char *file, int line)</td></tr>
-<tr class="memdesc:acf52b08ccede5464385595db052ee765"><td class="mdescLeft">&#160;</td><td class="mdescRight">prints error to stderr and returns  <a href="../../d1/d5d/namespaceFT_1_1Util.html#acf52b08ccede5464385595db052ee765">More...</a><br /></td></tr>
-<tr class="separator:acf52b08ccede5464385595db052ee765"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaee7c962960fb8ae122dbc1a7db22cbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#aaee7c962960fb8ae122dbc1a7db22cbb">FT::Util::ThrowRuntimeError</a> (string err, const char *file, int line)</td></tr>
+<tr class="memdesc:aaee7c962960fb8ae122dbc1a7db22cbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">prints error and throws an exception  <a href="../../d1/d5d/namespaceFT_1_1Util.html#aaee7c962960fb8ae122dbc1a7db22cbb">More...</a><br /></td></tr>
+<tr class="separator:aaee7c962960fb8ae122dbc1a7db22cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7552af7132477991d445719def08982a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#a7552af7132477991d445719def08982a">FT::Util::ThrowInvalidArgument</a> (string err, const char *file, int line)</td></tr>
+<tr class="separator:a7552af7132477991d445719def08982a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7cc9efdf7695ede80bb35b9eb9a550c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#ab7cc9efdf7695ede80bb35b9eb9a550c">FT::Util::ThrowLengthError</a> (string err, const char *file, int line)</td></tr>
+<tr class="separator:ab7cc9efdf7695ede80bb35b9eb9a550c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac425e7cba03c26520fb37def761de6c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/namespaceFT_1_1Util.html#ac425e7cba03c26520fb37def761de6c2">FT::Util::Warn</a> (string err, const char *file, int line)</td></tr>
+<tr class="memdesc:ac425e7cba03c26520fb37def761de6c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">prints error to stderr and returns  <a href="../../d1/d5d/namespaceFT_1_1Util.html#ac425e7cba03c26520fb37def761de6c2">More...</a><br /></td></tr>
+<tr class="separator:ac425e7cba03c26520fb37def761de6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

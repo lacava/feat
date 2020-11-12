@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['x',['X',['../de/d36/classFT_1_1Dat_1_1Data.html#ac5b293f4fa477026fac22f2a310da751',1,'FT::Dat::Data']]],
-  ['x_5ft',['X_t',['../d4/d10/classFT_1_1Dat_1_1DataRef.html#a3bc13efff561a80a262a708e0a20f2fe',1,'FT::Dat::DataRef']]],
-  ['x_5fv',['X_v',['../d4/d10/classFT_1_1Dat_1_1DataRef.html#a2e708020b63316cc7c9da4a54b443f0a',1,'FT::Dat::DataRef']]]
+  ['w',['W',['../d5/ddc/classFT_1_1Pop_1_1Op_1_1NodeDx.html#aa2f0ae455ba66530f11ad3f7cae3380d',1,'FT::Pop::Op::NodeDx::W()'],['../da/def/classFT_1_1Pop_1_1Individual.html#a0b873f9e36d3b68bad429d6e43e26070',1,'FT::Pop::Individual::w()'],['../df/ddb/structnlohmann_1_1detail_1_1dtoa__impl_1_1boundaries.html#ad1668c60aeade5f2557fafed8b8aee1a',1,'nlohmann::detail::dtoa_impl::boundaries::w()']]],
+  ['weight_5fminus_5fbranch',['weight_minus_branch',['../df/d48/structshogun_1_1MyCARTreeNodeData.html#aadcf5cdeb59e80bb6babeebb436a2deb',1,'shogun::MyCARTreeNodeData']]],
+  ['weight_5fminus_5fnode',['weight_minus_node',['../df/d48/structshogun_1_1MyCARTreeNodeData.html#a22f9baf6fffbbe6fa08dc18b8e4edc97',1,'shogun::MyCARTreeNodeData']]]
 ];

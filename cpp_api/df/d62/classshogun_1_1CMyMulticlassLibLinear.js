@@ -21,6 +21,7 @@ var classshogun_1_1CMyMulticlassLibLinear =
     [ "set_max_iter", "df/d62/classshogun_1_1CMyMulticlassLibLinear.html#a8ba0acbab8b10a79a8df5b17277c36ed", null ],
     [ "set_save_train_state", "df/d62/classshogun_1_1CMyMulticlassLibLinear.html#afde39780a36c21c77564c0646f0eb58d", null ],
     [ "set_use_bias", "df/d62/classshogun_1_1CMyMulticlassLibLinear.html#a57b971ef593817013f1d8c5bac288c12", null ],
+    [ "set_w", "df/d62/classshogun_1_1CMyMulticlassLibLinear.html#ab193fd30a19e6832c9406b56f48858a1", null ],
     [ "train_machine", "df/d62/classshogun_1_1CMyMulticlassLibLinear.html#abd0a2b4b2110f1da1d34b535088397a5", null ],
     [ "m_C", "df/d62/classshogun_1_1CMyMulticlassLibLinear.html#ae24a49a56a10e75e0e12f1d5e10e5db2", null ],
     [ "m_epsilon", "df/d62/classshogun_1_1CMyMulticlassLibLinear.html#a07d68d1ef9c905eb7b225e9a4c71bcce", null ],

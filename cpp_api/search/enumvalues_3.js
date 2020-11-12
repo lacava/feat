@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['svm',['SVM',['../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdca5c949a17e4fce802fa936311c97203d7',1,'FT::Model']]]
+  ['discarded',['discarded',['../dc/df0/namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985a94708897ec9db8647dfe695714c98e46',1,'nlohmann::detail']]]
 ];

@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$dd/dde/structnlohmann_1_1detail_1_1conjunction.html" title="nlohmann::detail::conjunction\l\&lt; std::is_constructible\&lt;\l T1, Args \&gt;... \&gt;" alt="" coords="173,5,388,61"/>
+<area shape="rect" id="node4" href="$dd/dde/structnlohmann_1_1detail_1_1conjunction.html" title="nlohmann::detail::conjunction\l\&lt;... \&gt;" alt="" coords="173,86,388,127"/>
+<area shape="rect" id="node5" href="$d8/d25/structnlohmann_1_1detail_1_1is__basic__json_3_01NLOHMANN__BASIC__JSON__TPL_01_4.html" title="nlohmann::detail::is\l_basic_json\&lt; NLOHMANN\l_BASIC_JSON_TPL \&gt;" alt="" coords="186,152,375,208"/>
+<area shape="rect" id="node6" href="$dd/dcd/structnlohmann_1_1detail_1_1is__complete__type_3_01T_00_01decltype_07void_07sizeof_07T_08_08_08_4.html" title="nlohmann::detail::is\l_complete_type\&lt; T, decltype\l(void(sizeof(T)))\&gt;" alt="" coords="174,232,387,288"/>
+<area shape="rect" id="node7" href="$dd/d45/structnlohmann_1_1detail_1_1is__constructible__array__type__impl_3_01BasicJsonType_00_01Construce6fa33688da703b95649da4749cdeb98.html" title="nlohmann::detail::is\l_constructible_array\l_type_impl\&lt; BasicJsonType,\l ConstructibleArrayType,\l enable_if_t\&lt; std::is_same\l\&lt; ConstructibleArrayType, typename\l BasicJsonType::value_type \&gt;::value \&gt; \&gt;" alt="" coords="137,312,424,427"/>
+<area shape="rect" id="node8" href="$d0/d8d/structnlohmann_1_1detail_1_1is__json__ref_3_01json__ref_3_01T_01_4_01_4.html" title="nlohmann::detail::is\l_json_ref\&lt; json_ref\&lt; T \&gt; \&gt;" alt="" coords="180,451,381,493"/>
+<area shape="rect" id="node3" href="$d3/d6a/structnlohmann_1_1detail_1_1is__constructible__tuple_3_01T1_00_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4.html" title="nlohmann::detail::is\l_constructible_tuple\l\&lt; T1, std::tuple\&lt; Args... \&gt; \&gt;" alt="" coords="472,5,680,61"/>
+</map>

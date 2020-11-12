@@ -1,11 +1,19 @@
 var searchData=
 [
-  ['o',['o',['../d4/d10/classFT_1_1Dat_1_1DataRef.html#ad194b6b2eb890e2ccaf578ad760a3627',1,'FT::Dat::DataRef']]],
-  ['obj',['obj',['../da/def/classFT_1_1Pop_1_1Individual.html#a89105755a5533d68847e54a7227f5320',1,'FT::Pop::Individual']]],
-  ['objectives',['objectives',['../de/d2c/structFT_1_1Parameters.html#aace18d360f786428143860deb1531a86',1,'FT::Parameters']]],
-  ['ocreated',['oCreated',['../d4/d10/classFT_1_1Dat_1_1DataRef.html#ab6a5dc33a272134ccafce0fa5a0a2474',1,'FT::Dat::DataRef']]],
-  ['offset',['offset',['../dd/d51/structFT_1_1Util_1_1Normalizer.html#aefc8c4078d85ae96f709c23c79b0b70e',1,'FT::Util::Normalizer']]],
-  ['op_5fweights',['op_weights',['../de/d2c/structFT_1_1Parameters.html#acd10489871721704e909cced880aa7e4',1,'FT::Parameters']]],
-  ['otype',['otype',['../de/d2c/structFT_1_1Parameters.html#acdaaa6057aa153b78b20b1acd81c1721',1,'FT::Parameters::otype()'],['../d2/dfb/classFT_1_1Pop_1_1Op_1_1Node.html#a986f13e2324eb96693870784700a5237',1,'FT::Pop::Op::Node::otype()']]],
-  ['otypes',['otypes',['../de/d2c/structFT_1_1Parameters.html#ac8e4d5d39bff92013ca641aac8fea03f',1,'FT::Parameters']]]
+  ['n',['n',['../dc/da7/structFT_1_1Opt_1_1BP__NODE.html#a6d32594a18476b11ec10628b435c9f7f',1,'FT::Opt::BP_NODE::n()'],['../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#aa5df24c6ce9e8722f4c51b2e2676a6df',1,'FT::Opt::AutoBackProp::n()'],['../db/dff/classFT_1_1Feat.html#afcfa4779605e55727c8217bb300d40e4',1,'FT::Feat::N()'],['../dd/d6f/classFT_1_1Model_1_1ML.html#a4f75085e4c64bd5ce6ecd285ab29cf60',1,'FT::Model::ML::N()']]],
+  ['n_5fclasses',['n_classes',['../de/d2c/structFT_1_1Parameters.html#a60b1f33621b61544a3c0ca929b088c7d',1,'FT::Parameters']]],
+  ['name',['name',['../d2/dfb/classFT_1_1Pop_1_1Op_1_1Node.html#a0c21c8c852e7cff9ced4899a6922ed2c',1,'FT::Pop::Op::Node::name()'],['../d8/d53/structFT_1_1Sel_1_1SelectionOperator.html#a21743ba34e4358d0b5c232f945ee1760',1,'FT::Sel::SelectionOperator::name()'],['../dc/dd9/namespaceFT_1_1Pop_1_1Op.html#adc951c7494dfe6664e580a995b2ee144',1,'FT::Pop::Op::name()']]],
+  ['near_5fzero',['NEAR_ZERO',['../d2/d35/namespaceFT.html#a8f5cbe6bf6c40a1c1b427d5b0038f008',1,'FT']]],
+  ['next_5funget',['next_unget',['../d8/d22/classnlohmann_1_1detail_1_1lexer.html#a40b108a0e45a7253f6ad85fbdaa6a262',1,'nlohmann::detail::lexer']]],
+  ['nm',['NM',['../dc/dd9/namespaceFT_1_1Pop_1_1Op.html#a5bbc359e9ff35407e35fbc84564660ba',1,'FT::Pop::Op']]],
+  ['node_5flabel',['node_label',['../df/d48/structshogun_1_1MyCARTreeNodeData.html#a6ceffaa2e9c35da3ba6cf8168e776f07',1,'shogun::MyCARTreeNodeData']]],
+  ['node_5fmap',['node_map',['../de/d2c/structFT_1_1Parameters.html#ab45d87f0667452701e4cde70b6495363',1,'FT::Parameters::node_map()'],['../d3/dd9/structFT_1_1Pop_1_1Op_1_1NodeMap.html#a46c3f2305a8a00aac65a3521220b41a5',1,'FT::Pop::Op::NodeMap::node_map()']]],
+  ['normalize',['normalize',['../dd/d6f/classFT_1_1Model_1_1ML.html#abe6f06ec075650c359b54194acf7e651',1,'FT::Model::ML::normalize()'],['../de/d2c/structFT_1_1Parameters.html#a9ee92495a6061da2fb1751b4f6a6f8b3',1,'FT::Parameters::normalize()']]],
+  ['num_5ffeatures',['num_features',['../de/d2c/structFT_1_1Parameters.html#a8983b68ffc67ff7368fae48058c3b077',1,'FT::Parameters']]],
+  ['num_5fleaves',['num_leaves',['../df/d48/structshogun_1_1MyCARTreeNodeData.html#afdab627a50bd272dc76ac7e349e9ca18',1,'shogun::MyCARTreeNodeData']]],
+  ['num_5fsms',['NUM_SMS',['../de/d4f/cuda__utils_8h.html#a829c301e3ec623d5a2fdd8a90821cb40',1,'cuda_utils.h']]],
+  ['number_5fbuffer',['number_buffer',['../d4/d0a/classnlohmann_1_1detail_1_1serializer.html#a1a9d8b344a6cb47728a3519693ec03d1',1,'nlohmann::detail::serializer']]],
+  ['number_5ffloat',['number_float',['../d1/de3/unionnlohmann_1_1basic__json_1_1json__value.html#a425d2a5bf4d747296e9c768693075cc1',1,'nlohmann::basic_json::json_value']]],
+  ['number_5finteger',['number_integer',['../d1/de3/unionnlohmann_1_1basic__json_1_1json__value.html#a189cb890a621e8e15319eeeb470cf3d6',1,'nlohmann::basic_json::json_value']]],
+  ['number_5funsigned',['number_unsigned',['../d1/de3/unionnlohmann_1_1basic__json_1_1json__value.html#a55452fd61dbcf53cfc4dd269d7a18cc9',1,'nlohmann::basic_json::json_value']]]
 ];

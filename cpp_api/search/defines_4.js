@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['omp_5fget_5fmax_5fthreads',['omp_get_max_threads',['../d8/dc0/init_8h.html#a59e73060d1552ccda56039c7f3d25a84',1,'omp_get_max_threads():&#160;init.h'],['../de/d4f/cuda__utils_8h.html#a59e73060d1552ccda56039c7f3d25a84',1,'omp_get_max_threads():&#160;cuda_utils.h']]],
-  ['omp_5fget_5fthread_5fnum',['omp_get_thread_num',['../d8/dc0/init_8h.html#a889ec205c635b219999c761b28cc39ba',1,'omp_get_thread_num():&#160;init.h'],['../de/d4f/cuda__utils_8h.html#a889ec205c635b219999c761b28cc39ba',1,'omp_get_thread_num():&#160;cuda_utils.h']]],
-  ['omp_5fset_5fnum_5fthreads',['omp_set_num_threads',['../d8/dc0/init_8h.html#a34d9416d559c78e525082e3b25582658',1,'init.h']]]
+  ['max_5fflt',['MAX_FLT',['../d1/d77/node_8h.html#a58ce70c44358a600c06e31eb3be28b61',1,'node.h']]],
+  ['max_5fint',['MAX_INT',['../d1/d77/node_8h.html#aaa1ac5caef84256eaeb39594e58e096f',1,'node.h']]],
+  ['min_5fflt',['MIN_FLT',['../d1/d77/node_8h.html#a1333117019b33439fad6dd0f59bbde1b',1,'node.h']]],
+  ['min_5fint',['MIN_INT',['../d1/d77/node_8h.html#a91a4a7c68f549b5f31dbced70ae07ee6',1,'node.h']]]
 ];

@@ -39,8 +39,8 @@
   <title>
    Using Feat’s archive — FEAT
   </title>
-  <link href="../_static/material.css" rel="stylesheet" type="text/css"/>
   <link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+  <link href="../_static/material.css" rel="stylesheet" type="text/css"/>
   <link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
   <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js">
   </script>
@@ -639,23 +639,64 @@ div.rendered_html tbody tr:hover {
 <span></span><span class="kn">from</span> <span class="nn">feat</span> <span class="kn">import</span> <span class="n">Feat</span>
 
 
-<span class="n">fest</span> <span class="o">=</span> <span class="n">Feat</span><span class="p">(</span><span class="n">pop_size</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span>
-            <span class="n">gens</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>                  <span class="c1"># maximum of 200 generations</span>
-            <span class="n">max_time</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span>              <span class="c1"># max time of 60 seconds</span>
-            <span class="n">max_depth</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span>                    <span class="c1"># constrain features to depth of 6</span>
-            <span class="n">max_dim</span><span class="o">=</span><span class="nb">min</span><span class="p">([</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span><span class="mi">50</span><span class="p">]),</span> <span class="c1"># constrain representation dimensionality to 2x the feature space or 50</span>
+<span class="n">fest</span> <span class="o">=</span> <span class="n">Feat</span><span class="p">(</span><span class="n">pop_size</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="c1"># population size</span>
+            <span class="n">gens</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="c1"># maximum generations</span>
+            <span class="n">max_time</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="c1"># max time in seconds</span>
+            <span class="n">max_depth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="c1"># constrain features depth</span>
+            <span class="n">max_dim</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="c1"># constrain representation dimensionality</span>
             <span class="n">random_state</span><span class="o">=</span><span class="n">random_state</span><span class="p">,</span>
-            <span class="n">hillclimb</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>                 <span class="c1"># use stochastic hillclimbing to optimize weights for 10 iterations</span>
-            <span class="n">iters</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
-            <span class="n">n_threads</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>                   <span class="c1"># restricts to single thread</span>
-            <span class="n">verbosity</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>                   <span class="c1"># verbose output</span>
+            <span class="n">hillclimb</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="c1"># use stochastic hillclimbing to optimize weights</span>
+            <span class="n">iters</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="c1"># iterations of hillclimbing</span>
+            <span class="n">n_jobs</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="c1"># restricts to single thread</span>
+            <span class="n">verbosity</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="c1"># verbose output (this will go to terminal, sry..)</span>
            <span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s1">'FEAT version:'</span><span class="p">,</span> <span class="n">fest</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
 <span class="c1"># train the model</span>
 <span class="n">fest</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_t</span><span class="p">,</span><span class="n">y_t</span><span class="p">)</span>
 
-<span class="c1"># get the test score</span>
+</pre>
+         </div>
+        </div>
+       </div>
+       <div class="nboutput docutils container">
+        <div class="prompt empty docutils container">
+        </div>
+        <div class="output_area docutils container">
+         <div class="highlight">
+          <pre>
+FEAT version: 0.4.1.post30
+</pre>
+         </div>
+        </div>
+       </div>
+       <div class="nboutput nblast docutils container">
+        <div class="prompt highlight-none notranslate">
+         <div class="highlight">
+          <pre><span></span>[2]:
+</pre>
+         </div>
+        </div>
+        <div class="output_area docutils container">
+         <div class="highlight">
+          <pre>
+Feat(hillclimb=True, max_depth=2, max_dim=5, max_time=60, pop_size=500,
+     random_state=42, verbosity=2)
+</pre>
+         </div>
+        </div>
+       </div>
+       <div class="nbinput docutils container">
+        <div class="prompt highlight-none notranslate">
+         <div class="highlight">
+          <pre><span></span>[3]:
+</pre>
+         </div>
+        </div>
+        <div class="input_area highlight-ipython3 notranslate">
+         <div class="highlight">
+          <pre>
+<span></span><span class="c1"># get the test score</span>
 <span class="n">test_score</span> <span class="o">=</span> <span class="p">{}</span>
 <span class="n">test_score</span><span class="p">[</span><span class="s1">'feat'</span><span class="p">]</span> <span class="o">=</span> <span class="n">mse</span><span class="p">(</span><span class="n">y_v</span><span class="p">,</span><span class="n">fest</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_v</span><span class="p">))</span>
 
@@ -673,7 +714,7 @@ div.rendered_html tbody tr:hover {
 
 <span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">order</span><span class="p">:</span>
     <span class="n">model</span> <span class="o">=</span> <span class="n">archive</span><span class="p">[</span><span class="n">o</span><span class="p">]</span>
-    <span class="k">if</span> <span class="n">model</span><span class="p">[</span><span class="s1">'pareto_rank'</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">model</span><span class="p">[</span><span class="s1">'rank'</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">model</span><span class="p">[</span><span class="s1">'complexity'</span><span class="p">],</span>
               <span class="n">model</span><span class="p">[</span><span class="s1">'fitness'</span><span class="p">],</span>
               <span class="n">model</span><span class="p">[</span><span class="s1">'fitness_v'</span><span class="p">],</span>
@@ -694,45 +735,36 @@ div.rendered_html tbody tr:hover {
         <div class="output_area docutils container">
          <div class="highlight">
           <pre>
-FEAT version: 0.4.post37
 complexity fitness validation fitness eqn
-1.0 1804.71 1815.93 [x_1]
-2.0 967.038 1090.61 [x_0][x_1]
-3.0 931.526 916.835 [x_1][x_3][x_0]
-4.0 912.518 862.106 [x_0][x_1][x_3][x_2]
-6.0 825.652 835.325 [NOT((x_0&lt;0.022626))][x_1]
-7.0 467.786 665.829 [tanh(x_1)][x_0]
-8.0 424.307 513.349 [tanh(x_1)][x_3][x_0]
-10.0 386.612 466.544 [tanh(x_1)][x_3][(x_2+x_0)]
-11.0 375.25 455.531 [x_3][tanh(x_1)][x_1][x_0][x_2][x_1]
-12.0 350.893 499.175 [tanh(x_0)][tanh(x_1)]
-13.0 320.283 427.11 [tanh(x_0)][tanh(x_1)][x_2]
-14.0 302.621 373.354 [tanh(x_0)][tanh(x_1)][x_2][x_3]
-16.0 298.695 373.749 [x_1][tanh(x_1)][x_3][x_3][x_2][tanh(x_0)]
-17.0 290.61 431.343 [tanh(x_0)][tanh(x_1)][x_2][(x_3&lt;0.775635)]
-18.0 272.12 384.432 [tanh(x_0)][tanh(x_1)][x_2][x_3][(x_1&lt;-0.789056)]
-21.0 270.71 543.846 [tanh(x_0)][tanh(x_1)][x_1][relu(x_1)][(x_3&lt;-1.687642)]
-22.0 257.992 525.953 [sin(x_1)][tanh(x_0)][x_1][x_3][sqrt(|x_1|)][(x_1&lt;1.816810)]
-23.0 249.726 442.731 [relu(x_1)][tanh(x_1)][x_1][tanh(x_0)][x_2][x_3][(x_3&lt;-1.754735)]
-24.0 237.166 390.812 [x_1][tanh(x_1)][(x_2*x_1)][(x_3&lt;-0.748338)][(x_0*x_2)][x_0]
-25.0 236.137 298.552 [x_1][x_1][tanh(x_1)][(x_2*x_1)][(x_3&lt;-0.756006)][(x_0*x_2)][x_0]
-27.0 215.285 2864.35 [x_0][tanh(x_1)][(x_2*x_1)][x_3][(x_0*x_2)][x_1][tanh(x_0)]
-30.0 195.244 455.85 [tanh(x_1)][x_1][(x_3&lt;-0.391786)][(x_2*x_1)][(x_0*x_2)][tanh(x_0)][x_0]
-31.0 194.075 315.381 [tanh(x_1)][x_1][(x_3&lt;-0.336195)][(x_2*x_1)][x_0][(x_0*x_2)][tanh(x_0)][x_2]
-33.0 188.305 379.725 [tanh(x_1)][x_1][(x_3&lt;0.568605)][(x_2*x_1)][(x_3-x_0)][(x_0*x_2)][tanh(x_0)][x_0]
-34.0 180.408 292.708 [tanh(x_1)][x_1][(x_1&lt;1.816810)][(x_2*x_1)][x_0][(x_0*x_2)][tanh(x_0)][(x_1^2)]
-50.0 172.512 3195.16 [x_0][(exp(x_1)-((x_1^2)^3))][tanh(x_1)][(x_2*x_1)][x_3][(x_0*x_2)][tanh(x_0)]
-51.0 172.145 770.017 [x_3][tanh(x_1)][(x_2*x_1)][x_0][(x_0*x_2)][tanh(x_0)][(exp(x_1)-((x_1^2)^3))][x_0]
-54.0 170.448 284.766 [x_3][tanh(x_1)][(x_2*x_1)][(x_1^2)][(x_0*x_2)][tanh(x_0)][(exp(x_1)-((x_1^2)^3))][x_0]
-56.0 169.645 1109.62 [x_3][tanh(x_1)][(x_2*x_1)][tanh(x_0)][(x_0*x_2)][tanh(x_0)][(exp(x_1)-((x_1^2)^3))][x_2]
-60.0 167.745 244.477 [tanh(x_0)][(gauss(x_2)*sin(x_1))][tanh(x_3)][(x_1^2)][x_3][gauss(x_1)][x_2][(x_2&lt;-1.352948)]
-71.0 165.93 303.11 [tanh((x_3-x_0))][x_2][x_0][(gauss(x_2)*x_1)][tanh(x_1)][(exp(x_1)-((x_1^2)^3))][x_1][(x_3&lt;x_1)]
-85.0 163.248 440.883 [tanh((x_3-x_0))][x_2][((x_2^2)^3)][(gauss(x_2)*x_1)][tanh(x_1)][(exp(x_1)-((x_1^2)^3))][x_1][(x_3&lt;x_1)]
-95.0 162.967 1208.78 [tanh((x_3-x_0))][x_2][((x_1^2)^3)][(gauss(x_2)*sin(x_1))][tanh(x_1)][(exp(x_1)-((x_1^2)^3))][x_1][(x_3&lt;x_1)]
-98.0 162.768 708.797 [tanh((x_3-x_0))][sqrt(|relu(x_2)|)][((x_3^2)^3)][(gauss(x_2)*sin(x_1))][x_1][tanh(x_1)][(exp(x_1)-((x_1^2)^3))]
-99.0 162.755 1787.37 [tanh((x_3-x_0))][x_2][((x_1^2)^3)][(gauss(x_2)*sin(x_1))][tanh(x_1)][(exp(x_1)-((x_1^2)^3))][sqrt(|x_2|)][NOT((x_3&lt;x_1))]
-102.0 159.039 7114.08 [tanh((x_3-x_0))][sqrt(|relu(x_2)|)][logit(x_1)][(gauss(x_2)*sin(x_1))][gauss(x_2)][tanh(x_1)][(exp(x_1)-((x_1^2)^3))][(x_1&lt;1.801119)]
-108.0 158.617 9115.42 [tanh((x_3-x_0))][x_2][((x_2^2)^3)][(gauss(x_2)*x_1)][tanh(x_1)][(exp(x_1)-((x_1^2)^3))][(exp(x_1)-((x_1^2)^3))][(x_3&lt;x_1)]
+1 1804.70947265625 1815.92822265625 [x_1]
+2 967.038330078125 1090.6053466796875 [x_1][x_0]
+3 931.5263061523438 916.8345336914062 [x_0][x_1][x_3]
+4 912.5177001953125 862.1056518554688 [x_0][x_1][x_2][x_3]
+6 669.4453735351562 900.9910888671875 [x_1][x_0][relu(0.00*x_1)]
+7 467.7828369140625 704.1397094726562 [x_0][tanh(1.26*x_1)]
+8 424.2886657714844 512.7071533203125 [x_0][tanh(1.34*x_1)][x_3]
+9 383.1601867675781 463.29949951171875 [tanh(1.39*x_1)][x_2][x_0][x_3]
+10 375.2489318847656 511.86627197265625 [tanh(0.98*x_1)][x_1][x_3][x_2][x_0]
+12 350.7279357910156 492.56195068359375 [tanh(2.54*x_0)][tanh(1.29*x_1)]
+13 319.4396667480469 426.8195495605469 [tanh(1.33*x_1)][x_2][tanh(2.41*x_0)]
+14 301.9866638183594 386.4537048339844 [tanh(1.38*x_1)][x_3][x_2][tanh(2.79*x_0)]
+15 297.632568359375 394.12969970703125 [tanh(2.86*x_0)][x_1][x_3][x_2][tanh(1.05*x_1)]
+17 282.73626708984375 392.1083068847656 [tanh(2.62*x_0)][relu(0.63*x_3)][x_2][tanh(1.39*x_1)]
+18 276.8981018066406 403.6515808105469 [tanh(2.66*x_0)][x_1][relu(0.61*x_3)][x_2][tanh(1.03*x_1)]
+19 266.9380187988281 261.5851135253906 [(0.26*x_2*(1.32*x_0+0.26*x_1))][x_0][x_1][tanh(1.14*x_1)][x_3]
+21 252.79739379882812 391.8340148925781 [(0.30*x_1*sqrt(|0.30*x_3|))][(0.44*x_2-0.01*x_1)][tanh(2.03*x_0)]
+22 249.07005310058594 313.2448425292969 [(0.28*x_2*(1.06*x_0+0.24*x_1))][x_1][x_0][tanh(1.11*x_1)][sqrt(|0.18*x_3|)]
+24 233.05250549316406 246.5561981201172 [(0.32*x_2*(1.16*x_0+0.27*x_1))][tanh(2.00*x_0)][x_0][x_1][sin(1.98*x_1)]
+26 215.35858154296875 1645.1624755859375 [tanh(1.18*x_1)][tanh(2.25*x_0)][x_3][(0.35*x_1-0.34*x_0)][(0.19*x_2*(1.42*x_0+0.29*x_1))]
+29 203.5608367919922 249.9871368408203 [(0.48*x_1+0.56*sqrt(|0.17*x_3|))][x_0][tanh(1.17*x_1)][(0.48*x_2*(0.29*x_0+0.07*x_1))][tanh(2.01*x_0)]
+30 202.99911499023438 258.62847900390625 [tanh(1.18*x_1)][tanh(1.88*x_0)][(0.46*x_1+0.18*(0.27*x_0-0.34*sqrt(|0.29*x_1|)))][(0.18*x_2*(0.74*x_0+0.19*x_1))]
+31 190.41644287109375 241.6823272705078 [tanh(1.20*x_1)][tanh(2.20*x_0)][x_3][(0.58*x_1+0.14*(0.19*x_0-0.25*sqrt(|0.19*x_3|)))][(0.23*x_2*(1.01*x_0+0.21*x_1))]
+36 188.87777709960938 259.40362548828125 [tanh(1.19*x_1)][tanh(1.98*x_0)][(0.48*x_1+0.17*(0.20*x_0-0.29*sqrt(|0.28*x_3|)))][(0.08*x_2*(1.30*x_0+0.30*x_1))][(0.88*x_2/0.95*x_0)]
+38 189.1365966796875 232.5410614013672 [tanh(1.22*x_1)][tanh(2.08*x_0)][(0.57*x_1+0.11*(0.25*x_0-0.23*sqrt(|0.18*x_3|)))][(0.23*x_2*(1.00*x_0+0.21*x_1))][exp(0.27*x_3)]
+46 181.5760498046875 239.0564727783203 [tanh(1.19*x_1)][tanh(1.98*x_0)][(0.48*x_1+0.17*(0.20*x_0-0.29*sqrt(|0.28*x_3|)))][(0.08*x_2*(1.30*x_0+0.30*x_1))][(0.88*x_2/0.95*tanh(1.85*x_0))]
+98 178.29383850097656 255.6151885986328 [tanh(1.05*x_1)][exp(0.58*tanh(1.79*x_0))][(0.31*x_3-0.88*log(1.37*(0.06*x_0/0.59*(0.47*x_3+1.14*x_2))))][(0.73*x_1+0.22*(0.15*x_0-0.26*sqrt(|0.15*x_3|)))][(0.28*x_2*(1.15*x_0+0.26*x_1))]
+104 177.51222229003906 253.17242431640625 [tanh(1.11*x_1)][exp(0.58*tanh(1.79*x_0))][(0.31*x_3-0.88*log(1.37*(0.06*x_0/0.59*(0.47*x_3+1.14*x_2))))][(0.73*x_1+0.22*(0.15*x_0-0.26*sqrt(|0.83*sqrt(|0.15*x_3|)|)))][(0.28*x_2*(1.15*x_0+0.26*x_1))]
+147 174.20518493652344 1227.4205322265625 [tanh(1.20*tanh(0.64*x_1))][exp(0.63*tanh(2.07*x_0))][(0.27*x_3-0.72*log(1.95*(0.04*x_0/0.79*(0.47*x_3+1.20*x_2))))][(0.55*x_1+0.21*(0.23*x_0-0.24*sqrt(|0.17*x_3|)))][exp(0.64*(0.21*x_2*(1.43*x_0+0.33*x_1)))]
 </pre>
          </div>
         </div>
@@ -743,7 +775,7 @@ complexity fitness validation fitness eqn
        <div class="nbinput nblast docutils container">
         <div class="prompt highlight-none notranslate">
          <div class="highlight">
-          <pre><span></span>[3]:
+          <pre><span></span>[4]:
 </pre>
          </div>
         </div>
@@ -765,7 +797,7 @@ complexity fitness validation fitness eqn
        <div class="nbinput nblast docutils container">
         <div class="prompt highlight-none notranslate">
          <div class="highlight">
-          <pre><span></span>[4]:
+          <pre><span></span>[5]:
 </pre>
          </div>
         </div>
@@ -790,7 +822,7 @@ complexity fitness validation fitness eqn
        <div class="nbinput docutils container">
         <div class="prompt highlight-none notranslate">
          <div class="highlight">
-          <pre><span></span>[5]:
+          <pre><span></span>[6]:
 </pre>
          </div>
         </div>
@@ -805,14 +837,14 @@ complexity fitness validation fitness eqn
        <div class="nboutput nblast docutils container">
         <div class="prompt highlight-none notranslate">
          <div class="highlight">
-          <pre><span></span>[5]:
+          <pre><span></span>[6]:
 </pre>
          </div>
         </div>
         <div class="output_area docutils container">
          <div class="highlight">
           <pre>
-{'feat': 246.9783422805277,
+{'feat': 258.74213477932375,
  'rf': 347.15749506172847,
  'elasticnet': 919.3515337699562}
 </pre>
@@ -870,7 +902,7 @@ complexity fitness validation fitness eqn
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">((</span><span class="n">test_score</span><span class="p">[</span><span class="s1">'elasticnet'</span><span class="p">],</span><span class="n">test_score</span><span class="p">[</span><span class="s1">'elasticnet'</span><span class="p">]),(</span><span class="n">y1</span><span class="p">,</span><span class="n">y2</span><span class="p">),</span><span class="s1">'-sm'</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">'ElasticNet Test'</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s1">'complexity'</span><span class="p">,</span><span class="n">complexity</span><span class="p">)</span>
-<span class="n">xoff</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">xoff</span> <span class="o">=</span> <span class="mi">100</span>
 <span class="k">for</span> <span class="n">e</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">c</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">eqn</span><span class="p">,</span><span class="n">fit_test</span><span class="p">,</span><span class="n">complexity</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">c</span> <span class="ow">in</span> <span class="p">[</span><span class="n">complexity</span><span class="p">[</span><span class="n">best</span><span class="p">],</span><span class="n">complexity</span><span class="p">[</span><span class="n">middle</span><span class="p">],</span><span class="n">complexity</span><span class="p">[</span><span class="n">small</span><span class="p">]]:</span>
         <span class="n">t</span> <span class="o">=</span> <span class="n">t</span><span class="o">+</span><span class="n">xoff</span>
@@ -901,10 +933,10 @@ complexity fitness validation fitness eqn
         <div class="output_area docutils container">
          <div class="highlight">
           <pre>
-best: 60.0
-middle: 14.0
-small: 3.0
-complexity [1.0, 2.0, 3.0, 4.0, 6.0, 7.0, 8.0, 10.0, 11.0, 12.0, 13.0, 14.0, 16.0, 17.0, 18.0, 21.0, 22.0, 23.0, 24.0, 25.0, 27.0, 30.0, 31.0, 33.0, 34.0, 50.0, 51.0, 54.0, 56.0, 60.0, 71.0, 85.0, 95.0, 98.0, 99.0, 102.0, 108.0]
+best: 38
+middle: 22
+small: 3
+complexity [1, 2, 3, 4, 6, 7, 8, 9, 10, 12, 13, 14, 15, 17, 18, 19, 21, 22, 24, 26, 29, 30, 31, 36, 38, 46, 98, 104, 147]
 </pre>
          </div>
         </div>
@@ -913,7 +945,7 @@ complexity [1.0, 2.0, 3.0, 4.0, 6.0, 7.0, 8.0, 10.0, 11.0, 12.0, 13.0, 14.0, 16.
         <div class="prompt empty docutils container">
         </div>
         <div class="output_area docutils container">
-         <img alt="../_images/examples_archive_11_1.png" src="../_images/examples_archive_11_1.png"/>
+         <img alt="../_images/examples_archive_12_1.png" src="../_images/examples_archive_12_1.png"/>
         </div>
        </div>
        <p>
@@ -932,19 +964,19 @@ complexity [1.0, 2.0, 3.0, 4.0, 6.0, 7.0, 8.0, 10.0, 11.0, 12.0, 13.0, 14.0, 16.
           get_model()
          </span>
         </code>
-        will print a table of the learned features, ordered by the magnitude of their weights.
+        will print a table of the learned features, optionally ordered by the magnitude of their weights.
        </p>
        <div class="nbinput docutils container">
         <div class="prompt highlight-none notranslate">
          <div class="highlight">
-          <pre><span></span>[7]:
+          <pre><span></span>[8]:
 </pre>
          </div>
         </div>
         <div class="input_area highlight-ipython3 notranslate">
          <div class="highlight">
           <pre>
-<span></span><span class="nb">print</span><span class="p">(</span><span class="n">fest</span><span class="o">.</span><span class="n">get_model</span><span class="p">())</span>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">fest</span><span class="o">.</span><span class="n">get_model</span><span class="p">(</span><span class="n">sort</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
 </pre>
          </div>
         </div>
@@ -955,16 +987,13 @@ complexity [1.0, 2.0, 3.0, 4.0, 6.0, 7.0, 8.0, 10.0, 11.0, 12.0, 13.0, 14.0, 16.
         <div class="output_area docutils container">
          <div class="highlight">
           <pre>
-Feature         Weight
-offset          1588.25
-tanh(x_1)               -99.060867
-(x_2*x_1)               -90.169205
-tanh(x_0)               -60.198231
-(exp(x_1)-((x_1^2)^3))          -38.990429
-(x_0*x_2)               -32.088799
-tanh(x_0)               27.651752
-x_3             -17.219564
-logit(x_2)              -2.558559
+Weight  Feature
+1590.39         offset
+-103.53 tanh(1.22*x_1)
+20.83   tanh(2.08*x_0)
+63.00   (0.57*x_1+0.11*(0.25*x_0-0.23*sqrt(|0.18*x_3|)))
+-76.59  (0.23*x_2*(1.00*x_0+0.21*x_1))
+-13.93  exp(0.27*x_3)
 
 </pre>
          </div>
@@ -1018,7 +1047,7 @@ logit(x_2)              -2.558559
       <a href="http://www.sphinx-doc.org/">
        Sphinx
       </a>
-      3.2.1.
+      3.3.0.
              and
       <a href="https://github.com/bashtage/sphinx-material/">
        Material for

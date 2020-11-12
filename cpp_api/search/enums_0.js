@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ml_5ftype',['ML_TYPE',['../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdc',1,'FT::Model']]]
+  ['cbor_5ftag_5fhandler_5ft',['cbor_tag_handler_t',['../dc/df0/namespacenlohmann_1_1detail.html#a58bb1ef1a9ad287a9cfaf1855784d9ac',1,'nlohmann::detail']]]
 ];

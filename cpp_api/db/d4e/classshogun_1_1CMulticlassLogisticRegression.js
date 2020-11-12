@@ -12,6 +12,7 @@ var classshogun_1_1CMulticlassLogisticRegression =
     [ "register_parameters", "db/d4e/classshogun_1_1CMulticlassLogisticRegression.html#aadde2195844564c8c7e9c889a52a8b1c", null ],
     [ "set_epsilon", "db/d4e/classshogun_1_1CMulticlassLogisticRegression.html#a4def992ce20b601c2f36c937b69cbdc5", null ],
     [ "set_max_iter", "db/d4e/classshogun_1_1CMulticlassLogisticRegression.html#ac72760d081b3b06e86e07c2a9e4e00c9", null ],
+    [ "set_w", "db/d4e/classshogun_1_1CMulticlassLogisticRegression.html#a45665741a3ef8dc2f49867957b299239", null ],
     [ "set_z", "db/d4e/classshogun_1_1CMulticlassLogisticRegression.html#a4f9e29a8ec5ebb130d6a682602174e70", null ],
     [ "train_machine", "db/d4e/classshogun_1_1CMulticlassLogisticRegression.html#af3254300e6d7557d4fe570463c60a81b", null ],
     [ "m_epsilon", "db/d4e/classshogun_1_1CMulticlassLogisticRegression.html#a1b2770da7b9faa1992263603dfe37a32", null ],

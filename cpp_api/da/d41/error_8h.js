@@ -1,7 +1,11 @@
 var error_8h =
 [
-    [ "HANDLE_ERROR_NO_THROW", "da/d41/error_8h.html#a363ee47b78459ddf373ce82b51af8579", null ],
-    [ "HANDLE_ERROR_THROW", "da/d41/error_8h.html#aa4c550bcd71e4ec1c97b111e1360509a", null ],
-    [ "HandleErrorNoThrow", "da/d41/error_8h.html#acf52b08ccede5464385595db052ee765", null ],
-    [ "HandleErrorThrow", "da/d41/error_8h.html#a348f700b7867d2e61c79dfdc7cfcc941", null ]
+    [ "THROW_INVALID_ARGUMENT", "da/d41/error_8h.html#ae0d1b7fecb3f2b9839acad5cc71c3676", null ],
+    [ "THROW_LENGTH_ERROR", "da/d41/error_8h.html#a17bb1d72076265d2ee5b3b5fdad2d080", null ],
+    [ "THROW_RUNTIME_ERROR", "da/d41/error_8h.html#a1bcc9979021d7dca3177c883d70d3595", null ],
+    [ "WARN", "da/d41/error_8h.html#a80c33c639f6f54a26979b11f8991a202", null ],
+    [ "ThrowInvalidArgument", "da/d41/error_8h.html#a7552af7132477991d445719def08982a", null ],
+    [ "ThrowLengthError", "da/d41/error_8h.html#ab7cc9efdf7695ede80bb35b9eb9a550c", null ],
+    [ "ThrowRuntimeError", "da/d41/error_8h.html#aaee7c962960fb8ae122dbc1a7db22cbb", null ],
+    [ "Warn", "da/d41/error_8h.html#ac425e7cba03c26520fb37def761de6c2", null ]
 ];

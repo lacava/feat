@@ -27,6 +27,7 @@ var namespaceFT_1_1Pop_1_1Op =
     [ "NodeLog", "de/d28/classFT_1_1Pop_1_1Op_1_1NodeLog.html", "de/d28/classFT_1_1Pop_1_1Op_1_1NodeLog" ],
     [ "NodeLogit", "d6/d87/classFT_1_1Pop_1_1Op_1_1NodeLogit.html", "d6/d87/classFT_1_1Pop_1_1Op_1_1NodeLogit" ],
     [ "NodeLongitudinal", "d7/d2b/classFT_1_1Pop_1_1Op_1_1NodeLongitudinal.html", "d7/d2b/classFT_1_1Pop_1_1Op_1_1NodeLongitudinal" ],
+    [ "NodeMap", "d3/dd9/structFT_1_1Pop_1_1Op_1_1NodeMap.html", "d3/dd9/structFT_1_1Pop_1_1Op_1_1NodeMap" ],
     [ "NodeMax", "da/d22/classFT_1_1Pop_1_1Op_1_1NodeMax.html", "da/d22/classFT_1_1Pop_1_1Op_1_1NodeMax" ],
     [ "NodeMean", "d2/de5/classFT_1_1Pop_1_1Op_1_1NodeMean.html", "d2/de5/classFT_1_1Pop_1_1Op_1_1NodeMean" ],
     [ "NodeMedian", "d0/de8/classFT_1_1Pop_1_1Op_1_1NodeMedian.html", "d0/de8/classFT_1_1Pop_1_1Op_1_1NodeMedian" ],

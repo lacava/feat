@@ -1,22 +1,12 @@
 var searchData=
 [
-  ['s',['S',['../d6/d6f/classFT_1_1Eval_1_1Evaluation.html#a96d128663bb73049a4253415e42944fa',1,'FT::Eval::Evaluation']]],
-  ['sample_5fweights',['sample_weights',['../de/d2c/structFT_1_1Parameters.html#a55546feac96125ac36f567eb5191d6d0',1,'FT::Parameters']]],
-  ['scale',['scale',['../dd/d51/structFT_1_1Util_1_1Normalizer.html#a42d899c4ca0d8d9b297814f9f06bbf8c',1,'FT::Util::Normalizer']]],
-  ['scale_5fall',['scale_all',['../dd/d51/structFT_1_1Util_1_1Normalizer.html#a3a79512aacb8cef7968b8facad3db40a',1,'FT::Util::Normalizer']]],
-  ['score_5fhash',['score_hash',['../d1/d91/classFT_1_1Eval_1_1Scorer.html#a6097374b7aa9d53904aab4b0f639b3d8',1,'FT::Eval::Scorer::score_hash()'],['../d2/d73/classFT_1_1Opt_1_1AutoBackProp.html#a2544c0c8103dd368d60764a5895c7128',1,'FT::Opt::AutoBackProp::score_hash()'],['../d8/d06/classFT_1_1Opt_1_1HillClimb.html#a10804d3c4b7904f264d9a543fc40bbba',1,'FT::Opt::HillClimb::score_hash()']]],
-  ['scorer',['scorer',['../d1/d91/classFT_1_1Eval_1_1Scorer.html#a78cf55dfd14a03bbd3ce6a5636054bdf',1,'FT::Eval::Scorer::scorer()'],['../db/dff/classFT_1_1Feat.html#aa1d94c8c67ddc6e56a24e80970e8b6ce',1,'FT::Feat::scorer()'],['../de/d2c/structFT_1_1Parameters.html#a671b0c827027e417243edc7fd3ea77a6',1,'FT::Parameters::scorer()']]],
-  ['selector',['selector',['../d7/d9f/structFT_1_1Pop_1_1Archive.html#af70e20576fe15ad2b21a0c06e1a5640f',1,'FT::Pop::Archive']]],
-  ['shuffle',['shuffle',['../de/d2c/structFT_1_1Parameters.html#aca9f6951f7bb932f7d36abaabbc8bb23',1,'FT::Parameters']]],
-  ['simplify',['simplify',['../db/dff/classFT_1_1Feat.html#a343b2d9d757ee0c492e4ccd977e3ee9e',1,'FT::Feat']]],
-  ['softmax_5fnorm',['softmax_norm',['../de/d2c/structFT_1_1Parameters.html#a01b1fbfe3b22f877ddd86adec369b03d',1,'FT::Parameters']]],
-  ['sort_5fcomplexity',['sort_complexity',['../d7/d9f/structFT_1_1Pop_1_1Archive.html#ac34c4f0cf3530a49487a013252be884f',1,'FT::Pop::Archive']]],
-  ['split',['split',['../de/d2c/structFT_1_1Parameters.html#ac9b2cd0a715a8256cf5bb312272e3438',1,'FT::Parameters']]],
-  ['st',['st',['../d8/d30/classFT_1_1Dat_1_1Stack.html#a71e074110b85a6a19d1f6ed2955bb447',1,'FT::Dat::Stack']]],
-  ['stagewise_5fxo',['stagewise_xo',['../de/d2c/structFT_1_1Parameters.html#a753a9355acfa2d92f2cbf9b67140305a',1,'FT::Parameters']]],
-  ['stagewise_5fxo_5ftol',['stagewise_xo_tol',['../de/d2c/structFT_1_1Parameters.html#a38d54e08fbce9e9159783d08c0189872',1,'FT::Parameters']]],
-  ['stats',['stats',['../db/dff/classFT_1_1Feat.html#a96d29df09000c7e5da012fefcbec724b',1,'FT::Feat']]],
-  ['step',['step',['../d8/d06/classFT_1_1Opt_1_1HillClimb.html#a81ccf05449c6eaabbc8b100a1f6ae74f',1,'FT::Opt::HillClimb::step()'],['../d0/d29/structFT_1_1Parameters_1_1HC.html#a3cfef065bdc5e2fedb8b5bbd310b5540',1,'FT::Parameters::HC::step()']]],
-  ['str_5fdim',['str_dim',['../db/dff/classFT_1_1Feat.html#aa3ecfa399e827a3e633a40780c66c600',1,'FT::Feat']]],
-  ['survival',['survival',['../db/dff/classFT_1_1Feat.html#aa46144d8615e6d422246e6a7f705bea6',1,'FT::Feat::survival()'],['../d8/d53/structFT_1_1Sel_1_1SelectionOperator.html#ae8bf8f6a727f78e3fa309d3f84d9d45d',1,'FT::Sel::SelectionOperator::survival()']]]
+  ['r',['r',['../d1/d5d/namespaceFT_1_1Util.html#ae367d016366cf550b2710d3a9b776b52',1,'FT::Util']]],
+  ['random_5fstate',['random_state',['../db/dff/classFT_1_1Feat.html#a4f9fb711186b338406174459260bf570',1,'FT::Feat']]],
+  ['rank',['rank',['../da/def/classFT_1_1Pop_1_1Individual.html#ad0663362d13acf54d126acad279293c9',1,'FT::Pop::Individual']]],
+  ['ref_5fstack',['ref_stack',['../dc/d68/classnlohmann_1_1detail_1_1json__sax__dom__parser.html#aa7526e7ae7be7f63803a23fd8cf36e5d',1,'nlohmann::detail::json_sax_dom_parser::ref_stack()'],['../d6/d69/classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a82a0e49479660b9903597e1ef55c6601',1,'nlohmann::detail::json_sax_dom_callback_parser::ref_stack()']]],
+  ['reference_5ftokens',['reference_tokens',['../da/de8/classnlohmann_1_1json__pointer.html#a07a990a6838de4f38ee9d881e7b9fd61',1,'nlohmann::json_pointer']]],
+  ['residual_5fxo',['residual_xo',['../de/d2c/structFT_1_1Parameters.html#a7f69b8478610b04752a59fb682e9bb9b',1,'FT::Parameters']]],
+  ['rg',['rg',['../d8/d33/classFT_1_1Util_1_1Rnd.html#a69b042618271495c3fbb8216ff672582',1,'FT::Util::Rnd']]],
+  ['root',['root',['../dc/d68/classnlohmann_1_1detail_1_1json__sax__dom__parser.html#aef0477277389e399d7128898841b71c0',1,'nlohmann::detail::json_sax_dom_parser::root()'],['../d6/d69/classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a7b12037ca38be3ddec09c42bd71080cc',1,'nlohmann::detail::json_sax_dom_callback_parser::root()']]],
+  ['root_5fxo_5frate',['root_xo_rate',['../de/d2c/structFT_1_1Parameters.html#aad3726da2e72077ba4b490dd98d68e7d',1,'FT::Parameters']]]
 ];

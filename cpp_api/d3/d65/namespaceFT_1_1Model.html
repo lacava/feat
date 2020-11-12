@@ -89,6 +89,7 @@ $(document).ready(function(){initNavTree('d3/d65/namespaceFT_1_1Model.html','../
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">FT::Model Namespace Reference</div>  </div>
@@ -119,6 +120,17 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="separator:a3e165e7a7c8603ac4380303142185fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a0a1950b6ec0de460be180cf040e6fe8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d65/namespaceFT_1_1Model.html#a0a1950b6ec0de460be180cf040e6fe8f">to_json</a> (json &amp;j, const <a class="el" href="../../dd/d6f/classFT_1_1Model_1_1ML.html">ML</a> &amp;ml)</td></tr>
+<tr class="separator:a0a1950b6ec0de460be180cf040e6fe8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad47dc61c8e9b63f28bd4c3c4e395df48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d65/namespaceFT_1_1Model.html#ad47dc61c8e9b63f28bd4c3c4e395df48">from_json</a> (const json &amp;j, <a class="el" href="../../dd/d6f/classFT_1_1Model_1_1ML.html">ML</a> &amp;model)</td></tr>
+<tr class="separator:ad47dc61c8e9b63f28bd4c3c4e395df48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6e538aea6a1394ccb1fe57a1388aeae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d65/namespaceFT_1_1Model.html#ae6e538aea6a1394ccb1fe57a1388aeae">to_json</a> (json &amp;j, const shared_ptr&lt; <a class="el" href="../../dd/d6f/classFT_1_1Model_1_1ML.html">ML</a> &gt; &amp;model)</td></tr>
+<tr class="separator:ae6e538aea6a1394ccb1fe57a1388aeae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc8ca3055afe49ff2df781a42b4d5083"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d65/namespaceFT_1_1Model.html#acc8ca3055afe49ff2df781a42b4d5083">from_json</a> (const json &amp;j, shared_ptr&lt; <a class="el" href="../../dd/d6f/classFT_1_1Model_1_1ML.html">ML</a> &gt; &amp;model)</td></tr>
+<tr class="separator:acc8ca3055afe49ff2df781a42b4d5083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a95445fd4618f6d8e871f5ec7bb25cc26"><td class="memItemLeft" align="right" valign="top">map&lt; <a class="el" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdc">ML_TYPE</a>, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d65/namespaceFT_1_1Model.html#a95445fd4618f6d8e871f5ec7bb25cc26">C_DEFAULT</a></td></tr>
@@ -148,7 +160,128 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a3e165e7a7c8603ac4380303142185fdca0cb130c816c05644b67cc81c2f5f91c1"></a>L1_LR&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d60/ml_8h_source.html#l00063">63</a> of file <a class="el" href="../../d7/d60/ml_8h_source.html">ml.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d60/ml_8h_source.html#l00065">65</a> of file <a class="el" href="../../d7/d60/ml_8h_source.html">ml.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ad47dc61c8e9b63f28bd4c3c4e395df48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad47dc61c8e9b63f28bd4c3c4e395df48">&#9670;&nbsp;</a></span>from_json() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FT::Model::from_json </td>
+          <td>(</td>
+          <td class="paramtype">const json &amp;&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dd/d6f/classFT_1_1Model_1_1ML.html">ML</a> &amp;&#160;</td>
+          <td class="paramname"><em>model</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00775">775</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
+
+</div>
+</div>
+<a id="acc8ca3055afe49ff2df781a42b4d5083"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc8ca3055afe49ff2df781a42b4d5083">&#9670;&nbsp;</a></span>from_json() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FT::Model::from_json </td>
+          <td>(</td>
+          <td class="paramtype">const json &amp;&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">shared_ptr&lt; <a class="el" href="../../dd/d6f/classFT_1_1Model_1_1ML.html">ML</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>model</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00824">824</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
+
+</div>
+</div>
+<a id="a0a1950b6ec0de460be180cf040e6fe8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a1950b6ec0de460be180cf040e6fe8f">&#9670;&nbsp;</a></span>to_json() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FT::Model::to_json </td>
+          <td>(</td>
+          <td class="paramtype">json &amp;&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../dd/d6f/classFT_1_1Model_1_1ML.html">ML</a> &amp;&#160;</td>
+          <td class="paramname"><em>ml</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00714">714</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
+
+</div>
+</div>
+<a id="ae6e538aea6a1394ccb1fe57a1388aeae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6e538aea6a1394ccb1fe57a1388aeae">&#9670;&nbsp;</a></span>to_json() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FT::Model::to_json </td>
+          <td>(</td>
+          <td class="paramtype">json &amp;&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const shared_ptr&lt; <a class="el" href="../../dd/d6f/classFT_1_1Model_1_1ML.html">ML</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>model</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00819">819</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
 
 </div>
 </div>
@@ -164,10 +297,10 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div><div class="line">    {<a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdca3d5d1c52bcc79dcb8c2a48fb35d97504">LARS</a>, 0},</div><div class="line">    {<a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdca9f44aeb2d68842cbf2c188d378a0bedb">Ridge</a>, 1e-6},</div><div class="line">    {<a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcad59b1dd6668ea0d9e128fa72a2d88f03">LR</a>, 1.0},</div><div class="line">    {<a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdca0cb130c816c05644b67cc81c2f5f91c1">L1_LR</a>, 1.0}</div><div class="line">}</div><div class="ttc" id="namespaceFT_1_1Model_html_a3e165e7a7c8603ac4380303142185fdca3d5d1c52bcc79dcb8c2a48fb35d97504"><div class="ttname"><a href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdca3d5d1c52bcc79dcb8c2a48fb35d97504">FT::Model::LARS</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d60/ml_8h_source.html#l00064">ml.h:64</a></div></div>
-<div class="ttc" id="namespaceFT_1_1Model_html_a3e165e7a7c8603ac4380303142185fdca9f44aeb2d68842cbf2c188d378a0bedb"><div class="ttname"><a href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdca9f44aeb2d68842cbf2c188d378a0bedb">FT::Model::Ridge</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d60/ml_8h_source.html#l00065">ml.h:65</a></div></div>
-<div class="ttc" id="namespaceFT_1_1Model_html_a3e165e7a7c8603ac4380303142185fdca0cb130c816c05644b67cc81c2f5f91c1"><div class="ttname"><a href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdca0cb130c816c05644b67cc81c2f5f91c1">FT::Model::L1_LR</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d60/ml_8h_source.html#l00070">ml.h:70</a></div></div>
-<div class="ttc" id="namespaceFT_1_1Model_html_a3e165e7a7c8603ac4380303142185fdcad59b1dd6668ea0d9e128fa72a2d88f03"><div class="ttname"><a href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcad59b1dd6668ea0d9e128fa72a2d88f03">FT::Model::LR</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d60/ml_8h_source.html#l00069">ml.h:69</a></div></div>
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div><div class="line">    {<a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdca3d5d1c52bcc79dcb8c2a48fb35d97504">LARS</a>, 0},</div><div class="line">    {<a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdca9f44aeb2d68842cbf2c188d378a0bedb">Ridge</a>, 1e-6},</div><div class="line">    {<a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcad59b1dd6668ea0d9e128fa72a2d88f03">LR</a>, 1.0},</div><div class="line">    {<a class="code" href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdca0cb130c816c05644b67cc81c2f5f91c1">L1_LR</a>, 1.0}</div><div class="line">}</div><div class="ttc" id="namespaceFT_1_1Model_html_a3e165e7a7c8603ac4380303142185fdca3d5d1c52bcc79dcb8c2a48fb35d97504"><div class="ttname"><a href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdca3d5d1c52bcc79dcb8c2a48fb35d97504">FT::Model::LARS</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d60/ml_8h_source.html#l00066">ml.h:66</a></div></div>
+<div class="ttc" id="namespaceFT_1_1Model_html_a3e165e7a7c8603ac4380303142185fdca9f44aeb2d68842cbf2c188d378a0bedb"><div class="ttname"><a href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdca9f44aeb2d68842cbf2c188d378a0bedb">FT::Model::Ridge</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d60/ml_8h_source.html#l00067">ml.h:67</a></div></div>
+<div class="ttc" id="namespaceFT_1_1Model_html_a3e165e7a7c8603ac4380303142185fdca0cb130c816c05644b67cc81c2f5f91c1"><div class="ttname"><a href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdca0cb130c816c05644b67cc81c2f5f91c1">FT::Model::L1_LR</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d60/ml_8h_source.html#l00072">ml.h:72</a></div></div>
+<div class="ttc" id="namespaceFT_1_1Model_html_a3e165e7a7c8603ac4380303142185fdcad59b1dd6668ea0d9e128fa72a2d88f03"><div class="ttname"><a href="../../d3/d65/namespaceFT_1_1Model.html#a3e165e7a7c8603ac4380303142185fdcad59b1dd6668ea0d9e128fa72a2d88f03">FT::Model::LR</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d60/ml_8h_source.html#l00071">ml.h:71</a></div></div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="../../df/d54/ml_8cc_source.html#l00014">14</a> of file <a class="el" href="../../df/d54/ml_8cc_source.html">ml.cc</a>.</p>
 

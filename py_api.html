@@ -39,8 +39,8 @@
   <title>
    Python API — FEAT
   </title>
-  <link href="_static/material.css" rel="stylesheet" type="text/css"/>
   <link href="_static/pygments.css" rel="stylesheet" type="text/css"/>
+  <link href="_static/material.css" rel="stylesheet" type="text/css"/>
   <link href="_static/copybutton.css" rel="stylesheet" type="text/css"/>
   <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js">
   </script>
@@ -634,13 +634,13 @@
          ,
          <em class="sig-param">
           <span class="n">
-           n_threads
+           n_jobs
           </span>
           <span class="o">
            =
           </span>
           <span class="default_value">
-           0
+           1
           </span>
          </em>
          ,
@@ -730,7 +730,7 @@
          ,
          <em class="sig-param">
           <span class="n">
-           print_pop
+           save_pop
           </span>
           <span class="o">
            =
@@ -796,7 +796,7 @@
            =
           </span>
           <span class="default_value">
-           []
+           ''
           </span>
          </em>
          ,
@@ -821,6 +821,18 @@
           </span>
           <span class="default_value">
            True
+          </span>
+         </em>
+         ,
+         <em class="sig-param">
+          <span class="n">
+           starting_pop
+          </span>
+          <span class="o">
+           =
+          </span>
+          <span class="default_value">
+           ''
           </span>
          </em>
          <span class="sig-paren">
@@ -924,6 +936,8 @@
                )
               </em>
               ) – ML pairing. Choices: LinearRidgeRegression, Lasso, L1_LR, L2_LR
+FeatRegressor sets to “LinearRidgeRegression”;
+FeatClassifier sets to L2 penalized LR (“LR”)
              </p>
             </li>
             <li>
@@ -936,6 +950,12 @@
                boolean
               </em>
               <em>
+               or
+              </em>
+              <em>
+               None
+              </em>
+              <em>
                ,
               </em>
               <em>
@@ -945,12 +965,13 @@
                (
               </em>
               <em>
-               default: False
+               default: None
               </em>
               <em>
                )
               </em>
-              ) – Whether to do classification instead of regression.
+              ) – Whether to do classification or regression. Set explicitly in
+FeatRegressor and FeatClassifier accordingly.
              </p>
             </li>
             <li>
@@ -1256,7 +1277,7 @@ individual.
               <em>
                )
               </em>
-              ) – Random seed.
+              ) – Random seed. If -1, will choose a random random_state.
              </p>
             </li>
             <li>
@@ -1572,7 +1593,7 @@ all the samples.
             <li>
              <p>
               <strong>
-               n_threads
+               n_jobs
               </strong>
               (
               <em>
@@ -1791,7 +1812,7 @@ the features.
             <li>
              <p>
               <strong>
-               print_pop
+               save_pop
               </strong>
               (
               <em>
@@ -2017,6 +2038,33 @@ fairness constraints.
               ) – Tune the final linear model’s penalization parameter.
              </p>
             </li>
+            <li>
+             <p>
+              <strong>
+               starting_pop
+              </strong>
+              (
+              <em>
+               str
+              </em>
+              <em>
+               ,
+              </em>
+              <em>
+               optional
+              </em>
+              <em>
+               (
+              </em>
+              <em>
+               default: ""
+              </em>
+              <em>
+               )
+              </em>
+              ) – Provide a starting pop in json format.
+             </p>
+            </li>
            </ul>
           </dd>
          </dl>
@@ -2156,16 +2204,28 @@ fairness constraints.
           </dd>
          </dl>
          <dl class="py method">
-          <dt id="feat.Feat.get_archive">
+          <dt id="feat.Feat.get_params">
            <code class="sig-name descname">
-            get_archive
+            get_params
            </code>
            <span class="sig-paren">
             (
            </span>
            <em class="sig-param">
             <span class="n">
-             justfront
+             deep
+            </span>
+            <span class="o">
+             =
+            </span>
+            <span class="default_value">
+             False
+            </span>
+           </em>
+           ,
+           <em class="sig-param">
+            <span class="n">
+             static_params
             </span>
             <span class="o">
              =
@@ -2182,24 +2242,72 @@ fairness constraints.
              [source]
             </span>
            </a>
-           <a class="headerlink" href="#feat.Feat.get_archive" title="Permalink to this definition">
+           <a class="headerlink" href="#feat.Feat.get_params" title="Permalink to this definition">
             ¶
            </a>
           </dt>
           <dd>
            <p>
-            Returns all the final representation equations in the archive
+            Get parameters for this estimator.
            </p>
+           <dl class="field-list simple">
+            <dt class="field-odd">
+             Parameters
+            </dt>
+            <dd class="field-odd">
+             <p>
+              <strong>
+               deep
+              </strong>
+              (
+              <em>
+               bool
+              </em>
+              <em>
+               ,
+              </em>
+              <em>
+               default=True
+              </em>
+              ) – If True, will return the parameters for this estimator and
+contained subobjects that are estimators.
+             </p>
+            </dd>
+            <dt class="field-even">
+             Returns
+            </dt>
+            <dd class="field-even">
+             <p>
+              <strong>
+               params
+              </strong>
+              – Parameter names mapped to their values.
+             </p>
+            </dd>
+            <dt class="field-odd">
+             Return type
+            </dt>
+            <dd class="field-odd">
+             <p>
+              mapping of string to any
+             </p>
+            </dd>
+           </dl>
           </dd>
          </dl>
          <dl class="py method">
-          <dt id="feat.Feat.get_coefs">
+          <dt id="feat.Feat.load">
            <code class="sig-name descname">
-            get_coefs
+            load
            </code>
            <span class="sig-paren">
             (
            </span>
+           <em class="sig-param">
+            <span class="n">
+             filename
+            </span>
+           </em>
            <span class="sig-paren">
             )
            </span>
@@ -2208,171 +2316,13 @@ fairness constraints.
              [source]
             </span>
            </a>
-           <a class="headerlink" href="#feat.Feat.get_coefs" title="Permalink to this definition">
+           <a class="headerlink" href="#feat.Feat.load" title="Permalink to this definition">
             ¶
            </a>
           </dt>
           <dd>
            <p>
-            Returns the coefficients assocated with each feature in the
-representation
-           </p>
-          </dd>
-         </dl>
-         <dl class="py method">
-          <dt id="feat.Feat.get_complexity">
-           <code class="sig-name descname">
-            get_complexity
-           </code>
-           <span class="sig-paren">
-            (
-           </span>
-           <span class="sig-paren">
-            )
-           </span>
-           <a class="reference external" href="https://github.com/lacava/feat/blob/master/python/feat.py">
-            <span class="viewcode-link">
-             [source]
-            </span>
-           </a>
-           <a class="headerlink" href="#feat.Feat.get_complexity" title="Permalink to this definition">
-            ¶
-           </a>
-          </dt>
-          <dd>
-           <p>
-            Returns the complexity of the final representation
-           </p>
-          </dd>
-         </dl>
-         <dl class="py method">
-          <dt id="feat.Feat.get_dim">
-           <code class="sig-name descname">
-            get_dim
-           </code>
-           <span class="sig-paren">
-            (
-           </span>
-           <span class="sig-paren">
-            )
-           </span>
-           <a class="reference external" href="https://github.com/lacava/feat/blob/master/python/feat.py">
-            <span class="viewcode-link">
-             [source]
-            </span>
-           </a>
-           <a class="headerlink" href="#feat.Feat.get_dim" title="Permalink to this definition">
-            ¶
-           </a>
-          </dt>
-          <dd>
-           <p>
-            Returns the dimensionality of the final representation
-           </p>
-          </dd>
-         </dl>
-         <dl class="py method">
-          <dt id="feat.Feat.get_model">
-           <code class="sig-name descname">
-            get_model
-           </code>
-           <span class="sig-paren">
-            (
-           </span>
-           <span class="sig-paren">
-            )
-           </span>
-           <a class="reference external" href="https://github.com/lacava/feat/blob/master/python/feat.py">
-            <span class="viewcode-link">
-             [source]
-            </span>
-           </a>
-           <a class="headerlink" href="#feat.Feat.get_model" title="Permalink to this definition">
-            ¶
-           </a>
-          </dt>
-          <dd>
-           <p>
-            Returns a string with the set of equations and weights in the final
-representation
-           </p>
-          </dd>
-         </dl>
-         <dl class="py method">
-          <dt id="feat.Feat.get_n_nodes">
-           <code class="sig-name descname">
-            get_n_nodes
-           </code>
-           <span class="sig-paren">
-            (
-           </span>
-           <span class="sig-paren">
-            )
-           </span>
-           <a class="reference external" href="https://github.com/lacava/feat/blob/master/python/feat.py">
-            <span class="viewcode-link">
-             [source]
-            </span>
-           </a>
-           <a class="headerlink" href="#feat.Feat.get_n_nodes" title="Permalink to this definition">
-            ¶
-           </a>
-          </dt>
-          <dd>
-           <p>
-            Returns the number of nodes in the final representation
-           </p>
-          </dd>
-         </dl>
-         <dl class="py method">
-          <dt id="feat.Feat.get_n_params">
-           <code class="sig-name descname">
-            get_n_params
-           </code>
-           <span class="sig-paren">
-            (
-           </span>
-           <span class="sig-paren">
-            )
-           </span>
-           <a class="reference external" href="https://github.com/lacava/feat/blob/master/python/feat.py">
-            <span class="viewcode-link">
-             [source]
-            </span>
-           </a>
-           <a class="headerlink" href="#feat.Feat.get_n_params" title="Permalink to this definition">
-            ¶
-           </a>
-          </dt>
-          <dd>
-           <p>
-            Returns the number of parameters in the final representation
-           </p>
-          </dd>
-         </dl>
-         <dl class="py method">
-          <dt id="feat.Feat.get_representation">
-           <code class="sig-name descname">
-            get_representation
-           </code>
-           <span class="sig-paren">
-            (
-           </span>
-           <span class="sig-paren">
-            )
-           </span>
-           <a class="reference external" href="https://github.com/lacava/feat/blob/master/python/feat.py">
-            <span class="viewcode-link">
-             [source]
-            </span>
-           </a>
-           <a class="headerlink" href="#feat.Feat.get_representation" title="Permalink to this definition">
-            ¶
-           </a>
-          </dt>
-          <dd>
-           <p>
-            Returns a string with the final representation
+            Load a saved Feat state from file.
            </p>
           </dd>
          </dl>
@@ -2487,40 +2437,16 @@ representation
           </dd>
          </dl>
          <dl class="py method">
-          <dt id="feat.Feat.predict_proba">
+          <dt id="feat.Feat.save">
            <code class="sig-name descname">
-            predict_proba
+            save
            </code>
            <span class="sig-paren">
             (
            </span>
            <em class="sig-param">
             <span class="n">
-             X
-            </span>
-           </em>
-           ,
-           <em class="sig-param">
-            <span class="n">
-             zfile
-            </span>
-            <span class="o">
-             =
-            </span>
-            <span class="default_value">
-             None
-            </span>
-           </em>
-           ,
-           <em class="sig-param">
-            <span class="n">
-             zids
-            </span>
-            <span class="o">
-             =
-            </span>
-            <span class="default_value">
-             None
+             filename
             </span>
            </em>
            <span class="sig-paren">
@@ -2531,68 +2457,13 @@ representation
              [source]
             </span>
            </a>
-           <a class="headerlink" href="#feat.Feat.predict_proba" title="Permalink to this definition">
+           <a class="headerlink" href="#feat.Feat.save" title="Permalink to this definition">
             ¶
            </a>
           </dt>
           <dd>
            <p>
-            Return probabilities of predictions for data X
-           </p>
-          </dd>
-         </dl>
-         <dl class="py method">
-          <dt id="feat.Feat.predict_proba_archive">
-           <code class="sig-name descname">
-            predict_proba_archive
-           </code>
-           <span class="sig-paren">
-            (
-           </span>
-           <em class="sig-param">
-            <span class="n">
-             X
-            </span>
-           </em>
-           ,
-           <em class="sig-param">
-            <span class="n">
-             zfile
-            </span>
-            <span class="o">
-             =
-            </span>
-            <span class="default_value">
-             None
-            </span>
-           </em>
-           ,
-           <em class="sig-param">
-            <span class="n">
-             zids
-            </span>
-            <span class="o">
-             =
-            </span>
-            <span class="default_value">
-             None
-            </span>
-           </em>
-           <span class="sig-paren">
-            )
-           </span>
-           <a class="reference external" href="https://github.com/lacava/feat/blob/master/python/feat.py">
-            <span class="viewcode-link">
-             [source]
-            </span>
-           </a>
-           <a class="headerlink" href="#feat.Feat.predict_proba_archive" title="Permalink to this definition">
-            ¶
-           </a>
-          </dt>
-          <dd>
-           <p>
-            Returns a dictionary of prediction probabilities for all models.
+            Save a Feat state to file.
            </p>
           </dd>
          </dl>
@@ -2659,6 +2530,87 @@ labels y
           </dd>
          </dl>
          <dl class="py method">
+          <dt id="feat.Feat.set_params">
+           <code class="sig-name descname">
+            set_params
+           </code>
+           <span class="sig-paren">
+            (
+           </span>
+           <em class="sig-param">
+            <span class="o">
+             **
+            </span>
+            <span class="n">
+             params
+            </span>
+           </em>
+           <span class="sig-paren">
+            )
+           </span>
+           <a class="reference external" href="https://github.com/lacava/feat/blob/master/python/feat.py">
+            <span class="viewcode-link">
+             [source]
+            </span>
+           </a>
+           <a class="headerlink" href="#feat.Feat.set_params" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <p>
+            Set the parameters of this estimator.
+           </p>
+           <p>
+            The method works on simple estimators as well as on nested objects
+(such as pipelines). The latter have parameters of the form
+            <code class="docutils literal notranslate">
+             <span class="pre">
+              &lt;component&gt;__&lt;parameter&gt;
+             </span>
+            </code>
+            so that it’s possible to update each
+component of a nested object.
+           </p>
+           <dl class="field-list simple">
+            <dt class="field-odd">
+             Parameters
+            </dt>
+            <dd class="field-odd">
+             <p>
+              <strong>
+               **params
+              </strong>
+              (
+              <em>
+               dict
+              </em>
+              ) – Estimator parameters.
+             </p>
+            </dd>
+            <dt class="field-even">
+             Returns
+            </dt>
+            <dd class="field-even">
+             <p>
+              <strong>
+               self
+              </strong>
+              – Estimator instance.
+             </p>
+            </dd>
+            <dt class="field-odd">
+             Return type
+            </dt>
+            <dd class="field-odd">
+             <p>
+              object
+             </p>
+            </dd>
+           </dl>
+          </dd>
+         </dl>
+         <dl class="py method">
           <dt id="feat.Feat.transform">
            <code class="sig-name descname">
             transform
@@ -2713,32 +2665,6 @@ labels y
            </p>
           </dd>
          </dl>
-         <dl class="py method">
-          <dt id="feat.Feat.update_stats">
-           <code class="sig-name descname">
-            update_stats
-           </code>
-           <span class="sig-paren">
-            (
-           </span>
-           <span class="sig-paren">
-            )
-           </span>
-           <a class="reference external" href="https://github.com/lacava/feat/blob/master/python/feat.py">
-            <span class="viewcode-link">
-             [source]
-            </span>
-           </a>
-           <a class="headerlink" href="#feat.Feat.update_stats" title="Permalink to this definition">
-            ¶
-           </a>
-          </dt>
-          <dd>
-           <p>
-            updates the statistics of the run
-           </p>
-          </dd>
-         </dl>
         </dd>
        </dl>
       </article>
@@ -2789,7 +2715,7 @@ labels y
       <a href="http://www.sphinx-doc.org/">
        Sphinx
       </a>
-      3.2.1.
+      3.3.0.
              and
       <a href="https://github.com/bashtage/sphinx-material/">
        Material for

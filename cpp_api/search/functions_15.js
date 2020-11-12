@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['zero_5fone_5floss',['zero_one_loss',['../de/dcf/namespaceFT_1_1Eval.html#ac74fb7d125fb1f2c51e20551200167ee',1,'FT::Eval']]],
-  ['zero_5fone_5floss_5flabel',['zero_one_loss_label',['../de/dcf/namespaceFT_1_1Eval.html#a6cb390934a9c1f32862dbf319eb40e5e',1,'FT::Eval']]]
+  ['validation',['validation',['../d6/d6f/classFT_1_1Eval_1_1Evaluation.html#abb32c06aa6f9e7a4f332637319f2c5f6',1,'FT::Eval::Evaluation']]],
+  ['value',['value',['../d5/de9/classnlohmann_1_1detail_1_1iteration__proxy__value.html#ab8e33bd01c285a1a80b737a1905ceb97',1,'nlohmann::detail::iteration_proxy_value::value()'],['../d1/d7c/classnlohmann_1_1detail_1_1iter__impl.html#ab447c50354c6611fa2ae0100ac17845c',1,'nlohmann::detail::iter_impl::value()'],['../de/d74/classnlohmann_1_1detail_1_1json__reverse__iterator.html#ae22803d442d483041d17239615f83b58',1,'nlohmann::detail::json_reverse_iterator::value()'],['../d9/dcc/classnlohmann_1_1basic__json.html#a11641b35219676b225d9bd15c7677659',1,'nlohmann::basic_json::value(const typename object_t::key_type &amp;key, const ValueType &amp;default_value) const'],['../d9/dcc/classnlohmann_1_1basic__json.html#adcfdefe95d5c2471a5c97e911d46ee88',1,'nlohmann::basic_json::value(const typename object_t::key_type &amp;key, const char *default_value) const'],['../d9/dcc/classnlohmann_1_1basic__json.html#a36bd6765ccd8aeeeb4e49a766ba639df',1,'nlohmann::basic_json::value(const json_pointer &amp;ptr, const ValueType &amp;default_value) const'],['../d9/dcc/classnlohmann_1_1basic__json.html#a4658a584571c4180656f5268969ed0a1',1,'nlohmann::basic_json::value(const json_pointer &amp;ptr, const char *default_value) const']]],
+  ['variance',['variance',['../d1/d5d/namespaceFT_1_1Util.html#ae9b47939fc53e06cf1d935a35483a300',1,'FT::Util::variance(const ArrayXf &amp;v, float mean)'],['../d1/d5d/namespaceFT_1_1Util.html#a98bf666640b97a3bae5c94c05532d5a8',1,'FT::Util::variance(const ArrayXf &amp;v)']]],
+  ['variation',['Variation',['../d0/d80/classFT_1_1Vary_1_1Variation.html#a083fe18122f043e07ea030540ffdd219',1,'FT::Vary::Variation']]],
+  ['vary',['vary',['../d0/d80/classFT_1_1Vary_1_1Variation.html#a6bb9fb82ea205837639c982bde9ec765',1,'FT::Vary::Variation']]],
+  ['void',['void',['../dc/df0/namespacenlohmann_1_1detail.html#a59fca69799f6b9e366710cb9043aa77d',1,'nlohmann::detail']]]
 ];

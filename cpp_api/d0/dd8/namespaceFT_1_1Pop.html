@@ -89,6 +89,7 @@ $(document).ready(function(){initNavTree('d0/dd8/namespaceFT_1_1Pop.html','../..
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">FT::Pop Namespace Reference</div>  </div>
@@ -118,6 +119,17 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a population of programs and functions for constructing them.  <a href="../../d6/d5f/structFT_1_1Pop_1_1Population.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a8e63ad15b22d0f756c10b51d2d06bb16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dd8/namespaceFT_1_1Pop.html#a8e63ad15b22d0f756c10b51d2d06bb16">NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE</a> (<a class="el" href="../../d7/d9f/structFT_1_1Pop_1_1Archive.html">Archive</a>, archive, sort_complexity)</td></tr>
+<tr class="separator:a8e63ad15b22d0f756c10b51d2d06bb16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb9288c310d54c03febd6ff0e7c45db9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dd8/namespaceFT_1_1Pop.html#adb9288c310d54c03febd6ff0e7c45db9">to_json</a> (json &amp;j, const <a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a> &amp;nv)</td></tr>
+<tr class="separator:adb9288c310d54c03febd6ff0e7c45db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2e21647f7d1aad4a5cf7b407aeb5dab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dd8/namespaceFT_1_1Pop.html#ad2e21647f7d1aad4a5cf7b407aeb5dab">from_json</a> (const json &amp;j, <a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a> &amp;nv)</td></tr>
+<tr class="separator:ad2e21647f7d1aad4a5cf7b407aeb5dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a83fe698df454af47d8f87a6d82e8a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dd8/namespaceFT_1_1Pop.html#a6a83fe698df454af47d8f87a6d82e8a2">NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE</a> (<a class="el" href="../../d6/d5f/structFT_1_1Pop_1_1Population.html">Population</a>, individuals)</td></tr>
+<tr class="separator:a6a83fe698df454af47d8f87a6d82e8a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a740d6310f660bf2851f192e556e10fe6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dd8/namespaceFT_1_1Pop.html#a740d6310f660bf2851f192e556e10fe6">last</a></td></tr>
@@ -125,7 +137,130 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>namespace containing population representations used in <a class="el" href="../../db/dff/classFT_1_1Feat.html" title="main class for the Feat learner. ">Feat</a> </p>
-</div><h2 class="groupheader">Variable Documentation</h2>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="ad2e21647f7d1aad4a5cf7b407aeb5dab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2e21647f7d1aad4a5cf7b407aeb5dab">&#9670;&nbsp;</a></span>from_json()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FT::Pop::from_json </td>
+          <td>(</td>
+          <td class="paramtype">const json &amp;&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>nv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/ded/nodevector_8cc_source.html#l00430">430</a> of file <a class="el" href="../../df/ded/nodevector_8cc_source.html">nodevector.cc</a>.</p>
+
+</div>
+</div>
+<a id="a8e63ad15b22d0f756c10b51d2d06bb16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e63ad15b22d0f756c10b51d2d06bb16">&#9670;&nbsp;</a></span>NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FT::Pop::NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d9f/structFT_1_1Pop_1_1Archive.html">Archive</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">archive&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sort_complexity&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6a83fe698df454af47d8f87a6d82e8a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a83fe698df454af47d8f87a6d82e8a2">&#9670;&nbsp;</a></span>NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FT::Pop::NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/d5f/structFT_1_1Pop_1_1Population.html">Population</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">individuals&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adb9288c310d54c03febd6ff0e7c45db9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb9288c310d54c03febd6ff0e7c45db9">&#9670;&nbsp;</a></span>to_json()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FT::Pop::to_json </td>
+          <td>(</td>
+          <td class="paramtype">json &amp;&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/daf/structFT_1_1Pop_1_1NodeVector.html">NodeVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>nv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/ded/nodevector_8cc_source.html#l00380">380</a> of file <a class="el" href="../../df/ded/nodevector_8cc_source.html">nodevector.cc</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
 <a id="a740d6310f660bf2851f192e556e10fe6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a740d6310f660bf2851f192e556e10fe6">&#9670;&nbsp;</a></span>last</h2>
 
@@ -138,7 +273,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d3d/population_8cc_source.html#l00013">13</a> of file <a class="el" href="../../de/d3d/population_8cc_source.html">population.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d3d/population_8cc_source.html#l00011">11</a> of file <a class="el" href="../../de/d3d/population_8cc_source.html">population.cc</a>.</p>
 
 </div>
 </div>

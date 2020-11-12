@@ -150,6 +150,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad512946ad822849a60f5ec0e5f29241d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09a49debcceb6d5ef1ea239f20487feb"><td class="memItemLeft" align="right" valign="top">vector&lt; SGVector&lt; float64_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d62/classshogun_1_1CMyMulticlassLibLinear.html#a09a49debcceb6d5ef1ea239f20487feb">get_w</a> () const</td></tr>
 <tr class="separator:a09a49debcceb6d5ef1ea239f20487feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab193fd30a19e6832c9406b56f48858a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d62/classshogun_1_1CMyMulticlassLibLinear.html#ab193fd30a19e6832c9406b56f48858a1">set_w</a> (vector&lt; Eigen::VectorXd &gt; wnew)</td></tr>
+<tr class="separator:ab193fd30a19e6832c9406b56f48858a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -182,7 +184,7 @@ Private Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>multiclass LibLinear wrapper. Uses Crammer-Singer formulation and gradient descent optimization algorithm implemented in the LibLinear library. Regularized bias support is added using stacking bias 'feature' to hyperplanes normal vectors. </p>
-<p>In case of small changes of C or particularly epsilon this class provides ability to save whole liblinear training state (i.e. W vector, gradients, etc) and re-use on next train() calls. This capability could be enabled using <a class="el" href="../../df/d62/classshogun_1_1CMyMulticlassLibLinear.html#afde39780a36c21c77564c0646f0eb58d">set_save_train_state()</a> method. Train state can be forced to clear using <a class="el" href="../../df/d62/classshogun_1_1CMyMulticlassLibLinear.html#ad55392a06667d448248e62aaed8c9343">reset_train_state()</a> method. </p>
+<p>In case of small changes of C or particularly epsilon this class provides ability to save whole liblinear training state (i.e. W vector, gradients, etc) and re-use on next <a class="el" href="../../dc/dd9/namespaceFT_1_1Pop_1_1Op.html#a8e619ab03d29b7223c85a828e9168c87">train()</a> calls. This capability could be enabled using <a class="el" href="../../df/d62/classshogun_1_1CMyMulticlassLibLinear.html#afde39780a36c21c77564c0646f0eb58d">set_save_train_state()</a> method. Train state can be forced to clear using <a class="el" href="../../df/d62/classshogun_1_1CMyMulticlassLibLinear.html#ad55392a06667d448248e62aaed8c9343">reset_train_state()</a> method. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html#l00044">44</a> of file <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html">MyMulticlassLibLinear.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -501,7 +503,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html#l00253">253</a> of file <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html">MyMulticlassLibLinear.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html#l00266">266</a> of file <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html">MyMulticlassLibLinear.cc</a>.</p>
 
 </div>
 </div>
@@ -547,7 +549,7 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>obtain regularizer (w0) matrix </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html#l00248">248</a> of file <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html">MyMulticlassLibLinear.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html#l00261">261</a> of file <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html">MyMulticlassLibLinear.cc</a>.</p>
 
 </div>
 </div>
@@ -574,7 +576,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html#l00263">263</a> of file <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html">MyMulticlassLibLinear.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html#l00276">276</a> of file <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html">MyMulticlassLibLinear.cc</a>.</p>
 
 </div>
 </div>
@@ -768,6 +770,26 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ab193fd30a19e6832c9406b56f48858a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab193fd30a19e6832c9406b56f48858a1">&#9670;&nbsp;</a></span>set_w()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void shogun::CMyMulticlassLibLinear::set_w </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; Eigen::VectorXd &gt;&#160;</td>
+          <td class="paramname"><em>wnew</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html#l00183">183</a> of file <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html">MyMulticlassLibLinear.cc</a>.</p>
+
+</div>
+</div>
 <a id="abd0a2b4b2110f1da1d34b535088397a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abd0a2b4b2110f1da1d34b535088397a5">&#9670;&nbsp;</a></span>train_machine()</h2>
 
@@ -793,7 +815,7 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>train machine </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html#l00183">183</a> of file <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html">MyMulticlassLibLinear.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html#l00196">196</a> of file <a class="el" href="../../dc/d6b/MyMulticlassLibLinear_8cc_source.html">MyMulticlassLibLinear.cc</a>.</p>
 
 </div>
 </div>
@@ -819,7 +841,7 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>regularization constant for each machine </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html#l00146">146</a> of file <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html">MyMulticlassLibLinear.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html#l00147">147</a> of file <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html">MyMulticlassLibLinear.h</a>.</p>
 
 </div>
 </div>
@@ -844,7 +866,7 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>tolerance </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html#l00149">149</a> of file <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html">MyMulticlassLibLinear.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html#l00150">150</a> of file <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html">MyMulticlassLibLinear.h</a>.</p>
 
 </div>
 </div>
@@ -869,7 +891,7 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>max number of iterations </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html#l00152">152</a> of file <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html">MyMulticlassLibLinear.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html#l00153">153</a> of file <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html">MyMulticlassLibLinear.h</a>.</p>
 
 </div>
 </div>
@@ -894,7 +916,7 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>save train state </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html#l00158">158</a> of file <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html">MyMulticlassLibLinear.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html#l00159">159</a> of file <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html">MyMulticlassLibLinear.h</a>.</p>
 
 </div>
 </div>
@@ -919,7 +941,7 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>solver state </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html#l00161">161</a> of file <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html">MyMulticlassLibLinear.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html#l00162">162</a> of file <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html">MyMulticlassLibLinear.h</a>.</p>
 
 </div>
 </div>
@@ -944,7 +966,7 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>use bias </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html#l00155">155</a> of file <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html">MyMulticlassLibLinear.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html#l00156">156</a> of file <a class="el" href="../../d0/d5c/MyMulticlassLibLinear_8h_source.html">MyMulticlassLibLinear.h</a>.</p>
 
 </div>
 </div>

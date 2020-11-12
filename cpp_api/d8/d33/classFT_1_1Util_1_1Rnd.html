@@ -110,8 +110,10 @@ Collaboration diagram for FT::Util::Rnd:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a396a6b206ad1e8a20e7f4332f3b9b36e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d33/classFT_1_1Util_1_1Rnd.html#a396a6b206ad1e8a20e7f4332f3b9b36e">set_seed</a> (int seed)</td></tr>
-<tr class="separator:a396a6b206ad1e8a20e7f4332f3b9b36e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69926c3991bae46190211499494107be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d33/classFT_1_1Util_1_1Rnd.html#a69926c3991bae46190211499494107be">set_seed</a> (int new_seed)</td></tr>
+<tr class="separator:a69926c3991bae46190211499494107be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6264b80c62caa1a28a882fe1d9329ae8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d33/classFT_1_1Util_1_1Rnd.html#a6264b80c62caa1a28a882fe1d9329ae8">get_seed</a> ()</td></tr>
+<tr class="separator:a6264b80c62caa1a28a882fe1d9329ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3734fef4a8f2f850bc248d1cb73e05c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d33/classFT_1_1Util_1_1Rnd.html#a3734fef4a8f2f850bc248d1cb73e05c3">rnd_int</a> (int lowerLimit, int upperLimit)</td></tr>
 <tr class="separator:a3734fef4a8f2f850bc248d1cb73e05c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff9e0595dcc9dd360fb7688f5fe3b3d2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d33/classFT_1_1Util_1_1Rnd.html#aff9e0595dcc9dd360fb7688f5fe3b3d2">rnd_flt</a> (float min=0.0, float max=1.0)</td></tr>
@@ -155,6 +157,8 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a69b042618271495c3fbb8216ff672582"><td class="memItemLeft" align="right" valign="top">vector&lt; std::mt19937 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d33/classFT_1_1Util_1_1Rnd.html#a69b042618271495c3fbb8216ff672582">rg</a></td></tr>
 <tr class="separator:a69b042618271495c3fbb8216ff672582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53fea48a4b21184d876a3f37129908e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d33/classFT_1_1Util_1_1Rnd.html#a53fea48a4b21184d876a3f37129908e4">seed</a></td></tr>
+<tr class="separator:a53fea48a4b21184d876a3f37129908e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -217,7 +221,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d3a/rnd_8cc_source.html#l00171">171</a> of file <a class="el" href="../../dd/d3a/rnd_8cc_source.html">rnd.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d3a/rnd_8cc_source.html#l00182">182</a> of file <a class="el" href="../../dd/d3a/rnd_8cc_source.html">rnd.cc</a>.</p>
 
 </div>
 </div>
@@ -264,7 +268,34 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d3a/rnd_8cc_source.html#l00145">145</a> of file <a class="el" href="../../dd/d3a/rnd_8cc_source.html">rnd.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d3a/rnd_8cc_source.html#l00156">156</a> of file <a class="el" href="../../dd/d3a/rnd_8cc_source.html">rnd.cc</a>.</p>
+
+</div>
+</div>
+<a id="a6264b80c62caa1a28a882fe1d9329ae8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6264b80c62caa1a28a882fe1d9329ae8">&#9670;&nbsp;</a></span>get_seed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FT::Util::Rnd::get_seed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/da9/rnd_8h_source.html#l00040">40</a> of file <a class="el" href="../../d2/da9/rnd_8h_source.html">rnd.h</a>.</p>
 
 </div>
 </div>
@@ -311,7 +342,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d3a/rnd_8cc_source.html#l00084">84</a> of file <a class="el" href="../../dd/d3a/rnd_8cc_source.html">rnd.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d3a/rnd_8cc_source.html#l00095">95</a> of file <a class="el" href="../../dd/d3a/rnd_8cc_source.html">rnd.cc</a>.</p>
 
 </div>
 </div>
@@ -330,7 +361,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d3a/rnd_8cc_source.html#l00089">89</a> of file <a class="el" href="../../dd/d3a/rnd_8cc_source.html">rnd.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d3a/rnd_8cc_source.html#l00100">100</a> of file <a class="el" href="../../dd/d3a/rnd_8cc_source.html">rnd.cc</a>.</p>
 
 </div>
 </div>
@@ -361,7 +392,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>return a random element of a vector.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/da9/rnd_8h_source.html#l00071">71</a> of file <a class="el" href="../../d2/da9/rnd_8h_source.html">rnd.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/da9/rnd_8h_source.html#l00073">73</a> of file <a class="el" href="../../d2/da9/rnd_8h_source.html">rnd.h</a>.</p>
 
 </div>
 </div>
@@ -402,7 +433,7 @@ template&lt;typename T , typename D &gt; </div>
 </div><div class="memdoc">
 <p>return a weighted random element of a vector</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/da9/rnd_8h_source.html#l00083">83</a> of file <a class="el" href="../../d2/da9/rnd_8h_source.html">rnd.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/da9/rnd_8h_source.html#l00085">85</a> of file <a class="el" href="../../d2/da9/rnd_8h_source.html">rnd.h</a>.</p>
 
 </div>
 </div>
@@ -432,7 +463,7 @@ template&lt;typename T , typename D &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d3a/rnd_8cc_source.html#l00078">78</a> of file <a class="el" href="../../dd/d3a/rnd_8cc_source.html">rnd.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d3a/rnd_8cc_source.html#l00089">89</a> of file <a class="el" href="../../dd/d3a/rnd_8cc_source.html">rnd.cc</a>.</p>
 
 </div>
 </div>
@@ -462,7 +493,7 @@ template&lt;typename T , typename D &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d3a/rnd_8cc_source.html#l00072">72</a> of file <a class="el" href="../../dd/d3a/rnd_8cc_source.html">rnd.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d3a/rnd_8cc_source.html#l00083">83</a> of file <a class="el" href="../../dd/d3a/rnd_8cc_source.html">rnd.cc</a>.</p>
 
 </div>
 </div>
@@ -492,7 +523,7 @@ template&lt;typename T , typename D &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d3a/rnd_8cc_source.html#l00066">66</a> of file <a class="el" href="../../dd/d3a/rnd_8cc_source.html">rnd.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d3a/rnd_8cc_source.html#l00077">77</a> of file <a class="el" href="../../dd/d3a/rnd_8cc_source.html">rnd.cc</a>.</p>
 
 </div>
 </div>
@@ -532,12 +563,12 @@ template&lt;typename Iter &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/da9/rnd_8h_source.html#l00062">62</a> of file <a class="el" href="../../d2/da9/rnd_8h_source.html">rnd.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/da9/rnd_8h_source.html#l00064">64</a> of file <a class="el" href="../../d2/da9/rnd_8h_source.html">rnd.h</a>.</p>
 
 </div>
 </div>
-<a id="a396a6b206ad1e8a20e7f4332f3b9b36e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a396a6b206ad1e8a20e7f4332f3b9b36e">&#9670;&nbsp;</a></span>set_seed()</h2>
+<a id="a69926c3991bae46190211499494107be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69926c3991bae46190211499494107be">&#9670;&nbsp;</a></span>set_seed()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -546,7 +577,7 @@ template&lt;typename Iter &gt; </div>
           <td class="memname">void FT::Util::Rnd::set_seed </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>seed</em></td><td>)</td>
+          <td class="paramname"><em>new_seed</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -593,7 +624,7 @@ template&lt;class RandomAccessIterator &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/da9/rnd_8h_source.html#l00051">51</a> of file <a class="el" href="../../d2/da9/rnd_8h_source.html">rnd.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/da9/rnd_8h_source.html#l00053">53</a> of file <a class="el" href="../../d2/da9/rnd_8h_source.html">rnd.h</a>.</p>
 
 </div>
 </div>
@@ -618,7 +649,7 @@ template&lt;class RandomAccessIterator &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/da9/rnd_8h_source.html#l00127">127</a> of file <a class="el" href="../../d2/da9/rnd_8h_source.html">rnd.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/da9/rnd_8h_source.html#l00129">129</a> of file <a class="el" href="../../d2/da9/rnd_8h_source.html">rnd.h</a>.</p>
 
 </div>
 </div>
@@ -642,7 +673,31 @@ template&lt;class RandomAccessIterator &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/da9/rnd_8h_source.html#l00125">125</a> of file <a class="el" href="../../d2/da9/rnd_8h_source.html">rnd.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/da9/rnd_8h_source.html#l00127">127</a> of file <a class="el" href="../../d2/da9/rnd_8h_source.html">rnd.h</a>.</p>
+
+</div>
+</div>
+<a id="a53fea48a4b21184d876a3f37129908e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53fea48a4b21184d876a3f37129908e4">&#9670;&nbsp;</a></span>seed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FT::Util::Rnd::seed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/da9/rnd_8h_source.html#l00131">131</a> of file <a class="el" href="../../d2/da9/rnd_8h_source.html">rnd.h</a>.</p>
 
 </div>
 </div>
