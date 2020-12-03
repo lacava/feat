@@ -31,8 +31,9 @@ var utils_8h =
     [ "to_string", "d5/d60/utils_8h.html#aaed15cdd94a818c76447e1b86760030b", null ],
     [ "trim", "d5/d60/utils_8h.html#a4c54a24d5a8475c9c5d6087e68feaca9", null ],
     [ "unique", "d5/d60/utils_8h.html#adceed0a578007465db70834c5fead0b9", null ],
-    [ "unique", "d5/d60/utils_8h.html#a0ec954e3fbe313c6b4ba2246697970f9", null ],
-    [ "unique", "d5/d60/utils_8h.html#a11a52c7cf1aba89757b46158a2dabb6e", null ],
+    [ "unique", "d5/d60/utils_8h.html#ae6fe86e28c5a3342c1d55de55d8c8002", null ],
+    [ "unique", "d5/d60/utils_8h.html#ac99d0094c92c141dea6d2ab3608f5c80", null ],
+    [ "unique", "d5/d60/utils_8h.html#a8c90affc3b2fcd54048efb1a4e9e4201", null ],
     [ "variance", "d5/d60/utils_8h.html#ae9b47939fc53e06cf1d935a35483a300", null ],
     [ "variance", "d5/d60/utils_8h.html#a98bf666640b97a3bae5c94c05532d5a8", null ]
 ];
