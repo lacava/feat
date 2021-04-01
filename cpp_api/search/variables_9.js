@@ -6,7 +6,7 @@ var searchData=
   ['ignore_5fcomments',['ignore_comments',['../d8/d22/classnlohmann_1_1detail_1_1lexer.html#a11528814930243028ac5b8901f4a17d7',1,'nlohmann::detail::lexer']]],
   ['indent_5fchar',['indent_char',['../d4/d0a/classnlohmann_1_1detail_1_1serializer.html#a9a55e6b028d09676fe35aefa0c72ea5b',1,'nlohmann::detail::serializer']]],
   ['indent_5fstring',['indent_string',['../d4/d0a/classnlohmann_1_1detail_1_1serializer.html#ae9268a10d88a5526e32735a55a132fc6',1,'nlohmann::detail::serializer']]],
-  ['individuals',['individuals',['../d6/d5f/structFT_1_1Pop_1_1Population.html#af8acd2b85d5839c4058dd356a5b66ec6',1,'FT::Pop::Population']]],
+  ['individuals',['individuals',['../d7/d9f/structFT_1_1Pop_1_1Archive.html#afa8ce421c200861978bf0c5687452703',1,'FT::Pop::Archive::individuals()'],['../d6/d5f/structFT_1_1Pop_1_1Population.html#af8acd2b85d5839c4058dd356a5b66ec6',1,'FT::Pop::Population::individuals()']]],
   ['instance',['instance',['../d9/da2/classFT_1_1Util_1_1Logger.html#a8211cf95a8015d7b53c2ddef6e2db7ce',1,'FT::Util::Logger::instance()'],['../d8/d33/classFT_1_1Util_1_1Rnd.html#a7656bedfc4aa95f478cabe545266c11a',1,'FT::Util::Rnd::instance()']]],
   ['is',['is',['../db/df0/classnlohmann_1_1detail_1_1input__stream__adapter.html#a55893bf84cb17d877464984942df9632',1,'nlohmann::detail::input_stream_adapter']]],
   ['is_5flittle_5fendian',['is_little_endian',['../d6/d30/classnlohmann_1_1detail_1_1binary__reader.html#ad615eba561e265165a80c95061af75b0',1,'nlohmann::detail::binary_reader::is_little_endian()'],['../df/d1a/classnlohmann_1_1detail_1_1binary__writer.html#a048887c907afe39759b777e8c888414c',1,'nlohmann::detail::binary_writer::is_little_endian()']]],

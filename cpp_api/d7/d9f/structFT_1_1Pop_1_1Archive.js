@@ -8,7 +8,7 @@ var structFT_1_1Pop_1_1Archive =
     [ "sortComplexity", "d7/d9f/structFT_1_1Pop_1_1Archive.html#aa7f979e377803df70b8b2bf4f1b25a31", null ],
     [ "sortObj1", "d7/d9f/structFT_1_1Pop_1_1Archive.html#a17f48562b876c90421c0e885314add39", null ],
     [ "update", "d7/d9f/structFT_1_1Pop_1_1Archive.html#abdbf2b7e42014345a9aedb648466a3a2", null ],
-    [ "archive", "d7/d9f/structFT_1_1Pop_1_1Archive.html#ace5bafe90aa69117426942cf49ae3c70", null ],
+    [ "individuals", "d7/d9f/structFT_1_1Pop_1_1Archive.html#afa8ce421c200861978bf0c5687452703", null ],
     [ "selector", "d7/d9f/structFT_1_1Pop_1_1Archive.html#af70e20576fe15ad2b21a0c06e1a5640f", null ],
     [ "sort_complexity", "d7/d9f/structFT_1_1Pop_1_1Archive.html#ac34c4f0cf3530a49487a013252be884f", null ]
 ];

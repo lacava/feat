@@ -6,17 +6,17 @@
 <area shape="rect" id="node18" href="$de/d2c/structFT_1_1Parameters.html" title="holds the hyperparameters for Feat. " alt="" coords="1550,867,1669,893"/>
 <area shape="rect" id="node6" title="STL class. " alt="" coords="157,889,336,930"/>
 <area shape="rect" id="node17" href="$dd/d51/structFT_1_1Util_1_1Normalizer.html" title="normalizes a matrix to unit variance, 0 mean centered. " alt="" coords="785,155,931,181"/>
-<area shape="rect" id="node9" title="STL class. " alt="" coords="437,1141,523,1168"/>
+<area shape="rect" id="node9" title="STL class. " alt="" coords="437,1139,523,1165"/>
 <area shape="rect" id="node22" href="$d2/dfb/classFT_1_1Pop_1_1Op_1_1Node.html" title="Represents nodes in a program. " alt="" coords="790,1221,926,1248"/>
 <area shape="rect" id="node27" href="$de/d6e/structFT_1_1Sel_1_1Selection.html" title="interfaces with selection operators. " alt="" coords="792,1272,924,1299"/>
-<area shape="rect" id="node34" href="$d8/d53/structFT_1_1Sel_1_1SelectionOperator.html" title="base class for selection operators. " alt="" coords="763,793,953,820"/>
-<area shape="rect" id="node37" href="$d1/d91/classFT_1_1Eval_1_1Scorer.html" title="scoring class for Feat " alt="" coords="1227,1397,1349,1424"/>
-<area shape="rect" id="node10" title="STL class. " alt="" coords="177,1134,316,1175"/>
+<area shape="rect" id="node34" href="$d8/d53/structFT_1_1Sel_1_1SelectionOperator.html" title="base class for selection operators. " alt="" coords="763,777,953,804"/>
+<area shape="rect" id="node37" href="$d1/d91/classFT_1_1Eval_1_1Scorer.html" title="scoring class for Feat " alt="" coords="1227,1404,1349,1431"/>
+<area shape="rect" id="node10" title="STL class. " alt="" coords="177,1131,316,1173"/>
 <area shape="rect" id="node29" href="$d8/dd3/structFT_1_1Util_1_1Log__Stats.html" title="FT::Util::Log_Stats" alt="" coords="789,205,927,232"/>
 <area shape="rect" id="node19" href="$d0/d29/structFT_1_1Parameters_1_1HC.html" title="FT::Parameters::HC" alt="" coords="1215,765,1361,792"/>
 <area shape="rect" id="node24" href="$d4/d04/structFT_1_1Parameters_1_1BP.html" title="FT::Parameters::BP" alt="" coords="1217,816,1359,843"/>
-<area shape="rect" id="node31" href="$db/db7/classFT_1_1Util_1_1Timer.html" title="class for timing things. " alt="" coords="1553,1437,1666,1464"/>
+<area shape="rect" id="node31" href="$db/db7/classFT_1_1Util_1_1Timer.html" title="class for timing things. " alt="" coords="1553,1444,1666,1471"/>
 <area shape="rect" id="node33" href="$dd/df1/structFT_1_1Sel_1_1NSGA2.html" title="FT::Sel::NSGA2" alt="" coords="1229,520,1347,547"/>
-<area shape="rect" id="node36" href="$d6/d6f/classFT_1_1Eval_1_1Evaluation.html" title="evaluation mixin class for Feat " alt="" coords="1535,1387,1684,1413"/>
-<area shape="rect" id="node39" href="$d0/d80/classFT_1_1Vary_1_1Variation.html" title="FT::Vary::Variation" alt="" coords="1540,1488,1679,1515"/>
+<area shape="rect" id="node36" href="$d6/d6f/classFT_1_1Eval_1_1Evaluation.html" title="evaluation mixin class for Feat " alt="" coords="1535,1393,1684,1420"/>
+<area shape="rect" id="node39" href="$d0/d80/classFT_1_1Vary_1_1Variation.html" title="FT::Vary::Variation" alt="" coords="1540,1495,1679,1521"/>
 </map>

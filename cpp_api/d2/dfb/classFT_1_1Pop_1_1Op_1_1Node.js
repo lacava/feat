@@ -18,5 +18,6 @@ var classFT_1_1Pop_1_1Op_1_1Node =
     [ "complexity", "d2/dfb/classFT_1_1Pop_1_1Op_1_1Node.html#ab58463d2be2261881c2912c517a0be8c", null ],
     [ "name", "d2/dfb/classFT_1_1Pop_1_1Op_1_1Node.html#a0c21c8c852e7cff9ced4899a6922ed2c", null ],
     [ "otype", "d2/dfb/classFT_1_1Pop_1_1Op_1_1Node.html#a986f13e2324eb96693870784700a5237", null ],
+    [ "variable_name", "d2/dfb/classFT_1_1Pop_1_1Op_1_1Node.html#a8e228907c0f2e5191c995631c87e52f0", null ],
     [ "visits", "d2/dfb/classFT_1_1Pop_1_1Op_1_1Node.html#a564a9a1db3f4ad64e706e3c97ac61dfb", null ]
 ];

@@ -1,6 +1,5 @@
 var NAVTREEINDEX6 =
 {
-"d8/d06/classFT_1_1Opt_1_1HillClimb.html#a41cc6f7c810ad4e8f34b8590d9c28006":[2,0,0,3,2,2],
 "d8/d06/classFT_1_1Opt_1_1HillClimb.html#a45217d1e8a2921f1fc219ec931df9324":[2,0,0,3,2,1],
 "d8/d06/classFT_1_1Opt_1_1HillClimb.html#a81ccf05449c6eaabbc8b100a1f6ae74f":[2,0,0,3,2,6],
 "d8/d06/classFT_1_1Opt_1_1HillClimb.html#aeca988a19032d71787337e2179751827":[2,0,0,3,2,0],
@@ -202,7 +201,7 @@ var NAVTREEINDEX6 =
 "d9/d21/n__max_8cc.html":[3,0,100],
 "d9/d21/n__max_8cc_source.html":[3,0,100],
 "d9/d28/archive_8h.html":[3,0,1],
-"d9/d28/archive_8h.html#a8e63ad15b22d0f756c10b51d2d06bb16":[3,0,1,1],
+"d9/d28/archive_8h.html#ae3e15b27ba43c78ddddaa015f29e6c11":[3,0,1,1],
 "d9/d28/archive_8h_source.html":[3,0,1],
 "d9/d28/n__min_8h.html":[3,0,107],
 "d9/d28/n__min_8h_source.html":[3,0,107],
@@ -249,5 +248,6 @@ var NAVTREEINDEX6 =
 "d9/dcc/classnlohmann_1_1basic__json.html#a0181d03c6314bedcbad2e92d3676223c":[2,0,1,2,159],
 "d9/dcc/classnlohmann_1_1basic__json.html#a0273d074462644e5d5a7ff313ad0d742":[2,0,1,2,38],
 "d9/dcc/classnlohmann_1_1basic__json.html#a02c9bc4d0f33b7dec20b2798301d6971":[2,0,1,2,82],
-"d9/dcc/classnlohmann_1_1basic__json.html#a044298d189bdf7e4b36492de9811ddd6":[2,0,1,2,85]
+"d9/dcc/classnlohmann_1_1basic__json.html#a044298d189bdf7e4b36492de9811ddd6":[2,0,1,2,85],
+"d9/dcc/classnlohmann_1_1basic__json.html#a04d29fe09b6d9aa2cfa762cb4367e9f9":[2,0,1,2,51]
 };

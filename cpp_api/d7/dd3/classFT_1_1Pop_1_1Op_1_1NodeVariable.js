@@ -6,6 +6,5 @@ var classFT_1_1Pop_1_1Op_1_1NodeVariable =
     [ "eval_eqn", "d7/dd3/classFT_1_1Pop_1_1Op_1_1NodeVariable.html#acc48320c6daeb3ab1cc2c2ffe5a38dd4", null ],
     [ "evaluate", "d7/dd3/classFT_1_1Pop_1_1Op_1_1NodeVariable.html#a94a6433d43be6787a8abb1cdeafc3182", null ],
     [ "rnd_clone_impl", "d7/dd3/classFT_1_1Pop_1_1Op_1_1NodeVariable.html#ab75fa1c1012415b767e973fdfeb625d1", null ],
-    [ "loc", "d7/dd3/classFT_1_1Pop_1_1Op_1_1NodeVariable.html#a20e3054a1422618ecc55b02a4cf26801", null ],
-    [ "variable_name", "d7/dd3/classFT_1_1Pop_1_1Op_1_1NodeVariable.html#adc804b31dd2ac867047a8206e50a377d", null ]
+    [ "loc", "d7/dd3/classFT_1_1Pop_1_1Op_1_1NodeVariable.html#a20e3054a1422618ecc55b02a4cf26801", null ]
 ];
