@@ -118,7 +118,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af4c5a48cf0b2ad2c5279fdda1214fcf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae56fae2536d0a660915c06019737fb7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d4e/classshogun_1_1CMulticlassLogisticRegression.html#ae56fae2536d0a660915c06019737fb7d">CMulticlassLogisticRegression</a> (float64_t z, CDotFeatures *feats, CLabels *labs)</td></tr>
 <tr class="separator:ae56fae2536d0a660915c06019737fb7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a750c1e9b66b9ea1fc2ed1b83a9eac998"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d4e/classshogun_1_1CMulticlassLogisticRegression.html#a750c1e9b66b9ea1fc2ed1b83a9eac998">~CMulticlassLogisticRegression</a> ()</td></tr>
+<tr class="memitem:a750c1e9b66b9ea1fc2ed1b83a9eac998"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d4e/classshogun_1_1CMulticlassLogisticRegression.html#a750c1e9b66b9ea1fc2ed1b83a9eac998">~CMulticlassLogisticRegression</a> ()</td></tr>
 <tr class="separator:a750c1e9b66b9ea1fc2ed1b83a9eac998"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16a86979d10bb32a22e983ff4629a819"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d4e/classshogun_1_1CMulticlassLogisticRegression.html#a16a86979d10bb32a22e983ff4629a819">get_name</a> () const</td></tr>
 <tr class="separator:a16a86979d10bb32a22e983ff4629a819"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,6 +138,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac41f5dfcf0368be7dc2e1e092457dbb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45665741a3ef8dc2f49867957b299239"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d4e/classshogun_1_1CMulticlassLogisticRegression.html#a45665741a3ef8dc2f49867957b299239">set_w</a> (vector&lt; Eigen::VectorXd &gt; &amp;wnew)</td></tr>
 <tr class="separator:a45665741a3ef8dc2f49867957b299239"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96510069eb68de949a3ba636cfd33ab2"><td class="memItemLeft" align="right" valign="top">vector&lt; float64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d4e/classshogun_1_1CMulticlassLogisticRegression.html#a96510069eb68de949a3ba636cfd33ab2">get_bias</a> ()</td></tr>
+<tr class="separator:a96510069eb68de949a3ba636cfd33ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -163,7 +165,7 @@ Private Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>multiclass logistic regression </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dcc/MulticlassLogisticRegression_8h_source.html#l00034">34</a> of file <a class="el" href="../../d4/dcc/MulticlassLogisticRegression_8h_source.html">MulticlassLogisticRegression.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dcc/MulticlassLogisticRegression_8h_source.html#l00035">35</a> of file <a class="el" href="../../d4/dcc/MulticlassLogisticRegression_8h_source.html">MulticlassLogisticRegression.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af4c5a48cf0b2ad2c5279fdda1214fcf4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af4c5a48cf0b2ad2c5279fdda1214fcf4">&#9670;&nbsp;</a></span>CMulticlassLogisticRegression() <span class="overload">[1/2]</span></h2>
@@ -234,9 +236,6 @@ Private Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">shogun::CMulticlassLogisticRegression::~CMulticlassLogisticRegression </td>
@@ -245,19 +244,35 @@ Private Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>destructor </p>
+<p>machine </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d90/MulticlassLogisticRegression_8cc_source.html#l00075">75</a> of file <a class="el" href="../../d6/d90/MulticlassLogisticRegression_8cc_source.html">MulticlassLogisticRegression.cc</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a96510069eb68de949a3ba636cfd33ab2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96510069eb68de949a3ba636cfd33ab2">&#9670;&nbsp;</a></span>get_bias()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; float64_t &gt; shogun::CMulticlassLogisticRegression::get_bias </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>get biases </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d90/MulticlassLogisticRegression_8cc_source.html#l00129">129</a> of file <a class="el" href="../../d6/d90/MulticlassLogisticRegression_8cc_source.html">MulticlassLogisticRegression.cc</a>.</p>
+
+</div>
+</div>
 <a id="a9559b42e2caa4e2200e227e2b35c94f5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9559b42e2caa4e2200e227e2b35c94f5">&#9670;&nbsp;</a></span>get_epsilon()</h2>
 
@@ -356,8 +371,9 @@ Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>get weights </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d90/MulticlassLogisticRegression_8cc_source.html#l00080">80</a> of file <a class="el" href="../../d6/d90/MulticlassLogisticRegression_8cc_source.html">MulticlassLogisticRegression.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d90/MulticlassLogisticRegression_8cc_source.html#l00113">113</a> of file <a class="el" href="../../d6/d90/MulticlassLogisticRegression_8cc_source.html">MulticlassLogisticRegression.cc</a>.</p>
 
 </div>
 </div>
@@ -513,7 +529,7 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d90/MulticlassLogisticRegression_8cc_source.html#l00095">95</a> of file <a class="el" href="../../d6/d90/MulticlassLogisticRegression_8cc_source.html">MulticlassLogisticRegression.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d90/MulticlassLogisticRegression_8cc_source.html#l00145">145</a> of file <a class="el" href="../../d6/d90/MulticlassLogisticRegression_8cc_source.html">MulticlassLogisticRegression.cc</a>.</p>
 
 </div>
 </div>
@@ -568,7 +584,7 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>train machine </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d90/MulticlassLogisticRegression_8cc_source.html#l00108">108</a> of file <a class="el" href="../../d6/d90/MulticlassLogisticRegression_8cc_source.html">MulticlassLogisticRegression.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d90/MulticlassLogisticRegression_8cc_source.html#l00159">159</a> of file <a class="el" href="../../d6/d90/MulticlassLogisticRegression_8cc_source.html">MulticlassLogisticRegression.cc</a>.</p>
 
 </div>
 </div>
@@ -594,7 +610,7 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>tolerance </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dcc/MulticlassLogisticRegression_8h_source.html#l00108">108</a> of file <a class="el" href="../../d4/dcc/MulticlassLogisticRegression_8h_source.html">MulticlassLogisticRegression.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dcc/MulticlassLogisticRegression_8h_source.html#l00113">113</a> of file <a class="el" href="../../d4/dcc/MulticlassLogisticRegression_8h_source.html">MulticlassLogisticRegression.h</a>.</p>
 
 </div>
 </div>
@@ -619,7 +635,7 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>max number of iterations </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dcc/MulticlassLogisticRegression_8h_source.html#l00111">111</a> of file <a class="el" href="../../d4/dcc/MulticlassLogisticRegression_8h_source.html">MulticlassLogisticRegression.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dcc/MulticlassLogisticRegression_8h_source.html#l00116">116</a> of file <a class="el" href="../../d4/dcc/MulticlassLogisticRegression_8h_source.html">MulticlassLogisticRegression.h</a>.</p>
 
 </div>
 </div>
@@ -644,7 +660,7 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>regularization constant for each machine </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dcc/MulticlassLogisticRegression_8h_source.html#l00105">105</a> of file <a class="el" href="../../d4/dcc/MulticlassLogisticRegression_8h_source.html">MulticlassLogisticRegression.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dcc/MulticlassLogisticRegression_8h_source.html#l00110">110</a> of file <a class="el" href="../../d4/dcc/MulticlassLogisticRegression_8h_source.html">MulticlassLogisticRegression.h</a>.</p>
 
 </div>
 </div>

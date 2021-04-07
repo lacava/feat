@@ -21,5 +21,6 @@ var searchData=
   ['multi_5flog_5floss',['multi_log_loss',['../de/dcf/namespaceFT_1_1Eval.html#a0b762274b92d8a68c2ceccd11b7ff947',1,'FT::Eval::multi_log_loss(const VectorXf &amp;y, const ArrayXXf &amp;confidences, const vector&lt; float &gt; &amp;class_weights)'],['../de/dcf/namespaceFT_1_1Eval.html#a0073249d32fa64d710f82ace9b9e8f64',1,'FT::Eval::multi_log_loss(const VectorXf &amp;y, shared_ptr&lt; CLabels &gt; &amp;labels, const vector&lt; float &gt; &amp;class_weights)']]],
   ['multi_5flog_5floss_5flabel',['multi_log_loss_label',['../de/dcf/namespaceFT_1_1Eval.html#a96eb1d23c1c1dedf68bce9e5e7798245',1,'FT::Eval']]],
   ['mutate',['mutate',['../d0/d80/classFT_1_1Vary_1_1Variation.html#a7893bb152daf4877580daa3ae15ffbd4',1,'FT::Vary::Variation']]],
+  ['my_5fhandler',['my_handler',['../d1/d5d/namespaceFT_1_1Util.html#a505d319be2d1321d26b3d093f502b30a',1,'FT::Util']]],
   ['mycartreenodedata',['MyCARTreeNodeData',['../df/d48/structshogun_1_1MyCARTreeNodeData.html#a4109bab773c5d688922143ec12b20ad7',1,'shogun::MyCARTreeNodeData']]]
 ];

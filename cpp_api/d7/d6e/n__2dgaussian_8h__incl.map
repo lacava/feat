@@ -1,11 +1,11 @@
 <map id="n_2dgaussian.h" name="n_2dgaussian.h">
-<area shape="rect" id="node3" href="$d4/d6c/n__Dx_8h.html" title="../n_Dx.h" alt="" coords="2586,80,2665,107"/>
-<area shape="rect" id="node4" href="$d1/d77/node_8h.html" title="node.h" alt="" coords="943,155,1009,181"/>
-<area shape="rect" id="node10" href="$d8/dc0/init_8h.html" title="../../init.h" alt="" coords="1118,379,1197,405"/>
-<area shape="rect" id="node40" href="$db/d3b/state_8h.html" title="../../dat/state.h" alt="" coords="787,379,903,405"/>
-<area shape="rect" id="node41" href="$d2/dbd/data_8h.html" title="../../dat/data.h" alt="" coords="127,229,239,256"/>
+<area shape="rect" id="node3" href="$d4/d6c/n__Dx_8h.html" title="../n_Dx.h" alt="" coords="2381,80,2459,107"/>
+<area shape="rect" id="node4" href="$d1/d77/node_8h.html" title="node.h" alt="" coords="991,155,1057,181"/>
+<area shape="rect" id="node10" href="$d8/dc0/init_8h.html" title="../../init.h" alt="" coords="1138,379,1217,405"/>
+<area shape="rect" id="node40" href="$db/d3b/state_8h.html" title="../../dat/state.h" alt="" coords="795,379,911,405"/>
+<area shape="rect" id="node41" href="$d2/dbd/data_8h.html" title="../../dat/data.h" alt="" coords="177,229,289,256"/>
 <area shape="rect" id="node42" href="$d5/d60/utils_8h.html" title="../util/utils.h" alt="" coords="528,304,627,331"/>
-<area shape="rect" id="node46" href="$da/d41/error_8h.html" title="error.h" alt="" coords="979,379,1043,405"/>
-<area shape="rect" id="node47" href="$d2/da9/rnd_8h.html" title="../../util/rnd.h" alt="" coords="1179,304,1283,331"/>
-<area shape="rect" id="node11" href="$d5/db8/json_8hpp.html" title="util/json.hpp" alt="" coords="1499,453,1602,480"/>
+<area shape="rect" id="node46" href="$da/d41/error_8h.html" title="error.h" alt="" coords="1337,379,1401,405"/>
+<area shape="rect" id="node48" href="$d2/da9/rnd_8h.html" title="../../util/rnd.h" alt="" coords="1207,304,1311,331"/>
+<area shape="rect" id="node11" href="$d5/db8/json_8hpp.html" title="util/json.hpp" alt="" coords="1342,453,1445,480"/>
 </map>

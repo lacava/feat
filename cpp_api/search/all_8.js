@@ -14,7 +14,7 @@ var searchData=
   ['get_5fbackprop',['get_backprop',['../db/dff/classFT_1_1Feat.html#ab8b36c8653fcd3c22891e1c5b87a97d5',1,'FT::Feat']]],
   ['get_5fbatch',['get_batch',['../de/d36/classFT_1_1Dat_1_1Data.html#a65ccadbbd3c9a50654c00028d454a431',1,'FT::Dat::Data']]],
   ['get_5fbatch_5fsize',['get_batch_size',['../db/dff/classFT_1_1Feat.html#afcd94c4899c822dab2aea7934569e3dc',1,'FT::Feat']]],
-  ['get_5fbias',['get_bias',['../dd/d6f/classFT_1_1Model_1_1ML.html#a044d85ef52f062645b2e243ba99f8963',1,'FT::Model::ML']]],
+  ['get_5fbias',['get_bias',['../dd/d6f/classFT_1_1Model_1_1ML.html#a044d85ef52f062645b2e243ba99f8963',1,'FT::Model::ML::get_bias()'],['../db/d4e/classshogun_1_1CMulticlassLogisticRegression.html#a96510069eb68de949a3ba636cfd33ab2',1,'shogun::CMulticlassLogisticRegression::get_bias()']]],
   ['get_5fbinary',['get_binary',['../d6/d30/classnlohmann_1_1detail_1_1binary__reader.html#a55e13d567a53234573ab3833c0ca32e9',1,'nlohmann::detail::binary_reader::get_binary()'],['../d9/dcc/classnlohmann_1_1basic__json.html#aab19a246f6bcd27c195bed376cf5e138',1,'nlohmann::basic_json::get_binary()'],['../d9/dcc/classnlohmann_1_1basic__json.html#abbfa5532931abd2d9040cbf4d18a2ca7',1,'nlohmann::basic_json::get_binary() const']]],
   ['get_5fbson_5fbinary',['get_bson_binary',['../d6/d30/classnlohmann_1_1detail_1_1binary__reader.html#a9940f56290b9278c58772eda2931e599',1,'nlohmann::detail::binary_reader']]],
   ['get_5fbson_5fcstr',['get_bson_cstr',['../d6/d30/classnlohmann_1_1detail_1_1binary__reader.html#a354cbbaaea672c024ac949e1801c4302',1,'nlohmann::detail::binary_reader']]],

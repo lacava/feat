@@ -3,6 +3,7 @@
  <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Docutils 0.17: http://docutils.sourceforge.net/" name="generator"/>
   <meta content="width=device-width,initial-scale=1" name="viewport"/>
   <meta content="ie=edge" http-equiv="x-ua-compatible"/>
   <meta content="Copy to clipboard" name="lang:clipboard.copy"/>
@@ -574,50 +575,51 @@ div.rendered_html tbody tr:hover {
   background: rgba(66, 165, 245, 0.2);
 }
        </style>
-       <h1 id="examples-archive--page-root">
-        Using Feat’s archive
-        <a class="headerlink" href="#examples-archive--page-root" title="Permalink to this headline">
-         ¶
-        </a>
-       </h1>
-       <p>
-        Feat optimizes a population of models. At the end of the run, it can be useful to explore this population to find a trade-off between objectives, such as performance and complexity.
-       </p>
-       <p>
-        In this example, we apply Feat to a regression problem and visualize the archive of representations.
-       </p>
-       <p>
-        Note: this code uses the Penn ML Benchmark Suite (
-        <a class="reference external" href="https://github.com/EpistasisLab/penn-ml-benchmarks/">
-         https://github.com/EpistasisLab/penn-ml-benchmarks/
-        </a>
-        ) to fetch data. You can install it using
-        <code class="docutils literal notranslate">
-         <span class="pre">
-          pip
-         </span>
-         <span class="pre">
-          install
-         </span>
-         <span class="pre">
-          pmlb
-         </span>
-        </code>
-        .
-       </p>
-       <p>
-        First, we import the data and create a train-test split.
-       </p>
-       <div class="nbinput nblast docutils container">
-        <div class="prompt highlight-none notranslate">
-         <div class="highlight">
-          <pre><span></span>[1]:
+       <section id="Using-Feat’s-archive">
+        <h1 id="examples-archive--page-root">
+         Using Feat’s archive
+         <a class="headerlink" href="#examples-archive--page-root" title="Permalink to this headline">
+          ¶
+         </a>
+        </h1>
+        <p>
+         Feat optimizes a population of models. At the end of the run, it can be useful to explore this population to find a trade-off between objectives, such as performance and complexity.
+        </p>
+        <p>
+         In this example, we apply Feat to a regression problem and visualize the archive of representations.
+        </p>
+        <p>
+         Note: this code uses the Penn ML Benchmark Suite (
+         <a class="reference external" href="https://github.com/EpistasisLab/penn-ml-benchmarks/">
+          https://github.com/EpistasisLab/penn-ml-benchmarks/
+         </a>
+         ) to fetch data. You can install it using
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           pip
+          </span>
+          <span class="pre">
+           install
+          </span>
+          <span class="pre">
+           pmlb
+          </span>
+         </code>
+         .
+        </p>
+        <p>
+         First, we import the data and create a train-test split.
+        </p>
+        <div class="nbinput nblast docutils container">
+         <div class="prompt highlight-none notranslate">
+          <div class="highlight">
+           <pre><span></span>[1]:
 </pre>
+          </div>
          </div>
-        </div>
-        <div class="input_area highlight-ipython3 notranslate">
-         <div class="highlight">
-          <pre>
+         <div class="input_area highlight-ipython3 notranslate">
+          <div class="highlight">
+           <pre>
 <span></span><span class="kn">from</span> <span class="nn">pmlb</span> <span class="kn">import</span> <span class="n">fetch_data</span>
 <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span> <span class="k">as</span> <span class="n">mse</span>
@@ -628,22 +630,22 @@ div.rendered_html tbody tr:hover {
 <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">fetch_data</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span><span class="n">return_X_y</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">X_t</span><span class="p">,</span><span class="n">X_v</span><span class="p">,</span> <span class="n">y_t</span><span class="p">,</span> <span class="n">y_v</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">train_size</span><span class="o">=</span><span class="mf">0.75</span><span class="p">,</span><span class="n">test_size</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="n">random_state</span><span class="p">)</span>
 </pre>
+          </div>
          </div>
         </div>
-       </div>
-       <p>
-        Then we set up a Feat instance and train the model, storing the final archive.
-       </p>
-       <div class="nbinput docutils container">
-        <div class="prompt highlight-none notranslate">
-         <div class="highlight">
-          <pre><span></span>[2]:
+        <p>
+         Then we set up a Feat instance and train the model, storing the final archive.
+        </p>
+        <div class="nbinput docutils container">
+         <div class="prompt highlight-none notranslate">
+          <div class="highlight">
+           <pre><span></span>[2]:
 </pre>
+          </div>
          </div>
-        </div>
-        <div class="input_area highlight-ipython3 notranslate">
-         <div class="highlight">
-          <pre>
+         <div class="input_area highlight-ipython3 notranslate">
+          <div class="highlight">
+           <pre>
 <span></span><span class="kn">from</span> <span class="nn">feat</span> <span class="kn">import</span> <span class="n">Feat</span>
 
 
@@ -664,46 +666,46 @@ div.rendered_html tbody tr:hover {
 <span class="n">fest</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_t</span><span class="p">,</span><span class="n">y_t</span><span class="p">)</span>
 
 </pre>
+          </div>
          </div>
         </div>
-       </div>
-       <div class="nboutput docutils container">
-        <div class="prompt empty docutils container">
-        </div>
-        <div class="output_area docutils container">
-         <div class="highlight">
-          <pre>
+        <div class="nboutput docutils container">
+         <div class="prompt empty docutils container">
+         </div>
+         <div class="output_area docutils container">
+          <div class="highlight">
+           <pre>
 FEAT version: 0.4.1.post30
 </pre>
+          </div>
          </div>
         </div>
-       </div>
-       <div class="nboutput nblast docutils container">
-        <div class="prompt highlight-none notranslate">
-         <div class="highlight">
-          <pre><span></span>[2]:
+        <div class="nboutput nblast docutils container">
+         <div class="prompt highlight-none notranslate">
+          <div class="highlight">
+           <pre><span></span>[2]:
 </pre>
+          </div>
          </div>
-        </div>
-        <div class="output_area docutils container">
-         <div class="highlight">
-          <pre>
+         <div class="output_area docutils container">
+          <div class="highlight">
+           <pre>
 Feat(hillclimb=True, max_depth=2, max_dim=5, max_time=60, pop_size=500,
      random_state=42, verbosity=2)
 </pre>
+          </div>
          </div>
         </div>
-       </div>
-       <div class="nbinput docutils container">
-        <div class="prompt highlight-none notranslate">
-         <div class="highlight">
-          <pre><span></span>[3]:
+        <div class="nbinput docutils container">
+         <div class="prompt highlight-none notranslate">
+          <div class="highlight">
+           <pre><span></span>[3]:
 </pre>
+          </div>
          </div>
-        </div>
-        <div class="input_area highlight-ipython3 notranslate">
-         <div class="highlight">
-          <pre>
+         <div class="input_area highlight-ipython3 notranslate">
+          <div class="highlight">
+           <pre>
 <span></span><span class="c1"># get the test score</span>
 <span class="n">test_score</span> <span class="o">=</span> <span class="p">{}</span>
 <span class="n">test_score</span><span class="p">[</span><span class="s1">'feat'</span><span class="p">]</span> <span class="o">=</span> <span class="n">mse</span><span class="p">(</span><span class="n">y_v</span><span class="p">,</span><span class="n">fest</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_v</span><span class="p">))</span>
@@ -734,15 +736,15 @@ Feat(hillclimb=True, max_depth=2, max_dim=5, max_time=60, pop_size=500,
         <span class="n">fit_test</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">model</span><span class="p">[</span><span class="s1">'fitness_v'</span><span class="p">])</span>
         <span class="n">eqn</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">model</span><span class="p">[</span><span class="s1">'eqn'</span><span class="p">])</span>
 </pre>
+          </div>
          </div>
         </div>
-       </div>
-       <div class="nboutput nblast docutils container">
-        <div class="prompt empty docutils container">
-        </div>
-        <div class="output_area docutils container">
-         <div class="highlight">
-          <pre>
+        <div class="nboutput nblast docutils container">
+         <div class="prompt empty docutils container">
+         </div>
+         <div class="output_area docutils container">
+          <div class="highlight">
+           <pre>
 complexity fitness validation fitness eqn
 1 1804.70947265625 1815.92822265625 [x_1]
 2 967.038330078125 1090.6053466796875 [x_1][x_0]
@@ -774,22 +776,22 @@ complexity fitness validation fitness eqn
 104 177.51222229003906 253.17242431640625 [tanh(1.11*x_1)][exp(0.58*tanh(1.79*x_0))][(0.31*x_3-0.88*log(1.37*(0.06*x_0/0.59*(0.47*x_3+1.14*x_2))))][(0.73*x_1+0.22*(0.15*x_0-0.26*sqrt(|0.83*sqrt(|0.15*x_3|)|)))][(0.28*x_2*(1.15*x_0+0.26*x_1))]
 147 174.20518493652344 1227.4205322265625 [tanh(1.20*tanh(0.64*x_1))][exp(0.63*tanh(2.07*x_0))][(0.27*x_3-0.72*log(1.95*(0.04*x_0/0.79*(0.47*x_3+1.20*x_2))))][(0.55*x_1+0.21*(0.23*x_0-0.24*sqrt(|0.17*x_3|)))][exp(0.64*(0.21*x_2*(1.43*x_0+0.33*x_1)))]
 </pre>
+          </div>
          </div>
         </div>
-       </div>
-       <p>
-        For comparison, we can fit an Elastic Net and Random Forest regression model to the same data.
-       </p>
-       <div class="nbinput nblast docutils container">
-        <div class="prompt highlight-none notranslate">
-         <div class="highlight">
-          <pre><span></span>[4]:
+        <p>
+         For comparison, we can fit an Elastic Net and Random Forest regression model to the same data.
+        </p>
+        <div class="nbinput nblast docutils container">
+         <div class="prompt highlight-none notranslate">
+          <div class="highlight">
+           <pre><span></span>[4]:
 </pre>
+          </div>
          </div>
-        </div>
-        <div class="input_area highlight-ipython3 notranslate">
-         <div class="highlight">
-          <pre>
+         <div class="input_area highlight-ipython3 notranslate">
+          <div class="highlight">
+           <pre>
 <span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestRegressor</span>
 
 <span class="n">rf</span> <span class="o">=</span> <span class="n">RandomForestRegressor</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="n">random_state</span><span class="p">)</span>
@@ -799,19 +801,19 @@ complexity fitness validation fitness eqn
 <span class="n">test_score</span><span class="p">[</span><span class="s1">'rf'</span><span class="p">]</span> <span class="o">=</span> <span class="n">mse</span><span class="p">(</span><span class="n">y_v</span><span class="p">,</span><span class="n">rf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_v</span><span class="p">))</span>
 
 </pre>
+          </div>
          </div>
         </div>
-       </div>
-       <div class="nbinput nblast docutils container">
-        <div class="prompt highlight-none notranslate">
-         <div class="highlight">
-          <pre><span></span>[5]:
+        <div class="nbinput nblast docutils container">
+         <div class="prompt highlight-none notranslate">
+          <div class="highlight">
+           <pre><span></span>[5]:
 </pre>
+          </div>
          </div>
-        </div>
-        <div class="input_area highlight-ipython3 notranslate">
-         <div class="highlight">
-          <pre>
+         <div class="input_area highlight-ipython3 notranslate">
+          <div class="highlight">
+           <pre>
 <span></span><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">ElasticNet</span>
 
 <span class="n">linest</span> <span class="o">=</span> <span class="n">ElasticNet</span><span class="p">()</span>
@@ -821,63 +823,64 @@ complexity fitness validation fitness eqn
 <span class="n">test_score</span><span class="p">[</span><span class="s1">'elasticnet'</span><span class="p">]</span> <span class="o">=</span> <span class="n">mse</span><span class="p">(</span><span class="n">y_v</span><span class="p">,</span><span class="n">linest</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_v</span><span class="p">))</span>
 
 </pre>
+          </div>
          </div>
         </div>
-       </div>
-       <p>
-        Let’s look at the test set mean squared errors by method.
-       </p>
-       <div class="nbinput docutils container">
-        <div class="prompt highlight-none notranslate">
-         <div class="highlight">
-          <pre><span></span>[6]:
+        <p>
+         Let’s look at the test set mean squared errors by method.
+        </p>
+        <div class="nbinput docutils container">
+         <div class="prompt highlight-none notranslate">
+          <div class="highlight">
+           <pre><span></span>[6]:
 </pre>
+          </div>
          </div>
-        </div>
-        <div class="input_area highlight-ipython3 notranslate">
-         <div class="highlight">
-          <pre>
+         <div class="input_area highlight-ipython3 notranslate">
+          <div class="highlight">
+           <pre>
 <span></span><span class="n">test_score</span>
 </pre>
+          </div>
          </div>
         </div>
-       </div>
-       <div class="nboutput nblast docutils container">
-        <div class="prompt highlight-none notranslate">
-         <div class="highlight">
-          <pre><span></span>[6]:
+        <div class="nboutput nblast docutils container">
+         <div class="prompt highlight-none notranslate">
+          <div class="highlight">
+           <pre><span></span>[6]:
 </pre>
+          </div>
          </div>
-        </div>
-        <div class="output_area docutils container">
-         <div class="highlight">
-          <pre>
+         <div class="output_area docutils container">
+          <div class="highlight">
+           <pre>
 {'feat': 258.74213477932375,
  'rf': 347.15749506172847,
  'elasticnet': 919.3515337699562}
 </pre>
+          </div>
          </div>
         </div>
-       </div>
-       <h2 id="Visualizing-the-Archive">
-        Visualizing the Archive
-        <a class="headerlink" href="#Visualizing-the-Archive" title="Permalink to this headline">
-         ¶
-        </a>
-       </h2>
-       <p>
-        Let’s visualize this archive with the test scores. This gives us a sense of how increasing the representation complexity affects the quality of the model and its generalization.
-       </p>
-       <div class="nbinput docutils container">
-        <div class="prompt highlight-none notranslate">
-         <div class="highlight">
-          <pre><span></span>[9]:
+        <section id="Visualizing-the-Archive">
+         <h2 id="Visualizing-the-Archive">
+          Visualizing the Archive
+          <a class="headerlink" href="#Visualizing-the-Archive" title="Permalink to this headline">
+           ¶
+          </a>
+         </h2>
+         <p>
+          Let’s visualize this archive with the test scores. This gives us a sense of how increasing the representation complexity affects the quality of the model and its generalization.
+         </p>
+         <div class="nbinput docutils container">
+          <div class="prompt highlight-none notranslate">
+           <div class="highlight">
+            <pre><span></span>[9]:
 </pre>
-         </div>
-        </div>
-        <div class="input_area highlight-ipython3 notranslate">
-         <div class="highlight">
-          <pre>
+           </div>
+          </div>
+          <div class="input_area highlight-ipython3 notranslate">
+           <div class="highlight">
+            <pre>
 <span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -932,69 +935,69 @@ complexity fitness validation fitness eqn
 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre>
+           </div>
+          </div>
          </div>
-        </div>
-       </div>
-       <div class="nboutput docutils container">
-        <div class="prompt empty docutils container">
-        </div>
-        <div class="output_area docutils container">
-         <div class="highlight">
-          <pre>
+         <div class="nboutput docutils container">
+          <div class="prompt empty docutils container">
+          </div>
+          <div class="output_area docutils container">
+           <div class="highlight">
+            <pre>
 best: 38
 middle: 22
 small: 3
 complexity [1, 2, 3, 4, 6, 7, 8, 9, 10, 12, 13, 14, 15, 17, 18, 19, 21, 22, 24, 26, 29, 30, 31, 36, 38, 46, 98, 104, 147]
 </pre>
+           </div>
+          </div>
          </div>
-        </div>
-       </div>
-       <div class="nboutput nblast docutils container">
-        <div class="prompt empty docutils container">
-        </div>
-        <div class="output_area docutils container">
-         <img alt="../_images/examples_archive_12_1.png" src="../_images/examples_archive_12_1.png"/>
-        </div>
-       </div>
-       <p>
-        Note that ElasticNet produces a similar test score to the linear representation in Feat’s archive, and that Random Forest’s test score is near the representation shown in the middle.
-       </p>
-       <p>
-        The best model, marked with a square, is selected from the validation curve (blue line). The validation curve shows how models begin to overfit as complexity grows. By visualizing the archive, we can see that some lower complexity models achieve nearly as good of a validation score. In this case it may be preferable to choose that representation instead.
-       </p>
-       <p>
-        By default, FEAT will choose the model with the lowest validation error, marked with a square above. Let’s look at that model.
-       </p>
-       <p>
-        the function
-        <code class="docutils literal notranslate">
-         <span class="pre">
-          get_model()
-         </span>
-        </code>
-        will print a table of the learned features, optionally ordered by the magnitude of their weights.
-       </p>
-       <div class="nbinput docutils container">
-        <div class="prompt highlight-none notranslate">
-         <div class="highlight">
-          <pre><span></span>[8]:
+         <div class="nboutput nblast docutils container">
+          <div class="prompt empty docutils container">
+          </div>
+          <div class="output_area docutils container">
+           <img alt="../_images/examples_archive_12_1.png" src="../_images/examples_archive_12_1.png"/>
+          </div>
+         </div>
+         <p>
+          Note that ElasticNet produces a similar test score to the linear representation in Feat’s archive, and that Random Forest’s test score is near the representation shown in the middle.
+         </p>
+         <p>
+          The best model, marked with a square, is selected from the validation curve (blue line). The validation curve shows how models begin to overfit as complexity grows. By visualizing the archive, we can see that some lower complexity models achieve nearly as good of a validation score. In this case it may be preferable to choose that representation instead.
+         </p>
+         <p>
+          By default, FEAT will choose the model with the lowest validation error, marked with a square above. Let’s look at that model.
+         </p>
+         <p>
+          the function
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            get_model()
+           </span>
+          </code>
+          will print a table of the learned features, optionally ordered by the magnitude of their weights.
+         </p>
+         <div class="nbinput docutils container">
+          <div class="prompt highlight-none notranslate">
+           <div class="highlight">
+            <pre><span></span>[8]:
 </pre>
-         </div>
-        </div>
-        <div class="input_area highlight-ipython3 notranslate">
-         <div class="highlight">
-          <pre>
+           </div>
+          </div>
+          <div class="input_area highlight-ipython3 notranslate">
+           <div class="highlight">
+            <pre>
 <span></span><span class="nb">print</span><span class="p">(</span><span class="n">fest</span><span class="o">.</span><span class="n">get_model</span><span class="p">(</span><span class="n">sort</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
 </pre>
+           </div>
+          </div>
          </div>
-        </div>
-       </div>
-       <div class="nboutput nblast docutils container">
-        <div class="prompt empty docutils container">
-        </div>
-        <div class="output_area docutils container">
-         <div class="highlight">
-          <pre>
+         <div class="nboutput nblast docutils container">
+          <div class="prompt empty docutils container">
+          </div>
+          <div class="output_area docutils container">
+           <div class="highlight">
+            <pre>
 Weight  Feature
 1590.39         offset
 -103.53 tanh(1.22*x_1)
@@ -1004,9 +1007,11 @@ Weight  Feature
 -13.93  exp(0.27*x_3)
 
 </pre>
+           </div>
+          </div>
          </div>
-        </div>
-       </div>
+        </section>
+       </section>
       </article>
      </div>
     </div>
