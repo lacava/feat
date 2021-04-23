@@ -3,7 +3,6 @@
  <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <meta content="Docutils 0.17: http://docutils.sourceforge.net/" name="generator"/>
   <meta content="width=device-width,initial-scale=1" name="viewport"/>
   <meta content="ie=edge" http-equiv="x-ua-compatible"/>
   <meta content="Copy to clipboard" name="lang:clipboard.copy"/>
@@ -363,61 +362,57 @@
      </div>
      <div class="md-content">
       <article class="md-content__inner md-typeset" role="main">
-       <section id="overview">
-        <h1 id="guide-overview--page-root">
-         Overview
-         <a class="headerlink" href="#guide-overview--page-root" title="Permalink to this headline">
-          ¶
-         </a>
-        </h1>
-        <p>
-         This section describes the basic learning approach used by FEAT.
+       <h1 id="guide-overview--page-root">
+        Overview
+        <a class="headerlink" href="#guide-overview--page-root" title="Permalink to this headline">
+         ¶
+        </a>
+       </h1>
+       <p>
+        This section describes the basic learning approach used by FEAT.
 A more detailed description, along with experiments, is available
-         <a class="reference external" href="https://arxiv.org/abs/1807.00981">
-          here
-         </a>
-         and from [
-         <a class="footnote-reference brackets" href="#id7" id="id1">
-          3
-         </a>
-         ].
-        </p>
-        <section id="representation-learning">
-         <h2 id="representation-learning">
-          Representation Learning
-          <a class="headerlink" href="#representation-learning" title="Permalink to this headline">
-           ¶
-          </a>
-         </h2>
-         <p>
-          The goal of representation learning in regression or classification is
+        <a class="reference external" href="https://arxiv.org/abs/1807.00981">
+         here
+        </a>
+        and from [
+        <a class="footnote-reference brackets" href="#id7" id="id1">
+         3
+        </a>
+        ].
+       </p>
+       <h2 id="representation-learning">
+        Representation Learning
+        <a class="headerlink" href="#representation-learning" title="Permalink to this headline">
+         ¶
+        </a>
+       </h2>
+       <p>
+        The goal of representation learning in regression or classification is
 to learn a new representation of your data that makes it easier to
 model. As an example, consider the figure below, where each point
 is a sample belonging to one of 4 colored classes. Here, we want to
 learn the equations on the axes of the right plot (labelled on the
 axes), which will make it easier classify the data belonging to each
 class.
-         </p>
-         <figure class="align-default" id="id8">
-          <img alt="../_images/rep_learning_demo_2d.svg" src="../_images/rep_learning_demo_2d.svg"/>
-          <figcaption>
-           <p>
-            <span class="caption-text">
-             (Left) raw data. (Right) Data after transformation according to a
+       </p>
+       <div class="figure align-default" id="id8">
+        <img alt="../_images/rep_learning_demo_2d.svg" src="../_images/rep_learning_demo_2d.svg"/>
+        <p class="caption">
+         <span class="caption-text">
+          (Left) raw data. (Right) Data after transformation according to a
 2d representation shown on the axes (Image from [
-             <a class="footnote-reference brackets" href="#id5" id="id2">
-              1
-             </a>
-             ]).
-            </span>
-            <a class="headerlink" href="#id8" title="Permalink to this image">
-             ¶
-            </a>
-           </p>
-          </figcaption>
-         </figure>
-         <p>
-          It’s worth noting that the representation in the right panel will be
+          <a class="footnote-reference brackets" href="#id5" id="id2">
+           1
+          </a>
+          ]).
+         </span>
+         <a class="headerlink" href="#id8" title="Permalink to this image">
+          ¶
+         </a>
+        </p>
+       </div>
+       <p>
+        It’s worth noting that the representation in the right panel will be
 easier for certain machine learning methods to classify, and harder for
 others. We’ve written FEAT to wrap around the Shogun ML
 toolbox, which means it could eventually learn representations for different ML
@@ -427,243 +422,233 @@ support vector machines (SVM) and random forests are experimentally
 available. Because different feature transformations work better than others
 for a given ML method, FEAT uses the performance of the ML method as
 a measure of how good a candidate representation is during optimization.
-         </p>
-        </section>
-        <section id="approach">
-         <h2 id="approach">
-          Approach
-          <a class="headerlink" href="#approach" title="Permalink to this headline">
-           ¶
-          </a>
-         </h2>
-         <figure class="align-center" id="id9">
-          <img alt="../_images/feat_diagram.svg" src="../_images/feat_diagram.svg"/>
-          <figcaption>
-           <p>
-            <span class="caption-text">
-             A) Steps in the learning process. B) How a single model is trained.
+       </p>
+       <h2 id="approach">
+        Approach
+        <a class="headerlink" href="#approach" title="Permalink to this headline">
+         ¶
+        </a>
+       </h2>
+       <div class="figure align-center" id="id9">
+        <img alt="../_images/feat_diagram.svg" src="../_images/feat_diagram.svg"/>
+        <p class="caption">
+         <span class="caption-text">
+          A) Steps in the learning process. B) How a single model is trained.
 Image from
-             <a class="footnote-reference brackets" href="#id7" id="id3">
-              3
-             </a>
-             .
-            </span>
-            <a class="headerlink" href="#id9" title="Permalink to this image">
-             ¶
-            </a>
-           </p>
-          </figcaption>
-         </figure>
-         <p>
-          FEAT is a wrapper-based learning method that trains ML methods on a
+          <a class="footnote-reference brackets" href="#id7" id="id3">
+           3
+          </a>
+          .
+         </span>
+         <a class="headerlink" href="#id9" title="Permalink to this image">
+          ¶
+         </a>
+        </p>
+       </div>
+       <p>
+        FEAT is a wrapper-based learning method that trains ML methods on a
 population of representations, and optimizes the representations to
 produce the lowest error. FEAT uses a typical
-          <span class="math notranslate nohighlight">
-           \(\mu\)
-          </span>
-          +
-          <span class="math notranslate nohighlight">
-           \(\lambda\)
-          </span>
-          evolutionary updating scheme, where
-          <span class="math notranslate nohighlight">
-           \(\mu=\lambda=P\)
-          </span>
-          . The method optimizes a population of potential
+        <span class="math notranslate nohighlight">
+         \(\mu\)
+        </span>
+        +
+        <span class="math notranslate nohighlight">
+         \(\lambda\)
+        </span>
+        evolutionary updating scheme, where
+        <span class="math notranslate nohighlight">
+         \(\mu=\lambda=P\)
+        </span>
+        . The method optimizes a population of potential
 representations,
-          <span class="math notranslate nohighlight">
-           \(N = \{n_1\;\dots\;n_P\}\)
-          </span>
-          , where
-          <span class="math notranslate nohighlight">
-           \(n\)
-          </span>
-          is an
+        <span class="math notranslate nohighlight">
+         \(N = \{n_1\;\dots\;n_P\}\)
+        </span>
+        , where
+        <span class="math notranslate nohighlight">
+         \(n\)
+        </span>
+        is an
 ``individual” in the population, iterating through these steps:
+       </p>
+       <ul class="simple">
+        <li>
+         <p>
+          Fit a linear model
+          <span class="math notranslate nohighlight">
+           \(\hat{y} = \mathbf{x}^T\hat{\beta}\)
+          </span>
+          . Create
+an initial population
+          <span class="math notranslate nohighlight">
+           \(N\)
+          </span>
+          consisting of this initial
+representation,
+          <span class="math notranslate nohighlight">
+           \(\mathbf{\phi} = \mathbf{x}\)
+          </span>
+          , along with
+          <span class="math notranslate nohighlight">
+           \(P-1\)
+          </span>
+          randomly generated representations that sample
+          <span class="math notranslate nohighlight">
+           \(\mathbf{x}\)
+          </span>
+          proportionally to
+          <span class="math notranslate nohighlight">
+           \(\hat{\beta}\)
+          </span>
+          .
          </p>
-         <ul class="simple">
+        </li>
+        <li>
+         <p>
+          While the stop criterion is not met:
+         </p>
+         <ul>
           <li>
            <p>
-            Fit a linear model
+            Select parents
             <span class="math notranslate nohighlight">
-             \(\hat{y} = \mathbf{x}^T\hat{\beta}\)
+             \(P \subseteq N\)
             </span>
-            . Create
-an initial population
+            using a selection algorithm.
+           </p>
+          </li>
+          <li>
+           <p>
+            Apply variation operators to parents to generate
+            <span class="math notranslate nohighlight">
+             \(P\)
+            </span>
+            offspring
+            <span class="math notranslate nohighlight">
+             \(O\)
+            </span>
+            ;
+            <span class="math notranslate nohighlight">
+             \(N = N \cup O\)
+            </span>
+           </p>
+          </li>
+          <li>
+           <p>
+            Reduce
             <span class="math notranslate nohighlight">
              \(N\)
             </span>
-            consisting of this initial
-representation,
+            to
             <span class="math notranslate nohighlight">
-             \(\mathbf{\phi} = \mathbf{x}\)
+             \(P\)
             </span>
-            , along with
-            <span class="math notranslate nohighlight">
-             \(P-1\)
-            </span>
-            randomly generated representations that sample
-            <span class="math notranslate nohighlight">
-             \(\mathbf{x}\)
-            </span>
-            proportionally to
-            <span class="math notranslate nohighlight">
-             \(\hat{\beta}\)
-            </span>
-            .
-           </p>
-          </li>
-          <li>
-           <p>
-            While the stop criterion is not met:
-           </p>
-           <ul>
-            <li>
-             <p>
-              Select parents
-              <span class="math notranslate nohighlight">
-               \(P \subseteq N\)
-              </span>
-              using a selection algorithm.
-             </p>
-            </li>
-            <li>
-             <p>
-              Apply variation operators to parents to generate
-              <span class="math notranslate nohighlight">
-               \(P\)
-              </span>
-              offspring
-              <span class="math notranslate nohighlight">
-               \(O\)
-              </span>
-              ;
-              <span class="math notranslate nohighlight">
-               \(N = N \cup O\)
-              </span>
-             </p>
-            </li>
-            <li>
-             <p>
-              Reduce
-              <span class="math notranslate nohighlight">
-               \(N\)
-              </span>
-              to
-              <span class="math notranslate nohighlight">
-               \(P\)
-              </span>
-              individuals using a survival
+            individuals using a survival
 algorithm.
-             </p>
-            </li>
-           </ul>
-          </li>
-          <li>
-           <p>
-            Select and return
-            <span class="math notranslate nohighlight">
-             \(n \in N\)
-            </span>
-            with the lowest error on a hold-out
-validation set.
            </p>
           </li>
          </ul>
+        </li>
+        <li>
          <p>
-          Individuals are evaluated using an initial forward pass, after which
+          Select and return
+          <span class="math notranslate nohighlight">
+           \(n \in N\)
+          </span>
+          with the lowest error on a hold-out
+validation set.
+         </p>
+        </li>
+       </ul>
+       <p>
+        Individuals are evaluated using an initial forward pass, after which
 each representation is used to fit a linear model using ridge
 regression. The weights of the differentiable features in the
 representation are then updated using stochastic gradient descent.
-         </p>
-        </section>
-        <section id="feature-representation">
-         <h2 id="feature-representation">
-          Feature representation
-          <a class="headerlink" href="#feature-representation" title="Permalink to this headline">
-           ¶
-          </a>
-         </h2>
-         <p>
-          FEAT is designed with interpretability in mind. To this end, the
+       </p>
+       <h2 id="feature-representation">
+        Feature representation
+        <a class="headerlink" href="#feature-representation" title="Permalink to this headline">
+         ¶
+        </a>
+       </h2>
+       <p>
+        FEAT is designed with interpretability in mind. To this end, the
 representations it learns are sets of equations. The equations are
 composed of basic operations, including arithmetic, logical functions,
 control flow and heuristic spits. FEAT also supports many statistical
 operators for handling sequential data.
-         </p>
-        </section>
-        <section id="selection-and-archiving">
-         <h2 id="selection-and-archiving">
-          Selection and Archiving
-          <a class="headerlink" href="#selection-and-archiving" title="Permalink to this headline">
-           ¶
-          </a>
-         </h2>
-         <p>
-          By default, FEAT uses lexicase selection [
-          <a class="footnote-reference brackets" href="#id6" id="id4">
-           2
-          </a>
-          ] as the selection operation
+       </p>
+       <h2 id="selection-and-archiving">
+        Selection and Archiving
+        <a class="headerlink" href="#selection-and-archiving" title="Permalink to this headline">
+         ¶
+        </a>
+       </h2>
+       <p>
+        By default, FEAT uses lexicase selection [
+        <a class="footnote-reference brackets" href="#id6" id="id4">
+         2
+        </a>
+        ] as the selection operation
 and NSGA-II for survival. This allows FEAT to maintain an archive of
 accuracy-complexity tradeoffs to aid in interpretability. FEAT also
 supports simulated annealing, tournament selection and random search.
-         </p>
-         <dl class="footnote brackets">
-          <dt class="label" id="id5">
-           <span class="brackets">
-            <a class="fn-backref" href="#id2">
-             1
-            </a>
-           </span>
-          </dt>
-          <dd>
-           <p>
-            La Cava, W., Silva, S., Danai, K., Spector, L., Vanneschi, L., &amp;
+       </p>
+       <dl class="footnote brackets">
+        <dt class="label" id="id5">
+         <span class="brackets">
+          <a class="fn-backref" href="#id2">
+           1
+          </a>
+         </span>
+        </dt>
+        <dd>
+         <p>
+          La Cava, W., Silva, S., Danai, K., Spector, L., Vanneschi, L., &amp;
 Moore, J. H. (2018). Multidimensional genetic programming for
 multiclass classification. Swarm and Evolutionary Computation.
-           </p>
-          </dd>
-          <dt class="label" id="id6">
-           <span class="brackets">
-            <a class="fn-backref" href="#id4">
-             2
-            </a>
-           </span>
-          </dt>
-          <dd>
-           <p>
-            La Cava, W., Helmuth, T., Spector, L., &amp; Moore, J. H. (2018). A
+         </p>
+        </dd>
+        <dt class="label" id="id6">
+         <span class="brackets">
+          <a class="fn-backref" href="#id4">
+           2
+          </a>
+         </span>
+        </dt>
+        <dd>
+         <p>
+          La Cava, W., Helmuth, T., Spector, L., &amp; Moore, J. H. (2018). A
 probabilistic and multi-objective analysis of lexicase selection and
 ε-lexicase selection. Evolutionary computation, 1-28.
-           </p>
-          </dd>
-          <dt class="label" id="id7">
-           <span class="brackets">
-            3
-           </span>
-           <span class="fn-backref">
-            (
-            <a href="#id1">
-             1
-            </a>
-            ,
-            <a href="#id3">
-             2
-            </a>
-            )
-           </span>
-          </dt>
-          <dd>
-           <p>
-            La Cava, W., &amp; Moore, J. H. (2020).
+         </p>
+        </dd>
+        <dt class="label" id="id7">
+         <span class="brackets">
+          3
+         </span>
+         <span class="fn-backref">
+          (
+          <a href="#id1">
+           1
+          </a>
+          ,
+          <a href="#id3">
+           2
+          </a>
+          )
+         </span>
+        </dt>
+        <dd>
+         <p>
+          La Cava, W., &amp; Moore, J. H. (2020).
 Learning feature spaces for regression with genetic programming.
 Genetic Programming and Evolvable Machines, 1-35.
-           </p>
-          </dd>
-         </dl>
-        </section>
-       </section>
+         </p>
+        </dd>
+       </dl>
       </article>
      </div>
     </div>
@@ -712,7 +697,7 @@ Genetic Programming and Evolvable Machines, 1-35.
       <a href="http://www.sphinx-doc.org/">
        Sphinx
       </a>
-      3.5.3.
+      3.5.4.
              and
       <a href="https://github.com/bashtage/sphinx-material/">
        Material for
