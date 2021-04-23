@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['z',['Z',['../de/d36/classFT_1_1Dat_1_1Data.html#aafaf7fdf2cae86fe424fb73ec5c80087',1,'FT::Dat::Data::Z()'],['../dd/d3f/structFT_1_1Dat_1_1State.html#a40a65c95a79247d8e78f43011a69ffd1',1,'FT::Dat::State::z()']]],
+  ['z',['z',['../dd/d3f/structFT_1_1Dat_1_1State.html#a40a65c95a79247d8e78f43011a69ffd1',1,'FT::Dat::State::z()'],['../de/d36/classFT_1_1Dat_1_1Data.html#aafaf7fdf2cae86fe424fb73ec5c80087',1,'FT::Dat::Data::Z()']]],
   ['z_5ft',['Z_t',['../d4/d10/classFT_1_1Dat_1_1DataRef.html#a9ac9f8de940d6609236de38cfda93473',1,'FT::Dat::DataRef']]],
   ['z_5fv',['Z_v',['../d4/d10/classFT_1_1Dat_1_1DataRef.html#adace91dbb8e8ed7e3003cd0362c9bd73',1,'FT::Dat::DataRef']]],
   ['zero_5fone_5floss',['zero_one_loss',['../de/dcf/namespaceFT_1_1Eval.html#ac74fb7d125fb1f2c51e20551200167ee',1,'FT::Eval']]],

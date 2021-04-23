@@ -40,7 +40,7 @@ var searchData=
   ['get_5fdim',['get_dim',['../db/dff/classFT_1_1Feat.html#a014d7a01e9980c9f023eeea0198efdfa',1,'FT::Feat::get_dim()'],['../da/def/classFT_1_1Pop_1_1Individual.html#aeb3670b4fde6d7e6cf02ccb01860d7bc',1,'FT::Pop::Individual::get_dim()']]],
   ['get_5fdtypes',['get_dtypes',['../db/dff/classFT_1_1Feat.html#af19e70b5bb10fb16c48e381093417c18',1,'FT::Feat']]],
   ['get_5fepsilon',['get_epsilon',['../db/d4e/classshogun_1_1CMulticlassLogisticRegression.html#a9559b42e2caa4e2200e227e2b35c94f5',1,'shogun::CMulticlassLogisticRegression::get_epsilon()'],['../df/d62/classshogun_1_1CMyMulticlassLibLinear.html#ad5a9ad7bb69f52c9f1ae08d0aab0eae8',1,'shogun::CMyMulticlassLibLinear::get_epsilon()']]],
-  ['get_5feqn',['get_eqn',['../da/def/classFT_1_1Pop_1_1Individual.html#a3d9011a837e12a4e474366e20ffd72c5',1,'FT::Pop::Individual']]],
+  ['get_5feqn',['get_eqn',['../db/dff/classFT_1_1Feat.html#a54c8b717c638816f66e67d5479745205',1,'FT::Feat::get_eqn()'],['../da/def/classFT_1_1Pop_1_1Individual.html#a3d9011a837e12a4e474366e20ffd72c5',1,'FT::Pop::Individual::get_eqn()']]],
   ['get_5ferc',['get_erc',['../db/dff/classFT_1_1Feat.html#a697e692ec56c3bba59b2da89e94c98c8',1,'FT::Feat']]],
   ['get_5ferror_5fmessage',['get_error_message',['../d8/d22/classnlohmann_1_1detail_1_1lexer.html#a9da0c649f03e8b3f730501d26c876a78',1,'nlohmann::detail::lexer']]],
   ['get_5ffb',['get_fb',['../db/dff/classFT_1_1Feat.html#af2a23546713b1a22be8efb33dcf617a8',1,'FT::Feat']]],

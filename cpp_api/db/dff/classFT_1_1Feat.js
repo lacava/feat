@@ -22,6 +22,7 @@ var classFT_1_1Feat =
     [ "get_cross_rate", "db/dff/classFT_1_1Feat.html#afa4c53c8d5357ffc896452a5090d381b", null ],
     [ "get_dim", "db/dff/classFT_1_1Feat.html#a014d7a01e9980c9f023eeea0198efdfa", null ],
     [ "get_dtypes", "db/dff/classFT_1_1Feat.html#af19e70b5bb10fb16c48e381093417c18", null ],
+    [ "get_eqn", "db/dff/classFT_1_1Feat.html#a54c8b717c638816f66e67d5479745205", null ],
     [ "get_erc", "db/dff/classFT_1_1Feat.html#a697e692ec56c3bba59b2da89e94c98c8", null ],
     [ "get_fb", "db/dff/classFT_1_1Feat.html#af2a23546713b1a22be8efb33dcf617a8", null ],
     [ "get_feature_names", "db/dff/classFT_1_1Feat.html#aad5e9a1984635d4c9a1440af9b8e9a49", null ],
