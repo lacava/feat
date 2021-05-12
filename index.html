@@ -3,6 +3,7 @@
  <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
   <meta content="width=device-width,initial-scale=1" name="viewport"/>
   <meta content="ie=edge" http-equiv="x-ua-compatible"/>
   <meta content="Copy to clipboard" name="lang:clipboard.copy"/>
@@ -327,79 +328,85 @@
      </div>
      <div class="md-content">
       <article class="md-content__inner md-typeset" role="main">
-       <h1 id="index--page-root">
-        Feature Engineering Automation Tool
-        <a class="headerlink" href="#index--page-root" title="Permalink to this headline">
-         ¶
-        </a>
-       </h1>
-       <p>
-        <a class="reference external" href="https://travis-ci.org/lacava/feat">
-         <img alt="Build Status" src="https://travis-ci.org/lacava/feat.svg?branch=master"/>
-        </a>
-        <a class="reference external" href="https://github.com/lacava/feat/blob/master/LICENSE">
-         <img alt="License: GPL v3" src="https://img.shields.io/badge/License-GPL%20v3-blue.svg"/>
-        </a>
-       </p>
-       <p>
-        <strong>
-         FEAT
-        </strong>
-        is a feature engineering automation tool that learns new
+       <section id="feature-engineering-automation-tool">
+        <h1 id="index--page-root">
+         Feature Engineering Automation Tool
+         <a class="headerlink" href="#index--page-root" title="Permalink to this headline">
+          ¶
+         </a>
+        </h1>
+        <p>
+         <a class="reference external" href="https://travis-ci.org/lacava/feat">
+          <img alt="Build Status" src="https://travis-ci.org/lacava/feat.svg?branch=master"/>
+         </a>
+         <a class="reference external" href="https://github.com/lacava/feat/blob/master/LICENSE">
+          <img alt="License: GPL v3" src="https://img.shields.io/badge/License-GPL%20v3-blue.svg"/>
+         </a>
+        </p>
+        <p>
+         <strong>
+          FEAT
+         </strong>
+         is a feature engineering automation tool that learns new
 representations of raw data to improve classifier and regressor
 performance. The underlying methods use Pareto optimization and
 evolutionary computation to search the space of possible
 transformations.
-       </p>
-       <p>
-        FEAT wraps around a user-chosen ML method and provides a set of
+        </p>
+        <p>
+         FEAT wraps around a user-chosen ML method and provides a set of
 representations that give the best performance for that method. Each
 individual in FEAT’s population is its own data representation.
-       </p>
-       <h2 id="contact">
-        Contact
-        <a class="headerlink" href="#contact" title="Permalink to this headline">
-         ¶
-        </a>
-       </h2>
-       <p>
-        Maintained by William La Cava (lacava at upenn.edu)
-       </p>
-       <h2 id="acknowledgments">
-        Acknowledgments
-        <a class="headerlink" href="#acknowledgments" title="Permalink to this headline">
-         ¶
-        </a>
-       </h2>
-       <p>
-        This work is supported by grant K99-LM012926 from the National Library of Medicine.
+        </p>
+        <section id="contact">
+         <h2 id="contact">
+          Contact
+          <a class="headerlink" href="#contact" title="Permalink to this headline">
+           ¶
+          </a>
+         </h2>
+         <p>
+          Maintained by William La Cava (lacava at upenn.edu)
+         </p>
+        </section>
+        <section id="acknowledgments">
+         <h2 id="acknowledgments">
+          Acknowledgments
+          <a class="headerlink" href="#acknowledgments" title="Permalink to this headline">
+           ¶
+          </a>
+         </h2>
+         <p>
+          This work is supported by grant K99-LM012926 from the National Library of Medicine.
 FEAT is being developed to study human disease by the
-        <a class="reference external" href="http://epistasis.org">
-         Epistasis
+          <a class="reference external" href="http://epistasis.org">
+           Epistasis
 Lab at UPenn
-        </a>
-        .
-       </p>
-       <h2 id="cite">
-        Cite
-        <a class="headerlink" href="#cite" title="Permalink to this headline">
-         ¶
-        </a>
-       </h2>
-       <p>
-        La Cava, W., Singh, T. R., Taggart, J., Suri, S., &amp; Moore, J. H..
+          </a>
+          .
+         </p>
+        </section>
+        <section id="cite">
+         <h2 id="cite">
+          Cite
+          <a class="headerlink" href="#cite" title="Permalink to this headline">
+           ¶
+          </a>
+         </h2>
+         <p>
+          La Cava, W., Singh, T. R., Taggart, J., Suri, S., &amp; Moore, J. H..
 Learning concise representations for regression by evolving networks of
 trees. ICLR 2019.
-        <a class="reference external" href="https://arxiv.org/abs/1807.00981">
-         arxiv:1807.0091
-        </a>
-       </p>
-       <p>
-        Bibtex:
-       </p>
-       <div class="highlight-default notranslate">
-        <div class="highlight">
-         <pre><span></span><span class="nd">@inproceedings</span><span class="p">{</span><span class="n">la_cava_learning_2019</span><span class="p">,</span>
+          <a class="reference external" href="https://arxiv.org/abs/1807.00981">
+           arxiv:1807.0091
+          </a>
+         </p>
+         <p>
+          Bibtex:
+         </p>
+         <div class="highlight-default notranslate">
+          <div class="highlight">
+           <pre><span></span><span class="nd">@inproceedings</span><span class="p">{</span><span class="n">la_cava_learning_2019</span><span class="p">,</span>
     <span class="n">series</span> <span class="o">=</span> <span class="p">{{</span><span class="n">ICLR</span><span class="p">}},</span>
     <span class="n">title</span> <span class="o">=</span> <span class="p">{</span><span class="n">Learning</span> <span class="n">concise</span> <span class="n">representations</span> <span class="k">for</span> <span class="n">regression</span> <span class="n">by</span> <span class="n">evolving</span> <span class="n">networks</span> <span class="n">of</span> <span class="n">trees</span><span class="p">},</span>
     <span class="n">url</span> <span class="o">=</span> <span class="p">{</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">arxiv</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="nb">abs</span><span class="o">/</span><span class="mf">1807.00981</span><span class="p">},</span>
@@ -409,159 +416,165 @@ trees. ICLR 2019.
     <span class="n">year</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2019</span><span class="p">},</span>
 <span class="p">}</span>
 </pre>
-        </div>
-       </div>
-       <h2 id="table-of-contents">
-        Table of Contents
-        <a class="headerlink" href="#table-of-contents" title="Permalink to this headline">
-         ¶
-        </a>
-       </h2>
-       <div class="toctree-wrapper compound">
-        <p class="caption">
-         <span class="caption-text">
-          Getting Started
-         </span>
-        </p>
-        <ul>
-         <li class="toctree-l1">
-          <a class="reference internal" href="install.html">
-           Installation
+          </div>
+         </div>
+        </section>
+        <section id="table-of-contents">
+         <h2 id="table-of-contents">
+          Table of Contents
+          <a class="headerlink" href="#table-of-contents" title="Permalink to this headline">
+           ¶
           </a>
+         </h2>
+         <div class="toctree-wrapper compound">
+          <p class="caption">
+           <span class="caption-text">
+            Getting Started
+           </span>
+          </p>
           <ul>
-           <li class="toctree-l2">
-            <a class="reference internal" href="install.html#conda">
-             Conda
+           <li class="toctree-l1">
+            <a class="reference internal" href="install.html">
+             Installation
+            </a>
+            <ul>
+             <li class="toctree-l2">
+              <a class="reference internal" href="install.html#conda">
+               Conda
+              </a>
+             </li>
+             <li class="toctree-l2">
+              <a class="reference internal" href="install.html#dependencies">
+               Dependencies
+              </a>
+             </li>
+             <li class="toctree-l2">
+              <a class="reference internal" href="install.html#running-the-tests">
+               Running the tests
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+         </div>
+         <div class="toctree-wrapper compound">
+          <p class="caption">
+           <span class="caption-text">
+            User Guide
+           </span>
+          </p>
+          <ul>
+           <li class="toctree-l1">
+            <a class="reference internal" href="guide/overview.html">
+             Overview
+            </a>
+            <ul>
+             <li class="toctree-l2">
+              <a class="reference internal" href="guide/overview.html#representation-learning">
+               Representation Learning
+              </a>
+             </li>
+             <li class="toctree-l2">
+              <a class="reference internal" href="guide/overview.html#approach">
+               Approach
+              </a>
+             </li>
+             <li class="toctree-l2">
+              <a class="reference internal" href="guide/overview.html#feature-representation">
+               Feature representation
+              </a>
+             </li>
+             <li class="toctree-l2">
+              <a class="reference internal" href="guide/overview.html#selection-and-archiving">
+               Selection and Archiving
+              </a>
+             </li>
+            </ul>
+           </li>
+           <li class="toctree-l1">
+            <a class="reference internal" href="guide/basics.html">
+             Basic Usage
+            </a>
+            <ul>
+             <li class="toctree-l2">
+              <a class="reference internal" href="guide/basics.html#typical-use-case">
+               Typical use case
+              </a>
+             </li>
+             <li class="toctree-l2">
+              <a class="reference internal" href="guide/basics.html#command-line">
+               Command line
+              </a>
+             </li>
+             <li class="toctree-l2">
+              <a class="reference internal" href="guide/basics.html#longitudinal-data">
+               Longitudinal data
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+         </div>
+         <div class="toctree-wrapper compound">
+          <p class="caption">
+           <span class="caption-text">
+            Examples
+           </span>
+          </p>
+          <ul>
+           <li class="toctree-l1">
+            <a class="reference internal" href="examples/command_line.html">
+             Command line example
             </a>
            </li>
-           <li class="toctree-l2">
-            <a class="reference internal" href="install.html#dependencies">
-             Dependencies
+           <li class="toctree-l1">
+            <a class="reference internal" href="examples/archive.html">
+             Using Feat’s archive
             </a>
            </li>
-           <li class="toctree-l2">
-            <a class="reference internal" href="install.html#running-the-tests">
-             Running the tests
+           <li class="toctree-l1">
+            <a class="reference internal" href="examples/longitudinal.html">
+             Using Longitudinal Data
             </a>
            </li>
           </ul>
-         </li>
-        </ul>
-       </div>
-       <div class="toctree-wrapper compound">
-        <p class="caption">
-         <span class="caption-text">
-          User Guide
-         </span>
-        </p>
-        <ul>
-         <li class="toctree-l1">
-          <a class="reference internal" href="guide/overview.html">
-           Overview
-          </a>
+         </div>
+         <div class="toctree-wrapper compound">
+          <p class="caption">
+           <span class="caption-text">
+            API
+           </span>
+          </p>
           <ul>
-           <li class="toctree-l2">
-            <a class="reference internal" href="guide/overview.html#representation-learning">
-             Representation Learning
+           <li class="toctree-l1">
+            <a class="reference internal" href="py_api.html">
+             Python API
             </a>
            </li>
-           <li class="toctree-l2">
-            <a class="reference internal" href="guide/overview.html#approach">
-             Approach
-            </a>
-           </li>
-           <li class="toctree-l2">
-            <a class="reference internal" href="guide/overview.html#feature-representation">
-             Feature representation
-            </a>
-           </li>
-           <li class="toctree-l2">
-            <a class="reference internal" href="guide/overview.html#selection-and-archiving">
-             Selection and Archiving
+           <li class="toctree-l1">
+            <a class="reference internal" href="cpp_api.html">
+             C++ API
             </a>
            </li>
           </ul>
-         </li>
-         <li class="toctree-l1">
-          <a class="reference internal" href="guide/basics.html">
-           Basic Usage
-          </a>
-          <ul>
-           <li class="toctree-l2">
-            <a class="reference internal" href="guide/basics.html#typical-use-case">
-             Typical use case
-            </a>
-           </li>
-           <li class="toctree-l2">
-            <a class="reference internal" href="guide/basics.html#command-line">
-             Command line
-            </a>
-           </li>
-           <li class="toctree-l2">
-            <a class="reference internal" href="guide/basics.html#longitudinal-data">
-             Longitudinal data
-            </a>
-           </li>
-          </ul>
-         </li>
-        </ul>
-       </div>
-       <div class="toctree-wrapper compound">
-        <p class="caption">
-         <span class="caption-text">
-          Examples
-         </span>
-        </p>
-        <ul>
-         <li class="toctree-l1">
-          <a class="reference internal" href="examples/command_line.html">
-           Command line example
-          </a>
-         </li>
-         <li class="toctree-l1">
-          <a class="reference internal" href="examples/archive.html">
-           Using Feat’s archive
-          </a>
-         </li>
-         <li class="toctree-l1">
-          <a class="reference internal" href="examples/longitudinal.html">
-           Using Longitudinal Data
-          </a>
-         </li>
-        </ul>
-       </div>
-       <div class="toctree-wrapper compound">
-        <p class="caption">
-         <span class="caption-text">
-          API
-         </span>
-        </p>
-        <ul>
-         <li class="toctree-l1">
-          <a class="reference internal" href="py_api.html">
-           Python API
-          </a>
-         </li>
-         <li class="toctree-l1">
-          <a class="reference internal" href="cpp_api.html">
-           C++ API
-          </a>
-         </li>
-        </ul>
-       </div>
-       <h3 id="index">
-        Index
-        <a class="headerlink" href="#index" title="Permalink to this headline">
-         ¶
-        </a>
-       </h3>
-       <p>
-        <a class="reference internal" href="genindex.html">
-         <span class="std std-ref">
-          Index
-         </span>
-        </a>
-       </p>
+         </div>
+         <section id="index">
+          <h3 id="index">
+           Index
+           <a class="headerlink" href="#index" title="Permalink to this headline">
+            ¶
+           </a>
+          </h3>
+          <p>
+           <a class="reference internal" href="genindex.html">
+            <span class="std std-ref">
+             Index
+            </span>
+           </a>
+          </p>
+         </section>
+        </section>
+       </section>
       </article>
      </div>
     </div>
@@ -596,7 +609,7 @@ trees. ICLR 2019.
       <a href="http://www.sphinx-doc.org/">
        Sphinx
       </a>
-      3.5.4.
+      4.0.1.
              and
       <a href="https://github.com/bashtage/sphinx-material/">
        Material for

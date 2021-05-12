@@ -3,6 +3,7 @@
  <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
   <meta content="width=device-width,initial-scale=1" name="viewport"/>
   <meta content="ie=edge" http-equiv="x-ua-compatible"/>
   <meta content="Copy to clipboard" name="lang:clipboard.copy"/>
@@ -295,85 +296,87 @@
      </div>
      <div class="md-content">
       <article class="md-content__inner md-typeset" role="main">
-       <h1 id="guide-command-line--page-root">
-        Command line example
-        <a class="headerlink" href="#guide-command-line--page-root" title="Permalink to this headline">
-         ¶
-        </a>
-       </h1>
-       <div class="line-block">
-        <div class="line">
-         Feat can be run from the command-line. All of its options are
+       <section id="command-line-example">
+        <h1 id="guide-command-line--page-root">
+         Command line example
+         <a class="headerlink" href="#guide-command-line--page-root" title="Permalink to this headline">
+          ¶
+         </a>
+        </h1>
+        <div class="line-block">
+         <div class="line">
+          Feat can be run from the command-line. All of its options are
 configurable there. After a default build, the feat executable will be
 in the
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           build
-          </span>
-         </code>
-         directory.
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            build
+           </span>
+          </code>
+          directory.
+         </div>
+         <div class="line">
+          From the repo directory, type
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            ./build/feat
+           </span>
+           <span class="pre">
+            -h
+           </span>
+          </code>
+          to see options.
+         </div>
         </div>
-        <div class="line">
-         From the repo directory, type
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           ./build/feat
-          </span>
-          <span class="pre">
-           -h
-          </span>
-         </code>
-         to see options.
-        </div>
-       </div>
-       <p>
-        The first argument to the executable should be the dataset file to learn
+        <p>
+         The first argument to the executable should be the dataset file to learn
 from. This dataset should be a comma- or tab-delimited file with columns
 corresponding to features, one column corresponding to the target, and
 rows corresponding to samples. the first row should be a header with the
 names of the features and target.
-        <em>
-         The target must be named as class,
+         <em>
+          The target must be named as class,
 target, or label in order to be interpreted correctly.
-        </em>
-        See the datasets
+         </em>
+         See the datasets
 in the examples folder for guidance.
-       </p>
-       <h2 id="enc-problem">
-        ENC problem
-        <a class="headerlink" href="#enc-problem" title="Permalink to this headline">
-         ¶
-        </a>
-       </h2>
-       <p>
-        We will run Feat on the
-        <a class="reference external" href="https://archive.ics.uci.edu/ml/datasets/Energy+efficiency">
-         energy
+        </p>
+        <section id="enc-problem">
+         <h2 id="enc-problem">
+          ENC problem
+          <a class="headerlink" href="#enc-problem" title="Permalink to this headline">
+           ¶
+          </a>
+         </h2>
+         <p>
+          We will run Feat on the
+          <a class="reference external" href="https://archive.ics.uci.edu/ml/datasets/Energy+efficiency">
+           energy
 efficiency
-        </a>
-        dataset from UCI, which is included in
-        <code class="docutils literal notranslate">
-         <span class="pre">
-          docs/examples/data/d_enc.txt
-         </span>
-        </code>
-        .
+          </a>
+          dataset from UCI, which is included in
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            docs/examples/data/d_enc.txt
+           </span>
+          </code>
+          .
 To run Feat with a population 1000 for 100 generations using a random
 seed of 42, type
-       </p>
-       <div class="highlight-default notranslate">
-        <div class="highlight">
-         <pre><span></span><span class="o">./</span><span class="n">build</span><span class="o">/</span><span class="n">feat</span> <span class="n">docs</span><span class="o">/</span><span class="n">examples</span><span class="o">/</span><span class="n">d_enc</span><span class="o">.</span><span class="n">csv</span> <span class="o">-</span><span class="n">p</span> <span class="mi">100</span> <span class="o">-</span><span class="n">g</span> <span class="mi">100</span> <span class="o">-</span><span class="n">r</span> <span class="mi">42</span>
+         </p>
+         <div class="highlight-default notranslate">
+          <div class="highlight">
+           <pre><span></span><span class="o">./</span><span class="n">build</span><span class="o">/</span><span class="n">feat</span> <span class="n">docs</span><span class="o">/</span><span class="n">examples</span><span class="o">/</span><span class="n">d_enc</span><span class="o">.</span><span class="n">csv</span> <span class="o">-</span><span class="n">p</span> <span class="mi">100</span> <span class="o">-</span><span class="n">g</span> <span class="mi">100</span> <span class="o">-</span><span class="n">r</span> <span class="mi">42</span>
 </pre>
-        </div>
-       </div>
-       <p>
-        The default verbosity=1, so you will get a printout of summary
+          </div>
+         </div>
+         <p>
+          The default verbosity=1, so you will get a printout of summary
 statistics each generation. The final output should look like
-       </p>
-       <div class="highlight-default notranslate">
-        <div class="highlight">
-         <pre><span></span>Generation 100/100 [//////////////////////////////////////////////////]
+         </p>
+         <div class="highlight-default notranslate">
+          <div class="highlight">
+           <pre><span></span>Generation 100/100 [//////////////////////////////////////////////////]
 Min Loss    Median Loss Median (Max) Size   Time (s)
 2.74477e+00 4.40906e+00 12 (20)         3.91275
 Representation Pareto Front--------------------------------------
@@ -439,8 +442,10 @@ x6  35.792342
 (x6^3)  25.457528
 done!
 </pre>
-        </div>
-       </div>
+          </div>
+         </div>
+        </section>
+       </section>
       </article>
      </div>
     </div>
@@ -461,7 +466,7 @@ done!
       <a href="http://www.sphinx-doc.org/">
        Sphinx
       </a>
-      3.5.4.
+      4.0.1.
              and
       <a href="https://github.com/bashtage/sphinx-material/">
        Material for

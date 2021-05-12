@@ -3,6 +3,7 @@
  <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
   <meta content="width=device-width,initial-scale=1" name="viewport"/>
   <meta content="ie=edge" http-equiv="x-ua-compatible"/>
   <meta content="Copy to clipboard" name="lang:clipboard.copy"/>
@@ -375,36 +376,38 @@
      </div>
      <div class="md-content">
       <article class="md-content__inner md-typeset" role="main">
-       <h1 id="install--page-root">
-        Installation
-        <a class="headerlink" href="#install--page-root" title="Permalink to this headline">
-         ¶
-        </a>
-       </h1>
-       <p>
-        To see our installation process from scratch, check out the
-        <a class="reference external" href="http://github.com/lacava/feat/blob/master/ci/.travis_install.sh">
-         Travis install file
-        </a>
-        .
-       </p>
-       <h2 id="conda">
-        Conda
-        <a class="headerlink" href="#conda" title="Permalink to this headline">
-         ¶
-        </a>
-       </h2>
-       <p>
-        The easiest option for install is to use the
-        <a class="reference external" href="http://github.com/lacava/feat/blob/master/ci/test-environment.yml">
-         conda environment we provide
-        </a>
-        .
+       <section id="installation">
+        <h1 id="install--page-root">
+         Installation
+         <a class="headerlink" href="#install--page-root" title="Permalink to this headline">
+          ¶
+         </a>
+        </h1>
+        <p>
+         To see our installation process from scratch, check out the
+         <a class="reference external" href="http://github.com/lacava/feat/blob/master/ci/.travis_install.sh">
+          Travis install file
+         </a>
+         .
+        </p>
+        <section id="conda">
+         <h2 id="conda">
+          Conda
+          <a class="headerlink" href="#conda" title="Permalink to this headline">
+           ¶
+          </a>
+         </h2>
+         <p>
+          The easiest option for install is to use the
+          <a class="reference external" href="http://github.com/lacava/feat/blob/master/ci/test-environment.yml">
+           conda environment we provide
+          </a>
+          .
 Then the build process is the following:
-       </p>
-       <div class="highlight-bash notranslate">
-        <div class="highlight">
-         <pre><span></span>git clone https://github.com/lacava/feat <span class="c1"># clone the repo</span>
+         </p>
+         <div class="highlight-bash notranslate">
+          <div class="highlight">
+           <pre><span></span>git clone https://github.com/lacava/feat <span class="c1"># clone the repo</span>
 <span class="nb">cd</span> feat <span class="c1"># enter the directory</span>
 conda env create -f ci/test-environment.yml
 conda activate feat-env
@@ -416,83 +419,86 @@ conda activate feat-env
 ./configure <span class="c1"># this runs "mkdir build; cd build; cmake .. "</span>
 ./install <span class="c1"># this runs "make -C build VERBOSE=1 -j8; python setup.py install"</span>
 </pre>
-        </div>
-       </div>
-       <p>
-        If you want to roll your own with the dependencies, some other options are shown below.
+          </div>
+         </div>
+         <p>
+          If you want to roll your own with the dependencies, some other options are shown below.
 In this case, you need to tell the
-        <cite>
-         configure
-        </cite>
-        script where Shogun and Eigen are.
+          <cite>
+           configure
+          </cite>
+          script where Shogun and Eigen are.
 Edit this lines:
-       </p>
-       <div class="highlight-bash notranslate">
-        <div class="highlight">
-         <pre><span></span><span class="nb">export</span> <span class="nv">SHOGUN_LIB</span><span class="o">=</span>/your/shogun/lib/
+         </p>
+         <div class="highlight-bash notranslate">
+          <div class="highlight">
+           <pre><span></span><span class="nb">export</span> <span class="nv">SHOGUN_LIB</span><span class="o">=</span>/your/shogun/lib/
 <span class="nb">export</span> <span class="nv">SHOGUN_DIR</span><span class="o">=</span>/your/shugn/include/
 <span class="nb">export</span> <span class="nv">EIGEN3_INCLUDE_DIR</span><span class="o">=</span>/your/eigen/eigen3/
 </pre>
-        </div>
-       </div>
-       <h2 id="dependencies">
-        Dependencies
-        <a class="headerlink" href="#dependencies" title="Permalink to this headline">
-         ¶
-        </a>
-       </h2>
-       <p>
-        Feat uses
-        <a class="reference external" href="https://cmake.org/">
-         cmake
-        </a>
-        to build.
+          </div>
+         </div>
+        </section>
+        <section id="dependencies">
+         <h2 id="dependencies">
+          Dependencies
+          <a class="headerlink" href="#dependencies" title="Permalink to this headline">
+           ¶
+          </a>
+         </h2>
+         <p>
+          Feat uses
+          <a class="reference external" href="https://cmake.org/">
+           cmake
+          </a>
+          to build.
 It also depends on the
-        <a class="reference external" href="http://eigen.tuxfamily.org">
-         Eigen
-        </a>
-        matrix library for C++ as well as the
-        <a class="reference external" href="http://shogun.ml">
-         Shogun
-        </a>
-        ML library.
+          <a class="reference external" href="http://eigen.tuxfamily.org">
+           Eigen
+          </a>
+          matrix library for C++ as well as the
+          <a class="reference external" href="http://shogun.ml">
+           Shogun
+          </a>
+          ML library.
 Both come in packages on conda that should work across platforms.
 If you need Eigen and Shogun and don’t want to use conda, follow these instructions.
-       </p>
-       <h3 id="id1">
-        Eigen
-        <a class="headerlink" href="#id1" title="Permalink to this headline">
-         ¶
-        </a>
-       </h3>
-       <p>
-        Eigen is a header only package. We need Eigen 3 or greater.
-       </p>
-       <p>
-        <strong>
-         Debian/Ubuntu
-        </strong>
-       </p>
-       <p>
-        On Debian systems, you can grab the package:
-       </p>
-       <blockquote>
-        <div>
-         <p>
-          sudo apt-get install libeigen3-dev
          </p>
-        </div>
-       </blockquote>
-       <p>
-        You can also download the headers and put them somewhere. Then you just have to tell cmake where they are with the environmental variable
-        <cite>
-         EIGEN3_INCLUDE_DIR
-        </cite>
-        . Example:
-       </p>
-       <div class="highlight-bash notranslate">
-        <div class="highlight">
-         <pre><span></span><span class="c1"># Eigen 3.3.4</span>
+         <section id="id1">
+          <h3 id="id1">
+           Eigen
+           <a class="headerlink" href="#id1" title="Permalink to this headline">
+            ¶
+           </a>
+          </h3>
+          <p>
+           Eigen is a header only package. We need Eigen 3 or greater.
+          </p>
+          <p>
+           <strong>
+            Debian/Ubuntu
+           </strong>
+          </p>
+          <p>
+           On Debian systems, you can grab the package:
+          </p>
+          <blockquote>
+           <div>
+            <p>
+             sudo apt-get install libeigen3-dev
+            </p>
+           </div>
+          </blockquote>
+          <p>
+           You can also download the headers and put them somewhere. Then you just have to tell cmake where they are with the environmental variable
+           <cite>
+            EIGEN3_INCLUDE_DIR
+           </cite>
+           . Example:
+          </p>
+          <div class="highlight-bash notranslate">
+           <div class="highlight">
+            <pre><span></span><span class="c1"># Eigen 3.3.4</span>
 wget <span class="s2">"http://bitbucket.org/eigen/eigen/get/3.3.4.tar.gz"</span>
 tar xzf <span class="m">3</span>.3.4.tar.gz
 mkdir eigen-3.3.4
@@ -500,68 +506,75 @@ mv eigen-eigen*/* eigen-3.3.4
 <span class="c1"># set an environmental variable to tell cmake where Eigen is</span>
 <span class="nb">export</span> <span class="nv">EIGEN3_INCLUDE_DIR</span><span class="o">=</span><span class="s2">"</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span><span class="s2">/eigen-3.3.4/"</span>
 </pre>
-        </div>
-       </div>
-       <h3 id="id2">
-        Shogun
-        <a class="headerlink" href="#id2" title="Permalink to this headline">
-         ¶
-        </a>
-       </h3>
-       <p>
-        You don’t have to compile Shogun, just download the binaries.
-        <a class="reference external" href="https://github.com/shogun-toolbox/shogun/blob/develop/doc/readme/INSTALL.md#binaries">
-         Their install guide is good.
-        </a>
-        We’ve listed two of the options here.
-       </p>
-       <p>
-        <strong>
-         Debian/Ubuntu
-        </strong>
-       </p>
-       <p>
-        You can also get the Shogun packages:
-       </p>
-       <div class="highlight-bash notranslate">
-        <div class="highlight">
-         <pre><span></span>sudo add-apt-repository ppa:shogun-toolbox/nightly -y
+           </div>
+          </div>
+         </section>
+         <section id="id2">
+          <h3 id="id2">
+           Shogun
+           <a class="headerlink" href="#id2" title="Permalink to this headline">
+            ¶
+           </a>
+          </h3>
+          <p>
+           You don’t have to compile Shogun, just download the binaries.
+           <a class="reference external" href="https://github.com/shogun-toolbox/shogun/blob/develop/doc/readme/INSTALL.md#binaries">
+            Their install guide is good.
+           </a>
+           We’ve listed two of the options here.
+          </p>
+          <p>
+           <strong>
+            Debian/Ubuntu
+           </strong>
+          </p>
+          <p>
+           You can also get the Shogun packages:
+          </p>
+          <div class="highlight-bash notranslate">
+           <div class="highlight">
+            <pre><span></span>sudo add-apt-repository ppa:shogun-toolbox/nightly -y
 sudo apt-get update -y
 sudo apt-get install -qq --force-yes --no-install-recommends libshogun18
 sudo apt-get install -qq --force-yes --no-install-recommends libshogun-dev
 </pre>
-        </div>
-       </div>
-       <h2 id="running-the-tests">
-        Running the tests
-        <a class="headerlink" href="#running-the-tests" title="Permalink to this headline">
-         ¶
-        </a>
-       </h2>
-       <p>
-        <em>
-         (optional)
-        </em>
-        If you want to run the tests, you need to install
-        <a class="reference external" href="https://github.com/google/googletest">
-         Google Test
-        </a>
-        .
+           </div>
+          </div>
+         </section>
+        </section>
+        <section id="running-the-tests">
+         <h2 id="running-the-tests">
+          Running the tests
+          <a class="headerlink" href="#running-the-tests" title="Permalink to this headline">
+           ¶
+          </a>
+         </h2>
+         <p>
+          <em>
+           (optional)
+          </em>
+          If you want to run the tests, you need to install
+          <a class="reference external" href="https://github.com/google/googletest">
+           Google Test
+          </a>
+          .
 A useful guide to doing so is available
-        <a class="reference external" href="https://www.eriksmistad.no/getting-started-with-google-test-on-ubuntu/">
-         here
-        </a>
-        .
+          <a class="reference external" href="https://www.eriksmistad.no/getting-started-with-google-test-on-ubuntu/">
+           here
+          </a>
+          .
 Then you can use cmake to build the tests. From the repo root,
-       </p>
-       <div class="highlight-bash notranslate">
-        <div class="highlight">
-         <pre><span></span>./configure tests   <span class="c1"># builds the test Makefile</span>
+         </p>
+         <div class="highlight-bash notranslate">
+          <div class="highlight">
+           <pre><span></span>./configure tests   <span class="c1"># builds the test Makefile</span>
 make -C build tests <span class="c1"># compiles the tests</span>
 ./build/tests <span class="c1"># runs the tests</span>
 </pre>
-        </div>
-       </div>
+          </div>
+         </div>
+        </section>
+       </section>
       </article>
      </div>
     </div>
@@ -610,7 +623,7 @@ make -C build tests <span class="c1"># compiles the tests</span>
       <a href="http://www.sphinx-doc.org/">
        Sphinx
       </a>
-      3.5.4.
+      4.0.1.
              and
       <a href="https://github.com/bashtage/sphinx-material/">
        Material for
